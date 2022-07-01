@@ -1,26 +1,19 @@
 ---
-title: 🪴 Quartz 3.2
+title: "Morioh"
+tags:
+  - hub
 ---
+# Welcome :)
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+Main hub for all the different note categories :)
 
-1. Extremely fast full-text search by pressing `Ctrl` + `k`
-2. Customizable and hackable design based on Hugo
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in [[notes/CJK + Latex Support (测试) | CJK + Latex Support]]
-5. Support for both Markdown Links and Wikilinks
+<center><img src="https://media2.giphy.com/media/TI9HiyUqRm75jPyKQ5/giphy.gif?cid=ecf05e4799x4brmyrv3lgup74b1onq4s89nps3z3lwxmbls2&rid=giphy.gif&ct=g"></center>
 
-## Get Started
-> 📚 Step 1: [Setup your own digital garden using Quartz](notes/setup.md)
+## All of my knowledge 😬
+- [Hub](notes/knowledge-hub.md)
 
-Not convinced yet? Look at some [community digital gardens](notes/showcase.md) built with Quartz, or read about [why I made Quartz](notes/philosophy.md) to begin with.
+## Work
+- [Hub](notes/work-hub.md)
 
-Returning user? Figure out how to [[notes/updating|update]] your existing Quartz garden.
-
-### Content Lists
-If you prefer browsing the contents of this site through a list instead of a graph, you see a list of all [setup-related notes](/tags/setup).
-
-### Troubleshooting
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
-- 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
-- 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
+## University
+- [Hub](notes/university-hub.md)
