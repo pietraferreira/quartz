@@ -27,11 +27,11 @@ quicksort (int *a, int lo, int hi)
 ```
 
 ## Issues
-- It is not [](sorting.md#Stability%7Cstable).
-- Average [](compiler-optimisation.md#Performance%7Cperformance): $O_{n\ log\ n}$ 
+- It is not [](notes/sorting.md#Stability|stable).
+- Average [](notes/compiler-optimisation.md#Performance|performance): $O_{n\ log\ n}$ 
 - Worst case performance: $O_(n^2)$
 
-Note that this is [big O notation](big-o-notation.md).
+Note that this is [big O notation](notes/big-o-notation.md).
 
 Quicksort is critically dependant on choice of median. Taking best of low, high and mid points deals with the obvious case of sorted data.
 

@@ -91,5 +91,5 @@ A DAG (Directed Acyclic Graph) can allow us to share common parse tree structure
 However, they are hard to construct and syntactic identify does not mean semantic identity.
 
 ## See Also
-- [Formal Languages](formal-languages.md)
-- [Trees](trees.md)
+- [Formal Languages](notes/formal-languages.md)
+- [Trees](notes/trees.md)

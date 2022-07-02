@@ -8,4 +8,4 @@ created: 2022-06-04
 ---
 # RISC-V
 ---
-- [Introduction to RISC-V](introduction-to-riscv.md)
+- [Introduction to RISC-V](notes/introduction-to-riscv.md)

@@ -9,14 +9,14 @@ created: 2022-06-06
 ---
 # Heapsort
 ---
-Uses [binary heap trees](binary-heap.md) to [sort](sorting.md) (I think!).
+Uses [binary heap trees](notes/binary-heap.md) to [sort](notes/sorting.md) (I think!).
 
-It has average [](compiler-optimisation.md#Performance%7Cperformance): $O_{n\ log\ n}$
+It has average [](notes/compiler-optimisation.md#Performance|performance): $O_{n\ log\ n}$
 Worst case performance: $O_{n\ log\ n}$
 
-- Refer to [big o notation](big-o-notation.md).
+- Refer to [big o notation](notes/big-o-notation.md).
 
-It is not [](sorting.md#Stability%7Cstable).
+It is not [](notes/sorting.md#Stability|stable).
 
 Valuable data representation for anything where you need to quickly access the largest (smallest) element.    
 - e. g.:  time ordered queue, with the next item at the root.

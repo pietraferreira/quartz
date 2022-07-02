@@ -10,7 +10,7 @@ created: 2022-06-05
 ---
 It describes how the performance of an algorithm scales with the size of the problem.
 
-[](compiler-optimisation.md#Performance%7CPerformance) may be **time to execute** or **amount of memory**.
+[](notes/compiler-optimisation.md#Performance|Performance) may be **time to execute** or **amount of memory**.
 
 Size must be a quantitative measure of the scale of the problem. For example:
 - Number of items to sort.
