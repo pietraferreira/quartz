@@ -16,18 +16,18 @@ Everything work related, mostly organised by project.
 
 ## Projects
 ### Engineer Training
-- [[engineer-training-hub|Hub]]
+- [Hub](engineer-training-hub.md)
 
 ### RISC-V
-- [[riscv|Notes]]
+- [Notes](riscv.md)
 
 #### Relocation Handling Prototype (CORE-V)
-* [[relocation-prototype|Notes]]
-* [[relocation-prototype-reports-hub|Reports]]
+* [Notes](work/relocation-prototype/relocation-prototype.md)
+* [Reports](work/relocation-prototype/relocation-prototype-reports/relocation-prototype-reports-hub.md)
 
 #### CORE-V
-- [[corev-toolchain|CORE-V Toolchain]]
-- [[assembly-test-example-corev|Assembly Test Example]]
+- [CORE-V Toolchain](corev-toolchain.md)
+- [Assembly Test Example](work/assembly-test-example-corev.md)
 
 ##### Videos
 - [Porting the GNU CORE-V Toolchain](https://www.youtube.com/watch?v=RT0GqJySnBc&t=333s)
@@ -35,28 +35,28 @@ Everything work related, mostly organised by project.
 - [GNU toolchain for CORE-V](https://www.youtube.com/watch?v=3f3VuSzslxU&t=1418s) (Jessica talks about relocation handling [here](https://youtu.be/3f3VuSzslxU?t=1192))
 
 ### Tiger
-- [[tiger.pdf|Introduction to the project]]
+- [Introduction to the project](images/tiger.pdf)
 
 ### DejaGNU
-- [[dejagnu-documentation-notes|DejaGNU documentation notes]]
+- [DejaGNU documentation notes](work/dejagnu-documentation-notes.md)
 
 ### LLVM
-- [[llvm|LLVM Toolchain]]
-- [[how-to-write-a-llvm-backend|How to Write a LLVM backend]]
+- [LLVM Toolchain](llvm.md)
+- [How to Write a LLVM backend](how-to-write-a-llvm-backend.md)
 
 ### GCC
-- [[gcc|GCC Toolchain]]
+- [GCC Toolchain](gcc.md)
 
 ## Talks
 ### 2020 Meetup
-- [[meetup-2020-corev-script|Script]]
-- [[meetup-2020-corev-presentation-v11.odp|Slides]]
+- [Script](work/meetup-2020-corev-script.md)
+- [Slides](images/meetup-2020-corev-presentation-v11.odp)
 
 ### Facial Recognition - Coral Board
-- [[facial-recognition-board-talk-script|Script]]
+- [Script](work/facial-recognition-board-talk-script.md)
 
 ### Strode College Talk - About me
-- [[strode-talk-script|Script]]
+- [Script](work/strode-talk-script.md)
 
 ## Meeting Notes
 ```dataview

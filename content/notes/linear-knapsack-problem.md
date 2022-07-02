@@ -35,4 +35,4 @@ for each set of k objects
 Worst case efficiency is $(k+1)/(k+2)$, in practic k = 2 is sufficient.
 
 ## See also
-- [[cs-problems|Problems]]
+- [Problems](cs-problems.md)

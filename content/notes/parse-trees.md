@@ -8,7 +8,7 @@ created: 2022-06-16
 ---
 # Parse Trees
 ---
-![](notes/images/parse-tree-example.png)
+![](images/parse-tree-example.png)
 
 ## Grammatically 
 $S \rightarrow A | B$
@@ -16,7 +16,7 @@ $A \rightarrow A\ x | y$
 $B \rightarrow z$
 
 - Parse tree for *yxxz*:
-![](notes/images/parse-tree.png)
+![](images/parse-tree.png)
 
 ### Parsing Sentences
 Apply successive productions.
@@ -91,5 +91,5 @@ A DAG (Directed Acyclic Graph) can allow us to share common parse tree structure
 However, they are hard to construct and syntactic identify does not mean semantic identity.
 
 ## See Also
-- [[formal-languages|Formal Languages]]
-- [[trees|Trees]]
+- [Formal Languages](formal-languages.md)
+- [Trees](trees.md)

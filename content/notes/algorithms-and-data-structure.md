@@ -9,21 +9,21 @@ created: 2022-06-05
 # Algorithms and Data Structure
 ---
 ## Topics
-- [[sets-and-maps|Sets and Maps]]
-- [[vectors-arrays|Vectors and Arrays]]
-- [[big-o-notation|Big O Notation]]
-- [[lists|Lists]]
-- [[stacks-and-queues|Stacks and Queues]]
-- [[hash-tables|Hash Tables]]
-- [[trees|Trees]]
-- [[sorting|Sorting]]
-- [[graphs|Graphs]]
-    - [[minimum-spanning-subtree|Minimum Spanning Subtree]]
-    - [[dijkstra-algorithm|Dijkstra]]
-    - [[floyd-warshall|Floyd-Warshall]]
-    - [[inkblot-algorithm|Inkblot]]
-- [[garbage-collection|Garbage Collection]]
-- [[cs-problems|Problems]]
+- [Sets and Maps](sets-and-maps.md)
+- [Vectors and Arrays](vectors-arrays.md)
+- [Big O Notation](big-o-notation.md)
+- [Lists](lists.md)
+- [Stacks and Queues](stacks-and-queues.md)
+- [Hash Tables](hash-tables.md)
+- [Trees](trees.md)
+- [Sorting](sorting.md)
+- [Graphs](graphs.md)
+    - [Minimum Spanning Subtree](minimum-spanning-subtree.md)
+    - [Dijkstra](dijkstra-algorithm.md)
+    - [Floyd-Warshall](floyd-warshall.md)
+    - [Inkblot](inkblot-algorithm.md)
+- [Garbage Collection](garbage-collection.md)
+- [Problems](cs-problems.md)
 
 ### Extra Resources
 - [Visualisation](https://visualgo.net/en)
@@ -33,5 +33,5 @@ created: 2022-06-05
 - [Java MOOC by University of Helsinki](https://java-programming.mooc.fi/)
 
 ## Mathematical Algorithms
-- [[linear-equations|Linear Equations]]
-- [[newton-raphson|Newton-Raphson Iteration]]
+- [Linear Equations](linear-equations.md)
+- [Newton-Raphson Iteration](newton-raphson.md)

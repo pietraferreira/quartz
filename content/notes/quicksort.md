@@ -27,11 +27,11 @@ quicksort (int *a, int lo, int hi)
 ```
 
 ## Issues
-- It is not [[sorting#Stability|stable]].
-- Average [[compiler-optimisation#Performance|performance]]: $O_{n\ log\ n}$ 
+- It is not [](sorting.md#Stability%7Cstable).
+- Average [](compiler-optimisation.md#Performance%7Cperformance): $O_{n\ log\ n}$ 
 - Worst case performance: $O_(n^2)$
 
-Note that this is [[big-o-notation|big O notation]].
+Note that this is [big O notation](big-o-notation.md).
 
 Quicksort is critically dependant on choice of median. Taking best of low, high and mid points deals with the obvious case of sorted data.
 
@@ -92,7 +92,7 @@ partition (int *a, int lo, int hi)
 ```
 
 ### As a tree-sort
-![](notes/images/quicksort-tree.png)
+![](images/quicksort-tree.png)
 
 ## Code Example
 ```c

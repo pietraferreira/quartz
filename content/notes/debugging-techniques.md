@@ -58,10 +58,10 @@ This provides an automated way of detecting bugs. Sanitisers also require runtim
 On some platforms, [Valgrind](https://valgrind.org/) can also detect errors that are detected by some sanitisers, like memory corruption, leaks, etc. Unfortunately, Valgrind is currently not available for RISC-V platforms.
 
 ## Debugging Using a Debugger
-When a debugger is available, it becomes very convenient to inspect programs, get backtraces, values of objects, the state of different threads, etc. Learning to effectively use a debugger like [[gdb]] greatly simplifies software development. [[useful-commands-dump#GDB|Frequently used `gdb` commands.]]
+When a debugger is available, it becomes very convenient to inspect programs, get backtraces, values of objects, the state of different threads, etc. Learning to effectively use a debugger like [gdb](gdb.md) greatly simplifies software development. [](useful-commands-dump.md#GDB%7CFrequently%20used%20%60gdb%60%20commands.)
 
 ## Remote Debugging
-Info on remote debugging on GDB can be found [[gdb#Remote Debugging|here]].
+Info on remote debugging on GDB can be found [](gdb.md#Remote%20Debugging%7Chere).
 
 ## JTAG-based Debugging
 During the early bringup phase of hardware, there are no software capabilities. In order to debug bare metal applications or access different hardware blocks, JTAG (named after the Joint Test Action Group) is used as the transport mechanism. 

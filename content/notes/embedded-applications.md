@@ -36,7 +36,7 @@ There are also situations where a system can have [big+little configuration](htt
 Some processors can have advanced [dynamic voltage and frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) capabilities. So, whenever there is no work to do, processors go into low-power idle mode. As a result, it makes sense to run applications as fast as possible and defer the responsibility of power management to the processor. To run the application as fast as possible, we can use higher optimisation levels like `-O3`, `-Ofast`; we can combine that with link time optimisations and profile guided optimisation to achieve even better performance.
 
 ## Optimising for Binary Size
-Check out [[compiler-optimisation#Optimising Programs for Code Size|Optimising for Code Size]].
+Check out [](compiler-optimisation.md#Optimising%20Programs%20for%20Code%20Size%7COptimising%20for%20Code%20Size).
 
 ## References
 - [RISC-V Toolchain and Compiler Optimization Techniques](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD113x+3T2021/home)

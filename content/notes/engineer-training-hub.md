@@ -9,13 +9,13 @@ created: 2022-06-05
 # Engineer Training Hub
 ---
 ## Syllabus:
-[[algorithms-and-data-structure|Algorithms and Data Structure]]
+[Algorithms and Data Structure](algorithms-and-data-structure.md)
 
 ### Assembly programming
 
 ### C/C++ Programming
 
-[[compilers|Compilers]]
+[Compilers](compilers.md)
 
 ### Functional Programming
 
