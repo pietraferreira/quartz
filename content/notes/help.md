@@ -12,10 +12,10 @@ Various cheatsheets of different application I use and all the help I can get co
 <center><img src="https://c.tenor.com/_h_1fcwEkHYAAAAC/studying-windy.gif"></center>
 
 ## Cheatsheets
-- [[vim-cheatsheet|Vim]]
-- [[iterm2-cheatsheet|iTerm2]]
-- [[obsidian-cheatsheet|Obsidian]]
-- [[tmux-cheatsheet|Tmux]]
+- [Vim](vim-cheatsheet.md)
+- [iTerm2](iterm2-cheatsheet.md)
+- [Obsidian](obsidian-cheatsheet.md)
+- [Tmux](tmux-cheatsheet.md)
 
 ## Hacking
 - [x86 CheatSheet](https://trailofbits.github.io/ctf/vulnerabilities/references/X86_Win32_Reverse_Engineering_Cheat_Sheet.pdf)
@@ -25,10 +25,10 @@ Various cheatsheets of different application I use and all the help I can get co
 - [HTTP Status List](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_redirection)
 
 ## Other
-- [[useful-commands-dump|Commands Dump]]
-- [[linux-fundamentals|Linux Fundamentals]]
-- [[dotfile-management|Dotfiles Management]]
-- [[courses-dump|Courses Dump]]
+- [Commands Dump](useful-commands-dump.md)
+- [Linux Fundamentals](linux-fundamentals.md)
+- [Dotfiles Management](dotfile-management.md)
+- [Courses Dump](courses-dump.md)
 
 ## All of them
 ```dataview

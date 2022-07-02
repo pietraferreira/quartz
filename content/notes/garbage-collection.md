@@ -46,11 +46,11 @@ main ()
 ### Mark and Sweep
 Naive mark-and-sweep. Start with *root* set:
 
-![](notes/images/mark-and-sweep-1.png)
+![](images/mark-and-sweep-1.png)
 
 Now sweep up anything not marked:
 
-![](notes/images/mark-and-sweep-2.png)
+![](images/mark-and-sweep-2.png)
 
 ### Tri-Colour Marking
 Tree sets:

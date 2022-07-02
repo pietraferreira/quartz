@@ -21,10 +21,10 @@ B $\rightarrow$ yB | $\varepsilon$
 
 One grammar may be easier to parse than the other. 
 
-Note however that they have very different parse [[trees]], and if the parse tree reflects the semantic structure for the language then the semantic information is lost.
+Note however that they have very different parse [trees](trees.md), and if the parse tree reflects the semantic structure for the language then the semantic information is lost.
 
 Parse tree for yxx:
-![](notes/images/parse-tree-leftmost-rightmost.png)
+![](images/parse-tree-leftmost-rightmost.png)
 
 ## See Also
-- [[formal-languages|Formal Languages]]
+- [Formal Languages](formal-languages.md)

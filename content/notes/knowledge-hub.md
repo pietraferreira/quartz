@@ -13,28 +13,28 @@ Where all of my notes live!!! There are no rules here 😎
 
 ---
 ## General
-[[help|HELP]] - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
+[HELP](help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
 
 ## Computer Science
-- [[algorithms-and-data-structure|Algorithms and Data Structure]]
-- [[formal-languages|Formal Languages]]
+- [Algorithms and Data Structure](algorithms-and-data-structure.md)
+- [Formal Languages](formal-languages.md)
 
 ### Computer Architecture
-- [[isa|ISA (Instruction Set Architecture)]]
-- [[instruction-set-semantics|Instruction Set Semantics]]
+- [ISA (Instruction Set Architecture)](isa.md)
+- [Instruction Set Semantics](instruction-set-semantics.md)
 
 ### Compilers
-- [[compilers|Compilers]]
-- [[sysroot|Sysroot]]
-- [[compiler-toolchains|Compiler Toolchains]]
+- [Compilers](compilers.md)
+- [Sysroot](sysroot.md)
+- [Compiler Toolchains](compiler-toolchains.md)
 
 ### Not sure where to put these :)
-- [[source-code-optimisation|Source Code Optimisation]]
-- [[embedded-applications|Embedded Applications]]
-- [[debugging-techniques|Debugging Techniques]]
+- [Source Code Optimisation](source-code-optimisation.md)
+- [Embedded Applications](embedded-applications.md)
+- [Debugging Techniques](debugging-techniques.md)
 
 #### RISC-V
-- [[riscv|RISC-V]]
+- [RISC-V](riscv.md)
 
 ## Recent notes
 ```dataview

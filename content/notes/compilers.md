@@ -18,21 +18,21 @@ A compiler is a system that converts a program from one language to another. In 
 - Provide APIs to be used by other source code introspection and transformation tools.
 - Provide source code instrumentation capabilities for performance analysis, program introspection.
 
-- [[llvm|LLVM]]
-- [[gcc|GCC]]
+- [LLVM](llvm.md)
+- [GCC](gcc.md)
 
 ## Topics
-- [[cross-compilation|Cross-Compilation]]
-- [[compiler-optimisation|Compiler Optimisation]]
-- [[compiler-instrumentation|Compiler Instrumentation]]
-- [[compiler-flags|Compiler Flags]]
-- [[formal-languages|Formal Languages]]
-- [[intermediate-representations|Intermediate Representations]]
-- [[lexical-analysis|Lexical Analysis]]
-- [[code-generation|Code Generation]]
+- [Cross-Compilation](cross-compilation.md)
+- [Compiler Optimisation](compiler-optimisation.md)
+- [Compiler Instrumentation](compiler-instrumentation.md)
+- [Compiler Flags](compiler-flags.md)
+- [Formal Languages](formal-languages.md)
+- [Intermediate Representations](intermediate-representations.md)
+- [Lexical Analysis](lexical-analysis.md)
+- [Code Generation](code-generation.md)
 
 ## Structure of a Compiler
-![](notes/images/compiler-structure.png)
+![](images/compiler-structure.png)
 
 ## Languages for Writing Compilers
 Possible approaches:
@@ -46,10 +46,10 @@ Possible approaches:
 Increasingly mainstream compilers use the **second** approach, with C++ now the language of choice (being ubiquitous (found everywhere)).
 
 ## Tools
-- [[gdb|GDB]]
+- [GDB](gdb.md)
 
 ## Related Notes
-- [[compiler-toolchains|Compiler Toolchains]]
-- [[instruction-set-semantics|Instruction Set Semantics]]
-- [[llvm#Online resources|Lots of Online Resources]]
+- [Compiler Toolchains](compiler-toolchains.md)
+- [Instruction Set Semantics](instruction-set-semantics.md)
+- [](llvm.md#Online%20resources%7CLots%20of%20Online%20Resources)
 - [Writing a C compiler](https://norasandler.com/2017/11/29/Write-a-Compiler.html)
