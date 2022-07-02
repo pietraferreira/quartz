@@ -13,28 +13,28 @@ Where all of my notes live!!! There are no rules here 😎
 
 ---
 ## General
-[HELP](help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
+[HELP](notes/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
 
 ## Computer Science
-- [Algorithms and Data Structure](algorithms-and-data-structure.md)
-- [Formal Languages](formal-languages.md)
+- [Algorithms and Data Structure](notes/algorithms-and-data-structure.md)
+- [Formal Languages](notes/formal-languages.md)
 
 ### Computer Architecture
-- [ISA (Instruction Set Architecture)](isa.md)
-- [Instruction Set Semantics](instruction-set-semantics.md)
+- [ISA (Instruction Set Architecture)](notes/isa.md)
+- [Instruction Set Semantics](notes/instruction-set-semantics.md)
 
 ### Compilers
-- [Compilers](compilers.md)
-- [Sysroot](sysroot.md)
-- [Compiler Toolchains](compiler-toolchains.md)
+- [Compilers](notes/compilers.md)
+- [Sysroot](notes/sysroot.md)
+- [Compiler Toolchains](notes/compiler-toolchains.md)
 
 ### Not sure where to put these :)
-- [Source Code Optimisation](source-code-optimisation.md)
-- [Embedded Applications](embedded-applications.md)
-- [Debugging Techniques](debugging-techniques.md)
+- [Source Code Optimisation](notes/source-code-optimisation.md)
+- [Embedded Applications](notes/embedded-applications.md)
+- [Debugging Techniques](notes/debugging-techniques.md)
 
 #### RISC-V
-- [RISC-V](riscv.md)
+- [RISC-V](notes/riscv.md)
 
 ## Recent notes
 ```dataview

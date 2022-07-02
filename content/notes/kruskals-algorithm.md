@@ -8,9 +8,9 @@ created: 2022-06-06
 ---
 # Kruskal's Algorithm
 ---
-It is a [minimum spanning subtree](minimum-spanning-subtree.md) algorithm.
+It is a [minimum spanning subtree](notes/minimum-spanning-subtree.md) algorithm.
 
-It performs well for sparse [graphs](graphs.md) due to simple data structures: $O_(E\ log\ N)$.
+It performs well for sparse [graphs](notes/graphs.md) due to simple data structures: $O_(E\ log\ N)$.
 
 The way it works:
 1. Choose the shortest edge.
@@ -20,8 +20,8 @@ The way it works:
 ![](images/kruskals.png)
 
 ## See also
-- [Minimum Spanning Subtree](minimum-spanning-subtree.md)
-- [Trees](trees.md)
-- [Graphs](graphs.md)
-- [Big O Notation](big-o-notation.md)
-- [Pimm's](pimms-algorithm.md)
+- [Minimum Spanning Subtree](notes/minimum-spanning-subtree.md)
+- [Trees](notes/trees.md)
+- [Graphs](notes/graphs.md)
+- [Big O Notation](notes/big-o-notation.md)
+- [Pimm's](notes/pimms-algorithm.md)

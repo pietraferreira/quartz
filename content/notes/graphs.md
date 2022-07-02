@@ -20,14 +20,14 @@ A graph consists of:
 - Two nodes connected by an edge are **adjacent**.
 - A **weighted graph** has values attached to edges.
 - A path from a node back to itself is a **cycle**.
-- An **undirected** graph with **no cycles** is a [tree](trees.md).
+- An **undirected** graph with **no cycles** is a [tree](notes/trees.md).
 - A **directed** graph with **no cycles** is a **directed acyclic graph** or DAG.
-- A **DAG** where no node is pointed to by more than one node is a **directed** [tree](trees.md).
+- A **DAG** where no node is pointed to by more than one node is a **directed** [tree](notes/trees.md).
 
 ## See also
-- [Trees](trees.md)
-- [Minimum Spanning Subtree](minimum-spanning-subtree.md)
-- [Dijkstra](dijkstra-algorithm.md)
-- [Floyd-Warshall](floyd-warshall.md)
-- [Inkblot](inkblot-algorithm.md)
-- [Graphviz](graphviz.md)
+- [Trees](notes/trees.md)
+- [Minimum Spanning Subtree](notes/minimum-spanning-subtree.md)
+- [Dijkstra](notes/dijkstra-algorithm.md)
+- [Floyd-Warshall](notes/floyd-warshall.md)
+- [Inkblot](notes/inkblot-algorithm.md)
+- [Graphviz](notes/graphviz.md)

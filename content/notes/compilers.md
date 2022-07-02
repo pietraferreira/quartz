@@ -18,18 +18,18 @@ A compiler is a system that converts a program from one language to another. In 
 - Provide APIs to be used by other source code introspection and transformation tools.
 - Provide source code instrumentation capabilities for performance analysis, program introspection.
 
-- [LLVM](llvm.md)
-- [GCC](gcc.md)
+- [LLVM](notes/llvm.md)
+- [GCC](notes/gcc.md)
 
 ## Topics
-- [Cross-Compilation](cross-compilation.md)
-- [Compiler Optimisation](compiler-optimisation.md)
-- [Compiler Instrumentation](compiler-instrumentation.md)
-- [Compiler Flags](compiler-flags.md)
-- [Formal Languages](formal-languages.md)
-- [Intermediate Representations](intermediate-representations.md)
-- [Lexical Analysis](lexical-analysis.md)
-- [Code Generation](code-generation.md)
+- [Cross-Compilation](notes/cross-compilation.md)
+- [Compiler Optimisation](notes/compiler-optimisation.md)
+- [Compiler Instrumentation](notes/compiler-instrumentation.md)
+- [Compiler Flags](notes/compiler-flags.md)
+- [Formal Languages](notes/formal-languages.md)
+- [Intermediate Representations](notes/intermediate-representations.md)
+- [Lexical Analysis](notes/lexical-analysis.md)
+- [Code Generation](notes/code-generation.md)
 
 ## Structure of a Compiler
 ![](images/compiler-structure.png)
@@ -46,10 +46,10 @@ Possible approaches:
 Increasingly mainstream compilers use the **second** approach, with C++ now the language of choice (being ubiquitous (found everywhere)).
 
 ## Tools
-- [GDB](gdb.md)
+- [GDB](notes/gdb.md)
 
 ## Related Notes
-- [Compiler Toolchains](compiler-toolchains.md)
-- [Instruction Set Semantics](instruction-set-semantics.md)
-- [](llvm.md#Online%20resources%7CLots%20of%20Online%20Resources)
+- [Compiler Toolchains](notes/compiler-toolchains.md)
+- [Instruction Set Semantics](notes/instruction-set-semantics.md)
+- [](notes/llvm.md#Online%20resources|Lots%20of%20Online%20Resources)
 - [Writing a C compiler](https://norasandler.com/2017/11/29/Write-a-Compiler.html)

@@ -8,11 +8,11 @@ created: 2022-06-16
 ---
 # Three Address Code
 ---
-[Parse trees](parse-trees.md) are sometimes used in early stages of [compilers](compilers.md).
+[Parse trees](notes/parse-trees.md) are sometimes used in early stages of [compilers](notes/compilers.md).
 
-- They are **not** ideal for [optimisation](compiler-optimisation.md).
+- They are **not** ideal for [optimisation](notes/compiler-optimisation.md).
 
-Main part of the compilers today use [](instruction-set-semantics.md#^44cfb5%7Cthree%20address%20code):
+Main part of the compilers today use [](notes/instruction-set-semantics.md#^44cfb5|three%20address%20code):
 
 `result = operand1 operator operand2`
 
@@ -72,7 +72,7 @@ void tacgen (int op, struct tacarg a, struct b, struct c) {
 ```
 
 ## Syntax Directed Translation
-Related to [this](syntax-directed-translation.md).
+Related to [this](notes/syntax-directed-translation.md).
 
 asgmt $\rightarrow$ var := expr
                 {tacgen(TAC_COPY, var.entry, NULL,

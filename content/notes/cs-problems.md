@@ -8,15 +8,15 @@ created: 2022-06-06
 ---
 # CS Problems
 ---
-- [P vs NP problem.](p-vs-np.md)
+- [P vs NP problem.](notes/p-vs-np.md)
 - K-clique in a graph.
 - Boolean satisfiability.
 - Travelling Salesman problem.
 - Knapsack problem.
-- [Linear Knapsack Problem.](linear-knapsack-problem.md)
+- [Linear Knapsack Problem.](notes/linear-knapsack-problem.md)
 - Optimise branches and short branches.
 - Colour vertices of graph with k colours.
-- [Halting Problem](halting-problem.md)
+- [Halting Problem](notes/halting-problem.md)
 
 ## Harder Problems
 - Ackermann's function.

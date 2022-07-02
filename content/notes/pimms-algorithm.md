@@ -8,11 +8,11 @@ created: 2022-06-06
 ---
 # Pimm's Algorithm
 ---
-It is a [minimum spanning subtree](minimum-spanning-subtree.md) algorithm.
+It is a [minimum spanning subtree](notes/minimum-spanning-subtree.md) algorithm.
 
-It scales well, fast with dense [graphs](graphs.md).
+It scales well, fast with dense [graphs](notes/graphs.md).
 
-It has a [](compiler-optimisation.md#Performance%7Cperformance) of $O_{E\ log\ N}$ with [binary heap](binary-heap.md) and $O_{E\ +\ log\ N}$ with Fibonacci heap.
+It has a [](notes/compiler-optimisation.md#Performance|performance) of $O_{E\ log\ N}$ with [binary heap](notes/binary-heap.md) and $O_{E\ +\ log\ N}$ with Fibonacci heap.
 
 It works like this:
 1. Choose any node.
@@ -22,8 +22,8 @@ It works like this:
 ![](images/prims.png)
 
 ## See also
-- [Minimum Spanning Subtree](minimum-spanning-subtree.md)
-- [Trees](trees.md)
-- [Graphs](graphs.md)
-- [Big O Notation](big-o-notation.md)
-- [Kruskal's](kruskals-algorithm.md)
+- [Minimum Spanning Subtree](notes/minimum-spanning-subtree.md)
+- [Trees](notes/trees.md)
+- [Graphs](notes/graphs.md)
+- [Big O Notation](notes/big-o-notation.md)
+- [Kruskal's](notes/kruskals-algorithm.md)
