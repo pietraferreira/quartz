@@ -13,7 +13,6 @@ created: 2022-06-16
 ## Grammatically 
 $S \rightarrow A | B$
 
-
 $A \rightarrow A\ x | y$
 
 $B \rightarrow z$
@@ -28,13 +27,17 @@ Apply successive productions.
 Consider parsing the sentence **yz** using this grammar:
 
 S $\rightarrow$ AB
+
 A $\rightarrow$ A x|y
+
 B $\rightarrow$ z
 
 We use three productions:
 
 S $\rightarrow$ AB  (giving sentential form AB)
+
 A $\rightarrow$ y  (giving sentential form yB)
+
 B $\rightarrow$ z  (giving the sentence yz)
 
 This is a **leftmost derivation**.
@@ -42,7 +45,9 @@ This is a **leftmost derivation**.
 We could instead have used:
 
 S $\rightarrow$ AB (giving the sentential form AB)
+
 B $\rightarrow$ z (giving the sentential form Az)
+
 A $\rightarrow$ y (giving the sentential form yz)
 
 This is a **rightmost derivation**.
