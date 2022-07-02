@@ -124,7 +124,7 @@ RISC-V operates primarily as a group of motivated organisations and individuals 
 As of February 2021 there are well over 2,000 people working on RISC-V, representing over 230 organisations.
 
 ### Intellectual Property Policy
-At the core of the RISC-V membership is the [membership agreement](https://riscv.org/wp-content/uploads/2020/03/RISC-V_Membership_Agreement_NFS.pdf).
+At the core of the RISC-V membership is the [membership agreement](https://riscv.org/wp-/notes/uploads/2020/03/RISC-V_Membership_Agreement_NFS.pdf).
 
 ### Code of Conduct and Privacy
 You can find it [here](https://riscv.org/community/community-code-of-conduct/).
@@ -167,9 +167,9 @@ The Technical Steering Committee (TSC) provides leadership to our technical init
 
 The TSC delegates responsibilities to organisational components below it in the hierarchy of groups. In addition, it discusses and decides on strategy, escalations, group and chair and preliminary charter approvals, and extension ratification.
 
-<center><img src="https://courses.edx.org/content/images/courseware/v1/018aa36ba6fcc105a26bf62c7b8307a0/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/technical_organization__1_.png"></center>
-<center><img src="https://courses.edx.org/content/images/courseware/v1/ca6261ee043dbf7127a39665a81feed4/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/technical_organization__2_.png"></center>
-<center><img src="https://courses.edx.org/content/images/courseware/v1/a72d7d1c9a596f5e327dab9c3c640b54/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/technical_organization__3_.png"></center>
+<center><img src="https://courses.edx.org//notes/images/courseware/v1/018aa36ba6fcc105a26bf62c7b8307a0/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/technical_organization__1_.png"></center>
+<center><img src="https://courses.edx.org//notes/images/courseware/v1/ca6261ee043dbf7127a39665a81feed4/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/technical_organization__2_.png"></center>
+<center><img src="https://courses.edx.org//notes/images/courseware/v1/a72d7d1c9a596f5e327dab9c3c640b54/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/technical_organization__3_.png"></center>
 
 ### ISA and Horizontal Committees and Subcommittees
 Committees are responsible for directing work within the scope of their charter. ISA committees - “priv” and “unpriv”, referring to the Privileged and Unprivileged RISC-V specification volumes - direct the creation of specific extensions. **Horizontal committees** - including Software, Security, ISA Infrastructure, SOC Infrastructure, Implementation, and others - are responsible for directing specification work in their areas other than ISA extensions. _All ISA extensions must be signed off by each of the Horizontal committees prior to ratification_.
@@ -196,7 +196,7 @@ While the above roles are the only permanent staff in the technical organisation
 The Board is the primary decision-making body for RISC-V. As such, it has representation from all members. Premier members each have a seat at the table, while Strategic, Community Organisation, and even Community Individual level members elect representatives each year.
 
 #### Marketing & Visibility
-RISC-V has a Director of Marketing who is responsible for driving the visibility of RISC-V worldwide. Working with the Marketing Committee, a member group that provides feedback and resources, the Director of Marketing manages all visibility activities, including the main Marketing Committee, Events, Content (including written, video, and in-person content), social media and PR (supported by an outside firm), and developer advocacy activities including online learning, RISC-V Ambassadors, Regional and Industry Alliances, and the quickly-growing RISC-V user community.
+RISC-V has a Director of Marketing who is responsible for driving the visibility of RISC-V worldwide. Working with the Marketing Committee, a member group that provides feedback and resources, the Director of Marketing manages all visibility activities, including the main Marketing Committee, Events, Content (including written, video, and in-person /notes), social media and PR (supported by an outside firm), and developer advocacy activities including online learning, RISC-V Ambassadors, Regional and Industry Alliances, and the quickly-growing RISC-V user community.
 
 #### Operations & Program Management
 Operations include the day-to-day management of member activities - joining RISC-V, onboarding, paying dues, becoming part of the Member Portal, and other member activities - as well as support for all other business functions within RISC-V International.
@@ -258,7 +258,7 @@ Each RISC-V extension goes through several stages on its way to ratification. In
 6. _Ratification Ready_ - The draft specification is sent out for public review, any public comments or questions are addressed, and the Technical Steering Committee is made aware that a vote is required.
 7._Complete_ - The extension is ratified and supported as part of the RISC-V ISA.
 
-<center><img src="https://courses.edx.org/content/images/courseware/v1/e9ec87214f09abf0169226df15e0388d/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Extension_lifecycle_and_milestone_definitions.jpg"></center>
+<center><img src="https://courses.edx.org//notes/images/courseware/v1/e9ec87214f09abf0169226df15e0388d/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Extension_lifecycle_and_milestone_definitions.jpg"></center>
 
 Once an extension has been ratified it is added to either the **Unprivileged** or **Privileged** Specification. Occasionally a specification is created as part of a separate document, with the debug specification being the most common example. However, this is a rare case and usually indicates that the extension is not part of the [ISA](notes/isa.md), but rather a “standard” or “non-ISA specification”. We will now review the Unprivileged and Privileged Specification in greater detail.
 
@@ -270,7 +270,7 @@ The RISC-V [ISA](notes/isa.md) is broken up into two parts:
 
 To understand why the specification is broken up into two different parts, we must first understand a bit about computer architecture and security. Historically, processors used hierarchical protection domains, often called protection rings, to protect data and code from malicious actors.
 
-<center><img src="https://courses.edx.org/content/images/courseware/v1/a747ba9c1697a0bea78672847048eed5/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Privilege_rings_for_the_x86__along_with_their_common_uses.png"></center>
+<center><img src="https://courses.edx.org//notes/images/courseware/v1/a747ba9c1697a0bea78672847048eed5/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Privilege_rings_for_the_x86__along_with_their_common_uses.png"></center>
 The most privileged code runs in “Ring 0” and has access to the entire system. The processor will decide which privileges to grant executing code based on the privilege level. As an example, accessing memory by physical address may be restricted to “Ring 0” such that other rings must reference the virtual address space. Typically the processor can run in only one of the privilege modes at a time and there are special instructions to move between modes. All of these details can change from system to system, however they must follow the rules set out in the specification documents of a given architecture.
 
 RISC-V currently has three privilege levels: **User Mode** (U-mode), **Supervisor Mode** (S-mode), and **Machine Mode** (M-mode). One can think of these as “Ring 2”, “Ring 1”, and “Ring 0” respectively. Other modes like a hypervisor mode (H-mode) will likely be added in the near future. Much like in the figure above, U-mode is for user processes, S-mode is for kernel and/or device drivers, and M-mode is used for bootloader and/or firmware. Each privilege level has access to specific _Control and Status Registers_ (CSRs), and higher privilege levels can access the CSRs of those less privileged levels.
@@ -340,7 +340,7 @@ RISC-V PMP limits the physical addresses accessible by software running on a har
 
 PMP entries are described by an 8-bit configuration register and one 32 (or 64) bit address register. Up to 16 PMP entries are supported. If any PMP entries are implemented, then all PMP CSRs must be implemented, but any PMP CSR fields may be hardwired to zero. PMP CSRs are only accessible to M-mode.
 
-<center><img src="https://courses.edx.org/content/images/courseware/v1/2bc57c54106ee5b9e0462510442bf21c/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Example_illustrating_how_to_set_up_two_different_contexts__one_untrusted_and_one_with_access_to_Enclave_E1.png"></center>
+<center><img src="https://courses.edx.org//notes/images/courseware/v1/2bc57c54106ee5b9e0462510442bf21c/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Example_illustrating_how_to_set_up_two_different_contexts__one_untrusted_and_one_with_access_to_Enclave_E1.png"></center>
 Source: By Lee, D., Kohlbrenner, D., Shinde, S., Song, D., & Asanovic, K. (2019). Keystone: A Framework for Architecting TEEs. _CoRR, vol. abs/1907.10119_ [http://arxiv.org/abs/1907.10119](https://arxiv.org/abs/1907.10119).
 
 Here we see an example of how one might set up two different contexts, one untrusted and one with access to “Enclave E1”. In this example an application is run in user context U1. That application only has access to its own memory and the memory inside enclave E1. The memory inside enclave E2 and that located in the “security monitor” (SM) are not available to the user application. In this way, data confidentiality is assured simply by allowing the security monitor (running in M-mode) to change the PMP settings allowing or denying access to memory regions based on the PMP configurations.
@@ -381,7 +381,7 @@ This chapter will be a very high level overview of RISC-V assembly instructions 
 
 RISC-V is a “reduced instruction set” architecture, and as such, there are not many instructions to learn. In this tutorial, we only use 3 instructions: `LA` (load absolute address), `ADDI` (add immediate), and `ECALL`. The `ECALL` instruction is used to make a service request to the execution environment. We will only use two calls in our Hello World app, one to “write” and one to “exit”.
 
-For a full list of instructions you can see the [Unprivileged Specification Chapter 24 "RV32/64G Instruction Set Listings"](https://riscv.org/wp-content/uploads/2019/12/riscv-spec-20191213.pdf#129).  For more information, visit [RISC-V website](https://riscv.org/community/learn/).
+For a full list of instructions you can see the [Unprivileged Specification Chapter 24 "RV32/64G Instruction Set Listings"](https://riscv.org/wp-/notes/uploads/2019/12/riscv-spec-20191213.pdf#129).  For more information, visit [RISC-V website](https://riscv.org/community/learn/).
 
 ### Compiling Required Binaries
 Instructions for compiling required binaries can be found in the _["RISC-V - Getting Started Guide"](https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html)_.

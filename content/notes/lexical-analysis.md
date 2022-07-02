@@ -15,7 +15,7 @@ Examples: integer, variable, addition operator.
 The **lexical analyser** (aka scanner) takes a source file and produces a stream of tokens, error messages and diagnostics.
 
 Here you can see a [parse tree](notes/parse-trees.md) with lexing:
-![](content/images/parse-tree-lexing.png)
+![](/notes/images/parse-tree-lexing.png)
 
 ## Grammars for lexical analysis
 Related to [Formal Languages](notes/formal-languages.md).
