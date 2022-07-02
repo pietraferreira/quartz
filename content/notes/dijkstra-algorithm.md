@@ -17,7 +17,7 @@ The graph must have **non-negative weights** on **all** edges.
 
  
 ## How It Works
-![](notes/images/dijkstra_graph.png)
+![](images/dijkstra_graph.png)
 - Given the graph above, to find the shortest path between A and F, three values need to be initialised:
 
 1. Array of distances from the source node (A) to each node in the graph. The weight of the source node is instantiated as 0 while all the other nodes initial value is infinity.
@@ -62,5 +62,5 @@ We then iterate until we visit all the nodes. The completed table for that graph
 | F            | 0A  | 2A  | 3B  | 6B  | 4B  | 6E  |
 
 ## See also
-- [[graphs|Graphs]]
-- [[floyd-warshall|Floyd-Warshall]]
+- [Graphs](graphs.md)
+- [Floyd-Warshall](floyd-warshall.md)

@@ -14,11 +14,11 @@ Examples: integer, variable, addition operator.
 
 The **lexical analyser** (aka scanner) takes a source file and produces a stream of tokens, error messages and diagnostics.
 
-Here you can see a [[parse-trees|parse tree]] with lexing:
-![](notes/images/parse-tree-lexing.png)
+Here you can see a [parse tree](parse-trees.md) with lexing:
+![](images/parse-tree-lexing.png)
 
 ## Grammars for lexical analysis
-Related to [[formal-languages|Formal Languages]].
+Related to [Formal Languages](formal-languages.md).
 
 Type 3 grammar for **binary numbers**:
 
@@ -39,7 +39,7 @@ Typical tokens:
 | VAR      | the letters V, A, R           | VAR               |
 
 ## Symbol Tables
-They are used throughout the [[compilers|compiler]] to build information about symbols:
+They are used throughout the [compiler](compilers.md) to build information about symbols:
 
 ```c
 struct symbtab

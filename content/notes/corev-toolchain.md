@@ -49,5 +49,5 @@ source "/home/pietraferreira/corev/pulp-sdk/configs/pulp-open-cv32e40p.sh"
 
 ## Resources
 - [Docs](https://core-v-docs-verif-strat.readthedocs.io/en/latest/intro.html)
-- [[assembly-test-example-corev|Assembly Test Example]]
-- [[corev-relocations|CORE-V Relocations]]
+- [Assembly Test Example](work/assembly-test-example-corev.md)
+- [CORE-V Relocations](work/corev-relocations.md)

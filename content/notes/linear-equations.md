@@ -85,4 +85,4 @@ $$ \begin{pmatrix}
 Try all possible pivots, choosing the one which will leave the array sparset. 
 
 ## See Also
-- [[algorithms-and-data-structure#Mathematical Algorithms|Mathematical Algorithms]]
+- [](algorithms-and-data-structure.md#Mathematical%20Algorithms%7CMathematical%20Algorithms)

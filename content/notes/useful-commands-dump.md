@@ -38,7 +38,7 @@ git config --global http.postBuffer 157286400
 | `r`                          | To run the program.                                              |
 
 The docs are [here](https://www.gnu.org/software/gdb/documentation/).
-More info on [[gdb|GDB]].
+More info on [GDB](gdb.md).
 
 ## The dump of dumps
 
@@ -89,4 +89,9 @@ llvm-objdump -d sim-test.exe
 
 ```bash
 bsc-elf-gdb sim-test.exe -ex "target remote | embdebug --soname sysc-bsc --vcd=trace-do --debug=0x00070000 --clk-mhz=1 --sim-cycles=10000 --stdin" -ex load -ex c -ex detach -ex quit 2>&1 | tee sim-test.log
+```
+
+## Website URL Fix
+```bash
+grep -rl 'images' . | sort | uniq | xargs perl -e "s/assets/assets\/engineer-training/" -pi
 ```
