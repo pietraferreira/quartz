@@ -92,7 +92,7 @@ partition (int *a, int lo, int hi)
 ```
 
 ### As a tree-sort
-![](images/quicksort-tree.png)
+![](content/images/quicksort-tree.png)
 
 ## Code Example
 ```c
