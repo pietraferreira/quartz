@@ -9,10 +9,10 @@ created: 2022-06-05
 ---
 # Compiler Toolchains
 ---
-- [[gcc|GCC Toolchain]]
-- [[llvm|LLVM Toolchain]]
-- [[riscv-toolchain|RISC-V Toolchain]]
-- [[corev-toolchain|CORE-V Toolchain]]
+- [GCC Toolchain](gcc.md)
+- [LLVM Toolchain](llvm.md)
+- [RISC-V Toolchain](riscv-toolchain.md)
+- [CORE-V Toolchain](corev-toolchain.md)
 
 ## What is a Compiler Toolchain?
 A compiler toolchain is a set of tools, supporting libraries, and header files that help build a program from source to an executable that can run on a machine.
@@ -99,7 +99,7 @@ The most interesting ones are the runtime support files viz. `crt1.o`, `crti.o`,
 
 So, essentially, **a compiler toolchain is a set of tools, supporting libraries, and header files that help build a program from source to an executable that can run on a machine**. 
 
-Note that a compiler toolchain is necessary to build executables, but it is not sufficient. What is missing from the toolchain to have 'everything' that is needed to build executable programs is the [[sysroot]].
+Note that a compiler toolchain is necessary to build executables, but it is not sufficient. What is missing from the toolchain to have 'everything' that is needed to build executable programs is the [sysroot](sysroot.md).
 
 ## The Compiler Toolchain
 Apart from sysroot, a compiler toolchain contains various other binaries to help in the compilation process. In some cases, the compiler itself comes as a part of the toolchain. The following is a list of items packaged with the toolchain.

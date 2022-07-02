@@ -8,7 +8,7 @@ tags:
 
 Where I dump all the useful Obsidian commands I'd hope to remember.
 
-[Here](https://morioh.netlify.app/) is the website and everything on how to run it [[obsidian-website|here]].
+[Here](https://morioh.netlify.app/) is the website and everything on how to run it [here](obsidian-website).
 
 ## Essentials
 ### Some basics
@@ -57,8 +57,8 @@ _Multiple cursors_ — `option-click`
 
 ## Community Plugins
 
-- [[admonition-cheatsheet|Admonition Cheatsheet]]
-- [[ozans-image-editor|Ozan's Image Editor]]
+- [Admonition Cheatsheet](admonition-cheatsheet.md)
+- [Ozan's Image Editor](ozans-image-editor.md)
 
 ### Hotkeys++
 

@@ -34,4 +34,4 @@ All **Type 2** grammars can be parsed, but there are some subsets, commonly used
 Although **Type 3** grammars are not powerful enough for complete languages, they are widely used to define the lexical elements of a programming language. They can be parsed very efficiently, in particular by a **finite state machine**.
 
 ## See Also
-- [[formal-languages|Formal Languages]]
+- [Formal Languages](formal-languages.md)

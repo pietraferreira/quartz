@@ -13,4 +13,4 @@ A realisation of an ISA, such as a central processing unit (CPU), is called an i
 
 Some ISAs are x86, ARM, MIPS, PowerPC, or SPARC.
 
-[[riscv|RISC-V]] is an example of an ISA and it is provided under open source licenses that do not require fees to use.
+[RISC-V](riscv.md) is an example of an ISA and it is provided under open source licenses that do not require fees to use.
