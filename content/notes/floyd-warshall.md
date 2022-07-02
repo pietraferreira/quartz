@@ -65,6 +65,7 @@ dist[A][A] > dist[A][A] + dist[A][A]
 ```
 
 This statement is **false**. Therefore, `dist` does not get updated:
+
 ![](/notes/images/fw-graph4.png)
 
 If k = A, i = A and j = B then there is not yet a value for A->B. It is assumed to be infinite:
@@ -75,6 +76,7 @@ dist[A][B] > dist[A][A] + dist[A][B]
 ```
 
 This statement is **false**. Therefore, `dist` does not get updated.
+
 ![](/notes/images/fw-graph4.png)
 
 If k = A, i = B and j = C:
@@ -85,6 +87,7 @@ dist[B][C] > dist[B][A] + dist[A][C]
 ```
 
 This statement is **true**. Therefore, `dist` gets updated:
+
 ![](/notes/images/fw-graph5.png)
 
 ## See also
