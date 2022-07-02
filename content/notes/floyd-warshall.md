@@ -88,6 +88,6 @@ This statement is **true**. Therefore, `dist` gets updated:
 ![](images/fw-graph5.png)
 
 ## See also
-- [Dijkstra](dijkstra-algorithm.md)
-- [Graphs](graphs.md)
-- [Big O Notation](big-o-notation.md)
+- [Dijkstra](notes/dijkstra-algorithm.md)
+- [Graphs](notes/graphs.md)
+- [Big O Notation](notes/big-o-notation.md)

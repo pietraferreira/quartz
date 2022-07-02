@@ -8,7 +8,7 @@ created: 2022-06-06
 ---
 # Binary Heap
 ---
-A binary heap is a form of [binary tree](binary-trees.md), with two additional properties:
+A binary heap is a form of [binary tree](notes/binary-trees.md), with two additional properties:
 
 - It is a **complete** binary tree, meaning that all levels of the tree (except possibly the last one) are full.
     - If not complete, the last level is filled from left to right.
@@ -28,4 +28,4 @@ Use an array with **N** elements.
 ![](images/binary-heap-representation.png)
 
 ## Reference
-- [Heapsort](heapsort.md)
+- [Heapsort](notes/heapsort.md)

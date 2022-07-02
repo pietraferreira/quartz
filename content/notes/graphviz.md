@@ -9,7 +9,7 @@ created: 2022-06-06
 ---
 # Graphviz
 ---
-Graphiz is a package of tools supporting the DOT [graph](graphs.md) description language.
+Graphiz is a package of tools supporting the DOT [graph](notes/graphs.md) description language.
 
 **DOT** is a textual representation of arbitrary graphs (suffix `.dot` or preferably `.gv`).
 
@@ -22,4 +22,4 @@ sudo apt install graphviz
 Official website [here](https://graphviz.org/).
 
 ## See also
-- [Graphs](graphs.md)
+- [Graphs](notes/graphs.md)

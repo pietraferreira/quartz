@@ -62,5 +62,5 @@ We then iterate until we visit all the nodes. The completed table for that graph
 | F            | 0A  | 2A  | 3B  | 6B  | 4B  | 6E  |
 
 ## See also
-- [Graphs](graphs.md)
-- [Floyd-Warshall](floyd-warshall.md)
+- [Graphs](notes/graphs.md)
+- [Floyd-Warshall](notes/floyd-warshall.md)

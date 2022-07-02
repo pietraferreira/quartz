@@ -26,4 +26,4 @@ $int_1 \rightarrow$ dig         { $int_1$.val = dig.val }
 ![](images/decorated-parse-tree.png)
 
 ## See Also
-- [Formal Languages](formal-languages.md)
+- [Formal Languages](notes/formal-languages.md)

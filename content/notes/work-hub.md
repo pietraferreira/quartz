@@ -16,17 +16,17 @@ Everything work related, mostly organised by project.
 
 ## Projects
 ### Engineer Training
-- [Hub](engineer-training-hub.md)
+- [Hub](notes/engineer-training-hub.md)
 
 ### RISC-V
-- [Notes](riscv.md)
+- [Notes](notes/riscv.md)
 
 #### Relocation Handling Prototype (CORE-V)
 * [Notes](work/relocation-prototype/relocation-prototype.md)
 * [Reports](work/relocation-prototype/relocation-prototype-reports/relocation-prototype-reports-hub.md)
 
 #### CORE-V
-- [CORE-V Toolchain](corev-toolchain.md)
+- [CORE-V Toolchain](notes/corev-toolchain.md)
 - [Assembly Test Example](work/assembly-test-example-corev.md)
 
 ##### Videos
@@ -41,11 +41,11 @@ Everything work related, mostly organised by project.
 - [DejaGNU documentation notes](work/dejagnu-documentation-notes.md)
 
 ### LLVM
-- [LLVM Toolchain](llvm.md)
-- [How to Write a LLVM backend](how-to-write-a-llvm-backend.md)
+- [LLVM Toolchain](notes/llvm.md)
+- [How to Write a LLVM backend](notes/how-to-write-a-llvm-backend.md)
 
 ### GCC
-- [GCC Toolchain](gcc.md)
+- [GCC Toolchain](notes/gcc.md)
 
 ## Talks
 ### 2020 Meetup

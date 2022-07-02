@@ -39,7 +39,7 @@ We can also use **alloca** (allocated on the stack).
 ```
 
 ## Associative arrays
-- Also known as **addressable arrays** or [maps](sets-and-maps.md).
+- Also known as **addressable arrays** or [maps](notes/sets-and-maps.md).
 
 Ordinary arrays/vectors when given an index into the array output a value whereas **associative arrays** when given a value outputs an index.
 

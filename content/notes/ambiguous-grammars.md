@@ -8,7 +8,7 @@ created: 2022-06-16
 ---
 # Ambiguous Grammars
 ---
-An ambiguous grammar permits more than one parse [tree](trees.md) for some sentences. For example, parsing **xxx** with the following grammar:
+An ambiguous grammar permits more than one parse [tree](notes/trees.md) for some sentences. For example, parsing **xxx** with the following grammar:
 
 S $\rightarrow$ AA
 A $\rightarrow$ x | xx
@@ -26,4 +26,4 @@ term $\rightarrow$ term factorop integer | integer
 factorop $\rightarrow$ * | /
 
 ## See Also
-- [Formal Languages](formal-languages.md)
+- [Formal Languages](notes/formal-languages.md)

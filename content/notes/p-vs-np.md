@@ -25,4 +25,4 @@ Build by (infinitely) many processors in a tree. If $2^n$ possible answers, tree
 ![](images/p-np.png)
 
 ## See also
-- [Problems](cs-problems.md)
+- [Problems](notes/cs-problems.md)
