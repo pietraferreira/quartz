@@ -32,7 +32,7 @@ A compiler is a system that converts a program from one language to another. In 
 - [Code Generation](notes/code-generation.md)
 
 ## Structure of a Compiler
-![](content/images/compiler-structure.png)
+![](notes/images/compiler-structure.png)
 
 ## Languages for Writing Compilers
 Possible approaches:
