@@ -35,7 +35,7 @@ Everything work related, mostly organised by project.
 - [GNU toolchain for CORE-V](https://www.youtube.com/watch?v=3f3VuSzslxU&t=1418s) (Jessica talks about relocation handling [here](https://youtu.be/3f3VuSzslxU?t=1192))
 
 ### Tiger
-- [Introduction to the project](content/images/tiger.pdf)
+- [Introduction to the project](/notes/images/tiger.pdf)
 
 ### DejaGNU
 - [DejaGNU documentation notes](work/dejagnu-documentation-notes.md)
@@ -50,7 +50,7 @@ Everything work related, mostly organised by project.
 ## Talks
 ### 2020 Meetup
 - [Script](work/meetup-2020-corev-script.md)
-- [Slides](content/images/meetup-2020-corev-presentation-v11.odp)
+- [Slides](/notes/images/meetup-2020-corev-presentation-v11.odp)
 
 ### Facial Recognition - Coral Board
 - [Script](work/facial-recognition-board-talk-script.md)

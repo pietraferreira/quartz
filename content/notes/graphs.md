@@ -12,7 +12,7 @@ A graph consists of:
 - A set of fixed objects, **nodes**.
 - A set of **edges**, which may have arrows and have values attached.
 
-![](content/images/graph.png)
+![](/notes/images/graph.png)
 
 ## Terminology
 - An **undirected** graph has no arrows on edges.
