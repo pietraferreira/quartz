@@ -21,4 +21,4 @@ Most general is the **three address instruction set**:
 Modern RISC designs are **three address instruction sets**. One address instruction sets are found in DSPs (Digital Signal Processors).
 
 ## See Also
-- [Compilers](compilers.md)
+- [Compilers](notes/compilers.md)

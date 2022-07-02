@@ -16,9 +16,9 @@ For example:
 - Integers (buckets on digits), a.k.a. [_radix_ sort](https://en.wikipedia.org/wiki/Radix_sort).
 - Words (buckets on letters).
 
-The [](compiler-optimisation.md#Performance%7Cperformance) for bucket for on a given number of digit is $O_{_(n)}$ but also $O_(d)$ in the number of digits.
+The [](notes/compiler-optimisation.md#Performance|performance) for bucket for on a given number of digit is $O_{_(n)}$ but also $O_(d)$ in the number of digits.
 
-It is [](sorting.md#Stability%7Cstable).
+It is [](notes/sorting.md#Stability|stable).
 
 ## Example
 ```bash

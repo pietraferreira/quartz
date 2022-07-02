@@ -57,8 +57,8 @@ _Multiple cursors_ — `option-click`
 
 ## Community Plugins
 
-- [Admonition Cheatsheet](admonition-cheatsheet.md)
-- [Ozan's Image Editor](ozans-image-editor.md)
+- [Admonition Cheatsheet](notes/admonition-cheatsheet.md)
+- [Ozan's Image Editor](notes/ozans-image-editor.md)
 
 ### Hotkeys++
 

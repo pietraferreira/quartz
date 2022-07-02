@@ -8,17 +8,17 @@ created: 2022-06-05
 ---
 # LLVM 
 ---
-The LLVM Project is a collection of modular and reusable [compiler](compilers.md) and toolchain technologies. Prebuilt binaries of the LLVM toolchain can be downloaded from the [LLVM Download Page](https://releases.llvm.org/download.html). The toolchain can also be built from source by following the instructions from their [documentation page](https://llvm.org/docs/). The toolchain contains the following top-level directories:
+The LLVM Project is a collection of modular and reusable [compiler](notes/compilers.md) and toolchain technologies. Prebuilt binaries of the LLVM toolchain can be downloaded from the [LLVM Download Page](https://releases.llvm.org/download.html). The toolchain can also be built from source by following the instructions from their [documentation page](https://llvm.org/docs/). The toolchain contains the following top-level directories:
 
 ```bash
 bin include lib libexec share
 ```
 
-The `bin` folder contains all the executable binaries, like the clang [compiler](compilers.md) and a set of other useful tools such as clang-rename, clang-refactor, etc.
+The `bin` folder contains all the executable binaries, like the clang [compiler](notes/compilers.md) and a set of other useful tools such as clang-rename, clang-refactor, etc.
 
-The `include` folder contains a set of header files that are included during compilation. For example, the C++ header files like iostream, etc. Notice that the C header files like `stdio.h` are not supplied with the toolchain because they are part of the [sysroot](sysroot.md). It also contains header files that are used when using the llvm libraries to build tools.
+The `include` folder contains a set of header files that are included during compilation. For example, the C++ header files like iostream, etc. Notice that the C header files like `stdio.h` are not supplied with the toolchain because they are part of the [sysroot](notes/sysroot.md). It also contains header files that are used when using the llvm libraries to build tools.
 
-The `lib` folder contains libraries like libc++, libc++abi, etc. These libraries may be used by the clang [compiler](compilers.md) during the compilation process or can be used as a reusable set of libraries.
+The `lib` folder contains libraries like libc++, libc++abi, etc. These libraries may be used by the clang [compiler](notes/compilers.md) during the compilation process or can be used as a reusable set of libraries.
 
 The `libexec` folder contains two Python scripts that are only relevant for using the clang static analyser.
 
@@ -81,7 +81,7 @@ unsigned add2(unsigned a, unsigned b) {
 }
 ```
 
-As you can see, the instructions (in LLVM IR) are in [three address form](three-address-code.md), which means they take some number of inputs and produce a result in a different register.
+As you can see, the instructions (in LLVM IR) are in [three address form](notes/three-address-code.md), which means they take some number of inputs and produce a result in a different register.
 
 It also does not use a fixed set of named registers, it uses an infinite set of temporaries named with a `%` character.
 
@@ -191,7 +191,7 @@ Any 'last-minute' peephole optimisations for the final machine code can be appli
 For static compilation, the end result is an assembly code file. For JIT compilation, the opcodes of the machine instructions are written into memory.
 
 ## LLVM vs GCC in structure
-Related to [gcc](gcc.md).
+Related to [gcc](notes/gcc.md).
 
 ![](images/gcc-vs-llvm-structure.png)
 
@@ -207,4 +207,4 @@ Related to [gcc](gcc.md).
 -   [The llvm-dev Archives](https://lists.llvm.org/pipermail/llvm-dev/)
 
 ## Resources
-- [How to Write a LLVM Backend](how-to-write-a-llvm-backend.md)
+- [How to Write a LLVM Backend](notes/how-to-write-a-llvm-backend.md)
