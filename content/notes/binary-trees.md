@@ -13,7 +13,7 @@ A binary tree is a set of _nodes_ linked into a simple structure. Every node has
 - Each node has **data**, a **left pointer** and a **right pointer**.
 - Each **pointer** can point to one other node (or be NULL).
 
-![](images/binary-tree.png)
+![](content/images/binary-tree.png)
 
 ## Nomenclature
 - A node is the **parent** of any node to which it pointer.
@@ -22,13 +22,13 @@ A binary tree is a set of _nodes_ linked into a simple structure. Every node has
 - A node is the **root** of the tree if it has **no parent**.
 - A node is a **leaf** is it has **no children**.
 
-![](images/binary-tree-example.png)
+![](content/images/binary-tree-example.png)
 
 ## Searching
 ```bash
 23 57 62 123 159 194 215 274 287 384
 ```
-![](images/binary-tree-search.png)
+![](content/images/binary-tree-search.png)
 
 ### In code
 ```c
@@ -82,4 +82,4 @@ All traversals can be right to left instead.
 - R->L preorder is the inverse of L->R postorder.
 - R->L postorder is the inverse of L->R preorder.
 
-![](images/binary-tree-expr.png)
+![](content/images/binary-tree-expr.png)

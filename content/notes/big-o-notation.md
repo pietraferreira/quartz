@@ -19,7 +19,7 @@ Size must be a quantitative measure of the scale of the problem. For example:
 An everyday example would be `n` people shaking hands in a room where the **number of handshakes** is $O(n^2)$ and **time to shake hands** is $O(n)$.
 
 ## Performance Families
-![](images/5067FFC5-4A77-4CF9-A02B-8E0619F149B9.jpeg)
+![](content/images/5067FFC5-4A77-4CF9-A02B-8E0619F149B9.jpeg)
 
 Classifications ordered by **decreasing** efficiency:
 - Constant: O(1)

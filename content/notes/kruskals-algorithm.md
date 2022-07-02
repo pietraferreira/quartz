@@ -17,7 +17,7 @@ The way it works:
 2. Choose the next shortest edge, ensure it does not form a cycle in the subtree formed so far. If a cycle is formed, discard the edge.
 3. Repeat step 2 until there are $(N-1)$ edges in the subtree.
 
-![](images/kruskals.png)
+![](content/images/kruskals.png)
 
 ## See also
 - [Minimum Spanning Subtree](notes/minimum-spanning-subtree.md)

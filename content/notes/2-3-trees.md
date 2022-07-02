@@ -16,4 +16,4 @@ Leaf nodes have no children and one or two data elements.
 
 **2-3 trees are required to be balanced**.
 
-![](images/2-3-tree.png)
+![](content/images/2-3-tree.png)
