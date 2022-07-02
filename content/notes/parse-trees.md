@@ -8,7 +8,7 @@ created: 2022-06-16
 ---
 # Parse Trees
 ---
-![](content/images/parse-tree-example.png)
+![](/notes/images/parse-tree-example.png)
 
 ## Grammatically 
 $S \rightarrow A | B$
@@ -19,7 +19,7 @@ $B \rightarrow z$
 
 - Parse tree for *yxxz*:
 
-![](content/images/parse-tree.png)
+![](/notes/images/parse-tree.png)
 
 ### Parsing Sentences
 Apply successive productions.

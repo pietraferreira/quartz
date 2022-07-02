@@ -22,7 +22,7 @@ Build by (infinitely) many processors in a tree. If $2^n$ possible answers, tree
 - $P$ $\subseteq$ $NP$
 - $NP$ $\neq$ $P$ has not been proven yet, but widely believed to be true.
 
-![](content/images/p-np.png)
+![](/notes/images/p-np.png)
 
 ## See also
 - [Problems](notes/cs-problems.md)

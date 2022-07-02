@@ -6,7 +6,7 @@ tags:
 ---
 # Brunel - Computer Science Hub
 
-<center><img src="http://content/images.stickpng.com/images/584fce586a5ae41a83ddee93.png" width=60% height=60%></center>
+<center><img src="http:///notes/images.stickpng.com/images/584fce586a5ae41a83ddee93.png" width=60% height=60%></center>
 
 Here you can find everything related to my university course.
 
