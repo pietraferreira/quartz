@@ -13,6 +13,7 @@ created: 2022-06-16
 ## Grammatically 
 $S \rightarrow A | B$
 
+
 $A \rightarrow A\ x | y$
 
 $B \rightarrow z$
