@@ -29,7 +29,7 @@ Front end, optimiser and back end (as most C compilers).
 
 - Front end: parses source code, checking it for errors and builds a language-specific Abstract Syntax Tree (AST) to represent the input code. The AST is optionally converted to a new representation for optimisation, and the optimiser and back end are run on the code.
 
-![](images/three-phase-compiler.png)
+![](content/images/three-phase-compiler.png)
 
 - Optimiser: responsible for transforming the code to improve running time, for example by eliminating redundant computations, and it is usually more of less independent of language and target.
 
@@ -37,7 +37,7 @@ Front end, optimiser and back end (as most C compilers).
 
 The most important win of this classical design comes when a compiler decides to support multiple source languages or target architectures. If the compiler uses a common code representation in its optimiser, then a front end can be written for any language that can compile to it, and a back end can be written for any target that can compile from it (as seen bellow).
 
-![](images/retargetability.png)
+![](content/images/retargetability.png)
 
 ## LLVM Intermediate Representation (IR)
 Is the form LLVm uses to represent code in the compiler. It is designed to host mid-level analyses and transformations that can be found in the optimisation phase.
@@ -94,7 +94,7 @@ Each shared component needs to be able to reason about target specific propertie
 
 LLVM's solution to this is for each target to provide a **target description** in a declarative domain-specific language (a set of `.td` files) processed by the **tblgen** tool. Here is the build process for the x86 target:
 
-![](images/x86-target-definition-example.png)
+![](content/images/x86-target-definition-example.png)
 
 The different subsystems supported by the `.td` files allow target authors to build up the different pieces of their target. For example, the x86 back end defines a register class that holds all of its 32-bit registers name "GR32", like this:
 
@@ -108,14 +108,14 @@ The language used in the `.td` files are Target(Hardware) Description Language t
 
 In frontend, compiler development tools provide the "ParseGenerator" for compiler development; in backend they provide the "Machine Code Generator" for development, as you can see below:
 
-![](images/front-tablegen-flow.png)
+![](content/images/front-tablegen-flow.png)
 
-![](imagesllvm-tablegen-flow.png)
+![](content/imagesllvm-tablegen-flow.png)
 
 ## Code Generation Sequence
 From tricore_llvm.pdf:
 
-![](images/llvm-code-generation-sequence.png)
+![](content/images/llvm-code-generation-sequence.png)
 
 LLVM is a Static Single Assignment (SSA) based representation. LLVM provides an infinite virtual registers which can hold values of primitive type (integral, floating point, or pointer values). So, every operand can be saved in different virtual register in llvm SSA representation. Comment is “;” in llvm representation. Following is the llvm SSA instructions:
 
@@ -193,7 +193,7 @@ For static compilation, the end result is an assembly code file. For JIT compila
 ## LLVM vs GCC in structure
 Related to [gcc](notes/gcc.md).
 
-![](images/gcc-vs-llvm-structure.png)
+![](content/images/gcc-vs-llvm-structure.png)
 
 ## Online resources
 -   [LLVM Compiler Infrastructure documentation](https://llvm.org/docs/)

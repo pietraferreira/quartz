@@ -24,7 +24,7 @@ One grammar may be easier to parse than the other.
 Note however that they have very different parse [trees](notes/trees.md), and if the parse tree reflects the semantic structure for the language then the semantic information is lost.
 
 Parse tree for yxx:
-![](images/parse-tree-leftmost-rightmost.png)
+![](content/images/parse-tree-leftmost-rightmost.png)
 
 ## See Also
 - [Formal Languages](notes/formal-languages.md)

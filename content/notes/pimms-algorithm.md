@@ -19,7 +19,7 @@ It works like this:
 2. Choose nearest node that is not included in the spanning subtree formed so far.
 3. Repeat step 2 until all nodes are included in the subtree.
 
-![](images/prims.png)
+![](content/images/prims.png)
 
 ## See also
 - [Minimum Spanning Subtree](notes/minimum-spanning-subtree.md)

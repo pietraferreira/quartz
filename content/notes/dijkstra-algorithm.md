@@ -17,7 +17,7 @@ The graph must have **non-negative weights** on **all** edges.
 
  
 ## How It Works
-![](images/dijkstra_graph.png)
+![](content/images/dijkstra_graph.png)
 - Given the graph above, to find the shortest path between A and F, three values need to be initialised:
 
 1. Array of distances from the source node (A) to each node in the graph. The weight of the source node is instantiated as 0 while all the other nodes initial value is infinity.
