@@ -73,8 +73,8 @@ RISC-V defines a standard interface for external debugging, this includes access
 ## References
 - [Cornell University, CS312 Lecture 26, Debugging Techniques](https://www.cs.cornell.edu/courses/cs312/2006fa/lectures/lec26.html)
 - [Debugging with GDB](https://www.sourceware.org/gdb/current/onlinedocs/gdb.html)
-- [Tim Newsome - RISC-V External Debug (aka JTAG debugging)](https://riscv.org/wp-/notes/uploads/2016/01/Tues1030-RISC-V-External-Debug.pdf)
-- [Tim Newsome and Megan Wachs - RISC-V External Debug Support Version 0.13.2](https://riscv.org/wp-/notes/uploads/2019/03/riscv-debug-release.pdf)
+- [Tim Newsome - RISC-V External Debug (aka JTAG debugging)](https://riscv.org/wp-content/uploads/2016/01/Tues1030-RISC-V-External-Debug.pdf)
+- [Tim Newsome and Megan Wachs - RISC-V External Debug Support Version 0.13.2](https://riscv.org/wp-content/uploads/2019/03/riscv-debug-release.pdf)
 - [Five EmbedDev - An Embedded RISC-V Blog](https://five-embeddev.com/riscv-debug-spec/latest/introduction.html#sec:intro)
 - [University of San Francisco - Programming "By Contract"](https://www.cs.usfca.edu/~parrt/course/601/lectures/programming.by.contract.html)
 - [Debugging With Gdb](https://github.com/riscv/riscv-isa-sim#debugging-with-gdb)
