@@ -32,7 +32,7 @@ A compiler is a system that converts a program from one language to another. In 
 - [Code Generation](notes/code-generation.md)
 
 ## Structure of a Compiler
-![](/notes/images/compiler-structure.png)
+![](notes/images/compiler-structure.png)
 
 ## Languages for Writing Compilers
 Possible approaches:
@@ -51,5 +51,5 @@ Increasingly mainstream compilers use the **second** approach, with C++ now the 
 ## Related Notes
 - [Compiler Toolchains](notes/compiler-toolchains.md)
 - [Instruction Set Semantics](notes/instruction-set-semantics.md)
-- [](notes/llvm.md#Online%20resources|Lots%20of%20Online%20Resources)
+- [Online Resources - LLVM](notes/llvm.md#Online%20resources|Lots%20of%20Online%20Resources)
 - [Writing a C compiler](https://norasandler.com/2017/11/29/Write-a-Compiler.html)

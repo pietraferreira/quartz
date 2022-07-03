@@ -14,12 +14,12 @@ The majority of configuration can be found under `data/config.yaml`. An annotate
 # The name to display in the footer
 name: Jacky Zhao
 
-# whether to globally show the table of /notess on each page
+# whether to globally show the table of contents on each page
 # this can be turned off on a per-page basis by adding this to the
 # front-matter of that note
 enableToc: true
 
-# whether to by-default open or close the table of /notess on each page
+# whether to by-default open or close the table of contents on each page
 openToc: false
 
 # whether to display on-hover link preview cards
@@ -32,7 +32,7 @@ enableCodeBlockTitle: true
 enableLatex: true
 
 # whether to enable single-page-app style rendering
-# this prevents flahses of unstyled /notes and overall improves
+# this prevents flahses of unstyled content and overall improves
 # smoothness of quartz. More info in issue #109 on GitHub
 enableSPA: true
 
@@ -74,7 +74,7 @@ To add code block titles with Quartz:
     ```
 
 2. Add the `title` attribute to the desired [code block
-   fence](https://gohugo.io//notes-management/syntax-highlighting/#highlighting-in-code-fences):
+   fence](https://gohugo.io/content-management/syntax-highlighting/#highlighting-in-code-fences):
 
       ```markdown {linenos=false}
        ```yaml {title="data/config.yaml"}
@@ -178,7 +178,7 @@ paths:
 
 
 ## Styling
-Want to go even more in-depth? You can add custom CSS styling and change existing colours through editing `/notes/images/styles/custom.scss`. If you'd like to target specific parts of the site, you can add ids and classes to the HTML partials in `/layouts/partials`. 
+Want to go even more in-depth? You can add custom CSS styling and change existing colours through editing `notes/images/styles/custom.scss`. If you'd like to target specific parts of the site, you can add ids and classes to the HTML partials in `/layouts/partials`. 
 
 ### Partials
 Partials are what dictate what actually gets rendered to the page. Want to change how pages are styled and structured? You can edit the appropriate layout in `/layouts`.
@@ -194,7 +194,7 @@ Still having problems? Checkout our [FAQ and Troubleshooting guide](notes/troubl
 
 Want to support languages that read from right-to-left (like Arabic)? Hugo (and by proxy, Quartz) supports this natively.
 
-Follow the steps [Hugo provides here](https://gohugo.io//notes-management/multilingual/#configure-languages) and modify your `config.toml`
+Follow the steps [Hugo provides here](https://gohugo.io/content-management/multilingual/#configure-languages) and modify your `config.toml`
 
 For example:
 

@@ -15,7 +15,7 @@ There must exist **no cycles** in the subtree.
 The two most popular algorithms are [Kruskal's](notes/kruskals-algorithm.md) and [Pimm's](notes/pimms-algorithm.md).
 
 A graph **can** have multiple minimum spanning subtrees:
-![](/notes/images/minimum_spanning_subtree.png)
+![](notes/images/minimum_spanning_subtree.png)
 
 ## See also
 - [Trees](notes/trees.md)
