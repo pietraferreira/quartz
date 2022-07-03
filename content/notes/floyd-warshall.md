@@ -35,19 +35,19 @@ for k from 1 to V
 
 ## Example
 Here is a graph with four vertices (V = 4) and `dist[4][4]`:
-![](/notes/images/fw-graph1.png)
+![](notes/images/fw-graph1.png)
 
 ```c
 for each vertex v
   dist[v][v] <- 0
 ```
-![](/notes/images/fw-graph2.png)
+![](notes/images/fw-graph2.png)
 
 ```c
 for each edge (u,v)
   dist[u][v] <- weight(u,v)
 ```
-![](/notes/images/fw-graph3.png)
+![](notes/images/fw-graph3.png)
 
 ```c
 for k from 1 to V
@@ -65,8 +65,7 @@ dist[A][A] > dist[A][A] + dist[A][A]
 ```
 
 This statement is **false**. Therefore, `dist` does not get updated:
-
-![](/notes/images/fw-graph4.png)
+![](notes/images/fw-graph4.png)
 
 If k = A, i = A and j = B then there is not yet a value for A->B. It is assumed to be infinite:
 ```c
@@ -76,8 +75,7 @@ dist[A][B] > dist[A][A] + dist[A][B]
 ```
 
 This statement is **false**. Therefore, `dist` does not get updated.
-
-![](/notes/images/fw-graph4.png)
+![](notes/images/fw-graph4.png)
 
 If k = A, i = B and j = C:
 ```c
@@ -87,8 +85,7 @@ dist[B][C] > dist[B][A] + dist[A][C]
 ```
 
 This statement is **true**. Therefore, `dist` gets updated:
-
-![](/notes/images/fw-graph5.png)
+![](notes/images/fw-graph5.png)
 
 ## See also
 - [Dijkstra](notes/dijkstra-algorithm.md)
