@@ -77,7 +77,7 @@ The default hotkeys are:
 | Hotkey                                                                   | Action                           |
 | ------------------------------------------------------------------------ | -------------------------------- |
 | <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>                    | **Extract selection to new note - first line as filename:** Copy selection into new note with the first line as the file name and replace with a link.                 |
-| <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>                    | **Extract selection to new note - /notes only:** Copy selection into new note, prompt for a file name and replace with a link.                 |
+| <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>                    | **Extract selection to new note - content only:** Copy selection into new note, prompt for a file name and replace with a link.                 |
 
 ```ad-warning
 title: Warning
@@ -85,7 +85,7 @@ title: Warning
 Hotkey defaults are deliberately not set for note splitting commands to avoid unwanted accidents.
 ```
 
-The new note file is created at the root of the vault with the filename as the first line of the selected text and the /notes as the rest of the selected text.
+The new note file is created at the root of the vault with the filename as the first line of the selected text and the content as the rest of the selected text.
 
 Heading characters (`#`) and other illegal characters for filenames are removed including `:`, `\`, `/`.
 

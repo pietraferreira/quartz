@@ -3,6 +3,7 @@ title: "GCC"
 tags:
   - cs-concept
   - compilers
+  - toolchain
 programming-languagues:
 created: 2022-06-05
 ---
@@ -36,3 +37,7 @@ The `share` folder contains the documentation which can be installed as man page
 
 ### Mailing lists
 -   [The Gcc-help Archives](https://gcc.gnu.org/pipermail/gcc-help/)
+
+## See Also
+- [Relocations](notes/relocations.md)
+- [Linker Relaxation](notes/linker-relaxation.md)

@@ -93,5 +93,5 @@ bsc-elf-gdb sim-test.exe -ex "target remote | embdebug --soname sysc-bsc --vcd=t
 
 ## Website URL Fix
 ```bash
-grep -rl 'images' . | sort | uniq | xargs perl -e "s/assets/assets\/engineer-training/" -pi
+grep -rl 'notes/images' . | sort | uniq | xargs perl -e "s/assets/assets\/engineer-training/" -pi
 ```

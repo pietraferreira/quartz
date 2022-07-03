@@ -75,7 +75,7 @@ HOWTO (R_RISCV_CVPCREL_UI12,          /* type */
 * _special_function_: if this field is non-null (it is) then the supplied function is called rather than the normal function, allowing really strange relocations to be accomplished.
   * _bfd_elf_generic_reloc_: in `bfd/elf.c:1307` -> it is for relocations against symbols (`SHT_RELA` etc).
 * _name_: textual name of the relocation type.
-* _partial_inplace_: some formats record a relocation addend in the section /notess rather than with the relocation. For ELF formats this is the distinction between `USE_REL` and `USE_RELA`. The value is false if addends are recorded within the relocations. All relocations for all ELF `USE_RELA` targets should set this field to false.
+* _partial_inplace_: some formats record a relocation addend in the section contents rather than with the relocation. For ELF formats this is the distinction between `USE_REL` and `USE_RELA`. The value is false if addends are recorded within the relocations. All relocations for all ELF `USE_RELA` targets should set this field to false.
 * _src_mask_: it detected the part of the instruction to be used in the relocation sum -> if relocations do have an addend in the relocation, then this field should normally be zero.
 * _dst_mask_: selects which part of the instruction are replaced with a relocated value.
 * _pcrel_offset_: when some formats create PC relative instructions, they leave the value of the pc of the place being relocated in the offset slot of the instruction, so that a PC relative relocation can be made by just adding in an ordinary offset. in the cases that the displacement part of the instruction is empty, this flags signals the fact.

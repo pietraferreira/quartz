@@ -47,26 +47,35 @@ To determine whether a string is contained in a CFG or a CSG, there are many app
 More info [here](https://stackoverflow.com/questions/8236422/context-free-grammars-versus-context-sensitive-grammars).
 ## Derivation
 - Productions (Backus-Naur Form, BNF):
+
 $A \rightarrow B_1, B_2, B_3, ..., B_n$
+
 assign_stmnt $\rightarrow$ variable := expression
+
 assign_stmnt := variable ':=' expression
 
-Sentence symbol at the top of the grammar:
+- Sentence symbol at the top of the grammar:
+
 $S\rightarrow A_1, A_2, A_3, ..., A_n$
 
-Alternative definitions of a symbol:
+- Alternative definitions of a symbol:
+
 $A\rightarrow B_1, B_2, B_3, ..., B_n$
+
 $A\rightarrow C_1, C_2, C_3, ..., C_n$
 
 $A\rightarrow B_1, B_2, B_3, ..., B_n | C_1, C_2, C_3, ..., C_n$
 
-Self-referential (recursive productions):
+- Self-referential (recursive productions):
+
 $A \rightarrow A\ x | y$
 
-Empty production:
+- Empty production:
+
 $A \rightarrow B\ |\ \varepsilon$
 
 ### Another Example
+```
 Terminals: 0 1 2 3 4 5 6 7 8 9 + -
     Nonterminals: list digit
     Productions:
@@ -75,15 +84,18 @@ Terminals: 0 1 2 3 4 5 6 7 8 9 + -
         list → digit
         digit → 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
     Start symbol: list
+```
 
 Watch how we can generate the string 7+4-5 beginning with the start symbol, applying productions, and stopping when no productions can be applied (because only terminals remain).
 
+```
     list → list - digit
          → list - 5
          → list + digit - 5
          → list + 4 - 5
          → digit + 4 - 5
          → 7 + 4 - 5s
+```
 
 ## Recursive Productions
 Recursive productions are defined in terms of themselves:
