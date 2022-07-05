@@ -35,18 +35,3 @@ Where all of my notes live!!! There are no rules here 😎
 
 #### RISC-V
 - [RISC-V](notes/riscv.md)
-
-## Recent notes
-```dataview
-table without ID
-title as "Title", file.mtime as "Modified", file.link as "Link"
-sort file.mtime desc
-LIMIT 5
-```
-
-```dataview
-table without ID
-title as "Title", file.ctime as "Created", file.link as "Link"
-sort file.ctime desc
-LIMIT 5
-```
