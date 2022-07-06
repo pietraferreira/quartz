@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": "plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "FasLock",
+      "FasIcons",
+      "FasTicketSimple",
+      "FarHardDrive",
+      "FarCalendarDays"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraPadding": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    }
+  },
+  "daily": "FarCalendarDays",
+  "goodnotes": "FarHardDrive",
+  "university": "FasBookOpen",
+  "work": "FasComputerMouse",
+  "images": "FarImage",
+  "kanban": "FasClipboardList",
+  "notes": "FasBookOpen",
+  "obsidian-icon-folder": "FasIcons",
+  "templates": "FasTicketSimple",
+  "notes/daily": "FasCalendarDays",
+  "notes/images": "FarImage",
+  "notes/university": "FasSchool",
+  "private": "FasLock"
+}
