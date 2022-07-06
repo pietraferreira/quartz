@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "a15ea82f4f50c0ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "dbb5049bd114b304",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/daily/2022-07-05.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a22d3ab6e5604262",
+    "type": "split",
+    "children": [
+      {
+        "id": "badedcd0ce4cd7cd",
+        "type": "tabs",
+        "dimension": 71.10849056603773,
+        "children": [
+          {
+            "id": "e68bad62b3881e31",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "97d2dae8bb11f51c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "cv_hwlp_uim",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "680ed4df282056a1",
+        "type": "tabs",
+        "dimension": 28.891509433962266,
+        "children": [
+          {
+            "id": "c09cd1ff321ca00e",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "0691cbfc316b0d68",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c46d4d5bb98a6d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff766a5b598df28d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "267f068cc805790a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "d1ba25cf7a5409fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49d5174e758bd86c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/daily/2022-07-05.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fdf1e6a16eab1c52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af32af3ccb1ad071",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/daily/2022-07-05.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "dbb5049bd114b304",
+  "lastOpenFiles": [
+    "notes/daily/2022-07-05.md",
+    "private/work/relocation-prototype/relocation-prototype.md",
+    "notes/work-hub.md",
+    "_index.md",
+    "notes/knowledge-hub.md",
+    "notes/daily/2022-06-02.md",
+    "notes/daily/2022-07-04.md",
+    "notes/daily/2022-05-03.md",
+    "notes/daily/2022-06-23.md",
+    "notes/daily/2022-06-27.md"
+  ]
+}
