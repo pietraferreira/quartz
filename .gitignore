@@ -3,6 +3,8 @@ public
 resources
 .idea
 content/private/work/
+content/.obsidian/
+content/notes/.obsidian/
 content/private/goodnotes/
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
