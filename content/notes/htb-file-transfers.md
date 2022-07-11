@@ -8,6 +8,12 @@ created: 2022-07-06
 ---
 # File Transfers
 ---
+- Netcat ([here](notes/netcat.md))
+- RDP ([here](notes/rdp.md))
+- [File Encryption](notes/file-encryption.md)
+- [Nginx](notes/nginx.md)
+- [Living off the land](notes/lolbins.md)
+
 # Windows
 ## Download Operations
 #### PowerShell Base64 Encode and Decode

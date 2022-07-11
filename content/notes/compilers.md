@@ -18,6 +18,7 @@ A compiler is a system that converts a program from one language to another. In 
 - Provide APIs to be used by other source code introspection and transformation tools.
 - Provide source code instrumentation capabilities for performance analysis, program introspection.
 
+## The Compilers
 - [LLVM](notes/llvm.md)
 - [GCC](notes/gcc.md)
 
@@ -47,6 +48,7 @@ Increasingly mainstream compilers use the **second** approach, with C++ now the 
 
 ## Tools
 - [GDB](notes/gdb.md)
+- [GNU](notes/gnu.md)
 
 ## Related Notes
 - [Compiler Toolchains](notes/compiler-toolchains.md)
