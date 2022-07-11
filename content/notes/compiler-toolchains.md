@@ -9,7 +9,7 @@ created: 2022-06-05
 ---
 # Compiler Toolchains
 ---
-- [GCC Toolchain](notes/gcc.md)
+- [GNU](notes/gnu.md)
 - [LLVM Toolchain](notes/llvm.md)
 - [RISC-V Toolchain](notes/riscv-toolchain.md)
 - [CORE-V Toolchain](notes/corev-toolchain.md)

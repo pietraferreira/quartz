@@ -2,7 +2,7 @@
 title:  "Code Generation"
 tags:
   - compilers
-  - graduate-training
+  - engineer-training
 programming-languagues:
 created: 2022-07-01
 ---
