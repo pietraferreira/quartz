@@ -16,6 +16,7 @@ Various cheatsheets of different application I use and all the help I can get co
 - [iTerm2](notes/iterm2-cheatsheet.md)
 - [Obsidian](notes/obsidian-cheatsheet.md)
 - [Tmux](notes/tmux-cheatsheet.md)
+- [HackTheBox](notes/hackthebox.md)
 
 ## Hacking
 - [x86 CheatSheet](https://trailofbits.github.io/ctf/vulnerabilities/references/X86_Win32_Reverse_Engineering_Cheat_Sheet.pdf)

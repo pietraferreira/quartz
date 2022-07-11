@@ -5,15 +5,15 @@
   } 
 -%>
 <%*
-  let result = title.replace(/-/g, ' ')
-  result = result.charAt(0).toUpperCase() + result.slice(1);
+  result = title.charAt(0).toUpperCase() + title.slice(1);
   tR += "---"
 %>
 title:  <%* tR += "\"" + result + "\"" %>
 tags:
-<% tp.file.cursor(1) %>
+  - daily
 programming-languagues:
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 # <%* tR += result %>
 ---
+<% tp.file.cursor(1) %>
