@@ -28,6 +28,9 @@ Where all of my notes live!!! There are no rules here 😎
 - [Sysroot](notes/sysroot.md)
 - [Compiler Toolchains](notes/compiler-toolchains.md)
 
+### Cybersecurity
+- [HTB Notes](notes/hackthebox.md)
+
 ### Not sure where to put these :)
 - [Source Code Optimisation](notes/source-code-optimisation.md)
 - [Embedded Applications](notes/embedded-applications.md)
