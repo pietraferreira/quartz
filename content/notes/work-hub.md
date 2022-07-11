@@ -41,11 +41,11 @@ Everything work related, mostly organised by project.
 - [DejaGNU documentation notes](work/dejagnu-documentation-notes.md)
 
 ### LLVM
-- [LLVM Toolchain](notes/llvm.md)
+- [LLVM](notes/llvm.md)
 - [How to Write a LLVM backend](notes/how-to-write-a-llvm-backend.md)
 
 ### GCC
-- [GCC Toolchain](notes/gcc.md)
+- [GCC](notes/gcc.md)
 
 ## Talks
 ### 2020 Meetup
@@ -53,23 +53,7 @@ Everything work related, mostly organised by project.
 - [Slides](notes/images/meetup-2020-corev-presentation-v11.odp)
 
 ### Facial Recognition - Coral Board
-- [Script](work/facial-recognition-board-talk-script.md)
+- [Script](notes/facial-recognition-board-talk-script.md)
 
 ### Strode College Talk - About me
-- [Script](work/strode-talk-script.md)
-
-## Meeting Notes
-```dataview
-table without ID
-file.link as "Link", file.ctime as "Created Time"
-from #meeting
-sort file.ctime desc
-```
-
-## All notes
-```dataview
-table without ID
-title as "Title", file.ctime as "Created Time", file.link as "Link"
-from #work and -#report
-sort file.ctime desc
-```
+- [Script](notes/strode-talk-script.md)

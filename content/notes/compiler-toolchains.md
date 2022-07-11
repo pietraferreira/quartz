@@ -10,7 +10,6 @@ created: 2022-06-05
 # Compiler Toolchains
 ---
 - [GNU](notes/gnu.md)
-- [LLVM Toolchain](notes/llvm.md)
 - [RISC-V Toolchain](notes/riscv-toolchain.md)
 - [CORE-V Toolchain](notes/corev-toolchain.md)
 
@@ -116,3 +115,5 @@ Apart from sysroot, a compiler toolchain contains various other binaries to help
 ### Further Reading
 -   [Toolchains](https://elinux.org/Toolchains)
 -   [How Initialisation Functions Are Handled (C runtime)](https://gcc.gnu.org/onlinedocs/gccint/Initialization.html)
+- [LLVM](notes/llvm.md)
+- [GCC](notes/gcc.md)
