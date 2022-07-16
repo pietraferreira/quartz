@@ -31,6 +31,9 @@ Where all of my notes live!!! There are no rules here 😎
 ### Cybersecurity
 - [HTB Notes](notes/hackthebox.md)
 
+### Nand2Tetris
+- [00 - Introduction](notes/00-intro-nand2tetris.md)
+
 ### Not sure where to put these :)
 - [Source Code Optimisation](notes/source-code-optimisation.md)
 - [Embedded Applications](notes/embedded-applications.md)
