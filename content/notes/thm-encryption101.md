@@ -1,15 +1,13 @@
 ---
-title:  "2022-07-16"
+title:  "TryHackMe - Encryption 101"
 tags:
-  - daily
-  - tryhackme
-  - cryptography
+  - thm
+  - encryption
+  - crypto
 programming-languagues:
-created: 2022-07-16
+created: 2022-07-17
 ---
-# 2022-07-16
----
-## Encryption - Crypto 101
+# Encryption - Crypto 101
 **Ciphertext** - The result of encrypting a plain text, encrypted data
 
 **Cipher** - A method of encrypting or decrypting data. Modern ciphers are cryptographic, but there are many non cryptographic ciphers like Caesar.
