@@ -16,3 +16,7 @@ Everything related to HackTheBox.
 ## Cheatsheets
 - Files Transfers Cheatsheet ([here](notes/htb-file-transfer-cheatsheet.md))
 - NMap Cheatsheet ([here(notes/nmap-cheatsheet.md)])
+
+## Write-ups
+- [Driver](notes/htb-driver.md)
+- [Pandora](notes/htb-pandora.md)
