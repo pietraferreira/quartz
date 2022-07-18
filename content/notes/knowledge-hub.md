@@ -31,6 +31,7 @@ Where all of my notes live!!! There are no rules here 😎
 ### Cybersecurity
 - [HTB Notes](notes/hackthebox.md)
 - [THM - Encryption 101](notes/thm-encryption101.md)
+- [THM - Metasploit](notes/thm-metasploit.md)
 
 ### Nand2Tetris
 - [00 - Introduction](notes/00-intro-nand2tetris.md)
