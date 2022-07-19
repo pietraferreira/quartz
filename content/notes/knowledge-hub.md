@@ -29,7 +29,10 @@ Where all of my notes live!!! There are no rules here 😎
 - [Compiler Toolchains](notes/compiler-toolchains.md)
 
 ### Cybersecurity
-- [HTB Notes](notes/hackthebox.md)
+- Files Transfers ([here](notes/htb-file-transfers.md))
+- Netcat ([here](notes/netcat.md))
+- Stack-based Buffer Overflows on Linux x86 ([here](notes/htb-stack-based-overflow-linux.md))
+- Introduction to Networking [here](notes/htb-intro-networking.md)
 
 ### Not sure where to put these :)
 - [Source Code Optimisation](notes/source-code-optimisation.md)
