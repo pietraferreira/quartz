@@ -60,6 +60,7 @@ Dump of assembler code for function bowfunc:
    0x00000581 <+52>:	ret    # <--- Leave stack frame
 ```
 
+## Stack API
 A basic interface is:
 
 ```java
@@ -72,3 +73,4 @@ public interface StringStack {
   int size();
 }
 ```
+
