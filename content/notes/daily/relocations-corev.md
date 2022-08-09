@@ -1,12 +1,14 @@
 ---
-title:  "2020-10-02 - Relocations"
+title:  "Relocations - COREV"
 tags:
   - daily
   - relocations
+  - work
+  - corev
 programming-languagues:
-created: 2022-06-05
+created: 2020-10-02
 ---
-# 2020-10-02 - Relocations
+# Relocations - COREV
 ---
 what is complain and overflow?
 

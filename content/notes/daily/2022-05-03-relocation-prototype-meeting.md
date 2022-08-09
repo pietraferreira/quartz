@@ -1,8 +1,11 @@
 ---
-title: "Notes from meeting 03-05-2022"
+title: "2022-05-03 - Relocation Prototype Meeting"
 tag: 
   - relocations
   - meeting
+  - work
+  - meeting
+  - relocation-prototype
 ---
 # Monthly (or quaterly?) meeting - Relocation Prototype
 

@@ -1,13 +1,14 @@
 ---
-title:  "2021-01-13 - Tiger Optimisation (memset/memcpy)"
+title:  "Tiger Optimisation (memset/memcpy)"
 tags:
   - tiger
   - daily
   - work
+  - help
 programming-languagues:
-created: 2022-06-05
+created: 2021-01-13
 ---
-# 2021-01-13 - Tiger Optimisation (memset/memcpy)
+# Tiger Optimisation (memset/memcpy)
 ---
 ## Optimising expansion of memcpy/memset using hardware loops
 Currently memcpy and memset get expanded to a list of stores and loads for small sized values. If the size of the memcpy/memset is very large, then generate a call to implementation, which is provided by newlib.

@@ -3,6 +3,7 @@ title:  "HTB - Driver"
 tags:
   - htb
   - writeup
+  - hacking
 programming-languagues:
 created: 2022-07-17
 ---

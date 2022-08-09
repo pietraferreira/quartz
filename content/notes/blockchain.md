@@ -1,11 +1,12 @@
 ---
-title:  2022-07-01-blockchain
+title: "Blockchain"
 tags:
   - blockchain
+  - help
 programming-languagues:
 created: 2022-07-01
 ---
-# 2022-07-01 - Blockchain
+# Blockchain
 ---
 - Video [source](https://www.youtube.com/watch?v=gyMwXuJrbJQ).
 - More [here](https://github.com/smartcontractkit/full-blockchain-solidity-course-js#welcome-to-the-course).
@@ -67,12 +68,3 @@ Using one blockchain oracle is a huge risk and chainlink offers a fantastic new 
 
 ## Web3
 An idea for a new World Wide Web which incorporates concepts such as decentralisation, using blockchain technologies for example.
-
----
-# Binary Exploitation ([Continuation](daily/2022-06-30.md))
-## 08
-- https://guyinatuxedo.github.io/5.1-mitigation_aslr_pie/index.html
-- https://github.com/shellphish/how2heap
-- https://ir0nstone.gitbook.io/notes/types/stack
-
-- Can use `piebase` in gdb-pwndbg to figure out the offset. For example, `breakrva <a function for example 0x11f0` sets a breakpoint in that function no matter if the program restarts as it knows the offset from the top of the run.

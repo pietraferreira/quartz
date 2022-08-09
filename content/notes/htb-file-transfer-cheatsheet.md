@@ -2,6 +2,8 @@
 title: "File Transfer Cheatsheet"
 tags:
   - htb
+  - hacking
+  - help
 programming-languagues:
 created: 2022-07-13
 ---

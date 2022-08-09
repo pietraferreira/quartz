@@ -1,7 +1,8 @@
 ---
-title:  2022-06-27
+title: "2022-06-27"
 tags:
   - daily
+  - vms
 programming-languagues:
 created: 2022-06-27
 ---

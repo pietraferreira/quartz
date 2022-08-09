@@ -3,6 +3,8 @@ title:  "Code Generation"
 tags:
   - compilers
   - engineer-training
+  - work
+  - help
 programming-languagues:
 created: 2022-07-01
 ---

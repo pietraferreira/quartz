@@ -6,7 +6,6 @@ tags:
 ---
 # Useful Commands Dump
 ---
-
 Well... where I dump any useful commands I find and them hopefully I'll categorise them... eventually...
 
 ## Terminal
@@ -18,6 +17,12 @@ for file in *.txt; do mv "$file" "${file%.txt}.md"; done
 * If Git is hanging after total is because:
 ```bash
 git config --global http.postBuffer 157286400
+```
+
+- Run previous argument:
+
+```bash
+!$
 ```
 
 ## GDB
@@ -122,4 +127,9 @@ Look for vulnerable plugins and usernames:
 
 ```bash
 wpscan --url 10.10.101.40/blog --usernames admin --passwords /usr/share/wordlists/rockyou.txt --max-threads 50
+```
+
+## Git
+```bash
+--ff-only
 ```

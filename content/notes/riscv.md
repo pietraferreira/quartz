@@ -9,6 +9,7 @@ created: 2022-06-04
 # RISC-V
 ---
 - [Introduction to RISC-V](notes/introduction-to-riscv.md)
+- [RISC-V Assembler Reference](notes/riscv-assembler-reference.md)
 
 ## Instruction Set
 ![](notes/images/riscv-cheatsheet-is.png)
