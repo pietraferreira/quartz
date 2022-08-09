@@ -17,3 +17,6 @@ Main hub for all the different note categories :)
 
 ## University
 - [Hub](notes/university-hub.md)
+
+## Tasks
+- [Hub](notes/task-hub.md)

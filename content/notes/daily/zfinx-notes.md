@@ -1,11 +1,13 @@
 ---
-title:  "2020-11-13 - ZFinx Notes"
+title:  "ZFinx Notes"
 tags:
   - daily
+  - work
+  - codesize_tg
 programming-languagues:
-created: 2022-06-05
+created: 2020-11-13
 ---
-# 2020-11-13 - ZFinx Notes
+# ZFinx Notes
 ---
 Hi I'm Pietra, I've been looking at your problem with my colleagues Mary and Jessica. I'm wondering if there were any changes to the problem since we last spoke? Did the video help? 
 

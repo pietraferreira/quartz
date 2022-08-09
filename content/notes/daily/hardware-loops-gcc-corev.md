@@ -1,13 +1,14 @@
 ---
-title:  "2020-09-25 - Hardware Loops"
+title: "Hardware Loops - COREV"
 tags:
   - daily
   - corev
   - gcc
+  - work
 programming-languagues:
 created: 2020-09-25
 ---
-# 2020-09-25 - Hardware Loops
+# Hardware Loops (GCC) - COREV
 ---
 ```
 (define_insn "set_hwloop_cvstart"

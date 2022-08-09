@@ -1,5 +1,5 @@
 ---
-title:  2020-11-18
+title: "Tiger - Sync-up"
 tags:
   - daily
   - work
@@ -8,7 +8,7 @@ tags:
 programming-languagues:
 created: 2020-11-18
 ---
-# 2020-11-18 - Tiger Meeting Notes
+# Tiger - Synch-up
 ---
 Paolo been working on testing. He has TIGER/toolchain/gcc-test-scan, inside he has folders with errors for practicality. First take the directories from Jenkins and run the script. The message shows where in the compiler the error is happening. Can run 'make show' shows how many error are in each category, prioritise the ones occur the most.
 

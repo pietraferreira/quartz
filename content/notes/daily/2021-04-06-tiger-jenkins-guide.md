@@ -1,11 +1,14 @@
 ---
-title:  2021-04-06
+title: "2021-04-06 - Tiger Jenkins Guide"
 tags:
   - daily
+  - work
+  - tiger
+  - jenkins
 programming-languagues:
-created: 2022-06-05
+created: 2021-04-06
 ---
-# 2021-04-06
+# 2021-04-06 - Tiger Jenkins Guide
 ---
 go to main wiki
 

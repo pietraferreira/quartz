@@ -2,6 +2,7 @@
 title: "Work Hub"
 tags:
   - hub
+  - work
 ---
 # Work Hub
 

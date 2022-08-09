@@ -17,6 +17,9 @@ Various cheatsheets of different application I use and all the help I can get co
 - [Obsidian](notes/obsidian-cheatsheet.md)
 - [Tmux](notes/tmux-cheatsheet.md)
 - [HackTheBox](notes/hackthebox.md)
+- [How to manually check an Assembly test](notes/how-to-manually-check-as-test.md)
+- [How to add an instruction to the GNU Assembler](notes/how-to-add-instructions-to-as.md)
+    - [Slides](notes/how-to-add-instructions-to-as-slides.md)
 
 ## Hacking
 - [x86 CheatSheet](https://trailofbits.github.io/ctf/vulnerabilities/references/X86_Win32_Reverse_Engineering_Cheat_Sheet.pdf)
@@ -35,6 +38,6 @@ Various cheatsheets of different application I use and all the help I can get co
 ```dataview
 table without ID
 title as "Title", file.ctime as "Created Time", file.link as "Link"
-from #help and -#hub
+from #help and -#hub and -#slides
 sort file.ctime desc
 ```

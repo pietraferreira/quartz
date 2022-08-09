@@ -20,3 +20,4 @@ Everything related to HackTheBox.
 ## Write-ups
 - [Driver](notes/htb-driver.md)
 - [Pandora](notes/htb-pandora.md)
+- [Secret](notes/htb-secret.md)

@@ -1,7 +1,9 @@
 ---
 title:  "Stack-based Overflow - Linux x86"
 tags:
-
+  - hacking
+  - help
+  - htb
 programming-languagues:
 created: 2022-07-11
 ---

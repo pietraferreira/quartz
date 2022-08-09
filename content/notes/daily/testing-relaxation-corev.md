@@ -1,18 +1,20 @@
 ---
-title:  2020-09-07
+title: "Testing Relaxation - COREV" 
 tags:
   - daily
   - relocations
   - corev
+  - relaxation
+  - work
 programming-languagues:
-created: 2022-06-05
+created: 2020-09-07
 ---
-# 2020-09-07
+# Testing Relaxation - COREV
 ---
 `readelf -r` on .o files -> looks for particular relocations -> instead of -a
 it checks if we're getting the right relocation
 
-Construct a file that we know it is going to relax, so you could create an assembly file with a cv.start and a reference to something to something that it is away and put in between stuff that we know it will get relaxed away. So something that will force the loop to shorten.
+Construct a file that we know it is going to relax, so you could create an assembly file with a cv.start and a reference to something that it is away and put in between stuff that we know it will get relaxed away. So something that will force the loop to shorten.
 
 - Things get shorten from 32bits to 16bits.
 - What we need to do is: add x3, x4, x5.

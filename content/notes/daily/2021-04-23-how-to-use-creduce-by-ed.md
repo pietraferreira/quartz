@@ -1,12 +1,14 @@
 ---
-title:  "2021-04-23 - How to Use Creduce by Ed"
+title: "How to Use Creduce by Ed"
 tags:
   - work
   - daily
+  - tiger
+  - help
 programming-languagues:
-created: 2022-06-05
+created: 2021-04-23
 ---
-# 2021-04-23 - How to Use Creduce by Ed
+# How to Use Creduce by Ed
 ---
 As for steps on how to use Creduce:
 
