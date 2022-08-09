@@ -1,31 +1,14 @@
 ---
-title:  "Stack-based Overflow - Linux x86"
+title: "CPU Architecture"
 tags:
-  - hacking
-  - help
   - htb
-  - stack-overflow
 programming-languagues:
-created: 2022-07-11
+created: 2022-07-12
 ---
-# Stack-based Overflow - Linux x86
+# CPU Architecture
 ---
-They are caused by incorrect program code, which cannot process too large amounts of data correctly by the CPU and can, therefore, manipulate the CPU's processing.
+This is part of a guide that you can find [here](notes/htb-stack-based-overflow-linux.md).
 
-For example if too much data is written to a reserved memory **buffer** or **stack** that it is not limited, then the specific registers will be overwritten, which may allow code to be executed.
-
-A buffer overflow can overwrite the specific program's **return address** with arbitrary data, allowing an attacker to execute commands with the **privileges of the process** vulnerable to the buffer overflow by passing arbitrary machine code.
-
-- [CPU Architecture](notes/cpu-architecture.md)
-    - [Stacks and Queues](notes/stacks-and-queues.md)
-    - [Endianness](notes/endianness.md)
-- [GDB](notes/gdb.md)
-- [Take Control of EIP](notes/take-control-eip.md)
-- [Generate Shellcode](notes/generate-shellcode.md)
-- [Identification of the Return Address](notes/identify-return-address.md)
-- [Prevention Techniques and Mechanisms](notes/so-prevention-techniques.md)
-
-## CPU Architecture
 A **Von-Neumann** architecture consists of four functional units:
 - Memory
 - Control Unit
@@ -34,16 +17,9 @@ A **Von-Neumann** architecture consists of four functional units:
 
 The most important units, **Arithmetic Logical Unit** (ALU) and **Control Unit** (CU), are combined in the actual **Central Processing Unit** (CPU).
 
-## Memory
-### Primary
-It is the **cache** and the **Random Access Memory** (RAM).
-
-The cache is integrated into the processor and serves as a buffer. Before the program code and data enter the processor for processing the RAM serves as data storage.
-
-When the primary memory loses power, all stored contents are lost.
-
-### Secondary
-This is the external data storage,  such as **HDD/SSD**, **Flash Drives** and **CD/DVD-ROMs** of a computer, which is **not** directly accessed by the CPU, but via the **I/O** interfaces.
+```toc
+style: number min_depth: 1 max_depth: 6 
+```
 
 ## Control Unit
 It is responsible for the correct interworking of the processor's individual parts. The tasks can be summarised as:
@@ -78,6 +54,54 @@ There are four different types of ISA:
 - VLIW - Very Long Instruction Word
 - EPIC - Explicitly Parallel Instruction Computing
 
+## Memory
+When the program is called, the sections are mapped to the segments in the process, and the segments are loaded into memory as described by the **ELF** file.
+
+![](Screenshot%202022-07-11%20at%2016.50.22.png)
+
+- `.text` - contains the actual assembler instructions of the program, can be read-only.
+- `.data` - contains global and static variables.
+- `.bss` - data segment, which contains statically allocated variables represented by 0 bits.
+
+### Primary
+It is the **cache** and the **Random Access Memory** (RAM).
+
+The cache is integrated into the processor and serves as a buffer. Before the program code and data enter the processor for processing the RAM serves as data storage.
+
+When the primary memory loses power, all stored contents are lost.
+
+### Secondary
+This is the external data storage,  such as **HDD/SSD**, **Flash Drives** and **CD/DVD-ROMs** of a computer, which is **not** directly accessed by the CPU, but via the **I/O** interfaces.
+
+## Heap
+This area starts at the end of the `.bss` segment and grows to the higher memory addresses.
+
+## CPU Registers
+There are General registers, Control registers and Segment registers.
+
+Within the General registers we have the Data registers, Pointer registers and Index registers.
+
+### Data Registers
+| **32-bit Register** | **64-bit Register** | **Description** |
+| --- | --- | --- |
+| `EAX` | `RAX` | Accumulator is used in input/output and for arithmetic operations |
+| `EBX` | `RBX` | Base is used in indexed addressing |
+| `ECX` | `RCX` | Counter is used to rotate instructions and count loops |
+| `EDX` | `RDX` | Data is used for I/O and in arithmetic operations for multiply and divide operations involving large values |
+
+### Pointer registers
+| **32-bit Register** | **64-bit Register** | **Description** |
+| --- | --- | --- |
+| `EIP` | `RIP` | Instruction Pointer stores the offset address of the next instruction to be executed |
+| `ESP` | `RSP` | Stack Pointer points to the top of the stack |
+| `EBP` | `RBP` | Base Pointer is also known as `Stack Base Pointer` or `Frame Pointer` thats points to the base of the stack |
+
+### Index Registers
+| **Register 32-bit** | **Register 64-bit** | **Description** |
+| --- | --- | --- |
+| `ESI` | `RSI` | Source Index is used as a pointer from a source for string operations |
+| `EDI` | `RDI` | Destination is used as a pointer to a destination for string operations |
+
 ## Instruction Cycle
 | Instruction                | Description                                                                                                                                    |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -86,4 +110,22 @@ There are four different types of ISA:
 | Fetch Operands             | If further data needs to be loaded, load from **cache** or **RAM**.                                                                            |
 | Execute                    | The instruction is executed. It could be operations in the ALU for example, or the control of peripheral devices.                              |
 | Update Instruction Pointer | If no jump has been executed, the **IAR** is now increased by the length of the instruction so that it points to the next machine instruction. |
->>>>>>> e671289f5537f91a2b4e49523f95459c6288c3fc
+
+## Vulnerable C Functions
+- `strcpy`
+- `gets`
+- `sprintf`
+- `scanf`
+- `strcat`
+
+## The Call Instruction
+It performs two operations:
+
+1. Pushes the return address onto the **stack** so that the execution of the program can be continued after the function has successfully fulfilled its goal.
+2. Changes the **instruction pointer** (**EIP**) to the call destination and starts execution there.
+
+## See Also
+- [Stack Overflow Guide - HTB](notes/htb-stack-based-overflow-linux.md)
+- [Stacks and Queues](notes/stacks-and-queues.md)
+- [Endianness](notes/endianness.md)
+- [GDB](notes/gdb.md)

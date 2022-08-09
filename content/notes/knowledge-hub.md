@@ -35,6 +35,10 @@ Where all of my notes live!!! There are no rules here 😎
 - [HowTo Table](notes/howto-table.md)
 
 ### Cybersecurity
+- Files Transfers ([here](notes/htb-file-transfers.md))
+- Netcat ([here](notes/netcat.md))
+- Stack-based Buffer Overflows on Linux x86 ([here](notes/htb-stack-based-overflow-linux.md))
+- Introduction to Networking [here](notes/htb-intro-networking.md)
 - [HTB Notes](notes/hackthebox.md)
 - [THM - Encryption 101](notes/thm-encryption101.md)
 - [THM - Metasploit](notes/thm-metasploit.md)
