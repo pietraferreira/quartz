@@ -1,0 +1,172 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="How to add an instruction to the GNU assembler  We can use cv.starti as an example. It is part of the hardware loops extension and declares the address of the offset to the start of the loop as well as the loop number, 0 or 1 depending if it is an inner or outer loop."><title>How to add an instruction to the GNU assembler</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=ico href=https://pietraferreira.github.io/quartz//favicon.ico><link href=https://pietraferreira.github.io/quartz/styles.591589daec716a7d5287f8d56c2c091e.min.css rel=stylesheet><link href=https://pietraferreira.github.io/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://pietraferreira.github.io/quartz/js/darkmode.a93be4d36d657139e957880e320dd457.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://pietraferreira.github.io/quartz/js/popover.37b1455b8f0603154072b9467132c659.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js></script>
+<script>const BASE_URL="https://pietraferreira.github.io/quartz/",fetchData=Promise.all([fetch("https://pietraferreira.github.io/quartz/indices/linkIndex.3ff77883759c1c8152e43cfc8ba0648f.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://pietraferreira.github.io/quartz/indices/contentIndex.9b806bd1dcc232e959430285a74982e7.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons(),addTitleToCodeBlocks();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!1;drawGraph("https://pietraferreira.github.io/quartz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2}),initPopover("https://pietraferreira.github.io/quartz",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/pietraferreira.github.io\/quartz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://pietraferreira.github.io/quartz/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://pietraferreira.github.io/quartz/>🪅 Morioh</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>How to add an instruction to the GNU assembler</h1><p class=meta>Last updated
+Aug 9, 2022</p><ul class=tags><li><a href=https://pietraferreira.github.io/quartz/tags/work/>Work</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/engineer-training/>Engineer training</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/relocations/>Relocations</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/relocation-prototype/>Relocation prototype</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/help/>Help</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#summary-of-changes>Summary of Changes</a><ol><li><a href=#riscv-opcc>riscv-opc.c</a></li><li><a href=#riscv-disc>Riscv-dis.c</a></li><li><a href=#testing-gas>Testing GAS</a></li></ol></li></ol></nav></details></aside><a href=#how-to-add-an-instruction-to-the-gnu-assembler><h1 id=how-to-add-an-instruction-to-the-gnu-assembler><span class=hanchor arialabel=Anchor># </span>How to add an instruction to the GNU assembler</h1></a><hr><p>We can use <code>cv.starti</code> as an example. It is part of the hardware loops extension and declares the address of the offset to the start of the loop as well as the loop number, 0 or 1 depending if it is an inner or outer loop.</p><ul><li><p><code>cv.starti Ln, uimmL</code></p></li><li><p><code>Ln</code>: is it inner or outer loop?</p></li><li><p><code>uimmL</code>: offset of the start of the loop.</p></li></ul><table><thead><tr><th>BITS</th><th>31 20</th><th>19 15</th><th>14 12</th><th>11 08</th><th>7</th><th>06 00</th></tr></thead><tbody><tr><td>FIELD</td><td>uimmL[11:0]</td><td>rs1</td><td>funct3</td><td>rd</td><td>ln</td><td>opcode</td></tr></tbody></table><p>So: <code>XXXX XXXX XXXX 00000 000 0000 X 111 1011</code></p><a href=#summary-of-changes><h2 id=summary-of-changes><span class=hanchor arialabel=Anchor># </span>Summary of Changes</h2></a><p>We need to change the <code>opcodes</code> library (<code>opcodes/</code>):</p><ul><li>Table driven encoding and decoding of instructions (<code>riscv-opc.c</code> (encoding) and <code>riscv-dis.c</code> (decoding)).</li><li>Change the assembler (<code>gas/config</code>) to use the new tables (<code>tc-riscv.c</code> and <code>tc-riscv.h</code>).</li><li>Extend relocations: modify BFD in <code>bfd/</code>.</li></ul><a href=#riscv-opcc><h3 id=riscv-opcc><span class=hanchor arialabel=Anchor># </span>riscv-opc.c</h3></a><p>Entry in <code>riscv-opc.c</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=p>{</span><span class=s>&#34;cv.starti&#34;</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=n>INSN_CLASS_COREV_HWLP</span><span class=p>,</span> <span class=s>&#34;di,b1&#34;</span><span class=p>,</span>    <span class=n>MATCH_CV_STARTI</span><span class=p>,</span> <span class=n>MASK_CV_STARTI</span><span class=p>,</span> <span class=n>match_opcode</span><span class=p>,</span> <span class=mi>0</span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Instruction mnemonic: <code>cv.starti</code></li><li>xLen: base ISA required for this, either <code>32</code> (RV32), <code>64</code> (RV64) or <code>0</code> (both).</li><li>Instruction class: defined in <code>include/opcode/riscv.h:riscv_insn_class</code>.</li><li>Instruction operands: <code>di</code> maps to the loop number and <code>b1</code> maps to the unsigned immediate value (<code>cv.starti Ln(di), uimmL(b1)</code>).</li><li>Match and Mask: defined in <code>include/opcode/riscv-opc.h</code>, mask being the <strong>preset bits</strong> and match the <strong>opcode</strong>. Instruction masks are used to hard code common encoding fields in the instruction, such as the opcode, and to mask preset bits with 1 in the operand encoding fields. You can see that how it is calculated here. So if you exclusive OR something with the MATCH, and all bits are the same as MASK, then the return will be 0 <code>((insn ^ MATCH) & MASK) == 0</code>.</li></ul><p><img src=https://pietraferreira.github.io/quartz//notes/images/Screenshot%20from%202022-07-20%2013-35-38.png width=auto alt></p><p>Here it hard codes the source register, function, the destination register and the opcode. We then have our match field checking the encoding.</p><ul><li>Match function: determines if a word corresponds to this instruction, if the instruction doesn&rsquo;t require additional assistance then you can use <code>match_opcode</code>. It checks the logic behind mask and match:</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nf>match_opcode</span> <span class=p>(</span><span class=k>const</span> <span class=k>struct</span> <span class=n>riscv_opcode</span> <span class=o>*</span><span class=n>op</span><span class=p>,</span> <span class=n>insn_t</span> <span class=n>insn</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>((</span><span class=n>insn</span> <span class=o>^</span> <span class=n>op</span><span class=o>-&gt;</span><span class=n>match</span><span class=p>)</span> <span class=o>&amp;</span> <span class=n>op</span><span class=o>-&gt;</span><span class=n>mask</span><span class=p>)</span> <span class=o>==</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>Pinfo: collection of bits describing the instruction, mainly any relevant hazard information.</li></ul><a href=#riscv-disc><h3 id=riscv-disc><span class=hanchor arialabel=Anchor># </span>Riscv-dis.c</h3></a><p>Here we add the instructions to the <code>print_insn_args</code> function, which disassembles the bit stream:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cm>/* CORE-V Specific.  */</span>                                                       
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=sc>&#39;b&#39;</span><span class=o>:</span>                                                                                              
+</span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=p>(</span><span class=n>oparg</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=sc>&#39;1&#39;</span><span class=p>)</span>                                                        
+</span></span><span class=line><span class=cl>        <span class=p>{</span>                                                                                                  
+</span></span><span class=line><span class=cl>          <span class=n>info</span><span class=o>-&gt;</span><span class=n>target</span> <span class=o>=</span> <span class=p>(</span><span class=n>EXTRACT_ITYPE_IMM</span> <span class=p>(</span><span class=n>l</span><span class=p>)</span><span class=o>&lt;&lt;</span><span class=mi>1</span><span class=p>)</span> <span class=o>+</span> <span class=n>pc</span><span class=p>;</span> <span class=o>++</span><span class=n>oparg</span><span class=p>;</span>                                         
+</span></span><span class=line><span class=cl>          <span class=p>(</span><span class=o>*</span><span class=n>info</span><span class=o>-&gt;</span><span class=n>print_address_func</span><span class=p>)</span> <span class=p>(</span><span class=n>info</span><span class=o>-&gt;</span><span class=n>target</span><span class=p>,</span> <span class=n>info</span><span class=p>);</span>                                                
+</span></span><span class=line><span class=cl>          <span class=k>break</span><span class=p>;</span>                                                                                           
+</span></span><span class=line><span class=cl>         <span class=p>}</span> 
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>EXTRACT_ITYPE_UIMM (l)</code>: extracts only the required bits from <code>l</code>, defined in <code>include/opcode/riscv.h</code>:</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#define EXTRACT_CV_HWLP_UIMM5(x) \                                                                       
+</span></span></span><span class=line><span class=cl><span class=cp></span>    <span class=p>(</span><span class=n>RV_X</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=mi>15</span><span class=p>,</span> <span class=mi>5</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl> <span class=cp>#define RV_X(x, s, n)  (((x) &gt;&gt; (s)) &amp; ((1 &lt;&lt; (n)) - 1)) 
+</span></span></span></code></pre></td></tr></table></div></div><p>Then we go to <code>gas/config/tc-riscv.c</code> and add the instructions to the <code>validate_riscv_insn</code> function - which validates all bits in the instruction are set:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=k>case</span> <span class=sc>&#39;d&#39;</span><span class=o>:</span>                                                                                              
+</span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=p>(</span><span class=n>oparg</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=sc>&#39;i&#39;</span><span class=p>)</span>                                                             
+</span></span><span class=line><span class=cl>        <span class=p>{</span>                                                                              
+</span></span><span class=line><span class=cl>          <span class=n>used_bits</span> <span class=o>|=</span> <span class=n>ENCODE_CV_HWLP_LN</span><span class=p>(</span><span class=o>-</span><span class=mi>1U</span><span class=p>);</span>                                         
+</span></span><span class=line><span class=cl>          <span class=o>++</span><span class=n>oparg</span><span class=p>;</span>                                                                     
+</span></span><span class=line><span class=cl>          <span class=k>break</span><span class=p>;</span>                                                                       
+</span></span><span class=line><span class=cl>        <span class=p>}</span> 
+</span></span></code></pre></td></tr></table></div></div><p>You can see this <code>ENCODE_CV_HWLP_LN</code> macro in <code>include/opcode/riscv.h</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#define ENCODE_CV_HWLP_LN(x) \                                                  
+</span></span></span><span class=line><span class=cl><span class=cp></span>   <span class=p>(</span><span class=n>RV_X</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=mi>7</span><span class=p>)</span>  
+</span></span></code></pre></td></tr></table></div></div><p>Add the operand to the <code>riscv_ip</code> function - which assembles an instruction into its binary format:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=k>case</span> <span class=sc>&#39;d&#39;</span><span class=o>:</span> <span class=cm>/* Destination register.  */</span>                                                             
+</span></span><span class=line><span class=cl>          <span class=k>if</span> <span class=p>(</span><span class=n>oparg</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=sc>&#39;i&#39;</span><span class=p>)</span>                                                    
+</span></span><span class=line><span class=cl>      <span class=p>{</span>                                                                                                    
+</span></span><span class=line><span class=cl>        <span class=o>++</span><span class=n>oparg</span><span class=p>;</span>                                                                  
+</span></span><span class=line><span class=cl>        <span class=n>my_getExpression</span> <span class=p>(</span><span class=n>imm_expr</span><span class=p>,</span> <span class=n>asarg</span><span class=p>);</span>                                                                
+</span></span><span class=line><span class=cl>        <span class=n>asarg</span> <span class=o>=</span> <span class=n>expr_end</span><span class=p>;</span>                                                         
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=n>imm_expr</span><span class=o>-&gt;</span><span class=n>X_op</span> <span class=o>!=</span> <span class=n>O_constant</span> <span class=o>||</span>                                       
+</span></span><span class=line><span class=cl>            <span class=n>imm_expr</span><span class=o>-&gt;</span><span class=n>X_add_number</span> <span class=o>&lt;</span> <span class=mi>0</span> <span class=o>||</span> <span class=n>imm_expr</span><span class=o>-&gt;</span><span class=n>X_add_number</span> <span class=o>&gt;</span> <span class=mi>1</span><span class=p>)</span>             
+</span></span><span class=line><span class=cl>          <span class=n>as_bad</span> <span class=p>(</span><span class=n>_</span><span class=p>(</span><span class=s>&#34;%s loop number must be 0 or 1&#34;</span><span class=p>),</span>                                                      
+</span></span><span class=line><span class=cl>            <span class=n>ip</span><span class=o>-&gt;</span><span class=n>insn_mo</span><span class=o>-&gt;</span><span class=n>name</span><span class=p>);</span>                                                   
+</span></span><span class=line><span class=cl>        <span class=n>INSERT_OPERAND</span> <span class=p>(</span><span class=n>LN</span><span class=p>,</span> <span class=o>*</span><span class=n>ip</span><span class=p>,</span> <span class=n>imm_expr</span><span class=o>-&gt;</span><span class=n>X_add_number</span><span class=p>);</span>                                                  
+</span></span><span class=line><span class=cl>        <span class=k>continue</span><span class=p>;</span>                                                                                          
+</span></span><span class=line><span class=cl>      <span class=p>}</span> 
+</span></span></code></pre></td></tr></table></div></div><p>If we look into <code>INSERT_OPERAND()</code>: to ensure that the it works correctly, in the RISC-V header file, a mask for the bits encoded for the operand, and the offset of the encoded bits must be defined. These are used in the <code>INSERT_OPERAND</code> macro along with the instructions opcode, and the actual value of the operand, to produce the instructions binary representation.</p><ul><li>Add masks to <code>include/opcode/riscv.h</code>:</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#define OP_MASK_LN              0x1                                                                      
+</span></span></span><span class=line><span class=cl><span class=cp>#define OP_SH_LN                7
+</span></span></span></code></pre></td></tr></table></div></div><ul><li><code>OP_MASK_LN</code>: bits encoded.</li><li><code>OP_SH_LN</code>: first bit encoded position.</li></ul><p>Used by:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl>  <span class=cm>/* Change INSN&#39;s opcode so that the operand given by FIELD has value VALUE.     
+</span></span></span><span class=line><span class=cl><span class=cm>     INSN is a riscv_cl_insn structure and VALUE is evaluated exactly once.  */</span>   
+</span></span><span class=line><span class=cl>  <span class=err>#</span><span class=n>define</span> <span class=n>INSERT_OPERAND</span><span class=p>(</span><span class=n>FIELD</span><span class=p>,</span> <span class=n>INSN</span><span class=p>,</span> <span class=n>VALUE</span><span class=p>)</span> <span class=err>\</span>                                                             
+</span></span><span class=line><span class=cl>    <span class=n>INSERT_BITS</span> <span class=p>((</span><span class=n>INSN</span><span class=p>).</span><span class=n>insn_opcode</span><span class=p>,</span> <span class=n>VALUE</span><span class=p>,</span> <span class=n>OP_MASK_</span><span class=err>##</span><span class=n>FIELD</span><span class=p>,</span> <span class=n>OP_SH_</span><span class=err>##</span><span class=n>FIELD</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>Usage:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=n>INSERT_OPERAND</span> <span class=p>(</span><span class=n>LN</span><span class=p>,</span> <span class=o>*</span><span class=n>ip</span><span class=p>,</span> <span class=n>imm_expr</span><span class=o>-&gt;</span><span class=n>X_add_number</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#testing-gas><h3 id=testing-gas><span class=hanchor arialabel=Anchor># </span>Testing GAS</h3></a><ul><li><p>Input: <code>test.s</code></p></li><li><p>Output: <code>test.d</code></p></li><li><p>Tests are in:</p></li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gas/testsuite/gas/riscv/
+</span></span></code></pre></td></tr></table></div></div><ul><li>Settings: <code>riscv.exp</code></li><li>Error output: <code>test.l</code></li></ul><p>For example <code>cv-hwloop-starti.s</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>target:
+</span></span><span class=line><span class=cl>      cv.starti 0, 0
+</span></span><span class=line><span class=cl>      cv.starti 1, 3020
+</span></span><span class=line><span class=cl>      cv.starti 0, 4094
+</span></span></code></pre></td></tr></table></div></div><p>Then the output:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>#as: -march=rv32i_xcorev
+</span></span><span class=line><span class=cl>#objdump: -d
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.*:[ 	]+file format .*
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Disassembly of section .text:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>0+000 &lt;target&gt;:
+</span></span><span class=line><span class=cl>[ 	]+0:[ 	]+0000007b[ 	]+cv.starti[ 	]+0,0 &lt;target&gt;
+</span></span><span class=line><span class=cl>[ 	]+4:[ 	]+5e6000fb[ 	]+cv.starti[ 	]+1,bd0 +&lt;target\+0xbd0&gt;
+</span></span><span class=line><span class=cl>[ 	]+8:[ 	]+7ff0007b[ 	]+cv.starti[ 	]+0,1006 +&lt;target\+0x1006&gt;
+</span></span></code></pre></td></tr></table></div></div><p>Here you can see me assembling it manually:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>pietraferreira@tom:~$ cat test-hwlp.s <span class=o>&amp;&amp;</span> riscv32-corev-elf-as -march<span class=o>=</span>rv32imc_xcorev1p0 test-hwlp.s <span class=o>&amp;&amp;</span> riscv32-corev-elf-objdump -rd a.out 
+</span></span><span class=line><span class=cl>cv.starti 0, <span class=m>0</span>
+</span></span><span class=line><span class=cl>cv.starti 1, <span class=m>3020</span>
+</span></span><span class=line><span class=cl>cv.starti 0, <span class=m>4094</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>a.out:     file format elf32-littleriscv
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Disassembly of section .text:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=m>00000000</span> &lt;.text&gt;:
+</span></span><span class=line><span class=cl>   0:	0000007b          	cv.starti	0,0x0
+</span></span><span class=line><span class=cl>   4:	5e6000fb          	cv.starti	1,0xbd0
+</span></span><span class=line><span class=cl>   8:	7ff0007b          	cv.starti	0,0x1006
+</span></span></code></pre></td></tr></table></div></div></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/quartz/notes/help/ data-ctx="How to add an instruction to the GNU Assembler" data-src=/notes/help class=internal-link>Help</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://pietraferreira.github.io/quartz/js/graph.afdb02e537635f9a611b53a988e5645b.js></script></div></div><div id=contact_buttons><footer><p>Made by Morioh using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://pietraferreira.github.io/quartz/>Home</a></li><li><a href=https://github.com/pietraferreira>Github</a></li></ul></footer></div></div></body></html>
