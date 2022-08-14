@@ -15,3 +15,4 @@ A list of all the different modules I am taking during my second year.
 ## CS2005 - Networks and Operating Systems
 
 ## CS2004 - Algorithms
+- [Classes, Types, and Objects](notes/university/classes-types-objects.md)
