@@ -23,9 +23,9 @@ Construct a file that we know it is going to relax, so you could create an assem
 
 - So that we know that the file is being shorten
 
-- create cv.start and put the label (L2) and put the instruction in between so it will assemble thinking it has 4bits but knowing it has to relax down to 2bits.
+- Create cv.start and put the label (L2) and put the instruction in between so it will assemble thinking it has 4bits but knowing it has to relax down to 2bits.
 
-- example:
+Example:
 
 ```assembly
       cv.starti   0,L2
@@ -58,7 +58,7 @@ L2:   nop
 
 - Two 32bit instructions, but we will end up with them folded down to a single jal instruction, causing the relocation.
 
-- in .d file, look at disassembly and make sure it got reduced as expected.
+- In .d file, look at disassembly and make sure it got reduced as expected.
 
 RELU12
 RELU5
