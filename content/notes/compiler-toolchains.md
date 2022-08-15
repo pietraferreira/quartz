@@ -103,11 +103,11 @@ Note that a compiler toolchain is necessary to build executables, but it is not 
 ## The Compiler Toolchain
 Apart from sysroot, a compiler toolchain contains various other binaries to help in the compilation process. In some cases, the compiler itself comes as a part of the toolchain. The following is a list of items packaged with the toolchain.
 
-- binutils (assembler, linker, etc.)  
-- Various compilers (gcc, g++, etc.)  
+- binutils ([assembler](notes/riscv-assembler-reference.md), [linker](notes/linker.md), etc.)  
+- Various compilers ([gcc](notes/gcc.md), g++, etc.)  
 - C-Library (glibc, uClibc, etc.)  
 - Runtime support libraries (crtbegin.o, crtend.o, etc.)  
-- debugger (gdb) - C/C++ standard header files (iostream, stdio.h, etc.)  
+- debugger ([gdb](notes/gdb.md)) - C/C++ standard header files (iostream, stdio.h, etc.)  
 - standard libraries (libstdc++, libm, libgcc, libunwind, etc.)  
 - Compiler specific header files (stdint.h, stdc-predef.h)  
 - Runtime support libraries for sanitizers (libasan, libubsan, etc.)

@@ -15,7 +15,7 @@ Explicit allocation and free: `malloc`/`free` (C), `new`/`delete` (C++).
 
 It traces garbage collection and does reference counting.
 
-**Reachability**: reference directly or indirectly by one or more variables.
+**Reach-ability**: reference directly or indirectly by one or more variables.
     - Global variables.
     - Stack variables.
 
