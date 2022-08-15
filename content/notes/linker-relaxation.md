@@ -62,3 +62,9 @@ As you can see, the linker knows that the call from `_start` to `func` fits with
 
 ## Source
 - All Aboard, Part 3: Linker Relaxation in the RISC-V Toolchain ([here](https://www.sifive.com/blog/all-aboard-part-3-linker-relaxation-in-riscv-toolchain))
+
+---
+## Related Notes
+- [2022-07-03 - Relaxation](notes/daily/2022-07-03-relaxation.md)
+- [Testing Relaxation - COREV](notes/daily/testing-relaxation-corev.md)
+- [Fixups](notes/fixups.md)

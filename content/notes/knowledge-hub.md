@@ -48,6 +48,7 @@ Where all of my notes live!!! There are no rules here 😎
 - [Embedded Applications](notes/embedded-applications.md)
 - [Debugging Techniques](notes/debugging-techniques.md)
 - [Blockchain](notes/blockchain.md)
+- [The C Language](notes/c-language.md)
 
 #### RISC-V
 - [RISC-V](notes/riscv.md)
