@@ -31,8 +31,12 @@ Where all of my notes live!!! There are no rules here 😎
 - [GCC Guide by Maxim](work/gcc-guide-by-maxim.md)
 
 #### Linker
+- [Linker](notes/linker.md)
 - [Relocations](notes/relocations.md)
 - [HowTo Table](notes/howto-table.md)
+
+#### Assembler
+- [RISC-V Assembler](notes/riscv-assembler-reference.md)
 
 ### Cybersecurity
 - Files Transfers ([here](notes/htb-file-transfers.md))
