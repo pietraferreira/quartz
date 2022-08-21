@@ -14,21 +14,9 @@ created: 2022-08-02
 ```toc
 ```
 ---
-When one object file references functions or variables, which do not exist within the file's context but exist in other object files (dependencies) then they must be linked. 
+Different programs will be different sizes, so when the shared library gets mapped into the address space of different programs, it will be at different addresses. This in turn means that all of the functions and variables in the library are in different places. 
 
-Linking allow the use of separate, independent sources of code by providing a way to merge the code together in a single file, meaning the developer is spared of the low-level detail.
-
-For example:
-
-```c
-#include <stdio.h>
-
-void main() {
-    printf("Hello mum!");
-}
-```
-
-Here we don't implement the `printf` function, we link our file, `file.o`, against `printf.o` which is imported from `stdio.h`. It is important to notice that we import the definition of `printf` not the implementation.
+Now, if all of the ways of referring to addresses are relative ("the value +1020 bytes from here") rather than absolute ("the value at `0x102218BF`") this is less of a problem, but this isn't always possible. If not, then all of these absolute addresses need to have a suitable offset added to them — this is relocation.
 
 ## What are relocations?
 Symbolic references and symbolic definitions have to be connected with one another. The mechanism to connect them is what is known as relocations.
