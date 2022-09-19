@@ -58,10 +58,10 @@ This provides an automated way of detecting bugs. Sanitisers also require runtim
 On some platforms, [Valgrind](https://valgrind.org/) can also detect errors that are detected by some sanitisers, like memory corruption, leaks, etc. Unfortunately, Valgrind is currently not available for RISC-V platforms.
 
 ## Debugging Using a Debugger
-When a debugger is available, it becomes very convenient to inspect programs, get backtraces, values of objects, the state of different threads, etc. Learning to effectively use a debugger like [gdb](notes/gdb.md) greatly simplifies software development. [](notes/useful-commands-dump.md#GDB|Frequently%20used%20`gdb`%20commands.)
+When a debugger is available, it becomes very convenient to inspect programs, get backtraces, values of objects, the state of different threads, etc. Learning to effectively use a debugger like [[notes/general/gdb]] greatly simplifies software development. [[notes/general/useful-commands-dump#GDB|Frequently used `gdb` commands.]]
 
 ## Remote Debugging
-Info on remote debugging on GDB can be found [](notes/gdb.md#Remote%20Debugging|here).
+Info on remote debugging on GDB can be found [[notes/general/gdb#Remote Debugging|here]].
 
 ## JTAG-based Debugging
 During the early bringup phase of hardware, there are no software capabilities. In order to debug bare metal applications or access different hardware blocks, JTAG (named after the Joint Test Action Group) is used as the transport mechanism. 
@@ -73,8 +73,8 @@ RISC-V defines a standard interface for external debugging, this includes access
 ## References
 - [Cornell University, CS312 Lecture 26, Debugging Techniques](https://www.cs.cornell.edu/courses/cs312/2006fa/lectures/lec26.html)
 - [Debugging with GDB](https://www.sourceware.org/gdb/current/onlinedocs/gdb.html)
-- [Tim Newsome - RISC-V External Debug (aka JTAG debugging)](https://riscv.org/wp-content/uploads/2016/01/Tues1030-RISC-V-External-Debug.pdf)
+- [[aka JTAG debugging)](https://riscv.org/wp-content/uploads/2016/01/Tues1030-RISC-V-External-Debug.pdf|Tim Newsome - RISC-V External Debug (aka JTAG debugging)]]
 - [Tim Newsome and Megan Wachs - RISC-V External Debug Support Version 0.13.2](https://riscv.org/wp-content/uploads/2019/03/riscv-debug-release.pdf)
-- [Five EmbedDev - An Embedded RISC-V Blog](https://five-embeddev.com/riscv-debug-spec/latest/introduction.html#sec:intro)
+- [[https://five-embeddev.com/riscv-debug-spec/latest/introduction.html#sec:intro]]
 - [University of San Francisco - Programming "By Contract"](https://www.cs.usfca.edu/~parrt/course/601/lectures/programming.by.contract.html)
-- [Debugging With Gdb](https://github.com/riscv/riscv-isa-sim#debugging-with-gdb)
+- [[https://github.com/riscv/riscv-isa-sim#debugging-with-gdb]]

@@ -10,11 +10,11 @@ created: 2022-06-12
 ---
 Formal languages are used among others as the basis for defining the grammar of programming languages and formalised versions of subsets of natural languages in which the words of the language represent concepts that are associated with particular meanings or semantics.
 
-- [Parse Trees](notes/parse-trees.md)
-    - [Chomsky Grammars](notes/chomsky-grammars.md)
-    - [Equivalent Grammars](notes/equivalent-grammars.md)
-    - [Ambiguous Grammars](notes/ambiguous-grammars.md)
-- [Syntax Directed Translation](notes/syntax-directed-translation.md)
+- [[notes/general/parse-trees|Parse Trees]]
+    - [[notes/general/chomsky-grammars|Chomsky Grammars]]
+    - [[notes/general/equivalent-grammars|Equivalent Grammars]]
+    - [[notes/general/ambiguous-grammars|Ambiguous Grammars]]
+- [[notes/general/syntax-directed-translation|Syntax Directed Translation]]
 
 ## Defining a Language
 - **Non-terminal** symbols appear on the **left** of productions.
@@ -131,5 +131,5 @@ We can also have **inherited attributes**, where values of attributes on the RHS
 **L-attributed** grammars have inherited attributes in which all inherited attributes are only functions of symbols to their left in the production. They can be evaluated by left-to-right depth first traversal of the parse tree.
 
 ## See Also
-- [Compilers](notes/compilers.md)
-- [Trees](notes/trees.md)
+- [[notes/general/compilers|Compilers]]
+- [[notes/general/trees|Trees]]

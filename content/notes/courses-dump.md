@@ -17,4 +17,4 @@ Here you can find all of the cool courses and guides I find online.
 - Linux Up Skill Challenge - [Website](https://linuxupskillchallenge.org/)
 
 ## On going
-- Courses I am taking: [here](kanban/what-am-i-studying-kanban.md).
+- Courses I am taking: [[notes/private/kanban/what-am-i-studying-kanban|here]].

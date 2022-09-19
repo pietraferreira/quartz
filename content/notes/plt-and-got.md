@@ -10,7 +10,7 @@ programming-languagues:
 created: 2022-08-02
 ---
 ## Procedure Linkage Table and Global Offset Table
-If a program receives an incorrect input for example, it terminates, rendering useless all of the relocation work performed by the [dynamic linker](/notes/linker.md). To solve this, we can resolve function references **when they are called** instead of at load-time.
+If a program receives an incorrect input for example, it terminates, rendering useless all of the relocation work performed by the [[notes/general/linker|dynamic linker]]. To solve this, we can resolve function references **when they are called** instead of at load-time.
 
 This is enabled by the Procedure Linkage Table (PLT) and the Global Offset Table (GOT).
 
@@ -19,16 +19,16 @@ This is enabled by the Procedure Linkage Table (PLT) and the Global Offset Table
 
 In general, external functions are reached by calling their respective PLT entry:
 
-![](notes/images/Pasted%20image%2020220802105911.png)
+![[notes/images/Pasted image 20220802105911.png]]
 
 Then the PLT entry will retrieve the function's address from the function's GOT entry, and call it:
 
-![](notes/images/Pasted%20image%2020220802105930.png)
+![[notes/images/Pasted image 20220802105930.png]]
 
 ---
 ## Related Notes
-- [Relocations](notes/relocations.md)
-- [Linker](/notes/linker.md)
-- [Howto Table](notes/howto-table.md)
-- [Linker Relaxation](notes/linker-relaxation.md)
-- [Jump Table](notes/jump-table.md)
+- [[notes/general/relocations|Relocations]]
+- [[notes/general/linker|Linker]]
+- [[notes/general/howto-table|Howto Table]]
+- [[notes/general/linker-relaxation|Linker Relaxation]]
+- [[notes/general/jump-table|Jump Table]]

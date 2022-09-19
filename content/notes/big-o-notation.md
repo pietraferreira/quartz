@@ -10,7 +10,7 @@ created: 2022-06-05
 ---
 It describes how the performance of an algorithm scales with the size of the problem.
 
-[Performance](notes/compiler-optimisation.md#Performance) may be **time to execute** or **amount of memory**.
+[[notes/general/compiler-optimisation#Performance|Performance]] may be **time to execute** or **amount of memory**.
 
 Size must be a quantitative measure of the scale of the problem. For example:
 - Number of items to sort.
@@ -19,7 +19,7 @@ Size must be a quantitative measure of the scale of the problem. For example:
 An everyday example would be `n` people shaking hands in a room where the **number of handshakes** is $O(n^2)$ and **time to shake hands** is $O(n)$.
 
 ## Performance Families
-![](notes/images/5067FFC5-4A77-4CF9-A02B-8E0619F149B9.jpeg)
+![[notes/images/5067FFC5-4A77-4CF9-A02B-8E0619F149B9.jpeg]]
 
 Classifications ordered by **decreasing** efficiency:
 - Constant: O(1)

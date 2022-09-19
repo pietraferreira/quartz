@@ -43,7 +43,7 @@ git config --global http.postBuffer 157286400
 | `r`                          | To run the program.                                              |
 
 The docs are [here](https://www.gnu.org/software/gdb/documentation/).
-More info on [GDB](notes/gdb.md).
+More info on [[notes/general/gdb|GDB]].
 
 ## The dump of dumps
 

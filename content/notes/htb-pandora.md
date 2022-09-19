@@ -38,7 +38,7 @@ Let's add it to our localhost by editing `/etc/hosts`, adding `pandora.htb` and 
 
 Let's try sending stuff using the form:
 
-![](notes/images/Screenshot%20from%202022-07-18%2011-15-52.png)
+![[notes/images/Screenshot from 2022-07-18 11-15-52.png]]
 
 We also set up a `nc -lnvp 80`, but didn't really receive anything.
 
@@ -253,7 +253,7 @@ LISTEN 0      128            [::1]:8000         [::]:*    users:(("ssh",pid=1618
 
 Now we can checkout: `http://localhost:8000`!
 
-![](notes/images/Screenshot%20from%202022-07-18%2012-44-31.png)
+![[notes/images/Screenshot from 2022-07-18 12-44-31.png]]
 
 We can now `searchploit Pandora 7`. They seem all to be authenticated, so we need a login.
 
@@ -269,7 +269,7 @@ http://localhost:8000/pandora_console/include/chart_generator.php?session_id=1' 
 
 It doesn't show `Access Not Granted` so promising. Let's try **Burp**. We intercept it, modify it a bit and save it to file to run `sqlmap`:
 
-![](notes/images/Screenshot%20from%202022-07-18%2012-52-54.png)
+![[notes/images/Screenshot from 2022-07-18 12-52-54.png]]
 
 We can now check if it is injectable:
 
@@ -528,7 +528,7 @@ To find out the sessions! We will take one:
 
 And put it in the URL, like so `http://localhost:8000/pandora_console/include/chart_generator.php?session_id=g4e01qdgk36mfdh90hvcc54umq` and refresh `http://localhost:8000/pandora_console/`. We get it!
 
-![](notes/images/Screenshot%20from%202022-07-18%2013-13-50.png)
+![[notes/images/Screenshot from 2022-07-18 13-13-50.png]]
 
 Matt doesn't seem to be an admin. Let's try some other things.
 

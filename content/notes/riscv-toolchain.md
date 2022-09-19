@@ -12,7 +12,7 @@ There are two RISC-V toolchains that are popularly used:
 1.  The GNU RISC-V toolchain
 2.  The LLVM RISC-V toolchain
 
-Both toolchains provide a state-of-the-art optimising [compiler](notes/compilers.md), assembler, linker, and various other tools to build applications that run on RISC-V machines.
+Both toolchains provide a state-of-the-art optimising [[notes/general/compilers|compiler]], assembler, linker, and various other tools to build applications that run on RISC-V machines.
 
 ## Where to download the toolchains and simulator
 The official [RISC-V GitHub repository](https://github.com/riscv-collab/riscv-gcc) provides the source code for the `riscv-gnu` toolchain, and the prebuilt toolchain can be downloaded from [here](https://github.com/riscv-software-src/riscv-gnu-toolchain). 
@@ -24,17 +24,17 @@ The RISC-V LLVM toolchain is not readily available from third-party providers, b
 The RISC-V simulator can be downloaded from the official RISC-V GitHub repository: [riscv/riscv-isa-sim: Spike, a RISC-V ISA Simulator](https://github.com/riscv/riscv-isa-sim). Although RISC-V boards are readily available from several vendors, using simulators is an easy way to get started with RISC-V development.
 
 ## Building Application with the Toolchain
-In order to build a RISC-V application, using a [cross-compiler](notes/cross-compilation.md) toolchain is the same as any other cross-compiler-based development system. Two things are required:
+In order to build a RISC-V application, using a [[notes/general/cross-compilation|cross-compiler]] toolchain is the same as any other cross-compiler-based development system. Two things are required:
 
--   The [compiler toolchain](notes/compiler-toolchains.md)
--   [sysroot](notes/sysroot.md)
+-   The [[notes/general/compiler-toolchains|compiler toolchain]]
+-   [[notes/general/sysroot]]
 
 We have described the compiler toolchain and sysroot in the first chapter. Before learning how to build applications with the RISC-V toolchain, we’d like to introduce an interesting naming convention that has been used for cross-compilers.
 
 ### Compiler Naming Convention
-When you download the GCC toolchain, you'll find a `riscv64-unknown-elf-gcc` binary in the `bin` directory. This is the same GCC [compiler](notes/compilers.md) with inbuilt information of sysroot and platform. It is a convention to name [cross-compilers](notes/cross-compilation.md) that way. 
+When you download the GCC toolchain, you'll find a `riscv64-unknown-elf-gcc` binary in the `bin` directory. This is the same GCC [[notes/general/compilers|compiler]] with inbuilt information of sysroot and platform. It is a convention to name [[notes/general/cross-compilation|cross-compilers]] that way. 
 
-The naming is typically using the `arch-vendor-os-abi` format. So, `riscv64-unknown-elf-gcc` means that this is a [cross-compiler](notes/cross-compilation.md) for RISC-V 64 bit, and tit will generate an `elf` binary, which can run on Linux machines for example. An excellent reference on naming convention can be found [here](http://web.eecs.umich.edu/~prabal/teaching/eecs373-f12/notes/notes-toolchain.pdf). In cases where a compiler's name doesn't have the target triplet, the `-dumpmachine` flag can be used to get that:
+The naming is typically using the `arch-vendor-os-abi` format. So, `riscv64-unknown-elf-gcc` means that this is a [[notes/general/cross-compilation|cross-compiler]] for RISC-V 64 bit, and tit will generate an `elf` binary, which can run on Linux machines for example. An excellent reference on naming convention can be found [here](http://web.eecs.umich.edu/~prabal/teaching/eecs373-f12/notes/notes-toolchain.pdf). In cases where a compiler's name doesn't have the target triplet, the `-dumpmachine` flag can be used to get that:
 
 ```bash
 $ gcc -dumpmachine 
@@ -48,9 +48,9 @@ $ riscv64-unknown-elf-gcc -O2 -o a.out hello.c
 $ riscv64-unknown-elf-gcc -O2 hello.c -mabi=lp64d -march=rv64ifd
 ```
 
-The `-march` flag is used to specify the target sub-architecture for which the assembly will be generated. The `-mabi` flag is used to specify data models. For more details on data models, refer to [this](https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models) section of 64-bit computing in Wikipedia.
+The `-march` flag is used to specify the target sub-architecture for which the assembly will be generated. The `-mabi` flag is used to specify data models. For more details on data models, refer to [[https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models]] section of 64-bit computing in Wikipedia.
 
-With the [llvm toolchain](notes/llvm.md), the binary can be built similarly. Assuming [sysroot](notes/sysroot.md) is in the `riscv64-unknown-elf` directory:
+With the [[notes/general/llvm|llvm toolchain]], the binary can be built similarly. Assuming [[notes/general/sysroot]] is in the `riscv64-unknown-elf` directory:
 
 ```bash
 $ clang test.c -c --sysroot riscv64-unknown-elf -target  
@@ -67,7 +67,7 @@ One of the most convenient ways to run small applications is to use the RISC-V s
 3.  RISC-V simulator spike: [https://github.com/riscv-software-src/riscv-isa-sim](https://github.com/riscv-software-src/riscv-isa-sim)
 4.  RISC-V proxy kernel pk: [https://github.com/riscv-software-src/riscv-pk](https://github.com/riscv-software-src/riscv-pk)
 
-The instructions to run a simple `hello-world` app on the Spike simulator are mentioned in their GitHub [README](https://github.com/riscv/riscv-isa-sim#compiling-and-running-a-simple-c-program). To install the proxy kernel, follow the instructions on their GitHub [README](https://github.com/riscv-software-src/riscv-pk). For convenience, you can install both `spike` and `pk` in the same directory as the `riscv64` toolchain directory by providing the path to the toolchain directory as install `prefix` for both.
+The instructions to run a simple `hello-world` app on the Spike simulator are mentioned in their GitHub [[https://github.com/riscv/riscv-isa-sim#compiling-and-running-a-simple-c-program]]. To install the proxy kernel, follow the instructions on their GitHub [README](https://github.com/riscv-software-src/riscv-pk). For convenience, you can install both `spike` and `pk` in the same directory as the `riscv64` toolchain directory by providing the path to the toolchain directory as install `prefix` for both.
 
 ## Running Applications on an Emulator
 Running a RISC-V application on an emulator gives you more flexibility, but the installation steps are more involved. In order to run a RISC-V application on an emulator, you need to have the following dependencies:
@@ -97,7 +97,7 @@ make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- defconfig
 make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- -j $(nproc)
 ```
 
-Make sure to have the prefix of the [cross-compiler](notes/cross-compilation.md) match from your toolchain. In the above example, the GCC [compiler](notes/compilers.md) is `riscv64-unknown-linux-gnu-gcc` so the `CROSS_COMPILE` flag is `riscv64-unknown-linux-gnu-`
+Make sure to have the prefix of the [[notes/general/cross-compilation|cross-compiler]] match from your toolchain. In the above example, the GCC [[notes/general/compilers|compiler]] is `riscv64-unknown-linux-gnu-gcc` so the `CROSS_COMPILE` flag is `riscv64-unknown-linux-gnu-`
 
 ### Build the busybox:
 
@@ -130,10 +130,10 @@ For additional QEMU configurations for RISC-V, check out the [official document
 Additional documentation to debug bare metal issues can be found [here](https://embeddedinn.xyz/articles/tutorial/Adding-a-custom-peripheral-to-QEMU/). You can install the RISC-V virtual machine as documented [here](https://wiki.debian.org/RISC-V).
 
 ## References
--   [Tech: Toolchain & Runtime Subcommittee mailing list](mailto:tech-toolchain-runtime@lists.riscv.org)
+-   [[mailto:tech-toolchain-runtime@lists.riscv.org|Tech: Toolchain & Runtime Subcommittee mailing list]]
 -   [GCC Cross-Compiler](https://wiki.osdev.org/GCC_Cross-Compiler)
--   [64-bit data models](https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models)
--   [The linux-riscv Archives](https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models)
+-   [[https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models]]
+-   [[https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models]]
 -   [Running 64- and 32-bit RISC-V Linux on QEMU](https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html)
 -   [Qemu: Documentation/Platforms/RISCV](https://wiki.qemu.org/Documentation/Platforms/RISCV)
 -   [Debian - RISC-V Wiki](https://wiki.debian.org/RISC-V)

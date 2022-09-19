@@ -19,21 +19,21 @@ A compiler is a system that converts a program from one language to another. In 
 - Provide source code instrumentation capabilities for performance analysis, program introspection.
 
 ## The Compilers
-- [LLVM](notes/llvm.md)
-- [GCC](notes/gcc.md)
+- [[notes/general/llvm|LLVM]]
+- [[notes/general/gcc|GCC]]
 
 ## Topics
-- [Cross-Compilation](notes/cross-compilation.md)
-- [Compiler Optimisation](notes/compiler-optimisation.md)
-- [Compiler Instrumentation](notes/compiler-instrumentation.md)
-- [Compiler Flags](notes/compiler-flags.md)
-- [Formal Languages](notes/formal-languages.md)
-- [Intermediate Representations](notes/intermediate-representations.md)
-- [Lexical Analysis](notes/lexical-analysis.md)
-- [Code Generation](notes/code-generation.md)
+- [[notes/general/cross-compilation|Cross-Compilation]]
+- [[notes/general/compiler-optimisation|Compiler Optimisation]]
+- [[notes/general/compiler-instrumentation|Compiler Instrumentation]]
+- [[notes/general/compiler-flags|Compiler Flags]]
+- [[notes/general/formal-languages|Formal Languages]]
+- [[notes/general/intermediate-representations|Intermediate Representations]]
+- [[notes/general/lexical-analysis|Lexical Analysis]]
+- [[notes/general/code-generation|Code Generation]]
 
 ## Structure of a Compiler
-![](notes/images/compiler-structure.png)
+![[notes/images/compiler-structure.png]]
 
 ## Languages for Writing Compilers
 Possible approaches:
@@ -47,11 +47,11 @@ Possible approaches:
 Increasingly mainstream compilers use the **second** approach, with C++ now the language of choice (being ubiquitous (found everywhere)).
 
 ## Tools
-- [GDB](notes/gdb.md)
-- [GNU](notes/gnu.md)
+- [[notes/general/gdb|GDB]]
+- [[notes/general/gnu|GNU]]
 
 ## Related Notes
-- [Compiler Toolchains](notes/compiler-toolchains.md)
-- [Instruction Set Semantics](notes/instruction-set-semantics.md)
-- [Online Resources - LLVM](notes/llvm.md#Online%20resources|Lots%20of%20Online%20Resources)
+- [[notes/general/compiler-toolchains|Compiler Toolchains]]
+- [[notes/general/instruction-set-semantics|Instruction Set Semantics]]
+- [[notes/general/llvm#Online resources|Lots of Online Resources]]
 - [Writing a C compiler](https://norasandler.com/2017/11/29/Write-a-Compiler.html)

@@ -16,14 +16,14 @@ For example if too much data is written to a reserved memory **buffer** or **sta
 
 A buffer overflow can overwrite the specific program's **return address** with arbitrary data, allowing an attacker to execute commands with the **privileges of the process** vulnerable to the buffer overflow by passing arbitrary machine code.
 
-- [CPU Architecture](notes/cpu-architecture.md)
-    - [Stacks and Queues](notes/stacks-and-queues.md)
-    - [Endianness](notes/endianness.md)
-- [GDB](notes/gdb.md)
-- [Take Control of EIP](notes/take-control-eip.md)
-- [Generate Shellcode](notes/generate-shellcode.md)
-- [Identification of the Return Address](notes/identify-return-address.md)
-- [Prevention Techniques and Mechanisms](notes/so-prevention-techniques.md)
+- [[notes/general/cpu-architecture|CPU Architecture]]
+    - [[notes/general/stacks-and-queues|Stacks and Queues]]
+    - [[notes/general/endianness|Endianness]]
+- [[notes/general/gdb|GDB]]
+- [[notes/general/take-control-eip|Take Control of EIP]]
+- [[notes/general/generate-shellcode|Generate Shellcode]]
+- [[notes/general/identify-return-address|Identification of the Return Address]]
+- [[notes/general/so-prevention-techniques|Prevention Techniques and Mechanisms]]
 
 ## CPU Architecture
 A **Von-Neumann** architecture consists of four functional units:

@@ -44,7 +44,7 @@ Entry in `riscv-opc.c`:
 - Instruction operands: `di` maps to the loop number and `b1` maps to the unsigned immediate value (`cv.starti Ln(di), uimmL(b1)`).
 - Match and Mask: defined in `include/opcode/riscv-opc.h`, mask being the **preset bits** and match the **opcode**. Instruction masks are used to hard code common encoding fields in the instruction, such as the opcode, and to mask preset bits with 1 in the operand encoding fields. You can see that how it is calculated here. So if you exclusive OR something with the MATCH, and all bits are the same as MASK, then the return will be 0 `((insn ^ MATCH) & MASK) == 0`.
 
-![](notes/images/Screenshot%20from%202022-07-20%2013-35-38.png)
+![[notes/images/Screenshot from 2022-07-20 13-35-38.png]]
 
 Here it hard codes the source register, function, the destination register and the opcode. We then have our match field checking the encoding.
 

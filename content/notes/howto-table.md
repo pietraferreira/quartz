@@ -9,7 +9,7 @@ created: 2022-06-05
 ---
 # Howto Table
 ---
-The [relocation](notes/relocations.md) table records the list of items that the file needs (from other object files or libraries).
+The [[notes/general/relocations|relocation]] table records the list of items that the file needs (from other object files or libraries).
 
 The relocation record contains information like: which instructions need to be relocated (the offsets), which symbols are involved with the relocation and how to relocate the files relative to the symbols.
 
@@ -46,8 +46,8 @@ HOWTO (R_RISCV_CVPCREL_UI12,          /* type */
 * _pcrel_offset_: when some formats create PC relative instructions, they leave the value of the pc of the place being relocated in the offset slot of the instruction, so that a PC relative relocation can be made by just adding in an ordinary offset. in the cases that the displacement part of the instruction is empty, this flags signals the fact.
 
 ## Related Notes
-- [Relocations](notes/relocations.md)
-- [PLT and GOT](/notes/plt-and-got.md)
-- [Linker](notes/linker.md)
-- [Linker Relaxation](notes/linker-relaxation.md)
-- [Jump Table](notes/jump-table.md)
+- [[notes/general/relocations|Relocations]]
+- [[notes/general/plt-and-got|PLT and GOT]]
+- [[notes/general/linker|Linker]]
+- [[notes/general/linker-relaxation|Linker Relaxation]]
+- [[notes/general/jump-table|Jump Table]]

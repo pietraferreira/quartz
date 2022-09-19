@@ -8,17 +8,17 @@ created: 2022-06-05
 ---
 # Hash Tables
 ---
-A hash table is a data structure which offers a fast implementation of the associative array (abstract data structure, also called a map, symbol table or dictionary) [](notes/hash-tables.md#API|API). 
+A hash table is a data structure which offers a fast implementation of the associative array (abstract data structure, also called a map, symbol table or dictionary) [[notes/general/hash-tables#API|API]]. 
 
 A hash table consists of an array of 'buckets', each of which stores a key-value pair. In order to locate the bucket where the key-value pair should be stored, the key is passed through a hashing function. This function returns an integer which is used as the pair's index in the array of buckets. When we want to retrieve a key-value pair, we supply the key to the same hashing function, receive its index, and use the index to find it in the array.
 
-Array indexing has algorithmic [complexity](notes/big-o-notation.md) `O(1)`, making hash tables fast at storing and retrieving data.
+Array indexing has algorithmic [[notes/general/big-o-notation|complexity]] `O(1)`, making hash tables fast at storing and retrieving data.
 
-- Hash tables are [vector](notes/vectors-arrays.md) with *n* entries.
+- Hash tables are [[notes/general/vectors-arrays|vector]] with *n* entries.
 
 Hash functions:
 - H(**k**) gives a key, **k**, yields a value in the range [0,n] (it is important to have an even distribution).
-- Store key, **k**, and value, **v**, at index H(**k**) in the [vector](notes/vectors-arrays.md).
+- Store key, **k**, and value, **v**, at index H(**k**) in the [[notes/general/vectors-arrays|vector]].
     - May end up with multiple keys with the same H(**k**).
         - Build up a double linked list of entries (_open_ hash table).
         - Use next available free slot (_closed_ hash table).

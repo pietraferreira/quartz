@@ -8,11 +8,11 @@ created: 2022-07-06
 ---
 # File Transfers
 ---
-- Netcat ([here](notes/netcat.md))
-- RDP ([here](notes/rdp.md))
-- [File Encryption](notes/file-encryption.md)
-- [Nginx](notes/nginx.md)
-- [Living off the land](notes/lolbins.md)
+- Netcat ([[notes/general/netcat|here]])
+- RDP ([[notes/general/rdp|here]])
+- [[notes/general/file-encryption|File Encryption]]
+- [[notes/general/nginx|Nginx]]
+- [[notes/general/lolbins|Living off the land]]
 
 # Windows
 ## Download Operations
@@ -286,7 +286,7 @@ Pietra@htb[/htb]$ echo <base64> | base64 -d -w 0 > hosts
 #### SMB Uploads
 We previously discussed that companies usually allow outbound traffic using `HTTP` (TCP/80) and `HTTPS` (TCP/443) protocols. Commonly enterprises don't allow the SMB protocol (TCP/445) out of their internal network because this can open them up to potential attacks. For more information on this, we can read the Microsoft post [Preventing SMB traffic from lateral connections and entering or leaving the network](https://support.microsoft.com/en-us/topic/preventing-smb-traffic-from-lateral-connections-and-entering-or-leaving-the-network-c0541db7-2244-0dce-18fd-14a3ddeb282a).
 
-An alternative is to run SMB over HTTP with `WebDav`. `WebDAV` [(RFC 4918)](https://datatracker.ietf.org/doc/html/rfc4918) is an extension of HTTP, the internet protocol that web browsers and web servers use to communicate with each other. The `WebDAV` protocol enables a webserver to behave like a fileserver, supporting collaborative content authoring. `WebDAV` can also use HTTPS.
+An alternative is to run SMB over HTTP with `WebDav`. `WebDAV` [[RFC 4918)](https://datatracker.ietf.org/doc/html/rfc4918|(RFC 4918)]] is an extension of HTTP, the internet protocol that web browsers and web servers use to communicate with each other. The `WebDAV` protocol enables a webserver to behave like a fileserver, supporting collaborative content authoring. `WebDAV` can also use HTTPS.
 
 When you use `SMB`, it will first attempt to connect using the SMB protocol, and if there's no SMB share available, it will try to connect using HTTP. In the following Wireshark capture, we attempt to connect to the file share `testing3`, and because it didn't find anything with `SMB`, it uses `HTTP`.
 

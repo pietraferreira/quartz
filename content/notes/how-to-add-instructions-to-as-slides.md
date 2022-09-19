@@ -19,7 +19,7 @@ cv.starti Ln, uimmL
 - **Ln**: 0 for inner loop, 1 for outer loop.
 - **uimmL**: offset of the start of the loop.
 
-![Image](file:///home/pietra/Pictures/starti-bits.png)
+![[file:///home/pietra/Pictures/starti-bits.png|Image]]
 
 ---
 ## Summary of changes
@@ -51,7 +51,7 @@ You can see that how it is calculated here. So if you exclusive OR something wit
 
 **((insn ^ MATCH) & MASK) == 0**.
 
-![](file:///home/pietra/Pictures/starti-mask-match.png)
+![[file:///home/pietra/Pictures/starti-mask-match.png]]
 Here it hard codes the **source register**, **function**, the **destination register** and the **opcode**. 
 
 ---
@@ -260,7 +260,7 @@ It requires **Zcb**, which requires **Zca**.
 
 `c.lbu rd', uimm(rs1')`
 
-![](file:///home/pietra/Pictures/clbu-encoding.png)
+![[file:///home/pietra/Pictures/clbu-encoding.png]]
 
 | FUNCT3 | --- | rs1 | uimm | rd  | c0  |
 | ------ | --- | --- | ---- | --- | --- |
@@ -271,7 +271,7 @@ It requires **Zcb**, which requires **Zca**.
 
 `cm.lbu rd', uimm(rs1')`
 
-![](file:///home/pietra/Pictures/cmlbu-encoding.png)
+![[file:///home/pietra/Pictures/cmlbu-encoding.png]]
 
 How is it different?
 

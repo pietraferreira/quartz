@@ -8,7 +8,7 @@ created: 2022-07-12
 ---
 # Take Control of EIP
 ---
-This is part of a guide that you can find [here](notes/htb-stack-based-overflow-linux.md).
+This is part of a guide that you can find [[notes/general/htb-stack-based-overflow-linux|here]].
 
 We need to get the **instruction pointer** (**EIP**) under control so we can tell it to which address to jump. So it should point to some **shellcode** for example.
 
