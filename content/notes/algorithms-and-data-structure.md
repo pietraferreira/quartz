@@ -9,21 +9,21 @@ created: 2022-06-05
 # Algorithms and Data Structure
 ---
 ## Topics
-- [Sets and Maps](notes/sets-and-maps.md)
-- [Vectors and Arrays](notes/vectors-arrays.md)
-- [Big O Notation](notes/big-o-notation.md)
-- [Lists](notes/lists.md)
-- [Stacks and Queues](notes/stacks-and-queues.md)
-- [Hash Tables](notes/hash-tables.md)
-- [Trees](notes/trees.md)
-- [Sorting](notes/sorting.md)
-- [Graphs](notes/graphs.md)
-    - [Minimum Spanning Subtree](notes/minimum-spanning-subtree.md)
-    - [Dijkstra](notes/dijkstra-algorithm.md)
-    - [Floyd-Warshall](notes/floyd-warshall.md)
-    - [Inkblot](notes/inkblot-algorithm.md)
-- [Garbage Collection](notes/garbage-collection.md)
-- [Problems](notes/cs-problems.md)
+- [[notes/general/sets-and-maps|Sets and Maps]]
+- [[notes/general/vectors-arrays|Vectors and Arrays]]
+- [[notes/general/big-o-notation|Big O Notation]]
+- [[notes/general/lists|Lists]]
+- [[notes/general/stacks-and-queues|Stacks and Queues]]
+- [[notes/general/hash-tables|Hash Tables]]
+- [[notes/general/trees|Trees]]
+- [[notes/general/sorting|Sorting]]
+- [[notes/general/graphs|Graphs]]
+    - [[notes/general/minimum-spanning-subtree|Minimum Spanning Subtree]]
+    - [[notes/general/dijkstra-algorithm|Dijkstra]]
+    - [[notes/general/floyd-warshall|Floyd-Warshall]]
+    - [[notes/general/inkblot-algorithm|Inkblot]]
+- [[notes/general/garbage-collection|Garbage Collection]]
+- [[notes/general/cs-problems|Problems]]
 
 ### Extra Resources
 - [Visualisation](https://visualgo.net/en)
@@ -33,5 +33,5 @@ created: 2022-06-05
 - [Java MOOC by University of Helsinki](https://java-programming.mooc.fi/)
 
 ## Mathematical Algorithms
-- [Linear Equations](notes/linear-equations.md)
-- [Newton-Raphson Iteration](notes/newton-raphson.md)
+- [[notes/general/linear-equations|Linear Equations]]
+- [[notes/general/newton-raphson|Newton-Raphson Iteration]]

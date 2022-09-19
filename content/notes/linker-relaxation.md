@@ -65,6 +65,6 @@ As you can see, the linker knows that the call from `_start` to `func` fits with
 
 ---
 ## Related Notes
-- [2022-07-03 - Relaxation](notes/daily/2022-07-03-relaxation.md)
-- [Testing Relaxation - COREV](notes/daily/testing-relaxation-corev.md)
-- [Fixups](notes/fixups.md)
+- [[notes/daily/2022-07-03-relaxation|2022-07-03 - Relaxation]]
+- [[notes/daily/testing-relaxation-corev|Testing Relaxation - COREV]]
+- [[notes/general/fixups|Fixups]]

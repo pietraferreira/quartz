@@ -10,7 +10,7 @@ created: 2022-06-05
 ---
 # Shell Sort
 ---
-Shell sort adds one more loop outside [bubble sort](notes/bubble-sort.md).
+Shell sort adds one more loop outside [[notes/general/bubble-sort|bubble sort]].
 
 It starts by sorting small overlapping subsets, then makes then smaller but by then the array is mostly sorted.
 

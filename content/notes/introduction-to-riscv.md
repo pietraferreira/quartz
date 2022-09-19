@@ -11,16 +11,16 @@ created: 2022-06-05
 
 Notes on the [Introduction to RISC-V](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD110x+1T2021/home) LinuxFoundation course.
 
-* [](notes/introduction-to-riscv.md#Chapter%201%20-%20Getting%20to%20know%20RISC-V|Chapter%201) - Getting to know RISC-V
-* [](notes/introduction-to-riscv.md#Chapter%202%20-%20The%20RISC-V%20Story|Chapter%202) - The RISC-V Story
-* [](notes/introduction-to-riscv.md#Chapter%203%20-%20The%20RISC-V%20Community|Chapter%203) - The RISC-V Community
-* [](notes/introduction-to-riscv.md#Chapter%204%20-%20Developing%20RISC-V|Chapter%204) - Developing RISC-V
-* [](notes/introduction-to-riscv.md#Chapter%205%20-%20RISC-V%20In%20Practice|Chapter%205) - RISC-V in Practice
+* [[notes/general/introduction-to-riscv#Chapter 1 - Getting to know RISC-V|Chapter 1]] - Getting to know RISC-V
+* [[notes/general/introduction-to-riscv#Chapter 2 - The RISC-V Story|Chapter 2]] - The RISC-V Story
+* [[notes/general/introduction-to-riscv#Chapter 3 - The RISC-V Community|Chapter 3]] - The RISC-V Community
+* [[notes/general/introduction-to-riscv#Chapter 4 - Developing RISC-V|Chapter 4]] - Developing RISC-V
+* [[notes/general/introduction-to-riscv#Chapter 5 - RISC-V In Practice|Chapter 5]] - RISC-V in Practice
 
 ---
 ## Chapter 1 - Getting to know RISC-V
 ### Overview
-* Difference between RISC-V [ISA](notes/isa.md) and RISC-V international.
+* Difference between RISC-V [[notes/general/isa|ISA]] and RISC-V international.
 * Description of the organisation around the RISC-V community.
 * Goals of RISC-V international as a community-driven organisation.
 
@@ -28,10 +28,10 @@ Notes on the [Introduction to RISC-V](https://learning.edx.org/course/course-v1:
 [RISC](https://en.wikipedia.org/wiki/Reduced_instruction_set_computer) is short for **Reduced Instruction Set Computer** as was designed in the 1980s.
 
 RISC-V can refer to different things:
-  - The Instruction Set Architecture ([ISA](notes/isa.md))
-  * The community of users and developers who develop and use the [ISA](notes/isa.md).
-  * The RISC-V International Association that manages the [ISA](notes/isa.md).
-  * The hardware and IP products built on the [ISA](notes/isa.md).
+  - The Instruction Set Architecture ([[notes/general/isa|ISA]])
+  * The community of users and developers who develop and use the [[notes/general/isa|ISA]].
+  * The RISC-V International Association that manages the [[notes/general/isa|ISA]].
+  * The hardware and IP products built on the [[notes/general/isa|ISA]].
 
 ### The RISC-V Community
 Everyone shares a common interest in developing an **openly** available instruction set architecture specification and the ecosystem around it, including:
@@ -47,7 +47,7 @@ All of this community output is recognised on the RISC-V Exchange, an organised 
 ### RISC-V Internation
 The RISC-V community spans over more than 40 countries and RISC-V international is a Swiss non-profit organisation.
 
-RISC-V international does not produce hardware, they provide the basics for all of its members organisations to create new technology based on the foundational support of the RISC-V [ISA](notes/isa.md).
+RISC-V international does not produce hardware, they provide the basics for all of its members organisations to create new technology based on the foundational support of the RISC-V [[notes/general/isa|ISA]].
 
 ## Chapter 2 - The RISC-V Story
 ### Overview
@@ -65,7 +65,7 @@ Because technology does not persist in isolation - as the world becomes more com
 
 Advances in software and hardware standardisation through global collaboration and consensus as well as open source development and delivery has accelerated technical progress at an unprecedented global scale.
 
-As an [ISA](notes/isa.md), RISC-V is not "open source" in the same way as software (as an [ISA](notes/isa.md) is not made of source code). It is an **open specification**.
+As an [[notes/general/isa|ISA]], RISC-V is not "open source" in the same way as software (as an [[notes/general/isa|ISA]] is not made of source code). It is an **open specification**.
 
 ### History of RISC and Open ISAs
 Reduced Instruction Set Computers ([RISC](https://en.wikipedia.org/wiki/Reduced_instruction_set_computer)) where created at the University of California at Berkeley (UCB) nearly at the same time as MIPS at Stanford (in the 1980s).
@@ -73,14 +73,14 @@ Reduced Instruction Set Computers ([RISC](https://en.wikipedia.org/wiki/Reduced_
 Some popular RISC architectures are: the SPARC line, DEC's Alpha line, Intel's i860 and i960 processors and ARM processors. **RISC-V is the latest iteration of it**.
 
 ### RISC-V Origins: UC Berkeley Architecture Research
-The RISC-V instruction set was started by Prof. Krste Asanovic and graduate students Yunsup Lee and Andrew Waterman as part of the Parallel Computing Laboratory ([Par Lab](notes/parlab.md)) at UC Berkeley, of which Prof. David Patterson was Director.
+The RISC-V instruction set was started by Prof. Krste Asanovic and graduate students Yunsup Lee and Andrew Waterman as part of the Parallel Computing Laboratory ([[notes/general/parlab|Par Lab]]) at UC Berkeley, of which Prof. David Patterson was Director.
 
 The following report is the **first publication** that describes the RISC-V instruction set: [_The RISC-V Instruction Set Manual_](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-62.pdf).
 
 [DARPA](https://www.darpa.mil/work-with-us/for-universities) (Defense Advanced Research Projects Agency) plays a significant role.
 
 ### The RISC-V Name
-The name RISC-V was chosen to represent the fifth major RISC [ISA](notes/isa.md) design from UC Berkeley (RISC-I, RISC-II, SOAR and SPUR).
+The name RISC-V was chosen to represent the fifth major RISC [[notes/general/isa|ISA]] design from UC Berkeley (RISC-I, RISC-II, SOAR and SPUR).
 
 ### What is RISC-V International?
 The RISC-V Foundation was founded in 2015 and it is controlled by its members.
@@ -223,7 +223,7 @@ The Exchange contains:
 - Understand the basics of the Unprivileged and Privileged specifications.
 
 ### How the RISC-V ISA is Different
-The most notable difference between RISC-V and other [ISAs](notes/isa.md) is that RISC-V is developed by a member organisation that is completely free to join and licenses its ISA with permissive open source licenses. This means that anyone can contribute to the specifications, and no one company or group of companies can drive the direction of the standards.
+The most notable difference between RISC-V and other [[notes/general/isa|ISAs]] is that RISC-V is developed by a member organisation that is completely free to join and licenses its ISA with permissive open source licenses. This means that anyone can contribute to the specifications, and no one company or group of companies can drive the direction of the standards.
 
 RISC-V International is governed by its Board of Directors. The Board is composed of members elected to represent all classes of membership to ensure we offer a strategic voice at all levels. In addition, the Technical Steering Committee (TSC) provides leadership to our technical initiatives in setting long term strategy, forming tactical committees and work groups, and approving technical deliverables for ratification or release.
 
@@ -260,10 +260,10 @@ Each RISC-V extension goes through several stages on its way to ratification. In
 
 <center><img src="https://courses.edx.org/notes/images/courseware/v1/e9ec87214f09abf0169226df15e0388d/asset-v1:LinuxFoundationX+LFD110x+1T2021+type@asset+block/Extension_lifecycle_and_milestone_definitions.jpg"></center>
 
-Once an extension has been ratified it is added to either the **Unprivileged** or **Privileged** Specification. Occasionally a specification is created as part of a separate document, with the debug specification being the most common example. However, this is a rare case and usually indicates that the extension is not part of the [ISA](notes/isa.md), but rather a “standard” or “non-ISA specification”. We will now review the Unprivileged and Privileged Specification in greater detail.
+Once an extension has been ratified it is added to either the **Unprivileged** or **Privileged** Specification. Occasionally a specification is created as part of a separate document, with the debug specification being the most common example. However, this is a rare case and usually indicates that the extension is not part of the [[notes/general/isa|ISA]], but rather a “standard” or “non-ISA specification”. We will now review the Unprivileged and Privileged Specification in greater detail.
 
 ### Organising the Specifications
-The RISC-V [ISA](notes/isa.md) is broken up into two parts:
+The RISC-V [[notes/general/isa|ISA]] is broken up into two parts:
 
 -   Volume 1, Unprivileged Specification
 -   Volume 2, Privileged Specification
@@ -307,10 +307,10 @@ Chapter 11 describes how we add single-precision floating-point computational in
 #### **“C” Standard Extension**
 Chapter 16 describes the compressed instruction-set extension which reduces static and dynamic code size by adding short 16-bit instruction encodings for common operations. Typically, 50%–60% of the RISC-V instructions in a program can be replaced with RVC instructions, resulting in a 25%–30% code-size reduction. The C extension is compatible with all other standard instruction extensions. The C extension allows 16-bit instructions to be freely intermixed with 32-bit instructions, with the latter able to start on any 16-bit boundary. As such, with the addition of the C extension to any system, no instructions can raise instruction-address-misaligned exceptions.
 
-This covers most of the currently ratified extensions in the unprivileged specification. However, it is important to note that many extensions are included in the specification in a “draft” or “frozen” stage. As we discussed in the section on “[](notes/introduction-to-riscv.md#RISC-V%20Extensions%20Lifecycle|RISC-V%20Extension%20Lifecycle)”, these specifications are not yet ratified and any implementation should avoid using them in production.
+This covers most of the currently ratified extensions in the unprivileged specification. However, it is important to note that many extensions are included in the specification in a “draft” or “frozen” stage. As we discussed in the section on “[[notes/general/introduction-to-riscv#RISC-V Extensions Lifecycle|RISC-V Extension Lifecycle]]”, these specifications are not yet ratified and any implementation should avoid using them in production.
 
 ### The Privileged Specification
-As its name suggests, the privileged specification contains descriptions of the RISC-V [ISA](notes/isa.md) which operate in Machine Mode (M-mode) or Supervisor Mode (S-mode). These modes have elevated privileges and are therefore described in a completely separate document from the base [ISA](notes/isa.md) and standard extensions. This specification also contains additional functionality required for running rich operating systems like Linux.
+As its name suggests, the privileged specification contains descriptions of the RISC-V [[notes/general/isa|ISA]] which operate in Machine Mode (M-mode) or Supervisor Mode (S-mode). These modes have elevated privileges and are therefore described in a completely separate document from the base [[notes/general/isa|ISA]] and standard extensions. This specification also contains additional functionality required for running rich operating systems like Linux.
 
 The first part of each chapter of the privileged specification details the Control and Status Registers (CSRs) which are only accessible from M-mode and S-mode. We will not cover these details here, but will rather focus on other details specific to these two modes.
 
@@ -353,7 +353,7 @@ RISC-V supports Page-Based 32-bit, 39-bit, and 48-bit virtual memory addressing.
 Virtual Memory is a concept which takes several months of graduate level education to grasp and is beyond the scope of this course. It is enough for this course that you understand that RISC-V supports Page-Based virtual memory of several widths, and that there is a special S-Mode instruction used for synchronising updates between hardware threads.
 
 ### Non-ISA Specifications
-Task Groups can also work on software or standards that are not part of the [ISA](notes/isa.md). For example, the following groups work on projects that do not lead to specifications being written, but rather standards that encourage communities to develop their products around a common framework:
+Task Groups can also work on software or standards that are not part of the [[notes/general/isa|ISA]]. For example, the following groups work on projects that do not lead to specifications being written, but rather standards that encourage communities to develop their products around a common framework:
 
 -   _Debug Task Group_ working on external debugging support and standards.
 -   _Compliance Task Group_ working on RISC-V ISA compliance tests and frameworks.
@@ -366,7 +366,7 @@ Task Groups can also work on software or standards that are not part of the [ISA
 -   Compile and run a RISC-V application in emulation.
 
 ### Required Documentation
-First off, Chapter 2 of the RISC-V [](notes/introduction-to-riscv.md#Inside%20the%20Unprivileged%20Specification|Unprivileged%20Specification) goes into detail about the RV32I Base Integer Instruction Set, including a programming model and an explanation of instruction formats. While this information is not required for this course it is certainly helpful in understanding how the RISC-V architecture executes instructions.
+First off, Chapter 2 of the RISC-V [[notes/general/introduction-to-riscv#Inside the Unprivileged Specification|Unprivileged Specification]] goes into detail about the RV32I Base Integer Instruction Set, including a programming model and an explanation of instruction formats. While this information is not required for this course it is certainly helpful in understanding how the RISC-V architecture executes instructions.
 
 For programming assembly instructions, we can use both the ABI reference documentation and the ASM manual to answer any questions we may have along the way. You can find those documents here:
 
@@ -381,7 +381,7 @@ This chapter will be a very high level overview of RISC-V assembly instructions 
 
 RISC-V is a “reduced instruction set” architecture, and as such, there are not many instructions to learn. In this tutorial, we only use 3 instructions: `LA` (load absolute address), `ADDI` (add immediate), and `ECALL`. The `ECALL` instruction is used to make a service request to the execution environment. We will only use two calls in our Hello World app, one to “write” and one to “exit”.
 
-For a full list of instructions you can see the [Unprivileged Specification Chapter 24 "RV32/64G Instruction Set Listings"](https://riscv.org/wp-content/uploads/2019/12/riscv-spec-20191213.pdf#129).  For more information, visit [RISC-V website](https://riscv.org/community/learn/).
+For a full list of instructions you can see the [[https://riscv.org/wp-content/uploads/2019/12/riscv-spec-20191213.pdf#129]].  For more information, visit [RISC-V website](https://riscv.org/community/learn/).
 
 ### Compiling Required Binaries
 Instructions for compiling required binaries can be found in the _["RISC-V - Getting Started Guide"](https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html)_.

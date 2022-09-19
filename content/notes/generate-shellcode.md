@@ -8,7 +8,7 @@ created: 2022-07-12
 ---
 # Generate Shellcode
 ---
-This is part of a guide that you can find [here](notes/htb-stack-based-overflow-linux.md).
+This is part of a guide that you can find [[notes/general/htb-stack-based-overflow-linux|here]].
 
 We have to pay attention to:
 

@@ -39,7 +39,7 @@ An object file is made up of multiple sections, with each section corresponding 
 -   `.bss` is a read-write section containing uninitialised data
 
 ### Program linking
-Program linking is the process of reading multiple relocatable object files, merging the sections from each of the source files, calculating the new addresses for symbols and applying relocation [fixups](notes/fixups.md) to text or data that is pointed to in relocation entries.
+Program linking is the process of reading multiple relocatable object files, merging the sections from each of the source files, calculating the new addresses for symbols and applying relocation [[notes/general/fixups]] to text or data that is pointed to in relocation entries.
 
 ### Linker Script
 A linker script is a text source file that is optionally input to the linker and it contains rules for the linker to use when calculating the load address and alignment of the various sections when creating an executable output file. The standard extension for linker scripts is `.ld`.

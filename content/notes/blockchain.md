@@ -9,7 +9,7 @@ created: 2022-07-01
 # Blockchain
 ---
 - Video [source](https://www.youtube.com/watch?v=gyMwXuJrbJQ).
-- More [here](https://github.com/smartcontractkit/full-blockchain-solidity-course-js#welcome-to-the-course).
+- More https://github.com/smartcontractkit/full-blockchain-solidity-course-js#welcome-to-the-course.
 
 ## What is a Blockchain?
 It is a distributed database or ledger that is shared among the nodes of a computer network. It stores information electronically in digital format. 
@@ -36,7 +36,7 @@ The smart contract defines exactly how users can interact with it, involving who
 ## What is an Oracle?
 A [blockchain oracle](https://blog.chain.link/oracles-the-key-to-unlocking-smart-contracts/) is any device or entity that connects a deterministic blockchain with off-chain data.
 
-![Screenshot 2022-07-01 at 09-53-33 What Is a Blockchain Oracle](images/Screenshot%202022-07-01%20at%2009-53-33%20What%20Is%20a%20Blockchain%20Oracle.png)
+![[notes/images/Screenshot 2022-07-01 at 09-53-33 What Is a Blockchain Oracle.png]]
 
 If there is an API in the middle, the nodes could be interfered.
 
@@ -44,7 +44,7 @@ In blockchain, the mechanism for agreeing upon a data value is called [consensus
 
 Oracles enter every data input through an external transaction. This way, we can be sure that the blockchain itself contains all of the information required to verify itself. This is why oracles are known as blockchain middleware: They are the bridge between the two worlds.
 
-![Screenshot 2022-07-01 at 09-55-17 What Is a Blockchain Oracle](images/Screenshot%202022-07-01%20at%2009-55-17%20What%20Is%20a%20Blockchain%20Oracle.png)
+![[notes/images/Screenshot 2022-07-01 at 09-55-17 What Is a Blockchain Oracle.png]]
 
 [The oracle problem](https://ethereum.stackexchange.com/a/84645/57451) is these two pieces combined:
 

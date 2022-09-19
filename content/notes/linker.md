@@ -86,11 +86,11 @@ Symbolic references get translated into offsets and addresses during compilation
 
 The linker interacts with a symbol table to reference/modify/match a given symbol inside and ELF object at linktime.
 
-In ELF, each symbol is represented as an instance of an `Elfxx_Sym` structure inside a given [**symbol table**](notes/plt-and-got.md). (To retrieve them we use bitmasks).
+In ELF, each symbol is represented as an instance of an `Elfxx_Sym` structure inside a given [[notes/general/plt-and-got|**symbol table**]]. (To retrieve them we use bitmasks).
 
 An ELF object may contain a maximum of two **symbol tables**: `.symtab` and `.dynsym`. `.symtab` is the binary's global symbol table. The `.dynsym` holds symbols needed for **dynamic linking** (external objects, shared objects).
 
-![](notes/images/Pasted%20image%2020220802095635.png)
+![[notes/images/Pasted image 20220802095635.png]]
 
 Here you can see the binary contains the symbol `_IO_stdin_used`, which is the second `Elf32_Sym` instance in `.dynsym`. The `.dynsym` section is represented as an `Elf32_Shdr` structure, and the index of its **string table** within the **section header** table can be retrieved by its `Elf32_Shdr` link field.
 
@@ -138,9 +138,9 @@ Creates an entry in the symbol table called `foo` which holds the address of mem
 Hence we should always take the address of the symbol, and never attempt to use its value.
 
 ## Static Linking
-![](notes/images/Pasted%20image%2020220802105128.png)
+![[notes/images/Pasted image 20220802105128.png]]
 
-**Ld** collects all relevant object files, applies [relocations](notes/relocations.md) and combines the file into a single binary.
+**Ld** collects all relevant object files, applies [[notes/general/relocations]] and combines the file into a single binary.
 
 ### Static Libraries
 The command to produce them is normally `ar`, and the library file has a `.a` extension. These files are normally also prefixed with `lib` and passed to the linker with a `-l` option followed by the name of the library (so `-lfred` will pick up `libfred.a`).
@@ -150,7 +150,7 @@ Libraries are consulted **only** when the normal linking is done and they are pr
 ## Dynamic Linking
 It requires **shared** libraries to create a dynamically linked executable. The output file will contain the executable's code and the names of the shared libraries required, embedded within the binary:
 
-![](notes/images/Pasted%20image%2020220802105245.png)
+![[notes/images/Pasted image 20220802105245.png]]
 
 So when the binary is executed, we find the required dependencies to load and link together. Therefore, we defer the linking stage from compile-time to run-time.
 
@@ -166,8 +166,8 @@ Before the `main` function is run, a smaller version of the linker (`ld.so`) goe
 If a particular symbol is pulled in from a particular shared library (`printf` in `libc.so` for example), then the whole of that shared library is mapped into the address space of that program. This is very different from the behaviour of a static library, where only the particular objects that held undefined symbols got pulled in.
 
 ## Related Notes
-- [Relocations](notes/relocations.md)
-- [PLT and GOT](/notes/plt-and-got.md)
-- [Howto Table](notes/howto-table.md)
-- [Linker Relaxation](notes/linker-relaxation.md)
-- [Jump Table](notes/jump-table.md)
+- [[notes/general/relocations|Relocations]]
+- [[notes/general/plt-and-got|PLT and GOT]]
+- [[notes/general/howto-table|Howto Table]]
+- [[notes/general/linker-relaxation|Linker Relaxation]]
+- [[notes/general/jump-table|Jump Table]]

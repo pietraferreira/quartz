@@ -7,7 +7,7 @@ created: 2022-07-12
 ---
 # Endianness
 ---
-This is part of a guide that you can find [here](notes/htb-stack-based-overflow-linux.md).
+This is part of a guide that you can find [[notes/general/htb-stack-based-overflow-linux|here]].
 
 Bytes are loaded in different order, called **endianness**.
 

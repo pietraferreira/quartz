@@ -8,9 +8,9 @@ created: 2022-06-05
 ---
 # Compiler Optimisation
 ---
-[Compilers](notes/compilers.md) perform a set of transformations on the source code. While some of the transformations are necessary to generate machine code, most of the transformations are done to improve the performance of programs or to reduce the code size. 
+[[notes/general/compilers|Compilers]] perform a set of transformations on the source code. While some of the transformations are necessary to generate machine code, most of the transformations are done to improve the performance of programs or to reduce the code size. 
 
-These transformations are called _compiler optimisations_. This chapter introduces both types of compiler optimisations. The goal of this chapter is to enable learners to use the optimisations effectively. We do not discuss how these optimisations are implemented in the [compilers](notes/compilers.md).
+These transformations are called _compiler optimisations_. This chapter introduces both types of compiler optimisations. The goal of this chapter is to enable learners to use the optimisations effectively. We do not discuss how these optimisations are implemented in the [[notes/general/compilers]].
 
 ## Performance
 When we talk about the performance of an application, we generally refer to how much time it takes to do a certain task. 
@@ -20,7 +20,7 @@ An application needs to perform tasks within a reasonable amount of time to be p
 It should be noted that not all parts of a program need to be performant to be practically usable. Only certain parts often called a ‘bottleneck’ need to be as performant as possible.
 
 ## Flags
-- [](notes/compiler-flags.md#Optimising%20for%20Performance|Optimisation%20flags)
+- [[notes/general/compiler-flags#Optimising for Performance|Optimisation flags]]
 
 ## Optimising Programs for Code Size
 The code size of embedded applications has been a concern for a very long time. While storage becomes cheaper and smaller, developers find creative ways to increase code size by adding features or unnecessary software engineering. 

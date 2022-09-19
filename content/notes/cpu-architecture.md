@@ -7,7 +7,7 @@ created: 2022-07-12
 ---
 # CPU Architecture
 ---
-This is part of a guide that you can find [here](notes/htb-stack-based-overflow-linux.md).
+This is part of a guide that you can find [[notes/general/htb-stack-based-overflow-linux|here]].
 
 A **Von-Neumann** architecture consists of four functional units:
 - Memory
@@ -57,7 +57,7 @@ There are four different types of ISA:
 ## Memory
 When the program is called, the sections are mapped to the segments in the process, and the segments are loaded into memory as described by the **ELF** file.
 
-![](Screenshot%202022-07-11%20at%2016.50.22.png)
+![[Screenshot 2022-07-11 at 16.50.22.png]]
 
 - `.text` - contains the actual assembler instructions of the program, can be read-only.
 - `.data` - contains global and static variables.
@@ -125,7 +125,7 @@ It performs two operations:
 2. Changes the **instruction pointer** (**EIP**) to the call destination and starts execution there.
 
 ## See Also
-- [Stack Overflow Guide - HTB](notes/htb-stack-based-overflow-linux.md)
-- [Stacks and Queues](notes/stacks-and-queues.md)
-- [Endianness](notes/endianness.md)
-- [GDB](notes/gdb.md)
+- [[notes/general/htb-stack-based-overflow-linux|Stack Overflow Guide - HTB]]
+- [[notes/general/stacks-and-queues|Stacks and Queues]]
+- [[notes/general/endianness|Endianness]]
+- [[notes/general/gdb|GDB]]

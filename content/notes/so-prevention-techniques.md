@@ -11,7 +11,7 @@ created: 2022-07-12
 Security mechanisms:
 
 - Canaries
-- Address Space Layout Randomisation ([ASLR](notes/cpu-architecture.md#ASLR))
+- Address Space Layout Randomisation ([[notes/general/cpu-architecture#ASLR]])
 - Data Execution Prevention (DEP)
 
 ## Canaries

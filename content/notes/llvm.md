@@ -8,17 +8,17 @@ created: 2022-06-05
 ---
 # LLVM 
 ---
-The LLVM Project is a collection of modular and reusable [compiler](notes/compilers.md) and toolchain technologies. Prebuilt binaries of the LLVM toolchain can be downloaded from the [LLVM Download Page](https://releases.llvm.org/download.html). The toolchain can also be built from source by following the instructions from their [documentation page](https://llvm.org/docs/). The toolchain contains the following top-level directories:
+The LLVM Project is a collection of modular and reusable [[notes/general/compilers|compiler]] and toolchain technologies. Prebuilt binaries of the LLVM toolchain can be downloaded from the [LLVM Download Page](https://releases.llvm.org/download.html). The toolchain can also be built from source by following the instructions from their [documentation page](https://llvm.org/docs/). The toolchain contains the following top-level directories:
 
 ```bash
 bin include lib libexec share
 ```
 
-The `bin` folder contains all the executable binaries, like the clang [compiler](notes/compilers.md) and a set of other useful tools such as clang-rename, clang-refactor, etc.
+The `bin` folder contains all the executable binaries, like the clang [[notes/general/compilers|compiler]] and a set of other useful tools such as clang-rename, clang-refactor, etc.
 
-The `include` folder contains a set of header files that are included during compilation. For example, the C++ header files like iostream, etc. Notice that the C header files like `stdio.h` are not supplied with the toolchain because they are part of the [sysroot](notes/sysroot.md). It also contains header files that are used when using the llvm libraries to build tools.
+The `include` folder contains a set of header files that are included during compilation. For example, the C++ header files like iostream, etc. Notice that the C header files like `stdio.h` are not supplied with the toolchain because they are part of the [[notes/general/sysroot]]. It also contains header files that are used when using the llvm libraries to build tools.
 
-The `lib` folder contains libraries like libc++, libc++abi, etc. These libraries may be used by the clang [compiler](notes/compilers.md) during the compilation process or can be used as a reusable set of libraries.
+The `lib` folder contains libraries like libc++, libc++abi, etc. These libraries may be used by the clang [[notes/general/compilers|compiler]] during the compilation process or can be used as a reusable set of libraries.
 
 The `libexec` folder contains two Python scripts that are only relevant for using the clang static analyser.
 
@@ -29,7 +29,7 @@ Front end, optimiser and back end (as most C compilers).
 
 - Front end: parses source code, checking it for errors and builds a language-specific Abstract Syntax Tree (AST) to represent the input code. The AST is optionally converted to a new representation for optimisation, and the optimiser and back end are run on the code.
 
-![](notes/images/three-phase-compiler.png)
+![[notes/images/three-phase-compiler.png]]
 
 - Optimiser: responsible for transforming the code to improve running time, for example by eliminating redundant computations, and it is usually more of less independent of language and target.
 
@@ -37,7 +37,7 @@ Front end, optimiser and back end (as most C compilers).
 
 The most important win of this classical design comes when a compiler decides to support multiple source languages or target architectures. If the compiler uses a common code representation in its optimiser, then a front end can be written for any language that can compile to it, and a back end can be written for any target that can compile from it (as seen bellow).
 
-![](notes/images/retargetability.png)
+![[notes/images/retargetability.png]]
 
 ## LLVM Intermediate Representation (IR)
 Is the form LLVm uses to represent code in the compiler. It is designed to host mid-level analyses and transformations that can be found in the optimisation phase.
@@ -81,7 +81,7 @@ unsigned add2(unsigned a, unsigned b) {
 }
 ```
 
-As you can see, the instructions (in LLVM IR) are in [three address form](notes/three-address-code.md), which means they take some number of inputs and produce a result in a different register.
+As you can see, the instructions (in LLVM IR) are in [[notes/general/three-address-code|three address form]], which means they take some number of inputs and produce a result in a different register.
 
 It also does not use a fixed set of named registers, it uses an infinite set of temporaries named with a `%` character.
 
@@ -94,7 +94,7 @@ Each shared component needs to be able to reason about target specific propertie
 
 LLVM's solution to this is for each target to provide a **target description** in a declarative domain-specific language (a set of `.td` files) processed by the **tblgen** tool. Here is the build process for the x86 target:
 
-![](notes/images/x86-target-definition-example.png)
+![[notes/images/x86-target-definition-example.png]]
 
 The different subsystems supported by the `.td` files allow target authors to build up the different pieces of their target. For example, the x86 back end defines a register class that holds all of its 32-bit registers name "GR32", like this:
 
@@ -108,14 +108,14 @@ The language used in the `.td` files are Target(Hardware) Description Language t
 
 In frontend, compiler development tools provide the "ParseGenerator" for compiler development; in backend they provide the "Machine Code Generator" for development, as you can see below:
 
-![](notes/images/front-tablegen-flow.png)
+![[notes/images/front-tablegen-flow.png]]
 
-![](notes/imagesllvm-tablegen-flow.png)
+![[notes/imagesllvm-tablegen-flow.png]]
 
 ## Code Generation Sequence
 From tricore_llvm.pdf:
 
-![](notes/images/llvm-code-generation-sequence.png)
+![[notes/images/llvm-code-generation-sequence.png]]
 
 LLVM is a Static Single Assignment (SSA) based representation. LLVM provides an infinite virtual registers which can hold values of primitive type (integral, floating point, or pointer values). So, every operand can be saved in different virtual register in llvm SSA representation. Comment is “;” in llvm representation. Following is the llvm SSA instructions:
 
@@ -191,9 +191,9 @@ Any 'last-minute' peephole optimisations for the final machine code can be appli
 For static compilation, the end result is an assembly code file. For JIT compilation, the opcodes of the machine instructions are written into memory.
 
 ## LLVM vs GCC in structure
-Related to [gcc](notes/gcc.md).
+Related to [[notes/general/gcc]].
 
-![](notes/images/gcc-vs-llvm-structure.png)
+![[notes/images/gcc-vs-llvm-structure.png]]
 
 ## Online resources
 -   [LLVM Compiler Infrastructure documentation](https://llvm.org/docs/)
@@ -207,4 +207,4 @@ Related to [gcc](notes/gcc.md).
 -   [The llvm-dev Archives](https://lists.llvm.org/pipermail/llvm-dev/)
 
 ## Resources
-- [How to Write a LLVM Backend](notes/how-to-write-a-llvm-backend.md)
+- [[notes/general/how-to-write-a-llvm-backend|How to Write a LLVM Backend]]

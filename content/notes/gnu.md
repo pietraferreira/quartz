@@ -65,7 +65,7 @@ To let `ld` know which data changes when the sections are relocated, and how to 
 Every address `as` ever uses is expressed as `(section) + (offset into section)`.
 
 ### Linker Sections
-![](notes/images/Screenshot%20from%202022-07-11%2011-19-21.png)
+![[notes/images/Screenshot from 2022-07-11 11-19-21.png]]
 
 - **text** and **data** section:  they hold the program, they are treated as separate but equal sections. When the program is running however, the **text** section is unalterable as it is often shared among processes: it contains instructions, constants etc. The data section is usually alterable, for example C variables would be stored there.
 - **bss** section: it contains 0 bytes when the program begins running. It holds uninitialised variables or common storage.
@@ -84,15 +84,15 @@ They are written as a symbol immediately followed by a colon `:`. The symbol the
 If you use the same symbol to represent two different locations: first definition overrides any other definitions.
 
 #### Fixup
-More [here](notes/fixups.md).
+More [[notes/general/fixups|here]].
 
 Anything that cannot be resolved in the first pass. It is either resolved at the end of assembly or else becomes a relocation.
 
 ## Resources
 - Binutils Porting Guide ([here](https://www.sourceware.org/binutils/binutils-porting-guide.txt))
-- [Linker Relaxation](notes/linker-relaxation.md)
-- [Relocations](notes/relocations.md)
-- [RISCV Toolchain](notes/riscv-toolchain.md)
-- [Compiler Toolchains](notes/compiler-toolchains.md)
-- [GCC](notes/gcc.md)
-- [Fix-ups](notes/fixups.md)
+- [[notes/general/linker-relaxation|Linker Relaxation]]
+- [[notes/general/relocations|Relocations]]
+- [[notes/general/riscv-toolchain|RISCV Toolchain]]
+- [[notes/general/compiler-toolchains|Compiler Toolchains]]
+- [[notes/general/gcc|GCC]]
+- [[notes/general/fixups|Fix-ups]]

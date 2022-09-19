@@ -12,27 +12,27 @@ Various cheatsheets of different application I use and all the help I can get co
 <center><img src="https://c.tenor.com/_h_1fcwEkHYAAAAC/studying-windy.gif"></center>
 
 ## Cheatsheets
-- [Vim](notes/vim-cheatsheet.md)
-- [iTerm2](notes/iterm2-cheatsheet.md)
-- [Obsidian](notes/obsidian-cheatsheet.md)
-- [Tmux](notes/tmux-cheatsheet.md)
-- [HackTheBox](notes/hackthebox.md)
-- [How to manually check an Assembly test](notes/how-to-manually-check-as-test.md)
-- [How to add an instruction to the GNU Assembler](notes/how-to-add-instructions-to-as.md)
-    - [Slides](notes/how-to-add-instructions-to-as-slides.md)
+- [[notes/general/vim-cheatsheet|Vim]]
+- [[notes/general/iterm2-cheatsheet|iTerm2]]
+- [[notes/obsidian-cheatsheet.md|Obsidian]]
+- [[notes/general/tmux-cheatsheet|Tmux]]
+- [[notes/general/hackthebox|HackTheBox]]
+- [[notes/general/how-to-manually-check-as-test|How to manually check an Assembly test]]
+- [[notes/general/how-to-add-instructions-to-as|How to add an instruction to the GNU Assembler]]
+    - [[notes/general/how-to-add-instructions-to-as-slides|Slides]]
 
 ## Hacking
 - [x86 CheatSheet](https://trailofbits.github.io/ctf/vulnerabilities/references/X86_Win32_Reverse_Engineering_Cheat_Sheet.pdf)
 - [Reverse Engineering Malicious Code](https://zeltser.com/media/docs/reverse-engineering-malicious-code-tips.pdf)
-- [x86 Opcode and Instructions](http://ref.x86asm.net/coder64.html#x02)
+- [[http://ref.x86asm.net/coder64.html#x02]]
 - [Linux System Call Table for x86-64](https://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/)
-- [HTTP Status List](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_redirection)
+- [[https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_redirection]]
 
 ## Other
-- [Commands Dump](notes/useful-commands-dump.md)
-- [Linux Fundamentals](notes/linux-fundamentals.md)
-- [Dotfiles Management](notes/dotfile-management.md)
-- [Courses Dump](notes/courses-dump.md)
+- [[notes/general/useful-commands-dump|Commands Dump]]
+- [[notes/general/linux-fundamentals|Linux Fundamentals]]
+- [[notes/general/dotfile-management|Dotfiles Management]]
+- [[notes/general/courses-dump|Courses Dump]]
 
 ## All of them
 ```dataview

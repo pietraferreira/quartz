@@ -8,9 +8,9 @@ created: 2022-06-05
 ---
 # Compiler Instrumentation
 ---
-As the [compiler](notes/compilers.md) transforms the source code, it can also 'insert' additional code into a program. These transformations are called [compiler](notes/compilers.md) instrumentation. There are many uses of [compiler](notes/compilers.md) instrumentation, one of the common purposes is to collect the 'runtime profile' of a program. 
+As the [[notes/general/compilers|compiler]] transforms the source code, it can also 'insert' additional code into a program. These transformations are called [[notes/general/compilers|compiler]] instrumentation. There are many uses of [[notes/general/compilers|compiler]] instrumentation, one of the common purposes is to collect the 'runtime profile' of a program. 
 
-To collect the runtime profile, a [compiler](notes/compilers.md) would insert 'counters' at certain parts of the program and those counters would increment every time the program execution reaches the site of instrumentation. 
+To collect the runtime profile, a [[notes/general/compilers|compiler]] would insert 'counters' at certain parts of the program and those counters would increment every time the program execution reaches the site of instrumentation. 
 
 After the program is finished, the counters can be used to understand the performance profile. The hottest parts of the program are most interesting to performance engineers.
 

@@ -9,7 +9,7 @@ created: 2022-06-05
 ---
 # Lists
 ---
-![](notes/images/lists.png)
+![[notes/images/lists.png]]
 
 ## Lists in C
 ```c

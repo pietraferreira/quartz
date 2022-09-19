@@ -34,4 +34,4 @@ Feed Q to itself. Will it halt?
 - Beware requirements masquerading as the halting problem.
 
 ## See also
-- [Problems](notes/cs-problems.md)
+- [[notes/general/cs-problems|Problems]]

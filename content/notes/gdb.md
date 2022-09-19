@@ -8,14 +8,14 @@ created: 2022-06-05
 ---
 # GDB
 ---
-All the basic commands can be found [here](notes/useful-commands-dump.md#GDB).
+All the basic commands can be found [[notes/general/useful-commands-dump#GDB]].
 
 ## Remote Debugging
 gdb can be used to debug programs running on another machine. On the remote machine, a program called `gdbserver` is run, which responds and acts on the requests made by gdb on the client machine. 
 
 Remote debugging can be more convenient in some cases; for example, it enables inspecting the program on the machine where the bug has occurred instead of trying to replicate the scenario on a dev machine. This can save a lot of time. Remote debugging is quite popular among mobile app developers, where the app runs on a mobile device, while the debugger runs on the development machine.
 
-The [_Remote debugging with GDB_ blog post](https://developers.redhat.com/blog/2015/04/28/remote-debugging-with-gdb) can get you started in case you are interested. The [gdbserver(1) - Linux manual page](https://man7.org/linux/man-pages/man1/gdbserver.1.html) also offers great documentation. The official [RISC-V binutils repository](https://github.com/riscv-collab/riscv-binutils-gdb) has the `gdbserver` source code.
+The [_Remote debugging with GDB_ blog post](https://developers.redhat.com/blog/2015/04/28/remote-debugging-with-gdb) can get you started in case you are interested. The [[1) - Linux manual page](https://man7.org/linux/man-pages/man1/gdbserver.1.html|gdbserver(1) - Linux manual page]] also offers great documentation. The official [RISC-V binutils repository](https://github.com/riscv-collab/riscv-binutils-gdb) has the `gdbserver` source code.
 
 ## Assembly Syntax
 ```bash
@@ -113,5 +113,5 @@ With **AT&T** syntax:
 | mov         | %esp        | **%ebp** |
 
 ## See Also
-- [Debugging Techniques](notes/debugging-techniques.md)
-- [Stack Overflow](notes/htb-stack-based-overflow-linux.md)
+- [[notes/general/debugging-techniques|Debugging Techniques]]
+- [[notes/general/htb-stack-based-overflow-linux|Stack Overflow]]

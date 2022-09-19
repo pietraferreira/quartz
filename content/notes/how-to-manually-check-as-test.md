@@ -12,8 +12,8 @@ created: 2022-07-27
 ---
 Instruction listing:
 
-![](notes/images/Pasted%20image%2020220727125733.png)
-![](notes/images/Pasted%20image%2020220727125701.png)
+![[notes/images/Pasted image 20220727125733.png]]
+![[notes/images/Pasted image 20220727125701.png]]
 
 So we have:
 
@@ -35,7 +35,7 @@ It decompiles to:
 
 Here we have the register encoding for compressed instructions:
 
-![](notes/images/Pasted%20image%2020220727130200.png)
+![[notes/images/Pasted image 20220727130200.png]]
 
 100 in binary is `0110 0100`, where:
 

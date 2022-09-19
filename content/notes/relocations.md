@@ -29,7 +29,7 @@ During compilation, there is a specific stage were relocatable objects are gener
 
 Compilation process:
 
-![](notes/images/Pasted%20image%2020220802100501.png)
+![[notes/images/Pasted image 20220802100501.png]]
 
 We can relocate:
 
@@ -41,14 +41,14 @@ Generic object files are the ones used for static linking, they are only relevan
 
 Some of the benefits are that there is no need to rely on external dependencies. On the other hand, they can become pretty large as they need all of the dependencies in the binary.
 
-Shared objects support being linked on runtime, and they may be shared across different processes. However, relocations of dynamic dependencies have to be done at runtime -> [**dynamic linking**](notes/linker.md).
+Shared objects support being linked on runtime, and they may be shared across different processes. However, relocations of dynamic dependencies have to be done at runtime -> [[notes/general/linker|**dynamic linking**]].
 
 They happen at runtime because the symbolic definitions do not exist within the main binary's context, but within external shared objects. These dynamic references do not get populated until the correspondent external dependencies are loaded in memory.
 
 ## Relocation Entries
 Relocation information is held in relocatable entries, located in specific relocation sections within the ELF object. They are implemented in the form of structures, there are two different ones: `Elfxx_Rel` and `Elfxx_Rela`:
 
-![](notes/images/Pasted%20image%2020220802101452.png)
+![[notes/images/Pasted image 20220802101452.png]]
 
 The only different is that `Rela` has an extra field for the addend. They are mutually exclusive, meaning only one type of entry is used.
 
@@ -71,7 +71,7 @@ Relocation entries are always found in some relocation section, every relocation
 - A relocation section will always be linked to its corresponded symbol table. The table can be located as a section in the section header table, and its index can be retrieved by the `sh_link` field of the relocation section's `Elfxx_Shdr` instance.
 - The section index where to apply the offset can be retrieved by the relocation section's `Elxx_Shdr sh_info` field.
 
-![](notes/images/Pasted%20image%2020220802102836.png)
+![[notes/images/Pasted image 20220802102836.png]]
 
 As you can see, the relocation section is linked to two other sections. One of them is the symbol table, where the symbols that will be relocated are held. In this example, the section is the `.dynsym` section, the symbol table that holds symbols for dynamic linking.
 
@@ -106,7 +106,7 @@ gas/config/tc-riscv.c # -> where the magic happens
 
 If we use the CORE-V relocations as an example, we have `BFD_RELOC_RISCV_CVPCREL_UI12`, which is a 12-bit relocation for 12-bit immediates found in `cv.starti` and `cv.endi`. Its relocation number is 224.
 
-You can find the [**howto** table](notes/howto-table.md) in `bfd/elfxx-riscv.c` which contains entries for each relocation. The first field uses the table from `include/elf/riscv.h`.
+You can find the [[notes/general/howto-table|**howto** table]] in `bfd/elfxx-riscv.c` which contains entries for each relocation. The first field uses the table from `include/elf/riscv.h`.
 
 #### Howto Table (notes on how CORE-V relocation was implemented)
 **Step 1:** Check that symbol address exists via _fixP→fx_addsy_. If false the case will just break and not go through the following steps.
@@ -155,9 +155,9 @@ bfd_putl32 (bfd_vma data, void *p) {
 - https://www.sifive.com/blog/all-aboard-part-2-relocations
 
 ## Related Notes
-- [Linker](/notes/linker.md)
-- [Howto Table](notes/howto-table.md)
-- [PLT and GOT](notes/plt-and-got.md)
-- [Linker Relaxation](notes/linker-relaxation.md)
-- [Jump Table](notes/jump-table.md)
-- [Assembler](notes/riscv-assembler-reference.md)
+- [[notes/general/linker|Linker]]
+- [[notes/general/howto-table|Howto Table]]
+- [[notes/general/plt-and-got|PLT and GOT]]
+- [[notes/general/linker-relaxation|Linker Relaxation]]
+- [[notes/general/jump-table|Jump Table]]
+- [[notes/general/riscv-assembler-reference|Assembler]]

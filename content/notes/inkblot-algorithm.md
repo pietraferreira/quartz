@@ -13,9 +13,9 @@ created: 2022-06-06
 Couldn't find much online about it, but I think it's a "populating" algorithm to find a path (A->B).
 
 ## Maze
-![](notes/images/inkblot-1.png)
+![[notes/images/inkblot-1.png]]
 
-![](notes/images/inkblot-2.png)
+![[notes/images/inkblot-2.png]]
 
 ## Recording the Path
 Use recursion and an accumulator.
@@ -57,4 +57,4 @@ Want the intermediate contour.
 
 Inkblot from both sides until meet, may get artefacts but will be optimal.
 
-![](notes/images/contours.png)
+![[notes/images/contours.png]]

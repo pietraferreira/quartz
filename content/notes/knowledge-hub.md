@@ -13,46 +13,46 @@ Where all of my notes live!!! There are no rules here 😎
 
 ---
 ## General
-[HELP](notes/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
+[[notes/general/help|HELP]] - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
 
 ## Computer Science
-- [Algorithms and Data Structure](notes/algorithms-and-data-structure.md)
-- [Formal Languages](notes/formal-languages.md)
+- [[notes/general/algorithms-and-data-structure|Algorithms and Data Structure]]
+- [[notes/general/formal-languages|Formal Languages]]
 
 ### Computer Architecture
-- [ISA (Instruction Set Architecture)](notes/isa.md)
-- [Instruction Set Semantics](notes/instruction-set-semantics.md)
+- [[Instruction Set Architecture)](notes/general/isa.md|ISA (Instruction Set Architecture)]]
+- [[notes/general/instruction-set-semantics|Instruction Set Semantics]]
 
 ### Toolchain
 #### Compilers
-- [Compilers](notes/compilers.md)
-- [Sysroot](notes/sysroot.md)
-- [Compiler Toolchains](notes/compiler-toolchains.md)
-- [GCC Guide by Maxim](work/gcc-guide-by-maxim.md)
+- [[notes/general/compilers|Compilers]]
+- [[notes/general/sysroot|Sysroot]]
+- [[notes/general/compiler-toolchains|Compiler Toolchains]]
+- [[notes/private/work/gcc-guide-by-maxim|GCC Guide by Maxim]]
 
 #### Linker
-- [Linker](notes/linker.md)
-- [Relocations](notes/relocations.md)
-- [HowTo Table](notes/howto-table.md)
+- [[notes/general/linker|Linker]]
+- [[notes/general/relocations|Relocations]]
+- [[notes/general/howto-table|HowTo Table]]
 
 #### Assembler
-- [RISC-V Assembler](notes/riscv-assembler-reference.md)
+- [[notes/general/riscv-assembler-reference|RISC-V Assembler]]
 
 ### Cybersecurity
-- Files Transfers ([here](notes/htb-file-transfers.md))
-- Netcat ([here](notes/netcat.md))
-- Stack-based Buffer Overflows on Linux x86 ([here](notes/htb-stack-based-overflow-linux.md))
-- Introduction to Networking [here](notes/htb-intro-networking.md)
-- [HTB Notes](notes/hackthebox.md)
-- [THM - Encryption 101](notes/thm-encryption101.md)
-- [THM - Metasploit](notes/thm-metasploit.md)
+- Files Transfers ([[notes/general/htb-file-transfers|here]])
+- Netcat ([[notes/general/netcat|here]])
+- Stack-based Buffer Overflows on Linux x86 ([[notes/general/htb-stack-based-overflow-linux|here]])
+- Introduction to Networking [[notes/general/htb-intro-networking|here]]
+- [[notes/general/hackthebox|HTB Notes]]
+- [[notes/general/thm-encryption101|THM - Encryption 101]]
+- [[notes/general/thm-metasploit|THM - Metasploit]]
 
 ### Not sure where to put these :)
-- [Source Code Optimisation](notes/source-code-optimisation.md)
-- [Embedded Applications](notes/embedded-applications.md)
-- [Debugging Techniques](notes/debugging-techniques.md)
-- [Blockchain](notes/blockchain.md)
-- [The C Language](notes/c-language.md)
+- [[notes/general/source-code-optimisation|Source Code Optimisation]]
+- [[notes/general/embedded-applications|Embedded Applications]]
+- [[notes/general/debugging-techniques|Debugging Techniques]]
+- [[notes/general/blockchain|Blockchain]]
+- [[notes/general/c-language|The C Language]]
 
 #### RISC-V
-- [RISC-V](notes/riscv.md)
+- [[notes/general/riscv|RISC-V]]

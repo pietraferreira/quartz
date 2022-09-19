@@ -12,11 +12,11 @@ It is a subtree with the minimum possible edge weight that connects all nodes to
 
 There must exist **no cycles** in the subtree.
 
-The two most popular algorithms are [Kruskal's](notes/kruskals-algorithm.md) and [Pimm's](notes/pimms-algorithm.md).
+The two most popular algorithms are [[notes/general/kruskals-algorithm|Kruskal's]] and [[notes/general/pimms-algorithm|Pimm's]].
 
 A graph **can** have multiple minimum spanning subtrees:
-![](notes/images/minimum_spanning_subtree.png)
+![[notes/images/minimum_spanning_subtree.png]]
 
 ## See also
-- [Trees](notes/trees.md)
-- [Graphs](notes/graphs.md)
+- [[notes/general/trees|Trees]]
+- [[notes/general/graphs|Graphs]]

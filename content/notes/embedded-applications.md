@@ -36,15 +36,15 @@ There are also situations where a system can have [big+little configuration](htt
 Some processors can have advanced [dynamic voltage and frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) capabilities. So, whenever there is no work to do, processors go into low-power idle mode. As a result, it makes sense to run applications as fast as possible and defer the responsibility of power management to the processor. To run the application as fast as possible, we can use higher optimisation levels like `-O3`, `-Ofast`; we can combine that with link time optimisations and profile guided optimisation to achieve even better performance.
 
 ## Optimising for Binary Size
-Check out [optimising for code size](notes/compiler-optimisation.md#Optimising%20Programs%20for%20Code%20Size|Optimising%20for%20Code%20Size).
+Check out [[notes/general/compiler-optimisation#Optimising Programs for Code Size|Optimising for Code Size]].
 
 ## References
 - [RISC-V Toolchain and Compiler Optimization Techniques](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD113x+3T2021/home)
 - [Aditya Kumar - Code Size Compiler Optimizations and Techniques for Embedded Systems](https://www.youtube.com/watch?v=6IuDWfuMEno)
 - [Aditya Kumar & Sebastian Pop - Performance analysis and optimization of C++ standard libraries](https://www.youtube.com/watch?v=OTCp_AkAyRQ)
 - [Visual Studio Developer Community - pragma optimize off is not working as expected](https://developercommunity.visualstudio.com/t/192628900-pragma-optimize-off-is-not-working-as-ex/1091452)
-- [nm(1) - Linux man page](https://linux.die.net/man/1/nm)
+- [[1) - Linux man page](https://linux.die.net/man/1/nm|nm(1) - Linux man page]]
 - [GCC Instrument functions](https://hacktalks.blogspot.com/2013/08/gcc-instrument-functions.html)
-- [Nitin Kumar - Profile-guided optimization (PGO) using GCC on IBM AIX](https://developercommunity.visualstudio.com/t/192628900-pragma-optimize-off-is-not-working-as-ex/1091452)
+- [[PGO) using GCC on IBM AIX](https://developercommunity.visualstudio.com/t/192628900-pragma-optimize-off-is-not-working-as-ex/1091452|Nitin Kumar - Profile-guided optimization (PGO) using GCC on IBM AIX]]
 - [Aditya Kumar - Performance analysis and optimization](https://developercommunity.visualstudio.com/t/192628900-pragma-optimize-off-is-not-working-as-ex/1091452)
 - [Vinodha Ramasamy, Paul Yuan, Dehao Chen, Robert Hundt - Feedback-Directed Optimizations in GCC with Estimated Edge Profiles from Hardware Event Sampling](https://research.google/pubs/pub36576/)

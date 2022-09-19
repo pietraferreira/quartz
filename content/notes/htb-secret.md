@@ -100,4 +100,4 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ1OGEyMjM4OWQ5YjA0NjIyMGEyYzM
 
 We can decode it:
 
-![](notes/images/Screenshot%20from%202022-07-18%2017-31-38.png)
+![[notes/images/Screenshot from 2022-07-18 17-31-38.png]]
