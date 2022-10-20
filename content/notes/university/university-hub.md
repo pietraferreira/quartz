@@ -11,7 +11,7 @@ tags:
 Here you can find everything related to my university course.
 
 ## Useful Links
-[Blackboard](https://blackboard.brunel.ac.uk/)
+[Brightspace](https://brightspace.brunel.ac.uk/)
 
 ## Notes
 2022/2023 - [[year-2|Year 2]]
