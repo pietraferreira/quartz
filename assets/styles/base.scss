@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, thead {
 }
 
 p strong {
-  color: #276ED7;
+  color: var(--tertiary);
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
