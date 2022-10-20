@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6, thead {
   color: var(--dark);
 }
 
+p b {
+  color: #276ED7;
+}
+
 p, ul, text, a, tr, td, li, ol, ul {
   font-family: var(--font-body);
   color: var(--gray);
@@ -60,10 +64,6 @@ p, ul, text, a, tr, td, li, ol, ul {
   font-weight: revert;
   margin: revert;
   padding: revert;
-}
-
-p b {
-  color: #276ED7;
 }
 
 tbody, li, p {
