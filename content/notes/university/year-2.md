@@ -29,11 +29,11 @@ A list of all the different modules I am taking during my second year.
 50% Exam.
 
 ### Lectures
+- [[notes/university/uml-class-diagram|UML - Class Diagram]] (Week 2 and 3)
 - [[notes/university/uml-sequence-diagram|UML Sequence Diagram]] (Week 4)
 
 ### References
-- UML @ Classroom - Chapter 3
-- UML @ Classroom - Chapter 4
+- [[notes/university/uml-classroom-chap3|UML @ Classroom - Chapter 3 (Use Case Diagram)]] (Week 1)
 
 ---
 ## CS2003 - Usability Engineering

@@ -1,6 +1,7 @@
 ---
 title: "UML Sequence Diagram"
 tags:
+  - university
   - cs2002/uml
   - cs2002/lecture
 programming-languagues:
