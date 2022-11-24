@@ -10,10 +10,13 @@
 html {
   scroll-behavior: smooth;
   &:lang(ar) {
-    & p, & h1, & h2, & h3, article {
+    & p, & h1, & h2, & h3, article, header {
       direction: rtl;
       text-align: right;
     }
+  }
+  & footer > p {
+    text-align: center !important;
   }
 }
 
@@ -228,7 +231,7 @@ article {
 
   & > li {
     display: inline-block;
-    margin: 0.4em 0;
+    margin: 0.4em 0.2em;
   }
 
   & > li > a {
@@ -300,13 +303,11 @@ footer {
 }
 
 hr {
-  width: 25%;
-  margin: 4em auto;
-  height: 2px;
-  border-radius: 1px;
-  border-width: 0;
-  color: var(--dark);
-  background-color: var(--dark);
+  width: 100%;
+  margin: 2em auto;
+  height: 1px;
+  border: none;
+  background-color: var(--outlinegray);
 }
 
 .page-end {
@@ -589,16 +590,20 @@ header {
     margin: 0.25rem 0;
   }
 
-  & > .meta {
+  & .meta {
     margin-top: 0.25rem;
     opacity: 0.5;
     font-family: var(--font-mono);
     font-size: 0.8rem;
   }
 
+  & > p {
+    margin: 0;
+    padding: 0.5rem 0;
+  } 
+
   & > p, & > a {
     font-size: 1rem;
-    margin: 0.7rem 0;
     font-weight: 400;
     user-select: none;
   }
@@ -616,3 +621,7 @@ header {
   }
 }
 
+mark {
+  background-color: var(--highlighted);
+  color: var(--gray);
+}
