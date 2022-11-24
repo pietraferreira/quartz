@@ -1,32 +1,25 @@
 ---
-title: "UML Class Diagram"
+title: "UML - Class Diagram"
 tags:
-  - cs2002/uml
-  - cs2002/uml/classdiagram
-  - lecture
-programming-languagues:
-module:
+  - uml
   - cs2002
-term:
-  - first
+programming-languagues:
 created: 2022-10-21
+last-modified:
 ---
-# UML - Class Diagram
-
-```toc
-```
----
-## Objects
+# Objects
 Individuals of a system:
 
 ![Screenshot 2022-10-21 at 13.10.25](notes/images/Screenshot%202022-10-21%20at%2013.10.25.png)
 
-### Object Diagram
+## Object Diagram
+---
 The objects of a system and their relationships, snapshot of objects at a specific moment in time:
 
-![Screenshot 2022-10-21 at 13.11.07](notes/images/Screenshot%202022-10-21%20at%2013.11.07.png)
+![Screenshot 2022-10-21 at 13.11.07|500](notes/images/Screenshot%202022-10-21%20at%2013.11.07.png)
 
-## Classes
+# Classes
+---
 A class is a **construction plan** for a set of similar object of a system.
 
 Object are **instances** of classes.
@@ -34,14 +27,15 @@ Object are **instances** of classes.
 - Attributes: structural characteristics of a class.
 - Operations: behaviour of a class.
 
-![300](notes/images/Screenshot%202022-10-21%20at%2013.12.30.png)
+![Screenshot 2022-10-21 at 13.12.30|200](notes/images/Screenshot%202022-10-21%20at%2013.12.30.png)
 
-![Screenshot 2022-10-21 at 13.12.54](notes/images/Screenshot%202022-10-21%20at%2013.12.54.png)
+![Screenshot 2022-10-21 at 13.12.54|350](notes/images/Screenshot%202022-10-21%20at%2013.12.54.png)
 
-### Attribute Syntax
+## Attribute Syntax
+---
 ![Screenshot 2022-10-21 at 13.13.11](notes/images/Screenshot%202022-10-21%20at%2013.13.11.png)
 
-#### Visibility:
+### Visibility
    - `+`: public -> everybody.
    - `-`: private -> only the object itself.
    - `#`: protected -> class itself and subclasses.
@@ -49,7 +43,7 @@ Object are **instances** of classes.
 
 - `/`: attribute is derived from other attributes, for example `/age` as it is calculated from the date of birth.
 
-#### Type: 
+### Type
    - User-defined classes.
    - Data type:
        - Primitive data type
@@ -58,7 +52,7 @@ Object are **instances** of classes.
            - Composite data type: `<<datatype>>`
        - Enumerations: `<<enumeration>>`
 
-#### Multiplicity:
+### Multiplicity
    - Number of values an attribute may contain.
    - Default value: 1
    - Notation `[min..max]`
@@ -66,7 +60,7 @@ Object are **instances** of classes.
 
 ![400](notes/images/Screenshot%202022-10-21%20at%2013.20.52.png)
 
-#### Properties
+### Properties
 - Pre-defined properties:
     - `{readOnly}`: value cannot be changed.
     - `{unique}`: no duplicates permitted.
@@ -80,7 +74,7 @@ Object are **instances** of classes.
     - Ordered set: `{ordered, unique}`
     - List: `{ordered, non-unique}`
 
-#### Parameters
+### Parameters
 Similar to attributes.
 
 - Direction of the parameter:
@@ -88,7 +82,8 @@ Similar to attributes.
     - `out`: output parameter.
     - `inout`: combined.
 
-### Class Variable and Class Operations
+## Class Variable and Class Operations
+---
 - Instance variable (instance attribute): attributes defined on instance level.
 - Class variable (class attribute):
     - Defined only per class, shared by all instances of the class.
@@ -96,33 +91,36 @@ Similar to attributes.
 - Class operation:
     - Can be used if no instance was created, for example: constructors, counting operations, math functions etc.
 
-![Screenshot 2022-10-21 at 13.27.01](notes/images/Screenshot%202022-10-21%20at%2013.27.01.png)
+![Screenshot 2022-10-21 at 13.27.01|600](notes/images/Screenshot%202022-10-21%20at%2013.27.01.png)
 
-## Specification of Classes: Different Levels of Detail
-![Screenshot 2022-10-21 at 13.27.38](notes/images/Screenshot%202022-10-21%20at%2013.27.38.png)
+# Specification of Classes: Different Levels of Detail
+---
+![Screenshot 2022-10-21 at 13.27.38|600](notes/images/Screenshot%202022-10-21%20at%2013.27.38.png)
 
-## Association
+# Association
+---
 Models possible relationships between instances of classes.
 
-![Screenshot 2022-10-21 at 13.28.01](notes/images/Screenshot%202022-10-21%20at%2013.28.01.png)
+![Screenshot 2022-10-21 at 13.28.01|500](notes/images/Screenshot%202022-10-21%20at%2013.28.01.png)
 
-### Binary Association
+## Binary Association
+---
 Connects two instances of two classes with one another.
 
-![Screenshot 2022-10-21 at 13.28.30](notes/images/Screenshot%202022-10-21%20at%2013.28.30.png)
+![Screenshot 2022-10-21 at 13.28.30|560](notes/images/Screenshot%202022-10-21%20at%2013.28.30.png)
 
-#### Navigability
+### Navigability
 Object knows its partner objects and can therefore access their visible attributes and operations (open arrow head).
 
-#### Non-Navigability
+### Non-Navigability
 Indicated by a class, for example: `A` can access attributes and operations of `B` but `B` cannot access any attributes and operations of `A`.
 
-![200](notes/images/Screenshot%202022-10-21%20at%2013.30.17.png)
+![Screenshot 2022-10-21 at 13.30.17|200](notes/images/Screenshot%202022-10-21%20at%2013.30.17.png)
 
-![Screenshot 2022-10-21 at 13.30.34](notes/images/Screenshot%202022-10-21%20at%2013.30.34.png)
+![Screenshot 2022-10-21 at 13.30.34|400](notes/images/Screenshot%202022-10-21%20at%2013.30.34.png)
 
-#### Binary Association as Attribute
-![Screenshot 2022-10-21 at 13.31.06](notes/images/Screenshot%202022-10-21%20at%2013.31.06.png)
+### Binary Association as Attribute
+![Screenshot 2022-10-21 at 13.31.06|500](notes/images/Screenshot%202022-10-21%20at%2013.31.06.png)
 
 In Java:
 ```java
@@ -134,52 +132,58 @@ class Student {
 }
 ```
 
-#### Multiplicity and role
-- Multiplicity: number of objects that may be associated with exactly one objet of the opposite side.
+### Multiplicity and role
+Multiplicity: number of objects that may be associated with exactly one objet of the opposite side.
 
-![Screenshot 2022-10-21 at 13.32.02](notes/images/Screenshot%202022-10-21%20at%2013.32.02.png)
+![Screenshot 2022-10-21 at 13.32.02|500](notes/images/Screenshot%202022-10-21%20at%2013.32.02.png)
 
-- Role: the way in which an object is involved in an association relationship.
+**Role**: the way in which an object is involved in an association relationship.
 
-![500](notes/images/Screenshot%202022-10-21%20at%2013.32.24.png)
+![Screenshot 2022-10-21 at 13.32.24|400](notes/images/Screenshot%202022-10-21%20at%2013.32.24.png)
 
-#### Xor Constraint
+### Xor Constraint
 An object of class `A` is to be associated with an object of class `B` or an object of class `C` **but not with both**.
 
-![Screenshot 2022-10-21 at 13.33.17](notes/images/Screenshot%202022-10-21%20at%2013.33.17.png)
+![Screenshot 2022-10-21 at 13.33.17|400](notes/images/Screenshot%202022-10-21%20at%2013.33.17.png)
 
-## Unary Association - Example
-![Screenshot 2022-10-21 at 13.33.44](notes/images/Screenshot%202022-10-21%20at%2013.33.44.png)
+# Unary Association - Example
+---
+![Screenshot 2022-10-21 at 13.33.44|600](notes/images/Screenshot%202022-10-21%20at%2013.33.44.png)
 
-## n-ary Association
+# n-ary Association
+---
 More than two partner objects are involved in the relationship.
 
 No navigation directions.
 
-![Screenshot 2022-10-21 at 13.34.24](notes/images/Screenshot%202022-10-21%20at%2013.34.24.png)
+![Screenshot 2022-10-21 at 13.34.24|450](notes/images/Screenshot%202022-10-21%20at%2013.34.24.png)
 
-![Screenshot 2022-10-21 at 13.34.43](notes/images/Screenshot%202022-10-21%20at%2013.34.43.png)
+![Screenshot 2022-10-21 at 13.34.43|500](notes/images/Screenshot%202022-10-21%20at%2013.34.43.png)
 
-## Association Class
+# Association Class
+---
 Assign attributes to the relationship between classes rather than to a class itself.
 
-![Screenshot 2022-10-21 at 13.36.08](notes/images/Screenshot%202022-10-21%20at%2013.36.08.png)
+![Screenshot 2022-10-21 at 13.36.08|400](notes/images/Screenshot%202022-10-21%20at%2013.36.08.png)
 
 Necessary when modelling `n:m` Associations:
 
-![Screenshot 2022-10-21 at 13.36.37](notes/images/Screenshot%202022-10-21%20at%2013.36.37.png)
+![Screenshot 2022-10-21 at 13.36.37|400](notes/images/Screenshot%202022-10-21%20at%2013.36.37.png)
 
 With `1:1` or `1:n` possible but not necessary:
 
-![Screenshot 2022-10-21 at 13.36.56](notes/images/Screenshot%202022-10-21%20at%2013.36.56.png)
+![Screenshot 2022-10-21 at 13.36.56|400](notes/images/Screenshot%202022-10-21%20at%2013.36.56.png)
 
-### Association Class vs Regular Class
-![Screenshot 2022-10-21 at 13.37.18](notes/images/Screenshot%202022-10-21%20at%2013.37.18.png)
+## Association Class vs Regular Class
+---
+![Screenshot 2022-10-21 at 13.37.18|500](notes/images/Screenshot%202022-10-21%20at%2013.37.18.png)
 
-### Unique/Non-Unique
-![Screenshot 2022-10-21 at 13.37.41](notes/images/Screenshot%202022-10-21%20at%2013.37.41.png)
+## Unique/Non-Unique
+---
+![Screenshot 2022-10-21 at 13.37.41|500](notes/images/Screenshot%202022-10-21%20at%2013.37.41.png)
 
-## Aggregation
+# Aggregation
+---
 Special form of association used to express that a class is part of another class.
 
 Properties of the aggregation association:
@@ -188,7 +192,8 @@ Properties of the aggregation association:
 
 Two types: **shared aggregation** and **composition**.
 
-### Shared Aggregation
+## Shared Aggregation
+---
 - Expresses a weak belonging of the parts to a whole, meaning they also exist independently of the whole.
 - Multiplicity at the aggregating end may be > 1, meaning one element can be part of multiple other elements simultaneously.
 - Spans a **directed acyclic graph**.
@@ -198,9 +203,10 @@ Example:
 - **Student** is part of **LabClass**
 - **Course** is part of **StudyProgram**
 
-![450](notes/images/Screenshot%202022-10-21%20at%2013.41.11.png)
+![Screenshot 2022-10-21 at 13.41.11|450](notes/images/Screenshot%202022-10-21%20at%2013.41.11.png)
 
-### Composition
+## Composition
+---
 - Existence dependency between the composite object and its parts.
 - Multiplicity at the aggregating end max of 1, the composite objects form a tree.
 - If the composite object is deleted, **its parts are also deleted**.
@@ -209,35 +215,40 @@ Example:
 Example:
 - **Beamer** is part of **LectureHall** is part of **Building**.
 
-![Screenshot 2022-10-21 at 13.42.53](notes/images/Screenshot%202022-10-21%20at%2013.42.53.png)
+![Screenshot 2022-10-21 at 13.42.53|600](notes/images/Screenshot%202022-10-21%20at%2013.42.53.png)
 
-## Generalisation
+# Generalisation
+---
 - Characteristics (attributes and operations), associations, and aggregations that are specified for a general class (superclass) are passed on to its subclasses. 
 - Every instance of a subclass is simultaneously an indirect instance of the superclass.  
 - Subclass inherits all characteristics, associations, and aggregations of the superclass except private ones.  
 - Subclass may have further characteristics, associations, and aggregations.  
 - Generalisations are transitive.
 
-![450](notes/images/Screenshot%202022-10-21%20at%2013.45.47.png)
+![Screenshot 2022-10-21 at 13.45.47|450](notes/images/Screenshot%202022-10-21%20at%2013.45.47.png)
 
-### Abstract Class
+## Abstract Class
+---
 - Used to highlight common characteristics of their subclasses.  
 - Used to ensure that there are no direct instances of the superclass.  
 - Only its non-abstract subclasses can be instantiated.  
 - Useful in the context of generalisation relationships.  
 - Notation: keyword `{abstract}` or class name in italic font.
 
-### Multiple Inheritance
+## Multiple Inheritance
+---
 - UML allows multiple inheritance.
 - A class may have multiple superclasses.
 
 Example:
-![Screenshot 2022-10-21 at 13.46.52](notes/images/Screenshot%202022-10-21%20at%2013.46.52.png)
+![Screenshot 2022-10-21 at 13.46.52|400](notes/images/Screenshot%202022-10-21%20at%2013.46.52.png)
 
-### With vs Without Generalisation
+## With vs Without Generalisation
+---
 ![Screenshot 2022-10-21 at 13.47.13](notes/images/Screenshot%202022-10-21%20at%2013.47.13.png)
 
-## Creating a Class Diagram
+# Creating a Class Diagram
+---
 - Not possible to completely extract classes, attributes and associations from a natural language text automatically.  
 - Guidelines:
     - **Nouns** often indicate **classes**.
@@ -246,9 +257,10 @@ Example:
 
 - Example: The library management system stores users with their unique ID, name and address as well as books with their title, author and ISBN number. 
 
-![Screenshot 2022-10-21 at 13.48.48](notes/images/Screenshot%202022-10-21%20at%2013.48.48.png)
+![Screenshot 2022-10-21 at 13.48.48|400](notes/images/Screenshot%202022-10-21%20at%2013.48.48.png)
 
-## Notation
+# Notation
+---
 | Name                             | Notation                                                | Description                                                                                         |
 | -------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | Class                            | ![Screenshot 2022-10-21 at 13.51.48](notes/images/Screenshot%202022-10-21%20at%2013.51.48.png) | Description of the structure and behaviour of a set of objects.                                     |

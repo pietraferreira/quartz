@@ -2,22 +2,14 @@
 title: "State Machine Diagrams - Part 1"
 tags:
   - uml
-programming-languagues:
-module:
   - cs2002
-term:
-  - first
+programming-languagues:
 last-edited: 2022-11-24
 created: 2022-11-07
 ---
-# State Machine Diagrams (PART 1)
----
-```toc
-```
-
 ![Screenshot 2022-11-07 at 12.53.15](notes/images/Screenshot%202022-11-07%20at%2012.53.15.png)
 
-## Introduction
+# Introduction
 ---
 Every object takes a finite number of different stages during its life. State machine diagrams are used as follows:
 - To model the possible **states** of a system or object.
@@ -33,7 +25,7 @@ Where occupy() and release() are the **transitions** and "free = true"/"free = f
 Another example would be a Digital Clock:
 ![Screenshot 2022-11-07 at 12.56.27](notes/images/Screenshot%202022-11-07%20at%2012.56.27.png)
 
-## States
+# States
 ---
 They are nodes of the state machine:
 
@@ -54,9 +46,9 @@ do/Activity(...)
 
 ![200](notes/images/Screenshot%202022-11-07%20at%2012.58.46.png)
 
-## Transitions
+# Transitions
 ---
-### Syntax
+## Syntax
 Change from one state to another:
 
 ![370](notes/images/Screenshot%202022-11-07%20at%2012.59.10.png)
@@ -78,7 +70,7 @@ Change from one state to another:
 - Activity (effect)
      - Sequence of actions executed during the state transition.
 
-### Types
+## Types
 - Internal:
 
 ![300](notes/images/Screenshot%202022-11-07%20at%2013.11.26.png)
@@ -87,10 +79,10 @@ Change from one state to another:
 
 ![300](notes/images/Screenshot%202022-11-07%20at%2013.11.42.png)
 
-#### When do the following transitions take place?
+### When do the following transitions take place?
 ![Screenshot 2022-11-07 at 13.12.28](notes/images/Screenshot%202022-11-07%20at%2013.12.28.png)
 
-### Sequence of Activity Executions
+## Sequence of Activity Executions
 Assuming $S1$ is active, what is the value of $x$ after $e$ occurred?
 
 ![500](notes/images/Screenshot%202022-11-07%20at%2013.15.10.png)
@@ -105,36 +97,36 @@ Registration status of an exam example:
 
 ![500](notes/images/Screenshot%202022-11-07%20at%2013.18.22.png)
 
-## Types of Events
+# Types of Events
 ---
-### Signal Event
+## Signal Event
 Receipt of a sinal.
 - e.g.: `rightmousedown`, `sendSMS(message)`.
 
-### Call Event
+## Call Event
 Operation call.
 -  e.g.: `occupy(user, lectureHall)`, `register(exam)`.
 
-### Time Event
+## Time Event
 Time-based state transition:
 - Relative: based on the time of the occurrence of the event.
     - e.g.: `after(5 seconds)`.
 - Absolute
     - e.g.: `when(time==16:00)`, `when(data==20150101)`.
 
-### Any Receive Event
+## Any Receive Event
 Occurs when any event occurs that does not trigger another transition from the active state:
 - Keyword **all**.
 
-### Completion Event
+## Completion Event
 Generated automatically when everything to be done in the current state is complete.
 
-### Change Event
+## Change Event
 Permanently checking whether a condition becomes true.
 
 E.g.: `when(x > y), after(90min)`.
 
-## Change Event vs Guard
+# Change Event vs Guard
 ---
 ![500](notes/images/Screenshot%202022-11-07%20at%2013.23.25.png)
 
@@ -142,9 +134,9 @@ E.g.: `when(x > y), after(90min)`.
 
 ![500](notes/images/Screenshot%202022-11-07%20at%2013.23.48.png)
 
-## Types of States
+# Types of States
 ---
-### Initial State
+## Initial State
 It is a **pseudo-state**, meaning it is transient (system cannot remain in that state). It is more of a control structure than a real state.
 
 No incoming edges.
@@ -155,7 +147,7 @@ No incoming edges.
 - If initial state becomes active, the object immediately switches to the next state.
     - No events allowed on the outgoing edges (exception: `new()`).
 
-### Final State and Terminate Node
+## Final State and Terminate Node
 - Final State
     - Real state.
     - Marks the end of the sequence of state.
@@ -168,15 +160,15 @@ No incoming edges.
     - The modelled object ceases to exist (= is deleted).
     - ![25](notes/images/Screenshot%202022-11-07%20at%2013.30.21.png)
 
-### Decision Node
+## Decision Node
 It is a pseudo-state and is used to model alternative transitions.
 
 ![500](notes/images/Screenshot%202022-11-07%20at%2013.30.54.png)
 
-#### Example
+### Example
 ![500](notes/images/Screenshot%202022-11-07%20at%2013.31.12.png)
 
-### Parallelisation and Synchronisation Node
+## Parallelisation and Synchronisation Node
 - Parallelisation node
     - Pseudo-state.
     - Splits the control flow into multiple concurrent flows.
@@ -191,7 +183,7 @@ It is a pseudo-state and is used to model alternative transitions.
     - 1 outgoing edge.
     - ![70](notes/images/Screenshot%202022-11-07%20at%2013.32.50.png)
 
-## Summary
+# Summary
 ---
 ![Screenshot 2022-11-07 at 13.40.00](notes/images/Screenshot%202022-11-07%20at%2013.40.00.png)
 
