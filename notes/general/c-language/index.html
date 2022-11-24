@@ -1,0 +1,137 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="C Declaration vs Definition A definition associates a name with an implementation of that name, either data or code:
+ A definition of a variable induces the compiler to reserve some space for that variable and possibly fill that space with a particular value."><title>C</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=ico href=https://pietraferreira.github.io/quartz//favicon.ico><link href=https://pietraferreira.github.io/quartz/styles.0468931ec0b10cef0dddbe82a8c02b7f.min.css rel=stylesheet><link href=https://pietraferreira.github.io/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://pietraferreira.github.io/quartz/js/darkmode.a93be4d36d657139e957880e320dd457.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://pietraferreira.github.io/quartz/js/popover.9b72b70bd35617d0635e9d15463662b2.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,PRODUCTION=!0,BASE_URL="https://pietraferreira.github.io/quartz/",fetchData=Promise.all([fetch("https://pietraferreira.github.io/quartz/indices/linkIndex.bd7f94d300ee085a41318dc68df12ab2.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://pietraferreira.github.io/quartz/indices/contentIndex.0cf5c3938854860124b217f25299ee03.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://pietraferreira.github.io/quartz",!0,!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://pietraferreira.github.io/quartz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/pietraferreira.github.io\/quartz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://pietraferreira.github.io/quartz/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://pietraferreira.github.io/quartz/>🪅 Morioh</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>C</h1><p class=meta>Last updated
+Nov 24, 2022
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/notes/general/c-language.md rel=noopener>Edit Source</a></p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#declaration-vs-definition>Declaration vs Definition</a></li><li><a href=#dissecting-an-object-file>Dissecting an Object File</a></li></ol></nav></details></aside><a href=#c><h1 id=c><span class=hanchor arialabel=Anchor># </span>C</h1></a><a href=#declaration-vs-definition><h2 id=declaration-vs-definition><span class=hanchor arialabel=Anchor># </span>Declaration vs Definition</h2></a><p>A <strong>definition</strong> associates a name with an implementation of that name, either data or code:</p><ul><li>A definition of a <strong>variable</strong> induces the compiler to reserve some space for that variable and possibly fill that space with a particular value.</li><li>A definition of a <strong>function</strong> induces the compiler to generate code for that function.</li></ul><p>A <strong>declaration</strong> tells the compiler that a definition of something exists elsewhere in the program, probably in a different C file. A definition is also a declaration, but it also happens to fill in the particular &ldquo;elsewhere&rdquo;.</p><p>For <strong>variables</strong>, the definition is split into two sorts:</p><ul><li><strong>global</strong>: exist for the whole lifetime of the program (&ldquo;static extent&rdquo;), and are usually accessible in lots of different functions.</li><li><strong>local</strong>: only exist while a particular function is being executed (&ldquo;local extent&rdquo;) and are only accessible within that function.</li></ul><p>Couple special cases:</p><ul><li><strong>static local variables</strong> are actually global variables, because they exist for the lifetime of the program, even though they are only visible inside a single function.</li><li><strong>static global variables</strong> are the same, even though they can only be accessed by the functions in the particular file where they were defined.</li></ul><p>Making a function <strong>static</strong> just narrows down the number of places that are able to refer to that function by name.</p><p>We can use <strong>malloc</strong> or <strong>new</strong> to store information in memory that is dynamically allocated. Because we can&rsquo;t refer to the space allocated by name, we use pointers instead. The memory can be reallocated with <strong>free</strong> or <strong>delete</strong>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cm>/* This is the definition of a uninitialized global variable */</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>x_global_uninit</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is the definition of a initialized global variable */</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>x_global_init</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is the definition of a uninitialized global variable, albeit
+</span></span></span><span class=line><span class=cl><span class=cm> * one that can only be accessed by name in this C file */</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=n>y_global_uninit</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is the definition of a initialized global variable, albeit
+</span></span></span><span class=line><span class=cl><span class=cm> * one that can only be accessed by name in this C file */</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=n>y_global_init</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is a declaration of a global variable that exists somewhere
+</span></span></span><span class=line><span class=cl><span class=cm> * else in the program */</span>
+</span></span><span class=line><span class=cl><span class=k>extern</span> <span class=kt>int</span> <span class=n>z_global</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is a declaration of a function that exists somewhere else in
+</span></span></span><span class=line><span class=cl><span class=cm> * the program (you can add &#34;extern&#34; beforehand if you like, but it&#39;s
+</span></span></span><span class=line><span class=cl><span class=cm> * not needed) */</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>fn_a</span><span class=p>(</span><span class=kt>int</span> <span class=n>x</span><span class=p>,</span> <span class=kt>int</span> <span class=n>y</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is a definition of a function, but because it is marked as
+</span></span></span><span class=line><span class=cl><span class=cm> * static, it can only be referred to by name in this C file alone */</span>
+</span></span><span class=line><span class=cl><span class=k>static</span> <span class=kt>int</span> <span class=nf>fn_b</span><span class=p>(</span><span class=kt>int</span> <span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=n>x</span><span class=o>+</span><span class=mi>1</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/* This is a definition of a function. */</span>
+</span></span><span class=line><span class=cl><span class=cm>/* The function parameter counts as a local variable */</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>fn_c</span><span class=p>(</span><span class=kt>int</span> <span class=n>x_local</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* This is the definition of an uninitialized local variable */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>int</span> <span class=n>y_local_uninit</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* This is the definition of an initialized local variable */</span>
+</span></span><span class=line><span class=cl>  <span class=kt>int</span> <span class=n>y_local_init</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=cm>/* Code that refers to local and global variables and other
+</span></span></span><span class=line><span class=cl><span class=cm>   * functions by name */</span>
+</span></span><span class=line><span class=cl>  <span class=n>x_global_uninit</span> <span class=o>=</span> <span class=n>fn_a</span><span class=p>(</span><span class=n>x_local</span><span class=p>,</span> <span class=n>x_global_init</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>y_local_uninit</span> <span class=o>=</span> <span class=n>fn_a</span><span class=p>(</span><span class=n>x_local</span><span class=p>,</span> <span class=n>y_local_init</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>y_local_uninit</span> <span class=o>+=</span> <span class=n>fn_b</span><span class=p>(</span><span class=n>z_global</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span><span class=n>y_global_uninit</span> <span class=o>+</span> <span class=n>y_local_uninit</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#dissecting-an-object-file><h2 id=dissecting-an-object-file><span class=hanchor arialabel=Anchor># </span>Dissecting an Object File</h2></a><p>We can use <code>nm</code> to look at the file above:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>Symbols from c_parts.o:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Name                  Value   Class        Type         Size     Line  Section
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>fn_a                <span class=p>|</span>        <span class=p>|</span>   U  <span class=p>|</span>            NOTYPE<span class=p>|</span>        <span class=p>|</span>     <span class=p>|</span>*UND*
+</span></span><span class=line><span class=cl>z_global            <span class=p>|</span>        <span class=p>|</span>   U  <span class=p>|</span>            NOTYPE<span class=p>|</span>        <span class=p>|</span>     <span class=p>|</span>*UND*
+</span></span><span class=line><span class=cl>fn_b                <span class=p>|</span>00000000<span class=p>|</span>   t  <span class=p>|</span>              FUNC<span class=p>|</span>00000009<span class=p>|</span>     <span class=p>|</span>.text
+</span></span><span class=line><span class=cl>x_global_init       <span class=p>|</span>00000000<span class=p>|</span>   D  <span class=p>|</span>            OBJECT<span class=p>|</span>00000004<span class=p>|</span>     <span class=p>|</span>.data
+</span></span><span class=line><span class=cl>y_global_uninit     <span class=p>|</span>00000000<span class=p>|</span>   b  <span class=p>|</span>            OBJECT<span class=p>|</span>00000004<span class=p>|</span>     <span class=p>|</span>.bss
+</span></span><span class=line><span class=cl>x_global_uninit     <span class=p>|</span>00000004<span class=p>|</span>   C  <span class=p>|</span>            OBJECT<span class=p>|</span>00000004<span class=p>|</span>     <span class=p>|</span>*COM*
+</span></span><span class=line><span class=cl>y_global_init       <span class=p>|</span>00000004<span class=p>|</span>   d  <span class=p>|</span>            OBJECT<span class=p>|</span>00000004<span class=p>|</span>     <span class=p>|</span>.data
+</span></span><span class=line><span class=cl>fn_c                <span class=p>|</span>00000009<span class=p>|</span>   T  <span class=p>|</span>              FUNC<span class=p>|</span>00000055<span class=p>|</span>     <span class=p>|</span>.text
+</span></span></code></pre></td></tr></table></div></div><ul><li><strong>U</strong>: undefined reference.</li><li><strong>t</strong> or <strong>T</strong>: indicates where code is defined, indicating whether the function is local to this file (<strong>t</strong>) or not (<strong>T</strong>) (<code>.text</code>).</li><li><strong>d</strong> or <strong>D</strong>: initialised global variable, <strong>d</strong> meaning local and <strong>D</strong> global (<code>.data</code>).</li><li><strong>b</strong> is for static/local <strong>uninitialised</strong> global variables, and <strong>B</strong> and <strong>C</strong> if it is not static/local (<code>.bss</code>).</li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/quartz/notes/general/knowledge-hub/ data-ctx="The C Language" data-src=/notes/general/knowledge-hub class=internal-link>Knowledge Hub</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://pietraferreira.github.io/quartz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Morioh using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://pietraferreira.github.io/quartz/>Home</a></li><li><a href=https://github.com/pietraferreira>Github</a></li></ul></footer></div></div></body></html>

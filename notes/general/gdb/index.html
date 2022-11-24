@@ -1,0 +1,133 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="GDB  All the basic commands can be found .
+Remote Debugging gdb can be used to debug programs running on another machine."><title>GDB</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=ico href=https://pietraferreira.github.io/quartz//favicon.ico><link href=https://pietraferreira.github.io/quartz/styles.0468931ec0b10cef0dddbe82a8c02b7f.min.css rel=stylesheet><link href=https://pietraferreira.github.io/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://pietraferreira.github.io/quartz/js/darkmode.a93be4d36d657139e957880e320dd457.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://pietraferreira.github.io/quartz/js/popover.9b72b70bd35617d0635e9d15463662b2.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://pietraferreira.github.io/quartz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,PRODUCTION=!0,BASE_URL="https://pietraferreira.github.io/quartz/",fetchData=Promise.all([fetch("https://pietraferreira.github.io/quartz/indices/linkIndex.bd7f94d300ee085a41318dc68df12ab2.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://pietraferreira.github.io/quartz/indices/contentIndex.0cf5c3938854860124b217f25299ee03.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://pietraferreira.github.io/quartz",!0,!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://pietraferreira.github.io/quartz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/pietraferreira.github.io\/quartz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://pietraferreira.github.io/quartz/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://pietraferreira.github.io/quartz/>🪅 Morioh</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>GDB</h1><p class=meta>Last updated
+Nov 24, 2022
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/notes/general/gdb.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://pietraferreira.github.io/quartz/tags/work/>Work</a></li><li><a href=https://pietraferreira.github.io/quartz/tags/cs-concept/>Cs concept</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#remote-debugging>Remote Debugging</a></li><li><a href=#assembly-syntax>Assembly Syntax</a></li><li><a href=#see-also>See Also</a></li></ol></nav></details></aside><a href=#gdb><h1 id=gdb><span class=hanchor arialabel=Anchor># </span>GDB</h1></a><hr><p>All the basic commands can be found
+<a href=/quartz/notes/general/useful-commands-dump/ rel=noopener class=internal-link data-src=/quartz/notes/general/useful-commands-dump/></a>.</p><a href=#remote-debugging><h2 id=remote-debugging><span class=hanchor arialabel=Anchor># </span>Remote Debugging</h2></a><p>gdb can be used to debug programs running on another machine. On the remote machine, a program called <code>gdbserver</code> is run, which responds and acts on the requests made by gdb on the client machine.</p><p>Remote debugging can be more convenient in some cases; for example, it enables inspecting the program on the machine where the bug has occurred instead of trying to replicate the scenario on a dev machine. This can save a lot of time. Remote debugging is quite popular among mobile app developers, where the app runs on a mobile device, while the debugger runs on the development machine.</p><p>The 
+<a href=https://developers.redhat.com/blog/2015/04/28/remote-debugging-with-gdb rel=noopener><em>Remote debugging with GDB</em> blog post</a> can get you started in case you are interested. The 
+<a rel=noopener class="internal-link broken" data-src=1>gdbserver(1) - Linux manual page</a>%20-%20Linux%20manual%20page) also offers great documentation. The official
+<a href=https://github.com/riscv-collab/riscv-binutils-gdb rel=noopener>RISC-V binutils repository</a> has the <code>gdbserver</code> source code.</p><a href=#assembly-syntax><h2 id=assembly-syntax><span class=hanchor arialabel=Anchor># </span>Assembly Syntax</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>student@nix-bow:~$ gdb -q bow32
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Reading symbols from bow...<span class=o>(</span>no debugging symbols found<span class=o>)</span>...done.
+</span></span><span class=line><span class=cl><span class=o>(</span>gdb<span class=o>)</span> disassemble main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Dump of assembler code <span class=k>for</span> <span class=k>function</span> main:
+</span></span><span class=line><span class=cl>   0x00000582 &lt;+0&gt;: 	lea    0x4<span class=o>(</span>%esp<span class=o>)</span>,%ecx
+</span></span><span class=line><span class=cl>   0x00000586 &lt;+4&gt;: 	and    <span class=nv>$0</span>xfffffff0,%esp
+</span></span><span class=line><span class=cl>   0x00000589 &lt;+7&gt;: 	pushl  -0x4<span class=o>(</span>%ecx<span class=o>)</span>
+</span></span><span class=line><span class=cl>   0x0000058c &lt;+10&gt;:	push   %ebp
+</span></span><span class=line><span class=cl>   0x0000058d &lt;+11&gt;:	mov    %esp,%ebp
+</span></span><span class=line><span class=cl>   0x0000058f &lt;+13&gt;:	push   %ebx
+</span></span><span class=line><span class=cl>   0x00000590 &lt;+14&gt;:	push   %ecx
+</span></span><span class=line><span class=cl>   0x00000591 &lt;+15&gt;:	call   0x450 &lt;__x86.get_pc_thunk.bx&gt;
+</span></span><span class=line><span class=cl>   0x00000596 &lt;+20&gt;:	add    <span class=nv>$0</span>x1a3e,%ebx
+</span></span><span class=line><span class=cl>   0x0000059c &lt;+26&gt;:	mov    %ecx,%eax
+</span></span><span class=line><span class=cl>   0x0000059e &lt;+28&gt;:	mov    0x4<span class=o>(</span>%eax<span class=o>)</span>,%eax
+</span></span><span class=line><span class=cl>   0x000005a1 &lt;+31&gt;:	add    <span class=nv>$0</span>x4,%eax
+</span></span><span class=line><span class=cl>   0x000005a4 &lt;+34&gt;:	mov    <span class=o>(</span>%eax<span class=o>)</span>,%eax
+</span></span><span class=line><span class=cl>   0x000005a6 &lt;+36&gt;:	sub    <span class=nv>$0</span>xc,%esp
+</span></span><span class=line><span class=cl>   0x000005a9 &lt;+39&gt;:	push   %eax
+</span></span><span class=line><span class=cl>   0x000005aa &lt;+40&gt;:	call   0x54d &lt;bowfunc&gt;
+</span></span><span class=line><span class=cl>   0x000005af &lt;+45&gt;:	add    <span class=nv>$0</span>x10,%esp
+</span></span><span class=line><span class=cl>   0x000005b2 &lt;+48&gt;:	sub    <span class=nv>$0</span>xc,%esp
+</span></span><span class=line><span class=cl>   0x000005b5 &lt;+51&gt;:	lea    -0x1974<span class=o>(</span>%ebx<span class=o>)</span>,%eax
+</span></span><span class=line><span class=cl>   0x000005bb &lt;+57&gt;:	push   %eax
+</span></span><span class=line><span class=cl>   0x000005bc &lt;+58&gt;:	call   0x3e0 &lt;puts@plt&gt;
+</span></span><span class=line><span class=cl>   0x000005c1 &lt;+63&gt;:	add    <span class=nv>$0</span>x10,%esp
+</span></span><span class=line><span class=cl>   0x000005c4 &lt;+66&gt;:	mov    <span class=nv>$0</span>x1,%eax
+</span></span><span class=line><span class=cl>   0x000005c9 &lt;+71&gt;:	lea    -0x8<span class=o>(</span>%ebp<span class=o>)</span>,%esp
+</span></span><span class=line><span class=cl>   0x000005cc &lt;+74&gt;:	pop    %ecx
+</span></span><span class=line><span class=cl>   0x000005cd &lt;+75&gt;:	pop    %ebx
+</span></span><span class=line><span class=cl>   0x000005ce &lt;+76&gt;:	pop    %ebp
+</span></span><span class=line><span class=cl>   0x000005cf &lt;+77&gt;:	lea    -0x4<span class=o>(</span>%ecx<span class=o>)</span>,%esp
+</span></span><span class=line><span class=cl>   0x000005d2 &lt;+80&gt;:	ret    
+</span></span><span class=line><span class=cl>End of assembler dump.
+</span></span></code></pre></td></tr></table></div></div><p>The hexadecimal numbers in the first column represent the <strong>memory addresses</strong>. The plus sign (<strong>+</strong>) show the <strong>address jumps</strong> in memory bytes. We also have the <strong>assembler instructions</strong> (<strong>mnemonics</strong>) with registers and their <strong>operation suffixes</strong>.</p><p>The current syntax is <strong>AT&T</strong>, which we can recognise by the <strong>%</strong> and <strong>$</strong> characters.</p><table><thead><tr><th>Memory Address</th><th>Address Jumps</th><th>Assembler Instruction</th><th>Operation Suffixes</th></tr></thead><tbody><tr><td>0x00000582</td><td>&lt;+0>:</td><td>lea</td><td>0x4(%esp),%ecx</td></tr><tr><td>0x00000586</td><td>&lt;+4>:</td><td>and</td><td>$0xfffffff0,%esp</td></tr><tr><td>&mldr;</td><td>&mldr;</td><td>&mldr;</td><td>&mldr;</td></tr></tbody></table><p>We can change to the <strong>Intel</strong> syntax:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>(</span>gdb<span class=o>)</span> <span class=nb>set</span> disassembly-flavor intel
+</span></span><span class=line><span class=cl><span class=o>(</span>gdb<span class=o>)</span> disassemble main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Dump of assembler code <span class=k>for</span> <span class=k>function</span> main:
+</span></span><span class=line><span class=cl>   0x00000582 &lt;+0&gt;:	    lea    ecx,<span class=o>[</span>esp+0x4<span class=o>]</span>
+</span></span><span class=line><span class=cl>   0x00000586 &lt;+4&gt;:	    and    esp,0xfffffff0
+</span></span><span class=line><span class=cl>   0x00000589 &lt;+7&gt;:	    push   DWORD PTR <span class=o>[</span>ecx-0x4<span class=o>]</span>
+</span></span><span class=line><span class=cl>   0x0000058c &lt;+10&gt;:	push   ebp
+</span></span><span class=line><span class=cl>   0x0000058d &lt;+11&gt;:	mov    ebp,esp
+</span></span><span class=line><span class=cl>   0x0000058f &lt;+13&gt;:	push   ebx
+</span></span><span class=line><span class=cl>   0x00000590 &lt;+14&gt;:	push   ecx
+</span></span><span class=line><span class=cl>   0x00000591 &lt;+15&gt;:	call   0x450 &lt;__x86.get_pc_thunk.bx&gt;
+</span></span><span class=line><span class=cl>   0x00000596 &lt;+20&gt;:	add    ebx,0x1a3e
+</span></span><span class=line><span class=cl>   0x0000059c &lt;+26&gt;:	mov    eax,ecx
+</span></span><span class=line><span class=cl>   0x0000059e &lt;+28&gt;:	mov    eax,DWORD PTR <span class=o>[</span>eax+0x4<span class=o>]</span>
+</span></span><span class=line><span class=cl>&lt;SNIP&gt;
+</span></span></code></pre></td></tr></table></div></div><p>Or set it as default:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>echo</span> <span class=s1>&#39;set disassembly-flavor intel&#39;</span> &gt; ~/.gdbinit
+</span></span></code></pre></td></tr></table></div></div><p>Another difference between <strong>Intel</strong> and <strong>AT&T</strong> syntax is the order. For example the instruction:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>0x0000058d &lt;+11&gt;:	mov    ebp,esp
+</span></span></code></pre></td></tr></table></div></div><p>With <strong>Intel</strong> syntax:</p><table><thead><tr><th>Instruction</th><th>Destination</th><th>Source</th></tr></thead><tbody><tr><td>mov</td><td><strong>ebp</strong></td><td>esp</td></tr></tbody></table><p>With <strong>AT&T</strong> syntax:</p><table><thead><tr><th>Instruction</th><th>Destination</th><th>Source</th></tr></thead><tbody><tr><td>mov</td><td>%esp</td><td><strong>%ebp</strong></td></tr></tbody></table><a href=#see-also><h2 id=see-also><span class=hanchor arialabel=Anchor># </span>See Also</h2></a><ul><li><a href=/quartz/notes/general/debugging-techniques/ rel=noopener class=internal-link data-src=/quartz/notes/general/debugging-techniques/>Debugging Techniques</a></li><li><a href=/quartz/notes/general/htb-stack-based-overflow-linux/ rel=noopener class=internal-link data-src=/quartz/notes/general/htb-stack-based-overflow-linux/>Stack Overflow</a></li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/quartz/notes/general/compiler-toolchains/ data-ctx=gdb data-src=/notes/general/compiler-toolchains class=internal-link>Compiler Toolchains</a></li><li><a href=/quartz/notes/general/compilers/ data-ctx=GDB data-src=/notes/general/compilers class=internal-link>Compilers</a></li><li><a href=/quartz/notes/general/cpu-architecture/ data-ctx=GDB data-src=/notes/general/cpu-architecture class=internal-link>CPU Architecture</a></li><li><a href=/quartz/notes/general/debugging-techniques/ data-ctx data-src=/notes/general/debugging-techniques class=internal-link>Debugging Techniques</a></li><li><a href=/quartz/notes/general/htb-stack-based-overflow-linux/ data-ctx=GDB data-src=/notes/general/htb-stack-based-overflow-linux class=internal-link>Stack-based Overflow - Linux x86</a></li><li><a href=/quartz/notes/general/useful-commands-dump/ data-ctx=GDB data-src=/notes/general/useful-commands-dump class=internal-link>Useful Commands Dump</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://pietraferreira.github.io/quartz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Morioh using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://pietraferreira.github.io/quartz/>Home</a></li><li><a href=https://github.com/pietraferreira>Github</a></li></ul></footer></div></div></body></html>
