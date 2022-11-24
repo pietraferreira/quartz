@@ -37,7 +37,7 @@ body {
   background-color: var(--light);
 }
 
-h4, h5, h6, thead {
+h5, h6, thead {
   font-family: var(--font-header);
   color: var(--dark);
   font-weight: revert;
@@ -76,6 +76,18 @@ h2 {
 h3 {
   font-family: var(--font-header);
   color: var(--green);
+  font-weight: revert;
+  margin: 2rem 0 0;
+  padding: 2rem auto 1rem;
+
+  &:hover > .hanchor {
+    color: var(--secondary);
+  }
+}
+
+h4 {
+  font-family: var(--font-header);
+  color: var(--blue);
   font-weight: revert;
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
