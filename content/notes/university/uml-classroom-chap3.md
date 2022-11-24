@@ -27,11 +27,11 @@ Describes the functionality expected from the system to be developed.
 
 It is triggered either by invocation of an actor or by a **trigger event**. They are determined by collecting customer wishes and analysing problems. They can also be used to document the functionality that a system offers.
 
-![[notes/images/Screenshot 2022-10-03 at 15.41.51.png]]
+![Screenshot 2022-10-03 at 15.41.51](notes/images/Screenshot%202022-10-03%20at%2015.41.51.png)
 
 The rectangle symbolises the boundaries of the system to be described:
 
-![[notes/images/Screenshot 2022-10-03 at 15.42.24.png]]
+![Screenshot 2022-10-03 at 15.42.24](notes/images/Screenshot%202022-10-03%20at%2015.42.24.png)
 
 ### Actors
 Who works and interacts with the system.
@@ -48,7 +48,7 @@ In the example below Professor is an **active** actor while the E-mail Server is
 
 As you can see, both Professor and Student are actively involved in the execution of the use case Exam, the main beneficiary being the Student. Professor has a lower benefit from the exam but is necessary for the execution of the use case.
 
-![[notes/images/Screenshot 2022-10-03 at 15.46.30.png]]
+![Screenshot 2022-10-03 at 15.46.30](notes/images/Screenshot%202022-10-03%20at%2015.46.30.png)
 
 Actors are **always** outside the system.
 
@@ -61,7 +61,7 @@ Associations are always binary, meaning that it is always specified between one 
 
 - Multiplicity:
 
-![[notes/images/Screenshot 2022-10-03 at 15.48.24.png]]
+![Screenshot 2022-10-03 at 15.48.24](notes/images/Screenshot%202022-10-03%20at%2015.48.24.png)
 
 Actors represent **roles**.
 
@@ -72,21 +72,21 @@ When actor Y (sub-actor) inherits from actor X (super-actor), Y is involved with
 
 In the image below the actors Professor and Assistant inherit from the actor Research Associate, meaning every professor and every assistant is a research associate. Every research associate can Query student data, but only professors can create a new course and tasks can only be published by assistants. To execute Issue certificate, we need a professor but an assistant can be involved optionally (0..1).
 
-![[notes/images/Screenshot 2022-10-03 at 15.52.06.png]]
+![Screenshot 2022-10-03 at 15.52.06](notes/images/Screenshot%202022-10-03%20at%2015.52.06.png)
 
 Two actors participating in a use case vs two actors having a common super-actor that participates in the use case:
 
-![[notes/images/Screenshot 2022-10-03 at 15.53.02.png]]
+![Screenshot 2022-10-03 at 15.53.02](notes/images/Screenshot%202022-10-03%20at%2015.53.02.png)
 
 - **Abstract**: if there is no instance of an actor.
 
 ### Relationships between Use Cases
-![[notes/images/Screenshot 2022-10-03 at 15.58.12.png]]
+![Screenshot 2022-10-03 at 15.58.12](notes/images/Screenshot%202022-10-03%20at%2015.58.12.png)
 
 #### Include
 The behaviour of the included use case (B) is integrated into the behaviour of the base use case (A). The included use case can be executed on its own. It is analogous to **calling a subroutine**.
 
-![[notes/images/Screenshot 2022-10-03 at 15.58.20.png]]
+![Screenshot 2022-10-03 at 15.58.20](notes/images/Screenshot%202022-10-03%20at%2015.58.20.png)
 
 In the example, Announce lecture is the **base use case** - meaning when a new lecture is announced, the use case Assign lecturer must also be executed. The actor Professor is involved in the execution of **both** use cases.
 
@@ -97,7 +97,7 @@ If a use case B is in an `<<extend>>` relationship with a use case A (base use c
 
 Both use cases can be executed independently of one another.
 
-![[notes/images/Screenshot 2022-10-03 at 16.00.27.png]]
+![Screenshot 2022-10-03 at 16.00.27](notes/images/Screenshot%202022-10-03%20at%2016.00.27.png)
 
 For example, when a new lecture is announced, it is possible (not mandatory) to reserve a lecture hall. 
 
@@ -108,7 +108,7 @@ Points towards the base.
 #### Condition
 Extending relationships can have conditions, which must be fulfilled for the base use case to insert the behaviour of the extending use case.
 
-![[notes/images/Screenshot 2022-10-03 at 16.01.47.png]]
+![Screenshot 2022-10-03 at 16.01.47](notes/images/Screenshot%202022-10-03%20at%2016.01.47.png)
 
 #### Extension Points
 Allows you define the point at which the behaviour of the extending use cases must be inserted in the base use case.
@@ -120,11 +120,11 @@ If A generalises B, B inherits the behaviours of A, which B can either extend or
 
 Uses an arrow:
 
-![[notes/images/Screenshot 2022-10-03 at 16.45.00.png]]
+![Screenshot 2022-10-03 at 16.45.00](notes/images/Screenshot%202022-10-03%20at%2016.45.00.png)
 
 For example, Announce event passes on its properties and behaviours to Announce lecture and Announce talk. As a result of `<<include>>`, both must execute the behaviour of the use case Assign lecturer. When a lecture is announced, an exam can also be announced at the same time. They both inherit the relationship from the use case Announce event to the actor Professor. Thus, all use cases are connected to at least one actor.
 
-![[notes/images/Screenshot 2022-10-03 at 16.05.57.png]]
+![Screenshot 2022-10-03 at 16.05.57](notes/images/Screenshot%202022-10-03%20at%2016.05.57.png)
 
 We grouped the common features of Announce lecture and Announce talk, meaning we don't have to model both the `<<include>>` relationship and the association with the professor twice.
 
@@ -170,23 +170,23 @@ Guideline for the length of use case description is approximately 1-2 pages per 
 
 Example:
 
-![[notes/images/Screenshot 2022-10-03 at 16.59.59.png]]
+![Screenshot 2022-10-03 at 16.59.59](notes/images/Screenshot%202022-10-03%20at%2016.59.59.png)
 
 ### Pitfalls
 #### Modeling Processes
 We do not model processes or workflows in use case diagrams.
 
-![[notes/images/Screenshot 2022-10-03 at 17.01.05.png]]
+![Screenshot 2022-10-03 at 17.01.05](notes/images/Screenshot%202022-10-03%20at%2017.01.05.png)
 
 #### Setting system boundaries incorrectly
-![[notes/images/Screenshot 2022-10-03 at 17.01.32.png]]
+![Screenshot 2022-10-03 at 17.01.32](notes/images/Screenshot%202022-10-03%20at%2017.01.32.png)
 
 #### Mixing abstraction levels
 Avoid representing top level use cases with technically oriented use cases in the same diagram, like in the figure below.
 
 To avoid this you should proceed iteratively. First creating the use case diagram with use cases that are based on the business objectives (for example management of student data) and then refine the use cases down to the technical requirements (selecting a printer).
 
-![[notes/images/Screenshot 2022-10-03 at 17.02.57.png]]
+![Screenshot 2022-10-03 at 17.02.57](notes/images/Screenshot%202022-10-03%20at%2017.02.57.png)
 
 #### Functional decomposition
 Use cases, even included or extending ones, can always be executed independently. If they can only be executed within the scope of another use case and not independently, they are not use cases and must not be depicted as such.
@@ -195,11 +195,11 @@ In the figure below, the use case Issue certificate is broken down into individu
 
 The use case Log is not a functionality that is part of Issue certificate, it is a precondition that the user must be logged in with sufficient authorisations for being able to execute this use case.
 
-![[notes/images/Screenshot 2022-10-03 at 17.05.37.png]]
+![Screenshot 2022-10-03 at 17.05.37](notes/images/Screenshot%202022-10-03%20at%2017.05.37.png)
 
 This is sufficient:
 
-![[notes/images/Screenshot 2022-10-03 at 17.06.00.png]]
+![Screenshot 2022-10-03 at 17.06.00](notes/images/Screenshot%202022-10-03%20at%2017.06.00.png)
 
 #### Incorrect associations
 Having two actors doesn't mean that either one of the other is involved in the execution of the use case: it means that both are necessary for its execution.
@@ -208,11 +208,11 @@ In the figure below, Assistant and Professor are involved in the execution of th
 
 To resolve this, we introduce Research Associate from which the two actors inherit.
 
-![[notes/images/Screenshot 2022-10-03 at 17.06.49.png]]
+![Screenshot 2022-10-03 at 17.06.49](notes/images/Screenshot%202022-10-03%20at%2017.06.49.png)
 
 #### Modelling redundant use cases
 As you can see in the figure below, we have modelled separate use cases for creating, updating and deleting courses. This is fine for a small diagram. 
 
 However, when modelling a real application, the diagram would quickly become unmanageable. 
 
-![[notes/images/Screenshot 2022-10-03 at 17.09.18.png]]
+![Screenshot 2022-10-03 at 17.09.18](notes/images/Screenshot%202022-10-03%20at%2017.09.18.png)

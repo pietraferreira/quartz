@@ -14,4 +14,4 @@ Here you can find everything related to my university course.
 [Brightspace](https://brightspace.brunel.ac.uk/)
 
 ## Notes
-2022/2023 - [[year-2|Year 2]]
+2022/2023 - [Year 2](notes/university/year-2.md)

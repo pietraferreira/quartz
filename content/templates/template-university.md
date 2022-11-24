@@ -1,16 +1,21 @@
-<%*
-  let title = tp.file.title
+<%* let title = tp.file.title
   if (title.startsWith("Untitled")) {
     title = await tp.system.prompt("Title");
     await tp.file.rename(title);
   } 
+-%>
+<%*
+  let result = title.replace(/-/g, ' ')
+  result = result.charAt(0).toUpperCase() + result.slice(1);
   tR += "---"
 %>
-title:  <%* tR += title %>
+title:  <%* tR += "\"" + result + "\"" %>
 tags:
+<% tp.file.cursor(1) %>
 programming-languagues:
 module:
 term:
+last-edited:
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
-# <%* tR += title %>
+# <%* tR += result %>
