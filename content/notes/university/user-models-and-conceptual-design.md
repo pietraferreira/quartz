@@ -25,13 +25,13 @@ Mental models are formed through:
 - Shown by others (practical demonstration).
 - Told by someone else (instruction).
 
-![[notes/images/Screenshot 2022-10-20 at 15.27.06.png]]
+![Screenshot 2022-10-20 at 15.27.06](notes/images/Screenshot%202022-10-20%20at%2015.27.06.png)
 
 ### Mental Models and HCI
-![[notes/images/Screenshot 2022-10-20 at 15.27.36.png]]
+![Screenshot 2022-10-20 at 15.27.36](notes/images/Screenshot%202022-10-20%20at%2015.27.36.png)
 
 ### Types of Mental Models to Consider
-![[notes/images/Screenshot 2022-10-20 at 15.28.13.png]]
+![Screenshot 2022-10-20 at 15.28.13](notes/images/Screenshot%202022-10-20%20at%2015.28.13.png)
 
 ### Mental Models in HCI
 Knowledge of users' mental models is useful in design.
@@ -61,7 +61,7 @@ A good **conceptual** model is a high level description of:
 2. What it should do, behave and look like.
 3. How it should be understood by the users, as intended.
 
-![[notes/images/Screenshot 2022-10-20 at 15.33.32.png]]
+![Screenshot 2022-10-20 at 15.33.32](notes/images/Screenshot%202022-10-20%20at%2015.33.32.png)
 
 ### Implications for System Designers
 1. Choose the MM you intend the user to adopt, **before** designing the user interface.

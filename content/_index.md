@@ -10,13 +10,13 @@ Main hub for all the different note categories :)
 <center><img src="https://media2.giphy.com/media/TI9HiyUqRm75jPyKQ5/giphy.gif?cid=ecf05e4799x4brmyrv3lgup74b1onq4s89nps3z3lwxmbls2&rid=giphy.gif&ct=g"></center>
 
 ## All of my knowledge 
-- [Hub](notes/knowledge-hub.md)
+- [Hub](notes/general/knowledge-hub.md)
 
 ## Work
-- [Hub](notes/work-hub.md)
+- [Hub](notes/private/work/work-hub.md)
 
 ## University
-- [Hub](notes/university-hub.md)
+- [Hub](notes/university/university-hub.md)
 
 ## Tasks
-- [Hub](notes/task-hub.md)
+- [Hub](notes/general/task-hub.md)

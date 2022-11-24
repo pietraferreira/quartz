@@ -13,58 +13,12 @@ A list of all the different modules I am taking during my second year.
 * Year 2 is **1/3** of the final grade!
 
 ---
-## CS2001 - Group Project
-**Lecturer**: Nadine Aburumman
-
-100% Coursework.
-
-- [[notes/university/01-gp-intro|Introduction]]
-
+## [CS2001](notes/university/cs2001.md) - Group Project
 ---
-## CS2002 - Software Development
-**Lecturer**: Giuseppe Destefanis
-
-50% Coursework (LO1 and LO2) -> Due on the 20th of January.
-
-50% Exam.
-
-### Lectures
-- [[notes/university/uml-class-diagram|UML - Class Diagram]] (Week 2 and 3)
-- [[notes/university/uml-sequence-diagram|UML Sequence Diagram]] (Week 4)
-
-### References
-- [[notes/university/uml-classroom-chap3|UML @ Classroom - Chapter 3 (Use Case Diagram)]] (Week 1)
-
+## [CS2002](notes/university/cs2002.md) - Software Development
 ---
-## CS2003 - Usability Engineering
-**Lecturer**: Monica Perereira
-
-100% Exam.
-
+## [CS2003](notes/university/cs2003.md) - Usability Engineering
 ---
-## CS2004 - Algorithms
-**Lecturer**: Mahir Arzoky
-
-60% Coursework -> Due on Friday, Week 21.
-
-40% Exam -> Available on Week 23.
-
-### Lectures
-- [[notes/university/01-alg-intro|Introduction]]
-- [[notes/university/02-alg-foundation-analysis|Foundation Analysis]]
-
-### References
-- [[notes/university/classes-types-objects|Classes, Types, and Objects]]
-
+## [CS2004](notes/university/cs2004.md) - Algorithms
 ---
-## CS2005 - Networks and Operating Systems
-**Lecturer**: Anastasia Anagnostou
-
-25% Coursework -> Due on the 06 of December.
-
-75% Exam.
-
-### Lab Notes
-```dataview
-LIST from #cs2005/lab 
-```
+## [CS2005](notes/university/cs2005.md) - Networks and Operating Systems

@@ -15,7 +15,7 @@ Notes from "Data Structures and Algorithms in Java by Michael T. Goodrich".
 ```toc
 ```
 
-![[notes/images/Pasted image 20220814184657.png]]
+![Pasted image 20220814184657](notes/images/Pasted%20image%2020220814184657.png)
 
 **Objects** store data and provide methods for accessing and modifying data. Every **object** is an instance of a **class**, which defines the **type** of the object and the kind of operations it performs. The **members** of a class are:
     - Data of objects are stored in **instance variables** (aka **fields**).
@@ -127,7 +127,7 @@ public class Primitive_Types {
 ## Objects
 New objects are created by using the **new** operator. It creates a new object and returns a **reference** to that object. We must immediately follow our use of the **new** operator by a call to a constructor for that type of object.
 
-![[notes/images/Pasted image 20220814190529.png]]
+![Pasted image 20220814190529](notes/images/Pasted%20image%2020220814190529.png)
 
 Three events occur:
 
@@ -163,7 +163,7 @@ The **scope** can be controlled by the following variable modifiers:
 1. **static**: variable is associated with the class, not with the individual instances of that class. They store **global** information about a class.
 2. **final**: must be assigned an initial value and then can never be assigned a new value after that.
 
-![[notes/images/Pasted image 20220814192407.png]]
+![Pasted image 20220814192407](notes/images/Pasted%20image%2020220814192407.png)
 
 ## Enum Types
 Enumerated types. Only allowed to take on values that come from a specified set of names declared inside a class as follows:
@@ -178,7 +178,7 @@ where the modifier can be blank, public, protected or private. Another example:
 public enum Day { MON, TUE, WED, THU, FRI, SAT, SUN };
 ```
 
-![[notes/images/Pasted image 20220814192633.png]]
+![Pasted image 20220814192633](notes/images/Pasted%20image%2020220814192633.png)
 
 ## Return Types
 If the method doesn't return a value, then we use **void**. If the return type is void, the method is called a **procedure**.
