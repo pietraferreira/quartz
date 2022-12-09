@@ -13,9 +13,8 @@ title:  <%* tR += "\"" + result + "\"" %>
 tags:
 <% tp.file.cursor(1) %>
 programming-languagues:
-module:
-term:
 last-edited:
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 # <%* tR += result %>
+---
