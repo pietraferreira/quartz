@@ -133,3 +133,19 @@ Exactly one outgoing edge of the history state points to a substate which is use
 ![|600](notes/images/Screenshot%202022-11-24%20at%2014.19.07.png)
 
 ![|600](notes/images/Screenshot%202022-11-24%20at%2014.19.14.png)
+
+# Entry and Exit Points
+---
+**Encapsulation** mechanism:
+- A composite state shall be entered or exited via a state or other than the initial and final states.
+- The external transition must/need not know the structure of the composite state.
+
+![](notes/images/Screenshot%202022-11-24%20at%2014.30.24.png)
+
+![](notes/images/Screenshot%202022-11-24%20at%2014.30.47.png)
+
+# Summary (Notation Elements)
+---
+![|600](notes/images/Screenshot%202022-11-24%20at%2014.31.05.png)
+
+![|600](notes/images/Screenshot%202022-11-24%20at%2014.31.17.png)

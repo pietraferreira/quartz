@@ -10,7 +10,6 @@ term:
 last-edited:
 created: 2022-10-28
 ---
-# User-Centred Design
 It is important to ensure that we meet users needs, this is what user-centered design is all about.
 
 The problem with traditional development is that:
