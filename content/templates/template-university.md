@@ -11,10 +11,9 @@
 %>
 title:  <%* tR += "\"" + result + "\"" %>
 tags:
+  - university
 <% tp.file.cursor(1) %>
-programming-languagues:
 last-edited:
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
-# <%* tR += result %>
 ---
