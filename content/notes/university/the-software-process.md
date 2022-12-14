@@ -17,3 +17,9 @@ More info [here](notes/university/user-centred-design.md).
 
 # Waterfall Model
 ---
+![|350](notes/images/Screenshot%202022-12-14%20at%2011.27.13.png)
+
+### Software Specification
+---
+It is the process of establishing what services are required and the constraints on the system's operation and development.
+
