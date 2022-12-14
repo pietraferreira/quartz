@@ -107,5 +107,41 @@ Guards can prevent the passing of a token, as they are **stored in the previous 
 - Ends one execution path of an activity.
 - All other tokens of the activity remain unaffected.
 
-## Alternative Paths - Decision Node
+## Alternative Paths 
+---
+![|600](notes/images/Screenshot%202022-12-14%20at%2012.44.32.png)
+
+### Decision Node
+---
+Used to defined alternative branches.
+
+„Switch point“ for tokens.
+
+Outgoing edges have guards:
+- Syntax: \[Boolean expression].
+- Token takes **one** branch.
+- Guards must be mutually exclusive.
+- Predefined: \[else].
+
+![|300](notes/images/Screenshot%202022-12-14%20at%2012.42.25.png)
+
+Decision behaviour:
+- Specify behaviour that is not necessary for the evaluation of the guards.
+- Execution must not have side effects.
+
+![|150](notes/images/Screenshot%202022-12-14%20at%2012.42.06.png)
+
+### Merge Node
+---
+Used to bring **alternative** subpaths together. It passes the token to the next node.
+
+Combined decision and merge node:
+
+![|100](notes/images/Screenshot%202022-12-14%20at%2012.43.36.png)
+
+Decision and merge nodes can also be used to model loops:
+![|500](notes/images/Screenshot%202022-12-14%20at%2012.44.00.png)
+
+## Concurrent Paths
+### Parallelisation Node
 ---
