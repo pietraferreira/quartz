@@ -145,3 +145,41 @@ Decision and merge nodes can also be used to model loops:
 ## Concurrent Paths
 ### Parallelisation Node
 ---
+Used to split path into concurrent subpaths.
+
+Duplicates token for all outgoing edges, example:
+
+![|500](notes/images/Screenshot%202022-12-14%20at%2012.46.00.png)
+
+### Synchronisation Node
+---
+Used to merge concurrent subpaths.
+
+Token processing:
+- Waits until tokens are present at all incoming edges.
+- Merges all control tokens into one token and passes it on.
+- Passes on all object tokens.
+
+Combined parallelisation and synchronisation node:
+![|70](notes/images/Screenshot%202022-12-14%20at%2012.47.10.png)
+
+## Examples
+### Equivalent Control Flow
+---
+![|600](notes/images/Screenshot%202022-12-14%20at%2012.48.30.png)
+
+### Create and Send Invitations to a Meeting
+---
+While invitations are printed, already printed invitations are addressed.
+
+When all invitation are addressed, then the invitations are sent.
+
+![|600](notes/images/Screenshot%202022-12-14%20at%2012.48.48.png)
+
+### Conduct Lecture (Student Perspective)
+---
+![|600](notes/images/Screenshot%202022-12-14%20at%2012.49.39.png)
+
+### Token (Control Flow)
+---
+![](notes/images/Screenshot%202022-12-14%20at%2012.50.09.png)
