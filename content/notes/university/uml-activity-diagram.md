@@ -83,6 +83,7 @@ If an action receives a token, the action can be executed. When the action has c
 Guards can prevent the passing of a token, as they are **stored in the previous node**.
 
 **Control token**: "execution permission" for a node.
+
 **Object token**: transport data + "execution permission".
 
 ![|160](notes/images/Screenshot%202022-12-14%20at%2012.34.15.png)
@@ -91,3 +92,20 @@ Guards can prevent the passing of a token, as they are **stored in the previous 
 ---
 ![|20](notes/images/Screenshot%202022-12-14%20at%2012.34.56.png) Initial node:
 - Starts the execution of an activity.
+- Provides tokens at all outgoing edges.
+- Keeps tokens until the successive nodes accept them.
+- Multiple initial nodes to model concurrency.
+
+![|20](notes/images/Screenshot%202022-12-14%20at%2012.36.17.png) Activity final node:
+- Ends all flows of an activity.
+- First token that reaches the activity final node terminates the entire activity.
+    - Concurrent subpaths included.
+- Other control and object tokens are deleted.
+    - Exception: object tokens that are already present at the output parameters of the activity.
+
+![|20](notes/images/Screenshot%202022-12-14%20at%2012.38.44.png) Flow final node:
+- Ends one execution path of an activity.
+- All other tokens of the activity remain unaffected.
+
+## Alternative Paths - Decision Node
+---
