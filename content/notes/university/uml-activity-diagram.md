@@ -183,3 +183,132 @@ When all invitation are addressed, then the invitations are sent.
 ### Token (Control Flow)
 ---
 ![](notes/images/Screenshot%202022-12-14%20at%2012.50.09.png)
+
+## Object Node
+---
+It contains object tokens and represents the exchange of data/objects.
+
+It is the source and target of an object flow edge.
+
+Optional information: type and state.
+
+![|300](notes/images/Screenshot%202022-12-14%20at%2012.51.32.png)
+
+Notation variant: object node as parameter:
+- For activities:
+![|500](notes/images/Screenshot%202022-12-14%20at%2012.52.16.png)
+
+- For actions (“pins”):
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.03.57.png)
+
+### Example
+---
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.05.07.png)
+
+## Central Buffer
+---
+It is for saving and passing on object tokens.
+
+Transient memory, it accepts incoming object tokens from object nodes and passes them on to other object nodes.
+
+When an object token is read from the central buffer, it is deleted from the central buffer and cannot be consumed again.
+
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.08.43.png)
+
+## Data Store
+---
+It is for saving and passing on object tokens.
+
+Permanent memory, saves object tokens permanently and passes copies to other nodes.
+
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.09.33.png)
+
+## Weight of Edges
+---
+Minimal number of tokens that must be presented for an action to be executed.
+
+Default: 1.
+
+All tokens present have to be consumed: 0 (also `all` or `*`).
+
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.10.26.png)
+
+## Connector
+---
+Used if two consecutive actions are far apart in the diagram.
+
+Without connector:
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.11.10.png)
+
+With connector:
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.11.18.png)
+
+## Event-Based Actions
+---
+To send signals:
+- Send signal action:
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.12.01.png)
+
+To accept events:
+- Accept event action:
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.12.24.png)
+
+Accept time event action:
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.12.44.png)
+
+### Example
+---
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.13.01.png)
+
+## Call Behaviour Action
+---
+The execution of an action can call an activity.
+
+Content of the called activity can be modelled elsewhere.
+
+Advantages:
+- Model becomes clearer.
+- Reusability.
+
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.14.10.png)
+
+## Partition
+---
+"Swimlane". Graphically or textual. 
+
+It allows the grouping of nodes and edges of an activity due to responsibilities.
+
+Responsibilities reflect organisational units or roles.
+
+Makes the diagram more structured.
+
+Does not change the execution semantics.
+
+Example:
+- partitions `Student` and `Institute Employee` (with sub-partitions `Professor` and `Secretary`).
+
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.19.19.png)
+
+![|500](notes/images/Screenshot%202022-12-14%20at%2013.19.35.png)
+
+## Multidimensional Partitions
+---
+Graphical notation vs Textual notation:
+
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.20.17.png)
+
+## Example: Issue Student ID on Paper
+---
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.20.50.png)
+
+- Control flow (green) and object flow (red) in one activity diagram:
+![|600](notes/images/Screenshot%202022-12-14%20at%2013.21.03.png)
+
+## Exception Handling - Exception Handler
+---
+Predefined exceptions.
+
+Defining how the system has to react in a specific error situation.
+
+The exception handler replaces the action where the error occurred.
+
