@@ -54,3 +54,48 @@ We do not have to be 100% accurate as long as we get he powers of $n$ correct.
 # Polynomial Time
 ---
 An algorithm is solvable in **polynomial time** if the number of steps required to complete the algorithm for a give input  is $O(n^k)$ for some non-negative integer $k$, $n$ being the complexity of the input.
+
+## The Classes of Algorithms
+---
+Problems are divided up into a number of classes (classifications):
+- Computable:
+    - Problems that **can** be solved using a computer.
+    - For example: $f(x) = x + 1$.
+- Non-computable:
+    - Problems that **cannot** can be solved using a computer.
+    - For example: [Halting Problem](notes/general/halting-problem.md).
+
+### P and NP problems
+Algorithms are divided up into a number of classes (classifications):
+- P problems:
+    - Solved in a reasonable amount of time (polynomial time).
+    - For example: multiplication and sorting.
+- NP problems:
+    - Difficult to solve in a reasonable amount of time but easy to **verify** the solution.
+    - Problems involving decision making.
+    - Important class of problems, for example job scheduling, circuit design and vehicle routing.
+
+![|400](notes/images/Screenshot%202022-12-16%20at%2011.40.36.png)
+
+- NP-hard problems:
+    - Very, very difficult to solve problems, which cannot be done in a reasonable amount of time.
+    - They are very difficult to verify in polynomial time.
+- NP-complete problems:
+    - The hardest problems in NP set.
+    - Complexities greater than polynomial time.
+    - Verifiable in polynomial time.
+    - No polynomial-time algorithm is discovered for any NP-complete problem.
+    - Nobody was able to prove that no polynomial-time algorithm exist for any of the problems.
+
+If a polynomial time algorithm is found for **any** problem in NP-complete then **every** problem in NP can be solved in polynomial time.
+
+![|200](notes/images/Screenshot%202022-12-16%20at%2011.43.26.png)
+
+More info [here](notes/general/p-vs-np.md) (P vs NP problems).
+
+#### Examples
+---
+- The travelling salesperson problem.
+- Finding the shortest common superstring.
+- Checking whether two finite automate accept the same language.
+- Given three positive integers `a`, `b`, and `c`, do there exist positive integers (`x` and `y`) such that $ax^2 + by^2 = c$.
