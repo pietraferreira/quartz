@@ -1,5 +1,5 @@
 ---
-title:  "Dijkstra Algorithm"
+title: "Dijkstra Algorithm"
 tags:
   - cs-concept
   - engineer-training
@@ -14,9 +14,9 @@ It is used to determine the **shortest path** from one node in the graph to **ev
 Its complexity is $O_(n^2)$.
 
 The graph must have **non-negative weights** on **all** edges.
-
  
 ## How It Works
+---
 ![dijkstra_graph](notes/images/dijkstra_graph.png)
 - Given the graph above, to find the shortest path between A and F, three values need to be initialised:
 
@@ -25,6 +25,7 @@ The graph must have **non-negative weights** on **all** edges.
 3. Array of all the nodes that the algorithm has visited, which by the end will contain all the nodes of the graph (visited array).
 
 ### Example
+---
 Starting from the source (A), we visit its neighbour with the lowest weight (B).
 
 We then check:
@@ -62,5 +63,6 @@ We then iterate until we visit all the nodes. The completed table for that graph
 | F            | 0A  | 2A  | 3B  | 6B  | 4B  | 6E  |
 
 ## See also
+---
 - [Graphs](notes/general/graphs.md)
 - [Floyd-Warshall](notes/general/floyd-warshall.md)
