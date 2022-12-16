@@ -24,8 +24,8 @@ More info [here](notes/university/selection-sort.md) (Selection Sort).
 ---
 With an array of size `n`, count how many **primitive operations** are needed.
 
-- To find the smallest, visit `n` elements + 2 operations for the swap.
-- To find the next smallest, visit `(n-1)` elements + 2 operations for the swap.
+- To find the smallest, visit $n$ elements + 2 operations for the swap.
+- To find the next smallest, visit $(n-1)$ elements + 2 operations for the swap.
 - The  last term is 2 elements visited to find the smallest + 2 operations for the swap.
 
 The number of operations:
