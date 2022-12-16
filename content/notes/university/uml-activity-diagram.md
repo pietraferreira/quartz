@@ -8,7 +8,7 @@ last-edited:
 created: 2022-12-14
 ---
 ---
-## Introduction
+# Introduction
 ---
 The focus of the activity diagram is the **procedural processing aspects**.
 
@@ -19,7 +19,7 @@ It uses flow-oriented language concepts and it is based on:
 Concepts and notation variants cover a **broad area of applications**:
 - Modelling of object-oriented and non-object-oriented systems.
 
-## Activity
+# Activity
 ---
 It is the specification of user-defined behaviour at different levels of granularity.
 
@@ -40,7 +40,7 @@ Optional:
 
 ![|350](notes/images/Screenshot%202022-12-14%20at%2012.05.00.png)
 
-## Action
+# Action
 ---
 It has a **basic element** to specify user-defined behaviour.
 
@@ -54,7 +54,7 @@ Special notation for predefined types of actions, most importantly:
 - Event-based actions.
 - Call behaviour actions.
 
-## Edges
+# Edges
 ---
 It connects activities and actions to one another.
 
@@ -72,7 +72,7 @@ Guard (condition):
 
 ![|300](notes/images/Screenshot%202022-12-14%20at%2012.31.12.png)
 
-## Token
+# Token
 ---
 It is a **virtual coordination mechanism** that describes the execution exactly:
 - No physical component of the diagram.
@@ -88,7 +88,7 @@ Guards can prevent the passing of a token, as they are **stored in the previous 
 
 ![|160](notes/images/Screenshot%202022-12-14%20at%2012.34.15.png)
 
-## Beginning and Termination of Activities
+# Beginning and Termination of Activities
 ---
 ![|20](notes/images/Screenshot%202022-12-14%20at%2012.34.56.png) Initial node:
 - Starts the execution of an activity.
@@ -107,11 +107,11 @@ Guards can prevent the passing of a token, as they are **stored in the previous 
 - Ends one execution path of an activity.
 - All other tokens of the activity remain unaffected.
 
-## Alternative Paths 
+# Alternative Paths 
 ---
 ![|600](notes/images/Screenshot%202022-12-14%20at%2012.44.32.png)
 
-### Decision Node
+## Decision Node
 ---
 Used to defined alternative branches.
 
@@ -131,7 +131,7 @@ Decision behaviour:
 
 ![|150](notes/images/Screenshot%202022-12-14%20at%2012.42.06.png)
 
-### Merge Node
+## Merge Node
 ---
 Used to bring **alternative** subpaths together. It passes the token to the next node.
 
@@ -142,8 +142,8 @@ Combined decision and merge node:
 Decision and merge nodes can also be used to model loops:
 ![|500](notes/images/Screenshot%202022-12-14%20at%2012.44.00.png)
 
-## Concurrent Paths
-### Parallelisation Node
+# Concurrent Paths
+## Parallelisation Node
 ---
 Used to split path into concurrent subpaths.
 
@@ -151,7 +151,7 @@ Duplicates token for all outgoing edges, example:
 
 ![|500](notes/images/Screenshot%202022-12-14%20at%2012.46.00.png)
 
-### Synchronisation Node
+## Synchronisation Node
 ---
 Used to merge concurrent subpaths.
 
@@ -163,12 +163,12 @@ Token processing:
 Combined parallelisation and synchronisation node:
 ![|70](notes/images/Screenshot%202022-12-14%20at%2012.47.10.png)
 
-## Examples
-### Equivalent Control Flow
+# Examples
+## Equivalent Control Flow
 ---
 ![|600](notes/images/Screenshot%202022-12-14%20at%2012.48.30.png)
 
-### Create and Send Invitations to a Meeting
+## Create and Send Invitations to a Meeting
 ---
 While invitations are printed, already printed invitations are addressed.
 
@@ -176,15 +176,15 @@ When all invitation are addressed, then the invitations are sent.
 
 ![|600](notes/images/Screenshot%202022-12-14%20at%2012.48.48.png)
 
-### Conduct Lecture (Student Perspective)
+## Conduct Lecture (Student Perspective)
 ---
 ![|600](notes/images/Screenshot%202022-12-14%20at%2012.49.39.png)
 
-### Token (Control Flow)
+## Token (Control Flow)
 ---
 ![](notes/images/Screenshot%202022-12-14%20at%2012.50.09.png)
 
-## Object Node
+# Object Node
 ---
 It contains object tokens and represents the exchange of data/objects.
 
@@ -201,7 +201,7 @@ Notation variant: object node as parameter:
 - For actions (“pins”):
 ![|500](notes/images/Screenshot%202022-12-14%20at%2013.03.57.png)
 
-### Example
+## Example
 ---
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.05.07.png)
 
@@ -223,7 +223,7 @@ Permanent memory, saves object tokens permanently and passes copies to other nod
 
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.09.33.png)
 
-## Weight of Edges
+# Weight of Edges
 ---
 Minimal number of tokens that must be presented for an action to be executed.
 
@@ -233,7 +233,7 @@ All tokens present have to be consumed: 0 (also `all` or `*`).
 
 ![|500](notes/images/Screenshot%202022-12-14%20at%2013.10.26.png)
 
-## Connector
+# Connector
 ---
 Used if two consecutive actions are far apart in the diagram.
 
@@ -243,7 +243,7 @@ Without connector:
 With connector:
 ![|500](notes/images/Screenshot%202022-12-14%20at%2013.11.18.png)
 
-## Event-Based Actions
+# Event-Based Actions
 ---
 To send signals:
 - Send signal action:
@@ -256,11 +256,11 @@ To accept events:
 Accept time event action:
 ![|500](notes/images/Screenshot%202022-12-14%20at%2013.12.44.png)
 
-### Example
+## Example
 ---
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.13.01.png)
 
-## Call Behaviour Action
+# Call Behaviour Action
 ---
 The execution of an action can call an activity.
 
@@ -272,7 +272,7 @@ Advantages:
 
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.14.10.png)
 
-## Partition
+# Partition
 ---
 "Swimlane". Graphically or textual. 
 
@@ -297,14 +297,15 @@ Graphical notation vs Textual notation:
 
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.20.17.png)
 
-## Example: Issue Student ID on Paper
+### Example: Issue Student ID on Paper
 ---
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.20.50.png)
 
 - Control flow (green) and object flow (red) in one activity diagram:
 ![|600](notes/images/Screenshot%202022-12-14%20at%2013.21.03.png)
 
-## Exception Handling - Exception Handler
+# Exception Handling
+Exception Handler
 ---
 Predefined exceptions.
 
@@ -312,3 +313,43 @@ Defining how the system has to react in a specific error situation.
 
 The exception handler replaces the action where the error occurred.
 
+![|200](notes/images/Screenshot%202022-12-16%20at%2010.25.55.png)
+
+If the error **e** occurs:
+- All tokens in `Action A` are deleted.
+- The exception handler is activated.
+- The exception handler is executed instead of  `Action A`.
+- Execution then continues regularly.
+
+### Example
+---
+![|600](notes/images/Screenshot%202022-12-16%20at%2010.27.28.png)
+
+## Interruptible Activity Region
+---
+Defining a group of actions whose execution is to be terminated immediately if a specific event occurs. In that case, some other behaviour is executed.
+
+![|300](notes/images/Screenshot%202022-12-16%20at%2010.34.48.png)
+
+If **E** occurs while **B** or **C** are executed:
+- Exception handling is activated.
+- All control tokens within the dashed rectangle (= within **B** and **C**) are deleted.
+- **D** is activated and executed.
+
+No "jumping back" to the regular execution!
+
+### Example
+---
+![|500](notes/images/Screenshot%202022-12-16%20at%2010.36.33.png)
+
+# Notation Elements
+---
+![|600](notes/images/Screenshot%202022-12-16%20at%2010.37.00.png)
+
+![|600](notes/images/Screenshot%202022-12-16%20at%2010.37.10.png)
+
+![|600](notes/images/Screenshot%202022-12-16%20at%2010.37.22.png)
+
+![|600](notes/images/Screenshot%202022-12-16%20at%2010.37.30.png)
+
+![|600](notes/images/Screenshot%202022-12-16%20at%2010.37.39.png)
