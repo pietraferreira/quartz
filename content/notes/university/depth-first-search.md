@@ -13,14 +13,14 @@ last-edited:
 created: 2022-11-07
 ---
 # Depth-First Search
-It allows us to explore nodes and edges of a [|graph](notes/general/graphs.md).
+It allows us to explore nodes and edges of a [graph](notes/general/graphs.md).
 
 The traversal will go as far as possible down a path until a **dead end** is reached.
 
-In an [](notes/general/graphs.md#Undirected%7Cundirected) graph:
+In an [undirected](notes/general/graphs.md#Undirected%7Cundirected) graph:
 - A node is a dead end if all of the nodes adjacent to it have already been visited.
 
-In an [](notes/general/graphs.md#Directed%7Cdirected) graph:
+In an [directed](notes/general/graphs.md#Directed%7Cdirected) graph:
 - A node is a dead end if it has no outgoing edges and we visited everything else.
 
 ### Undirected Graph

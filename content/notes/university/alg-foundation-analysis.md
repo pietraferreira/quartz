@@ -10,13 +10,12 @@ term:
   - first
 created: 2022-08-28
 ---
-# Foundation of Algorithm Analysis
-
 - Running time.
 - Pseudo-code.
 - Counting primitive operations.
 
 ## Running Time
+---
 Varies with the input and typically grows with the input size.
 
 An algorithm may run faster on certain data set compared to others.
@@ -32,6 +31,7 @@ We have the following run times:
 We can use `System.currentTimeMillis()` for example to get a measure of running time in Java.
 
 ### Limitations
+---
 - We would need same software and hardware environments.
 - Sometimes difficult to implement algorithm.
 - One algorithm can perform better than the rest for some inputs.
@@ -39,18 +39,21 @@ We can use `System.currentTimeMillis()` for example to get a measure of running 
 The solution is **asymptotic analysis**.
 
 ### Asymptotic Analysis
+---
 It uses a high-level description of the algorithm instead of an implementation.
 
 We evaluate the performance of an algorithm in terms of input size and calculate how does the time taken by an algorithm increases with the input size.
 
-## T(n)
+# T(n)
+---
 We use it to measure the running time/computation of an algorithm.
 
 Where **n** is the size of the input, if there is more than one input we might have T(n,m) where **n** and **m** are the sizes of the inputs.
 
 We can use T(n) to calculate the **[Big O](notes/general/big-o-notation.md)**.
 
-## Pseudo-Code
+# Pseudo-Code
+---
 ![Screenshot 2022-09-03 at 22.19.59](notes/images/Screenshot%202022-09-03%20at%2022.19.59.png)
 
 We do not call functions unless we describe the pseudo-code for them or describe what they do.
@@ -67,19 +70,24 @@ However we could say:
 Let X equal the lower case version of Y
 ```
 
-### Variables
+## Variables
+---
 ![Screenshot 2022-09-03 at 22.22.12](notes/images/Screenshot%202022-09-03%20at%2022.22.12.png)
 
-### If Statements
+## If Statements
+---
 ![Screenshot 2022-09-03 at 22.22.27](notes/images/Screenshot%202022-09-03%20at%2022.22.27.png)
 
-### For Loops
+## For Loops
+---
 ![Screenshot 2022-09-03 at 22.22.39](notes/images/Screenshot%202022-09-03%20at%2022.22.39.png)
 
-### Full Example
+## Full Example
+---
 ![Screenshot 2022-09-03 at 22.22.56](notes/images/Screenshot%202022-09-03%20at%2022.22.56.png)
 
-## Primitive Operations
+# Primitive Operations
+---
 They are basic computations performed by an algorithm, for example:
 
 - Evaluating an expression (x>y)
