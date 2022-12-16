@@ -128,3 +128,77 @@ Given that we have $n$ items into two piles/sets we could use a binary represent
 
 We present a solution as an **n length binary string** (or array/vector/list...) where:
 - A zero (0) in position $i$ means that weight $i$ is on the left side of the scales.
+- A one (1) in position $i$ means that weight $i$ is on the right side of the scales.
+- This can represent all possible allocations.
+- We will refer to this string as $S$ and each bit as $s_i$.
+- If $s_i = 0$ then weight $i$ is on the left hand side pan/scale.
+- If $s_i = 1$ then weight $i$ is on the right hand side pan/scale.
+
+![|400](notes/images/Screenshot%202022-12-16%20at%2012.09.40.png)
+
+## Fitness
+---
+We now need to design an appropriate fitness function.
+
+This function should score how good a solution (a binary string) is at solving our problem.
+
+What's the aim of the problem?
+- Equal balancing (or as near as possible).
+
+Balanced would be when the sum of the weights on the left hand side (LHS) of the scales equals the sum of the right hand side (RHS).
+
+The worse this difference is the worse our solution is at solving the problem.
+
+What is the best fitness?
+- Zero (balanced).
+
+How about the worst fitness?
+- When all the weights are on either the left hand side or right hand side.
+
+Thus, this is a **minimisation** problem.
+
+- Let L = Sum of LHS weights.
+- Let  R = Sum of RHS weights.
+- Fitness = $|L - R|$
+
+The **fitness function** will take two parameters:
+- A **potential solution** - binary string of length $n$.
+- A **set of weights** - a real vector/array of length $n$.
+
+It will then return a real number.
+
+Each weight $w_i$ will either be added onto the left hand side L or the right hand side R.
+
+So we can iterate through each weight adding it to L or R depending on what side of the scales the representation specifies the weight is on.
+
+![|500](notes/images/Screenshot%202022-12-16%20at%2012.14.34.png)
+
+### Example
+---
+So imagine we have five weights:
+- $W = {1, 2, 3, 4, 10}$.
+- $w_1 = 1, w_2 = 2, w_3 = 3, w_4 = 4, w_5 = 10$.
+
+Some example fitness (F):
+- $S = 11111$
+    - $L = 0, R = 1 + 2 + 3 + 4 + 10 = 20, F = |0 - 20| = 20$
+- $S = 10101$
+    - $L = 2 + 4, R = 1 + 3 + 10, F = |6 - 14| = 8$
+
+- $S = 01010$
+    - $L = 1 + 3 + 10 = 14, R = 2 +  4 = 6, F = |14 - 6| = 8$
+- $S = 11110$
+    - $L = 10, R = 1 + 2 + 3 + 4 = 10, F = |10 - 10| = 0$
+
+## What's next?
+---
+We have a representation.
+
+We have a fitness function.
+
+We now want to search through a number of possible $S$ until we find the best one.
+- For example, when $F(S, W) = 0$.
+- Or as close to zero as possible.
+
+We therefore need to apply an appropriate heuristic search method:
+- Random Mutation Hill Climbing, Stochastic Hill Climbing, Random Restart Hill Climbing, Simulated Annealing, Genetic Algorithms, Particle Swarm Optimisation, Tabu-Search, Iterated Local Search, Evolutionary Programming, etc...
