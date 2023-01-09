@@ -60,6 +60,8 @@ Example:
 ## Modeling Processes
 We do not model processes or workflows in use case diagrams.
 
+The functionality that one of these use cases offers is not part of the functionality that another use case offers, hence the use cases must be used independently of one another.
+
 ![Screenshot 2022-10-03 at 17.01.05](notes/images/Screenshot%202022-10-03%20at%2017.01.05.png)
 
 ## Setting system boundaries incorrectly
