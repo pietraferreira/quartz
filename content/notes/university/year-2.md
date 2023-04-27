@@ -22,3 +22,6 @@ A list of all the different modules I am taking during my second year.
 ## [CS2004](notes/university/cs2004.md) - Algorithms
 ---
 ## [CS2005](notes/university/cs2005.md) - Networks and Operating Systems
+
+---
+[Exam Revision Plan](notes/university/examplan.md)
