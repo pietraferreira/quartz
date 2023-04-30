@@ -83,3 +83,32 @@ Here is a brief overview of each stage of the Double Diamond method:
 Overall, the Double Diamond method is a useful design process for computer science students and teams looking to create innovative and effective solutions to complex problems. By emphasising a user-centered approach and a structured process, the Double Diamond method can help ensure that the team creates solutions that meet the needs of users and achieve the project's objectives.
 
 # Third section:
+
+3. Familiarise yourself with Heuristic Evaluation and Cognitive Walkthrough. You should be able to describe each of these expert evaluation methods, compare and contrast them and know how to use them effectively. Know the pros and cons of each.
+
+## Heuristic Evaluation
+---
+Heuristic Evaluation is a usability inspection method in which one or more evaluators inspect a user interface using a set of predefined usability criteria or "heuristics." The goal is to identify and prioritise usability issues in the interface. The evaluators are usually experts in usability or human-computer interaction and follow a systematic process to evaluate the interface against a set of heuristics or guidelines. Heuristic Evaluation can be done on any digital product, including websites, software applications, and mobile apps.
+
+**Pros**:
+- It is relatively quick and inexpensive compared to other evaluation methods.
+- It can be done early in the design process to identify potential issues before development begins.
+- It provides a structured approach to evaluating interface design, which can help ensure that important usability issues are not overlooked.
+
+**Cons**:
+- It relies on the expertise and experience of the evaluators, which can lead to subjectivity and variability in the evaluation process.
+- It may not uncover all usability issues, especially those related to user goals or context.
+
+## Cognitive Walkthrough
+---
+Cognitive Walkthrough is a usability evaluation method in which evaluators simulate user interactions with a system by walking through a set of task scenarios. The goal is to identify and assess usability issues based on how easy it is for a user to complete the tasks. The evaluators examine each task scenario from the perspective of a user and evaluate the interface based on the user's goals, knowledge, and experience.
+
+**Pros**:
+- It focuses on user goals and how easy it is to complete tasks, which can provide valuable insights into the user experience.
+- It can be used to identify usability issues related to user knowledge and experience, which may not be identified through other evaluation methods.
+- It can be used to evaluate different design alternatives and compare their usability.
+
+**Cons**:
+- It can be time-consuming, especially if a large number of task scenarios are evaluated.
+- It relies on the evaluators' ability to simulate the user's thought process accurately, which can be challenging.
+- It may not identify all usability issues, especially those related to user behaviour or context.
