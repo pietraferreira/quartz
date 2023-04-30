@@ -39,6 +39,8 @@ You might use color coding or icons to indicate interactive elements, provide to
 
 ## Star Lifecycle Model [\[More\]](notes/university/user-centred-design.md#Star%20Lifecycle%20(1989))
 ---
+The Star Lifecycle method was developed by Hewlett-Packard (HP) in the late 1980s.
+
 The star lifecycle model is a methodology used in software development that involves a five-stage process for creating and maintaining software systems. The five stages are:
 
 1.  **Requirements**: This is the initial stage where the requirements of the software system are gathered and analysed. The goal of this stage is to identify what the software system needs to do and how it should behave.
@@ -61,6 +63,8 @@ Overall, the star lifecycle model is a useful methodology for software developme
 
 ## Double Diamond Model [\[More\]](notes/university/user-centred-design.md#Double%20Diamond%20(The%20British%20Design%202005))
 ---
+The Double Diamond method was developed by the UK Design Council in the mid-2000s as a way to provide a framework for the design process.
+
 The Double Diamond method is a design process that consists of four stages: Discover, Define, Develop, and Deliver. It is a human-centered design approach that emphasises understanding the needs and desires of users and stakeholders, and using that understanding to create innovative and effective solutions to complex problems.
 
 Here is a brief overview of each stage of the Double Diamond method:
