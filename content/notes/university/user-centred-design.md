@@ -114,6 +114,7 @@ Iterative model including three phases:
 ![Screenshot 2022-10-28 at 11.57.12](notes/images/Screenshot%202022-10-28%20at%2011.57.12.png)
 
 ## Star Lifecycle (1989)
+
 It was developed by HCI professional and emphasises that ordering of activities is inappropriate.
 
 It is evaluation centred and encourages iteration. It is also applicable to both small and large projects.
