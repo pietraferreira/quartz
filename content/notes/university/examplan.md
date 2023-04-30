@@ -12,10 +12,7 @@ created: 2023-04-27
 ![](notes/images/Screenshot%202023-04-27%20at%2009.06.27.png)
 
 ---
-# Usability Engineering (04/05)
-
-![](notes/images/Pasted%20image%2020230427090700.png)
-
+- [CS2003 Usability Engineering (04/05)](notes/university/cs2003-exam.md)
 ---
 # Software Development and Management (10/05)
 
@@ -26,7 +23,7 @@ Best way to revise:
 - Moodle.
 - Use the book:
     - Chapter 3 to 7.
-- Watch professor Stephen lectures as they are not in the book!
+- Watch professor Stephen lectures as they are not in the book, 5 questions are related to this. Software Process lecture 10.
 
 50 multiple choice questions, with only one correct answer.
 
