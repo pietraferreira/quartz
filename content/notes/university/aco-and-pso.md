@@ -69,3 +69,7 @@ When located at node $i$ an ant $k$ uses the **pheromone** trail to compute the 
 The probability is zero for nodes that are unreachable from node $i$.
 
 It is similar to the **Roulette Wheel Selection** in a [Genetic Algorithm](notes/university/intro-gen-algorithms.md).
+
+## Summary
+---
+The search process in ant colony optimisation involves assigning a constant amount of pheromone to all arcs at the beginning. When an ant reaches a node, it uses the pheromone trail to calculate the probability of choosing the next node. This probability is zero for nodes that cannot be reached from the current node, and is similar to Roulette Wheel Selection in Genetic Algorithms.
