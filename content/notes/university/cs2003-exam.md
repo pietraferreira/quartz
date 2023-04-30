@@ -86,6 +86,7 @@ Here is a brief overview of each stage of the Double Diamond method:
 
 Overall, the Double Diamond method is a useful design process for computer science students and teams looking to create innovative and effective solutions to complex problems. By emphasising a user-centered approach and a structured process, the Double Diamond method can help ensure that the team creates solutions that meet the needs of users and achieve the project's objectives.
 
+---
 # Third section:
 
 3. Familiarise yourself with Heuristic Evaluation and Cognitive Walkthrough. You should be able to describe each of these expert evaluation methods, compare and contrast them and know how to use them effectively. Know the pros and cons of each.
