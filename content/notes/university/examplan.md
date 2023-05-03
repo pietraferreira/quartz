@@ -32,6 +32,31 @@ Best way to revise:
 
 - 4 questions.
 - An answer should be around 500 to 800 words.
+
+## Study Plan (by ChatGPT)
+---
+### Day 1: Computer Networks
+- [ ] Chapter 1: sections 1.1.1, 1.1.2, 1.1.3, 1.5
+- Chapter 2: sections 2.1, 2.2, 2.3, 2.7
+
+### Day 2: Computer Networks
+- Chapter 3: sections 3.1, 3.2, 3.3, 3.5, 3.7
+- Chapter 4: sections 4.1.1, 4.2.1, 4.3, 4.3.1, 4.3.2, 4.3.3, 4.3.5
+
+### Day 3: Computer Networks
+- Chapter 5: section 5.2
+
+### Day 4: Operating Systems Concepts
+- Chapter 2: sections 2.1, 2.2, 2.3, 2.4, 2.5
+- Chapter 3: sections 3.1, 3.2
+
+### Day 5: Operating Systems Concepts
+- Chapter 3: sections 3.6.2, 3.6.3
+- Chapter 4: section 4.1
+
+### Day 6: Operating Systems Concepts
+- Chapter 5: sections 5.1, 5.2, 5.3, 5.5, 5.6, 5.7, 5.8
+
 ## Question 1
 ---
 - Questions 1 is a short answer about anything.
