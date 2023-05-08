@@ -13,7 +13,7 @@ created: 2023-05-03
 
 ## Study Plan (by ChatGPT)
 ---
-- Computer Networks (PDF)
+- [Computer Networks (PDF)](notes/university/annotation-computer-networks.md)
 
 ### Day 1:
 - [ ] Spend 2 hours studying Chapter 2 of Computer Networks, including sections 2.1, 2.2, 2.3, and 2.7.
