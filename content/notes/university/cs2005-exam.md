@@ -17,6 +17,8 @@ created: 2023-05-03
 <li><label><input type="checkbox" checked="" disabled="" class="task-list-item"> task1</label></li>
 <li><label><input type="checkbox" disabled="" class="task-list-item"> task2</label></li>
 </ul>
+- [X] task1
+- [ ] task2
 
 ### Day 1:
 - Spend 2 hours studying Chapter 1 of Computer Networks, including sections 1.1, 1.5.
