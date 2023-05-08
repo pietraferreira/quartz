@@ -16,6 +16,7 @@ created: 2023-05-03
 - [Computer Networks (PDF)](notes/university/annotation-computer-networks.md)
 
 ### Day 1:
+- [ ] Spend 2 hours studying Chapter 1 of Computer Networks, including sections 1.1 to 1.5.
 - [ ] Spend 2 hours studying Chapter 2 of Computer Networks, including sections 2.1, 2.2, 2.3, and 2.7.
 - [ ] Spend 1 hour studying Chapter 2 of Operating Systems Concepts, including sections 2.1, 2.2, 2.3, 2.4, and 2.5.
 

@@ -31,3 +31,17 @@ annotation-target: computer-networks.pdf
 >%%TAGS%%
 >
 ^5siqr9a9n0x
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-08T10:20:47.519Z","updated":"2023-05-08T10:20:47.519Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":53601,"end":53986},{"type":"TextQuoteSelector","exact":"End systems attached to the Internet provide a socket interface that specifies how a program runningon one end system asks the Internet infrastructure to deliver data to a specific destination programrunning on another end system. This Internet socket interface is a set of rules that the sending programmust follow so that the Internet can deliver the data to the destination program.","prefix":"m running on another end system?","suffix":" We’ll discuss theInternet socke"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==End systems attached to the Internet provide a socket interface that specifies how a program runningon one end system asks the Internet infrastructure to deliver data to a specific destination programrunning on another end system. This Internet socket interface is a set of rules that the sending programmust follow so that the Internet can deliver the data to the destination program.== *
+>%%LINK%%[[#^zs4cu909d3p|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^zs4cu909d3p
