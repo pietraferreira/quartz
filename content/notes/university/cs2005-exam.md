@@ -13,6 +13,8 @@ created: 2023-05-03
 
 ## Study Plan (by ChatGPT)
 ---
+- Computer Networks (PDF)
+
 ### Day 1:
 - [ ] Spend 2 hours studying Chapter 2 of Computer Networks, including sections 2.1, 2.2, 2.3, and 2.7.
 - [ ] Spend 1 hour studying Chapter 2 of Operating Systems Concepts, including sections 2.1, 2.2, 2.3, 2.4, and 2.5.
