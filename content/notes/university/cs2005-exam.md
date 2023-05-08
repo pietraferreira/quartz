@@ -13,6 +13,11 @@ created: 2023-05-03
 
 ## Study Plan (by ChatGPT)
 ---
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" disabled="" class="task-list-item"> task1</label></li>
+<li><label><input type="checkbox" disabled="" class="task-list-item"> task2</label></li>
+</ul>
+
 ### Day 1:
 - Spend 2 hours studying Chapter 1 of Computer Networks, including sections 1.1, 1.5.
 - Spend 2 hours studying Chapter 2 of Computer Networks, including sections 2.1, 2.2, 2.3, and 2.7.
