@@ -47,7 +47,7 @@ created: 2023-05-03
 
 6.  Memory that can be dynamically allocated to a process during runtime is called heap memory or dynamic memory. Heap memory is used for storing data structures and objects that are created and destroyed dynamically at runtime using functions like malloc() and free().
 
-7.  No, a thread does not share its code section with other threads belonging to the same process. Threads within a process share the same code section, also known as the text section or code segment, of the process. Each thread has its own stack and data section, but they all execute the same code.
+7.  Yes, a thread does share its code section with other threads belonging to the same process. Threads within a process share the same code section, also known as the text section or code segment, of the process. Each thread has its own stack and data section, but they all execute the same code.
 
 8.  A process can change shared variables in the section of its code where the shared variables are accessed or modified. Typically, this is done within a critical section or a mutually exclusive region where proper synchronization mechanisms, such as locks or semaphores, are used to ensure that only one thread or process can access the shared variables at a time, preventing data inconsistencies or race conditions.
 
