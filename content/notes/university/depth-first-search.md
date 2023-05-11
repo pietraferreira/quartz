@@ -1,9 +1,8 @@
 ---
 title:  "Depth-First Search"
 tags:
-  - graphs
-  - graph-search
-  - university
+  - university/cs2004
+  - engineer-training 
 programming-languagues:
 module:
   - cs2004
@@ -65,3 +64,33 @@ If we assume that the work done as we visit each node is the most complex part o
 
 ## Visualisation
 Depth-First Search: [https://www.cs.usfca.edu/~galles/visualization/DFS.html](https://www.cs.usfca.edu/~galles/visualization/DFS.html)
+> [!failure]- Failure 
+>   Error: There is another generation process
+>   
+>   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
+>     plugin:obsidian-textgenerator-plugin:56949:31
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>   - plugin:obsidian-textgenerator-plugin:62 __async
+>     plugin:obsidian-textgenerator-plugin:62:10
+>   
+>   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
+>     plugin:obsidian-textgenerator-plugin:56935:12
+>   
+>   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
+>     plugin:obsidian-textgenerator-plugin:58440:52
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>  

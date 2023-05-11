@@ -1,15 +1,11 @@
 ---
 title: "Classes, Types and Objects"
 tags:
+  - university/cs2004
 programming-languagues:
   - java
-module:
-  - algorithms
-term:
-  - summer
 created: 2022-08-14
 ---
-# Classes, Types and Objects
 Notes from "Data Structures and Algorithms in Java by Michael T. Goodrich".
 
 ```toc

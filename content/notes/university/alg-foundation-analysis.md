@@ -1,11 +1,8 @@
 ---
 title: "Foundation of Algorithm Analysis" 
 tags:
-  - university
-  - algorithms
+  - university/cs2004
 programming-languagues:
-module:
- - algorithms
 term:
   - first
 created: 2022-08-28

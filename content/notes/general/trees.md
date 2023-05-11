@@ -1,8 +1,8 @@
 ---
 title: "Trees"
 tags:
-  - cs-concept
   - engineer-training
+  - university/cs2004 
 programming-languagues:
 created: 2022-06-06
 ---

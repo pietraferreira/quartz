@@ -1,8 +1,7 @@
 ---
 title: "Exam Revision Plan"
 tags:
-  - university
-  - exam
+  - university/exam2023
 last-edited:
 created: 2023-04-27
 ---

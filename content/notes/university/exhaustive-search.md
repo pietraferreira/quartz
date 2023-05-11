@@ -1,8 +1,8 @@
 ---
 title: "Exhaustive Search"
 tags:
-  - graph-search
-  - graphs
+  - university/cs2004
+  - engineer-training 
 programming-languagues:
 module:
   - cs2004
@@ -11,7 +11,6 @@ term:
 last-edited:
 created: 2022-11-07
 ---
-# Exhaustive Search
 It systematically evaluates every possible path in a [graph](notes/general/graphs.md). It is guaranteed to find what we are looking for, however it is **unsuitable** for most real world problems.
 
 ## Pseudo-Code

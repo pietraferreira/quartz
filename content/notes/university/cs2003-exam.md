@@ -1,9 +1,8 @@
 ---
 title: "CS2003 - Exam Revision"
 tags:
-  - university
-  - exam
-  - cs2004
+  - university/cs2003
+  - university/exam2023
 last-edited:
 created: 2023-04-30
 ---
@@ -117,3 +116,33 @@ Cognitive Walkthrough is a usability evaluation method in which evaluators simul
 - It can be time-consuming, especially if a large number of task scenarios are evaluated.
 - It relies on the evaluators' ability to simulate the user's thought process accurately, which can be challenging.
 - It may not identify all usability issues, especially those related to user behaviour or context.
+> [!failure]- Failure 
+>   Error: There is another generation process
+>   
+>   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
+>     plugin:obsidian-textgenerator-plugin:56949:31
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>   - plugin:obsidian-textgenerator-plugin:62 __async
+>     plugin:obsidian-textgenerator-plugin:62:10
+>   
+>   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
+>     plugin:obsidian-textgenerator-plugin:56935:12
+>   
+>   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
+>     plugin:obsidian-textgenerator-plugin:58440:52
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>  

@@ -1,12 +1,9 @@
 ---
 title: "Time Complexity"
 tags:
-  - university
-  - cs2004
-  - algorithms
+  - university/cs2004
 last-edited:
 created: 2022-12-16
----
 ---
 # Sorting
 ---

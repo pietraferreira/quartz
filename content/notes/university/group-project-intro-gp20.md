@@ -1,22 +1,19 @@
 ---
 title: "Introduction"
 tags:
-  - study-guide
+  - university/cs2001
 programming-languagues:
-module:
-  - cs2001
 term:
   - first-term
 created: 2022-09-19
 ---
-# Introduction to the Module
 The theme of the project will be based on the [UN Sustainable Development Goals](https://www.un.org/sustainabledevelopment/).
 
 ![Screenshot 2022-09-19 at 14.25.54](notes/images/Screenshot%202022-09-19%20at%2014.25.54.png)
 
 It will be a **full-stack web application with a server backend, pulling and pushing data from and to a data source. It will expose a [REST API](notes/university/rest-api.md) to a front-end client.**
 
-We will use **[Scrum](notes/university/scrum.md)**, and have two leads emulating Product Owner and Scrum Master.
+We will use Scrum, and have two leads emulating Product Owner and Scrum Master.
 
 ## Learning Outcomes
 1. Plan, manage and track a substantial group activity.

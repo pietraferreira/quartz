@@ -1,8 +1,8 @@
 ---
 title: "Sets and Maps"
 tags:
-  - cs-concept
   - engineer-training
+  - university/cs2004 
 programming_languages:
   - c
   - cpp
@@ -67,3 +67,33 @@ C++ has great built-in support for these, C does not.
 ---
 ### Resources
 [C++ Maps Explained](https://www.udacity.com/blog/2020/03/c-maps-explained.html)
+> [!failure]- Failure 
+>   Error: There is another generation process
+>   
+>   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
+>     plugin:obsidian-textgenerator-plugin:56949:31
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>   - plugin:obsidian-textgenerator-plugin:62 __async
+>     plugin:obsidian-textgenerator-plugin:62:10
+>   
+>   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
+>     plugin:obsidian-textgenerator-plugin:56935:12
+>   
+>   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
+>     plugin:obsidian-textgenerator-plugin:58440:52
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>  

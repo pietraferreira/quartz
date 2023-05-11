@@ -1,9 +1,8 @@
 ---
 title:  "Big O Notation"
 tags:
-  - cs-concept
   - engineer-training
-  - cs2004
+  - university/cs2004
 programming-languagues:
 last-modified: 2022-10-24
 created: 2022-06-05

@@ -1,10 +1,8 @@
 ---
 title: "Graphs"
 tags:
-  - cs-concept
   - engineer-training
-  - cs2004
-  - graphs
+  - university/cs2004
 programming-languagues:
 created: 2022-06-06
 last-updated: 2022-11-07

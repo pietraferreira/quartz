@@ -1,11 +1,9 @@
 ---
 title: "Search and Fitness"
 tags:
-  - university
-  - cs2004
+  - university/cs2004
 last-edited:
 created: 2022-12-16
----
 ---
 # Definition of a Search Problem
 ---

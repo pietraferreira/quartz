@@ -1,9 +1,8 @@
 ---
 title: "CS2005 - Exam"
 tags:
-  - university
-  - exam
-  - cs2005
+  - university/exam2023 
+  - university/cs2005 
 last-edited:
 created: 2023-05-03
 ---
@@ -16,7 +15,7 @@ created: 2023-05-03
 - [Computer Networks (PDF)](notes/university/annotation-computer-networks.md)
 
 ### Day 1:
-- [ ] Spend 2 hours studying Chapter 1 of Computer Networks, including sections 1.1 to 1.5.
+- [x] Spend 2 hours studying Chapter 1 of Computer Networks, including sections 1.1 to 1.5. ✅ 2023-05-08
 - [ ] Spend 2 hours studying Chapter 2 of Computer Networks, including sections 2.1, 2.2, 2.3, and 2.7.
 - [ ] Spend 1 hour studying Chapter 2 of Operating Systems Concepts, including sections 2.1, 2.2, 2.3, 2.4, and 2.5.
 
@@ -208,3 +207,33 @@ created: 2023-05-03
     - 15.4.1 Encryption  
 - Chapter 17 Distributed Systems  
     - 17.1 Advantages of Distributed Systems
+> [!failure]- Failure 
+>   Error: There is another generation process
+>   
+>   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
+>     plugin:obsidian-textgenerator-plugin:56949:31
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>   - plugin:obsidian-textgenerator-plugin:62 __async
+>     plugin:obsidian-textgenerator-plugin:62:10
+>   
+>   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
+>     plugin:obsidian-textgenerator-plugin:56935:12
+>   
+>   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
+>     plugin:obsidian-textgenerator-plugin:58440:52
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>  
