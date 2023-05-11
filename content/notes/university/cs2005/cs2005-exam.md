@@ -85,7 +85,7 @@ created: 2023-05-03
 - IPv4 addressing  
 - Fragmentation / reassembly
 
-### Answer:
+### Answers:
 **Discuss how two processes communicate over a network. Include in your answer the role of Sockets, Ports, IP Addresses and what is required from Transport Services available to Applications.**
 
 Two processes communicate over a network by utilising various network protocols and components. One of the key components involved in the communication process is sockets. Sockets act as endpoints for communication, allowing processes to send and receive data over the network. Each socket is identified by a unique combination of IP address and port number. The IP address identifies the host or device on the network, while the port number identifies the specific process or application running on that host.
