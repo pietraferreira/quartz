@@ -1,17 +1,13 @@
 ---
 title: "Breadth-First Search"
 tags:
-  - graphs
-  - graph-search
+  - university/cs2004
 programming-languagues:
-module:
-  - cs2004
 term:
   - first
 last-edited:
 created: 2022-11-07
 ---
-# Breadth-First Search
 It explores the graph differently from [depth-first search](notes/university/depth-first-search.md).
 
 It considers the **neighbouring** nodes first:

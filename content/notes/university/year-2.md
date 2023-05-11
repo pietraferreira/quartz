@@ -24,4 +24,4 @@ A list of all the different modules I am taking during my second year.
 ## [CS2005](notes/university/cs2005.md) - Networks and Operating Systems
 
 ---
-[Exam Revision Plan](notes/university/examplan.md)
+## [Exam Revision Plan](notes/university/examplan.md)

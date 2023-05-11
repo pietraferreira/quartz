@@ -2,9 +2,9 @@
 title: "State Machine Diagrams - Part 1"
 tags:
   - uml
-  - cs2002
+  - university/cs2002
 programming-languagues:
-last-edited: 2022-11-24
+last-edited: 2023-05-11
 created: 2022-11-07
 ---
 ![Screenshot 2022-11-07 at 12.53.15](notes/images/Screenshot%202022-11-07%20at%2012.53.15.png)
@@ -188,3 +188,6 @@ It is a pseudo-state and is used to model alternative transitions.
 ![Screenshot 2022-11-07 at 13.40.00](notes/images/Screenshot%202022-11-07%20at%2013.40.00.png)
 
 ![Screenshot 2022-11-24 at 11.06.15](notes/images/Screenshot%202022-11-24%20at%2011.06.15.png)
+
+---
+### Part 2 [here](notes/university/state-machine-diagrams-part2.md).

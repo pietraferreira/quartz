@@ -1,10 +1,7 @@
 ---
 title:  "Sorting"
 tags:
-  - cs-concept
-  - engineer-training
-  - sorting
-  - cs2004
+  - university/cs2004
 programming-languagues:
 last-modified: 2022-10-24
 created: 2022-06-05

@@ -1,16 +1,12 @@
 ---
 title: "Specifying User Requirements"
 tags:
-  - user-requirements
+  - university/cs2003
 programming-languagues:
-module:
-  - cs2003
 term:
   - first
 last-edited:
 created: 2022-11-18
----
-# Specifying User Requirements
 ---
 Selecting an appropriate UCD (User Centred Design) method is **vital**.
 

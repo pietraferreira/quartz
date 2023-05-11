@@ -1,8 +1,7 @@
 ---
 title: "UE Methods and Techniques - Prototyping, Mockups and Wireframes"
 tags:
-  - university
-  - cs2003
+  - university/cs2003
 last-edited:
 created: 2023-02-24
 ---

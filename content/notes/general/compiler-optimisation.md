@@ -3,6 +3,7 @@ title:  "Compiler Optimsation"
 tags:
   - cs-concept
   - compilers
+  - work
 programming-languagues:
 created: 2022-06-05
 ---
@@ -20,7 +21,7 @@ An application needs to perform tasks within a reasonable amount of time to be p
 It should be noted that not all parts of a program need to be performant to be practically usable. Only certain parts often called a ‘bottleneck’ need to be as performant as possible.
 
 ## Flags
-- [](notes/general/compiler-flags.md#Optimising%20for%20Performance%7COptimisation%20flags)
+- [Here](notes/general/compiler-flags.md#Optimising%20for%20Performance%7COptimisation%20flags)
 
 ## Optimising Programs for Code Size
 The code size of embedded applications has been a concern for a very long time. While storage becomes cheaper and smaller, developers find creative ways to increase code size by adding features or unnecessary software engineering. 

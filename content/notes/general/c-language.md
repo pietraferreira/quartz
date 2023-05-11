@@ -1,11 +1,11 @@
 ---
 title:  "C"
 tags:
+  - work
 programming-languagues:
   - c
 created: 2022-08-15
 ---
-# C
 ## Declaration vs Definition
 A **definition** associates a name with an implementation of that name, either data or code:
 

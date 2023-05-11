@@ -1,13 +1,10 @@
 ---
 title: "Dijkstra Algorithm"
 tags:
-  - cs-concept
   - engineer-training
-  - algorithm
+  - university/cs2004 
 programming-languagues:
 created: 2022-06-06
----
-# Dijkstra Algorithm
 ---
 It is used to determine the **shortest path** from one node in the graph to **every other** node within the same graph, provided they can be reached from the source node.
 
@@ -66,3 +63,34 @@ We then iterate until we visit all the nodes. The completed table for that graph
 ---
 - [Graphs](notes/general/graphs.md)
 - [Floyd-Warshall](notes/general/floyd-warshall.md)
+
+> [!failure]- Failure 
+>   Error: There is another generation process
+>   
+>   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
+>     plugin:obsidian-textgenerator-plugin:56949:31
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>   - plugin:obsidian-textgenerator-plugin:62 __async
+>     plugin:obsidian-textgenerator-plugin:62:10
+>   
+>   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
+>     plugin:obsidian-textgenerator-plugin:56935:12
+>   
+>   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
+>     plugin:obsidian-textgenerator-plugin:58440:52
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>  

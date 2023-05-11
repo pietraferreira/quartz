@@ -1,8 +1,7 @@
 ---
 title: "CS2004 - Data Structures"
 tags:
-  - data-structures
-  - cs-concept
+  - university/cs2004
 programming-languagues:
 module:
   - cs2004

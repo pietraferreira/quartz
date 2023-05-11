@@ -1,19 +1,11 @@
 ---
 title: "Minimum Spanning Tree"
 tags:
-  - cs-concept
   - engineer-training
-  - graphs
-  - graph-search
-term:
-  - first
-module:
-  - cs2004
+  - university/cs2004
 programming-languagues:
 created: 2022-06-06
 last-modified: 2022-11-07
----
-# Minimum Spanning Tree
 ---
 It is a subtree with the minimum possible edge weight that connects all nodes together.
 

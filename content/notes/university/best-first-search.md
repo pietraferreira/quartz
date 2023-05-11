@@ -1,17 +1,13 @@
 ---
 title: "Best-First Search"
 tags:
-  - graphs
-  - graph-search
+  - university/cs2004
 programming-languagues:
-module:
-  - cs2004
 term:
   - first
 last-edited:
 created: 2022-11-07
 ---
-# Best-First Search
 It is an improvement upon [depth-first search](notes/university/depth-first-search.md).
 
 A heuristic is used to decide which node is explored next:

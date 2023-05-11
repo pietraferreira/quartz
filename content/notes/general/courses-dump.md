@@ -1,10 +1,9 @@
 ---
 title:  "Courses Dump"
 tags:
+  - work
 programming-languagues:
 created: 2022-06-22
----
-# Courses Dump
 ---
 Here you can find all of the cool courses and guides I find online.
 

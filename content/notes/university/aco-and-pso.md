@@ -2,7 +2,6 @@
 title:  "Ant Colony Optimisation and Particle Swarm Optimisation"
 tags:
   - university/cs2004
-  - cs2004
 last-edited:
 created: 2023-02-03
 ---
