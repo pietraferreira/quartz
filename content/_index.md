@@ -12,9 +12,6 @@ Main hub for all the different note categories :)
 ## All of my knowledge 
 - [Hub](notes/general/knowledge-hub.md)
 
-## Work
-- [Hub](notes/private/work/work-hub.md)
-
 ## University
 - [Hub](notes/university/university-hub.md)
 
