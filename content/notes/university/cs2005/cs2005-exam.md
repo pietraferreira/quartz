@@ -85,6 +85,29 @@ created: 2023-05-03
 - IPv4 addressing  
 - Fragmentation / reassembly
 
+### Answer:
+**Discuss how two processes communicate over a network. Include in your answer the role of Sockets, Ports, IP Addresses and what is required from Transport Services available to Applications.**
+
+Two processes communicate over a network by utilising various network protocols and components. One of the key components involved in the communication process is sockets. Sockets act as endpoints for communication, allowing processes to send and receive data over the network. Each socket is identified by a unique combination of IP address and port number. The IP address identifies the host or device on the network, while the port number identifies the specific process or application running on that host.
+
+For example, consider two processes, Process A and Process B, running on different hosts. Process A wants to send data to Process B over the network. Firstly, Process B creates a socket and binds it to a specific port number on its host. This allows Process B to listen for incoming connections. Process A then creates a socket and specifies the IP address of Process B's host and the corresponding port number to establish a connection.
+
+IP addresses play a crucial role in the communication process as they uniquely identify each host on the network. They are used to route the data packets from the source host to the destination host.
+
+Transport services, such as those provided by the Transport Layer protocols (e.g., TCP and UDP), are required to facilitate reliable and efficient communication between the two processes. The Transport Layer segments the data received from the application layer into smaller units called segments. These segments are then encapsulated with header information, including source and destination port numbers, sequence numbers, and other control information.
+
+**Define Multiplexing and Demultiplexing in the Transport Layer. Discuss how Transport Layer segments are sent and received in connectionless and connection-oriented protocols.**
+
+Multiplexing and demultiplexing are essential functions of the Transport Layer.
+
+- Multiplexing refers to the process of combining multiple data streams into a single stream for transmission over a network. It allows multiple processes or applications running on the same host to share the network resources. Multiplexing is achieved by assigning different source port numbers to each data stream.
+
+- Demultiplexing is the process of separating the received data stream back into individual streams and delivering them to the respective processes or applications. It is done by examining the destination port number in the received Transport Layer segment and forwarding the data to the appropriate socket.
+
+In connectionless protocols, such as UDP (User Datagram Protocol), Transport Layer segments are sent independently without establishing a dedicated connection between the sender and receiver. Each segment is routed individually, and the receiving process can handle them in any order. However, UDP does not provide reliable delivery or congestion control.
+
+In connection-oriented protocols, such as TCP (Transmission Control Protocol), a reliable and ordered connection is established between the sender and receiver before data transmission. Transport Layer segments are sent over this established connection, ensuring reliable delivery, flow control, and congestion control. The segments are received, reassembled in the correct order, and delivered to the receiving process.
+
 ## Question 3
 ---
 - Short essay.
