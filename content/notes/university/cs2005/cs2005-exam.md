@@ -32,6 +32,27 @@ created: 2023-05-03
 
 ![](notes/images/Screenshot%202023-04-27%20at%2009.18.01.png)
 
+### Answers:  
+1.  The two layers of the OSI model that are not included in the TCP/IP stack are:
+    - Presentation Layer (Layer 6): This layer is responsible for data representation and translation, such as encryption and decryption. The TCP/IP stack does not have a separate layer for these functions.
+    - Session Layer (Layer 5): This layer establishes, manages, and terminates connections between applications. In the TCP/IP stack, these functions are typically handled by the Transport Layer (Layer 4).
+    
+2.  The Internet Standards are described in formal documents called Request for Comments (RFCs). RFCs are documents that define protocols, procedures, and standards for the Internet.
+
+3.  The interface between a process and the network is typically provided by the Socket API (Application Programming Interface). The Socket API allows processes to create network sockets, which are endpoints for sending and receiving data over the network. Through the socket interface, processes can establish network connections, send and receive data, and manage network communication.
+
+4.  Complete the phrase: "The Transport layer provides logical communication between processes or applications on different hosts."
+
+5.  A "link state" routing algorithm is typically decentralised. In a link state routing algorithm, each router collects information about the state of its directly connected links and shares this information with other routers in the network. Each router then independently calculates the best path to reach a destination based on the collected link state information. This decentralised approach allows routers to make routing decisions autonomously.
+
+6.  Memory that can be dynamically allocated to a process during runtime is called heap memory or dynamic memory. Heap memory is used for storing data structures and objects that are created and destroyed dynamically at runtime using functions like malloc() and free().
+
+7.  No, a thread does not share its code section with other threads belonging to the same process. Threads within a process share the same code section, also known as the text section or code segment, of the process. Each thread has its own stack and data section, but they all execute the same code.
+
+8.  A process can change shared variables in the section of its code where the shared variables are accessed or modified. Typically, this is done within a critical section or a mutually exclusive region where proper synchronization mechanisms, such as locks or semaphores, are used to ensure that only one thread or process can access the shared variables at a time, preventing data inconsistencies or race conditions.
+
+9.  No, a Trojan Horse is not an example of a program threat. A Trojan Horse is a type of malicious software or code that disguises itself as a legitimate program or file, tricking users into executing it. Once executed, it can perform various malicious activities, such as stealing data or providing unauthorised access to the attacker. Program threats generally refer to vulnerabilities or weaknesses in software programs that can be exploited to compromise their security, such as buffer overflows or code injection attacks.
+
 ## Question 2
 ---
 - Short essay.
@@ -134,55 +155,55 @@ created: 2023-05-03
 - Chapter 2 Application Layer  
 - [x] 2.1 Principles of Network Applications ✅ 2023-05-11
 - [x] 2.2 The Web and HTTP ✅ 2023-05-11
-- [ ]  2.3 Electronic Mail in the Internet  
-- [ ]  2.7 Socket Programming: Creating Network Applications  
+- [x] 2.3 Electronic Mail in the Internet ✅ 2023-05-11
+- [x] 2.7 Socket Programming: Creating Network Applications ✅ 2023-05-11
 - Chapter 3 Transport Layer  
-- [ ] 3.1 Introduction and Transport-Layer Services  
-- [ ] 3.2 Multiplexing and Demultiplexing  
-- [ ]  3.3 Connectionless Transport: UDP  
-- [ ]  3.5 Connection-Oriented Transport: TCP  
-- [ ]  3.7 TCP Congestion Control
+- [x] 3.1 Introduction and Transport-Layer Services ✅ 2023-05-11
+- [x] 3.2 Multiplexing and Demultiplexing ✅ 2023-05-11
+- [x] 3.3 Connectionless Transport: UDP ✅ 2023-05-11
+- [x] 3.5 Connection-Oriented Transport: TCP ✅ 2023-05-11
+- [x] 3.7 TCP Congestion Control ✅ 2023-05-11
 - Chapter 4 The Network Layer: Data Plane  
-- [ ] 4.1.1 Forwarding and Routing: The Data and Control Planes  
-- [ ] 4.2 What’s Inside a Router? (overview and 4.2.1 Input Port Processing and Destination-Based Forwarding ONLY)  
-- [ ]  4.3 The Internet Protocol (IP): IPv4, Addressing, IPv6, and More
-- [ ]  4.3.1 IPv4 Datagram Format  
-- [ ]  4.3.2 IPv4 Datagram Fragmentation  
-- [ ]  4.3.3 IPv4 Addressing (excluding “Obtaining a block of addresses” & “Obtaining a Host Address: The Dynamic Host Configuration Protocol”)  
-- [ ]  4.3.5 IPv6 (excluding “Transitioning from IPv4 to IPv6”)  
+- [x] 4.1.1 Forwarding and Routing: The Data and Control Planes ✅ 2023-05-11
+- [x] 4.2 What’s Inside a Router? (overview and 4.2.1 Input Port Processing and Destination-Based Forwarding ONLY) ✅ 2023-05-11
+- [x] 4.3 The Internet Protocol (IP): IPv4, Addressing, IPv6, and More ✅ 2023-05-11
+- [x] 4.3.1 IPv4 Datagram Format ✅ 2023-05-11
+- [x] 4.3.2 IPv4 Datagram Fragmentation ✅ 2023-05-11
+- [x] 4.3.3 IPv4 Addressing (excluding “Obtaining a block of addresses” & “Obtaining a Host Address: The Dynamic Host Configuration Protocol”) ✅ 2023-05-11
+- [x] 4.3.5 IPv6 (excluding “Transitioning from IPv4 to IPv6”) ✅ 2023-05-11
 - Chapter 5 The Network Layer: Control Plane  
-- [ ] 5.2 Routing Algorithms (overview ONLY)
+- [x] 5.2 Routing Algorithms (overview ONLY) ✅ 2023-05-11
 
 ### Operating Systems Concepts  
 - Chapter 2 Operating-System Structures  
-- [ ] 2.1 Operating-System Services  
-- [ ] 2.2 User and Operating-System Interface  
-- [ ]  2.3 System Calls  
-- [ ]  2.4 Types of System Calls  
-- [ ]  2.5 System Programs  
+- [x] 2.1 Operating-System Services ✅ 2023-05-11
+- [x] 2.2 User and Operating-System Interface ✅ 2023-05-11
+- [x] 2.3 System Calls ✅ 2023-05-11
+- [x] 2.4 Types of System Calls ✅ 2023-05-11
+- [x] 2.5 System Programs ✅ 2023-05-11
 - Chapter 3 Processes  
-- [ ]  3.1 Process Concept  
-- [ ]  3.2 Process Scheduling  
-- [ ]  3.6.2 Remote Procedure Calls  
-- [ ]  3.6.3 Pipes  
+- [x] 3.1 Process Concept ✅ 2023-05-11
+- [x] 3.2 Process Scheduling ✅ 2023-05-11
+- [x] 3.6.2 Remote Procedure Calls ✅ 2023-05-11
+- [x] 3.6.3 Pipes ✅ 2023-05-11
 - Chapter 4 Threads  
-- [ ]  4.1 Overview  
-- [ ]  My slides and links: Java Threads
+- [x] 4.1 Overview ✅ 2023-05-11
+- [x] My slides and links: Java Threads ✅ 2023-05-11
 - Chapter 5 Process Synchronisation  
-- [ ]  5.1 Background  
-- [ ]  5.2 The Critical-Section Problem  
-- [ ]  5.3 Peterson’s Solution  
-- [ ]  5.5 Mutex Locks  
-- [ ]  5.6 Semaphores  
-- [ ]  5.7 Classic Problems of Synchronisation  
-- [ ]  5.8 Monitors  
+- [x] 5.1 Background ✅ 2023-05-11
+- [x] 5.2 The Critical-Section Problem ✅ 2023-05-11
+- [x] 5.3 Peterson’s Solution ✅ 2023-05-11
+- [x] 5.5 Mutex Locks ✅ 2023-05-11
+- [x] 5.6 Semaphores ✅ 2023-05-11
+- [x] 5.7 Classic Problems of Synchronisation ✅ 2023-05-11
+- [x] 5.8 Monitors ✅ 2023-05-11
 - Chapter 15 Security  
-- [ ]  15.1 The Security Problem  
-- [ ]  15.2 Program Threats  
-- [ ]  15.3 System and Network Threats  
-- [ ]  15.4.1 Encryption  
+- [x] 15.1 The Security Problem ✅ 2023-05-11
+- [x] 15.2 Program Threats ✅ 2023-05-11
+- [x] 15.3 System and Network Threats ✅ 2023-05-11
+- [x] 15.4.1 Encryption ✅ 2023-05-11
 - Chapter 17 Distributed Systems  
-- [ ]  17.1 Advantages of Distributed Systems
+- [x] 17.1 Advantages of Distributed Systems ✅ 2023-05-11
 
 ---
 ## Book Reviewing 
