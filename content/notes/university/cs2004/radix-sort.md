@@ -1,8 +1,7 @@
 ---
 title:  "Radix Sort"
 tags:
-  - cs-concept
-  - sorting
+  - cs-concept/sorting
 programming-languagues:
 module:
   - cs2004

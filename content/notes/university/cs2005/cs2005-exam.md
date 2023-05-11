@@ -14,30 +14,6 @@ created: 2023-05-03
 ---
 - [Computer Networks (PDF)](notes/university/cs2005/annotation-computer-networks.md)
 
-### Day 1:
-- [x] Spend 2 hours studying Chapter 1 of Computer Networks, including sections 1.1 to 1.5. ✅ 2023-05-08
-- [ ] Spend 2 hours studying Chapter 2 of Computer Networks, including sections 2.1, 2.2, 2.3, and 2.7.
-- [ ] Spend 1 hour studying Chapter 2 of Operating Systems Concepts, including sections 2.1, 2.2, 2.3, 2.4, and 2.5.
-
-### Day 2:
-- [ ] Spend 2 hours studying Chapter 3 of Computer Networks, including sections 3.1, 3.2, 3.3, 3.5, and 3.7.
-- [ ] Spend 2 hours studying Chapter 3 of Operating Systems Concepts, including sections 3.1, 3.2, 3.6.2, and 3.6.3.
-
-### Day 3:
-- [ ] Spend 2 hours studying Chapter 4 of Computer Networks, including sections 4.1.1 and 4.2.1.
-- [ ] Spend 2 hours studying Chapter 4 of Computer Networks, including sections 4.3, 4.3.1, 4.3.2, and 4.3.5.
-- [ ] Spend 1 hour reviewing Day 1 and Day 2 materials.
-
-### Day 4:
-- [ ] Spend 2 hours studying Chapter 5 of Computer Networks, including section 5.2.
-- [ ] Spend 2 hours studying Chapter 5 of Operating Systems Concepts, including sections 5.1, 5.2, 5.3, 5.5, 5.6, 5.7, and 5.8.
-- [ ] Spend 1 hour reviewing Day 3 materials.
-
-### Day 5:
-- [ ] Spend 2 hours studying Chapter 15 of Operating Systems Concepts, including sections 15.1, 15.2, 15.3, and 15.4.1.
-- [ ] Spend 2 hours studying Chapter 17 of Operating Systems Concepts, including section 17.1.
-- [ ] Spend 1 hour reviewing all the materials you have covered in the past 4 days.
-
 ## Question 1
 ---
 - Questions 1 is a short answer about anything.
@@ -150,90 +126,64 @@ created: 2023-05-03
 ## Textbook References:
 ### Computer Networks  
 - Chapter 1 Computer Networks and the Internet  
-    - 1.1 What Is the Internet?  
-    - 1.1.1 A Nuts-and-Bolts Description  
-    - 1.1.2 A Services Description  
-    - 1.1.3 What Is a Protocol?  
-    - 1.5 Protocol Layers and Their Service Models  
+- [x] 1.1 What Is the Internet? ✅ 2023-05-11
+- [x] 1.1.1 A Nuts-and-Bolts Description ✅ 2023-05-11
+- [x] 1.1.2 A Services Description ✅ 2023-05-11
+- [x] 1.1.3 What Is a Protocol? ✅ 2023-05-11
+- [x] 1.5 Protocol Layers and Their Service Models ✅ 2023-05-11
 - Chapter 2 Application Layer  
-    - 2.1 Principles of Network Applications  
-    - 2.2 The Web and HTTP  
-    - 2.3 Electronic Mail in the Internet  
-    - 2.7 Socket Programming: Creating Network Applications  
+- [x] 2.1 Principles of Network Applications ✅ 2023-05-11
+- [x] 2.2 The Web and HTTP ✅ 2023-05-11
+- [ ]  2.3 Electronic Mail in the Internet  
+- [ ]  2.7 Socket Programming: Creating Network Applications  
 - Chapter 3 Transport Layer  
-    - 3.1 Introduction and Transport-Layer Services  
-    - 3.2 Multiplexing and Demultiplexing  
-    - 3.3 Connectionless Transport: UDP  
-    - 3.5 Connection-Oriented Transport: TCP  
-    - 3.7 TCP Congestion Control
+- [ ] 3.1 Introduction and Transport-Layer Services  
+- [ ] 3.2 Multiplexing and Demultiplexing  
+- [ ]  3.3 Connectionless Transport: UDP  
+- [ ]  3.5 Connection-Oriented Transport: TCP  
+- [ ]  3.7 TCP Congestion Control
 - Chapter 4 The Network Layer: Data Plane  
-    - 4.1.1 Forwarding and Routing: The Data and Control Planes  
-    - 4.2 What’s Inside a Router? (overview and 4.2.1 Input Port Processing and Destination-Based Forwarding ONLY)  
-    - 4.3 The Internet Protocol (IP): IPv4, Addressing, IPv6, and More
-    - 4.3.1 IPv4 Datagram Format  
-    - 4.3.2 IPv4 Datagram Fragmentation  
-    - 4.3.3 IPv4 Addressing (excluding “Obtaining a block of addresses” & “Obtaining a Host Address: The Dynamic Host Configuration Protocol”)  
-    - 4.3.5 IPv6 (excluding “Transitioning from IPv4 to IPv6”)  
+- [ ] 4.1.1 Forwarding and Routing: The Data and Control Planes  
+- [ ] 4.2 What’s Inside a Router? (overview and 4.2.1 Input Port Processing and Destination-Based Forwarding ONLY)  
+- [ ]  4.3 The Internet Protocol (IP): IPv4, Addressing, IPv6, and More
+- [ ]  4.3.1 IPv4 Datagram Format  
+- [ ]  4.3.2 IPv4 Datagram Fragmentation  
+- [ ]  4.3.3 IPv4 Addressing (excluding “Obtaining a block of addresses” & “Obtaining a Host Address: The Dynamic Host Configuration Protocol”)  
+- [ ]  4.3.5 IPv6 (excluding “Transitioning from IPv4 to IPv6”)  
 - Chapter 5 The Network Layer: Control Plane  
-    - 5.2 Routing Algorithms (overview ONLY)
+- [ ] 5.2 Routing Algorithms (overview ONLY)
 
 ### Operating Systems Concepts  
 - Chapter 2 Operating-System Structures  
-    - 2.1 Operating-System Services  
-    - 2.2 User and Operating-System Interface  
-    - 2.3 System Calls  
-    - 2.4 Types of System Calls  
-    - 2.5 System Programs  
+- [ ] 2.1 Operating-System Services  
+- [ ] 2.2 User and Operating-System Interface  
+- [ ]  2.3 System Calls  
+- [ ]  2.4 Types of System Calls  
+- [ ]  2.5 System Programs  
 - Chapter 3 Processes  
-    - 3.1 Process Concept  
-    - 3.2 Process Scheduling  
-    - 3.6.2 Remote Procedure Calls  
-    - 3.6.3 Pipes  
+- [ ]  3.1 Process Concept  
+- [ ]  3.2 Process Scheduling  
+- [ ]  3.6.2 Remote Procedure Calls  
+- [ ]  3.6.3 Pipes  
 - Chapter 4 Threads  
-    - 4.1 Overview  
-    - My slides and links: Java Threads
+- [ ]  4.1 Overview  
+- [ ]  My slides and links: Java Threads
 - Chapter 5 Process Synchronisation  
-    - 5.1 Background  
-    - 5.2 The Critical-Section Problem  
-    - 5.3 Peterson’s Solution  
-    - 5.5 Mutex Locks  
-    - 5.6 Semaphores  
-    - 5.7 Classic Problems of Synchronisation  
-    - 5.8 Monitors  
+- [ ]  5.1 Background  
+- [ ]  5.2 The Critical-Section Problem  
+- [ ]  5.3 Peterson’s Solution  
+- [ ]  5.5 Mutex Locks  
+- [ ]  5.6 Semaphores  
+- [ ]  5.7 Classic Problems of Synchronisation  
+- [ ]  5.8 Monitors  
 - Chapter 15 Security  
-    - 15.1 The Security Problem  
-    - 15.2 Program Threats  
-    - 15.3 System and Network Threats  
-    - 15.4.1 Encryption  
+- [ ]  15.1 The Security Problem  
+- [ ]  15.2 Program Threats  
+- [ ]  15.3 System and Network Threats  
+- [ ]  15.4.1 Encryption  
 - Chapter 17 Distributed Systems  
-    - 17.1 Advantages of Distributed Systems
-> [!failure]- Failure 
->   Error: There is another generation process
->   
->   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
->     plugin:obsidian-textgenerator-plugin:56949:31
->   
->   - Generator.next
->   
->   - plugin:obsidian-textgenerator-plugin:78 eval
->     plugin:obsidian-textgenerator-plugin:78:61
->   
->   - new Promise
->   
->   - plugin:obsidian-textgenerator-plugin:62 __async
->     plugin:obsidian-textgenerator-plugin:62:10
->   
->   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
->     plugin:obsidian-textgenerator-plugin:56935:12
->   
->   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
->     plugin:obsidian-textgenerator-plugin:58440:52
->   
->   - Generator.next
->   
->   - plugin:obsidian-textgenerator-plugin:78 eval
->     plugin:obsidian-textgenerator-plugin:78:61
->   
->   - new Promise
->   
->  
+- [ ]  17.1 Advantages of Distributed Systems
+
+---
+## Book Reviewing 
+- [PDF with annotations.](notes/university/cs2005/annotation-computer-networks.md)

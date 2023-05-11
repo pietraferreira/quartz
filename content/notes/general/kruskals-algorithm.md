@@ -2,7 +2,7 @@
 title: "Kruskal's Algorithm"
 tags:
   - cs-concept
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-06
 ---

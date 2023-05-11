@@ -2,9 +2,7 @@
 title:  "Prim's Algorithm"
 tags:
   - cs-concept
-  - engineer-training
-  - graphs
-  - graph-search
+  - work/engineer-training
 module:
   - cs2004
 programming-languagues:

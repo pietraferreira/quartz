@@ -2,7 +2,7 @@
 title:  "Parallel Computing Laboratory"
 tags:
   - work
-  - riscv
+  - work/riscv
 programming-languagues:
 created: 2022-06-04
 ---

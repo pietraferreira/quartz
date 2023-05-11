@@ -1,8 +1,7 @@
 ---
 title:  "Cross-Compilation"
 tags:
-  - compilers
-  - cs-concept
+  - cs-concept/compilers
 programming-languagues:
 created: 2022-06-05
 ---

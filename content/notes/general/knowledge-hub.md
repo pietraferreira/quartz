@@ -31,12 +31,12 @@ Where all of my notes live!!! There are no rules here 😎
 - [GCC Guide by Maxim](notes/private/work/gcc-guide-by-maxim.md)
 
 #### Linker
-- [Linker](notes/general/linker.md)
-- [Relocations](notes/general/relocations.md)
-- [HowTo Table](notes/general/howto-table.md)
+- [Linker](notes/private/work/linker.md)
+- [Relocations](notes/private/work/relocations.md)
+- [HowTo Table](notes/private/work/howto-table.md)
 
 #### Assembler
-- [RISC-V Assembler](notes/general/riscv-assembler-reference.md)
+- [RISC-V Assembler](notes/private/work/riscv-assembler-reference.md)
 
 ### Cybersecurity
 - Files Transfers ([here](notes/hacking/htb-file-transfers.md))

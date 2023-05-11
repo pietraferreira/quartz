@@ -1,11 +1,7 @@
 ---
 title: "Lists"
 tags:
-  - cs-concept
-  - engineer-training
-  - cs2004
-programming-languagues:
-  - c
+  - work/engineer-training
 created: 2022-06-05
 last-edited: 2022-10-24
 ---

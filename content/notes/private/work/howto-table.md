@@ -1,15 +1,13 @@
 ---
 title: "Howto Table" 
 tags:
+  - cs-concept/relocations
   - work
-  - relocations
   - help
 programming-languagues:
 created: 2022-06-05
 ---
-# Howto Table
----
-The [relocation](notes/general/relocations.md) table records the list of items that the file needs (from other object files or libraries).
+The [relocation](notes/private/work/relocations.md) table records the list of items that the file needs (from other object files or libraries).
 
 The relocation record contains information like: which instructions need to be relocated (the offsets), which symbols are involved with the relocation and how to relocate the files relative to the symbols.
 
@@ -46,8 +44,8 @@ HOWTO (R_RISCV_CVPCREL_UI12,          /* type */
 * _pcrel_offset_: when some formats create PC relative instructions, they leave the value of the pc of the place being relocated in the offset slot of the instruction, so that a PC relative relocation can be made by just adding in an ordinary offset. in the cases that the displacement part of the instruction is empty, this flags signals the fact.
 
 ## Related Notes
-- [Relocations](notes/general/relocations.md)
-- [PLT and GOT](notes/general/plt-and-got.md)
-- [Linker](notes/general/linker.md)
+- [Relocations](notes/private/work/relocations.md)
+- [PLT and GOT](notes/private/work/plt-and-got.md)
+- [Linker](notes/private/work/linker.md)
 - [Linker Relaxation](notes/general/linker-relaxation.md)
-- [Jump Table](notes/general/jump-table.md)
+- [Jump Table](notes/private/work/jump-table.md)

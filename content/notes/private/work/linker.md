@@ -1,14 +1,8 @@
 ---
 title:  "Linker"
 tags:
-  - work
+  - work/engineer-training
   - help
-  - engineer-training
-  - compilers
-  - toolchain
-  - gnu
-  - gcc
-  - llvm
 programming-languagues:
 created: 2022-08-04
 ---
@@ -86,7 +80,7 @@ Symbolic references get translated into offsets and addresses during compilation
 
 The linker interacts with a symbol table to reference/modify/match a given symbol inside and ELF object at linktime.
 
-In ELF, each symbol is represented as an instance of an `Elfxx_Sym` structure inside a given [**symbol table**](notes/general/plt-and-got.md). (To retrieve them we use bitmasks).
+In ELF, each symbol is represented as an instance of an `Elfxx_Sym` structure inside a given [**symbol table**](notes/private/work/plt-and-got.md). (To retrieve them we use bitmasks).
 
 An ELF object may contain a maximum of two **symbol tables**: `.symtab` and `.dynsym`. `.symtab` is the binary's global symbol table. The `.dynsym` holds symbols needed for **dynamic linking** (external objects, shared objects).
 
@@ -167,7 +161,7 @@ If a particular symbol is pulled in from a particular shared library (`printf` i
 
 ## Related Notes
 - [Relocations](notes/general/relocations.md)
-- [PLT and GOT](notes/general/plt-and-got.md)
+- [PLT and GOT](notes/private/work/plt-and-got.md)
 - [Howto Table](notes/general/howto-table.md)
 - [Linker Relaxation](notes/general/linker-relaxation.md)
-- [Jump Table](notes/general/jump-table.md)
+- [Jump Table](notes/private/work/jump-table.md)

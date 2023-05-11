@@ -1,8 +1,7 @@
 ---
 title:  "Compiler Flags"
 tags:
-  - cs-concept
-  - compilers
+  - cs-concept/compilers
 programming-languagues:
 created: 2022-06-05
 ---

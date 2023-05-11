@@ -2,7 +2,6 @@
 title: "turing-machines"
 tags:
   - university
-  - algorithms
 programming-languagues:
 module:
   - algorithms

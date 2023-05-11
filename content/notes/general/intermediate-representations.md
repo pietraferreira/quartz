@@ -2,7 +2,7 @@
 title: "Intermediate Representations"
 tags:
   - cs-concept
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-16
 ---
@@ -10,5 +10,5 @@ created: 2022-06-16
 ---
 There are three main ones:
 - [Parse Trees](notes/general/parse-trees.md)
-- [](notes/general/parse-trees.md#DAGs%20for%20Parse%20Trees%7CDAGs)
+- [IDK What this is sorry :(](notes/general/parse-trees.md#DAGs%20for%20Parse%20Trees%7CDAGs)
 - [Three Address Code](notes/private/work/three-address-code.md)

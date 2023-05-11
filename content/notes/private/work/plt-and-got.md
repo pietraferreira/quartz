@@ -1,16 +1,15 @@
 ---
 title: "PLT and GOT"
 tags:
-  - relocations
-  - help
   - work
-  - riscv
-  - linker
+  - cs-concept/relocations
+  - work/riscv
+  - cs-concept/linker
 programming-languagues:
 created: 2022-08-02
 ---
 ## Procedure Linkage Table and Global Offset Table
-If a program receives an incorrect input for example, it terminates, rendering useless all of the relocation work performed by the [dynamic linker](notes/general/linker.md). To solve this, we can resolve function references **when they are called** instead of at load-time.
+If a program receives an incorrect input for example, it terminates, rendering useless all of the relocation work performed by the [dynamic linker](notes/private/work/linker.md). To solve this, we can resolve function references **when they are called** instead of at load-time.
 
 This is enabled by the Procedure Linkage Table (PLT) and the Global Offset Table (GOT).
 
@@ -27,8 +26,8 @@ Then the PLT entry will retrieve the function's address from the function's GOT 
 
 ---
 ## Related Notes
-- [Relocations](notes/general/relocations.md)
-- [Linker](notes/general/linker.md)
-- [Howto Table](notes/general/howto-table.md)
+- [Relocations](notes/private/work/relocations.md)
+- [Linker](notes/private/work/linker.md)
+- [Howto Table](notes/private/work/howto-table.md)
 - [Linker Relaxation](notes/general/linker-relaxation.md)
-- [Jump Table](notes/general/jump-table.md)
+- [Jump Table](notes/private/work/jump-table.md)

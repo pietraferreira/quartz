@@ -1,13 +1,9 @@
 ---
 title: "GCC"
 tags:
-  - cs-concept
-  - compilers
-  - toolchain
+  - cs-concept/compilers
 programming-languagues:
 created: 2022-06-05
----
-# GCC
 ---
 The popular gcc [compiler](notes/private/work/compilers.md) ships with the gcc toolchain. It can be downloaded from [GCC mirror sites](https://gcc.gnu.org/mirrors.html). In order to download the precompiled binaries that are ready to use, go to the _[Installing GCC: Binaries](https://gcc.gnu.org/install/binaries.html)_ page.
 
@@ -39,5 +35,5 @@ The `share` folder contains the documentation which can be installed as man page
 -   [The Gcc-help Archives](https://gcc.gnu.org/pipermail/gcc-help/)
 
 ## See Also
-- [Relocations](notes/general/relocations.md)
+- [Relocations](notes/private/work/relocations.md)
 - [Linker Relaxation](notes/general/linker-relaxation.md)

@@ -1,13 +1,10 @@
 ---
 title: "Halting Problem"
 tags:
-  - cs-concet
-  - engineer-training
-  - problem
+  - cs-concept
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-07
----
-# Halting Problem
 ---
 A program to determine if **any** given program will complete in finite time.
 

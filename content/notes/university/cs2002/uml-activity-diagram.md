@@ -1,7 +1,7 @@
 ---
 title: "Activity Diagram"
 tags:
-  - uml
+  - cs-concept/uml
   - university/cs2002
 last-edited:
 created: 2022-12-14

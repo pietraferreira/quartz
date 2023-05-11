@@ -1207,3 +1207,396 @@ tags:
 > [!failure]- Failure 
 >   Error: This model's maximum context length is 4097 tokens. However, your messa  ges resulted in 28755 tokens. Please reduce the length of the messages.
 >  
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T13:54:32.670Z","updated":"2023-05-11T13:54:32.670Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":300437,"end":300475},{"type":"TextQuoteSelector","exact":"cookies can be used to identify a user","prefix":"rom this discussion we see that ","suffix":". The first time a user visits a"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==cookies can be used to identify a user== *
+>%%LINK%%[[#^rihcu9jpt6|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^rihcu9jpt6
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:03:02.608Z","updated":"2023-05-11T14:03:02.608Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":301474,"end":301701},{"type":"TextQuoteSelector","exact":"A Web cache—also called a proxy server—is a network entity that satisfies HTTP requests on thebehalf of an origin Web server. The Web cache has its own disk storage and keeps copies of recentlyrequested objects in this storage.","prefix":"ie controversy.2.2.5 Web Caching","suffix":" As shown in Figure 2.11, a user"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==A Web cache—also called a proxy server—is a network entity that satisfies HTTP requests on thebehalf of an origin Web server. The Web cache has its own disk storage and keeps copies of recentlyrequested objects in this storage.== *
+>%%LINK%%[[#^jiyhmxr3yt|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^jiyhmxr3yt
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:03:32.790Z","updated":"2023-05-11T14:03:32.790Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":302982,"end":303047},{"type":"TextQuoteSelector","exact":"Note that a cache is both a server and a client at the same time.","prefix":"ient browser and the Web cache).","suffix":" When it receives requests from "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==Note that a cache is both a server and a client at the same time.== *
+>%%LINK%%[[#^lidko5x91oa|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^lidko5x91oa
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:03:56.333Z","updated":"2023-05-11T14:03:56.333Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":303634,"end":303715},{"type":"TextQuoteSelector","exact":"First, a Web cache can substantiallyreduce the response time for a client request","prefix":"n the Internet for two reasons. ","suffix":", particularly if the bottleneck"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==First, a Web cache can substantiallyreduce the response time for a client request== *
+>%%LINK%%[[#^t3hmpuihslc|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^t3hmpuihslc
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:04:06.120Z","updated":"2023-05-11T14:04:06.120Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":304079,"end":304219},{"type":"TextQuoteSelector","exact":"econd,as we will soon illustrate with an example, Web caches can substantially reduce traffic on an institution’saccess link to the Internet","prefix":" object rapidly to the client. S","suffix":". By reducing traffic, the insti"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==econd,as we will soon illustrate with an example, Web caches can substantially reduce traffic on an institution’saccess link to the Internet== *
+>%%LINK%%[[#^9m3xj5d7kat|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^9m3xj5d7kat
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:06:53.582Z","updated":"2023-05-11T14:06:53.582Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":308702,"end":308954},{"type":"TextQuoteSelector","exact":"Through the use of Content Distribution Networks (CDNs), Web caches are increasingly playing animportant role in the Internet. A CDN company installs many geographically distributed cachesthroughout the Internet, thereby localizing much of the traffic.","prefix":"re that runs on inexpensive PCs.","suffix":" There are shared CDNs (such as "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==Through the use of Content Distribution Networks (CDNs), Web caches are increasingly playing animportant role in the Internet. A CDN company installs many geographically distributed cachesthroughout the Internet, thereby localizing much of the traffic.== *
+>%%LINK%%[[#^r70yqaqrwxd|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^r70yqaqrwxd
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:07:18.957Z","updated":"2023-05-11T14:07:18.957Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":309212,"end":309267},{"type":"TextQuoteSelector","exact":"the copy ofan object residing in the cache may be stale","prefix":"es, it introduces a new problem—","suffix":". In other words, the object hou"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==the copy ofan object residing in the cache may be stale== *
+>%%LINK%%[[#^qcyvdsihtti|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^qcyvdsihtti
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:07:23.885Z","updated":"2023-05-11T14:07:23.885Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":309397,"end":309524},{"type":"TextQuoteSelector","exact":"HTTP has a mechanism thatallows a cache to verify that its objects are up to date. This mechanism is called the conditional GET","prefix":"hed at the client. Fortunately, ","suffix":".An HTTP request message is a so"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==HTTP has a mechanism thatallows a cache to verify that its objects are up to date. This mechanism is called the conditional GET== *
+>%%LINK%%[[#^l1o83kp0ms|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^l1o83kp0ms
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:08:08.943Z","updated":"2023-05-11T14:08:08.943Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":312560,"end":312606},{"type":"TextQuoteSelector","exact":"e-mail is an asynchronous communication medium","prefix":"s.As with ordinary postal mail, ","suffix":"—people send and readmessages wh"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==e-mail is an asynchronous communication medium== *
+>%%LINK%%[[#^d2c3pubgzy5|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^d2c3pubgzy5
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:08:30.040Z","updated":"2023-05-11T14:08:30.040Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":313324,"end":313395},{"type":"TextQuoteSelector","exact":"user agents, mail servers, and the Simple Mail Transfer Protocol (SMTP)","prefix":"t it hasthree major components: ","suffix":".We now describe each of these c"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==user agents, mail servers, and the Simple Mail Transfer Protocol (SMTP)== *
+>%%LINK%%[[#^84m7lpni6z6|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^84m7lpni6z6
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:08:44.974Z","updated":"2023-05-11T14:08:44.974Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":313518,"end":313668},{"type":"TextQuoteSelector","exact":"User agents allow users to read, reply to, forward, save, and composemessages. Microsoft Outlook and Apple Mail are examples of user agents for e-mail","prefix":"ailmessage to a recipient, Bob. ","suffix":". When Alice isfinished composin"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==User agents allow users to read, reply to, forward, save, and composemessages. Microsoft Outlook and Apple Mail are examples of user agents for e-mail== *
+>%%LINK%%[[#^2cxx9657g29|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^2cxx9657g29
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:09:01.298Z","updated":"2023-05-11T14:09:01.298Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":314038,"end":314079},{"type":"TextQuoteSelector","exact":"mailboxlocated in one of the mail servers","prefix":"h recipient, such as Bob, has a ","suffix":". Bob’s mailbox manages andFigur"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==mailboxlocated in one of the mail servers== *
+>%%LINK%%[[#^kebmivp50i|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^kebmivp50i
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:09:34.089Z","updated":"2023-05-11T14:09:34.089Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":314622,"end":314770},{"type":"TextQuoteSelector","exact":"If Alice’s server cannot deliver mail to Bob’s server,Alice’s server holds the message in a message queue and attempts to transfer the message later","prefix":" failures in Bob’s mail server. ","suffix":".Reattempts are often done every"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==If Alice’s server cannot deliver mail to Bob’s server,Alice’s server holds the message in a message queue and attempts to transfer the message later== *
+>%%LINK%%[[#^fkgn13plpo7|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^fkgn13plpo7
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:09:44.038Z","updated":"2023-05-11T14:09:44.038Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":314949,"end":315155},{"type":"TextQuoteSelector","exact":"SMTP is the principal application-layer protocol for Internet electronic mail. It uses the reliable datatransfer service of TCP to transfer mail from the sender’s mail server to the recipient’s mail server.","prefix":" (Alice) with an e-mail message.","suffix":" Aswith most application-layer p"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==SMTP is the principal application-layer protocol for Internet electronic mail. It uses the reliable datatransfer service of TCP to transfer mail from the sender’s mail server to the recipient’s mail server.== *
+>%%LINK%%[[#^koqaa0eatji|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^koqaa0eatji
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:09:48.588Z","updated":"2023-05-11T14:09:48.588Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":315341,"end":315406},{"type":"TextQuoteSelector","exact":"Both the client and serversides of SMTP run on every mail server.","prefix":"on the recipient’s mail server. ","suffix":" When a mail server sends mail t"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==Both the client and serversides of SMTP run on every mail server.== *
+>%%LINK%%[[#^3jzgghlwosu|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^3jzgghlwosu
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:09:59.468Z","updated":"2023-05-11T14:09:59.468Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":315673,"end":315753},{"type":"TextQuoteSelector","exact":"MTPtransfers messages from senders’ mail servers to the recipients’ mail servers","prefix":"onic mail. As mentioned above, S","suffix":". SMTP is much older thanHTTP. ("}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==MTPtransfers messages from senders’ mail servers to the recipients’ mail servers== *
+>%%LINK%%[[#^lk92a87q61i|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^lk92a87q61i
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:13:59.432Z","updated":"2023-05-11T14:13:59.432Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":322335,"end":322525},{"type":"TextQuoteSelector","exact":"HTTP transfers files (also called objects) from a Web server to a Web client (typically abrowser); SMTP transfers files (that is, e-mail messages) from one mail server to another mail server","prefix":" files from one host toanother: ","suffix":".When transferring the files, bo"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==HTTP transfers files (also called objects) from a Web server to a Web client (typically abrowser); SMTP transfers files (that is, e-mail messages) from one mail server to another mail server== *
+>%%LINK%%[[#^ocih253fkl|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^ocih253fkl
+
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:14:26.175Z","updated":"2023-05-11T14:14:26.175Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":322959,"end":323011},{"type":"TextQuoteSelector","exact":"On the other hand, SMTP is primarily a push protocol","prefix":"that wants to receive the file. ","suffix":"—thesending mail server pushes t"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==On the other hand, SMTP is primarily a push protocol== *
+>%%LINK%%[[#^tulkqqn2wlo|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^tulkqqn2wlo
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:14:29.112Z","updated":"2023-05-11T14:14:29.112Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":323096,"end":323170},{"type":"TextQuoteSelector","exact":"the TCP connection isinitiated by the machine that wants to send the file.","prefix":"ing mail server. In particular, ","suffix":"A second difference, which we al"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==the TCP connection isinitiated by the machine that wants to send the file.== *
+>%%LINK%%[[#^t09nkx98tq|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^t09nkx98tq
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:14:32.442Z","updated":"2023-05-11T14:14:32.442Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":322881,"end":322957},{"type":"TextQuoteSelector","exact":"the TCP connection is initiated by themachine that wants to receive the file","prefix":"eir convenience. In particular, ","suffix":". On the other hand, SMTP is pri"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==the TCP connection is initiated by themachine that wants to receive the file== *
+>%%LINK%%[[#^lv5micq6sm|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^lv5micq6sm
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:14:44.400Z","updated":"2023-05-11T14:14:44.400Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":322714,"end":322743},{"type":"TextQuoteSelector","exact":"HTTP is mainlya pull protocol","prefix":"e important differences. First, ","suffix":"—someone loads information on a "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==HTTP is mainlya pull protocol== *
+>%%LINK%%[[#^eo1uik93urc|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^eo1uik93urc
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:15:09.995Z","updated":"2023-05-11T14:15:09.995Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":323733,"end":323853},{"type":"TextQuoteSelector","exact":"HTTP encapsulates each object in its ownHTTP response message. SMTP places all of the message’s objects into one message","prefix":". As we learned in Section 2.2, ","suffix":".2.3.3 Mail Message FormatsWhen "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==HTTP encapsulates each object in its ownHTTP response message. SMTP places all of the message’s objects into one message== *
+>%%LINK%%[[#^wlirl365p3c|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^wlirl365p3c
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:15:55.091Z","updated":"2023-05-11T14:15:55.091Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":326670,"end":326856},{"type":"TextQuoteSelector","exact":"If Bob’s mail server were to reside on his localPC, then Bob’s PC would have to remain always on, and connected to the Internet, in order to receivenew mail, which can arrive at any time","prefix":"lient and server sides of SMTP. ","suffix":". This is impractical for many I"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==If Bob’s mail server were to reside on his localPC, then Bob’s PC would have to remain always on, and connected to the Internet, in order to receivenew mail, which can arrive at any time== *
+>%%LINK%%[[#^4bbuynwckdf|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^4bbuynwckdf
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:16:29.725Z","updated":"2023-05-11T14:16:29.725Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":328118,"end":328328},{"type":"TextQuoteSelector","exact":"By having Alice first deposit the e-mail in her own mail server, Alice’s mail server canrepeatedly try to send the message to Bob’s mail server, say every 30 minutes, until Bob’s mail serverbecomes operational.","prefix":"municating entitiesmail server. ","suffix":" (And if Alice’s mail server is "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==By having Alice first deposit the e-mail in her own mail server, Alice’s mail server canrepeatedly try to send the message to Bob’s mail server, say every 30 minutes, until Bob’s mail serverbecomes operational.== *
+>%%LINK%%[[#^hinryiszaz7|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^hinryiszaz7
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:17:01.506Z","updated":"2023-05-11T14:17:01.506Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":328742,"end":329169},{"type":"TextQuoteSelector","exact":"Bob’suser agent can’t use SMTP to obtain the messages because obtaining the messages is a pull operation,whereas SMTP is a push protocol. The puzzle is completed by introducing a special mail accessprotocol that transfers messages from Bob’s mail server to his local PC. There are currently a number ofpopular mail access protocols, including Post Office Protocol—Version 3 (POP3), Internet MailAccess Protocol (IMAP), and HTTP","prefix":"ver within Bob’s ISP? Note that ","suffix":".Figure 2.16 provides a summary "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==Bob’suser agent can’t use SMTP to obtain the messages because obtaining the messages is a pull operation,whereas SMTP is a push protocol. The puzzle is completed by introducing a special mail accessprotocol that transfers messages from Bob’s mail server to his local PC. There are currently a number ofpopular mail access protocols, including Post Office Protocol—Version 3 (POP3), Internet MailAccess Protocol (IMAP), and HTTP== *
+>%%LINK%%[[#^6zvmn686cjl|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^6zvmn686cjl
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:17:18.670Z","updated":"2023-05-11T14:17:18.670Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":329563,"end":329611},{"type":"TextQuoteSelector","exact":"POP3 is an extremely simple mail access protocol","prefix":" the recipient’s user agent.POP3","suffix":". It is defined in [RFC 1939], w"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==POP3 is an extremely simple mail access protocol== *
+>%%LINK%%[[#^xdr35sf1ay|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^xdr35sf1ay
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:17:23.835Z","updated":"2023-05-11T14:17:23.835Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":329896,"end":329972},{"type":"TextQuoteSelector","exact":"POP3 progresses through three phases: authorization, transaction, and update","prefix":" the TCPconnection established, ","suffix":".During the first phase, authori"}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==POP3 progresses through three phases: authorization, transaction, and update== *
+>%%LINK%%[[#^v5e0kfhdkqc|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^v5e0kfhdkqc
+
+
+>%%
+>```annotation-json
+>{"created":"2023-05-11T14:17:37.916Z","updated":"2023-05-11T14:17:37.916Z","document":{"title":"Computer Networking: A Top-Down Approach, 7th Edition","link":[{"href":"urn:x-pdf:8ab23c2355d202449f37ee1756d29912"},{"href":"vault:/notes/documents/computer-networks.pdf"}],"documentFingerprint":"8ab23c2355d202449f37ee1756d29912"},"uri":"vault:/notes/documents/computer-networks.pdf","target":[{"source":"vault:/notes/documents/computer-networks.pdf","selector":[{"type":"TextPositionSelector","start":330100,"end":330393},{"type":"TextQuoteSelector","exact":"uring the second phase, transaction, the user agent retrieves messages; alsoduring this phase, the user agent can mark messages for deletion, remove deletion marks, and obtainmail statistics. The third phase, update, occurs after the client has issued the  quit command, endingthe POP3 session","prefix":"lear) toauthenticate the user. D","suffix":"; at this time, the mail server "}]}]}
+>```
+>%%
+>*%%HIGHLIGHT%% ==uring the second phase, transaction, the user agent retrieves messages; alsoduring this phase, the user agent can mark messages for deletion, remove deletion marks, and obtainmail statistics. The third phase, update, occurs after the client has issued the  quit command, endingthe POP3 session== *
+>%%LINK%%[[#^46qv6o9zvcr|show annotation]]
+>%%COMMENT%%
+>
+>%%TAGS%%
+>
+^46qv6o9zvcr

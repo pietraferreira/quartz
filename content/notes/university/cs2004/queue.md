@@ -1,14 +1,8 @@
 ---
 title:  "Queue"
 tags:
-  - cs-concept
-  - lists
-programming-languagues:
-module:
-  - cs2004
-term:
-  - first
-last-edited:
+  - cs-concept/lists
+  - university/cs2004 
 created: 2022-10-24
 ---
 # Queue

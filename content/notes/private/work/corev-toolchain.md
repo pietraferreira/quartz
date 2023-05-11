@@ -1,9 +1,9 @@
 ---
 title:  "CORE-V Toolchain"
 tags:
-  - corev
-  - riscv
   - work
+  - work/riscv
+  - work/corev
 programming-languagues:
 created: 2022-06-05
 ---

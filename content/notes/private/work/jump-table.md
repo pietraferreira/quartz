@@ -2,8 +2,8 @@
 title:  "Jump Table"
 tags:
   - work
-  - relocations
-  - linker
+  - cs-concept/relocations
+  - cs-concept/linker
 programming-languagues:
 created: 2022-08-04
 ---

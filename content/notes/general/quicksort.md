@@ -2,12 +2,8 @@
 title:  "Quicksort"
 tags:
   - cs-concept
-  - engineer-training
-programming-languagues:
-  - c
+  - work/engineer-training
 created: 2022-06-05
----
-# Quicksort
 ---
 It picks a **midpoint** (approximate the median) and partition values, into those less than the **midpoint** (left) and greater (right).
 
