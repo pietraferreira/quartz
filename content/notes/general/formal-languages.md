@@ -131,5 +131,5 @@ We can also have **inherited attributes**, where values of attributes on the RHS
 **L-attributed** grammars have inherited attributes in which all inherited attributes are only functions of symbols to their left in the production. They can be evaluated by left-to-right depth first traversal of the parse tree.
 
 ## See Also
-- [Compilers](notes/general/compilers.md)
-- [Trees](notes/general/trees.md)
+- [Compilers](notes/private/work/compilers.md)
+- [Trees](notes/university/cs2004/trees.md)

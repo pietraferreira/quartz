@@ -13,7 +13,6 @@ title:  <%* tR += "\"" + result + "\"" %>
 tags:
   - university
 <% tp.file.cursor(1) %>
-last-edited:
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 ---

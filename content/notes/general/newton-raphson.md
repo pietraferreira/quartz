@@ -36,4 +36,4 @@ Second order convergent, so $O(log\ r)$.
 
 ---
 ## See Also
-- [](notes/general/algorithms-and-data-structure.md#Mathematical%20Algorithms%7CMathematical%20Algorithms)
+- [](notes/university/cs2004/algorithms-and-data-structure.md#Mathematical%20Algorithms|Mathematical%20Algorithms)

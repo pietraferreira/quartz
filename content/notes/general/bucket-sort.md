@@ -2,7 +2,7 @@
 title:  "Bucket Sort"
 tags:
   - cs-concept
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-06
 ---
@@ -16,9 +16,9 @@ For example:
 - Integers (buckets on digits), a.k.a. [_radix_ sort](https://en.wikipedia.org/wiki/Radix_sort).
 - Words (buckets on letters).
 
-The [](notes/general/compiler-optimisation.md#Performance%7Cperformance) for bucket for on a given number of digit is $O_{_(n)}$ but also $O_(d)$ in the number of digits.
+The [](notes/private/work/compiler-optimisation.md#Performance|performance) for bucket for on a given number of digit is $O_{_(n)}$ but also $O_(d)$ in the number of digits.
 
-It is [](notes/general/sorting.md#Stability%7Cstable).
+It is [](notes/university/cs2004/sorting.md#Stability|stable).
 
 ## Example
 ```bash

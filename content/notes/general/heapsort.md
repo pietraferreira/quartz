@@ -9,14 +9,14 @@ created: 2022-06-06
 ---
 # Heapsort
 ---
-Uses [binary heap trees](notes/general/binary-heap.md) to [sort](notes/general/sorting.md) (I think!).
+Uses [binary heap trees](notes/general/binary-heap.md) to [sort](notes/university/cs2004/sorting.md) (I think!).
 
-It has average [](notes/general/compiler-optimisation.md#Performance%7Cperformance): $O_{n\ log\ n}$
+It has average [](notes/private/work/compiler-optimisation.md#Performance|performance): $O_{n\ log\ n}$
 Worst case performance: $O_{n\ log\ n}$
 
-- Refer to [big o notation](notes/general/big-o-notation.md).
+- Refer to [big o notation](notes/university/cs2004/big-o-notation.md).
 
-It is not [](notes/general/sorting.md#Stability%7Cstable).
+It is not [](notes/university/cs2004/sorting.md#Stability|stable).
 
 Valuable data representation for anything where you need to quickly access the largest (smallest) element.    
 - e. g.:  time ordered queue, with the next item at the root.

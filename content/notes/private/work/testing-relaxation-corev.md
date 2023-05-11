@@ -1,11 +1,8 @@
 ---
 title: "Testing Relaxation - COREV" 
 tags:
-  - daily
-  - relocations
-  - corev
-  - relaxation
   - work
+  - work/corev
 programming-languagues:
 created: 2020-09-07
 ---

@@ -1,8 +1,7 @@
 ---
 title: "Syntax Directed Translation"
 tags:
-  - cs-concept
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-16
 ---
