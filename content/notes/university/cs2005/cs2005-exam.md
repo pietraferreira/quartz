@@ -68,23 +68,6 @@ created: 2023-05-03
 
 2. Define Multiplexing and Demultiplexing in the Transport Layer. Discuss how Transport Layer segments are sent and received in connectionless and connection-oriented protocols.
 
-### Networks revision topics
-- Internet components & services (hosts, protocols, RFCs, IETF, ...)  
-- Protocol layers (OSI, TCP/IP)  
-- Main principles of network applications (client-server, P2P, message exchange, IP addresses, sockets, port numbers, data integrity, throughput, ...)  
-- Web services (HTTP, messages, request, response, headers, ...)
-- Electronic mail over the Internet (user agent, mail server, SMTP, POP3, IMAP, HTTP, ...)  
-- How processes communicate (messages, sockets, port numbers, IP addresses, ...)  
-- Transport services (mux/demux, reliable data transfer, flow control, congestion control, ...)  
-- TCP, UDP
-- Segment structure (port #, seq, ack numbers, receive window, ...)  
-- Forwarding/routing  
-- Routing algorithms  
-- Router components  
-- IPv4 & IPv6 datagram  
-- IPv4 addressing  
-- Fragmentation / reassembly
-
 ### Answers:
 **Discuss how two processes communicate over a network. Include in your answer the role of Sockets, Ports, IP Addresses and what is required from Transport Services available to Applications.**
 
@@ -108,6 +91,23 @@ In connectionless protocols, such as UDP (User Datagram Protocol), Transport Lay
 
 In connection-oriented protocols, such as TCP (Transmission Control Protocol), a reliable and ordered connection is established between the sender and receiver before data transmission. Transport Layer segments are sent over this established connection, ensuring reliable delivery, flow control, and congestion control. The segments are received, reassembled in the correct order, and delivered to the receiving process.
 
+### Networks revision topics
+- Internet components & services (hosts, protocols, RFCs, IETF, ...)  
+- Protocol layers (OSI, TCP/IP)  
+- Main principles of network applications (client-server, P2P, message exchange, IP addresses, sockets, port numbers, data integrity, throughput, ...)  
+- Web services (HTTP, messages, request, response, headers, ...)
+- Electronic mail over the Internet (user agent, mail server, SMTP, POP3, IMAP, HTTP, ...)  
+- How processes communicate (messages, sockets, port numbers, IP addresses, ...)  
+- Transport services (mux/demux, reliable data transfer, flow control, congestion control, ...)  
+- TCP, UDP
+- Segment structure (port #, seq, ack numbers, receive window, ...)  
+- Forwarding/routing  
+- Routing algorithms  
+- Router components  
+- IPv4 & IPv6 datagram  
+- IPv4 addressing  
+- Fragmentation / reassembly
+
 ## Question 3
 ---
 - Short essay.
@@ -123,24 +123,6 @@ In connection-oriented protocols, such as TCP (Transmission Control Protocol), a
 1. What are system programs? What is their purpose and how are they different from application programmes. Discuss FIVE categories of system programs.  
 
 2. What are the main states of a Java Thread? Discuss the lifecycle of a Java Thread and how it shares run time with other Threads.
-
-### Operating Systems revision topics  
-- Operating systems services  
-- Operating systems interfaces (users, programs)  
-- System calls  
-- System programs  
-- What is a process (structure, PCB, ...)?  
-- Process states and lifecycle  
-- Process scheduling (schedulers, queues, ...)  
-- Concurrency / parallelism  
-- What is a thread?  
-- Threads states and lifecycle (in Java)  
-- Critical section problem  
-- Critical section problem solution requirements  
-- Bounded buffer (producer-consumer) problem  
-- Race condition  
-- Mutex locks, semaphores, monitors  
-- Deadlock / starvation
 
 ### Answer:
 
@@ -196,6 +178,24 @@ Threads can interact and share resources through shared variables or objects. Ho
 
 In summary, the lifecycle of a Java thread includes creation, runnable, running, blocked/waiting, and termination stages. Threads share runtime by being scheduled by the operating system's thread scheduler. They can interact and share resources, but care must be taken to ensure thread safety using synchronization mechanisms.
 
+### Operating Systems revision topics  
+- Operating systems services  
+- Operating systems interfaces (users, programs)  
+- System calls  
+- System programs  
+- What is a process (structure, PCB, ...)?  
+- Process states and lifecycle  
+- Process scheduling (schedulers, queues, ...)  
+- Concurrency / parallelism  
+- What is a thread?  
+- Threads states and lifecycle (in Java)  
+- Critical section problem  
+- Critical section problem solution requirements  
+- Bounded buffer (producer-consumer) problem  
+- Race condition  
+- Mutex locks, semaphores, monitors  
+- Deadlock / starvation
+
 ## Question 4
 ---
 - Short essay.
@@ -208,17 +208,6 @@ In summary, the lifecycle of a Java thread includes creation, runnable, running,
 1. Discuss THREE types of Program Threats. Give an example for each one.  
 
 2. What are accidental or malicious security violations. Discuss FOUR types and THREE levels at which security measures could be taken.
-
-### Security revision topics  
-- Security violations  
-- Security measures  
-- Program threats and examples  
-- System and network threats and examples  
-- Cryptography terms  
-- Encryption  
-- Encryption algorithms essential property  
-- Symmetric encryption and example algorithms  
-- Asymmetric encryption and example algorithms
 
 ### Answers:
 
@@ -251,6 +240,17 @@ Security measures can be implemented at various levels:
 3. **Host Level**: Security measures at the host level focus on securing individual computer systems or servers. This involves employing antivirus software, implementing strong authentication mechanisms, and keeping the software and operating systems up to date.
 
 In conclusion, accidental or malicious security violations encompass various threats and actions that compromise the security of computer systems. Examples include unauthorised access, data breaches, DoS attacks, and information theft. Security measures can be implemented at the physical, network, and host levels to mitigate these risks.
+
+### Security revision topics  
+- Security violations  
+- Security measures  
+- Program threats and examples  
+- System and network threats and examples  
+- Cryptography terms  
+- Encryption  
+- Encryption algorithms essential property  
+- Symmetric encryption and example algorithms  
+- Asymmetric encryption and example algorithms
 
 ---
 ## Textbook References:
