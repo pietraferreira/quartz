@@ -19,4 +19,4 @@ Main hub for all the different note categories :)
 - [Hub](notes/general/tasks/task-hub.md)
 
 ## Help
-[Hub](notes/general/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
+- [Hub](notes/general/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
