@@ -10,10 +10,6 @@ created: 2023-05-03
 - 4 questions.
 - An answer should be around 500 to 800 words.
 
-## Study Plan (by ChatGPT)
----
-- [Computer Networks (PDF)](notes/university/cs2005/annotation-computer-networks.md)
-
 ## Question 1
 ---
 - Questions 1 is a short answer about anything.
