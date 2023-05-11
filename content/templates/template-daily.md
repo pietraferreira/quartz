@@ -11,7 +11,6 @@
 title:  <%* tR += "\"" + result + "\"" %>
 tags:
   - daily
-programming-languagues:
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 # <%* tR += result %>

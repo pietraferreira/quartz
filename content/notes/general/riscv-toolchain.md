@@ -12,7 +12,7 @@ There are two RISC-V toolchains that are popularly used:
 1.  The GNU RISC-V toolchain
 2.  The LLVM RISC-V toolchain
 
-Both toolchains provide a state-of-the-art optimising [compiler](notes/general/compilers.md), assembler, linker, and various other tools to build applications that run on RISC-V machines.
+Both toolchains provide a state-of-the-art optimising [compiler](notes/private/work/compilers.md), assembler, linker, and various other tools to build applications that run on RISC-V machines.
 
 ## Where to download the toolchains and simulator
 The official [RISC-V GitHub repository](https://github.com/riscv-collab/riscv-gcc) provides the source code for the `riscv-gnu` toolchain, and the prebuilt toolchain can be downloaded from [here](https://github.com/riscv-software-src/riscv-gnu-toolchain). 
@@ -26,13 +26,13 @@ The RISC-V simulator can be downloaded from the official RISC-V GitHub repositor
 ## Building Application with the Toolchain
 In order to build a RISC-V application, using a [cross-compiler](notes/general/cross-compilation.md) toolchain is the same as any other cross-compiler-based development system. Two things are required:
 
--   The [compiler toolchain](notes/general/compiler-toolchains.md)
--   [sysroot](notes/general/sysroot.md)
+-   The [compiler toolchain](notes/private/work/compiler-toolchains.md)
+-   [sysroot](notes/private/work/sysroot.md)
 
 We have described the compiler toolchain and sysroot in the first chapter. Before learning how to build applications with the RISC-V toolchain, we’d like to introduce an interesting naming convention that has been used for cross-compilers.
 
 ### Compiler Naming Convention
-When you download the GCC toolchain, you'll find a `riscv64-unknown-elf-gcc` binary in the `bin` directory. This is the same GCC [compiler](notes/general/compilers.md) with inbuilt information of sysroot and platform. It is a convention to name [cross-compilers](notes/general/cross-compilation.md) that way. 
+When you download the GCC toolchain, you'll find a `riscv64-unknown-elf-gcc` binary in the `bin` directory. This is the same GCC [compiler](notes/private/work/compilers.md) with inbuilt information of sysroot and platform. It is a convention to name [cross-compilers](notes/general/cross-compilation.md) that way. 
 
 The naming is typically using the `arch-vendor-os-abi` format. So, `riscv64-unknown-elf-gcc` means that this is a [cross-compiler](notes/general/cross-compilation.md) for RISC-V 64 bit, and tit will generate an `elf` binary, which can run on Linux machines for example. An excellent reference on naming convention can be found [here](http://web.eecs.umich.edu/~prabal/teaching/eecs373-f12/notes/notes-toolchain.pdf). In cases where a compiler's name doesn't have the target triplet, the `-dumpmachine` flag can be used to get that:
 
@@ -50,7 +50,7 @@ $ riscv64-unknown-elf-gcc -O2 hello.c -mabi=lp64d -march=rv64ifd
 
 The `-march` flag is used to specify the target sub-architecture for which the assembly will be generated. The `-mabi` flag is used to specify data models. For more details on data models, refer to [](https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models) section of 64-bit computing in Wikipedia.
 
-With the [llvm toolchain](notes/general/llvm.md), the binary can be built similarly. Assuming [sysroot](notes/general/sysroot.md) is in the `riscv64-unknown-elf` directory:
+With the [llvm toolchain](notes/general/llvm.md), the binary can be built similarly. Assuming [sysroot](notes/private/work/sysroot.md) is in the `riscv64-unknown-elf` directory:
 
 ```bash
 $ clang test.c -c --sysroot riscv64-unknown-elf -target  
@@ -97,7 +97,7 @@ make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- defconfig
 make ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu- -j $(nproc)
 ```
 
-Make sure to have the prefix of the [cross-compiler](notes/general/cross-compilation.md) match from your toolchain. In the above example, the GCC [compiler](notes/general/compilers.md) is `riscv64-unknown-linux-gnu-gcc` so the `CROSS_COMPILE` flag is `riscv64-unknown-linux-gnu-`
+Make sure to have the prefix of the [cross-compiler](notes/general/cross-compilation.md) match from your toolchain. In the above example, the GCC [compiler](notes/private/work/compilers.md) is `riscv64-unknown-linux-gnu-gcc` so the `CROSS_COMPILE` flag is `riscv64-unknown-linux-gnu-`
 
 ### Build the busybox:
 

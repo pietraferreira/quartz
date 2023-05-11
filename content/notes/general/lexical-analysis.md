@@ -39,7 +39,7 @@ Typical tokens:
 | VAR      | the letters V, A, R           | VAR               |
 
 ## Symbol Tables
-They are used throughout the [compiler](notes/general/compilers.md) to build information about symbols:
+They are used throughout the [compiler](notes/private/work/compilers.md) to build information about symbols:
 
 ```c
 struct symbtab

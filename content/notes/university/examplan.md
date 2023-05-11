@@ -6,14 +6,14 @@ last-edited:
 created: 2023-04-27
 ---
 ---
-- [Exam timetable](https://intra.brunel.ac.uk/Exam.aspx):
+# [Exam timetable](https://intra.brunel.ac.uk/Exam.aspx):
 
 ![](notes/images/Screenshot%202023-04-27%20at%2009.06.27.png)
 
 ---
-- [CS2003 Usability Engineering (04/05)](notes/university/cs2003-exam.md)
+## [CS2003 Usability Engineering (04/05)](notes/university/cs2003/cs2003-exam.md)
 ---
-# Software Development and Management (10/05)
+## Software Development and Management (10/05)
 
 - [Moodle environment](http://moodle.uml.ac.at/moodle/login/index.php).
 - [Lectures](https://brightspace.brunel.ac.uk/d2l/common/dialogs/quickLink/quickLink.d2l?ou=28488&type=lti&rcode=339B4F8A-E47B-4026-A41B-4BD5BFF27ADC-13330&srcou=6606&launchFramed=1&framedName=Panopto).
@@ -27,4 +27,4 @@ Best way to revise:
 50 multiple choice questions, with only one correct answer.
 
 ---
-- [CS2005 Networks and Operating Systems (12/05)](notes/university/cs2005-exam.md)
+## [CS2005 Networks and Operating Systems (12/05)](notes/university/cs2005/cs2005-exam.md)

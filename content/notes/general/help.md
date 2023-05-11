@@ -29,7 +29,7 @@ Various cheatsheets of different application I use and all the help I can get co
 - [](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_redirection)
 
 ## Other
-- [Commands Dump](notes/general/useful-commands-dump.md)
+- [Commands Dump](notes/private/work/useful-commands-dump.md)
 - [Linux Fundamentals](notes/general/linux-fundamentals.md)
 - [Dotfiles Management](notes/general/dotfile-management.md)
 - [Courses Dump](notes/general/courses-dump.md)

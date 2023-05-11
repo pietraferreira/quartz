@@ -93,6 +93,6 @@ Anything that cannot be resolved in the first pass. It is either resolved at the
 - [Linker Relaxation](notes/general/linker-relaxation.md)
 - [Relocations](notes/general/relocations.md)
 - [RISCV Toolchain](notes/general/riscv-toolchain.md)
-- [Compiler Toolchains](notes/general/compiler-toolchains.md)
+- [Compiler Toolchains](notes/private/work/compiler-toolchains.md)
 - [GCC](notes/general/gcc.md)
 - [Fix-ups](notes/general/fixups.md)

@@ -1,10 +1,7 @@
 ---
 title:  "Relocations - COREV"
 tags:
-  - daily
-  - relocations
   - work
-  - corev
 programming-languagues:
 created: 2020-10-02
 ---

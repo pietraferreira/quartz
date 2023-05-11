@@ -1,9 +1,7 @@
 ---
 title:  "Stack"
 tags:
-  - cs-concept
-  - engineer-training
-  - lists
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-05
 ---
