@@ -1,7 +1,7 @@
 ---
 title: "State Machine Diagrams - Part 1"
 tags:
-  - uml
+  - cs-concept/uml
   - university/cs2002
 programming-languagues:
 last-edited: 2023-05-11
@@ -190,4 +190,4 @@ It is a pseudo-state and is used to model alternative transitions.
 ![Screenshot 2022-11-24 at 11.06.15](notes/images/Screenshot%202022-11-24%20at%2011.06.15.png)
 
 ---
-### Part 2 [here](notes/university/cs2003/state-machine-diagrams-part2.md).
+### Part 2 [here](notes/university/cs2002/state-machine-diagrams-part2.md).

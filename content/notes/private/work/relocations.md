@@ -1,11 +1,10 @@
 ---
 title: "Relocations"
 tags:
-  - relocations
   - help
-  - work
-  - riscv
-  - linker
+  - cs-concept/relocations
+  - cs-concept/linker
+  - work/riscv
 programming-languagues:
 created: 2022-08-02
 ---
@@ -41,7 +40,7 @@ Generic object files are the ones used for static linking, they are only relevan
 
 Some of the benefits are that there is no need to rely on external dependencies. On the other hand, they can become pretty large as they need all of the dependencies in the binary.
 
-Shared objects support being linked on runtime, and they may be shared across different processes. However, relocations of dynamic dependencies have to be done at runtime -> [**dynamic linking**](notes/general/linker.md).
+Shared objects support being linked on runtime, and they may be shared across different processes. However, relocations of dynamic dependencies have to be done at runtime -> [**dynamic linking**](notes/private/work/linker.md).
 
 They happen at runtime because the symbolic definitions do not exist within the main binary's context, but within external shared objects. These dynamic references do not get populated until the correspondent external dependencies are loaded in memory.
 
@@ -106,7 +105,7 @@ gas/config/tc-riscv.c # -> where the magic happens
 
 If we use the CORE-V relocations as an example, we have `BFD_RELOC_RISCV_CVPCREL_UI12`, which is a 12-bit relocation for 12-bit immediates found in `cv.starti` and `cv.endi`. Its relocation number is 224.
 
-You can find the [**howto** table](notes/general/howto-table.md) in `bfd/elfxx-riscv.c` which contains entries for each relocation. The first field uses the table from `include/elf/riscv.h`.
+You can find the [**howto** table](notes/private/work/howto-table.md) in `bfd/elfxx-riscv.c` which contains entries for each relocation. The first field uses the table from `include/elf/riscv.h`.
 
 #### Howto Table (notes on how CORE-V relocation was implemented)
 **Step 1:** Check that symbol address exists via _fixP→fx_addsy_. If false the case will just break and not go through the following steps.
@@ -155,9 +154,9 @@ bfd_putl32 (bfd_vma data, void *p) {
 - https://www.sifive.com/blog/all-aboard-part-2-relocations
 
 ## Related Notes
-- [Linker](notes/general/linker.md)
-- [Howto Table](notes/general/howto-table.md)
-- [PLT and GOT](notes/general/plt-and-got.md)
+- [Linker](notes/private/work/linker.md)
+- [Howto Table](notes/private/work/howto-table.md)
+- [PLT and GOT](notes/private/work/plt-and-got.md)
 - [Linker Relaxation](notes/general/linker-relaxation.md)
-- [Jump Table](notes/general/jump-table.md)
-- [Assembler](notes/general/riscv-assembler-reference.md)
+- [Jump Table](notes/private/work/jump-table.md)
+- [Assembler](notes/private/work/riscv-assembler-reference.md)

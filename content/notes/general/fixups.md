@@ -1,8 +1,7 @@
 ---
 title: "Fixups"
 tags:
-  - relocations
-  - cs-concept
+  - cs-concept/relocations
 ---
 # Fix-ups
 ---
@@ -11,6 +10,6 @@ unknown. During instruction encoding, if some information is unknown (such as a 
 to 0 and a fix-up is emitted which contains information on how to rewrite the
 value when information is known.
 
-The assembler goes through a stage of relaxation, applying fix-ups and modifying instruction values when they become known to the system. Once complete, any remaining fix-ups are converted to [relocations](notes/general/relocations.md) and stored in the object file.
+The assembler goes through a stage of relaxation, applying fix-ups and modifying instruction values when they become known to the system. Once complete, any remaining fix-ups are converted to [relocations](notes/private/work/relocations.md) and stored in the object file.
 
 Source: Embecosm

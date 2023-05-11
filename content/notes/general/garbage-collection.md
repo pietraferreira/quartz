@@ -2,9 +2,7 @@
 title: "Garbage Collection"
 tags:
   - cs-concept
-  - engineer-training
-programming-languagues:
-  - c
+  - work/engineer-training
 created: 2022-06-06
 ---
 # Garbage Collection

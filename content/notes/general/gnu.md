@@ -1,13 +1,10 @@
 ---
 title: "GNU"
 tags:
-  - engineer-training
-  - compilers
-  - relocations
+  - work/engineer-training
+  - cs-concept/compilers
 programming-languagues:
 created: 2022-07-11
----
-# GNU
 ---
 Extensive collection of free software which can be used as an operating system or in parts with other operating systems.
 
@@ -91,7 +88,7 @@ Anything that cannot be resolved in the first pass. It is either resolved at the
 ## Resources
 - Binutils Porting Guide ([here](https://www.sourceware.org/binutils/binutils-porting-guide.txt))
 - [Linker Relaxation](notes/general/linker-relaxation.md)
-- [Relocations](notes/general/relocations.md)
+- [Relocations](notes/private/work/relocations.md)
 - [RISCV Toolchain](notes/general/riscv-toolchain.md)
 - [Compiler Toolchains](notes/private/work/compiler-toolchains.md)
 - [GCC](notes/general/gcc.md)

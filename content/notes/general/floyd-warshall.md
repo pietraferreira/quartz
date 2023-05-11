@@ -2,8 +2,7 @@
 title:  "Floyd-Warshall"
 tags:
   - cs-concept
-  - algorithm
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-06
 ---

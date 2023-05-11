@@ -1,7 +1,7 @@
 ---
 title: "State Machine Diagrams - Part 2"
 tags:
-  - uml
+  - cs-concept/uml
   - university/cs2002
 programming-languagues:
 last-edited:

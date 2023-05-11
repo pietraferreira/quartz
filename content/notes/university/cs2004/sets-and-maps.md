@@ -1,13 +1,8 @@
 ---
 title: "Sets and Maps"
 tags:
-  - engineer-training
-  - university/cs2004 
+  - work/engineer-training 
 programming_languages:
-  - c
-  - cpp
----
-# Sets and Maps
 ---
 **Sets** are a collection of objects:
   - They might be ordered or unordered.

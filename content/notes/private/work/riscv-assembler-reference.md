@@ -1,8 +1,9 @@
 ---
 title: "RISC-V Assembler Reference"
 tags:
-  - riscv
   - help
+  - work
+  - work/riscv
 programming-languagues:
 created: 2022-08-09
 ---
@@ -549,3 +550,33 @@ There RISC-V tools for building executables which you can run in simulated envir
 -   [RISC-V ISA Specification](http://riscv.org/specifications/)
 -   [RISC-V GNU Toolchain](https://github.com/riscv/riscv-gnu-toolchain/)
 - [RISC-V Assembler Reference - Michael J Clark](https://michaeljclark.github.io/asm.html)
+> [!failure]- Failure 
+>   Error: There is another generation process
+>   
+>   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
+>     plugin:obsidian-textgenerator-plugin:56949:31
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>   - plugin:obsidian-textgenerator-plugin:62 __async
+>     plugin:obsidian-textgenerator-plugin:62:10
+>   
+>   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
+>     plugin:obsidian-textgenerator-plugin:56935:12
+>   
+>   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
+>     plugin:obsidian-textgenerator-plugin:58440:52
+>   
+>   - Generator.next
+>   
+>   - plugin:obsidian-textgenerator-plugin:78 eval
+>     plugin:obsidian-textgenerator-plugin:78:61
+>   
+>   - new Promise
+>   
+>  

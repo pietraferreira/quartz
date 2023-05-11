@@ -2,11 +2,8 @@
 title: "Parse Trees"
 tags:
   - cs-concept
-  - engineer-training
-programming-languagues:
+  - work/engineer-training
 created: 2022-06-16
----
-# Parse Trees
 ---
 ![parse-tree-example](notes/images/parse-tree-example.png)
 

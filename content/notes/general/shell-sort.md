@@ -1,14 +1,9 @@
 ---
 title:  "Shell Sort"
 tags:
-  - cs-concept
-  - engineer-training
-  - sorting
-programming-languagues:
-  - c
+  - work/engineer-training
+  - cs-concept/sorting
 created: 2022-06-05
----
-# Shell Sort
 ---
 Shell sort adds one more loop outside [bubble sort](notes/general/bubble-sort.md).
 

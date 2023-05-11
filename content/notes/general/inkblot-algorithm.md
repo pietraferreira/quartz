@@ -2,8 +2,7 @@
 title: "Inkblot Algorithm"
 tags:
   - cs-concept
-  - algorithm
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
   - c
 created: 2022-06-06

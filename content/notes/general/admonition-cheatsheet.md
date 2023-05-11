@@ -2,7 +2,6 @@
 title: "Admonition Cheatsheet"
 tags:
   - help
-  - community-plugin
 ---
 # Admonition Cheatsheet
 ---

@@ -1,10 +1,7 @@
 ---
 title:  "How to add an instruction to the GNU assembler"
 tags:
-  - work
-  - engineer-training
-  - relocations
-  - relocation-prototype
+  - work/engineer-training
   - help
 programming-languagues:
 created: 2022-07-20

@@ -2,7 +2,6 @@
 title: "Exhaustive Search"
 tags:
   - university/cs2004
-  - engineer-training 
 programming-languagues:
 module:
   - cs2004

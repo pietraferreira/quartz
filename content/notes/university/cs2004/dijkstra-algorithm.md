@@ -1,7 +1,6 @@
 ---
 title: "Dijkstra Algorithm"
 tags:
-  - engineer-training
   - university/cs2004 
 programming-languagues:
 created: 2022-06-06

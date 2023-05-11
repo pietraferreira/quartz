@@ -7,7 +7,7 @@ created: 2022-06-05
 ---
 ---
 ## Topics
-- [Sets and Maps](notes/general/sets-and-maps.md)
+- [Sets and Maps](notes/university/cs2004/sets-and-maps.md)
 - [Vectors and Arrays](notes/general/vectors-arrays.md)
 - [Big O Notation](notes/university/cs2004/big-o-notation.md)
 - [Lists](notes/general/lists.md)

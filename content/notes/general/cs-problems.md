@@ -1,7 +1,7 @@
 ---
 title:  "CS Problems"
 tags:
-  - engineer-training
+  - work/engineer-training
   - cs-concept
 programming-languagues:
 created: 2022-06-06

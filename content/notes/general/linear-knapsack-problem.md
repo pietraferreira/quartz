@@ -1,8 +1,7 @@
 ---
 title: "Linear Knapsack Problem"
 tags:
-  - problem
-  - engineer-training
+  - work/engineer-training
 programming-languagues:
 created: 2022-06-06
 ---

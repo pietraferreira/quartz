@@ -1,7 +1,6 @@
 ---
 title: "Blockchain"
 tags:
-  - blockchain
   - help
 programming-languagues:
 created: 2022-07-01

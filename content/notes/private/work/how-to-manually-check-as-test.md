@@ -2,8 +2,8 @@
 title: "How to Manually Check a Test"
 tags:
   - work
+  - work/cobra
   - help
-  - cobra
 programming-languagues:
   - assembly
 created: 2022-07-27

@@ -66,7 +66,7 @@ Reduced Instruction Set Computers ([RISC](https://en.wikipedia.org/wiki/Reduced_
 Some popular RISC architectures are: the SPARC line, DEC's Alpha line, Intel's i860 and i960 processors and ARM processors. **RISC-V is the latest iteration of it**.
 
 ### RISC-V Origins: UC Berkeley Architecture Research
-The RISC-V instruction set was started by Prof. Krste Asanovic and graduate students Yunsup Lee and Andrew Waterman as part of the Parallel Computing Laboratory ([Par Lab](notes/general/parlab.md)) at UC Berkeley, of which Prof. David Patterson was Director.
+The RISC-V instruction set was started by Prof. Krste Asanovic and graduate students Yunsup Lee and Andrew Waterman as part of the Parallel Computing Laboratory ([Par Lab](notes/private/work/parlab.md)) at UC Berkeley, of which Prof. David Patterson was Director.
 
 The following report is the **first publication** that describes the RISC-V instruction set: [_The RISC-V Instruction Set Manual_](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-62.pdf).
 

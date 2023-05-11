@@ -1,13 +1,9 @@
 ---
 title: "Linker Relaxation"
 tags:
-  - cs-concept
-  - compilers
-  - toolchain
+  - cs-concept/compilers
 programming-languagues:
 created: 2022-07-03
----
-# Linker Relaxation
 ---
 How the linker optimises instructions for the compiler by having a second relaxation.
 

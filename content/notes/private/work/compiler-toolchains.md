@@ -7,7 +7,7 @@ created: 2022-06-05
 ---
 - [GNU](notes/general/gnu.md)
 - [RISC-V Toolchain](notes/general/riscv-toolchain.md)
-- [CORE-V Toolchain](notes/general/corev-toolchain.md)
+- [CORE-V Toolchain](notes/private/work/corev-toolchain.md)
 
 ## What is a Compiler Toolchain?
 A compiler toolchain is a set of tools, supporting libraries, and header files that help build a program from source to an executable that can run on a machine.
@@ -99,7 +99,7 @@ Note that a compiler toolchain is necessary to build executables, but it is not 
 ## The Compiler Toolchain
 Apart from sysroot, a compiler toolchain contains various other binaries to help in the compilation process. In some cases, the compiler itself comes as a part of the toolchain. The following is a list of items packaged with the toolchain.
 
-- binutils ([assembler](notes/general/riscv-assembler-reference.md), [linker](notes/general/linker.md), etc.)  
+- binutils ([assembler](notes/private/work/riscv-assembler-reference.md), [linker](notes/private/work/linker.md), etc.)  
 - Various compilers ([gcc](notes/general/gcc.md), g++, etc.)  
 - C-Library (glibc, uClibc, etc.)  
 - Runtime support libraries (crtbegin.o, crtend.o, etc.)  
