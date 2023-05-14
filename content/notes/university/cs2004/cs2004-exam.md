@@ -19,6 +19,8 @@ created: 2023-05-14
     3. Drop the lower-order terms.
     4. Remove all constant factors.
 
+- **Polynomial time**: when the number of steps is $O(n^k)$ where $k$ is not negative.
+
 ![](notes/images/Screenshot%202023-05-14%20at%2018.45.46.png)
 
 # Counting Primitive Operations
@@ -90,3 +92,12 @@ We have:
 
 Binary search is a $O(log_2(n))$ algorithm, and linear search is $O(n)$. Therefore:
 - Binary search is **faster** on **sorted data**.
+
+# Classes of Algorithms
+---
+- **P problems**: solved in a reasonable amount of time (polynomial time), for example sorting.
+- **NP problems**: difficult to solve in a reasonable amount of time but easy to *verify* the solution, problems involving decision making (non-deterministic).
+    - NP-**hard** problems: very very difficult, difficult to verify in polynomial time.
+    - NP-**complete** problems: hardest problems, verifiable in polynomial time but the complexities are greater. No polynomial-time algorithm is discovered for any NP-complete problems. 
+
+![](notes/images/Screenshot%202023-05-14%20at%2018.48.35.png)
