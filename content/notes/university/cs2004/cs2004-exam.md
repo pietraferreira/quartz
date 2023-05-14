@@ -67,3 +67,14 @@ Output: CurrentMax, the largest value in Arr
 - In line 7, we have **9(m * n)** operations.
 
 Therefore, we have a total of: $T(n)$ = $2 + n + (m * n) + 9(m * n)$ = $10(m * n) + n + 2$ operations.
+
+# Sorting and Searching
+---
+- **Selection Sort ($O(n^2$)**: repeatedly finds the smallest element in the unsorted tail region of a list and moves it to the front.
+
+We have:
+- **Sequential Search**: every element is checked, linear search. List does **not** need to be sorted.
+- **Interval Search**: binary search, divide and conquer. List **must** be sorted.
+
+Binary search is a $O(log_2(n))$ algorithm, and linear search is $O(n)$. Therefore:
+- Binary search is **faster** on **sorted data**.
