@@ -21,6 +21,8 @@ created: 2023-05-14
 
 - **Polynomial time**: when the number of steps is $O(n^k)$ where $k$ is not negative.
 
+- **Stacks** are **LIFO** whereas **queues** are **FIFO**.
+
 ![](notes/images/Screenshot%202023-05-14%20at%2018.45.46.png)
 
 # Counting Primitive Operations
@@ -93,11 +95,32 @@ We have:
 Binary search is a $O(log_2(n))$ algorithm, and linear search is $O(n)$. Therefore:
 - Binary search is **faster** on **sorted data**.
 
+## Bubble Sort - O(n)
+---
+```
+Algorithm 1. BubbleSort(x)
+Input: x - a list of n numbers
+Let NoSwaps = False
+While NoSwaps = False
+    Let NoSwaps = True
+    For i = 0 to n - 2
+        If x[i] > x[i+1] then
+            Swap x[i] and x[i+1]
+            Let NoSwaps = False
+        End If
+    End For
+End While
+Output: x - sorted (ascending)
+```
+
 # Classes of Algorithms
 ---
 - **P problems**: solved in a reasonable amount of time (polynomial time), for example sorting.
 - **NP problems**: difficult to solve in a reasonable amount of time but easy to *verify* the solution, problems involving decision making (non-deterministic).
     - NP-**hard** problems: very very difficult, difficult to verify in polynomial time.
-    - NP-**complete** problems: hardest problems, verifiable in polynomial time but the complexities are greater. No polynomial-time algorithm is discovered for any NP-complete problems. 
+    - NP-**complete** problems: hardest problems, verifiable in polynomial time but the complexities are greater. No polynomial-time algorithm is discovered for any NP-complete problems. Examples are: the travelling salesperson problem and finding the shortest common superstring.
+
+- If a polynomial time algorithm is found for **any**  problem in **NP-complete**, then **every** problem in NP can be solved in polynomial time.
 
 ![](notes/images/Screenshot%202023-05-14%20at%2018.48.35.png)
+
