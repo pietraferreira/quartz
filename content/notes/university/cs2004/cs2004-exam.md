@@ -7,8 +7,19 @@ created: 2023-05-14
 ---
 
 - **Run time**: varies with the input and grows with input size (best case, worst case and average case).
-    - $T(n)$: denotes the time an algorithm takes to execute, time versus input size $n$.
-- **Asymptotic Analysis**: high-level description instead of implementation, analysis how time taken increases as input size increases.
+    - $T(n)$: denotes the time an algorithm takes to execute, time versus input size $n$. It is measured by counting the number of primitive operations.
+- **Asymptotic Analysis**: high-level description instead of implementation, analysis how time taken increases as input size increases. It determines the running time in Big-Oh notation.
+    - To perform it:
+        1. We find the worst-case number of primitive operations executed as a function of the input size, $T(n)$.
+        2. We express this function with Big-Oh notation.
+
+- **Big-Oh Runtime Analysis**: 
+    1. Find the input and what **n** represents.
+    2. Calculate the primitive operations of the algorithm in terms of **n**.
+    3. Drop the lower-order terms.
+    4. Remove all constant factors.
+
+![](notes/images/Screenshot%202023-05-14%20at%2018.45.46.png)
 
 # Counting Primitive Operations
 ---
