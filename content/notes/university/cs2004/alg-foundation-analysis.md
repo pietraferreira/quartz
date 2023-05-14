@@ -104,3 +104,6 @@ The most difficult part is getting all of the nest loops correct.
 - Normally **if statements** have 9 primitive operations.
 
 ![Screenshot 2022-09-03 at 22.46.31](notes/images/Screenshot%202022-09-03%20at%2022.46.31.png)
+
+---
+[cs2004-exam](notes/university/cs2004/cs2004-exam.md)

@@ -1,0 +1,69 @@
+---
+title: "CS2004 - Exam"
+tags:
+  - university/exam2023 
+  - university/cs2004
+created: 2023-05-14
+---
+
+- **Run time ($T(n)$)**: varies with the input and grows with input size (best case, worst case and average case).
+- **Asymptotic Analysis**: high-level description instead of implementation, analysis how time taken increases as input size increases.
+
+# Counting Primitive Operations
+---
+```
+for i = 1 to n
+    let a[i] = a[i] + x + y + 10
+end for
+```
+
+
+- In line 1, we have **n** operations, however:
+    - `for i = 1 to n - 1` counts as **n - 1** operations.
+    - `for i = 0 to n - 1` counts as **n** operations.
+
+- In line 2, **a** counts as one operation and **i** counts as one. We have need to make sure to multiply it by the nesting value, in our case **n**. 
+
+Therefore, there are **9n** operations in total.
+
+---
+```
+Algorithm 5. ArrayMax(Arr)
+Input: A 1-D numerical array Arr of size n>0
+Let CurrentMax = a[0]
+For i = 1 to n - 1
+    If a[i] > CurrentMax Then CurrentMax = a[i]
+End for
+Output: CurrentMax, the largest value in Arr
+```
+
+- In line 3, we have **2** operations. We read $a_0$ and write to CurrentMax.
+
+- In line 4, we have **n - 1** operations.
+
+- In line 5, we write to **a** and write to **i**, we read **CurrentMax** and check the comparison (**>**). We write to **CurrentMax** and read **a** and **i** again. So we have a total of **7(n - 1)** operations.
+
+The final total then is: $T(n)$ = $2 + (n - 1) + 7(n - 1)$ = $2 + 8n - 8$ = $8n - 6$ operations.
+
+---
+```
+Algorithm 6. ArrayMax(Arr)
+Input: A 2-D numerical array Arr of size n rows by m columns
+Let CurrentMax = a[0][0]
+For i = 0 to n - 1
+    For j = 0 to m - 1
+        If a[i][j] > CurrentMax Then CurrentMax = a[i][j]
+    End For
+End For
+Output: CurrentMax, the largest value in Arr
+```
+
+- In line 3, we have **2** operations. We read **a** and **CurrentMax**.
+
+- In line 4, we have **n** operations. This happens because for example, if **n** was equal to 5, the loop would iterate from **i = 0 to i = 4**, covering a total of **5** values for i: 0, 1, 2, 3 and 4 (5 operations).
+
+- In line 6, we have **m * n** operations.
+
+- In line 7, we have **9(m * n)** operations.
+
+Therefore, we have a total of: $T(n)$ = $2 + n + (m * n) + 9(m * n)$ = $10(m * n) + n + 2$ operations.
