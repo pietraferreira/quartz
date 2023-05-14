@@ -6,7 +6,8 @@ tags:
 created: 2023-05-14
 ---
 
-- **Run time ($T(n)$)**: varies with the input and grows with input size (best case, worst case and average case).
+- **Run time**: varies with the input and grows with input size (best case, worst case and average case).
+    - $T(n)$: denotes the time an algorithm takes to execute, time versus input size $n$.
 - **Asymptotic Analysis**: high-level description instead of implementation, analysis how time taken increases as input size increases.
 
 # Counting Primitive Operations
