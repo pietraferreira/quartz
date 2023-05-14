@@ -113,6 +113,27 @@ End While
 Output: x - sorted (ascending)
 ```
 
+Worst-case: $O(n^2)$.
+
+## Quick Sort
+---
+![](notes/images/Screenshot%202023-05-14%20at%2018.59.33.png)
+
+```
+Algorithm 2. QuickSort(List, First, Last)
+Input:
+    List, the elements to be put into order
+    First, the index of the first element
+    Last, the index of the last element
+
+If First < Last Then
+    Let Pivot = PivotList(List, First, Last)
+    Call QuickSort(List, First, Pivot-1)
+    Call QuickSort(List, Pivot+1, Last)
+End If
+Output: List in a sorted order
+```
+
 # Classes of Algorithms
 ---
 - **P problems**: solved in a reasonable amount of time (polynomial time), for example sorting.
