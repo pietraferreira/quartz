@@ -144,4 +144,3 @@ Output: List in a sorted order
 - If a polynomial time algorithm is found for **any**  problem in **NP-complete**, then **every** problem in NP can be solved in polynomial time.
 
 ![](notes/images/Screenshot%202023-05-14%20at%2018.48.35.png)
-
