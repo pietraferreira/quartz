@@ -144,3 +144,48 @@ Output: List in a sorted order
 - If a polynomial time algorithm is found for **any**  problem in **NP-complete**, then **every** problem in NP can be solved in polynomial time.
 
 ![](notes/images/Screenshot%202023-05-14%20at%2018.48.35.png)
+
+# Hill Climbing Algorithm
+---
+```
+Algorithm 1. RMHC(ITER)  
+Input: ITER- the number of iterations to run for  
+1) Let S be a random point in the search space,  
+let F be its fitness  
+2) For i = 1 to ITER (number of iterations)  
+3)   Let S’ be a random point close to S,  
+     Let F’ be its fitness  
+4)   If F’ is better than F Then  
+5)     Let S = S’ and Let F = F’  
+6)   End If  
+7) End For  
+Output: S- a solution
+```
+
+```
+1. Initialize the current solution as a random binary string.
+2. Evaluate the fitness of the current solution using the fitness function.
+3. Repeat until a stopping condition is met:
+     a. Generate all neighbors of the current solution by flipping a single bit.
+     b. Evaluate the fitness of each neighbor.
+     c. Select the neighbor with the best fitness value.
+     d. If the best neighbor has a better fitness than the current solution, set it as the new current solution.
+     e. Otherwise, stop and return the current solution as the best solution found.
+ ```
+
+# Holland's GA Algorithm
+---
+```
+Input: The GA parameters: NG, PS, CP, MP and n  
+The Fitness Function  
+1) Generate PS random Chromosomes of length n  
+2) For i = 1 to NG  
+3)   Crossover Population, with chance CP per Chromosome  
+4)   Mutate all the Population, with chance MP per gene  
+5)   Kill off (or fix) all Invalid Chromosomes  
+6)   Survival of Fittest, e.g. Roulette Wheel  
+7) End For  
+Output: The best solution to the problem is the Chromosome  
+in the last generation (the NGth population) which  
+has the best fitness value
+```
