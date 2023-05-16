@@ -189,3 +189,16 @@ Output: The best solution to the problem is the Chromosome
 in the last generation (the NGth population) which  
 has the best fitness value
 ```
+
+# Evolutionary Programming
+---
+```
+Input: Population size, number of generations  
+and Fitness Function  
+1) Create the initial population  
+2) For i = 1 to number of generations  
+3)  Mutate the population  
+4)  Apply Tournament Selection  
+5) End For  
+Output: Return the best individual
+```
