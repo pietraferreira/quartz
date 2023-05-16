@@ -202,3 +202,5 @@ and Fitness Function
 5) End For  
 Output: Return the best individual
 ```
+
+![](notes/images/Screenshot%202023-05-16%20at%2007.29.12.png)
