@@ -228,3 +228,15 @@ Output: Return the best individual
 - A **heuristic** is a technique or rule of thumb used to guide the search process towards more promising or favourable paths. Heuristics provide a practical way to make informed decisions based on available information and reduce the search space, thereby improving the efficiency of search algorithms.
 
 - The key difference between **P and NP** classes is that P represents problems that can be efficiently solved, while NP represents problems for which solutions can be efficiently verified but may not be efficiently found.
+
+Similarities and Differences: **Random Mutation Hill Climbing** (RMHC), **Random Restart Hill Climbing**, and **Simulated Annealing** are all stochastic search algorithms used for optimisation problems. Here are the similarities and differences between these algorithms:
+
+**Similarities**:
+- They all belong to the general class of local search algorithms.
+- They iteratively explore the search space to find better solutions.
+- They can get trapped in local optima if not properly guided.
+
+**Differences**:
+- RMHC focuses on making random mutations to the current solution and accepts the new solution if it is better. It doesn't consider the direction of improvement or probability distributions.
+- Random Restart Hill Climbing periodically restarts the search from a random initial solution to escape local optima. It performs multiple independent runs and keeps the best solution found across all restarts.
+- Simulated Annealing uses a probabilistic approach to accept worse solutions in the early stages of the search. It gradually reduces the acceptance of worse solutions over time, mimicking the annealing process in metallurgy.
