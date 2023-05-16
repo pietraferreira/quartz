@@ -29,6 +29,6 @@ Best way to revise:
 ---
 ## [CS2005 Networks and Operating Systems (12/05)](notes/university/cs2005/cs2005-exam.md)
 ---
-## CS2004 - Algorithms and Their Applications (16/05 and 18/05)
+## [CS2004 - Algorithms and Their Applications (16/05 and 18/05)](notes/university/cs2004/cs2004-exam.md)
 ---
 
