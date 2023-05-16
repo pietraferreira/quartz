@@ -240,3 +240,22 @@ Similarities and Differences: **Random Mutation Hill Climbing** (RMHC), **Random
 - RMHC focuses on making random mutations to the current solution and accepts the new solution if it is better. It doesn't consider the direction of improvement or probability distributions.
 - Random Restart Hill Climbing periodically restarts the search from a random initial solution to escape local optima. It performs multiple independent runs and keeps the best solution found across all restarts.
 - Simulated Annealing uses a probabilistic approach to accept worse solutions in the early stages of the search. It gradually reduces the acceptance of worse solutions over time, mimicking the annealing process in metallurgy.
+
+- The "**No Free Lunch**" (NFL) theorem for heuristic search techniques is a fundamental result in the field of optimisation and machine learning. It states that, on average, no one heuristic search algorithm is universally better than all others across all possible problems.
+
+---
+5.5) The Ant Colony Optimization (ACO) algorithm is a metaheuristic approach inspired by the foraging behavior of ants. It is commonly used to solve combinatorial optimization problems such as the Traveling Salesman Problem (TSP).
+
+- Route Selection: In the ACO algorithm, artificial ants are used to explore the solution space. Each ant builds a solution by iteratively selecting the next city to visit based on certain criteria, such as the amount of pheromone deposited on the edges and the heuristic information. The ants probabilistically choose their next city, with higher probabilities given to cities with higher pheromone levels or shorter distances.
+
+- Pheromone Update: After each ant completes its tour, the pheromone levels on the edges are updated. The amount of pheromone deposited on an edge is typically proportional to the quality of the corresponding solution. Ants that find better solutions deposit more pheromone, while ants that find suboptimal solutions deposit less. This update of pheromone trails represents the collective learning of the ant colony and guides the search towards promising regions of the solution space.
+
+- Pheromone Evaporation: Pheromone trails have a tendency to evaporate over time in the ACO algorithm. This is done to avoid the convergence of the search to suboptimal solutions and promote exploration of new paths. Pheromone evaporation ensures that the influence of outdated or less desirable solutions diminishes over iterations, allowing the ants to focus on better paths.
+
+The combination of route selection, pheromone update, and pheromone evaporation in ACO contributes to an iterative process where the ants explore the search space, deposit pheromone based on the quality of solutions, and gradually converge towards better solutions. The positive feedback mechanism of pheromone reinforcement and the exploration-exploitation balance achieved through pheromone evaporation allow the algorithm to effectively search for high-quality solutions in complex optimization problems like the TSP.
+
+5.6) Swarm Intelligence (SI) is a field that studies the collective behavior of natural and artificial systems composed of many individuals. Two properties of swarm intelligence are:
+
+- Emergence: Swarm intelligence exhibits emergent behavior, which means that complex global patterns or behavior arise from the interactions and local behaviors of individual entities within the swarm. The collective behavior of the swarm is not explicitly designed or controlled by a central authority but emerges from the interactions and local rules followed by the individuals. In the case of ACO, emergent behavior is observed as the colony of artificial ants collectively finds good solutions to the TSP.
+
+- Self-Organization: Swarm intelligence systems exhibit self-organization, which refers to the ability of individuals within the swarm to organize themselves without external coordination or central control. Each individual in the swarm follows simple rules and interacts with its neighbors or environment, leading to self-organized patterns or solutions that adapt to changing conditions. In ACO, the ants self-organize their exploration and exploitation of the solution space through the use of pheromone trails and local heuristics, resulting in the emergence of effective solutions to the TSP.
