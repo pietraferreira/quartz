@@ -204,3 +204,25 @@ Output: Return the best individual
 ```
 
 ![](notes/images/Screenshot%202023-05-16%20at%2007.29.12.png)
+
+- An **algorithm** is a step-by-step procedure or set of rules used to solve a specific problem or accomplish a particular task. It is a well-defined and unambiguous sequence of instructions designed to solve a problem in a finite amount of time.
+
+- **Big-T**, also known as Theta notation (Θ), is a mathematical notation used in computer science to describe the asymptotic behaviour or growth rate of an algorithm's time complexity. It represents the tight bound or upper and lower limits of the running time of an algorithm as the input size approaches infinity. In other words, Big-T provides a range of functions that bound the algorithm's performance.
+
+- **Big-O** notation (O) is another mathematical notation used in computer science to describe the upper bound or worst-case behaviour of an algorithm's time complexity. It provides a way to characterise the maximum amount of resources (usually time or space) that an algorithm requires to solve a problem. In other words, Big-O notation represents an algorithm's upper limit efficiency.
+
+- **Bubble sort** is a simple sorting algorithm that works by repeatedly swapping adjacent elements if they are in the wrong order. The algorithm gets its name from the way smaller elements "bubble" to the top of the list during each pass.
+
+- **Quick sort** is a divide-and-conquer algorithm that works by selecting a pivot element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then recursively sorted.
+
+- **Radix sort** is a non-comparative sorting algorithm that sorts elements based on their digits or characters. It works by processing the digits or characters of the elements from the least significant digit to the most significant digit (or vice versa).
+
+- **NP-Complete** problems are a class of challenging computational problems that lack efficient polynomial-time algorithms. To solve them, approximation algorithms and heuristics are typically employed to find near-optimal solutions within reasonable time limits. One example of an NP-Complete problem is the Traveling Salesman Problem (TSP). The TSP asks for the shortest possible route that a salesman can take to visit a given set of cities exactly once and return to the starting city. The problem's difficulty lies in the exponential growth of possible routes as the number of cities increases.
+
+- **Primitive operators** are fundamental building blocks that perform elementary operations, such as arithmetic calculations, logical operations, or basic data manipulations. They are usually highly optimised and execute efficiently due to their direct implementation in the language or hardware.
+
+- **Data clustering** is a technique used in unsupervised machine learning to group similar data points together based on their characteristics or attributes. The goal is to identify patterns, similarities, or relationships within a dataset without prior knowledge of the classes or labels. **Bin Packing** problem is a combinatorial optimisation problem that deals with efficiently packing a set of items into a fixed number of bins or containers. The objective is to minimise the number of bins used while ensuring that the total size or weight of items does not exceed the bin's capacity. In summary, data clustering is a technique for grouping similar data points together based on their characteristics, while the Bin Packing problem is an optimisation problem concerned with packing items into bins to minimise the number of bins used.
+
+- **Evolutionary Programming** (EP) and **Genetic Algorithms** (GA) are both evolutionary computation techniques inspired by natural evolution, but they differ in their approach to problem-solving and the way they handle population dynamics. EP focuses on optimising individual solutions using real-valued representations, employs self-adaptation, and is suitable for continuous optimisation. On the other hand, GA focuses on evolving populations of solutions using binary representations, employs fixed population size, and can handle a wider range of problem types, including both discrete and continuous optimisation.
+
+- A **heuristic** is a technique or rule of thumb used to guide the search process towards more promising or favourable paths. Heuristics provide a practical way to make informed decisions based on available information and reduce the search space, thereby improving the efficiency of search algorithms.
