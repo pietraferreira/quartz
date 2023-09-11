@@ -7,9 +7,9 @@ type: hub
 ---
 # Modules
 
-<center><img src="https://giffiles.alphacoders.com/215/215911.gif"></center>
+<center><img src="https://giffiles.alphacoders.com/215/215911.gif" width="300"></center>
 
-A list of all the different modules I am taking during my second year.
+A list of all the different modules I am taking during my third year.
 
 * Year 3 is **2/3** of the final grade!
 
