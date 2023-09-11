@@ -1,8 +1,8 @@
 ---
 title:  "C"
 tags:
-  - work
-programming-languagues:
+  - cs
+programming-languages:
   - c
 created: 2022-08-15
 ---

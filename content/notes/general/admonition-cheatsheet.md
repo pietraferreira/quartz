@@ -2,6 +2,7 @@
 title: "Admonition Cheatsheet"
 tags:
   - help
+type: cheatsheet
 ---
 # Admonition Cheatsheet
 ---

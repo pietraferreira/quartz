@@ -2,7 +2,7 @@
 title: "Trees"
 tags:
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-06
 ---
 # Trees

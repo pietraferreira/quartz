@@ -1,12 +1,12 @@
 ---
 title:  "Meterpreter"
 tags:
-  - cs/hacking
   - cs/hacking/htb
   - cs/hacking/cheatsheet
   - help
-programming-languagues:
+programming-languages:
 created: 2022-08-15
+type: cheatsheet
 ---
 # Meterpreter
 | **Command**                                                     | **Description**                                                  |

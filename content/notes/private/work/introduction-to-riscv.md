@@ -2,7 +2,7 @@
 title: "Introduction to RISC-V"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 # Introduction to RISC-V

@@ -2,7 +2,7 @@
 title:  "RISC-V Toolchain"
 tags:
   - cs
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 # RISC-V Toolchain

@@ -2,9 +2,9 @@
 title: "Graphs"
 tags:
   - university/cs2004
-programming-languagues:
+programming-languages:
 created: 2022-06-06
-last-updated: 2022-11-07
+last-edited: 2022-11-07
 ---
 # Graphs
 ---

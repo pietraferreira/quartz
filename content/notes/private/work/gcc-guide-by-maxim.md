@@ -1,12 +1,11 @@
 ---
 title: "GCC Guide by Maxim"
 tags:
-  - cs/gcc
-  - daily
-  - work
+  - work/engineer-training 
   - help
-programming-languagues:
+programming-languages:
 created: 2020-09-18
+type: cheatsheet
 ---
 # GCC Guide by Maxim
 ---

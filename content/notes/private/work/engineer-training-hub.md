@@ -3,7 +3,7 @@ title:  "Engineer Training Hub"
 tags:
   - work
   - hub
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 ```dataview

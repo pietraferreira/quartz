@@ -2,7 +2,7 @@
 title: "Knowledge Hub"
 tags:
   - hub
-programming-languagues:
+programming-languages:
 created: 2022-06-03
 ---
 # Knowledge Hub

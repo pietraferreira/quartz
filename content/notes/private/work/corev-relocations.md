@@ -1,13 +1,10 @@
 ---
-title:  CORE-V Relocations
+title: "CORE-V Relocations"
 tags:
-  - work
   - work/corev
-  - cs/riscv
-programming-languagues:
+programming-languages:
 created: 2022-06-05
----
-# CORE-V Relocations
+project: corev
 ---
 There are two custom relocations:
 - `BDF_RELOC_RISCV_CVPCREL_URS1`: 5-bit relocation for the `rs1` operand in `cv.setup`, its relocation number is 225.

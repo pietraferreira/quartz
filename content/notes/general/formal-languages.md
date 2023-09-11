@@ -3,7 +3,7 @@ title: "Formal Languages"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-12
 ---
 # Formal Languages

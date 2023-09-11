@@ -5,9 +5,9 @@ tags:
   - work/engineer-training
 module:
   - cs2004
-programming-languagues:
+programming-languages:
 created: 2022-06-06
-last-modified: 2022-11-07
+last-edited: 2022-11-07
 ---
 # Prim's Algorithm
 ---

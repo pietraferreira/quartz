@@ -3,7 +3,7 @@ title:  "CS Problems"
 tags:
   - work/engineer-training
   - cs
-programming-languagues:
+programming-languages:
 created: 2022-06-06
 ---
 # CS Problems

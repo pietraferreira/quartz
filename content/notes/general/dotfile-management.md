@@ -2,8 +2,9 @@
 title:  "Dotfile Management"
 tags:
   - help
-programming-languagues:
+programming-languages:
 created: 2022-06-09
+type: cheatsheet
 ---
 # Dotfile Management
 ---

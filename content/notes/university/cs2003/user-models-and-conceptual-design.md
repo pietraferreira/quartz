@@ -2,10 +2,8 @@
 title: "User Models and Conceptual Design"
 tags:
   - university/cs2003
-programming-languagues:
+programming-languages:
 module:
-term:
-  - first
 created: 2022-10-20
 ---
 # Making Sense of the World

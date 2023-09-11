@@ -3,7 +3,7 @@ title: "2022-06-27"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-06-27
 ---
 # 2022-06-27

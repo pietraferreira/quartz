@@ -3,7 +3,7 @@ title: "GNU"
 tags:
   - work/engineer-training
   - cs/compilers
-programming-languagues:
+programming-languages:
 created: 2022-07-11
 ---
 Extensive collection of free software which can be used as an operating system or in parts with other operating systems.

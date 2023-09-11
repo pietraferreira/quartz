@@ -2,8 +2,9 @@
 title: "Tmux Cheatsheet"
 tags:
   - help
-programming-languagues:
+programming-languages:
 created: 2022-06-09
+type: cheatsheet
 ---
 # Tmux Cheatsheet
 ---

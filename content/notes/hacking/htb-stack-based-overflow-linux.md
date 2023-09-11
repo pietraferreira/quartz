@@ -3,7 +3,7 @@ title:  "Stack-based Overflow - Linux x86"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-11
 ---
 They are caused by incorrect program code, which cannot process too large amounts of data correctly by the CPU and can, therefore, manipulate the CPU's processing.

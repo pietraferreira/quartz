@@ -3,9 +3,9 @@ title: "UML - Sequence Diagram"
 tags:
   - cs/uml
   - university/cs2002
-programming-languagues:
+programming-languages:
 created: 2022-10-20
-last-modified: 2023-05-11
+last-edited: 2023-05-11
 ---
 **Inter-object behaviour**: interactions between objects.
 

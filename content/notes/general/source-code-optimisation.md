@@ -2,7 +2,7 @@
 title:  "Source Code Optimisation"
 tags:
   - cs
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 # Source Code Optimisation

@@ -2,7 +2,7 @@
 title:  "Embedded Applications"
 tags:
   - cs
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 # Embedded Applications

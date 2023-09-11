@@ -2,10 +2,10 @@
 title: "Howto Table" 
 tags:
   - cs/relocations
-  - work
   - help
-programming-languagues:
+programming-languages:
 created: 2022-06-05
+type: cheatsheet
 ---
 The [relocation](notes/private/work/relocations.md) table records the list of items that the file needs (from other object files or libraries).
 

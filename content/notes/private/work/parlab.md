@@ -1,9 +1,8 @@
 ---
 title:  "Parallel Computing Laboratory"
 tags:
-  - work
-  - work/riscv
-programming-languagues:
+  - cs/riscv
+programming-languages:
 created: 2022-06-04
 ---
 # Parallel Computing Laboratory

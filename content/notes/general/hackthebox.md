@@ -2,7 +2,7 @@
 title: "HackTheBox"
 tags:
   - hub
-programming-languagues:
+programming-languages:
 created: 2022-07-06
 ---
 # HackTheBox

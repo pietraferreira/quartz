@@ -2,12 +2,12 @@
 title:  "Compiler Toolchains"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 - [GNU](notes/general/gnu.md)
 - [RISC-V Toolchain](notes/general/riscv-toolchain.md)
-- [CORE-V Toolchain](notes/private/work/corev-toolchain.md)
+- [CORE-V Toolchain](notes/private/work/projects/corev/corev-toolchain.md)
 
 ## What is a Compiler Toolchain?
 A compiler toolchain is a set of tools, supporting libraries, and header files that help build a program from source to an executable that can run on a machine.

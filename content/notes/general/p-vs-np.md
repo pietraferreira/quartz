@@ -3,7 +3,7 @@ title: "P vs NP Problem"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-06
 ---
 # P vs NP Problem

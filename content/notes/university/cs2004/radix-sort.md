@@ -2,11 +2,9 @@
 title:  "Radix Sort"
 tags:
   - cs/sorting
-programming-languagues:
+programming-languages:
 module:
   - cs2004
-term:
-  - first
 last-edited:
 created: 2022-10-24
 ---

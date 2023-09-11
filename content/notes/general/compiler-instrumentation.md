@@ -2,7 +2,7 @@
 title:  "Compiler Instrumentation"
 tags:
   - cs/compilers
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 # Compiler Instrumentation

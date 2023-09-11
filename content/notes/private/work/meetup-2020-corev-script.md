@@ -2,12 +2,10 @@
 title: "Meet-up 2020 CORE-V - Script" 
 tags:
   - work/corev
-  - work
-  - script
-programming-languagues:
+  - presentation
+programming-languages:
 created: 2022-06-05
----
-# Meet-up 2020 CORE-V - Script
+project: corev
 ---
 Slides can be found [here](assets/meetup-2020-corev-presentation-v11.odp).
 

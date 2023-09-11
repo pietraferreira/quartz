@@ -2,7 +2,7 @@
 title:  "Compilers"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 A compiler is a system that converts a program from one language to another. In the context of this course, we refer to a compiler as a program that converts a high-level language like C, C++ to a low-level language like assembly language or an executable format. Open source compilers like gcc and clang are commonly used to achieve this. These compilers are quite advanced. In a nutshell, they:

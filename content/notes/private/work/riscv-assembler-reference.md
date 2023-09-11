@@ -2,12 +2,11 @@
 title: "RISC-V Assembler Reference"
 tags:
   - help
-  - work
-  - work/riscv
-programming-languagues:
+  - cs/riscv
+programming-languages:
 created: 2022-08-09
+type: cheatsheet
 ---
-# RISC-V Assembler Reference
 ---
 ```toc
 ```

@@ -2,10 +2,8 @@
 title:  "User-Centred Design"
 tags:
   - university/cs2003
-programming-languagues:
+programming-languages:
 module:
-term:
-  - first
 last-edited:
 created: 2022-10-28
 ---

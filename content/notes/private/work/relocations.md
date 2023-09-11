@@ -3,12 +3,10 @@ title: "Relocations"
 tags:
   - help
   - cs/relocations
-  - cs/linker
-  - work/riscv
-programming-languagues:
+programming-languages:
 created: 2022-08-02
+type: cheatsheet
 ---
-# Relocations
 ---
 ```toc
 ```

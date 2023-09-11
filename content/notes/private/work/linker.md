@@ -1,12 +1,11 @@
 ---
 title:  "Linker"
 tags:
-  - work/engineer-training
+  - cs/linker 
   - help
-programming-languagues:
+programming-languages:
 created: 2022-08-04
----
-# Linker
+type: cheatsheet
 ---
 Official documentation: https://sourceware.org/binutils/docs/ld/
 

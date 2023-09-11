@@ -2,7 +2,7 @@
 title:  "Relocations - COREV"
 tags:
   - work
-programming-languagues:
+programming-languages:
 created: 2020-10-02
 ---
 # Relocations - COREV

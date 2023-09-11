@@ -2,9 +2,7 @@
 title: "Best-First Search"
 tags:
   - university/cs2004
-programming-languagues:
-term:
-  - first
+programming-languages:
 last-edited:
 created: 2022-11-07
 ---

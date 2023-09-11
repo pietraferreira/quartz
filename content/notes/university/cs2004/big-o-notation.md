@@ -2,8 +2,8 @@
 title:  "Big O Notation"
 tags:
   - university/cs2004
-programming-languagues:
-last-modified: 2022-10-24
+programming-languages:
+last-edited: 2022-10-24
 created: 2022-06-05
 ---
 # Big O Notation

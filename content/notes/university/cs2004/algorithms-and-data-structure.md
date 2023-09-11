@@ -2,7 +2,7 @@
 title: "Algorithms and Data Structure" 
 tags:
   - university/cs2004 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 ---

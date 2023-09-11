@@ -2,9 +2,7 @@
 title: "Introduction"
 tags:
   - university/cs2001
-programming-languagues:
-term:
-  - first-term
+programming-languages:
 created: 2022-09-19
 ---
 The theme of the project will be based on the [UN Sustainable Development Goals](https://www.un.org/sustainabledevelopment/).

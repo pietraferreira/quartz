@@ -2,11 +2,9 @@
 title: alan-turing
 tags:
   - university/cs2004
-programming-languagues: 
+programming-languages: 
 module:
   - algorithms
-term:
-  - first
 created: 2022-09-03
 ---
 # Alan Turing

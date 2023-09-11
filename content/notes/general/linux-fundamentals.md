@@ -2,6 +2,7 @@
 title: "Linux Fundamentals"
 tags:
   - help
+type: cheatsheet
 ---
 # Linux Fundamentals
 ---

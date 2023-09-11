@@ -2,7 +2,7 @@
 title: "Syntax Directed Translation"
 tags:
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-16
 ---
 # Syntax Directed Translation

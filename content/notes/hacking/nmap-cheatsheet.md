@@ -2,10 +2,10 @@
 title:  "Nmap Cheatsheet"
 tags:
   - cs/hacking/tryhackme
-  - cs/hacking
   - help
-programming-languagues:
+programming-languages:
 created: 2022-07-13
+type: cheatsheet
 ---
 | **nmap flag**   | **Description**                                            |
 | --------------- | ---------------------------------------------------------- |

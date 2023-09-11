@@ -3,7 +3,7 @@ title: "Generate Shellcode"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-12
 ---
 This is part of a guide that you can find [here](notes/hacking/htb-stack-based-overflow-linux.md).

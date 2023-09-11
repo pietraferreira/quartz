@@ -3,7 +3,7 @@ title:  "Netcat"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-11
 ---
 Networking utility for reading from and writing to network connections using TCP or UDP.

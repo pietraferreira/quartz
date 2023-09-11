@@ -3,7 +3,7 @@ title:  Strode College Talk - Script
 tags:
   - script
   - work
-programming-languagues:
+programming-languages:
 created: 2021-01-20
 ---
 # Strode College Talk - Script

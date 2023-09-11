@@ -2,9 +2,7 @@
 title: "REST API"
 tags:
   - university/cs2001
-programming-languagues:
-term:
-  - first-term
+programming-languages:
 created: 2022-09-19
 ---
 # REST API

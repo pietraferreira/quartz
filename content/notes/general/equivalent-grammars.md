@@ -3,7 +3,7 @@ title:  "Equivalent Grammars"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-16
 ---
 # Equivalent Grammars

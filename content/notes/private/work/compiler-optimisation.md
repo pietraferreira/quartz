@@ -2,7 +2,7 @@
 title:  "Compiler Optimsation"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 [Compilers](notes/private/work/compilers.md) perform a set of transformations on the source code. While some of the transformations are necessary to generate machine code, most of the transformations are done to improve the performance of programs or to reduce the code size. 
