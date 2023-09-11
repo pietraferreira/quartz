@@ -1,7 +1,7 @@
 ---
 title: "Impacket and Random Stuff"
 tags:
-  - hacking
+  - cs/hacking
 programming-languagues:
 created: 2022-07-08
 ---

@@ -1,8 +1,8 @@
 ---
 title:  "University of Bologna Meeting"
 tags:
-  - meeting
-  - report
+  - work/meeting
+  - work/report
   - work
 programming-languagues:
 created: 2021-08-13

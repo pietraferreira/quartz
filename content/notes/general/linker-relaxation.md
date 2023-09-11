@@ -1,7 +1,7 @@
 ---
 title: "Linker Relaxation"
 tags:
-  - cs-concept/compilers
+  - cs/compilers
 programming-languagues:
 created: 2022-07-03
 ---

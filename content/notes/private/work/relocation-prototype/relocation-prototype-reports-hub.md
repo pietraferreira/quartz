@@ -3,7 +3,7 @@ title: "Relocation Prototype Reports"
 tags:
   - work
   - hub
-  - relocation-prototype
+  - work/relocation-prototype
 project:
   - relocation-prototype
 ---

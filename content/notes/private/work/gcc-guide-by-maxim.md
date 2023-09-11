@@ -1,7 +1,7 @@
 ---
 title: "GCC Guide by Maxim"
 tags:
-  - gcc
+  - cs/gcc
   - daily
   - work
   - help

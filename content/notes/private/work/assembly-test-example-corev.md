@@ -1,8 +1,8 @@
 ---
 title:  Assembly Test Example - CORE-V
 tags:
-  - corev
-  - riscv
+  - work/corev
+  - cs/riscv
   - work
   - help
 programming-languagues:

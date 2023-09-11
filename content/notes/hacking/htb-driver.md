@@ -1,9 +1,9 @@
 ---
 title:  "HTB - Driver"
 tags:
-  - hacking
-  - hacking/htb
-  - hacking/writeup
+  - cs/hacking
+  - cs/hacking/htb
+  - cs/hacking/writeup
 programming-languagues:
 created: 2022-07-17
 ---

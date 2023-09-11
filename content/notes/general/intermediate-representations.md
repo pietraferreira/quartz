@@ -1,7 +1,7 @@
 ---
 title: "Intermediate Representations"
 tags:
-  - cs-concept
+  - cs
   - work/engineer-training
 programming-languagues:
 created: 2022-06-16

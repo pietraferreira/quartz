@@ -1,9 +1,9 @@
 ---
 title:  "TryHackMe - Metasploit"
 tags:
-  - hacking
-  - hacking/thm
-  - hacking/metasploit
+  - cs/hacking
+  - cs/hacking/thm
+  - cs/hacking/metasploit
 programming-languagues:
 created: 2022-07-17
 ---

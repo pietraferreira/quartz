@@ -2,7 +2,7 @@
 title:  "Shell Sort"
 tags:
   - work/engineer-training
-  - cs-concept/sorting
+  - cs/sorting
 created: 2022-06-05
 ---
 Shell sort adds one more loop outside [bubble sort](notes/general/bubble-sort.md).

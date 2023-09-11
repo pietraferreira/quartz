@@ -2,7 +2,7 @@
 title: "How to Write a LLVM Backend"
 tags:
   - work
-  - cs-concept/compilers
+  - cs/compilers
   - work/llvm
 programming-languagues:
 created: 2022-06-05

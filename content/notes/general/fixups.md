@@ -1,7 +1,7 @@
 ---
 title: "Fixups"
 tags:
-  - cs-concept/relocations
+  - cs/relocations
 ---
 # Fix-ups
 ---

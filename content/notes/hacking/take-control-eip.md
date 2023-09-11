@@ -1,9 +1,9 @@
 ---
 title: "Take Control of EIP"
 tags:
-  - hacking
-  - hacking/htb
-  - hacking/stack-overflow
+  - cs/hacking
+  - cs/hacking/htb
+  - cs/hacking/stack-overflow
 programming-languagues:
 created: 2022-07-12
 ---

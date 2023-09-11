@@ -1,9 +1,9 @@
 ---
 title: "2022-08-08-cobra-report"
 tags:
-  - report/cobra
+  - work/report/cobra
   - work
-  - cobra
+  - work/cobra
 programming-languagues:
 created: 2022-08-08
 ---

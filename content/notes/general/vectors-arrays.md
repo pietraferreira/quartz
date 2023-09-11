@@ -1,7 +1,7 @@
 ---
 title: "Vectors and Arrays"
 tags:
-  - cs-concept
+  - cs
   - work/engineer-training
 ---
 # Vectors and Arrays

@@ -1,8 +1,8 @@
 ---
 title:  "2022-07-15"
 tags:
-  - hacking
-  - hacking/writeup 
+  - cs/hacking
+  - cs/hacking/writeup 
 programming-languagues:
 created: 2022-07-15
 ---

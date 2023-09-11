@@ -1,7 +1,7 @@
 ---
 title: "UML @ Classroom - Chapter 3 (Creating a Use Case Diagram)" 
 tags:
-  - cs-concept/uml
+  - cs/uml
   - university/cs2002
 programming-languagues:
 created: 2022-11-24

@@ -2,8 +2,8 @@
 title:  CORE-V Relocations
 tags:
   - work
-  - corev
-  - riscv
+  - work/corev
+  - cs/riscv
 programming-languagues:
 created: 2022-06-05
 ---

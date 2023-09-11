@@ -1,9 +1,9 @@
 ---
 title:  "Meterpreter"
 tags:
-  - hacking
-  - hacking/htb
-  - hacking/cheatsheet
+  - cs/hacking
+  - cs/hacking/htb
+  - cs/hacking/cheatsheet
   - help
 programming-languagues:
 created: 2022-08-15

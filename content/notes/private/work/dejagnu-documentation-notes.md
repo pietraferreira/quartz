@@ -2,7 +2,7 @@
 title: "DejaGNU Notes"
 tags:
   - work
-  - engineer-training
+  - work/engineer-training
 ---
 # DejaGNU Notes
 ---

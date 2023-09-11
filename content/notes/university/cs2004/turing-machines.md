@@ -1,8 +1,8 @@
 ---
-title: "turing-machines"
+title: turing-machines
 tags:
-  - university
-programming-languagues:
+  - university/cs2004
+programming-languagues: 
 module:
   - algorithms
 term:

@@ -1,8 +1,8 @@
 ---
 title:  "20/11/20 - Code Size Meeting"
 tags:
-  - meeting
-  - report
+  - work/meeting
+  - work/report
 programming-languagues:
 created: 2020-11-20
 ---

@@ -1,7 +1,7 @@
 ---
 title:  "RISC-V Toolchain"
 tags:
-  - cs-concept
+  - cs
 programming-languagues:
 created: 2022-06-05
 ---

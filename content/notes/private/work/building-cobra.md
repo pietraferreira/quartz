@@ -2,8 +2,8 @@
 title: "Building Cobra"
 tags:
   - work
-  - riscv
-  - cobra
+  - cs/riscv
+  - work/cobra
 programming-languagues:
 created: 2022-08-03
 ---

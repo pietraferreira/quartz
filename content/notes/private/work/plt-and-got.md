@@ -2,9 +2,9 @@
 title: "PLT and GOT"
 tags:
   - work
-  - cs-concept/relocations
+  - cs/relocations
   - work/riscv
-  - cs-concept/linker
+  - cs/linker
 programming-languagues:
 created: 2022-08-02
 ---

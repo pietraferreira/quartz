@@ -1,7 +1,7 @@
 ---
 title: "UML - Class Diagram"
 tags:
-  - cs-concept/uml
+  - cs/uml
   - university/cs2002
 programming-languagues:
 created: 2022-10-21

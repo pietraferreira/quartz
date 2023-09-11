@@ -1,7 +1,7 @@
 ---
 title: "Random Priviledge Escalation Notes"
 tags:
-  - hacking
+  - cs/hacking
 programming-languagues:
 created: 2022-07-17
 ---
