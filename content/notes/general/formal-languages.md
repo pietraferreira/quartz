@@ -132,4 +132,4 @@ We can also have **inherited attributes**, where values of attributes on the RHS
 
 ## See Also
 - [Compilers](notes/private/work/compilers.md)
-- [Trees](notes/university/cs2004/trees.md)
+- [Trees](notes/university/year2/cs2004/trees.md)

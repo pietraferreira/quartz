@@ -15,7 +15,7 @@ tags:
 module:
 lecturer:
 <% tp.file.cursor(1) %>
-last-edited: <% tp.date.now("YYYY-MM-DD") %>
 created: <% tp.date.now("YYYY-MM-DD") %>
+type:
 ---
 ---

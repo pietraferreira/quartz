@@ -18,7 +18,7 @@ For example:
 
 The [](notes/private/work/compiler-optimisation.md#Performance|performance) for bucket for on a given number of digit is $O_{_(n)}$ but also $O_(d)$ in the number of digits.
 
-It is [](notes/university/cs2004/sorting.md#Stability|stable).
+It is [](notes/university/year2/cs2004/sorting.md#Stability|stable).
 
 ## Example
 ```bash

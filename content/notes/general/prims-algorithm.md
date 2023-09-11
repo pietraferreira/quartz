@@ -11,9 +11,9 @@ last-edited: 2022-11-07
 ---
 # Prim's Algorithm
 ---
-It is a [minimum spanning tree](notes/university/cs2004/minimum-spanning-tree.md) algorithm.
+It is a [minimum spanning tree](notes/university/year2/cs2004/minimum-spanning-tree.md) algorithm.
 
-It scales well, fast with dense [graphs](notes/university/cs2004/graphs.md).
+It scales well, fast with dense [graphs](notes/university/year2/cs2004/graphs.md).
 
 It has a [](notes/private/work/compiler-optimisation.md#Performance|performance) of $O_{E\ log\ N}$ with [binary heap](notes/general/binary-heap.md) and $O_{E\ +\ log\ N}$ with Fibonacci heap.
 
@@ -44,8 +44,8 @@ Output: Gnew = (Vnew,Enew)
 ![650](notes/images/Screenshot%202022-11-07%20at%2011.48.43.png)
 
 ## See also
-- [Minimum Spanning Tree](notes/university/cs2004/minimum-spanning-tree.md)
-- [Trees](notes/university/cs2004/trees.md)
-- [Graphs](notes/university/cs2004/graphs.md)
-- [Big O Notation](notes/university/cs2004/big-o-notation.md)
+- [Minimum Spanning Tree](notes/university/year2/cs2004/minimum-spanning-tree.md)
+- [Trees](notes/university/year2/cs2004/trees.md)
+- [Graphs](notes/university/year2/cs2004/graphs.md)
+- [Big O Notation](notes/university/year2/cs2004/big-o-notation.md)
 - [Kruskal's](notes/general/kruskals-algorithm.md)

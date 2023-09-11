@@ -87,6 +87,6 @@ This statement is **true**. Therefore, `dist` gets updated:
 ![fw-graph5](notes/images/fw-graph5.png)
 
 ## See also
-- [Dijkstra](notes/university/cs2004/dijkstra-algorithm.md)
-- [Graphs](notes/university/cs2004/graphs.md)
-- [Big O Notation](notes/university/cs2004/big-o-notation.md)
+- [Dijkstra](notes/university/year2/cs2004/dijkstra-algorithm.md)
+- [Graphs](notes/university/year2/cs2004/graphs.md)
+- [Big O Notation](notes/university/year2/cs2004/big-o-notation.md)
