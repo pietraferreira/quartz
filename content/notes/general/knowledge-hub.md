@@ -15,7 +15,14 @@ Where all of my notes live!!! There are no rules here 😎
 ## General
 [HELP](notes/general/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
 
-## Computer Science
+## Courses
+
+### Coursera
+- [Introduction to Embedded Systems Software and Development Environments (University of Colorado Boulder)](https://www.coursera.org/learn/introduction-embedded-systems/home/week/1)
+    - Week 1.
+
+
+## Computer Science Notes
 - [Algorithms and Data Structure](notes/university/year2/cs2004/algorithms-and-data-structure.md)
 - [Formal Languages](notes/general/formal-languages.md)
 
@@ -51,7 +58,7 @@ Where all of my notes live!!! There are no rules here 😎
 ```dataview
 table without ID
 title as "Title", file.ctime as "Created Time", file.link as "Link"
-from #hacking/writeup 
+from #cs/hacking/writeup 
 sort file.ctime desc
 ```
 

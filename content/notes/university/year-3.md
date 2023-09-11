@@ -14,7 +14,7 @@ A list of all the different modules I am taking during my third year.
 * Year 3 is **2/3** of the final grade!
 
 ---
-## CS3072 - Final Year Project
+## [CS3072](notes/university/year3/cs3072/cs3072.md) - Final Year Project
 ---
 ## CS3001 - Advanced Topics
 ---
