@@ -2,7 +2,7 @@
 title: "Impacket and Random Stuff"
 tags:
   - cs/hacking
-programming-languagues:
+programming-languages:
 created: 2022-07-08
 ---
 ## Nmap

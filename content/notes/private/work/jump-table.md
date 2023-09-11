@@ -4,7 +4,7 @@ tags:
   - work
   - cs/relocations
   - cs/linker
-programming-languagues:
+programming-languages:
 created: 2022-08-04
 ---
 # Jump Table

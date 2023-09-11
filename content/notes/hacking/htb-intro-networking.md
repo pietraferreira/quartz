@@ -3,7 +3,7 @@ title: "Introduction to Networking"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-12
 ---
 # Introduction to Networking

@@ -2,7 +2,7 @@
 title: "Linker Relaxation"
 tags:
   - cs/compilers
-programming-languagues:
+programming-languages:
 created: 2022-07-03
 ---
 How the linker optimises instructions for the compiler by having a second relaxation.

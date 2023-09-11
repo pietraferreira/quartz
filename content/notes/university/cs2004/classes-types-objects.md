@@ -2,7 +2,7 @@
 title: "Classes, Types and Objects"
 tags:
   - university/cs2004
-programming-languagues:
+programming-languages:
   - java
 created: 2022-08-14
 ---

@@ -2,7 +2,7 @@
 title:  "Code Generation"
 tags:
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-07-01
 ---
 ## What is Code Generation?

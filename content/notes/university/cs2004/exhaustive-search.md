@@ -2,11 +2,9 @@
 title: "Exhaustive Search"
 tags:
   - university/cs2004
-programming-languagues:
+programming-languages:
 module:
   - cs2004
-term:
-  - first
 last-edited:
 created: 2022-11-07
 ---

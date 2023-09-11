@@ -4,7 +4,7 @@ tags:
   - hub
   - university
 created: 2023-09-11
-last-modified: 2023-09-11
+last-edited: 2023-09-11
 aliases:
   - year3
   - uni guide

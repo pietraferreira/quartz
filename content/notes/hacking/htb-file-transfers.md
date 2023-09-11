@@ -3,7 +3,7 @@ title: "File Transfers"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-06
 ---
 # File Transfers

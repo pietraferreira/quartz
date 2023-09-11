@@ -3,9 +3,9 @@ title: "UML @ Classroom - Chapter 3 (Use Case Diagram)"
 tags:
   - cs/uml
   - university/cs2002
-programming-languagues:
+programming-languages:
 created: 2022-10-03
-last-modified: 2022-11-24
+last-edited: 2022-11-24
 ---
 # Use Case Diagram
 ---

@@ -1,10 +1,8 @@
 ---
 title: "How to Write a LLVM Backend"
 tags:
-  - work
-  - cs/compilers
-  - work/llvm
-programming-languagues:
+  - cs/compilers/llvm
+programming-languages:
 created: 2022-06-05
 ---
 # How to Write a LLVM Backend
@@ -22,33 +20,3 @@ LLVM converts LLVM IR to code for a specific target, the steps are:
 
 * `BSCTargetMachine.h` - declares the BSC specific subclass of TargetMachine
 * `BSCTargetMachine.cpp` - implements the BSC specific subclass of TargetMachine
-> [!failure]- Failure 
->   Error: There is another generation process
->   
->   - plugin:obsidian-textgenerator-plugin:56949 TextGenerator.eval
->     plugin:obsidian-textgenerator-plugin:56949:31
->   
->   - Generator.next
->   
->   - plugin:obsidian-textgenerator-plugin:78 eval
->     plugin:obsidian-textgenerator-plugin:78:61
->   
->   - new Promise
->   
->   - plugin:obsidian-textgenerator-plugin:62 __async
->     plugin:obsidian-textgenerator-plugin:62:10
->   
->   - plugin:obsidian-textgenerator-plugin:56935 TextGenerator.generate
->     plugin:obsidian-textgenerator-plugin:56935:12
->   
->   - plugin:obsidian-textgenerator-plugin:58440 AutoSuggest.eval
->     plugin:obsidian-textgenerator-plugin:58440:52
->   
->   - Generator.next
->   
->   - plugin:obsidian-textgenerator-plugin:78 eval
->     plugin:obsidian-textgenerator-plugin:78:61
->   
->   - new Promise
->   
->  

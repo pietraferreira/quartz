@@ -2,7 +2,7 @@
 title: "The Software Process"
 tags:
   - university/cs2002
-programming-languagues:
+programming-languages:
 last-edited:
 created: 2022-12-09
 ---

@@ -1,11 +1,9 @@
 ---
 title: "PLT and GOT"
 tags:
-  - work
   - cs/relocations
-  - work/riscv
   - cs/linker
-programming-languagues:
+programming-languages:
 created: 2022-08-02
 ---
 ## Procedure Linkage Table and Global Offset Table

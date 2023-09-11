@@ -2,9 +2,9 @@
 title: "Minimum Spanning Tree"
 tags:
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-06
-last-modified: 2022-11-07
+last-edited: 2022-11-07
 ---
 It is a subtree with the minimum possible edge weight that connects all nodes together.
 

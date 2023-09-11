@@ -2,7 +2,7 @@
 title:  "Forum DevLog"
 tags:
   - university/cs2001
-programming-languagues:
+programming-languages:
 created: 2023-01-12
 ---
 # Forum DevLog

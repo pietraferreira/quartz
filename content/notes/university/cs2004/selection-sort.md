@@ -2,7 +2,7 @@
 title:  "Selection Sort"
 tags:
   - university/cs2004
-programming-languagues:
+programming-languages:
 created: 2022-10-24
 ---
 # Selection Sort

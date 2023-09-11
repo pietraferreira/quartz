@@ -2,11 +2,9 @@
 title: turing-machines
 tags:
   - university/cs2004
-programming-languagues: 
+programming-languages: 
 module:
   - algorithms
-term:
-  - first
 created: 2022-09-03
 ---
 # Turing Machines

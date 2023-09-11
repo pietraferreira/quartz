@@ -2,7 +2,7 @@
 title: "Foundation of Algorithm Analysis" 
 tags:
   - university/cs2004
-programming-languagues:
+programming-languages:
 created: 2022-08-28
 ---
 - Running time.

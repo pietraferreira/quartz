@@ -2,11 +2,9 @@
 title: "CS2004 - Data Structures"
 tags:
   - university/cs2004
-programming-languagues:
+programming-languages:
 module:
   - cs2004
-term:
-  - first
 created: 2022-10-24
 ---
 # CS2004 - Data Structures

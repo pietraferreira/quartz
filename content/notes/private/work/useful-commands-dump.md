@@ -3,6 +3,7 @@ title: "Useful Commands Dump"
 tags:
   - work/engineer-training 
   - help
+type: cheatsheet
 ---
 # Useful Commands Dump
 ---

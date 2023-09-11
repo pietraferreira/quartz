@@ -2,9 +2,7 @@
 title: "Specifying User Requirements"
 tags:
   - university/cs2003
-programming-languagues:
-term:
-  - first
+programming-languages:
 last-edited:
 created: 2022-11-18
 ---

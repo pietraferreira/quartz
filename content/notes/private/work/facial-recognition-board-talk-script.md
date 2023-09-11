@@ -3,7 +3,7 @@ title: "Facial Recognition Google Board - Script"
 tags:
   - work
   - script
-programming-languagues:
+programming-languages:
 created: 2020-08-05
 ---
 # Facial Recognition Google Board - Script

@@ -3,7 +3,7 @@ title: "Halting Problem"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-07
 ---
 A program to determine if **any** given program will complete in finite time.

@@ -3,7 +3,7 @@ title: "State Machine Diagrams - Part 1"
 tags:
   - cs/uml
   - university/cs2002
-programming-languagues:
+programming-languages:
 last-edited: 2023-05-11
 created: 2022-11-07
 ---

@@ -17,9 +17,9 @@ Various cheatsheets of different application I use and all the help I can get co
 - [Obsidian](notes/obsidian-cheatsheet.md)
 - [Tmux](notes/general/tmux-cheatsheet.md)
 - [HackTheBox](notes/general/hackthebox.md)
-- [How to manually check an Assembly test](notes/private/work/how-to-manually-check-as-test.md)
+- [How to manually check an Assembly test](notes/private/work/projects/cobra/how-to-manually-check-as-test.md)
 - [How to add an instruction to the GNU Assembler](notes/general/how-to-add-instructions-to-as.md)
-    - [Slides](notes/general/how-to-add-instructions-to-as-slides.md)
+    - [Slides](notes/private/work/how-to-add-instructions-to-as-slides.md)
 
 ## Hacking
 - [x86 CheatSheet](https://trailofbits.github.io/ctf/vulnerabilities/references/X86_Win32_Reverse_Engineering_Cheat_Sheet.pdf)

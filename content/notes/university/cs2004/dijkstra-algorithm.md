@@ -2,7 +2,7 @@
 title: "Dijkstra Algorithm"
 tags:
   - university/cs2004 
-programming-languagues:
+programming-languages:
 created: 2022-06-06
 ---
 It is used to determine the **shortest path** from one node in the graph to **every other** node within the same graph, provided they can be reached from the source node.

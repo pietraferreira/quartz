@@ -4,7 +4,7 @@ tags:
   - cs/hacking
   - cs/hacking/stack-overflow
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-12
 ---
 # Stack-overflow Prevention Techniques and Mechanisms

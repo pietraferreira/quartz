@@ -3,7 +3,7 @@ title:  "Floyd-Warshall"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-06
 ---
 # Floyd-Warshall

@@ -2,7 +2,7 @@
 title: "ISA (Instruction Set Architecture)"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-04
 ---
 An instruction set architecture (ISA) is an abstract model of a computer. It is also referred to as architecture or computer architecture. 

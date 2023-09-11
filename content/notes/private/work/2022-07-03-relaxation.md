@@ -1,12 +1,9 @@
 ---
-title:  "2022-07-03 - Relaxation"
+title: Linker Relaxation
 tags:
-  - work
-  - work/engineer-training 
-programming-languagues:
+  - work/engineer-training
+programming-languages: 
 created: 2022-07-03
----
-# 2022-07-03
 ---
 ## Relaxation
 - Most companies do **assembly** relaxation whereas we do **linker** relaxation.

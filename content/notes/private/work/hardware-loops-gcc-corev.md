@@ -1,12 +1,10 @@
 ---
 title: "Hardware Loops - COREV"
 tags:
-  - work
   - work/corev
-programming-languagues:
+programming-languages:
 created: 2020-09-25
----
-# Hardware Loops (GCC) - COREV
+project: corev
 ---
 ```
 (define_insn "set_hwloop_cvstart"

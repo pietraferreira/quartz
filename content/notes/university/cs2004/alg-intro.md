@@ -2,9 +2,7 @@
 title: "Introduction to Algorithms"
 tags:
   - university/cs2004
-programming-languagues:
-term:
- - first
+programming-languages:
 created: 2022-08-26
 ---
 An algorithm is a set of steps for solving a problem. It is a well-defined computational procedure that takes some value(s) as input and produces some value(s) as output.

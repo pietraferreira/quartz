@@ -3,7 +3,7 @@ title: "Heapsort"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
   - c
 created: 2022-06-06
 ---

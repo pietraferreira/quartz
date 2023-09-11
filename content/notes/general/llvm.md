@@ -1,12 +1,9 @@
 ---
 title: "LLVM"
 tags:
-  - cs/compilers
-  - work/llvm
-programming-languagues:
+  - cs/compilers/llvm
+programming-languages:
 created: 2022-06-05
----
-# LLVM 
 ---
 The LLVM Project is a collection of modular and reusable [compiler](notes/private/work/compilers.md) and toolchain technologies. Prebuilt binaries of the LLVM toolchain can be downloaded from the [LLVM Download Page](https://releases.llvm.org/download.html). The toolchain can also be built from source by following the instructions from their [documentation page](https://llvm.org/docs/). The toolchain contains the following top-level directories:
 

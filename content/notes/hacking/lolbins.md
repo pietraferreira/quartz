@@ -3,7 +3,7 @@ title:  "LOLBins"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-11
 ---
 Aka Living off the land binaries, which are binaries that an attacker can use to perform actions beyond their original purpose.

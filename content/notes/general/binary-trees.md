@@ -3,7 +3,7 @@ title:  "Binary Trees"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 # Binary Trees

@@ -2,8 +2,9 @@
 title: "Blockchain"
 tags:
   - help
-programming-languagues:
+programming-languages:
 created: 2022-07-01
+type: cheatsheet
 ---
 # Blockchain
 ---

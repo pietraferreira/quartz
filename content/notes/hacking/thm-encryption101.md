@@ -3,7 +3,7 @@ title:  "TryHackMe - Encryption 101"
 tags:
   - cs/hacking
   - cs/hacking/thm
-programming-languagues:
+programming-languages:
 created: 2022-07-17
 ---
 # Encryption - Crypto 101

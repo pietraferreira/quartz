@@ -4,7 +4,7 @@ tags:
   - cs/hacking
   - cs/hacking/htb
   - cs/hacking/writeup
-programming-languagues:
+programming-languages:
 created: 2022-07-17
 ---
 # HTB - Driver

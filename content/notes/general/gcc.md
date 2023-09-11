@@ -2,7 +2,7 @@
 title: "GCC"
 tags:
   - cs/compilers
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 The popular gcc [compiler](notes/private/work/compilers.md) ships with the gcc toolchain. It can be downloaded from [GCC mirror sites](https://gcc.gnu.org/mirrors.html). In order to download the precompiled binaries that are ready to use, go to the _[Installing GCC: Binaries](https://gcc.gnu.org/install/binaries.html)_ page.

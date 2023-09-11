@@ -2,7 +2,7 @@
 title:  "Debugging Techniques"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 Debugging is an essential part of the software development lifecycle. Even with the most robust programming practices bugs creep in, and debugging them is not a pleasant experience. On any widely used software, there are many developers contributing code, and debugging takes a significant portion of developers' time. 

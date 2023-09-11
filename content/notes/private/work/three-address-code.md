@@ -2,7 +2,7 @@
 title: "Three Address Code"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-16
 ---
 # Three Address Code

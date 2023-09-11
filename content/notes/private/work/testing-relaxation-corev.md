@@ -1,12 +1,10 @@
 ---
 title: "Testing Relaxation - COREV" 
 tags:
-  - work
   - work/corev
-programming-languagues:
+programming-languages:
 created: 2020-09-07
----
-# Testing Relaxation - COREV
+project: corev
 ---
 `readelf -r` on .o files -> looks for particular relocations -> instead of -a
 it checks if we're getting the right relocation

@@ -2,6 +2,7 @@
 title: "Vim Cheatsheet"
 tags:
   - help
+type: cheatsheet
 ---
 # Vim Cheatsheet
 

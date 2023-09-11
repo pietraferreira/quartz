@@ -2,7 +2,7 @@
 title: "GDB"
 tags:
   - work/engineer-training 
-programming-languagues:
+programming-languages:
 created: 2022-06-05
 ---
 All the basic commands can be found [here](notes/private/work/useful-commands-dump.md#GDB).

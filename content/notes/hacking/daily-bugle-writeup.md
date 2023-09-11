@@ -3,7 +3,7 @@ title:  "2022-07-15"
 tags:
   - cs/hacking
   - cs/hacking/writeup 
-programming-languagues:
+programming-languages:
 created: 2022-07-15
 ---
 # Daily Bugle Writeup (TryHackMe)

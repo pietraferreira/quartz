@@ -3,8 +3,9 @@ title:  "How to add an instruction to the GNU assembler"
 tags:
   - work/engineer-training
   - help
-programming-languagues:
+programming-languages:
 created: 2022-07-20
+type: cheatsheet
 ---
 # How to add an instruction to the GNU assembler
 ---

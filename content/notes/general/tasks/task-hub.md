@@ -3,7 +3,7 @@ title: "Task Hub"
 tags:
   - tasks
   - hub
-programming-languagues:
+programming-languages:
 created: 2022-08-04
 ---
 # Tasks

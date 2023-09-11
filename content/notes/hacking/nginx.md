@@ -3,7 +3,7 @@ title:  "Nginx"
 tags:
   - cs/hacking
   - cs/hacking/htb
-programming-languagues:
+programming-languages:
 created: 2022-07-11
 ---
 Used for transferring files to Apache.

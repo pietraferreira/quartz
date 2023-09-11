@@ -3,7 +3,7 @@ title: "Newton-Raphson Iteration"
 tags:
   - cs
   - work/engineer-training
-programming-languagues:
+programming-languages:
 created: 2022-06-12
 ---
 # Newton-Raphson Iteration
