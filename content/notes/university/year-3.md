@@ -1,8 +1,14 @@
 ---
-title: "Modules"
+title: Modules
 tags:
   - hub
   - university
+created: 2023-09-11
+last-modified: 2023-09-11
+aliases:
+  - year3
+  - uni guide
+related: "[[notes/university/university-hub|university-hub]]"
 ---
 # Modules
 
