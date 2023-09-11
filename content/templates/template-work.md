@@ -13,10 +13,8 @@ title:  <%* tR += "\"" + result + "\"" %>
 tags:
   - work
 project:
-aliases:
 <% tp.file.cursor(1) %>
-last-edited: <% tp.date.now("YYYY-MM-DD") %>
 created: <% tp.date.now("YYYY-MM-DD") %>
-related:
+type:
 ---
 ---

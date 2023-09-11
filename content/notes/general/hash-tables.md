@@ -14,7 +14,7 @@ Important to note that key and value could be **any type** of data structure.
 
 A hash table consists of an array of 'buckets', each of which stores a key-value pair. In order to locate the bucket where the key-value pair should be stored, the key is passed through a hashing function. This function returns an integer which is used as the pair's index in the array of buckets. When we want to retrieve a key-value pair, we supply the key to the same hashing function, receive its index, and use the index to find it in the array.
 
-Array indexing has algorithmic [complexity](notes/university/cs2004/big-o-notation.md) `O(1)`, making hash tables fast at storing and retrieving data.
+Array indexing has algorithmic [complexity](notes/university/year2/cs2004/big-o-notation.md) `O(1)`, making hash tables fast at storing and retrieving data.
 
 - Hash tables are [vector](notes/general/vectors-arrays.md) with *n* entries.
 

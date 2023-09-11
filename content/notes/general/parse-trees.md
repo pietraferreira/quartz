@@ -89,4 +89,4 @@ However, they are hard to construct and syntactic identify does not mean semanti
 
 ## See Also
 - [Formal Languages](notes/general/formal-languages.md)
-- [Trees](notes/university/cs2004/trees.md)
+- [Trees](notes/university/year2/cs2004/trees.md)

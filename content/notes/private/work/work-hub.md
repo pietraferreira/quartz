@@ -26,7 +26,7 @@ Everything work related, mostly organised by project.
 ### [Cobra](notes/private/work/projects/cobra/cobra-hub.md)
 
 ---
-### [Everest-hub](notes/private/work/projects/everest/everest-hub.md)
+### [Everest](notes/private/work/projects/everest/everest-hub.md)
 ---
 ### [Tiger](notes/private/work/projects/tiger/tiger-hub.md)
 ---

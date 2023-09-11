@@ -46,11 +46,11 @@ quicksort (int *a, int lo, int hi)
 ```
 
 ## Issues
-- It is not [](notes/university/cs2004/sorting.md#Stability|stable).
+- It is not [](notes/university/year2/cs2004/sorting.md#Stability|stable).
 - Average [](notes/private/work/compiler-optimisation.md#Performance|performance): $O_{n\ log\ n}$ 
 - Worst case performance: $O_(n^2)$
 
-Note that this is [big O notation](notes/university/cs2004/big-o-notation.md).
+Note that this is [big O notation](notes/university/year2/cs2004/big-o-notation.md).
 
 Quicksort is critically dependant on choice of median. Taking best of low, high and mid points deals with the obvious case of sorted data.
 

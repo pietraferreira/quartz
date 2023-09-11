@@ -15,10 +15,10 @@ It can grow and shrink on demand and items can be accessed, inserted or deleted 
 
 ---
 ## Types of Lists
-- [Arrays](notes/university/cs2004/arrays.md)
-- [Linked List](notes/university/cs2004/linked-list.md)
+- [Arrays](notes/university/year2/cs2004/arrays.md)
+- [Linked List](notes/university/year2/cs2004/linked-list.md)
 - [Stack](notes/general/stack.md)
-- [Queue](notes/university/cs2004/queue.md)
+- [Queue](notes/university/year2/cs2004/queue.md)
 - [Hash Tables](notes/general/hash-tables.md)
 
 ## Lists in C
@@ -42,5 +42,5 @@ struct elem *head = NULL;
 struct elem *tail = NULL;
 ```
 ## Applications
-- Often used to implement other data structures e.g. [queue](notes/university/cs2004/queue.md)s and [stack](notes/general/stack.md)s  
+- Often used to implement other data structures e.g. [queue](notes/university/year2/cs2004/queue.md)s and [stack](notes/general/stack.md)s  
 - Used for mathematical vectors and matrices

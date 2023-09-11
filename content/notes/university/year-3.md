@@ -1,33 +1,25 @@
 ---
 title: Modules
 tags:
-  - hub
   - university
 created: 2023-09-11
-last-edited: 2023-09-11
-aliases:
-  - year3
-  - uni guide
-related: "[[notes/university/university-hub|university-hub]]"
+type: hub
 ---
 # Modules
 
-<center><img src="https://c.tenor.com/nkYsPDoADwgAAAAC/computer-pixel-art.gif"></center>
+<center><img src="https://giffiles.alphacoders.com/215/215911.gif"></center>
 
 A list of all the different modules I am taking during my second year.
 
 * Year 3 is **2/3** of the final grade!
 
 ---
-## [CS2001](notes/university/cs2001/cs2001.md) - Group Project
+## CS3072 - Final Year Project
 ---
-## [CS2002](notes/university/cs2002/cs2002.md) - Software Development
+## CS3001 - Advanced Topics
 ---
-## [CS2003](notes/university/cs2003/cs2003.md) - Usability Engineering
+## CS3609 - Cybersecurity
 ---
-## [CS2004](notes/university/cs2004/cs2004.md) - Algorithms
+## CS3003 - Software Engineering 
 ---
-## [CS2005](notes/university/cs2005/cs2005.md) - Networks and Operating Systems
-
----
-## Exam Revision Plan
+## CS3002 - Artificial Inteligence

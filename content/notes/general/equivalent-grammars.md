@@ -21,7 +21,7 @@ B $\rightarrow$ yB | $\varepsilon$
 
 One grammar may be easier to parse than the other. 
 
-Note however that they have very different parse [trees](notes/university/cs2004/trees.md), and if the parse tree reflects the semantic structure for the language then the semantic information is lost.
+Note however that they have very different parse [trees](notes/university/year2/cs2004/trees.md), and if the parse tree reflects the semantic structure for the language then the semantic information is lost.
 
 Parse tree for yxx:
 ![parse-tree-leftmost-rightmost](notes/images/parse-tree-leftmost-rightmost.png)
