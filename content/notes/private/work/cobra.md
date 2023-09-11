@@ -7,7 +7,7 @@ tags:
   - slides
 ---
 # Cobra
-- [How to build](work/building-cobra.md)
+- [How to build](notes/private/work/building-cobra.md)
 
 ## Related Notes
 ```dataview

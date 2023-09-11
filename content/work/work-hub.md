@@ -22,15 +22,15 @@ Everything work related, mostly organised by project.
 - [Notes](notes/riscv.md)
 
 ### Relocation Handling Prototype (CORE-V)
-* [Notes](work/relocation-prototype/relocation-prototype.md)
-* [Reports](work/relocation-prototype/relocation-prototype-reports/relocation-prototype-reports-hub.md)
+* [Notes](notes/private/work/relocation-prototype.md)
+* [Reports](notes/private/work/relocation-prototype-reports-hub.md)
 
 ### CORE-V
 - [CORE-V Toolchain](notes/corev-toolchain.md)
-- [Assembly Test Example](work/assembly-test-example-corev.md)
+- [Assembly Test Example](notes/private/work/assembly-test-example-corev.md)
 
 ### Cobra (CORE-V)
-- [Notes](work/cobra.md)
+- [Notes](notes/private/work/cobra.md)
 * [Reports](work/cobra-reports-hub.md)
 
 #### Videos
@@ -42,7 +42,7 @@ Everything work related, mostly organised by project.
 - [Introduction to the project](assets/tiger.pdf)
 
 ### DejaGNU
-- [DejaGNU documentation notes](work/dejagnu-documentation-notes.md)
+- [DejaGNU documentation notes](notes/private/work/dejagnu-documentation-notes.md)
 
 ### LLVM
 - [LLVM Toolchain](notes/llvm.md)
@@ -53,14 +53,14 @@ Everything work related, mostly organised by project.
 
 ## Talks
 ### 2020 Meetup
-- [Script](work/meetup-2020-corev-script.md)
+- [Script](notes/private/work/meetup-2020-corev-script.md)
 - [Slides](assets/meetup-2020-corev-presentation-v11.odp)
 
 ### Facial Recognition - Coral Board
-- [Script](work/facial-recognition-board-talk-script.md)
+- [Script](notes/private/work/facial-recognition-board-talk-script.md)
 
 ### Strode College Talk - About me
-- [Script](work/strode-talk-script.md)
+- [Script](notes/private/work/strode-talk-script.md)
 
 ## Meeting Notes
 ```dataview

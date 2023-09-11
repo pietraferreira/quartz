@@ -44,4 +44,4 @@ And disassemble with:
 riscv32-unknown-elf-objdump -d a.out -Mno-aliases
 ```
 ## Related Notes
-- [Cobra Hub](work/cobra.md)
+- [Cobra Hub](notes/private/work/cobra.md)
