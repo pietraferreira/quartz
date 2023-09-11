@@ -2,7 +2,7 @@
 title: "GNU"
 tags:
   - work/engineer-training
-  - cs-concept/compilers
+  - cs/compilers
 programming-languagues:
 created: 2022-07-11
 ---

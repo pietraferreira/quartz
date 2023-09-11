@@ -1,8 +1,8 @@
 ---
-title: "alan-turing"
+title: alan-turing
 tags:
-  - university
-programming-languagues:
+  - university/cs2004
+programming-languagues: 
 module:
   - algorithms
 term:
@@ -14,4 +14,4 @@ created: 2022-09-03
 - 23rd of June 1912 to 7th of June 1954.
 - Mathematician.
 - Pardoned in 2013.
-- Created the concept of a [turing machine](notes/university/turing-machines.md).
+- Created the concept of a [turing machine](notes/university/cs2004/turing-machines.md).

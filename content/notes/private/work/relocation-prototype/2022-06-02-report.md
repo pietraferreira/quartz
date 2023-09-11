@@ -1,8 +1,8 @@
 ---
 tags:
   - work
-  - report
-  - relocation-prototype
+  - work/report
+  - work/relocation-prototype
 project: relocation-prototype
 ---
 Hi all,

@@ -1,7 +1,7 @@
 ---
 title:  "Queue"
 tags:
-  - cs-concept/lists
+  - cs/lists
   - university/cs2004 
 created: 2022-10-24
 ---

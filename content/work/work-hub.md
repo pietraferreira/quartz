@@ -22,8 +22,8 @@ Everything work related, mostly organised by project.
 - [Notes](notes/riscv.md)
 
 ### Relocation Handling Prototype (CORE-V)
-* [Notes](notes/private/work/relocation-prototype.md)
-* [Reports](notes/private/work/relocation-prototype-reports-hub.md)
+* [Notes](notes/private/work/relocation-prototype/relocation-prototype.md)
+* [Reports](notes/private/work/relocation-prototype/relocation-prototype-reports-hub.md)
 
 ### CORE-V
 - [CORE-V Toolchain](notes/corev-toolchain.md)

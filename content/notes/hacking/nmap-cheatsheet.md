@@ -1,8 +1,8 @@
 ---
 title:  "Nmap Cheatsheet"
 tags:
-  - hacking/tryhackme
-  - hacking
+  - cs/hacking/tryhackme
+  - cs/hacking
   - help
 programming-languagues:
 created: 2022-07-13

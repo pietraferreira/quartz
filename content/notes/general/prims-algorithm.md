@@ -1,7 +1,7 @@
 ---
 title:  "Prim's Algorithm"
 tags:
-  - cs-concept
+  - cs
   - work/engineer-training
 module:
   - cs2004

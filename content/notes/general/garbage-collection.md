@@ -1,7 +1,7 @@
 ---
 title: "Garbage Collection"
 tags:
-  - cs-concept
+  - cs
   - work/engineer-training
 created: 2022-06-06
 ---

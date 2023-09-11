@@ -1,7 +1,7 @@
 ---
 title: "Heapsort"
 tags:
-  - cs-concept
+  - cs
   - work/engineer-training
 programming-languagues:
   - c

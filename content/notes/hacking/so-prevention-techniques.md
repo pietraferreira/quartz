@@ -1,9 +1,9 @@
 ---
 title: "Stack-overflow Prevention Techniques and Mechanisms"
 tags:
-  - hacking
-  - hacking/stack-overflow
-  - hacking/htb
+  - cs/hacking
+  - cs/hacking/stack-overflow
+  - cs/hacking/htb
 programming-languagues:
 created: 2022-07-12
 ---

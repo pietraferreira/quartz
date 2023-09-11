@@ -1,12 +1,12 @@
 ---
-title: "Relocation Prototype"
+title: Relocation Prototype
 tags:
-  - relocation-prototype
-  - relocations
+  - work/relocation-prototype
+  - cs/relocations
   - work
-  - corev
-  - riscv
-programming_language:
+  - work/corev
+  - cs/riscv
+programming-languages:
   - cpp
   - shell
 project:

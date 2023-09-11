@@ -1,8 +1,8 @@
 ---
 title:  "Nginx"
 tags:
-  - hacking
-  - hacking/htb
+  - cs/hacking
+  - cs/hacking/htb
 programming-languagues:
 created: 2022-07-11
 ---

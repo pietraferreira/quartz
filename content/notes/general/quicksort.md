@@ -1,7 +1,7 @@
 ---
 title:  "Quicksort"
 tags:
-  - cs-concept
+  - cs
   - work/engineer-training
 created: 2022-06-05
 ---

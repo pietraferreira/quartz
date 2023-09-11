@@ -1,7 +1,7 @@
 ---
 title: "UML - All-Together"
 tags:
-  - cs-concept/uml
+  - cs/uml
   - university/cs2002
 last-edited:
 created: 2022-12-16

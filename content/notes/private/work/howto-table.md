@@ -1,7 +1,7 @@
 ---
 title: "Howto Table" 
 tags:
-  - cs-concept/relocations
+  - cs/relocations
   - work
   - help
 programming-languagues:

@@ -1,7 +1,7 @@
 ---
 title: "Meet-up 2020 CORE-V - Script" 
 tags:
-  - corev
+  - work/corev
   - work
   - script
 programming-languagues:

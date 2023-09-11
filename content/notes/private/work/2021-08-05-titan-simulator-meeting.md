@@ -1,8 +1,8 @@
 ---
 title: "Titan Simulator Meeting" 
 tags:
-  - meeting
-  - report
+  - work/meeting
+  - work/report
   - work
 programming-languagues:
 created: 2021-08-21

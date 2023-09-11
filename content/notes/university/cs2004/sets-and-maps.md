@@ -1,8 +1,7 @@
 ---
-title: "Sets and Maps"
+title: Sets and Maps
 tags:
-  - work/engineer-training 
-programming_languages:
+  - work/engineer-training
 ---
 **Sets** are a collection of objects:
   - They might be ordered or unordered.

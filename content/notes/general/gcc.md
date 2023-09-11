@@ -1,7 +1,7 @@
 ---
 title: "GCC"
 tags:
-  - cs-concept/compilers
+  - cs/compilers
 programming-languagues:
 created: 2022-06-05
 ---

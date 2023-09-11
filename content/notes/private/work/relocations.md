@@ -2,8 +2,8 @@
 title: "Relocations"
 tags:
   - help
-  - cs-concept/relocations
-  - cs-concept/linker
+  - cs/relocations
+  - cs/linker
   - work/riscv
 programming-languagues:
 created: 2022-08-02
