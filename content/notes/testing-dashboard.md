@@ -1,12 +1,16 @@
 ---
 cssclass: dashboard
 ---
+<div style="display: flex; align-items: center;">
+  <div style="margin-right: 20px;">
+    <img src="https://giffiles.alphacoders.com/215/215911.gif" width="300">
+  </div>
+  <div>
+    <p>A list of all the different modules I am taking during my third year.</p>
+    <p>Year 3 is 2/3 of the final grade!</p>
+  </div>
+</div>
 
-<center><img src="https://giffiles.alphacoders.com/215/215911.gif" width="300"></center>
-
-A list of all the different modules I am taking during my third year.
-
-* Year 3 is **2/3** of the final grade!
 # Family
 - 🏈 Sunday Game
 	- [[Spicy-Sweet Buffalo Popcorn]]
