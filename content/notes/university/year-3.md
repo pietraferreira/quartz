@@ -80,12 +80,12 @@ Lecturer:
 - 📚 Reading list
 	- [[Sally Smith]]
 # [CS3002](notes/university/year3/cs3002/cs3002.md) - Artificial Intelligence
-Lecturer:
+Lecturer: Allan Tucker
 
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
-	- [[Q1 2022]]
+    - [Lab 1 - Introduction to R](notes/university/cs3002-lab1.md)
 - 📚 Reading list
 	- [[Sally Smith]]
 # Vault Info
