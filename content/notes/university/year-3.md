@@ -45,7 +45,7 @@ if (r>0 && r<q) {
 dv.paragraph(html)
 ```
 ---
-## [CS3072](notes/university/year3/cs3072/cs3072.md) - Final Year Project
+## [CS3072](notes/university/year3/cs3072/fyp-supervisor.md) - Final Year Project
 ---
 ## CS3001 - Advanced Topics
 ---
