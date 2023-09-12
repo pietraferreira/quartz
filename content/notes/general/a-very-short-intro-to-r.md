@@ -132,3 +132,80 @@ d = data.frame(a =c(3,4,5), b = c(12,32,54))
 write.table(d, file="test.txt", row.names=FALSE)
 d2 = read.table(file="test.txt", header=TRUE)
 ```
+
+
+## Dates
+---
+- Use `strptime`: 
+```r
+date1 = strptime(c("20100225230000", "20100226000000"), format="%Y%m%d%H%M%S")
+```
+
+# Programming tools
+## If-statements
+---
+```r
+w = 3
+
+if ( w<5 ) 
+{
+    d = 2
+}
+else 
+{
+    d = 10
+}
+
+d
+```
+
+Shorter method:
+
+```r
+a = c(1,2,3,4)
+b = c(5,6,7,8)
+f = a[b==5 | b==9]
+f
+1 4
+```
+
+## For-loop
+---
+```r
+h = seq(from=1, to=8)
+s = c()
+
+for (i in 2:10)
+{
+    s[i] = h[i] * 10
+}
+
+s
+NA 20 30 40 50 60 70 80 NA NA
+```
+
+## Functions
+---
+```r
+fun1 = function(arg1, arg2)
+{
+    w = arg1 ^ 2
+    return (arg2 + w)
+}
+
+fun1(arg1=3, arg2=5)
+14
+```
+
+## Data Processing
+---
+- `seq`: create a vector with equal steps between the numbers.
+- `rnorm`: create a vector with random numbers with normal distribution (other distributions are also available).
+- `sort`: sort elements in increasing order.
+- `t`: transpose a matrix.
+- `aggregate(x,by=ls(y),FUN="mean")`: split data set x into subsets (defined by y) and com- putes means of the subsets. Result: a new list.
+- `na.approx`: interpolate (in zoo package). Argument: vector with NAs. Result: vector without NAs.
+- `cumsum`: cumulative sum. Result is a vector.
+- `rollmean`: moving average (in the zoo package).
+- `paste`: paste character strings together.
+- `substr`: extract part of a character string.
