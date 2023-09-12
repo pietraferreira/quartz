@@ -14,9 +14,9 @@ Main hub for all the different note categories :)
 
 - [Habitica](https://habitica.com/)
     - Extra data:
-        - Nice view of everything [here](https://ddycai.github.io/habitica-tracker/.
-        - Calendar [view](https://habitcalendar.netlify.app/.
-        - [Stats](https://tools.habitica.com/?uuid=7e4eeade-5799-4154-9c78-4d6967fddfc6.
+        - Nice view of everything [here](https://ddycai.github.io/habitica-tracker/).
+        - Calendar [view](https://habitcalendar.netlify.app/).
+        - [Stats](https://tools.habitica.com/?uuid=7e4eeade-5799-4154-9c78-4d6967fddfc6).
 
 - [Focusverse.app](https://www.focusverse.app/)
 ## All of my knowledge 
