@@ -16,6 +16,7 @@ module:
 lecturer:
 <% tp.file.cursor(1) %>
 created: <% tp.date.now("YYYY-MM-DD") %>
+year: '3'
 type:
 ---
 ---

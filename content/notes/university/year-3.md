@@ -1,8 +1,10 @@
 ---
+title: "Year 3 - Modules"
 cssclass: dashboard
 tags:
 - university 
 type: hub
+year: '3'
 ---
 <div style="display: flex; align-items: center;">
   <div style="margin-right: 20px;">
@@ -45,6 +47,14 @@ if (r>0 && r<q) {
 dv.paragraph(html)
 ```
 
+```dataview
+TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last modified"
+FROM ""
+WHERE year = "3"
+SORT file.mtime DESC
+LIMIT 25
+```
+
 # CS3072 - Final Year Project
 Lecturer: Fang Wang
 
@@ -85,7 +95,7 @@ Lecturer: Allan Tucker
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
-    - [Lab 1 - Introduction to R](notes/university/cs3002-lab1.md).
+    - [Lab 1 - Introduction to R](cs3002-lab1.md).
 - 📚 Reading list
 	- [[Sally Smith]]
 - Assessments
