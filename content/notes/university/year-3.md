@@ -85,9 +85,13 @@ Lecturer: Allan Tucker
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
-    - [Lab 1 - Introduction to R](notes/university/cs3002-lab1.md)
+    - [Lab 1 - Introduction to R](notes/university/cs3002-lab1.md).
 - 📚 Reading list
 	- [[Sally Smith]]
+- Assessments
+    - Deadlines:
+        - Lab 1 & 2: **06/11**.
+        - Lab 3 & 4: **27/11**.
 # Vault Info
 - 〽️ Stats
 	-  File Count: `$=dv.pages().length`
