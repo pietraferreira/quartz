@@ -1,0 +1,30 @@
+
+---
+title:  "CS3002 - AI"
+tags:
+  - university/cs3001
+module: 
+lecturer:
+created: 2023-09-12
+type: hub
+---
+---
+# Lecture Notes
+
+```dataview
+table without ID
+file.link as "Link", file.ctime as "Created Time"
+from #university/cs3002
+WHERE type = "lecture-note"
+sort file.ctime desc
+```
+
+# Lab Notes
+
+```dataview
+table without ID
+file.link as "Link", file.ctime as "Created Time"
+from #university/cs3002
+WHERE type = "lab"
+sort file.ctime desc
+```
