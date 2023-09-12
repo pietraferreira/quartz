@@ -39,7 +39,6 @@ if (r>0 && r<q) {
 }
 dv.paragraph(html)
 ```
-
 ```dataviewjs
 var a = moment().startOf('month');
 var b = moment().endOf('month');
