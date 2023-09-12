@@ -1,11 +1,11 @@
 ---
-title:  "CS3072 - Hub"
+title:  "CS3072 - Supervisor"
 tags:
   - university/cs3072
 module: fyp
 lecturer: Fang Wang
 created: 2023-09-11
-type: hub
+type: info
 ---
 ---
 <img src="https://www.brunel.ac.uk/people/people-images/rumyana-neykova/photo.jpg?v=20181024132901" width="75">
