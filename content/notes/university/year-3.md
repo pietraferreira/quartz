@@ -52,7 +52,7 @@ Lecturer: Fang Wang
 -  👥 Meetings
 - 📚 Reading list
 
-# [CS3001](notes/university/year3/cs3002/cs3002.md) - Advanced Topics
+# [CS3001](notes/university/year3/cs3001/cs3001.md) - Advanced Topics
 Lecturer:
 
 - 💼 Lecture notes
@@ -61,7 +61,7 @@ Lecturer:
 	- [[Q1 2022]]
 - 📚 Reading list
 	- [[Sally Smith]]
-# CS3003 - Software Engineering
+# [CS3003](notes/university/year3/cs3003/cs3003.md) - Software Engineering
 Lecturer:
 
 - 💼 Lecture notes
@@ -70,7 +70,7 @@ Lecturer:
 	- [[Q1 2022]]
 - 📚 Reading list
 	- [[Sally Smith]]
-# CS3609 - Cybersecurity
+# [CS3609](notes/university/year3/cs3609/cs3609.md) - Cybersecurity
 Lecturer:
 
 - 💼 Lecture notes
@@ -79,7 +79,7 @@ Lecturer:
 	- [[Q1 2022]]
 - 📚 Reading list
 	- [[Sally Smith]]
-# CS3002 - Artificial Inteligence
+# [CS3002](notes/university/year3/cs3002/cs3002.md) - Artificial Intelligence
 Lecturer:
 
 - 💼 Lecture notes
