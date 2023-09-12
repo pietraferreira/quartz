@@ -19,6 +19,7 @@ Main hub for all the different note categories :)
         - [Stats](https://tools.habitica.com/?uuid=7e4eeade-5799-4154-9c78-4d6967fddfc6).
 
 - [Focusverse.app](https://www.focusverse.app/)
+
 ## All of my knowledge 
 - [Hub](notes/general/knowledge-hub.md)
 
