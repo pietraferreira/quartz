@@ -1,4 +1,5 @@
 ---
+cssclass: test
 title: "Morioh"
 tags:
 type: hub
