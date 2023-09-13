@@ -75,7 +75,7 @@ Lecturer:
 Lecturer: Steve Counsell and Dr Giuseppe Destefanis.
 
 - 💻 Course structure.
-    - [Programme](notes/general/cs3003-programme.md).
+    - [Programme](notes/university/year3/cs3003/cs3003-programme.md).
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
@@ -98,7 +98,7 @@ Lecturer:
 Lecturer: Allan Tucker
 
 - 💻 Course structure.
-    - [Programme](notes/general/cs3002-programme.md)
+    - [Programme](notes/university/year3/cs3002/cs3002-programme.md)
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
@@ -112,7 +112,7 @@ Lecturer: Allan Tucker
         - Lab 1 & 2: **06/11**.
         - Lab 3 & 4: **27/11**.
 - 📈 Extra Reading
-    - Unsupervised Learning in R
+    - [Unsupervised Learning in R](notes/university/year3/cs3002/cs3002-unsupervised-learning-in-r.md)
 # Vault Info
 - 〽️ Stats
 	-  File Count: `$=dv.pages().length`
