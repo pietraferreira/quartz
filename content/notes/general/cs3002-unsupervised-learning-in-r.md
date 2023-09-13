@@ -80,3 +80,12 @@ For each cluster results:
 - sum all distances.
 
 This is a **local minimum**, no guarantee of a global minimum.
+
+## How to determine the number of clusters
+---
+1. Run k-means with `k=1`, `k=2`, …, `k=n`
+2. Record total within SS for each value of k.
+3. Choose k at the _elbow_ position, as illustrated below.
+
+![](notes/general/content/assets/Screenshot%202023-09-13%20at%2014.51.06.png)
+
