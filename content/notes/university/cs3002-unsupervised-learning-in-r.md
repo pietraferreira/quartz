@@ -13,11 +13,13 @@ source: https://lgatto.github.io/IntroMachineLearningWithR
 # Introduction
 ---
 In **unsupervised learning**, no labels are provided.
-    - Algorithm detects structure in unlabelled input data.
+
+- Algorithm detects structure in unlabelled input data.
 
 There are two types:
-    - **Clustering**: goal is to find homogeneous subgroups within the data (based on the distance between observations).
-    - **Dimensionality reduction**: goal is to identify pattens in the features of the data. Often used to visualise data as well as pre-process it.
+
+- **Clustering**: goal is to find homogeneous subgroups within the data (based on the distance between observations).
+- **Dimensionality reduction**: goal is to identify pattens in the features of the data. Often used to visualise data as well as pre-process it.
 
 # K-means clustering
 ---
