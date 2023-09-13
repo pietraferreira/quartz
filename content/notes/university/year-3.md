@@ -72,14 +72,19 @@ Lecturer:
 - 📚 Reading list
 	- [[Sally Smith]]
 # [CS3003](notes/university/year3/cs3003/cs3003.md) - Software Engineering
-Lecturer:
+Lecturer: Steve Counsell and Dr Giuseppe Destefanis.
 
+- 💻 Course structure.
+    - [Programme](notes/general/cs3003-programme.md).
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
 	- [[Q1 2022]]
 - 📚 Reading list
-	- [[Sally Smith]]
+    - [Ian Sommerville - Software Engineering, 10th Edition-Pearson (2016)](assets/university/year3/Ian%20Sommerville%20-%20Software%20Engineering,%2010th%20Edition-Pearson%20(2016).pdf).
+- ❗Assessments
+    - Deadlines:
+        - Software metrics analysis: **05/12**.
 # [CS3609](notes/university/year3/cs3609/cs3609.md) - Cybersecurity
 Lecturer:
 
@@ -92,13 +97,16 @@ Lecturer:
 # [CS3002](notes/university/year3/cs3002/cs3002.md) - Artificial Intelligence
 Lecturer: Allan Tucker
 
+- 💻 Course structure.
+    - [Programme](notes/general/cs3002-programme.md)
 - 💼 Lecture notes
 	- [[Cloud backup]]
 - 🔬 Lab notes
-    - [Lab 1 - Introduction to R](cs3002-lab1.md).
+    - [Lab 0 - Introduction to R](notes/university/year3/cs3002/cs3002-lab0.md)
 - 📚 Reading list
-	- [[Sally Smith]]
-- Assessments
+    - [Principles of Data Mining (MIT 2001)](assets/university/year3/Principles%20of%20Data%20Mining%20(MIT%202001).pdf)
+    - [Michael Negnevitsky - Artificial Intelligence: A Guide to Intelligent Systems 3rd Edition](assets/university/year3/Michael%20Negnevitsky%20-%20Artificial%20Intelligence_%20A%20Guide%20to%20Intelligent%20Systems%203rd%20Edition-Addison%20Wesley%202011.pdf)
+- ❗Assessments
     - Deadlines:
         - Lab 1 & 2: **06/11**.
         - Lab 3 & 4: **27/11**.
