@@ -112,7 +112,7 @@ Lecturer: Allan Tucker
         - Lab 1 & 2: **06/11**.
         - Lab 3 & 4: **27/11**.
 - 📈 Extra Reading
-    - [Unsupervised Learning in R](notes/university/year3/cs3002/cs3002-unsupervised-learning-in-r.md)
+    - [Unsupervised Learning in R](notes/university/cs3002-unsupervised-learning-in-r.md)
 # Vault Info
 - 〽️ Stats
 	-  File Count: `$=dv.pages().length`
