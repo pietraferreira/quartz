@@ -8,7 +8,7 @@ year: '3'
 ---
 <div style="display: flex; align-items: center;">
   <div style="margin-right: 20px;">
-    <img src="https://giffiles.alphacoders.com/215/215911.gif" width="300">
+    <img src="https://giffiles.alphacoders.com/215/215911.gif" width="200">
   </div>
   <div>
     <p>A list of all the different modules I am taking during my third year.</p>
