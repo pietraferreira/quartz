@@ -88,4 +88,3 @@ This is a **local minimum**, no guarantee of a global minimum.
 3. Choose k at the _elbow_ position, as illustrated below.
 
 ![](notes/general/content/assets/Screenshot%202023-09-13%20at%2014.51.06.png)
-
