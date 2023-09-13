@@ -81,7 +81,7 @@ Lecturer: Steve Counsell and Dr Giuseppe Destefanis.
 - 🔬 Lab notes
 	- [[Q1 2022]]
 - 📚 Reading list
-    - [Ian Sommerville - Software Engineering, 10th Edition-Pearson (2016)](assets/university/year3/Ian%20Sommerville%20-%20Software%20Engineering,%2010th%20Edition-Pearson%20(2016).pdf).
+    - [Ian Sommerville - Software Engineering, 10th Edition-Pearson (2016)](assets/university/year3/books/Ian%20Sommerville%20-%20Software%20Engineering,%2010th%20Edition-Pearson%20(2016).pdf).
 - ❗Assessments
     - Deadlines:
         - Software metrics analysis: **05/12**.
@@ -104,8 +104,8 @@ Lecturer: Allan Tucker
 - 🔬 Lab notes
     - [Lab 0 - Introduction to R](notes/university/year3/cs3002/cs3002-lab0.md)
 - 📚 Reading list
-    - [Principles of Data Mining (MIT 2001)](assets/university/year3/Principles%20of%20Data%20Mining%20(MIT%202001).pdf)
-    - [Michael Negnevitsky - Artificial Intelligence: A Guide to Intelligent Systems 3rd Edition](assets/university/year3/Michael%20Negnevitsky%20-%20Artificial%20Intelligence_%20A%20Guide%20to%20Intelligent%20Systems%203rd%20Edition-Addison%20Wesley%202011.pdf)
+    - [Principles of Data Mining (MIT 2001)](assets/university/year3/books/Principles%20of%20Data%20Mining%20(MIT%202001).pdf)
+    - [Michael Negnevitsky - Artificial Intelligence: A Guide to Intelligent Systems 3rd Edition](assets/university/year3/books/Michael%20Negnevitsky%20-%20Artificial%20Intelligence_%20A%20Guide%20to%20Intelligent%20Systems%203rd%20Edition-Addison%20Wesley%202011.pdf)
 - ❗Assessments
     - Deadlines:
         - Lab 1 & 2: **06/11**.
