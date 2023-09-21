@@ -50,3 +50,99 @@ asset.
 
 - A threat by itself does not always cause damage; there must be a vulnerability for a threat to be realised.
 - Software vendors must protect themselves from the liabilities of their own vulnerabilities with an **End-User License Agreement (EULA)**. 
+
+## The Three Tenets (CIA Model)
+---
+- **Confidentiality**: only authorised users can view information.
+- **Integrity**: only authorised users can change information.
+- **Availability**: information is accessible by authorised users whenever they request the information.
+
+![](notes/university/content/assets/Screenshot%202023-09-21%20at%2015.50.50.png)
+
+### Confidentiality
+---
+Includes:
+
+- Private data of individuals.
+- Intellectual property of business.
+- National security for countries and governments.
+
+**Security control**: conducting annual security awareness training for employees, putting an **IT security policy framework** in place, performing periodic security risk assessments, minimising software weaknesses by updating computers and servers with patches and security fixes etc.
+
+Security control specific to ensuring data confidentiality:
+
+- Having organisation-wide policies to protect confidential data.
+- Adopting a **data classification standard** that defines how to treat data.
+- Limit access to systems and applications that house confidential data to only those authorised.
+- Using cryptography techniques to hide confidential data.
+- Encrypting data.
+
+**Cryptography**: the practice of hiding data from cleartext into **ciphertext**.
+
+### Integrity
+---
+Deals with the validity and accuracy of data. Unauthorised changes to data can undermine its' value.
+
+### Availability
+---
+The amount of time users can use a system, application and data.
+
+Common time measurements are:
+
+- **Uptime**: total amount of time that a system, application and data are accessible. Normally measured in seconds, minutes and hours or a percentage of time available.
+- **Downtime**: the opposite of uptime.
+- **Availability**: (Total Uptime) / (Total Uptime + Total Downtime).
+- **Mean time to failure (MTTF)**: average amount of time between failures.
+- **Mean time to repair (MTTR)**: average amount of times it takes to repair a system, application or component.
+- **Mean time between failures (MTBF)**: predicted amount of time between failures of an IT system during operation.
+- **Recovery time objective (RTO)**: amount of time it takes to recover and make a system, application and data available for use after an outage.
+
+**Service-level agreement (SLA)**: a contract that guarantees a minimum monthly availability of service for wide area network (WAN) and Internet access links (normally from 99.5% to 99.999%).
+
+## Seven Domains of a Typical IT Infrastructure
+---
+### User Domain
+---
+- Defines the people who access an organisation's information system.
+
+#### Roles, Responsibilities and Accountability
+---
+- **Roles and tasks**: users can access systems, data and applications depending upon their defined access rights. Here you find an **acceptable use policy (AUP)**, which defines what users are allowed and not allowed to do with organisation-owned IT assets. First layer of defence starts here.
+- **Responsibilities**: employees are responsible for their use of IT assets.
+- **Accountability**: normally an organisation's human resources department is accountable for implementing proper employee background checks.
+
+#### Risks, Threats, and Vulnerabilities
+---
+![](notes/university/content/assets/Screenshot%202023-09-21%20at%2016.14.05.png)
+
+### Workstation Domain
+---
+A **workstation** can be a desktop, laptop, special-purpose terminal, any device that connects to the network.
+
+- **Thin client**: software or an actual computer with no hard drive that runs on a networks and relies on a server to provide applications, data and all processing. Normally used in large organisations, libraries and schools.
+- **Thick client**: more fully featured hardware that contains a hard drive and applications and processes data locally, going to the server mainly for file storage. An ordinary PC is an example of a thick client.
+
+#### Roles, Responsibilities and Accountability
+---
+- **Roles and tasks**: staff should have access necessary to be productive. The system should be **hardened**, meaning ensure that controls are in place to handle any software revisions, security patches and system configurations. It also needs additional layers of defence, referred to as **defence in depth**.
+- **Responsibilities**: enforce defined standards, safeguard controls, define proper access controls and assign access rights to systems, applications and data.
+- **Accountability**: an organisation's IT desktop manager is typically accountable for allowing employees the greatest use of the Workstation Domain.
+
+#### Risks, Threats and Vulnerabilities
+---
+Requires tight security and access controls. Requires a logon ID and password for access.
+
+![](notes/university/content/assets/Screenshot%202023-09-21%20at%2016.23.31.png)
+
+### LAN Domain
+---
+A **local area network (LAN)** is a collection of computers connected to one another or to a common connection medium.
+
+The physical part of the LAN Domain consists of:
+
+- **Network interface card (NIC)**: interface between the computer and the LAN physical media.
+- **Ethernet LAN**.
+- **Unshielded twisted-pair cabling**.
+- **LAN switch**: connects workstations into a physical Ethernet LAN. There are two kinds:
+    - **Layer 2 switch**: examines the MAC layer address and makes forwarding decisions based on MAC layer address tables.
+    - **Layer 3 switch**: examines the network layer address and routes packets based on routing protocol path determination decisions, it is the same thing as a router.
