@@ -146,3 +146,17 @@ The physical part of the LAN Domain consists of:
 - **LAN switch**: connects workstations into a physical Ethernet LAN. There are two kinds:
     - **Layer 2 switch**: examines the MAC layer address and makes forwarding decisions based on MAC layer address tables.
     - **Layer 3 switch**: examines the network layer address and routes packets based on routing protocol path determination decisions, it is the same thing as a router.
+- **File server and print server**: provide file sharing and data storage for users within a department.
+- **Wireless access point (WAP)**.
+
+The logical part of the LAN Domain consists of:
+
+- **System administration**: setup of user LAN accounts with logon ID and password access controls.
+- **Design of directory of file services**.
+- **Configuration of workstation and server TCP/IP software and communication protocols**: this involves IP addressing, the **IP default gateway router, subnet, mask address**, etc. The IP default gateway router acts as the entry/exit to the LAN. The subnet mask address defines the IP network number and IP host number. 
+- **Design of server disk storage space; backup and recovery of user data**.
+- **Design of virtual LANs (VLANs)**: With Layer 2 and Layer 3 LAN switches, Ethernet ports can be configured to be on the same VLAN, even though they may be connected to different physically connected LANs. This is the same thing as configuring workstations and servers to be on the same Ethernet LAN or broadcast domain.
+
+#### Roles, Responsibilities and Accountability
+---
+- **Roles and tasks**:
