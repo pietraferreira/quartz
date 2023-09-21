@@ -89,7 +89,7 @@ Lecturer: Steve Counsell and Dr Giuseppe Destefanis.
 Lecturer:
 
 - 💼 Lecture notes
-	- [[Cloud backup]]
+- Introduction to the module.
 - 🔬 Lab notes
 	- [[Q1 2022]]
 - 📚 Reading list
