@@ -37,4 +37,15 @@ domains of a typical IT infrastructure
 
 ## Definitions
 ---
-- "**Cyberspace** is all the accessible users, networks, webpages, and applications working in this worldwide electronic realm."
+- **Cyberspace**: is all the accessible users, networks, webpages, and applications working in this worldwide electronic realm.
+- **SIP-enabled (Session Initiation Protocol-enabled applications)**: unified communications, e.g.: Google Chat instant messaging service.
+- **Risk** is the likelihood that something bad will happen to an asset.
+- **Threat** is any action that could damage an asset.
+- **Business continuity plan (BCP)**: gives priorities to the functions an organisation needs to keep going.
+- **Disaster recovery plan (DRP)**: defines how a business gets back on its feet after a major disaster such as a fire or hurricane.
+- **Virus**: is a computer program written to cause damage to a system, an application, or data. 
+- **Malicious code (malware)**: is a computer program written to cause a specific action to occur, such as erasing a hard drive.
+- **Vulnerability**: is a weakness that allows a threat to be realised or to have an effect on an
+asset. 
+
+- A threat by itself does not always cause damage; there must be a vulnerability for a threat to be realised.
