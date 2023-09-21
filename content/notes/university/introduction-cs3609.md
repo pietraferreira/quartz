@@ -49,3 +49,4 @@ domains of a typical IT infrastructure
 asset. 
 
 - A threat by itself does not always cause damage; there must be a vulnerability for a threat to be realised.
+- Software vendors must protect themselves from the liabilities of their own vulnerabilities with an **End-User License Agreement (EULA)**. 
