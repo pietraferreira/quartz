@@ -18,7 +18,9 @@ type: lecture
 ## AI in Popular Culture
 ---
 - Early Computers & Turing (1940s) and the [British Bombe](https://en.wikipedia.org/wiki/Bombe) were significant milestones.
-- Clockwork & Automata (1700s-1800s) showcased early mechanical creations like Maillardet's Automaton and The Writer.
+- Clockwork & [Automata](notes/general/automaton.md) (1700s-1800s) showcased early mechanical creations like Maillardet's Automaton and The Writer.
+- Early AI research involved problem-solving, logic and games.
+- The Perceptron model of a neuron was introduced.
 
 ### Maillardet's Automaton
 ---
@@ -32,9 +34,14 @@ type: lecture
 - Was designed to resemble a young boy holding a quill pen and paper, it could write custom messages and draw images.
 - Could write any text up to 40 characters in length, even create intricate drawings.
 
-
+## Turing Test (1951)
+---
+- It involves a conversation between a human and a machine, with the goal being to determine if the machine's response are indistinguishable from those of a human.
+- Not a well defined-test, posing significant challenges in AI.
 ## Glossary
 ---
+- [Automaton](notes/general/automaton.md).
+
 
 
 Here are some notes and explanations based on the provided lecture content:
