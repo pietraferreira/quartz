@@ -27,3 +27,10 @@ It is a binary value, typically 0 or 1. It represents the decision or classifica
 
 ## Learning
 ---
+One of the key features of the Perceptron is its ability to learn from data. It can adjust its weights based on the input data and a learning rule, allowing it to adapt and make decisions over time.
+
+## Applications
+---
+They were initially used for simple binary classification tasks, one example being to distinguish between two classes of data points by finding an optimal decision boundary.
+
+They serve as a basis for more advanced neural network architectures, like multi-layer perceptrons (MLPs) and deep neural networks (DNNs).
