@@ -126,3 +126,11 @@ In 1963, IBM found out that roughly 80% of a computer's time was spent executing
 - Question 4: What are the advantages and disadvantages of Mob Programming?
 
 1. Brooks' Law says that "adding human resources to a late software project makes it later". This means that if a project is already behind schedule, adding more developers is unlikely to speed it up (it might even further delay the project). This happens because the new team members need time to ramp up, understand the project and create a relationship with the team to communicate effectively. It is important to mention that the complexity of communication grows exponentially with the number of people involved. The law is important because it 
+
+17+17+16+15+14+11=
+
+A* - 17
+A+ - 16
+A - 15
+A- - 14
+B- - 11
