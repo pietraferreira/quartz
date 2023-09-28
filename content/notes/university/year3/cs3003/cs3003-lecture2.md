@@ -120,3 +120,9 @@ In 1963, IBM found out that roughly 80% of a computer's time was spent executing
 
 # Questions
 ---
+- Question 1: What is Brooks’ Law and why is it important?
+- Question 2: It is impossible to change the shape of the Bathtub Curve. Discuss.
+- Question 3: Appraise the use of defensive programming.
+- Question 4: What are the advantages and disadvantages of Mob Programming?
+
+1. Brooks' Law says that "adding human resources to a late software project makes it later". This means that if a project is already behind schedule, adding more developers is unlikely to speed it up (it might even further delay the project). This happens because the new team members need time to ramp up, understand the project and create a relationship with the team to communicate effectively. It is important to mention that the complexity of communication grows exponentially with the number of people involved. The law is important because it 
