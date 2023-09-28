@@ -125,12 +125,8 @@ In 1963, IBM found out that roughly 80% of a computer's time was spent executing
 - Question 3: Appraise the use of defensive programming.
 - Question 4: What are the advantages and disadvantages of Mob Programming?
 
-1. Brooks' Law says that "adding human resources to a late software project makes it later". This means that if a project is already behind schedule, adding more developers is unlikely to speed it up (it might even further delay the project). This happens because the new team members need time to ramp up, understand the project and create a relationship with the team to communicate effectively. It is important to mention that the complexity of communication grows exponentially with the number of people involved. The law is important because it 
+1. Brooks' Law says that "adding human resources to a late software project makes it later". This means that if a project is already behind schedule, adding more developers is unlikely to speed it up (it might even further delay the project). This happens because the new team members need time to ramp up, understand the project and create a relationship with the team to communicate effectively. It is important to mention that the complexity of communication grows exponentially with the number of people involved. The law is important because it shows the challenges of managing software development projects effectively. 
 
-17+17+16+15+14+11=
+2. The Bathtub Curve normally has three phases: an initial high failure rate (early life failures), a constant failure rate (random failures) and a wear-out failure rate (due to ageing or deterioration). I think it is possible to influence, and even alter the shape of the curve. The team can implement better design practices, quality control and testing during the development, possibly reducing the number of early life failures, which can flatten the initial rising part of the curve. Regular maintenance can extend the life of the product, prolonging the constant failure rate. And technology advancements can extend the lifespan of products and even reduce the overall failure rates.
 
-A* - 17
-A+ - 16
-A - 15
-A- - 14
-B- - 11
+3. 
