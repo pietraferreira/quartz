@@ -121,12 +121,41 @@ In 1963, IBM found out that roughly 80% of a computer's time was spent executing
 # Questions
 ---
 - Question 1: What is Brooks’ Law and why is it important?
+
+ Brooks' Law says that "adding human resources to a late software project makes it later". This means that if a project is already behind schedule, adding more developers is unlikely to speed it up (it might even further delay the project). This happens because the new team members need time to ramp up, understand the project and create a relationship with the team to communicate effectively. It is important to mention that the complexity of communication grows exponentially with the number of people involved. The law is important because it shows the challenges of managing software development projects effectively. 
+
 - Question 2: It is impossible to change the shape of the Bathtub Curve. Discuss.
+
+The Bathtub Curve normally has three phases: an initial high failure rate (early life failures), a constant failure rate (random failures) and a wear-out failure rate (due to ageing or deterioration). I think it is possible to influence, and even alter the shape of the curve. The team can implement better design practices, quality control and testing during the development, possibly reducing the number of early life failures, which can flatten the initial rising part of the curve. Regular maintenance can extend the life of the product, prolonging the constant failure rate. And technology advancements can extend the lifespan of products and even reduce the overall failure rates.
+
 - Question 3: Appraise the use of defensive programming.
+
+Defensive programming is a technique in which programmers anticipate and prepare for potential errors, or unexpected inputs in their code. It involves taking precautions to ensure that the software remains robust and continues to function even in the presence of adverse conditions. 
+
+The advantages are:
+1. Improved reliability: it reduces the likelihood of unexpected errors or crashes in a software system, increasing its reliability.
+2. Enhances security: by validating inputs and ensuring that data is handled safely, it can help to protect against vulnerabilities.
+3. Easier debugging: defensive programming techniques make it easier to identify and locate the root causes of issues, speeding up the debugging process.
+4. Maintenance and extensibility: it makes the code more maintainable and extensible because it encourages clear error handling and documentation.
+5. User-friendly: they can provide meaningful error messages or gracefully handle errors, improving the user experience.
+
+The disadvantages are:
+1. Increased development time: defensive programming can add complexity to code and increase development time.
+2. Code complexity: it can lead to code bloat and reduced code readability.
+3. False positives: excessive defensive measures may lead to false positives, where valid input if flagged as an error.
+
 - Question 4: What are the advantages and disadvantages of Mob Programming?
 
-1. Brooks' Law says that "adding human resources to a late software project makes it later". This means that if a project is already behind schedule, adding more developers is unlikely to speed it up (it might even further delay the project). This happens because the new team members need time to ramp up, understand the project and create a relationship with the team to communicate effectively. It is important to mention that the complexity of communication grows exponentially with the number of people involved. The law is important because it shows the challenges of managing software development projects effectively. 
+The advantages are:
+1. Collaboration: Mod programming fosters a high level of collaboration and communication among team members, leading to a better problem solving and knowledge sharing.
+2. Knowledge sharing: team members with different skills and expertise can work together.
+3. Improved code quality: multiple team members review and contribute to code in real-time, which can lead to higher code quality, fewer bugs and improved design.
+4. Faster problem solving: complex problems can be solved quicker with multiple minds working on them simultaneously.
+5. Enhanced team building: it promotes a sense of unity and teamwork within the development team.
+6. Onboarding: can be a very effective way to onboard new team members as they can learn from experienced team members in real-time.
 
-2. The Bathtub Curve normally has three phases: an initial high failure rate (early life failures), a constant failure rate (random failures) and a wear-out failure rate (due to ageing or deterioration). I think it is possible to influence, and even alter the shape of the curve. The team can implement better design practices, quality control and testing during the development, possibly reducing the number of early life failures, which can flatten the initial rising part of the curve. Regular maintenance can extend the life of the product, prolonging the constant failure rate. And technology advancements can extend the lifespan of products and even reduce the overall failure rates.
-
-3. 
+Disadvantages:
+1. Resource intensive: requires the presence of the entire team, which can be resource intensive and not practical.
+2. Individual preferences: team members might have different work styles and preferences, Mob Programming might not suit everyone.
+3. Learning curve: teams may need time to adapt to Mob Programming.
+4. Limited autonomy: some developers prefer more autonomy in their work, and Mob Programming can be perceived as too restrictive.
