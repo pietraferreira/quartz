@@ -77,7 +77,7 @@ Lecturer: Steve Counsell and Dr Giuseppe Destefanis.
 - 💻 Course structure.
     - [Programme](notes/university/year3/cs3003/cs3003-programme.md).
 - 💼 Lecture notes
-	- [[Cloud backup]]
+    - 
 - 🔬 Lab notes
 	- [[Q1 2022]]
 - 📚 Reading list
