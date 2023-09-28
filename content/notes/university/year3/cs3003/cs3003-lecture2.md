@@ -35,4 +35,88 @@ type: lecture
     1. The result of not doing maintenance when you should.
     2. That "ignored" maintenance will come back to haunt you later.
 
+## Seven Relevant Topics to Maintenance (and hence system evolution)
+---
+### Software Evolution Theory
+---
+Lehman's Laws of Software Evolution:
+1. Continuing Change: system must be continually adapted else it becomes less satisfactory to use.
+2. Increasing Complexity: as the system evolves its complexity increases unless work is done to maintain or reduce it.
+3. Continuing Growth: the functional capability of systems must be continually increased to maintain user satisfaction over the system lifetime.
+4. Declining Quality: unless rigorously adapted to take into account changes in the operational environment, the quality of a system will appear to decline as it is evolved.
+5. Feedback System: evolution processes are multi-level, multi-loop, multi-agent feedback systems.
 
+### Defensive Programming
+---
+- Definition: technique where you assume the worst for all inputs.
+
+It helps maintenance because you are insuring for the future.
+
+The rules are:
+1. Never assume anything about the input.
+2. Use standards.
+3. Keep you code as simple as possible.
+
+### Mob Programming
+---
+- Definition: a software development approach where the whole team works on the same thing, at the same time, in the same space, and at the same computer. It builds on principles of lean manufacturing, extreme programming and lean software development.
+
+It covers definition of user stories or requirements, designing, coding, testing, deploying software, and working with the customer and business experts.
+
+Work is handled in working meetings or workshops:
+- All involved in creating the software are considered to be team members, including the customer and business experts.
+- Also works for distributed teams in the same virtual space using screen sharing.
+
+### Bathtub Curve
+---
+![](notes/university/year3/cs3003/content/assets/Screenshot%202023-09-28%20at%2017.15.45.png)
+
+#### What affects the shape of the bathtub?
+---
+- If the system is poor:
+    - There will be high numbers of problems at the start and it will take longer to reach the stability period.
+    - The period of 'constant failure rate' in the middle will be shorter.
+    - The decline will be much quicker.
+
+- What would a good system's bathtub look like?
+    - Low numbers of problems at the start.
+        - Reach the 'constant failure rate' stage quickly.
+    - Long period of 'constant failure rate'.
+    - A slow decline.
+
+### Brook's Law
+---
+"Adding human resources to a late software project makes it later".
+
+- Why?
+    - Ramp-up.
+        - Getting staff trained up on "what's happening" with the project.
+    - Complexity of communication.
+        - With two people in a team, there is only one communication channel (between person x and person y).
+        - With five people there are ten.
+
+![](notes/university/year3/cs3003/content/assets/Screenshot%202023-09-28%20at%2017.18.56.png)
+
+### Death March
+---
+A project which is believed by participants to be destined for failure, or that requires a stretch of unsustainable overwork.
+
+The project marches to its death as its members are forced by their superiors to continue the project against their better judgement.
+
+### Pareto Analysis
+---
+It is named after Vilfredo Pareto. 
+
+He established that 20% of the population in Italy owned 80% of the land.
+
+![](notes/university/year3/cs3003/content/assets/Screenshot%202023-09-28%20at%2017.20.46.png)
+
+Some examples in day-to-day life:
+- 80% of customers complaints arise from 20% of products and services.
+- 20% of products and services account for 80% of your profit.
+- 20% of sales force produces 80% of your company revenues.
+
+In 1963, IBM found out that roughly 80% of a computer's time was spent executing only 20% of the instructions.
+
+# Questions
+---
