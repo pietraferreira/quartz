@@ -59,8 +59,17 @@ Helps understand gene interactions and identify genes linked to diseases.
 - Commonly adopted similarity metric is **distance**.
 - **Euclidean** and **Manhattan** distances are commonly used metrics.
 
+More distance metrics:
+- Correlation.
+- Minkowski.
+- Mahalanobis.
+
+They are often application dependant. The important things are the **shape**, **distance** and **scale**.
+
 #### Euclidean
 ---
+The square root of the sum of the squared differences between coordinates.
+
 - Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
 
 | x   | 5.5 | 2.9 | 4.8 | 6.7 | 0.6 |
@@ -79,7 +88,121 @@ $= \sqrt(114.07) = 10.68$
 
 #### Manhattan
 ---
+The sum of the absolute differences between the coordinates of two points.
+
 - Formula: $(d(x,y) = |x_1 - y_1| + |x_2 - y_2| + \ldots + |x_N - y_N|)$
+Therefore, $d(x,y)$:
+
+$(|5.5 - 0.2| + |2.9 - 1.0| + |4.8 - 4.8| + |6.7 - 3.8| + |0.6 - 9.2|)$
+
+$= 5.3 + 1.9 + 0.0 + 2.9 + 8.6$
+
+$= 18.7$
+
+### Embeddings
+---
+It means to map data onto a new space to capture different characteristics.
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.01.png)
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.21.png)
+
+### K-Means Clustering Algorithm
+---
+1. Place K points into the feature space. These points represent initial cluster centroids.
+2. Assign each pattern to the closest cluster centroid.
+3. When all objects have been assigned, recalculate the positions of the K centroids.
+4. Repeat Steps 2 and 3 until the assignments do not change.
+
+Interactive [demo](https://user.ceng.metu.edu.tr/~akifakkus/courses/ceng574/k-means/).
+
+#### Pros and Cons
+---
+Pros:
+- May be computationally faster than hierarchical clustering, if K is small.
+- May produce tighter clusters than hierarchical clustering, specially if the clusters are globular.
+
+Cons:
+- Fixed number of clusters can make it difficult to predict what K should be.
+- Different initial partitions can result in different final clusters.
+- Potentially empty clusters (not always bad).
+- Does not work well with non-globular clusters.
+#### Variables
+---
+1. How to determine k, the number of clusters?
+
+We can use the **elbow method**, **silhouette analysis**, or **domain knowledge** to determine the optimal number of clusters.
+
+1. **Elbow Method:**
+   - The elbow method involves running K-Means clustering with a range of values for k (the number of clusters), typically from 1 to some maximum value.
+   - For each k, the sum of squared distances from each data point to its assigned cluster centroid (inertia) is calculated.
+   - The elbow method looks for an "elbow point" in the plot of inertia against k. This point is where the rate of decrease in inertia sharply changes, indicating an optimal number of clusters.
+   - The chosen k typically corresponds to the point where adding more clusters does not significantly reduce inertia.
+
+2. **Silhouette Analysis:**
+   - Silhouette analysis assesses the quality of clusters by measuring how similar each data point is to its own cluster (cohesion) compared to other nearby clusters (separation).
+   - For each data point, a silhouette score is computed, which ranges from -1 to 1. A higher silhouette score suggests better-defined and well-separated clusters.
+   - Silhouette analysis is performed for different values of k, and the k with the highest average silhouette score is considered the optimal number of clusters.
+
+3. **Domain Knowledge:**
+   - Domain knowledge involves leveraging your understanding of the specific problem or dataset to determine the number of clusters.
+   - Sometimes, the nature of the data or the goals of the analysis may provide clear guidance on the expected number of clusters.
+   - Domain experts or prior research can offer valuable insights into the appropriate clustering structure.
+   - While the elbow method and silhouette analysis are data-driven approaches, domain knowledge relies on human expertise and context.
+
+2. Any alternative ways of choosing the initial cluster centroids?
+
+Alternative methods include: random initialisation, K-Means++ and custom initialisation based on domain knowledge.
+
+K-Means++ is an improved initialisation technique for K-Means, starting with better cluster centroids.
+
+3. Does the algorithm converge to the same results with different selections of initial cluster centroids? If not, what should we do in practice?
+
+No, it can converge to different results with different initial centroids. To address this, it's normal to run the algorithm multiple times with different initialisations and choose the best result based on a suitable criterion, for example minimising the sum of squared distance within clusters.
+
+### Hierarchical (agglomerative) Clustering
+---
+It results in a series of clustering results.
+
+Starts with each object in its cluster and it ends with all objects in the same cluster, with the intermediate clusters being created by a series of merges.
+
+The resultant tree is called a **dendrogram**:
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.03.03.png)
+
+1. Each item is assigned to its own cluster (n clusters of size one).
+2. Let the distances between the clusters equal the distances between the objects they contain.
+3. Find the closest pair of clusters and merge them into a single cluster (one less cluster).
+4. Re-compute the distances between the new cluster and each of the old clusters.
+5. Repeat steps 3 and 4 until there is only one cluster left.
+
+#### Re-computing Distances
+---
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.04.18.png)
+
+| Linkage  | Description                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------ |
+| Single   | Smallest distance between any two pairs from the two clusters (one from each) being compared/measured. |
+| Average  | Average distance between pairs.                                                                        |
+| Complete | Largest distance between any two pairs from the two clusters (one from each) being compared/measured.  | 
+
+Other methods:
+- Ward.
+- McQuitty.
+- Median.
+- Centroid.
+
+Can find a demo [here](https://macdobry.shinyapps.io/free-clust/).
+
+#### Pros and Cons
+---
+Pros:
+- Can produce an ordering of the objects, might be informative for data display.
+- Smaller clusters are generated, might be helpful for discovery.
+
+Cons:
+- No provision for a relocation of objects that may have been 'incorrectly' grouped at an early stage.
+- Different distance metrics for measuring distances between clusters may generate different results.
 
 # Supervised Learning
 --- 
@@ -88,3 +211,7 @@ Learning with the desired output.
 Some methods are:
 - Classification.
 - Regression.
+
+# Glossary
+---
+- **Cluster centroid**: central point within clusters, the average position of all data points assigned to a particular cluster. The heart or core of each cluster.
