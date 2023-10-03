@@ -59,8 +59,27 @@ Helps understand gene interactions and identify genes linked to diseases.
 - Commonly adopted similarity metric is **distance**.
 - **Euclidean** and **Manhattan** distances are commonly used metrics.
 
-- Euclidean: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
-- Manhattan: $(d(x,y) = |x_1 - y_1| + |x_2 - y_2| + \ldots + |x_N - y_N|)$
+#### Euclidean
+---
+- Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
+
+| x   | 5.5 | 2.9 | 4.8 | 6.7 | 0.6 |
+| --- | --- | --- | --- | --- | --- |
+| y   | 0.2 | 1.0 | 4.8 | 3.8 | 9.2 | 
+
+Therefore, $d(x,y)$:
+
+$= \sqrt{((5.5 - 0.2)^2 + (2.9 - 1.0)^2 + (4.8 - 4.8)^2 + (6.7 - 3.8)^2 (0.6 - 9.2)^2)}$
+
+$= \sqrt{((5.3)^2 + (1.9)^2 + (0.0)^2 + (2.9)^2 + (-8.6)^2)}$
+
+$= \sqrt{(28.09 + 3.61 + 0.0 + 8.41 + 73.96)}$
+
+$= \sqrt(114.07) = 10.68$
+
+#### Manhattan
+---
+- Formula: $(d(x,y) = |x_1 - y_1| + |x_2 - y_2| + \ldots + |x_N - y_N|)$
 
 # Supervised Learning
 --- 
