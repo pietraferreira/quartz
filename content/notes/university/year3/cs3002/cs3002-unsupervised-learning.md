@@ -133,18 +133,18 @@ Cons:
 
 We can use the **elbow method**, **silhouette analysis**, or **domain knowledge** to determine the optimal number of clusters.
 
-1. **Elbow Method:**
+- **Elbow Method:**
    - The elbow method involves running K-Means clustering with a range of values for k (the number of clusters), typically from 1 to some maximum value.
    - For each k, the sum of squared distances from each data point to its assigned cluster centroid (inertia) is calculated.
    - The elbow method looks for an "elbow point" in the plot of inertia against k. This point is where the rate of decrease in inertia sharply changes, indicating an optimal number of clusters.
    - The chosen k typically corresponds to the point where adding more clusters does not significantly reduce inertia.
 
-2. **Silhouette Analysis:**
+- **Silhouette Analysis:**
    - Silhouette analysis assesses the quality of clusters by measuring how similar each data point is to its own cluster (cohesion) compared to other nearby clusters (separation).
    - For each data point, a silhouette score is computed, which ranges from -1 to 1. A higher silhouette score suggests better-defined and well-separated clusters.
    - Silhouette analysis is performed for different values of k, and the k with the highest average silhouette score is considered the optimal number of clusters.
 
-3. **Domain Knowledge:**
+- **Domain Knowledge:**
    - Domain knowledge involves leveraging your understanding of the specific problem or dataset to determine the number of clusters.
    - Sometimes, the nature of the data or the goals of the analysis may provide clear guidance on the expected number of clusters.
    - Domain experts or prior research can offer valuable insights into the appropriate clustering structure.
@@ -204,6 +204,74 @@ Cons:
 - No provision for a relocation of objects that may have been 'incorrectly' grouped at an early stage.
 - Different distance metrics for measuring distances between clusters may generate different results.
 
+
+### Limitations of K-Means (and Hierarchical)
+---
+At each iteration, a pattern can be assigned to one cluster only (the assignment is **hard**).
+
+For example, **x** here in the middle of the two cluster centroids will either:
+- drag m1 down, or
+- drag m2 up.
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.05.37.png)
+
+### Fuzzy Clustering
+---
+For example: Fuzzy c-Means.
+
+- No sharp boundary.
+- Fuzzy clustering is often better suited.
+- Fuzzy c-Means is a fuzzification of k-Means and the most well-known.
+
+The cluster membership is now a weight **between 0 or 1** and the distance to a centroid is multiplied by the membership weight.
+
+### DBSCAN
+---
+- Density based clustering algorithm, density being the number of points within a specified radius (Eps).
+- A point is a core point if it has more than a specified number of points (MinPts) within Eps.
+- Core point is in the interior of a cluster.
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.24.png)
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.38.png)
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.49.png)
+
+### Evaluating Cluster Quality
+---
+How do we know if the discovered clusters are any good?
+
+The choice of metric is vital.
+
+#### Cohesion and Separation
+---
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.11.13.png)
+
+#### Supervised
+---
+We can use the "true clusters" to test the effectiveness of different clustering algorithms.
+
+##### Comparing Clusters
+---
+We can use metrics to measure how similar two arrangements are.
+
+#### Weighted-Kappa
+---
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.13.16.png)
+
+### Association Rules
+---
+Another form of unsupervised learning.
+
+Works with "**basket data**".
+
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.30.png)
+
+#### Support, Confidence and Lift
+---
+![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.52.png)
+
+Given a large amount of basket data, generate rules.
 # Supervised Learning
 --- 
 Learning with the desired output.
@@ -215,3 +283,10 @@ Some methods are:
 # Glossary
 ---
 - **Cluster centroid**: central point within clusters, the average position of all data points assigned to a particular cluster. The heart or core of each cluster.
+
+# Reading
+---
+- Chapter 9, Section 9.3: David Hand “Principles of Data Mining”, MIT Press
+- Pang-Ning Tan “Introduction to Data Mining” (Chapter 8): http://www-users.cs.umn.edu/~kumar/dmbook/index.php
+- Anil Jain: “Data Clustering: 50 Years Beyond K-Means”, Pattern Recognition Letters
+- Tang et al., Kumar, Introduction to Data Mining (Chapter 6): https://www-users.cs.umn.edu/~kumar001/dmbook/index.php
