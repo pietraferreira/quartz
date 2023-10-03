@@ -100,7 +100,8 @@ Lecturer: Allan Tucker
 - 💻 Course structure.
     - [Programme](notes/university/year3/cs3002/cs3002-programme.md)
 - 💼 Lecture notes
-     - Intro to AI
+     - [Intro to AI](notes/university/year3/cs3002/cs3002-intro-to-ai.md)
+     - Unsupervised Learning (03/10)
 - 🔬 Lab notes
     - [Lab 0 - Introduction to R](notes/university/year3/cs3002/cs3002-lab0.md)
 - 📚 Reading list
