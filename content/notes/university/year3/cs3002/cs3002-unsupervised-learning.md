@@ -62,6 +62,8 @@ The square root of the sum of the squared differences between coordinates.
 
 - Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
 
+---
+
 | x   | 5.5 | 2.9 | 4.8 | 6.7 | 0.6 |
 | --- | --- | --- | --- | --- | --- |
 | y   | 0.2 | 1.0 | 4.8 | 3.8 | 9.2 | 
