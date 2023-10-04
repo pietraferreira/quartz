@@ -231,12 +231,33 @@ blockquote {
   transition: border-color 0.2s ease;
 }
 
+h1 {
+  color: #f7768e;
+}
+
+h2 {
+  color: #e0af68;
+}
+
 h3 {
-  color: var(--secondary);
+  color: #9ece6a;
+}
+
+h4 {
+  color: #7dcfff;
+}
+
+h5 {
+  color: #7aa2f7;
+}
+
+h6 {
+  color: #bb9af7;
 }
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6,
@@ -385,6 +406,10 @@ code {
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
   background: var(--lightgray);
+}
+
+p {
+  color: #2ac3de;
 }
 
 tbody,
