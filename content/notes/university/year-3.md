@@ -52,7 +52,7 @@ TABLE dateformat(file.mtime, "dd.MM.yyyy - HH:mm") AS "Last modified"
 FROM ""
 WHERE year = "3"
 SORT file.mtime DESC
-LIMIT 25
+LIMIT 5
 ```
 
 # CS3072 - Final Year Project
