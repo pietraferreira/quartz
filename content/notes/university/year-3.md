@@ -85,6 +85,8 @@ Lecturer: Simon J E Taylor
 
 - 💻 Course structure.
     - [[notes/university/year3/cs3004/cs3004-programme|Programme]]
+- 📝 Lecture (Not following the programme?)
+    - [[notes/university/year3/cs3004/cs3004-network-computing-intro|Network Computing Introduction]]
 - 📚 Reading list
 - ❗Assessments
     - Deadlines:
