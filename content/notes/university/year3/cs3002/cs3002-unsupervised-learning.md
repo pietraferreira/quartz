@@ -32,26 +32,20 @@ A collection of objects which are "similar" between them and are "dissimilar" to
 
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.33.png)
 
-### Uses of Clustering
----
-#### Social Networks
----
+## Uses of Clustering
+### Social Networks
 For purposes like marketing, terror networks, resource allocation in companies/universities.
 
-#### Customer Segmentation
----
+### Customer Segmentation
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.25.55.png)
 
-#### Gene Networks
----
+### Gene Networks
 Helps understand gene interactions and identify genes linked to diseases.
 
-### How to do Clustering?
----
+## How to do Clustering?
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.27.12.png)
 
-### Pattern Similarity and Distance Metrics
----
+## Pattern Similarity and Distance Metrics
 - Clusters are formed by similar patterns.
 - Commonly adopted similarity metric is **distance**.
 - **Euclidean** and **Manhattan** distances are commonly used metrics.
@@ -63,8 +57,7 @@ More distance metrics:
 
 They are often application dependant. The important things are the **shape**, **distance** and **scale**.
 
-#### Euclidean
----
+### Euclidean
 The square root of the sum of the squared differences between coordinates.
 
 - Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
@@ -83,8 +76,7 @@ $= \sqrt{(28.09 + 3.61 + 0.0 + 8.41 + 73.96)}$
 
 $= \sqrt(114.07) = 10.68$
 
-#### Manhattan
----
+### Manhattan
 The sum of the absolute differences between the coordinates of two points.
 
 - Formula: $(d(x,y) = |x_1 - y_1| + |x_2 - y_2| + \ldots + |x_N - y_N|)$
@@ -96,16 +88,14 @@ $= 5.3 + 1.9 + 0.0 + 2.9 + 8.6$
 
 $= 18.7$
 
-### Embeddings
----
+## Embeddings
 It means to map data onto a new space to capture different characteristics.
 
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.01.png)
 
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.21.png)
 
-### K-Means Clustering Algorithm
----
+## K-Means Clustering Algorithm
 1. Place K points into the feature space. These points represent initial cluster centroids.
 2. Assign each pattern to the closest cluster centroid.
 3. When all objects have been assigned, recalculate the positions of the K centroids.
@@ -113,8 +103,7 @@ It means to map data onto a new space to capture different characteristics.
 
 Interactive [demo](https://user.ceng.metu.edu.tr/~akifakkus/courses/ceng574/k-means/).
 
-#### Pros and Cons
----
+### Pros and Cons
 Pros:
 - May be computationally faster than hierarchical clustering, if K is small.
 - May produce tighter clusters than hierarchical clustering, specially if the clusters are globular.
@@ -124,8 +113,7 @@ Cons:
 - Different initial partitions can result in different final clusters.
 - Potentially empty clusters (not always bad).
 - Does not work well with non-globular clusters.
-#### Variables
----
+### Variables
 1. How to determine k, the number of clusters?
 
 We can use the **elbow method**, **silhouette analysis**, or **domain knowledge** to determine the optimal number of clusters.
@@ -157,8 +145,7 @@ K-Means++ is an improved initialisation technique for K-Means, starting with bet
 
 No, it can converge to different results with different initial centroids. To address this, it's normal to run the algorithm multiple times with different initialisations and choose the best result based on a suitable criterion, for example minimising the sum of squared distance within clusters.
 
-### Hierarchical (agglomerative) Clustering
----
+## Hierarchical (agglomerative) Clustering
 It results in a series of clustering results.
 
 Starts with each object in its cluster and it ends with all objects in the same cluster, with the intermediate clusters being created by a series of merges.
@@ -173,8 +160,7 @@ The resultant tree is called a **dendrogram**:
 4. Re-compute the distances between the new cluster and each of the old clusters.
 5. Repeat steps 3 and 4 until there is only one cluster left.
 
-#### Re-computing Distances
----
+### Re-computing Distances
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.04.18.png)
 
 | Linkage  | Description                                                                                            |
@@ -191,8 +177,7 @@ Other methods:
 
 Can find a demo [here](https://macdobry.shinyapps.io/free-clust/).
 
-#### Pros and Cons
----
+### Pros and Cons
 Pros:
 - Can produce an ordering of the objects, might be informative for data display.
 - Smaller clusters are generated, might be helpful for discovery.
@@ -202,8 +187,7 @@ Cons:
 - Different distance metrics for measuring distances between clusters may generate different results.
 
 
-### Limitations of K-Means (and Hierarchical)
----
+## Limitations of K-Means (and Hierarchical)
 At each iteration, a pattern can be assigned to one cluster only (the assignment is **hard**).
 
 For example, **x** here in the middle of the two cluster centroids will either:
@@ -212,8 +196,7 @@ For example, **x** here in the middle of the two cluster centroids will either:
 
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.05.37.png)
 
-### Fuzzy Clustering
----
+## Fuzzy Clustering
 For example: Fuzzy c-Means.
 
 - No sharp boundary.
@@ -222,8 +205,7 @@ For example: Fuzzy c-Means.
 
 The cluster membership is now a weight **between 0 or 1** and the distance to a centroid is multiplied by the membership weight.
 
-### DBSCAN
----
+## DBSCAN
 - Density based clustering algorithm, density being the number of points within a specified radius (Eps).
 - A point is a core point if it has more than a specified number of points (MinPts) within Eps.
 - Core point is in the interior of a cluster.
@@ -234,43 +216,35 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.49.png)
 
-### Evaluating Cluster Quality
----
+## Evaluating Cluster Quality
 How do we know if the discovered clusters are any good?
 
 The choice of metric is vital.
 
-#### Cohesion and Separation
----
+### Cohesion and Separation
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.11.13.png)
 
-#### Supervised
----
+### Supervised
 We can use the "true clusters" to test the effectiveness of different clustering algorithms.
 
-##### Comparing Clusters
----
+#### Comparing Clusters
 We can use metrics to measure how similar two arrangements are.
 
-#### Weighted-Kappa
----
+### Weighted-Kappa
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.13.16.png)
 
-### Association Rules
----
+## Association Rules
 Another form of unsupervised learning.
 
 Works with "**basket data**".
 
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.30.png)
 
-#### Support, Confidence and Lift
----
+### Support, Confidence and Lift
 ![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.52.png)
 
 Given a large amount of basket data, generate rules.
 # Supervised Learning
---- 
 Learning with the desired output.
 
 Some methods are:
@@ -278,11 +252,9 @@ Some methods are:
 - Regression.
 
 # Glossary
----
 - **Cluster centroid**: central point within clusters, the average position of all data points assigned to a particular cluster. The heart or core of each cluster.
 
 # Reading
----
 - Chapter 9, Section 9.3: David Hand “Principles of Data Mining”, MIT Press
 - Pang-Ning Tan “Introduction to Data Mining” (Chapter 8): http://www-users.cs.umn.edu/~kumar/dmbook/index.php
 - Anil Jain: “Data Clustering: 50 Years Beyond K-Means”, Pattern Recognition Letters
