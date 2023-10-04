@@ -231,6 +231,26 @@ blockquote {
   transition: border-color 0.2s ease;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+thead {
+  font-family: var(--headerFont);
+  color: var(--dark);
+  font-weight: revert;
+  margin-bottom: 0;
+
+  article > & > a {
+    color: var(--dark);
+    &.internal {
+      background-color: transparent;
+    }
+  }
+}
+
 h1 {
   color: #f7768e;
 }
@@ -253,26 +273,6 @@ h5 {
 
 h6 {
   color: #bb9af7;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-thead {
-  font-family: var(--headerFont);
-  color: var(--dark);
-  font-weight: revert;
-  margin-bottom: 0;
-
-  article > & > a {
-    color: var(--dark);
-    &.internal {
-      background-color: transparent;
-    }
-  }
 }
 
 h1,
