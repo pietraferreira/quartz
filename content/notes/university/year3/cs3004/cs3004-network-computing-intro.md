@@ -45,7 +45,9 @@ The main reason for network computing is **resource sharing**.
 
 ![[notes/images/Screenshot 2023-10-04 at 19.09.02.png|480]] ![[notes/images/Screenshot 2023-10-04 at 19.09.15.png|480]]
 
-![[notes/images/Screenshot 2023-10-04 at 19.14.06.png|480]]# Virtual Working Environments
+![[notes/images/Screenshot 2023-10-04 at 19.14.06.png|600]]
+![[notes/images/Screenshot 2023-10-04 at 19.14.42.png|600]]
+# Virtual Working Environments
 They used to be called **Groupware**. It is a client tool that allows you to connect to a central server:
 - Schedule meetings.
 - Conference calls.
@@ -80,6 +82,20 @@ It is simple, **scalable** computing.
 
 ## E-Infrastructure Architecture
 ![[notes/images/Screenshot 2023-10-04 at 19.13.28.png|500]]
+
+# Service Oriented Architecture
+The roots of SOA compare:
+- Single-tier client-server architecture.
+- Two-tier client-server architecture.
+- Multi-tier client-server architecture.
+- Distributed Internet architecture.
+- RPC architecture.
+
+To:
+- Wrapper services.
+
+![[notes/images/Screenshot 2023-10-04 at 19.16.18.png|280]] ![[notes/images/Screenshot 2023-10-04 at 19.16.38.png|280]]
+
 
 # Reading
 - Coulouris: chapter 1.
