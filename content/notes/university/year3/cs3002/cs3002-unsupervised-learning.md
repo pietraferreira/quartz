@@ -70,7 +70,7 @@ They are often application dependant. The important things are the **shape**, **
 ---
 The square root of the sum of the squared differences between coordinates.
 
-- Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
+- Formula: $(d(x,y) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + \ldots + (z_{N-1} - z_N)^2})$
 
 | x   | 5.5 | 2.9 | 4.8 | 6.7 | 0.6 |
 | --- | --- | --- | --- | --- | --- |
