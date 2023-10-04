@@ -105,6 +105,7 @@ Lecturer: Allan Tucker
      - [[notes/university/year3/cs3002/cs3002-unsupervised-learning|Unsupervised Learning]]
 - 🔬 Lab notes
     - [Lab 0 - Introduction to R](notes/university/year3/cs3002/cs3002-lab0.md)
+    - [[notes/university/year3/cs3002/cs3002-lab1|Lab 1 - Unsupervised Learning]]
 - 📚 Reading list
     - [Principles of Data Mining (MIT 2001)](assets/university/year3/books/Principles%20of%20Data%20Mining%20(MIT%202001).pdf)
     - [Michael Negnevitsky - Artificial Intelligence: A Guide to Intelligent Systems 3rd Edition](assets/university/year3/books/Michael%20Negnevitsky%20-%20Artificial%20Intelligence_%20A%20Guide%20to%20Intelligent%20Systems%203rd%20Edition-Addison%20Wesley%202011.pdf)
