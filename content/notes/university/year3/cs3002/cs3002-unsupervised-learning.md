@@ -28,20 +28,20 @@ Clusters are collections of similar objects without the need for 'teacher' signa
 
 A collection of objects which are "similar" between them and are "dissimilar" to the objects belonging to other clusters.
 
-![[notes/images/img1.png|300]]  ![[notes/university/year3/cs3002/content/assets/Screenshot 2023-10-03 at 12.24.33.png|300]]
+![[notes/images/img1.png|300]]  ![[notes/images/Screenshot 2023-10-03 at 12.24.33.png|400]]
 
 ## Uses of Clustering
 ### Social Networks
 For purposes like marketing, terror networks, resource allocation in companies/universities.
 
 ### Customer Segmentation
-![|600](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.25.55.png)
+![[notes/images/Screenshot 2023-10-03 at 12.25.55.png|500]]
 
 ### Gene Networks
 Helps understand gene interactions and identify genes linked to diseases.
 
 ## How to do Clustering?
-![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.27.12.png)
+![[notes/images/Screenshot 2023-10-03 at 12.27.12.png|400]]
 
 ## Pattern Similarity and Distance Metrics
 - Clusters are formed by similar patterns.
@@ -80,6 +80,7 @@ $= \sqrt(114.07) = 10.68$
 The sum of the absolute differences between the coordinates of two points.
 
 - Formula: $(d(x,y) = |x_1 - y_1| + |x_2 - y_2| + \ldots + |x_N - y_N|)$
+
 Therefore, $d(x,y)$:
 
 $(|5.5 - 0.2| + |2.9 - 1.0| + |4.8 - 4.8| + |6.7 - 3.8| + |0.6 - 9.2|)$
@@ -91,9 +92,7 @@ $= 18.7$
 ## Embeddings
 It means to map data onto a new space to capture different characteristics.
 
-![|360](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.01.png)
-
-![|360](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.21.png)
+![[notes/images/Screenshot 2023-10-03 at 12.44.01.png|300]] ![[notes/images/Screenshot 2023-10-03 at 12.44.21.png|300]]
 
 ## K-Means Clustering Algorithm
 1. Place K points into the feature space. These points represent initial cluster centroids.
@@ -152,7 +151,7 @@ Starts with each object in its cluster and it ends with all objects in the same 
 
 The resultant tree is called a **dendrogram**:
 
-![|350](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.03.03.png)
+![[notes/images/Screenshot 2023-10-03 at 13.03.03.png|300]]
 
 1. Each item is assigned to its own cluster (n clusters of size one).
 2. Let the distances between the clusters equal the distances between the objects they contain.
@@ -161,13 +160,13 @@ The resultant tree is called a **dendrogram**:
 5. Repeat steps 3 and 4 until there is only one cluster left.
 
 ### Re-computing Distances
-![350](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.04.18.png)
+![[notes/images/Screenshot 2023-10-03 at 13.04.18.png|400]]
 
-| Linkage  | Description                                                                                            |
+| Link     | Description                                                                                            |
 | -------- | ------------------------------------------------------------------------------------------------------ |
 | Single   | Smallest distance between any two pairs from the two clusters (one from each) being compared/measured. |
 | Average  | Average distance between pairs.                                                                        |
-| Complete | Largest distance between any two pairs from the two clusters (one from each) being compared/measured.  | 
+| Complete | Largest distance between any two pairs from the two clusters (one from each) being compared/measured.  |
 
 Other methods:
 - Ward.
@@ -194,7 +193,7 @@ For example, **x** here in the middle of the two cluster centroids will either:
 - drag m1 down, or
 - drag m2 up.
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.05.37.png)
+![[notes/images/Screenshot 2023-10-03 at 14.05.37.png|300]]
 
 ## Fuzzy Clustering
 For example: Fuzzy c-Means.
@@ -210,11 +209,7 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 - A point is a core point if it has more than a specified number of points (MinPts) within Eps.
 - Core point is in the interior of a cluster.
 
-![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.24.png)
-
-![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.38.png)
-
-![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.49.png)
+![[notes/images/Screenshot 2023-10-03 at 14.09.24.png|300]] ![[notes/images/Screenshot 2023-10-03 at 14.09.38.png|300]] ![[notes/images/Screenshot 2023-10-03 at 14.09.49.png|300]]
 
 ## Evaluating Cluster Quality
 How do we know if the discovered clusters are any good?
@@ -222,7 +217,7 @@ How do we know if the discovered clusters are any good?
 The choice of metric is vital.
 
 ### Cohesion and Separation
-![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.11.13.png)
+![[notes/images/Screenshot 2023-10-03 at 14.11.13.png|300]]
 
 ### Supervised
 We can use the "true clusters" to test the effectiveness of different clustering algorithms.
@@ -231,17 +226,17 @@ We can use the "true clusters" to test the effectiveness of different clustering
 We can use metrics to measure how similar two arrangements are.
 
 ### Weighted-Kappa
-![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.13.16.png)
+![[notes/images/Screenshot 2023-10-03 at 14.13.16.png|400]]
 
 ## Association Rules
 Another form of unsupervised learning.
 
 Works with "**basket data**".
 
-![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.30.png)
+![[notes/images/Screenshot 2023-10-03 at 14.14.30.png|450]]
 
 ### Support, Confidence and Lift
-![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.52.png)
+![[notes/images/Screenshot 2023-10-03 at 14.14.52.png|400]]
 
 Given a large amount of basket data, generate rules.
 # Supervised Learning

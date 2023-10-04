@@ -69,7 +69,7 @@ Work is handled in working meetings or workshops:
 
 ### Bathtub Curve
 ---
-![](notes/university/year3/cs3003/content/assets/Screenshot%202023-09-28%20at%2017.15.45.png)
+![](notes/images/Screenshot%202023-09-28%20at%2017.15.45.png)
 
 #### What affects the shape of the bathtub?
 ---
@@ -95,7 +95,7 @@ Work is handled in working meetings or workshops:
         - With two people in a team, there is only one communication channel (between person x and person y).
         - With five people there are ten.
 
-![](notes/university/year3/cs3003/content/assets/Screenshot%202023-09-28%20at%2017.18.56.png)
+![](notes/images/Screenshot%202023-09-28%20at%2017.18.56.png)
 
 ### Death March
 ---
@@ -109,7 +109,7 @@ It is named after Vilfredo Pareto.
 
 He established that 20% of the population in Italy owned 80% of the land.
 
-![](notes/university/year3/cs3003/content/assets/Screenshot%202023-09-28%20at%2017.20.46.png)
+![](notes/images/Screenshot%202023-09-28%20at%2017.20.46.png)
 
 Some examples in day-to-day life:
 - 80% of customers complaints arise from 20% of products and services.
