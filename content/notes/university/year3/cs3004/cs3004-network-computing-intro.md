@@ -40,5 +40,46 @@ The main reason for network computing is **resource sharing**.
 - Common protocol (**TCP/IP**).
 - Name resolution service (**DNS**).
 - Common service provision (socket-based services) to support email, the web and all sorts of services required for interoperation.
+
+![[notes/images/Screenshot 2023-10-04 at 19.08.16.png|480]] ![[notes/images/Screenshot 2023-10-04 at 19.08.43.png|480]]
+
+![[notes/images/Screenshot 2023-10-04 at 19.09.02.png|480]] ![[notes/images/Screenshot 2023-10-04 at 19.09.15.png|480]]
+
+![[notes/images/Screenshot 2023-10-04 at 19.14.06.png|480]]# Virtual Working Environments
+They used to be called **Groupware**. It is a client tool that allows you to connect to a central server:
+- Schedule meetings.
+- Conference calls.
+- Application sharing.
+
+It is everywhere: Zoom, Teams, gaming environments etc.
+
+# Games
+There are plenty of multi-player games out there, just about every new game has "Internet" facilities.
+
+- Real time vs "Turn"-based.
+- Not usually cross-platform (interoperability).
+- Digital objects for sale!
+
+# Grid Computing
+A client sits on your computer and periodically takes work from a server.
+
+It is simple, **scalable** computing.
+
+1 million computers engaged in tasks such as:
+- SETI.
+- Molecular modelling.
+- Fight against malaria.
+
+- Process farming.
+- Grid.
+- Volunteer computing.
+- Cloud computing.
+
+## SAKERGRID Architecture
+![[notes/images/Screenshot 2023-10-04 at 19.13.09.png]]
+
+## E-Infrastructure Architecture
+![[notes/images/Screenshot 2023-10-04 at 19.13.28.png|500]]
+
 # Reading
 - Coulouris: chapter 1.
