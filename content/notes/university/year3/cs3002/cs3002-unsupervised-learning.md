@@ -28,9 +28,9 @@ Clusters are collections of similar objects without the need for 'teacher' signa
 
 A collection of objects which are "similar" between them and are "dissimilar" to the objects belonging to other clusters.
 
-![|250](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.17.png)
+![[notes/images/img1.png|300]]
 
-![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.33.png)
+![[notes/university/year3/cs3002/content/assets/Screenshot 2023-10-03 at 12.24.33.png|300]]
 
 ## Uses of Clustering
 ### Social Networks
