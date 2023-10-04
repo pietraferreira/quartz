@@ -2,7 +2,7 @@
 title:  "Unsupervised Learning"
 tags:
   - university
-module: ai
+module: cs3002
 lecturer: Allan Tucker
 created: 2023-10-03
 year: '3'

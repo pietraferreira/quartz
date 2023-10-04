@@ -2,7 +2,7 @@
 title:  "Lecture 2: Software Maintenance and Evolution"
 tags:
   - university
-module:
+module: cs3003
 lecturer:
 created: 2023-09-28
 year: '3'

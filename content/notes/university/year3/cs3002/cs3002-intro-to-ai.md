@@ -2,7 +2,7 @@
 title:  "Intro to AI"
 tags:
   - university
-module: cs3003
+module: cs3002
 lecturer: Allan Tucker
 created: 2023-09-26
 year: '3'
