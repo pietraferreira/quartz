@@ -116,7 +116,7 @@ a {
     }
 
     p > strong {
-      color: var(--dark);
+      color: #2ac3de;
     }
   }
 
@@ -406,10 +406,6 @@ code {
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
   background: var(--lightgray);
-}
-
-p {
-  color: #2ac3de;
 }
 
 tbody,
