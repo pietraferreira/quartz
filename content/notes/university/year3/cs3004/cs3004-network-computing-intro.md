@@ -178,14 +178,14 @@ Transparency aims to hide the complexities of a distributed system from users an
 
 - Hiding complexity from the user.
 - ANSA and ISO (RM-ODP) recognise eight types.
-    - Access
-    - Location
-    - Concurrency
-    - Replication
-    - Failure
-    - Mobility/migration
-    - Performance
-    - Scaling
+    - Access: enables local and remote resources to be accessed using identical operations.
+    - Location: enables resources to be accessed without knowledge of their physical network location (for example: which building or IP address).
+    - Concurrency: enables several processes to operate concurrently using shared resources without interference between them.
+    - Replication: enable multiple instances of resources to be used to increase reliability and performance without knowledge of the replicas by users or application programmers.
+    - Failure: enables the concealment of faults, allowing users and application programs to complete their tasks despite the failure of hardware or software components.
+    - Mobility/migration: allows the movement of resources and clients within a system without affecting the operation of users or programs.
+    - Performance: allows the system to be reconfigured to improve performance as loads vary.
+    - Scaling: allows the system and applications to expand in scale without change to the system structure or the application algorithms.
 - Access and Location = Network Transparency
 
 # Reading
