@@ -14,8 +14,6 @@ There are two classes of learning:
 - **Supervised learning**: learning with the desired output.
 - **Reinforcement learning**: involves reward/punishment signals.
 
-# Unsupervised Learning
----
 Learning without the desired output ('teacher' signals).
 
 Some methods are:
@@ -23,8 +21,7 @@ Some methods are:
 - Association Rules/Recommender Systems.
 - **Clustering**: one of the widely-used unsupervised learning methods.
 
-## Clustering
----
+# Clustering
 Partition dataset into subsets (clusters), so that the data in each subset shares some common trait, often similarity or proximity.
 
 Clusters are collections of similar objects without the need for 'teacher' signals.
