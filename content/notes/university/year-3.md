@@ -60,40 +60,41 @@ Lecturer: Fang Wang
 
 - 👨‍👩‍👦 [Supervisor](notes/university/year3/cs3072/fyp-supervisor.md)
 -  👥 Meetings
+    - [[notes/daily/2023-09-28|2023-09-28 - First Meeting]]
 - 📚 Reading list
+- ❗Assessments
 
 # [CS3001](notes/university/year3/cs3001/cs3001.md) - Advanced Topics
 Lecturer:
 
+- 💻 Course structure.
 - 💼 Lecture notes
-	- [[Cloud backup]]
 - 🔬 Lab notes
-	- [[Q1 2022]]
 - 📚 Reading list
-	- [[Sally Smith]]
+- ❗Assessments
 # [CS3003](notes/university/year3/cs3003/cs3003.md) - Software Engineering
 Lecturer: Steve Counsell and Dr Giuseppe Destefanis.
 
 - 💻 Course structure.
     - [Programme](notes/university/year3/cs3003/cs3003-programme.md).
 - 💼 Lecture notes
-    - 
+    - [[notes/university/year3/cs3003/cs3003-lecture2|Lecture 2: Software Maintenance]]
 - 🔬 Lab notes
-	- [[Q1 2022]]
 - 📚 Reading list
     - [Ian Sommerville - Software Engineering, 10th Edition-Pearson (2016)](assets/university/year3/books/Ian%20Sommerville%20-%20Software%20Engineering,%2010th%20Edition-Pearson%20(2016).pdf).
 - ❗Assessments
     - Deadlines:
         - Software metrics analysis: **05/12**.
-# [CS3609](notes/university/year3/cs3609/cs3609.md) - Cybersecurity
-Lecturer:
+# [CS3004](notes/university/year3/cs3609/cs3609.md) - Network Computing
+Lecturer: Simon J E Taylor
 
+- 💻 Course structure.
 - 💼 Lecture notes
-- Introduction to the module.
 - 🔬 Lab notes
-	- [[Q1 2022]]
 - 📚 Reading list
-	- [[Sally Smith]]
+- ❗Assessments
+    - Deadlines:
+        - Assignment: **01/12**.
 # [CS3002](notes/university/year3/cs3002/cs3002.md) - Artificial Intelligence
 Lecturer: Allan Tucker
 
@@ -101,12 +102,11 @@ Lecturer: Allan Tucker
     - [Programme](notes/university/year3/cs3002/cs3002-programme.md)
 - 💼 Lecture notes
      - [Intro to AI](notes/university/year3/cs3002/cs3002-intro-to-ai.md)
-     - Unsupervised Learning (03/10)
+     - [[notes/university/year3/cs3002/cs3002-unsupervised-learning|Unsupervised Learning]]
 - 🔬 Lab notes
     - [Lab 0 - Introduction to R](notes/university/year3/cs3002/cs3002-lab0.md)
 - 📚 Reading list
     - [Principles of Data Mining (MIT 2001)](assets/university/year3/books/Principles%20of%20Data%20Mining%20(MIT%202001).pdf)
-        - Annotation.
     - [Michael Negnevitsky - Artificial Intelligence: A Guide to Intelligent Systems 3rd Edition](assets/university/year3/books/Michael%20Negnevitsky%20-%20Artificial%20Intelligence_%20A%20Guide%20to%20Intelligent%20Systems%203rd%20Edition-Addison%20Wesley%202011.pdf)
 - ❗Assessments
     - Deadlines:
