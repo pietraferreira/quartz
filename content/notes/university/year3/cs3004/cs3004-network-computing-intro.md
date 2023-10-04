@@ -96,6 +96,97 @@ To:
 
 ![[notes/images/Screenshot 2023-10-04 at 19.16.18.png|280]] ![[notes/images/Screenshot 2023-10-04 at 19.16.38.png|280]]
 
+![[notes/images/Screenshot 2023-10-04 at 19.17.03.png|480]]
+
+![[notes/images/Screenshot 2023-10-04 at 19.17.17.png|480]]
+
+![[notes/images/Screenshot 2023-10-04 at 19.17.36.png|480]]
+
+![[notes/images/Screenshot 2023-10-04 at 19.17.54.png|480]]
+
+# Seven Major Issues of Network Computing/Distributed Systems
+## Heterogeneity
+Distributed systems often involve different types of devices, operating systems, programming languages, and communication protocols. These differences can make it challenging to ensure seamless communication and cooperation among various components within the distributed system.
+
+## Openness
+Openness is the degree to which a distributed system is open to integration and interaction with other systems. It involves adhering to standards and protocols, enabling interoperability, and promoting flexibility in system design.
+
+An open system might have:
+- published interfaces.
+- uniform communications mechanism and provision for access to shared resources.
+- heterogeneous hardware and software (experimentation, testing, verification, accreditation).
+
+## Security
+Security concerns focus on protecting data, resources, and communication within a distributed system. Ensuring confidentiality, integrity, and availability while defending against threats and vulnerabilities is a critical aspect of network computing.
+
+Issues:
+- Confidentiality (disclosure).
+- Integrity (alteration or corruption).
+- Availability (authorisation).
+
+Major problems:
+- Distributed Denial of service attacks.
+- Security of mobile code:
+    - Policy!!!
+    - MSBLASTER.
+    - Phones.
+    - Cars?.
+
+## Scalability
+Scalability involves the ability of a distributed system to handle increased load or growing user demands. Designing for scalability ensures that the system can efficiently expand by adding resources or nodes as needed.
+
+- Add more physical resources!
+    - Control the cost
+- Maintain the performance!
+    - Control performance loss
+- Add more software resources!
+    - Stop them from running out
+- Avoid bottlenecks!
+    - Really share the resources
+## Failure Handling
+Failure handling deals with addressing faults and errors within the distributed system. It includes strategies for detecting, isolating, and recovering from failures to maintain system reliability and availability.
+
+- Detect them!
+    - how can you detect something that is no longer there?
+- Hide (mask) them!
+    - Retransmit messages.
+    - Redundancy/Replication.
+- Tolerate them!
+    - Tell the user or make them wait?
+    - Find something else?
+- Recovery from them!
+    - How?
+- Redundancy.
+    - Replication vs consistency.
+- Availability and Service Provision.
+    - The 99% con (95 = 18.25, 99 = 3.65).
+
+## Concurrency
+Concurrency relates to managing multiple tasks or processes concurrently within a distributed system. It's essential to ensure efficient resource utilisation and responsiveness while dealing with potential synchronisation challenges.
+
+- The fine art of doing two or more things at the same time.
+- Or do you?
+- Synchronisation techniques and critical regions.
+- Serialisability.
+- Decent programming models!!!!
+    - Threads vs Message passing.
+    - Shared memory vs distributed memory.
+    - Parallel computing vs distributed computing.
+
+## Transparency
+Transparency aims to hide the complexities of a distributed system from users and applications. Achieving transparency means providing a consistent and uniform interface and behaviour regardless of the system's underlying complexity and distribution.
+
+- Hiding complexity from the user.
+- ANSA and ISO (RM-ODP) recognise eight types.
+    - Access
+    - Location
+    - Concurrency
+    - Replication
+    - Failure
+    - Mobility/migration
+    - Performance
+    - Scaling
+- Access and Location = Network Transparency
 
 # Reading
 - Coulouris: chapter 1.
