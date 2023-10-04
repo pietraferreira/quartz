@@ -12,6 +12,28 @@ type: lecture
 # Learning Outcomes
 - To define the basics of client-server communication.
 
+# Client-Server
+- Client-Server programs consist of software processes that interact via messages.
+- Each process is connected via program constructs (sockets) to an input/output interface in a computer called a "port".
+- A **port** is a memory location shared with network software (actually more complex than this).
+- Software on the other side of the port makes sure that the message you send gets there (**TCP/IP**).
+- Java package `java.net` is the Java version of the **socket API**.
+
+## Sockets
+There are four possible operations that a socket can perform:
+- Connect to a remote machine.
+- Send data.
+- Receive data.
+- Close the connection.
+
+A socket may not be connected to more than a host at a time.
+
+A socket may not reconnect after it is closed (you have to start again).
+
+## Connecting
+- You must at least specify the remote host and port to connect to.
+- The host may be specified as either a string, like `xxx.brunel.ac.uk` or as an **InetAddress** object.
+
 # Different Systems
 ![[notes/images/Screenshot 2023-10-04 at 19.35.05.png|400]]  ![[notes/images/Screenshot 2023-10-04 at 19.35.31.png|400]]
 
