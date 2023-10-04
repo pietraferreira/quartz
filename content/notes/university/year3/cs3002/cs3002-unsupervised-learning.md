@@ -28,22 +28,22 @@ Clusters are collections of similar objects without the need for 'teacher' signa
 
 A collection of objects which are "similar" between them and are "dissimilar" to the objects belonging to other clusters.
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.17.png)
+![|250](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.17.png)
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.33.png)
+![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.24.33.png)
 
 ## Uses of Clustering
 ### Social Networks
 For purposes like marketing, terror networks, resource allocation in companies/universities.
 
 ### Customer Segmentation
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.25.55.png)
+![|600](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.25.55.png)
 
 ### Gene Networks
 Helps understand gene interactions and identify genes linked to diseases.
 
 ## How to do Clustering?
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.27.12.png)
+![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.27.12.png)
 
 ## Pattern Similarity and Distance Metrics
 - Clusters are formed by similar patterns.
@@ -91,9 +91,9 @@ $= 18.7$
 ## Embeddings
 It means to map data onto a new space to capture different characteristics.
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.01.png)
+![|360](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.01.png)
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.21.png)
+![|360](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2012.44.21.png)
 
 ## K-Means Clustering Algorithm
 1. Place K points into the feature space. These points represent initial cluster centroids.
@@ -152,7 +152,7 @@ Starts with each object in its cluster and it ends with all objects in the same 
 
 The resultant tree is called a **dendrogram**:
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.03.03.png)
+![|350](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.03.03.png)
 
 1. Each item is assigned to its own cluster (n clusters of size one).
 2. Let the distances between the clusters equal the distances between the objects they contain.
@@ -161,7 +161,7 @@ The resultant tree is called a **dendrogram**:
 5. Repeat steps 3 and 4 until there is only one cluster left.
 
 ### Re-computing Distances
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.04.18.png)
+![350](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2013.04.18.png)
 
 | Linkage  | Description                                                                                            |
 | -------- | ------------------------------------------------------------------------------------------------------ |
@@ -210,11 +210,11 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 - A point is a core point if it has more than a specified number of points (MinPts) within Eps.
 - Core point is in the interior of a cluster.
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.24.png)
+![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.24.png)
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.38.png)
+![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.38.png)
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.49.png)
+![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.09.49.png)
 
 ## Evaluating Cluster Quality
 How do we know if the discovered clusters are any good?
@@ -222,7 +222,7 @@ How do we know if the discovered clusters are any good?
 The choice of metric is vital.
 
 ### Cohesion and Separation
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.11.13.png)
+![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.11.13.png)
 
 ### Supervised
 We can use the "true clusters" to test the effectiveness of different clustering algorithms.
@@ -231,17 +231,17 @@ We can use the "true clusters" to test the effectiveness of different clustering
 We can use metrics to measure how similar two arrangements are.
 
 ### Weighted-Kappa
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.13.16.png)
+![|300](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.13.16.png)
 
 ## Association Rules
 Another form of unsupervised learning.
 
 Works with "**basket data**".
 
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.30.png)
+![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.30.png)
 
 ### Support, Confidence and Lift
-![](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.52.png)
+![|400](notes/university/year3/cs3002/content/assets/Screenshot%202023-10-03%20at%2014.14.52.png)
 
 Given a large amount of basket data, generate rules.
 # Supervised Learning
