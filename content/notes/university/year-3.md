@@ -61,6 +61,7 @@ Lecturer: Fang Wang
 - 👨‍👩‍👦 [Supervisor](notes/university/year3/cs3072/fyp-supervisor.md)
 -  👥 Meetings
     - [[notes/daily/2023-09-28|2023-09-28 - First Meeting]]
+    - [[notes/daily/2023-10-05|2023-10-05 - Second Meeting]]
 - 📚 Reading list
 - ❗Assessments
 
