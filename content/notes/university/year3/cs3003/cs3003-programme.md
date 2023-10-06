@@ -18,7 +18,7 @@ type: programme
 | ---- | ------------------------------------------------------------------------------------- | ------------------- | --------------- |
 | 1    | Introducing the module                                                                | Steve Counsell      | 18/09           |
 | 2    | [[notes/university/year3/cs3003/cs3003-lecture2\|Software maintenance and evolution]] | Steve Counsell      | 26/09           |
-| 3    | Software metrics                                                                      | Steve Counsell      | 02/10           |
+| 3    | [[notes/university/year3/cs3003/cs3003-software-metrics\|Software metrics]]           | Steve Counsell      | 02/10           |
 | 4    | Software structure, refactoring and code smells                                       | Steve Counsell      | 09/10           |
 | 5    | Test-driven development                                                               | Giuseppe Destefanis | 16/10           |
 | 6    | Software complexity (**Coursework released on 24/10**)                                | Steve Counsell      | 23/10           |
@@ -35,7 +35,7 @@ type: programme
 | Week | Labs                            | Week Commencing |
 | ---- | ------------------------------- | --------------- |
 | 1    | **No labs**                     | 18/09           |
-| 2    | Lab (Introduction)              | 25/09           |
+| 2    | Lab (Introduction) ✅              | 25/09           |
 | 3    | Lab                             | 02/10           |
 | 4    | Lab                             | 09/10           |
 | 5    | **No lab**                      | 16/10           |

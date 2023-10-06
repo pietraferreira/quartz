@@ -35,8 +35,8 @@ type: programme
 | Week | Labs                               | Description                    | Week Commencing |
 | ---- | ---------------------------------- | ------------------------------ | --------------- |
 | 1    | **No labs**                        |                                | 18/09           |
-| 2    | Getting Started with Client-Server | Echo Client and Server         | 26/09           |
-| 3    | Client-Server Design               | Knock, Knock Client and Server | 02/10           |
+| 2    | Getting Started with Client-Server ✅ | Echo Client and Server         | 26/09           |
+| 3    | Client-Server Design ✅               | Knock, Knock Client and Server | 02/10           |
 | 4    | Multi-Client Server Design         | Design your own protocol       | 09/10           |
 | 5    | Threading                          |                                | 16/10           |
 | 6    | Assignment Support                 |                                | 23/10           |
