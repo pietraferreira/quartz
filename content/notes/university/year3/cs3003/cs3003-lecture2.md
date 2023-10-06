@@ -1,5 +1,5 @@
 ---
-title:  "Lecture 2: Software Maintenance and Evolution"
+title:  "Software Maintenance and Evolution"
 tags:
   - university
 module: cs3003
