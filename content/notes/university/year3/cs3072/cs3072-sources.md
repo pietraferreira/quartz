@@ -28,3 +28,8 @@ type: notes
 - [Rust binding to the Tree-sitter parsing library](https://github.com/tree-sitter/tree-sitter/tree/master/lib/binding_rust)
 - [Rust grammar for Tree-sitter](https://github.com/tree-sitter/tree-sitter-rust)
 - [Winnow - Rust "do everything" parser](https://docs.rs/winnow/latest/winnow/)
+- [What is Parsing?](https://stackoverflow.com/questions/2933192/what-is-parsing-in-terms-that-a-new-programmer-would-understand)
+- [What is a Programming Language Parser?](https://pgrandinetti.github.io/compilers/page/what-is-a-programming-language-parser/)
+- [Types of Parsers in Compiler Design](https://www.geeksforgeeks.org/types-of-parsers-in-compiler-design/)
+- [Rust - Lexing and Parsing](https://rustc-dev-guide.rust-lang.org/the-parser.html)
+- 

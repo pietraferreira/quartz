@@ -63,8 +63,9 @@ Lecturer: Fang Wang
     - [[notes/daily/2023-09-28|2023-09-28 - First Meeting]]
     - [[notes/daily/2023-10-05|2023-10-05 - Second Meeting]]
 - 📚 Reading list
-    - Sources
+    - [[notes/university/year3/cs3072/cs3072-sources|Sources]]
 - ❗Assessments
+    - Project Synopsis (27/10)
 
 # [CS3001](notes/university/year3/cs3001/cs3001.md) - Advanced Topics
 Lecturer:
