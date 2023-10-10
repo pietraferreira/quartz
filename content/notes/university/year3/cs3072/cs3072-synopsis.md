@@ -11,6 +11,12 @@ type: assignment
 ---
 # Provisional Title
 
+Something with "program visualisation"
+
+- Static
+
+Understand the Rust borrow checker
+
 # Problem Definition
 
 # Aims and Objectives
