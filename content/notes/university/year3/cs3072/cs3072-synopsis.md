@@ -58,6 +58,7 @@ Requirements:
 - [Types of Parsers in Compiler Design](https://www.geeksforgeeks.org/types-of-parsers-in-compiler-design/): Different types of parsers are used in compiler design, and understanding these can help define the parser component of the tool.
 - [What are the Borrowing Rules in Rust?](https://levelup.gitconnected.com/what-are-the-borrowing-rules-in-rust-6ff431e92d53): Understanding Rust's borrowing rules is critical for the tool's accuracy. This source can help to derive requirements related to highlighting ownership and borrowing events accurately.
 # Approach
+## In this section, you should explain how you are going to go about your project. In particular, you should justify why this approach is most likely to help you achieve your aim. You should mention any ethical considerations for your project, although you will also be required to go through the university’s ethics process (using the BREO system) as part of your project. Remember that you must make sure that you will be able to demonstrate the necessary requirements for your particular programme, as described in the study guide. Discuss this with your supervisor and if there is any doubt please contact the FYP team.
 
 
 
