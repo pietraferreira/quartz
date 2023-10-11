@@ -45,7 +45,12 @@ Problem Justification:
 
 Proposed Solution:
 - [RustViz](https://web.eecs.umich.edu/~comar/rustviz-vlhcc22.pdf): RustViz is a central source, as it directly pertains to the proposed solution. The paper provides detailed insights into how visualisation can aid in understanding Rust's ownership system.
-- [A Beginner's Guide to Parsing in Rust](https://depth-first.com/articles/2021/12/16/a-beginners-guide-to-parsing-in-rust/): 
+- [A Beginner's Guide to Parsing in Rust](https://depth-first.com/articles/2021/12/16/a-beginners-guide-to-parsing-in-rust/): This source highlights the importance of parsing in Rust. The success of my project depends on understanding and effectively representing Rust code structures, which parsing is fundamental to.
+- [Tree-sitter - Creating Parsers](https://tree-sitter.github.io/tree-sitter/creating-parsers): Tree-sitter is a library for code parsing, it will be important to understand how it can be leveraged into my tool. 
+- [CUPV - A Visualisation Tool for Generated Parsers](https://dl.acm.org/doi/pdf/10.1145/331795.331801): This source provides insights into a similar tool, demonstrating the efficacy of visualisation tools in the context of parsers.
+
+Relevant Approaches and Techniques:
+- [Syn - Parser for Rust source code](https://github.com/dtolnay/syn): Syn is a library for parsing Rust code. Understanding how it works can be beneficial to learn how to parse Rust code for visualisation.
 
 # Approach
 
