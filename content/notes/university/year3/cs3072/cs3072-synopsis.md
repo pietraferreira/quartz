@@ -51,7 +51,14 @@ Proposed Solution:
 
 Relevant Approaches and Techniques:
 - [Syn - Parser for Rust source code](https://github.com/dtolnay/syn): Syn is a library for parsing Rust code. Understanding how it works can be beneficial to learn how to parse Rust code for visualisation.
+- [Crafting Interpreters](https://craftinginterpreters.com/): This resource can provide insights into parsing techniques and how they can be applied to the development of the visualisation tool.
 
+Requirements:
+- [Rust - Lexing and Parsing](https://rustc-dev-guide.rust-lang.org/the-parser.html): Understanding the lexing and parsing processes in Rust is essential. This source can help to define the requirements related to that aspect.
+- [Types of Parsers in Compiler Design](https://www.geeksforgeeks.org/types-of-parsers-in-compiler-design/): Different types of parsers are used in compiler design, and understanding these can help define the parser component of the tool.
+- [What are the Borrowing Rules in Rust?](https://levelup.gitconnected.com/what-are-the-borrowing-rules-in-rust-6ff431e92d53): Understanding Rust's borrowing rules is critical for the tool's accuracy. This source can help to derive requirements related to highlighting ownership and borrowing events accurately.
 # Approach
+
+
 
 # Evaluation
