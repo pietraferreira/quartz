@@ -341,3 +341,48 @@ Good for imbalanced data:
 
 - Precision Recall curve:
     - Precision / Recall tradeoff.
+
+# Bias, Variance and Overfitting
+- Consider two models:
+
+![[notes/images/Screenshot 2023-10-13 at 16.45.11.png]]
+
+- Bias is some systematic error in the model.
+- Variance is the difference from one model to the next.
+- The first model (straight line) has high bias.
+- The second has high variance:
+    - It fits the data very well.
+    - But it will not predict new cases.
+    - It has **overfit** to the data.
+
+![[notes/images/Screenshot 2023-10-13 at 16.46.36.png|300]]
+
+# Summary
+- **Decision Trees:**
+    - Decision trees use a tree-like structure to make decisions and classify data.
+    - They are easy to interpret but can be prone to overfitting, although pruning can help mitigate this.
+    
+- **K-Nearest Neighbour (KNN):**
+    - KNN is based on the proximity of data points in the feature space.
+    - It's easy to interpret, but it does not model data explicitly.
+    
+- **Testing Performance:**
+    - Different methods are used to assess classifier performance, such as sensitivity analysis.
+    
+- **Resampling:**
+    - Resampling techniques like cross-validation and bootstrapping are employed to address issues like small or biased datasets.
+    
+- **Confusion Matrix, Sensitivity, and Specificity:**
+    - The confusion matrix is useful for considering the importance of errors.
+    - Sensitivity and specificity are common measures for evaluating classifier performance.
+    
+- **Precision and Recall:**
+    - Precision and recall are particularly relevant for imbalanced data, where one class is much larger than the other.
+    
+- **ROC Curves vs. PR Curves:**
+    - ROC curves illustrate the tradeoff between sensitivity and specificity.
+    - PR curves illustrate the tradeoff between precision and recall.
+    
+- **Bias, Variance, and Overfitting:**
+    - Models can exhibit bias (systematic errors) or high variance (overfitting).
+    - Overfit models may perform well on training data but poorly on new data.
