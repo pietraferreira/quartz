@@ -36,7 +36,7 @@ type: programme
 | 1    | **No labs**                                                                       | N/A          |
 | 2    | [Introduction to RStudio](notes/university/year3/cs3002/cs3002-lab0.md) ✅           | Not assessed |
 | 3    | [[notes/university/year3/cs3002/cs3002-lab1\|Lab 1 - Unsupervised learning in R]] ✅ | **Assessed** |
-| 4    | Lab 2 - Supervised learning in R                                                  | **Assessed** |
+| 4    | [[notes/university/year3/cs3002/cs3002-lab2\|Lab 2 - Supervised learning in R]]                                                  | **Assessed** |
 | 5    | Lab 3 - Neural networks in R                                                      | **Assessed** |
 | 6    | Expert systems                                                                    | N/A          |
 | 7    | **ASK week**                                                                      | **N/A**      |
