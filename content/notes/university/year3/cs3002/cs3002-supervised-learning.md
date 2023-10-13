@@ -1,5 +1,5 @@
 ---
-title:  "Classification - Supervised Learning"
+title:  "Supervised Learning"
 tags:
   - university
 module: cs3002
