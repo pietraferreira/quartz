@@ -31,3 +31,43 @@ Example:
 | 10   | 51  | 25     | 1     | 
 ![[notes/images/Screenshot 2023-10-13 at 15.42.46.png|250]]
 
+New data:
+
+| Case | Age | Salary | Class |
+| ---- | --- | ------ | ----- |
+| 11   | 60  | 45     | ?     |
+| 12   | 40  | 30     | ?     |
+| 13   | 47  | 40     | ?     | 
+
+![[notes/images/Screenshot 2023-10-13 at 15.44.09.png|350]]
+
+# Decision Trees
+- Very popular.
+- **Nodes** represent decisions.
+- **Arcs** represent possible answers.
+- **Terminal nodes** represent classification.
+
+Example from Iris data:
+
+![[notes/images/Screenshot 2023-10-13 at 15.45.07.png|350]]
+
+## Classifying with a Decision Tree
+- Traverse the tree starting at the root node.
+- At each decision node follow the appropriate branch according to the case that you are classifying.
+- Repeat until you reach a leaf node.
+- Classify according to the label at the leaf node.
+
+## Building a Decision Tree
+- Using the example data we used before:
+
+![[notes/images/Screenshot 2023-10-13 at 15.46.29.png|400]]
+
+What happens if we add new data?
+
+![[notes/images/Screenshot 2023-10-13 at 15.47.02.png|400]]
+
+Demo [here](https://cs.stanford.edu/~karpathy/svmjs/demo/demoforest.html).
+
+- Often known as **rule induction**.
+- Nodes are repeatedly **split**
+
