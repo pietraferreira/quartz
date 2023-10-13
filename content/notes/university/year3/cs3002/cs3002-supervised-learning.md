@@ -203,3 +203,93 @@ Demo can be found [here](http://vision.stanford.edu/teaching/cs231n-demos/knn/)
 ![[notes/images/Screenshot 2023-10-13 at 16.07.32.png|400]]
 
 ### Bootstrapping
+- For the bootstrap $n$ training data items are sampled **with replacement** from $n$ cases.
+- Cases that are not found in the training set are used for the test set.
+- Generally produces worse rates than the true error rate (worse case scenario).
+
+![[notes/images/Screenshot 2023-10-13 at 16.09.24.png|400]]
+
+# Resampling and Random Forests
+![[notes/images/Screenshot 2023-10-13 at 16.09.52.png|400]]
+
+# Confusion Matrix
+- If errors are of differing importance:
+    - E.g. failing to diagnose a disease can be more serious than diagnosing one that is not present.
+- Then use a confusion matrix:
+    - Class versus Prediction.
+    - False positives and negatives.
+
+## Sensitivity and Specificity
+Common measures make use of false positives and negatives:
+
+![[notes/images/Screenshot 2023-10-13 at 16.11.37.png|300]]
+
+![[notes/images/Screenshot 2023-10-13 at 16.11.59.png|500]]
+
+- For example, a classifier can have high *sensitivity* if it successfully classifies people who have developed cancer but a low *specificity* if it also classifies non-sufferers with cancer.
+
+- But what about data where there are only a few positive cases: imbalanced?
+
+Examples:
+
+![[notes/images/Screenshot 2023-10-13 at 16.15.21.png|250]]  ![[notes/images/Screenshot 2023-10-13 at 16.15.36.png|250]]
+
+|                   | Class Pos. (C+) | Class Neg. (C-) |
+| ----------------- | --------------- | --------------- |
+| Predict Pos. (P+) | 15              | 1               |
+| Predict Neg. (P-) | 10              | 24              | 
+
+- True Positives (TP) = 15
+- False Positives (FP) = 10
+- True Negatives (TN) = 24
+- False Negatives (FN) = 1
+
+Precision (P) is defined as TP / (TP + FP), and Recall (R) is defined as TP / (TP + FN). The F1-score is the harmonic mean of precision and recall, given by:
+
+$F1 = 2 * (P * R) / (P + R)$
+
+In this case, for Confusion Matrix 1:
+
+- Precision (P) = 15 / (15 + 10) = 15 / 25 = 0.6
+- Recall (R) = 15 / (15 + 1) = 15 / 16 ≈ 0.9375
+
+$F1 = 2 * (0.6 * 0.9375) / (0.6 + 0.9375) ≈ 0.7308$
+
+|                   | Class Pos. (C+) | Class Neg. (C-) |
+| ----------------- | --------------- | --------------- |
+| Predict Pos. (P+) | 24              | 10              | 
+| Predict Neg. (P-) | 1               | 15              |
+
+- True Positives (TP) = 24
+- False Positives (FP) = 1
+- True Negatives (TN) = 15
+- False Negatives (FN) = 10
+
+For Confusion Matrix 2:
+
+- Precision (P) = 24 / (24 + 1) ≈ 0.960
+- Recall (R) = 24 / (24 + 10) = 24 / 34 ≈ 0.7059
+
+$F1 = 2 * (0.960 * 0.7059) / (0.960 + 0.7059) ≈ 0.8149$
+
+- Which would be most suitable for detecting patients with high-risk of cancer for follow up tests?
+
+Comparing the F1-scores:
+
+- F1-score for Confusion Matrix 1 ≈ 0.7308
+- F1-score for Confusion Matrix 2 ≈ 0.8149
+
+Based on the F1-scores, Confusion Matrix 2 is more suitable for detecting patients with a high risk of cancer for follow-up tests. It has a higher F1-score, indicating a better balance between precision and recall. This means that Matrix 2 has a higher likelihood of correctly identifying high-risk patients while keeping false positives relatively low.
+## Precision and Recall
+Good for imbalanced data:
+
+![[notes/images/Screenshot 2023-10-13 at 16.13.37.png|500]]
+
+### ROC Curves vs PR Curves
+- Receiver Operating Characteristic curve:
+    - Sensitivity / Specificity tradeoff.
+
+![[notes/images/Screenshot 2023-10-13 at 16.14.25.png]]
+
+- Precision Recall curve:
+    - Precision / Recall tradeoff.
