@@ -18,7 +18,7 @@ type: programme
 | 1    | No lecture                                                                            | N/A          |
 | 2    | [[notes/university/year3/cs3002/cs3002-intro-to-ai\|Introduction to AI]]              | Allan Tucker |
 | 3    | [[notes/university/year3/cs3002/cs3002-unsupervised-learning\|Unsupervised learning]] | Allan Tucker |
-| 4    | Supervised learning                                                                   | Allan Tucker |
+| 4    | [[notes/university/year3/cs3002/cs3002-supervised-learning\|Supervised Learning]]     | Allan Tucker | 
 | 5    | Neural networks                                                                       | Allan Tucker |
 | 6    | Expert systems                                                                        | Allan Tucker |
 | 7    | **ASK week**                                                                          | N/A          |
