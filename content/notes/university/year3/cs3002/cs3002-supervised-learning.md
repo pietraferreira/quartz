@@ -103,7 +103,7 @@ The entropy function is used to quantify the uncertainty or randomness associate
 
 Here's how the entropy function is defined and used:
 
-1. Entropy Formula:
+1. **Entropy Formula**:
    The entropy (H) of a dataset with respect to a specific class (e.g., a binary classification task with classes A and B) is calculated using the following formula:
 
    $H(S) = -p(A) * log2(p(A)) - p(B) * log2(p(B))$
@@ -112,11 +112,11 @@ Here's how the entropy function is defined and used:
    - p(A) is the proportion of data points in class A.
    - p(B) is the proportion of data points in class B.
 
-2. Entropy Interpretation:
+2. **Entropy Interpretation**:
    - If all the data points in the dataset belong to a single class (e.g., all A or all B), the entropy is 0 because there is no uncertainty (perfectly pure).
    - If the data points are equally divided between the classes, the entropy is at its maximum, which is 1 (for a binary classification problem). In this case, there is a high degree of uncertainty or disorder.
 
-3. Information Gain:
+3. **Information Gain**:
    The information gain measures the reduction in entropy that results from partitioning the dataset based on a particular attribute. It is calculated as follows:
 
    Information Gain $(IG) = H(S) - ∑(Sv/S) * H(Sv)$
@@ -127,7 +127,7 @@ Here's how the entropy function is defined and used:
    - H(Sv) is the entropy of each subset Sv.
    - S is the total number of data points in the dataset.
 
-4. Attribute Selection:
+4. **Attribute Selection**:
    In the ID3 algorithm, attributes are evaluated based on their information gain. The attribute that maximises the information gain is chosen for the split. This attribute is expected to reduce the uncertainty or entropy the most when creating subsets.
 
 The ID3 algorithm iteratively constructs a decision tree by selecting attributes at each node to minimise the entropy or maximise the information gain. It continues this process until all the data points are classified into their respective classes.
