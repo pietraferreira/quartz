@@ -10,10 +10,8 @@ type: lecture
 ---
 ---
 # Introduction
-- Classification attempts to solve the problem:
-    - Given some data.
-    - Where each case in the data has been allocated a class.
-    - Assign a class to a new unassigned case.
+- Classification attempts to solve the problem of assigning classes to data.
+- It involves allocating a class to new, unassigned cases based on existing data.
 
 Example:
 
@@ -44,9 +42,7 @@ New data:
 
 # Decision Trees
 - Very popular.
-- **Nodes** represent decisions.
-- **Arcs** represent possible answers.
-- **Terminal nodes** represent classification.
+- **Nodes** represent decisions, **arcs** represent possible answers, and **terminal nodes** represent classification.
 
 Example from Iris data:
 
@@ -59,6 +55,8 @@ Example from Iris data:
 - Classify according to the label at the leaf node.
 
 ## Building a Decision Tree
+Building a decision tree involves repeatedly splitting nodes until all elements belong to one class.
+
 - Using the example data we used before:
 
 ![[notes/images/Screenshot 2023-10-13 at 15.46.29.png|400]]
@@ -146,6 +144,7 @@ By using the entropy function and information gain, the ID3 algorithm efficientl
     - If this does not reduce classification accuracy, then the pruning is carried out.
 
 # K-Nearest Neighbour
+- K-nearest neighbor is based on the idea that nearby data points influence classification.
 - Case based reasoning.
 - Based on the idea that items that are located "nearby" in the data space will influence how unknown data is classified.
 - Been around since 1910.
