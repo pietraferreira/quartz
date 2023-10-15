@@ -35,6 +35,9 @@ type: lecture
 
 ![[notes/images/Screenshot 2023-10-15 at 19.15.17.png|480]]
 
-# Quote from Fowler (refactoring.com)
+
+# What is Refactoring?
+- Quote from Fowler (refactoring.com):
+
 > “When a software system is successful, there is always a need to keep enhancing it, to fix problems and add new features. After all, it's called software for a reason! But the nature of a code-base makes a big difference on how easy it is to make these changes. Often enhancements are applied on top of each other in a manner that makes it increasingly harder to make changes. Over time new work slows to a crawl. To combat this change, it's important to refactor code so that added enhancements don't lead to unnecessary complexity.”
 
