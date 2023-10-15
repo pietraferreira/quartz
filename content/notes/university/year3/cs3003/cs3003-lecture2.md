@@ -34,7 +34,7 @@ type: lecture
 ## Seven Relevant Topics to Maintenance (and hence system evolution)
 
 ### Software Evolution Theory
-Lehman's Laws of Software Evolution:
+#### Lehman's Laws of Software Evolution:
 1. Continuing Change: system must be continually adapted else it becomes less satisfactory to use.
 2. Increasing Complexity: as the system evolves its complexity increases unless work is done to maintain or reduce it.
 3. Continuing Growth: the functional capability of systems must be continually increased to maintain user satisfaction over the system lifetime.
