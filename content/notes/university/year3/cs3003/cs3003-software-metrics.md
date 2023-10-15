@@ -173,8 +173,8 @@ However, other factors also determine the fault-proneness. For example: code des
 - Sommerville - Chapter 24.
 - Line of Code (LOC):
     - Why LOC is not good as a measure see: http://www.inf.u-szeged.hu/~beszedes/research/SED-TR2014-001-LOC.pdf
-- Cyclomatic Complexity: geeksforgeeks.org/cyclomatic-complexity/
+- Cyclomatic Complexity: http://geeksforgeeks.org/cyclomatic-complexity/
 - C&K metrics: 
-    - slideshare.net/skmetz/oo-metrics
+    - http://slideshare.net/skmetz/oo-metrics
     - http://people.scs.carleton.ca/~jeanpier/sharedF14/T1/extra%20stuff/about%20metrics/Chidamber%20&%20Kemerer%20object-oriented%20metrics%20suite.pdf
-- virtualmachinery.com/sidebar3.htm
+- http://virtualmachinery.com/sidebar3.htm
