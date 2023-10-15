@@ -84,3 +84,119 @@ Fowler et al 1999 suggests:
 - Many tools support refactoring: Eclipse, NetBeans etc.
 
 ### Extract Method
+Applies when you have a code fragment inside some code block where the lines of code should always be grouped together.
+- Turn the fragment into a method whose name explains the purpose of the block of code.
+
+#### Example
+![[notes/images/Screenshot 2023-10-15 at 19.26.28.png|480]]
+
+### Extract Class
+You have one class doing work that should be done by two different classes.
+- Create a new class and move the relevant fields and methods from the old class to the new class.
+
+#### Example
+![[notes/images/Screenshot 2023-10-15 at 19.27.25.png|280]]
+
+### Extract Subclass
+When a class has features (attributes and methods) that would only be useful in specialised instances, we can create a specialisation of the class and give it those features.
+
+![[notes/images/Screenshot 2023-10-15 at 19.28.14.png|480]]
+
+### Move Method
+A method is used more by another class, or uses more code in another class, than its own class.
+- Well, then, move it. Create a new method with a similar body in the class it uses most.
+
+#### Example
+![[notes/images/Screenshot 2023-10-15 at 19.29.03.png|280]]
+
+### Move Field
+A field is used by another class more than it is in its own class.
+- Well then, move it to the class that uses it most.
+
+#### Example
+![[notes/images/Screenshot 2023-10-15 at 19.29.41.png|280]]
+
+### Encapsulate Field
+![[notes/images/Screenshot 2023-10-15 at 19.29.59.png|280]]
+
+### Replace Magic Number with Symbolic Constant
+- Before:
+```java
+// Calculate the length of the outer crust of each
+// piece of pizza given the diameter of the pizza
+// and number of desired pieces.
+public float lengthOfOuterCrust(float diameter, int numberOfPieces) {
+    return (3.1415 * diameter) / numberOfPieces;
+}
+```
+
+- After:
+```java
+public static final float PI = 3.1415;
+public float lengthOfOuterCrust(float diameter, int numberOfPieces) {
+    float circumference = PI * diameter;
+    return circumference / numberOfPieces;
+}
+```
+
+### Remove Dead Code
+```java
+public class DeadCodeInJava {
+    void DeadCode_method(boolean b) {
+        if(b) { 
+            return;
+        }
+        else {
+            return;
+        }
+        System.out.println(“Dead Statement");
+    }
+}
+```
+
+The code you've provided is considered "dead code" because the statements following the conditional `if` and `else` blocks will never be executed.
+
+In your `DeadCode_method`, you have a conditional `if(b)` followed by a `return` statement in both the `if` and `else` blocks. Since both branches of the conditional have `return` statements, the flow of execution will exit the method before it reaches the `System.out.println("Dead Statement");` statement. As a result, that `System.out.println` statement will never be executed, making it dead code.
+
+To eliminate the dead code, you can simply remove the `if` and `else` blocks and the `System.out.println` statement, resulting in a more concise and readable method:
+
+```java
+public class DeadCodeInJava {
+    void DeadCode_method(boolean b) {
+        if(b) { 
+            return;
+        }
+    }
+}
+```
+
+### Consolidate Conditional Duplicate Fragments
+
+```java
+if (isSpecialDeal()) {
+    total = price * 0.95;
+    send();
+}
+else {
+    total = price * 0.98;
+    send();
+}
+```
+
+```java
+if (isSpecialDeal()) {
+    total = price * 0.95;
+}
+else {
+    total = price * 0.98;
+}
+send();
+```
+
+We moved the `send()` to outside the if statement.
+
+This principle is a form of refactoring in which you reduce duplication in your code and make it more maintainable by eliminating redundant code within conditional branches.
+
+In your original code, you have an `if-else` statement with two branches, and both branches perform the same action of calculating `total` and then calling the `send()` function. This means that regardless of whether the condition `isSpecialDeal()` is true or false, you are always calling the `send()` function. This results in duplicated code that can be simplified.
+
+### Substitute Algorithm Example
