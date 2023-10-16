@@ -37,7 +37,7 @@ type: programme
 | 1    | **No labs**                     | 18/09           |
 | 2    | Lab (Introduction) ✅              | 25/09           |
 | 3    | Lab ✅                                          | 02/10           |
-| 4    | Lab                             | 09/10           |
+| 4    | Lab ✅                           | 09/10           |
 | 5    | **No lab**                      | 16/10           |
 | 6    | Lab                             | 23/10           |
 | 7    | **ASK week**                    | **30/10**       |
