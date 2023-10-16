@@ -36,6 +36,27 @@ type: lecture
 ![[notes/images/Screenshot 2023-10-15 at 19.15.17.png|480]]
 
 # Code Smell
+- http://martinfowler.com/bliki/CodeSmell.html
+- https://blog.codinghorror.com/code-smells/
+
+- Large class:
+    - Classes try to do too much, which reduces cohesion.
+    - You break it up with the extract class refactoring.
+- Long parameter list:
+    - Hard to understand, can become inconsistent.
+    - You resolve it with the remove parameter refactoring.
+- Lazy class:
+    - A class that no longer "pays its way", e.g.: may be a class that was downsized by a previous refactoring, or represented planned functionality that did not pan out.
+- Solution sprawl:
+    - You need to add or remove a feature from a project, but in order to do so much change many different components in many different classes.
+- Data class:
+    - These are classes that have fields, getting and setting methods for the fields, and nothing else; they are data holders, but objects should be about data **and** behaviour.
+- Refused bequest:
+    - A subclass ignores most of the functionality provided by its superclass.
+- Comments:
+    - Comments are sometimes used to hide bad code.
+    - What is a good comment...
+
 A "code smell" is a term used in software development to describe certain patterns or characteristics in source code that may indicate potential problems or areas for improvement. Code smells are not necessarily bugs or errors in the code, but rather they are signs that the code might be poorly structured, less maintainable, or not following best practices. Identifying and addressing code smells is important for code quality, readability, and maintainability.
 
 Common code smells include:
@@ -52,6 +73,13 @@ Common code smells include:
 
 Identifying and addressing code smells is an important aspect of code refactoring and maintenance. By cleaning up code smells, developers can improve code quality, make the code more maintainable, and reduce the likelihood of introducing bugs when making changes or additions to the codebase.
 
+## Comments Code Smell
+- Fowler claims that comments are a sign of:
+    - Complicated code.
+    - Code that is in need of explanation but that actually needs restructuring rather than commenting.
+- Fowler advocates:
+    - Self-evident coding practices by making methods short, comments meaningful.
+    - Commenting the decision making process for the solution implemented, e.g.: why something is there, not what it does.
 # Refactoring
 
 > When a software system is successful, there is always a need to keep enhancing it, to fix problems and add new features. After all, it's called software for a reason! But the nature of a code-base makes a big difference on how easy it is to make these changes. Often enhancements are applied on top of each other in a manner that makes it increasingly harder to make changes. Over time new work slows to a crawl. To combat this change, it's important to refactor code so that added enhancements don't lead to unnecessary complexity. (Fowler et al 1999)
@@ -82,6 +110,23 @@ Fowler et al 1999 suggests:
         - After fixing a bug, you could refactor the code affected.
     - Do a code review (as part of pair or mob programming).
 - Many tools support refactoring: Eclipse, NetBeans etc.
+
+## Advantages
+- Reduces duplicate and inefficient code.
+- Improve cohesion, reduce coupling.
+- Improves the understandability of code, maintainability etc. by reducing complexity.
+- Can help reduce technical debt.
+- Can help reduce bugs since the code is more maintainable.
+- Can be done at any stage of a system's life.
+
+## Disadvantages
+- Opportunity cost: there are many other things that can be done instead of refactoring and this might be time better spent.
+- Complex in many cases and always needs significant re-testing.
+- No guarantee that the refactoring won’t break despite testing or that it makes code any less bug-prone.
+- Time: it takes time to do refactoring and communication overhead if you’re working in a team.
+- There is not a huge amount of evidence that refactoring actually provides the benefits it claims.
+- Does it make future maintenance easier?
+- Can lead to developers going down “rabbit holes”.
 
 ### Extract Method
 Applies when you have a code fragment inside some code block where the lines of code should always be grouped together.
@@ -200,3 +245,33 @@ This principle is a form of refactoring in which you reduce duplication in your 
 In your original code, you have an `if-else` statement with two branches, and both branches perform the same action of calculating `total` and then calling the `send()` function. This means that regardless of whether the condition `isSpecialDeal()` is true or false, you are always calling the `send()` function. This results in duplicated code that can be simplified.
 
 ### Substitute Algorithm Example
+- Summing up the integers 1..n:
+
+- Before:
+```
+int sum = 0, i;
+for (i=1; i<=n++; ++i) sum += i;
+```
+
+- After:
+```
+int sum = n*(n+1)/2;
+```
+
+### NASA uses refactoring
+![[notes/images/Screenshot 2023-10-15 at 23.00.55.png]]
+
+### Refactoring at Google (Marty Stepp)
+> At Google, refactoring is very important and necessary/inevitable for any code base. If you're writing a new app quickly and adding lots of features, your initial design will not be perfect. Ideally, do small refactoring tasks early and often, as soon as there is a sign of a problem.
+
+> Refactoring is unglamorous because it does not add features. At many companies, people don't refactor because you don't get promoted for it, and their code turns into hacky beasts.
+
+> Google feels refactoring is so important that there are company-wide initiatives to make sure it is encouraged and rewarded.
+
+Common reasons not to do refactoring:
+
+> a) 'Don't have time; features more important' – refactoring is a luxury that we can’t afford.
+b) 'We might break something' – If it ain’t broke, don’t fix it.
+c) 'I want to get promoted and companies don't recognize refactoring work' -- This is a common problem. Solution varies depending on company. Seek buy-in from your team, gather data about regressions and flaws in the design, and encourage them to buy-in to code quality."
+Victoria Kirst,
+Software Engineer, Google
