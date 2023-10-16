@@ -297,6 +297,8 @@ Software Engineer, Google
 
 The Law of Demeter (LoD), also known as the Principle of Least Knowledge, is a design guideline in software development. It suggests that a class should have limited knowledge about other classes, only communicating with classes that are "closely" related to it. In other words, an object should not have too much knowledge about the internal structure of other objects. This principle helps reduce coupling (interdependence) between classes, making the system more maintainable and less tightly bound.
 
+![[notes/images/Screenshot 2023-10-15 at 23.28.35.png]]
+
 In this diagram:
 
 - Class A interacts directly with Class B, which is considered its immediate or closely related friend.
