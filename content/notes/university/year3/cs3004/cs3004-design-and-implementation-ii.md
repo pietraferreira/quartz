@@ -344,3 +344,81 @@ How does the client know that the job was printed?
 Two strategies for the server…
 - Send a completion message before the printer begins **(A)**.
 - Send a completion message after the printer finishes **(B)**.
+
+Six possible event orderings at the server:
+- **M → P → C**
+    - Crash occurs after sending the completion message and printing the text (A).
+- **M → C (→ P)**
+    - Crash occurs after sending the completion message, but before the text could be printed.
+- **P → M → C**
+    - Crash occurs after printing the text and sending the completion message (B).
+- **P → C (→ M)**
+    - Crash occurs after printing the text, the completion message is not sent.
+- **C (→ P → M)**
+    - Crash occurs, nothing else happens.
+- **C (→ M → P)**
+    - Crash occurs, nothing else happens.
+
+![[notes/images/Screenshot 2023-10-17 at 18.10.09.png|400]]
+
+- Lost Reply Messages:
+    - Use a timer, resend the request.
+    - But – did the request or the reply get lost, or is the server just slow?
+    - Various approaches, none ideal.
+   
+- Client crashes:
+    - If the server does its just, replies and the client crashes, then we have an **orphan** computation.
+    - Orphan prevention approaches (Nelson).
+        - Extermination.
+        - Reincarnation.
+        - Gentle reincarnation.
+        - Expiration.
+
+Basic reliable-multicasting schemes:
+- Not point-to-point but one-to-many (group).
+- One sender wants to multicast a message to multiple receivers.
+
+![[notes/images/Screenshot 2023-10-17 at 18.11.46.png|400]]
+
+# Distributed Commitment
+- How does a coordinator process agree with participant processes that an action has finished?
+    - Distributed databases
+    - Replication servers
+
+**Coordinator and two or more participants.**
+
+Two-phase commit protocol:
+- Distributed transactions - Coordinator tells participants to do something with atomic behaviour.
+
+### Two-Phase Commit
+- The coordinator sends a VOTE_REQUEST message to all participants.
+- When a participant receives a VOTE_REQUEST message, it returns either a VOTE_COMMIT message or a VOTE_ABORT message.
+- Coordinator collects votes. If all VOTE_COMMIT it sends a GLOBAL_COMMIT message to all participants, else it sends a GLOBAL_ABORT message.
+- Each participant either waits for a decision and if GLOBAL_COMMIT the participant locally commits, if GLOBAL_ABORT the participant locally aborts.
+
+![[notes/images/Screenshot 2023-10-17 at 18.13.34.png|400]]
+
+**Problem** - blocking means that if a process fails, another process will wait until timeout.
+
+- Participant in INIT state waiting for VOTE_REQUEST:
+    - Local abort and send VOTE_ABORT
+   
+- Coordinator in WAIT state waiting for votes:
+    - Timeout decision to abort and send GLOBAL_ABORT.
+   
+- Participant in READY state waiting for decision:
+    - Just keep waiting.
+
+![[notes/images/Screenshot 2023-10-17 at 18.14.31.png|400]]
+
+![[notes/images/Screenshot 2023-10-17 at 18.14.44.png|400]]
+
+# Exam Questions
+- Only one will be there!!!!
+- It’s going to be one of these, possibly with different wording but will ask for similar knowledge.
+
+- Define the four fundamental properties of transactions. Discuss two problems that can occur if two transactions are run together without concurrency control. Define an approach and algorithm to prevent this (not that running transactions one by one is not a solution!)? Discuss how your approach guarantees the four fundamental properties of transactions and how it prevents the four concurrency control problems.
+
+- What can be done to avoid or recover from failure in client-server communication? Discuss, using worked examples, the FIVE sources of communication failure and what can be done to recover from that form of failure. Also, discuss if it is possible for a print server to guarantee to print exactly once.
+
+- 3-4 page answers in detail
