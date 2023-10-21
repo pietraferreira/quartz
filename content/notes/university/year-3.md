@@ -92,7 +92,7 @@ Lecturer: Simon J E Taylor
     - [[notes/university/year3/cs3004/cs3004-network-computing-intro|Network Computing Introduction]]
     - [[notes/university/year3/cs3004/cs3004-design-and-implementation-i|Design and Implementation I]]
     - Design and Implementation II
-    - Threads
+    - [[notes/university/year3/cs3004/cs3004-threads|Threads]] 
 - 📚 Reading list
 - ❗Assessments
     - Deadlines:
