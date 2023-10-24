@@ -13,7 +13,7 @@ type: assignment
 Some ideas:
 - A Visual Approach to Ownership and Borrowing within the Rust programming language.
 - A Visual Learning Companion for Rust's Ownership System.
-- Visualising Ownership and Borrowing in Rust Programming.
+- Visualising Ownership and Borrowing in Rust Programming. (fav)
 
 ---
 # Problem Definition
@@ -22,7 +22,7 @@ The problem revolves around the intricacies of learning Rust, a programming lang
 
 The primary issue is the complexity of Rust's ownership and borrowing system, which often needs mental tracking of events and state changes. This can negatively impact the learning process and slow down the development.
 
-To address this problem, I aim to introduce a visualisation tool. The tool will be designed to visually depict ownership and borrowing events within Rust code. By integrating these visualisations, I aim to make the static events and their impact more obvious and tangible for learners. Therefore, the objective is to enhance the learning experience for students, by providing them with a resource that accelerates their understanding of this powerful programming language.
+To address this problem, I aim to introduce a visualisation tool. The tool will be designed to visually depict ownership and borrowing events within Rust code. By integrating these visualisations, I aim to make the static events and their impact more obvious and tangible for learners. Therefore, the objective is to enhance the learning experience for students (developers), by providing them with a resource that accelerates their understanding of this powerful programming language.
 
 ---
 # Aims and Objectives
@@ -32,6 +32,8 @@ The aim of the project is to enhance the learning experience for individuals see
 The objectives are:
 - Develop a user-friendly visualisation tool, to represent ownership and borrowing events in Rust code, facilitating a clearer understanding of these concepts for students.
 - Assess the impact of the visualisation tool on students' comprehension of Rust's ownership and borrowing system through evaluations.
+
+More details!! Taking about design and background research
 
 ---
 # Background Sources
@@ -56,6 +58,8 @@ The objectives are:
 - [Types of Parsers in Compiler Design](https://www.geeksforgeeks.org/types-of-parsers-in-compiler-design/): Different types of parsers are used in compiler design, and understanding these can help define the parser component of the tool.
 - [What are the Borrowing Rules in Rust?](https://levelup.gitconnected.com/what-are-the-borrowing-rules-in-rust-6ff431e92d53): Understanding Rust's borrowing rules is critical for the tool's accuracy. This source can help to derive requirements related to highlighting ownership and borrowing events accurately.
 
+Where do I plan to look for sources? Add more academic material
+
 ---
 # Approach
 ## Justification of Approach
@@ -65,9 +69,15 @@ The chosen approach explained above is justified by several key factors:
 - **Relevance of Parsing**: Parsing Rust code is an essential step in creating effective visualisations. Resources like "A Beginner's Guide to Parsing in Rust" provide a strong foundation for integrating parsing techniques into the tool.
 - **Ethical Considerations**: The ethical implication I'm mostly worried about is ensuring that the tool's design and usage does not encourage cheating or plagiarism. The tool should focus on educational benefits, and not compromise the integrity of the learning process.
 
+Project management, how many sprints? deliverables? risks? spreadsheet!
+
 ---
 # Evaluation
 
 - **Aim**: To enhance the learning experience of Rust programming, particularly in understanding Rust's ownership and borrowing system.
 
 - **Evaluation**: Success here will be determined by assessing whether the visualisation tool has indeed improved the learning experience for students. This evaluation will involve conducting usability testing and comparing the performance of learners who used the tool against a group that did not.
+
+Testing the tool, how? test the parser etc etc unit tests etc
+
+- [ ] simple rust program to demonstrate borrowing
