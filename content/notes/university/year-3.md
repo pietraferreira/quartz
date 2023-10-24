@@ -65,7 +65,7 @@ Lecturer: Fang Wang
 - 📚 Reading list
     - [[notes/university/year3/cs3072/cs3072-sources|Sources]]
 - ❗Assessments
-    - Project Synopsis (27/10)
+    - [[notes/university/year3/cs3072/cs3072-synopsis|Project Synopsis (27/10)]]
 
 # [CS3001](notes/university/year3/cs3001/cs3001.md) - Advanced Topics
 Lecturer:
