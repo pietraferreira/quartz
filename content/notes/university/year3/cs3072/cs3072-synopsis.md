@@ -79,32 +79,75 @@ The objectives are:
 
 ---
 # Approach
+
 ## Justification of Approach
-The chosen approach explained above is justified by several key factors:
-- **Enhanced Learning Experience**: One of the main challenges in learning Rust lies in understanding the ownership and borrowing intricacies. By providing visual representation of these concepts, the learning experience can be enhanced. This way, learners can better comprehend the subtleties of the system, which hopefully leads to faster skill development.
-- **Existing Research and Tools**: The existence of RustViz demonstrates the feasibility of this approach, offering insights into the benefits of visualising Rust code structures.
-- **Relevance of Parsing**: Parsing Rust code is an essential step in creating effective visualisations. Resources like "A Beginner's Guide to Parsing in Rust" provide a strong foundation for integrating parsing techniques into the tool.
-- **Ethical Considerations**: The ethical implication I'm mostly worried about is ensuring that the tool's design and usage does not encourage cheating or plagiarism. The tool should focus on educational benefits, and not compromise the integrity of the learning process.
+Considering a project timeline of October to January (estimates):
 
-Project management, how many sprints? deliverables? risks? spreadsheet!
-
-Considering a project timeline of October to January:
-
-- Deliverables:
+- **Deliverables**:
     1. Project Scope and Plan Document (**by the end of October**):
         - Detailed project plan outlining the objectives, tasks and timeline (spreadsheet for example).
         - Initial risk assessment and mitigation plan.
         - An initial `hello world` prototype as a proof of concept, demonstrating the borrowing mechanism in Rust.
-    1. Background Research (**by the end of November**):
-        - 
+    2. Background Research (**by the end of November**):
+        - Comprehensive review of existing literature, educational materials, and resources related to Rust programming.
+        - Analysis of common challenges faced by learners in understanding Rust's ownership and borrowing system.
+        - Identify best practices in visualisation tools and techniques in programming education.
+    3. Design Specification (**by mid-December**):
+        - Design document specifying the scope and features.
+        - Selection of appropriate visualisation techniques and representations.
+    4. Tool Prototype (**by the end of December**):
+        - Development of an initial prototype of the visualisation tool based on the design specifications.
+    5. Usability Testing and User Feedback (**by mid-January**):
+        - Testing of the tool (unit tests etc).
+        - Document and analyse user feedback for improvement.
+    6. Final Tool (**by the end of January**):
+        - Refinement of the tool based on feedback.
+        - Development of the final version ready for public release.
+    7. Documentation and Knowledge Dissemination (**end of January**):
+        - User guides and documentation for the tool.
+        - Preparation for submission of research findings.
+
+- **Milestones**:
+    1. Project Initiation:
+        - Define objectives and scope.
+        - Identify potential risks and mitigation strategies.
+    1. Background Research:
+        - Complete thorough background research report.
+    2. Design Specification:
+        - `helloworld` application.
+        - Complete design specification.
+    4. Prototype Development:
+        - Develop a working prototype of the tool.
+    5. Testing and Feedback:
+        - Conduct testing and gather feedback.
+        - Analyse both for refinements.
+    6. Final Tool Development:
+        - Refine tool based on feedback and finish development.
+    7. Documentation and Knowledge Dissemination:
+        - Create user guides and documentation.
+        - Prepare and submit findings.
+
+- **Risk Mitigation**:
+    1. Scope Creep (uncontrolled expansion):
+        - Clearly define the project score and objectives from the get-go.
+        - Assess and approve any scope changes to better manage it.
+    2. Technical Challenges:
+        - Maintain ongoing communication with my supervisor to address technical challenges effectively.
+        - Consider involving experts to resolve complex technical issues.
+    3. Time Constraint:
+        - Have a clear schedule and effective project planning to ensure a timely completion.
 
 ---
 # Evaluation
 
 - **Aim**: To enhance the learning experience of Rust programming, particularly in understanding Rust's ownership and borrowing system.
 
-- **Evaluation**: Success here will be determined by assessing whether the visualisation tool has indeed improved the learning experience for students. This evaluation will involve conducting usability testing and comparing the performance of learners who used the tool against a group that did not.
-
-Testing the tool, how? test the parser etc etc unit tests etc
-
-- [ ] simple rust program to demonstrate borrowing
+- **Evaluation**: Success here will be determined by assessing whether the visualisation tool has indeed improved the learning experience for students. This evaluation will involve conducting usability testing and comparing the performance of learners who used the tool against a group that did not. It will involve various aspects, including:
+    1. **Usability Testing**: Testing with the target audience, which includes novice and experienced Rust developers.
+    2. **Unit Testing of Parser**: Rigorous unit testing of the parser component of the tool to ensure it accurately parsers Rust code. This testing will involve running various test cases, including valid and invalid Rust code snippets, to verify the parser's correctness.
+    3. **Functional Testing**: Evaluate the functionality of the tool by testing its ability to accurately depict ownership and borrowing events within Rust code. 
+    4. **Comparative Analysis**: Compare the performance of two groups:
+        - Group A (Tool Users): Participants using the tool during their learning process.
+        - Group B (Control Group): Participants who did not have access to the tool and learned Rust through traditional methods.
+    5. **Quantitative Metrics**: Collect data on interactions with the tool, including number of sessions, frequency and duration of tool usage, and specific tool features utilised.
+    6. **Qualitative Feedback**: Feedback from users through surveys and interviews.
