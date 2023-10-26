@@ -10,10 +10,7 @@ type: assignment
 ---
 ---
 # Provisional Title
-Some ideas:
-- A Visual Approach to Ownership and Borrowing within the Rust programming language.
-- A Visual Learning Companion for Rust's Ownership System.
-- Visualising Ownership and Borrowing in Rust Programming. (fav)
+- Visualising Ownership and Borrowing in Rust Programming.
 
 ---
 # Problem Definition
@@ -22,7 +19,7 @@ The problem revolves around the intricacies of learning Rust, a programming lang
 
 The primary issue is the complexity of Rust's ownership and borrowing system, which often needs mental tracking of events and state changes. This can negatively impact the learning process and slow down the development.
 
-To address this problem, I aim to introduce a visualisation tool. The tool will be designed to visually depict ownership and borrowing events within Rust code. By integrating these visualisations, I aim to make the static events and their impact more obvious and tangible for learners. Therefore, the objective is to enhance the learning experience for students (developers), by providing them with a resource that accelerates their understanding of this powerful programming language.
+To address this problem, I aim to introduce a visualisation tool. The tool will be designed to visually depict ownership and borrowing events within Rust code. By integrating these visualisations, I aim to make the static events and their impact more obvious and tangible for learners. Therefore, the objective is to enhance the learning experience for developers, by providing them with a resource that accelerates their understanding of this powerful programming language.
 
 ---
 # Aims and Objectives
@@ -32,6 +29,8 @@ The aim of the project is to enhance the learning experience for individuals see
 The objectives are:
 - Develop a user-friendly visualisation tool, to represent ownership and borrowing events in Rust code, facilitating a clearer understanding of these concepts for students.
 - Assess the impact of the visualisation tool on students' comprehension of Rust's ownership and borrowing system through evaluations.
+
+The objectives are:
 
 More details!! Taking about design and background research
 
