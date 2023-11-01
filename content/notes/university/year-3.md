@@ -95,6 +95,7 @@ Lecturer: Simon J E Taylor
     - [[notes/university/year3/cs3004/cs3004-threads|Threads]] 
 - 📚 Reading list
 - ❗Assessments
+    - [[notes/university/year3/cs3004/cs3004-coursework|Coursework]] 
     - Deadlines:
         - Assignment: **01/12**.
 # [CS3002](notes/university/year3/cs3002/cs3002.md) - Artificial Intelligence
