@@ -90,3 +90,7 @@ fn change(s: &mut String) {
     // s is a mutable reference
 }
 ```
+
+# Reference
+- https://doc.rust-lang.org/rust-by-example/scope/borrow.html
+- https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
