@@ -68,6 +68,7 @@ Lecturer: Fang Wang
     - [[notes/university/year3/cs3072/cs3072-synopsis|Project Synopsis (27/10)]]
 - Notes
     - [[notes/university/year3/cs3072/cs3072-rust-borrowing-mechanism|Rust Borrowing Mechanism]]
+    - [[Design]]
 
 # [CS3001](notes/university/year3/cs3001/cs3001.md) - Advanced Topics
 Lecturer:
