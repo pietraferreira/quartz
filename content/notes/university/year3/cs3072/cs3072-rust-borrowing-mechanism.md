@@ -91,6 +91,8 @@ fn change(s: &mut String) {
 }
 ```
 
+![[notes/images/Screenshot 2023-11-09 at 09.50.56.png]]
 # Reference
 - https://doc.rust-lang.org/rust-by-example/scope/borrow.html
 - https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+- https://ethz.ch/content/dam/ethz/special-interest/infk/chair-program-method/pm/documents/Education/Theses/David_Blaser_BA_description.pdf
