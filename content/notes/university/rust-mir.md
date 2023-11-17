@@ -9,97 +9,88 @@ year: '3'
 type: research
 ---
 ---
-# Introducing MIR
+Start here: [[notes/university/intro-rust-mir|intro-rust-mir]].
 
-**Date: Apr. 19, 2016**
-**Author: Niko Matsakis**
+![[notes/images/Screenshot 2023-11-13 at 09.25.25.png]]
 
-## Overview:
-The blog post introduces MIR (Mid-Level Intermediate Representation), a significant transformation in the Rust compiler's internal architecture. MIR acts as an intermediate step between the High-Level IR (HIR) and LLVM, aiming to simplify and enhance various aspects of the compiler.
+**MIR**: mid-level intermediate representation, it comes between the HIR and LLVM.
 
-## Why MIR?
-1. **Faster Compilation Time:**
-   - MIR facilitates incremental compilation, saving and reloading only necessary parts during recompilation.
-   - Provides a foundation for efficient data structures, reducing redundancy, and enhancing compilation speed.
+MIR enables much more flexible borrowing, more information [here](https://github.com/rust-lang/rfcs/issues/811).
 
-   Example:
-   - When recompiling, only the changed portions of the code are reprocessed.
+MIR reduces Rust down to a simple core, removing almost all the syntax such as `for` loops, `match` expressions and method calls. Instead, they are translated into primitives.
 
-2. **Faster Execution Time:**
-   - Allows Rust-specific optimizations before reaching LLVM, exploiting Rust's rich type system.
-   - Enables performance improvements like "non-zeroing" drop.
+### Example
+---
+```rust
+for elem in vec {
+    process(elem);
+}
+```
 
-   Example:
-   - Optimizations are performed on Rust code before it reaches the LLVM stage.
+This iterates over all elements in a vector and processes them one by one.
 
-3. **More Precise Type Checking:**
-   - Improves flexibility in borrowing, enhancing Rust's ergonomics and learning curve.
+A `for` loop in Rust, converts a value into an iterator and repeatedly calls `next` on that iterator. A `while let` loop iterates until some condition is met. We can rewrite the `for` loop into a `while let` loop:
 
-   Example:
-   - MIR enables more flexible borrowing, reducing artificial restrictions imposed by the current compiler.
+```rust
+let mut iterator = vec.into_iter();
+while let Some(elem) = iterator.next() {
+    process(elem);
+}
+```
 
-## Engineering Benefits:
-1. **Eliminating Redundancy:**
-   - Centralizes logic in MIR construction, reducing duplication among different compiler passes.
+We still have multiple kinds of loops, now we can rewrite it into a simple `loop` combined with a `match`:
 
-   Example:
-   - Safety analyses and LLVM IR production no longer need redundant logic; they rely on MIR.
+```rust
+let mut iterator = vec.into_iter();
+loop {
+    match iterator.next() {
+        Some(elem) => process(elem),
+        None => break,
+    }
+}
+```
 
-2. **Raising Ambitions:**
-   - Simplifies working with MIR, enabling complex tasks that were challenging before.
+We already eliminate two constructs (`for` and `while` loops), but we can go further. More information [here](https://blog.rust-lang.org/2016/04/19/MIR.html):
 
-   Example:
-   - Non-zeroing drop is explored, showcasing the simplification achievable with MIR.
+```rust
+// Rather than `vec.into_iter()`, we are calling
+// the function `IntoIterator::into_iter`. This is
+// exactly equivalent, just more explicit.
+let mut iterator = IntoIterator::into_iter(vec);
+loop {
+    // Similarly, `iterator.next()` can be rewritten
+    // to make clear which trait the `next` method
+    // comes from. We see here that the `.` notation
+    // was also adding an implicit mutable reference,
+    // which is now made explicit.
+    match Iterator::next(&mut iterator) {
+        Some(elem) => process(elem),
+        None => break,
+    }
+}
+```
 
-## MIR Core Language:
-- **Reducing Rust to a Simple Core:**
-  - MIR simplifies Rust, abstracting away many language features.
-  - Demonstrates the reduction of Rust constructs like loops and method calls to MIR primitives.
+Now to reduce even more we can use `goto`:
 
-   Example:
-   - Transforms a Rust for loop into an MIR representation with explicit control flow.
+```rust
+    let mut iterator = IntoIterator::into_iter(vec);
 
-## Control-Flow Graphs:
-1. **Control-Flow Graphs:**
-   - Represents MIR internally as control-flow graphs, aiding in flow-sensitive analysis.
-   - Structured as basic blocks connected by edges, facilitating optimization.
+loop:
+    match Iterator::next(&mut iterator) {
+        Some(elem) => { process(elem); goto loop; }
+        None => { goto break; }
+    }
 
-   Example:
-   - A loop in Rust translates into a cycle in the control-flow graph.
+break:
+    ...
+```
 
-2. **Simplifying Match Expressions:**
-   - Introduces switches and variant downcasts in MIR to simplify match expressions.
+> **MIR construction is type-driven.** We saw that all method calls like `iterator.next()` can be desugared into fully qualified function calls like `Iterator::next(&mut iterator)`. However, doing this rewrite is only possible with full type information, since we must (for example) know the type of `iterator` to determine which trait the `next` method comes from. In general, constructing MIR is only possible after type-checking is done.
 
-   Example:
-   - Separates checking the variant from extracting data, enhancing clarity in control flow.
+> **MIR makes all types explicit.** Since we are constructing MIR after the main type-checking is done, MIR can include full type information. This is useful for analyses like the borrow checker, which require the types of local variables and so forth to operate, but also means we can run the type-checker periodically as a kind of sanity check to ensure that the MIR is well-formed.
 
-## Explicit Drops and Panics:
-- **Explicit Drops and Panics:**
-  - Makes drops explicit in MIR, handling destructor execution during unwinding.
-  - Introduces panic edges into the control-flow graph to represent potential panics.
+#### Control-flow graphs
+---
+![[notes/images/Screenshot 2023-11-13 at 09.33.28.png]]
 
-   Example:
-   - Explicitly represents where values are dropped and when unwinding might occur.
 
-## Non-Zeroing Drop:
-- **Drops and Stack Flags:**
-  - Introduces non-zeroing drop as a long-awaited improvement to Rust.
-  - Uses boolean stack flags for more efficient and optimized resource management.
-
-   Example:
-   - Demonstrates how MIR enables the implementation of non-zeroing drop, improving code generation.
-
-# Conclusion:
-- **MIR's Transformative Potential:**
-  - Foresees MIR's transformative impact on the compiler, opening avenues for language improvements.
-  - Examples include drop flags and enhanced lifetime system precision.
-
-   Example:
-   - MIR paves the way for a more powerful constant evaluator and interpreters like miri.
-
-- **Transition to MIR:**
-  - Acknowledges the ongoing transition to MIR within the compiler.
-  - Encourages contributions and highlights ongoing work on LLVM generation and borrow checker porting.
-
-   Example:
-   - Interested contributors are directed to issues tagged with A-mir or encouraged to join the #rustc channel on IRC.
