@@ -73,7 +73,7 @@ type: notes
 
 # Sample Questions
 ---
-Maybe explain ownership and borrowing?
+Maybe explain ownership and borrowing? do breo!!! TODO
 
 1. **Demographic Information:**
     - What is your programming experience level? (Beginner, Intermediate, Advanced)
