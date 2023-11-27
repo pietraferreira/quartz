@@ -75,6 +75,10 @@ type: notes
 ---
 Maybe explain ownership and borrowing? do breo!!! TODO
 
+TODO: Before you use the tool vs after you use the tool! what is your understanding before using the tool vs after using the tool
+
+More on borrowing and ownership, maybe split them! be more specific
+
 1. **Demographic Information:**
     - What is your programming experience level? (Beginner, Intermediate, Advanced)
     - How familiar are you with the Rust programming language? (Not familiar, Somewhat familiar, Very familiar)
@@ -191,3 +195,11 @@ These concepts ensure memory safety without the need for a garbage collector. Ow
 - https://play.rust-lang.org/?version=nightly&mode=debug&edition=2015
 - [https://github.com/cohenarthur/rustc_tools_mir](https://github.com/cohenarthur/rustc_tools_mir)
 - [[notes/university/rust-mir|rust-mir]]
+
+# TODO
+---
+- Rust parser
+- Yacc, Antlr (grammars)
+- Treesitter (use parser generator)
+- Focus on tool, work on questions (almost good!)
+- Apply to BREO before the holidays
