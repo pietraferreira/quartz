@@ -203,3 +203,25 @@ These concepts ensure memory safety without the need for a garbage collector. Ow
 - Treesitter (use parser generator)
 - Focus on tool, work on questions (almost good!)
 - Apply to BREO before the holidays
+
+```
+let_declaration: $ => seq(
+      'let',
+      optional($.mutable_specifier),
+      field('pattern', $._pattern),
+      optional(seq(
+        ':',
+        field('type', $._type),
+      )),
+      optional(seq(
+        '=',
+        field('value', $._expression),
+      )),
+      optional(seq(
+        'else',
+        field('alternative', $.block),
+      )),
+      ';',
+    ),
+```
+
