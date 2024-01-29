@@ -9,20 +9,14 @@ year: '3'
 type:
 ---
 ---
-# Weekly Schedule
+# Daily Schedule
 ---
-### Morning
-- [ ] Work on FYP paper.
-- [ ] Watch a lecture + make notes
-- [ ] Put into Anki
-
-### Afternoon
-- [ ] Work on FYP paper.
+- [ ] Work on FYP paper. (Draft end of Feb)
+- [ ] Watch a lecture + make notes.
+- [ ] Put into Anki.
 - [ ] Work on FYP project.
-- [ ] Work on presentation.
-
-### Evening
-- [ ] Do Anki cards.
+- [ ] Work on FYP presentation. (15 of Feb)
+- [ ] Add AI to FYP.
 
 ## Extras:
 - [ ] Read for at least 15min.
