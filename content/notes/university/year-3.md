@@ -55,6 +55,8 @@ SORT file.mtime DESC
 LIMIT 5
 ```
 
+# STUDY PLAN
+
 # CS3072 - Final Year Project
 Lecturer: Fang Wang
 
