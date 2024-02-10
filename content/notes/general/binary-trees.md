@@ -30,7 +30,7 @@ A binary tree is a set of _nodes_ linked into a simple structure. Every node has
 ```
 ![binary-tree-search](notes/images/binary-tree-search.png)
 
-### In code
+### In code (Binary Search)
 ```c
 struct node {
   node *left;
