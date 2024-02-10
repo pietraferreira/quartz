@@ -15,6 +15,10 @@ Where all of my notes live!!! There are no rules here 😎
 ## General
 [HELP](notes/general/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
 
+## LeetCode
+- ## [[Concepts]]
+- ## [[Problems]]
+
 ## Courses
 
 ### Coursera
