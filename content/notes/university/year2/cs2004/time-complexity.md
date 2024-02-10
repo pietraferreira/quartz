@@ -26,7 +26,7 @@ def get_first_element(my_list):
 ```
 - **Explanation**: No matter how large the list is, this function always takes the same time to return the first element.
 
-### Example 2: Linear Time Complexity (O(n))
+### Example 2: Linear Time Complexity $(O(n))$
 ```python
 def find_max(my_list):
     max_value = my_list[0]
@@ -37,7 +37,7 @@ def find_max(my_list):
 ```
 - **Explanation**: The function goes through each element once to find the maximum, so the time taken grows linearly with the size of the input list.
 
-#### Example 3: Quadratic Time Complexity (O(n^2))
+### Example 3: Quadratic Time Complexity $(O(n^2))$
 ```python
 def bubble_sort(my_list):
     n = len(my_list)
@@ -47,9 +47,9 @@ def bubble_sort(my_list):
                 my_list[j], my_list[j+1] = my_list[j+1], my_list[j]
     return my_list
 ```
-- **Explanation**: For each element in the list, the algorithm performs another loop over the remaining elements. This results in time complexity of O(n^2).
+- **Explanation**: For each element in the list, the algorithm performs another loop over the remaining elements. This results in time complexity of $O(n^2)$.
 
-#### Example 4: Logarithmic Time Complexity (O(log n))
+#### Example 4: Logarithmic Time Complexity $(O(log_n))$
 ```python
 def binary_search(my_list, item):
     low = 0
@@ -73,20 +73,7 @@ def binary_search(my_list, item):
 3. **Count the Nested Loops**: The number of nested loops often indicates the degree of the polynomial time complexity (e.g., two nested loops usually mean O(n^2)).
 4. **Look for Divide and Conquer**: Algorithms that divide the problem in half at each step typically have a logarithmic time complexity.
 
-By understanding these concepts and applying them to code, you can effectively analyze and articulate the time complexity of various algorithms.
-# Sorting
----
-It is one of the most common tasks in data analysis.
-
-Examples:
-- Print out a collection of employees sorted by salary.
-- Print out a list of names in alphabetical order.
-
-**Selection sort** repeatedly finds the smallest element in the unsorted tail region of a list and moves it to the front.
-
-More info [here](notes/university/year2/cs2004/selection-sort.md) (Selection Sort).
-
-# How Fast is an Algorithm?
+## How Fast is an Algorithm?
 ---
 With an array of size `n`, count how many **primitive operations** are needed.
 
@@ -100,10 +87,9 @@ The number of operations:
 - $5n/2 + 2$ is small compared to $n^2/2$, so we can ignore it.
 - We can also ignore the $1/2$, we use the **simplest** expression of the class.
 - So it is simplified to $n^2$.
-- Using Big-O notation:
-    - $O(n^2)$.
+- Using Big-O notation: $O(n^2)$.
 
-# Search Algorithm
+## Search Algorithm
 ---
 Check for an element from any data structure where it is stored.
 
@@ -117,7 +103,7 @@ Classed into two categories:
 
 More info [here](notes/university/year2/cs2004/graphs.md) (Graph Search).
 
-# Binary Search vs Linear Search
+## Binary Search vs Linear Search
 ---
 Binary search is an $O(log2(n))$ algorithm:
 - $n$ elements -> $n/2$ elements -> $n/4$ elements -> ... -> 1 element.
