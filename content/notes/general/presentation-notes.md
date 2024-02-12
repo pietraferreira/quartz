@@ -180,3 +180,8 @@ Finally, **Final Tool Development** and **Documentation** phases focus on polish
 Throughout these phases, our approach remains iterative, responsive, and deeply rooted in the needs of the Rust learning community. We're not just building a tool; we're crafting a learning companion that will make Rust's advanced concepts accessible to everyone."
 
 This script outlines a detailed, phased approach from the initial conceptualization through to development, testing, and final refinement, emphasizing the iterative and research-driven methodology behind your project.
+
+---
+
+"Writing the grammar was an iterative and creative process, beginning with broad strokes—defining the major constructs of Rust—and progressively detailing each part. We frequently tested our grammar using `tree-sitter generate` and `tree-sitter test`, ensuring accuracy and effectiveness. A critical aspect of our development was handling ambiguities, where we strategically used precedence and associativity to clarify the parser's behavior, ensuring it could accurately interpret Rust's syntax."
+
