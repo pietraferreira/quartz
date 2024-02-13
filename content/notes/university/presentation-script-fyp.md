@@ -139,3 +139,105 @@ As the project moves forward, the next steps are crucial for enhancing the tool.
 Thank you for listening, do you have any questions?
 
 
+# Version 2
+---
+
+**Slide 1: Introduction**
+Hello, I'm Pietra, and today I'll present "Visualising Ownership and Borrowing in Rust," my final year project aimed at simplifying these core Rust concepts.
+
+---
+
+**Slide 2: Why Rust?**
+Rust's unmatched performance and memory safety come from its unique ownership model, making it a standout language but also a challenging one to learn.
+
+---
+
+**Slide 3: Ownership in Rust**
+Ownership in Rust follows three rules: each value has a single owner, values are dropped when out of scope, and ownership can be transferred, ensuring memory safety.
+
+---
+
+**Slide 4: Borrowing Concept**
+Borrowing allows mutable and immutable references to values, enabling safe and flexible use of data without taking ownership.
+
+---
+
+**Slide 5: Project Goals**
+The project introduces a visualisation tool to demystify ownership and borrowing, aiming to accelerate learning and comprehension of Rust's safety mechanisms.
+
+---
+
+**Slide 6: Research Foundation**
+Grounded in research from RustViz and official documentation, my tool focuses on dynamic analysis for a real-time understanding of Rust code.
+
+---
+
+**Slide 7: Agile Methodology**
+Adopting Agile allowed for a flexible, iterative development process, ensuring a structured approach to achieving project milestones.
+
+---
+
+**Slide 8: Development Strategy**
+Using Tree-sitter for parsing, the project emphasized rapid prototyping and iterative development, leading to the creation of a custom Rust parser.
+
+---
+
+**Slide 9: Technical Approach**
+The parser, built on Tree-sitter, offers detailed visualisation of Rust's ownership and borrowing by precisely converting code into syntax trees.
+
+---
+
+**Slide 10: Grammar and Parsing**
+I developed a grammar to capture Rust's syntax, focusing on accurately parsing complex code structures related to ownership and borrowing.
+
+---
+
+**Slide 11: Parser Mechanics**
+The parser supports Rust's type system and pattern matching, crucial for interpreting diverse data structures and expressions.
+
+---
+
+**Slide 12: Testing Framework**
+A custom test suite verifies the parser's accuracy across various Rust constructs, ensuring robust support for the language's syntax.
+
+---
+
+**Slide 13: User Interface Design**
+The tool features an intuitive interface using Bootstrap, with real-time visual feedback through color coding to highlight ownership and borrowings.
+
+---
+
+**Slide 14: Visual Feedback Mechanism**
+Utilizing JavaScript and WebAssembly, the tool analyzes Rust code in real-time, identifying mutable and immutable borrows for visual representation.
+
+---
+
+**Slide 15: AI Integration**
+Exploring AI to complement traditional parsing, the tool uses AI analysis for a deeper understanding of Rust's concepts through code snippets.
+
+---
+
+**Slide 16: Challenges Encountered**
+Addressing the complexity of accurately visualizing ownership and borrowing required overcoming limitations in contextual analysis.
+
+---
+
+**Slide 17: Alternative Approaches**
+Considering integration with the Rust compiler for deeper analysis was explored but deemed out of scope due to project constraints.
+
+---
+
+**Slide 18: Future Enhancements**
+Enhancing the tool involves refining AI integration, expanding the test suite, and gathering user feedback to improve accuracy and usability.
+
+---
+
+**Slide 19: Conclusion**
+This project lays the groundwork for a comprehensive learning tool, aiming to simplify the complexity of Rust for developers.
+
+---
+
+**Slide 20: Q&A**
+Thank you for your attention. I'm now ready to take any questions you might have about my project.
+
+---
