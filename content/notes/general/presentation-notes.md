@@ -232,3 +232,7 @@ Our journey has been about more than just achieving technical outcomes; it's bee
 
 ---
 
+"Our background research was anchored in a deep dive into the RustViz project and Rust's official documentation, setting a solid foundation for understanding Rust's advanced memory management features. Contrary to integrating AI into our parser, we employed AI, specifically OpenAI's GPT model, to benchmark its ability to discern Rust's ownership and borrowing patterns against our custom parser. This unique approach allowed us to critically assess our parser's accuracy and the AI's contextual comprehension side by side. Our goal was not to augment the parser with AI but to explore AI's standalone capabilities in grasping Rust's intricacies, providing valuable insights into the strengths and limitations of both methods."
+
+---
+
