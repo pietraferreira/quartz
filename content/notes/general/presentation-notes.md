@@ -211,3 +211,24 @@ This test specifically examines the parser's ability to accurately handle a bloc
 We've also introduced a 'Detailed Analysis' feature, which dynamically displays further insights into the highlighted code sections, enriching the user's learning experience. This is made possible through JavaScript, which orchestrates all user interactions, from parsing code to revealing detailed analyses upon hover, ensuring a seamless and informative experience. Our approach not only makes Rust's intricate syntax more approachable but also fosters a deeper understanding of its unique features."
 
 ---
+
+"To enhance our Rust parser, we're integrating an innovative approach using AI to analyze code snippets for ownership and borrowing concepts. Our setup includes an Express server, which acts as the backbone of our application, facilitating the communication between the user's code submissions and AI analysis.
+
+Securely configured with `dotenv`, our API keys remain protected, ensuring safe interactions with OpenAI's powerful GPT model. Through the `/analyze-code` endpoint, users can submit Rust code, which is then processed asynchronously to leverage OpenAI's capabilities in understanding and analyzing complex code patterns without traditional syntactic context.
+
+This method not only extends our parser's functionality but also opens up new avenues for understanding how AI interprets programming concepts compared to traditional parsers. It's a step forward in exploring the synergy between AI and programming languages, particularly in the nuanced domain of Rust's ownership and borrowing mechanics."
+
+---
+
+"In our journey to develop a Rust grammar parser, we aimed to tackle Rust's nuanced features like ownership and borrowings. However, the complexity of these concepts posed a significant challenge. Our simplistic grammar, while effective in parsing basic structures, sometimes struggles with the contextual depth required for accurate analysis, particularly in highlighting mutable and immutable borrows and ownership transfers. This limitation led to inconsistencies in identifying these key Rust features, revealing the need for a more context-aware approach. Despite these hurdles, our project has laid the groundwork for further refinement and underscores the importance of developing a parser that can navigate Rust's intricate syntax with greater precision."
+
+---
+
+"In exploring alternative approaches for our Rust grammar analysis project, we've considered two promising directions. First, integrating our tool with `rustc` offers a path to harness the compiler's deep insights into code structure and semantics. By tapping into `rustc`'s intermediate representation, we can extract nuanced data on ownership and borrowing directly from the compilation process, enabling a level of analysis that goes beyond surface-level parsing.
+
+Second, we pondered using Rust's existing, more robust grammar as a foundation for our analysis. This approach promises increased accuracy and depth, leveraging the comprehensive understanding embedded in Rust's official grammar. However, we initially chose a simplified custom grammar to deepen our understanding of Rust's intricacies and to experiment with building a parser from the ground up.
+
+Our journey has been about more than just achieving technical outcomes; it's been a learning experience, aimed at understanding the nuances of Rust's syntax and semantics from the inside out. As we consider these alternative approaches, our goal remains to enhance our tool's capabilities, guided by the insights gained from our initial efforts and the broader Rust community."
+
+---
+
