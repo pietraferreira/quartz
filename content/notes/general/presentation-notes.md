@@ -185,3 +185,16 @@ This script outlines a detailed, phased approach from the initial conceptualizat
 
 "Writing the grammar was an iterative and creative process, beginning with broad strokes—defining the major constructs of Rust—and progressively detailing each part. We frequently tested our grammar using `tree-sitter generate` and `tree-sitter test`, ensuring accuracy and effectiveness. A critical aspect of our development was handling ambiguities, where we strategically used precedence and associativity to clarify the parser's behavior, ensuring it could accurately interpret Rust's syntax."
 
+---
+### Script for Discussing the Grammar
+
+"In developing this custom Tree-sitter grammar for Rust, we've encapsulated Rust's complex and powerful features into a structured and understandable format. From handling Rust's rich type system, including both signed and unsigned integers, to parsing comprehensive Rust files that may start with a shebang, our grammar is designed to be as inclusive as possible.
+
+We've meticulously designed the grammar to parse a wide array of statements and expressions, from simple let declarations to complex function definitions and control blocks. This versatility ensures that our tool can accurately interpret and visualize Rust code, highlighting key aspects like mutable variables and pattern matching which are central to Rust's approach to safety and concurrency.
+
+Furthermore, our grammar's capability to handle advanced type expressions, method calls, and even macro invocations speaks to its sophistication and alignment with Rust's modern features. The inclusion of helper functions for managing lists, like parameters in function definitions, showcases our attention to detail and commitment to capturing Rust's syntax nuances.
+
+Overall, the development of this grammar represents a deep dive into Rust's syntax, embodying our goal to create a tool that not only parses but also enriches the learning and understanding of Rust's unique features."
+
+---
+
