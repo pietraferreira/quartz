@@ -245,3 +245,16 @@ The script breaks down a Rust source file into its syntactical components, mappi
 
 ---
 
+The logic for identifying ownership transfers, immutable borrows, and mutable borrows in Rust code through this JavaScript implementation hinges on the principles of Rust's memory safety features. 
+
+- **Ownership Transfer**: Identified by `let_declaration` nodes, focusing on scenarios where a variable is directly assigned a value without borrowing. This aligns with Rust's ownership rules, where ownership of a value can be transferred to another variable through assignment.
+
+- **Immutable Borrow**: Detected through `reference_expression` nodes lacking a `mutable_specifier`. In Rust, borrowing a value immutably means the original owner retains ownership, but the borrower can read the value.
+
+- **Mutable Borrow**: Found by locating `reference_expression` nodes with a `mutable_specifier`. Mutable borrows in Rust allow the borrower to modify the borrowed value, reflecting temporary, exclusive access.
+
+These patterns are rooted in Rust's design to ensure memory safety without a garbage collector, enforcing rules at compile time to manage how variables and data interact. The recursive application of this logic ensures that nested structures and patterns are accurately analyzed, while the color-coded styling visually distinguishes between these different memory management concepts, enhancing comprehension and learning.
+
+A **reference expression node** in Rust's syntax tree represents a piece of code that creates a reference to a value, which could be either immutable or mutable. This is key in Rust for enabling borrowing, where a variable can temporarily access the value of another variable without taking ownership.
+
+A **let_declaration** in Rust is a syntax node representing a statement that declares a new variable. This statement can include an optional initializer where the variable is assigned a value upon declaration. It's fundamental in Rust for variable binding, allowing for ownership transfer or borrowing within the scope it's declared.
