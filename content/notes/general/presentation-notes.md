@@ -236,3 +236,12 @@ Our journey has been about more than just achieving technical outcomes; it's bee
 
 ---
 
+"Our project, leveraging Agile methodology, set out to develop a custom Rust parser with Tree-sitter, emphasizing rapid prototyping and iterative development. We delved into Rust's memory management intricacies and drew inspiration from tools like RustViz for visualizing ownership and borrowing. Without direct user testing, our focus remained on aligning the tool's design with anticipated learning needs, ensuring it serves as an intuitive and educational resource. The project concluded with refining our visualization tool and creating comprehensive documentation to support Rust learners in navigating its complex concepts."
+
+---
+# Parser Magic
+
+The script breaks down a Rust source file into its syntactical components, mapping each part of a function's declaration to a parse tree. Nodes represent syntactic elements: `source_file` encapsulates the entire code snippet; `function_declaration` identifies a function block, including its name (`identifier`), parameters, and body (`block`). Parameters are detailed with types, highlighting Rust's distinction between mutable and immutable references. The block contains an `expression_statement` with an `assignment_expression`, demonstrating dereferencing and binary operations. This structure aids in visualizing how data flows through the function, clarifying Rust's ownership and borrowing rules.
+
+---
+
