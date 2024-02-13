@@ -172,19 +172,19 @@ Adopting Agile allowed for a flexible, iterative development process, ensuring a
 
 ---
 
-**Slide 8: Developing a Parser with Tree-sitter**
+**Slide 7: Developing a Parser with Tree-sitter**
 I chose Tree-sitter for its fast and efficient parsing, crucial for real-time Rust code visualisation. The custom parser, focuses specifically on Rust's unique ownership and borrowing, offering precise control for detailed visualisation. Now about the parser mechanics, as you can see in the image here, it converts Rust code into syntax trees in textual form.
 
 ---
 
-**Slide 9: Approach to Developing the Parser**
+**Slide 8: Approach to Developing the Parser**
 Utilising Tree-sitter's choice function, I defined Rust integer types and key constructs/
 
 I then incorporated Rust patterns and type expressions for variable and function declaration, differentiating between assignment, binary operations and method calls.
 
 ---
 
-**Slide 10: Example***
+**Slide 9: Example***
 
 Here's an example of how I parse a function declaration. This is the grammar I had to come up with to handle it.
 
@@ -202,13 +202,13 @@ And we conclude with the function's body, within a block, encapsulating all the 
 
 ---
 
-**Slide 12: Testing**
+**Slide 10: Testing**
 
 Ok now testing. The custom test suite I developed using Tree-sitter checks every aspect of the grammar developed. In the first image you can see the test suite being ran and all the tests it executed (they pass), and below you can see and example of a test, where I give it Rust code and the expected tree.
 
 ---
 
-**Slide 13: User Interface**
+**Slide 11: User Interface**
 
 Moving to the user interface, so user can actually intuitively use my tool. 
 
@@ -219,7 +219,7 @@ I employed my custom Tree-sitter parser, converting to WebAssembly for Web suppo
 For visual feedback, I am using colour coding in the output area and also dynamic interactions, allowing for hover events as you can see at the bottom of the image.
 
 ---
-**Slide 14: How do we know what to highlight?**
+**Slide 12: How do we know what to highlight?**
 
 How does it know what to highlight?
 
@@ -233,32 +233,115 @@ The logic is not perfect, however it is sufficient to correctly identify immutab
 
 ---
 
-**Slide 15: AI Approach for Code Analysis**
+**Slide 13: AI Approach for Code Analysis**
 
 I'm integrating AI to analyse code snippets for ownership and borrowing concepts. The idea is to feed ChatGPT with code snippets, and request its analysis to then compare against the custom parser. 
 
- Users can submit Rust code which is then processed to leverage OpenAI's capabilities in understanding and analysing complex code patterns without traditional syntactic context.
+ Users can submit Rust code which is then processed to figure out OpenAI's capabilities in understanding and analysing complex code patterns without traditional syntactic context.
 
-This doesn't only extend the parser functionally, but opens up new avenues for understanding how AI interprets programming concepts compared to traditional parsers.
+I believe this opens up new avenues for understanding how AI interprets programming concepts compared to traditional parsers.
 
 ---
 
-**Slide 16: Challenges**
+**Slide 14: Challenges**
 
 Now the challenges.
 
-The complexity of ownership and borrowing posed a significant challenge. The simplistic grammar, while effective in parsing basic structures, sometimes struggle with the contextual depth required for accurate analysis. The limitation led to inconsistencies in identifying these key Rust features, revealing the need for a more context-aware approach. Despite these hurdles, I believe the project has laid the groundwork for further refinement.
+The complexity of ownership and borrowing posed a significant challenge. The simplistic grammar, while effective in parsing basic structures, sometimes struggle with the contextual depth that we need for accurate analysis. The limitation led to inconsistencies in identifying these key Rust features, revealing the need for a more context-aware approach. Despite these hurdles, I believe the project has laid the groundwork for further refinement.
 
 ---
 
-**Slide 17: Next Steps**
+**Slide 15: Next Steps**
 
-As the project moves forward, the next steps are crucial for enhancing the tool. First, the AI integration to refine the comparative analysis need to be completed. Next, the test suite needs to be expanded, focusing on the accuracy of the highlighting mechanism. Gathering user feedback will be essential to fine-tune usability and effectiveness, however the tool is not accurate enough yet for that to be executed. Together, I think these steps will enhance the learning and development experience for Rust programmers.
+As the project moves forward, first, the AI integration needs to be completed. Next, the test suite needs to be expanded, focusing on the accuracy of the highlighting mechanism. Gathering user feedback will be essential to fine-tune usability and effectiveness. And finally develop more documentation and tutorials for the users.
 
 ---
 
-**Slide 18: Thank you**
+**Slide 16: Thank you**
 
 Thank you for listening, do you have any questions?
+
+---
+
+# Version 3
+---
+
+**Slide 1: Introduction**
+"Hello, I'm Pietra, unveiling 'Visualising Ownership and Borrowing in Rust' today, my endeavor to demystify Rust's pivotal concepts in my final year project."
+
+---
+
+**Slide 2: Why Rust?**
+"Rust stands out for its unparalleled performance and memory safety, attributed to its innovative ownership model. This complexity, however, poses a significant learning curve, as highlighted by developers who rank ownership among Rust's most challenging topics."
+
+---
+
+**Slide 3: Ownership in Rust**
+"Rust enforces three cardinal rules for ownership: each value is owned by a single entity, ownership ends with scope, and ownership can shift via transfers, exemplified here with 's' transferring to 'b', ensuring memory safety."
+
+---
+
+**Slide 4: Borrowing Concept**
+"When direct ownership is overkill, borrowing comes to the rescue, offering mutable and immutable references. This mechanism enhances flexibility while safeguarding against data races, illustrated here with examples of both borrow types."
+
+---
+
+**Slide 5: Research Foundation**
+"My groundwork leverages insights from RustViz and official Rust documentation. Unlike RustViz's static lens, my project champions dynamic analysis. Here you can see what RustViz looks like.
+
+---
+
+**Slide 6: Agile Methodology**
+"Embracing Agile, I navigated through this project with flexibility and iterative refinement, mapping out tasks, deadlines, and milestones for a structured yet adaptable workflow."
+
+---
+
+**Slide 7: Developing a Parser with Tree-sitter**
+"Opting for Tree-sitter for its efficiency in parsing, I tailored a custom parser attuned to Rust's borrowing and ownership, transforming Rust code into comprehensible syntax trees, as shown here."
+
+---
+
+**Slide 8: Approach to Developing the Parser**
+"My strategy with Tree-sitter involved defining Rust's syntax through choices and patterns, distinguishing between variable functions, operations, and method calls for a granular parsing approach."
+
+---
+
+**Slide 9: Parsing Function Declarations**
+"I'll walk you through parsing a function declaration, starting with 'fn' to pinpoint declarations, using identifiers for names, parameters for inputs, optional types for returns, and finally culminating in the function's logic block."
+
+---
+
+**Slide 10: Testing**
+"Developing a custom test suite with Tree-sitter allowed detailed grammar evaluation You can see the suite's execution here, where tests confirm the parser's accuracy with Rust code examples. You can also see an example of a test below it.
+
+---
+
+**Slide 11: User Interface**
+"The interface is designed for intuitiveness, featuring a code input area and parse button for immediate feedback. My Tree-sitter parser, now WebAssembly, enables real-time code analysis, enriched with color-coded visual cues and interactive elements."
+
+---
+
+**Slide 12: Highlighting Logic**
+"How do we discern what to highlight? By analysing reference expressions to detect borrowing. Absence of a mutable specifier denotes an immutable borrow, a method effective in most scenarios, as illustrated here."
+
+---
+
+**Slide 13: AI Approach for Code Analysis**
+"Integrating AI, I aim to juxtapose ChatGPT's analysis with my parser for a better understanding of Rust code, exploring AI's potential to grasp complex programming concepts beyond traditional syntax analysis."
+
+---
+
+**Slide 14: Challenges**
+"Addressing ownership and borrowing's intricacies revealed limitations in my grammar's contextual depth, occasionally missing the mark on accurately identifying Rust's key features, prompting a shift towards a more context-aware approach."
+
+---
+
+**Slide 15: Next Steps**
+"Looking ahead, completing AI integration and broadening the test suite are priorities to refine the tool's precision. User feedback will drive usability improvements, alongside expanding educational resources for Rust developers."
+
+---
+
+**Slide 16: Thank You**
+"Thank you for your attention. I welcome any questions or insights you might have about this project."
 
 ---
