@@ -173,18 +173,19 @@ Adopting Agile allowed for a flexible, iterative development process, ensuring a
 ---
 
 **Slide 8: Developing a Parser with Tree-sitter**
-I chose Tree-sitter for its fast and efficient parsing, crucial for real-time Rust code visualisation. The custom parser, built on Tree-sitter, focuses specifically on Rust's unique ownership and borrowing, offering precise control for detailed visualisation. Now about the parser mechanics, as you can see in the image here, it converts Rust code into syntax trees in textual form.
+I chose Tree-sitter for its fast and efficient parsing, crucial for real-time Rust code visualisation. The custom parser, focuses specifically on Rust's unique ownership and borrowing, offering precise control for detailed visualisation. Now about the parser mechanics, as you can see in the image here, it converts Rust code into syntax trees in textual form.
 
 ---
 
 **Slide 9: Approach to Developing the Parser**
-Utilising Tree-sitter's choice function, I defined Rust integer types and key constructs, for example: statements, expressions and patterns to have a good foundation.
+Utilising Tree-sitter's choice function, I defined Rust integer types and key constructs/
 
 I then incorporated Rust patterns and type expressions for variable and function declaration, differentiating between assignment, binary operations and method calls.
 
 ---
 
 **Slide 10: Example***
+
 Here's an example of how I parse a function declaration. This is the grammar I had to come up with to handle it.
 
 The way it works is:
@@ -193,9 +194,9 @@ I start with fn, finding the beginning of a function declaration.
 
 Use identifier to capture any valid Rust function name.
 
-Then **pattern** to define the function's inputs within parentheses, allowing for a detailed parameter list.
+Then parameter to define the function's inputs.
 
-Then we have our optional return type, with the arrow symbol signifying a return function, paired with type_expression to specify the return type.
+Then we have our optional return type, paired with type_expression to specify the return type.
 
 And we conclude with the function's body, within a block, encapsulating all the logic.
 
@@ -203,8 +204,7 @@ And we conclude with the function's body, within a block, encapsulating all the 
 
 **Slide 12: Testing**
 
-Ok now testing. The custom test suite I developed using Tree-sitter checks every aspect of the grammar developed, ensuring robust support. I have tests for each construct in the grammar, for example both simple and mutable declarations, functions, parameter types etc. In the first image you can see the test suite being ran and the tests executed, and below you can see and example of a test, where I give it Rust code and the expected tree.
-I developed a grammar to capture Rust's syntax, focusing on accurately parsing complex code structures related to ownership and borrowing.
+Ok now testing. The custom test suite I developed using Tree-sitter checks every aspect of the grammar developed. In the first image you can see the test suite being ran and all the tests it executed (they pass), and below you can see and example of a test, where I give it Rust code and the expected tree.
 
 ---
 
@@ -212,22 +212,16 @@ I developed a grammar to capture Rust's syntax, focusing on accurately parsing c
 
 Moving to the user interface, so user can actually intuitively use my tool. 
 
-I used Bootstrap for adaptable and stylish interface design, also ensuring accessibility across devices out of the box.
-
 I included a text area for code input and a parse button as you can see here.
 
 I employed my custom Tree-sitter parser, converting to WebAssembly for Web support, offering instant feedback on the code.
 
-For visual feedback, I am using colour coding in the output area to differentiate between ownership and mutable/immutable borrows.
-
-Finally I also set up dynamic interactions, handling parsing requests and hover events for an interactive experience as you can see at the bottom of the image.
+For visual feedback, I am using colour coding in the output area and also dynamic interactions, allowing for hover events as you can see at the bottom of the image.
 
 ---
 **Slide 14: How do we know what to highlight?**
 
 How does it know what to highlight?
-
-The webpage uses Javascript, enhanced by the Tree-sitter parser converted to WebAssembly, to analyse Rust code in real time.
 
 For an immutable borrow for example, we check if the node we are looking at is a reference_expression. This is a technical way of saying its looking to see if the code is borrowing something.
 
@@ -241,9 +235,9 @@ The logic is not perfect, however it is sufficient to correctly identify immutab
 
 **Slide 15: AI Approach for Code Analysis**
 
-In the subject of testing, I'm integrating AI to analyse code snippets for ownership and borrowing concepts. The idea is to feed ChatGPT with code snippets, and request its analysis to then compare against the custom parser. 
+I'm integrating AI to analyse code snippets for ownership and borrowing concepts. The idea is to feed ChatGPT with code snippets, and request its analysis to then compare against the custom parser. 
 
-My initial setup includes an Express server, which facilitates the communication between the user's code submissions and AI analysis. I have dotenv to ensure the API key remains protected, ensuring safe interactions with GPT. Through the /analyse-code endpoint, users can submit Rust code which is then processed asynchronously to leverage OpenAI's capabilities in understanding and analysing complex code patterns without traditional syntactic context.
+ Users can submit Rust code which is then processed to leverage OpenAI's capabilities in understanding and analysing complex code patterns without traditional syntactic context.
 
 This doesn't only extend the parser functionally, but opens up new avenues for understanding how AI interprets programming concepts compared to traditional parsers.
 
