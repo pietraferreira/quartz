@@ -198,3 +198,16 @@ Overall, the development of this grammar represents a deep dive into Rust's synt
 
 ---
 
+### Script for Discussing the Test Suite
+
+"In creating our test suite for the custom Rust grammar parser, we've meticulously designed tests to cover a broad spectrum of Rust's syntax, from the simplest variable declarations to complex function definitions with reference parameters. Each test serves as a rigorous checkpoint, ensuring that our parser can accurately interpret and translate Rust code into a structured parse tree. This suite not only validates our grammar's comprehensiveness but also its precision in capturing the nuances of Rust's syntax, such as mutability, type annotations, and macro invocations. Through this suite, we ensure that our parser remains robust and reliable, providing a solid foundation for further development and integration into our visualization tool."
+
+This test specifically examines the parser's ability to accurately handle a block containing multiple statements in Rust. It tests for two things: first, the declaration of a variable within a block, using `let` to bind a value; and second, the use of that variable within the same block, treated as an expression statement. The test ensures that the parser correctly identifies the structure of a block, the variable declaration with its identifier and assigned literal value, and the subsequent expression statement referencing the variable. This demonstrates the parser's capability to understand and translate nested and sequential Rust constructs into a structured parse tree.
+
+---
+
+"In creating the user interface for our Rust grammar parser, we've harnessed the power of Bootstrap for a sleek and responsive design, ensuring our tool is accessible and easy to use. The heart of our interface is the interactive code input area, complemented by a parse button that triggers real-time parsing of Rust code using Tree-sitter. Upon parsing, the code output area vividly highlights different aspects of Rust's ownership and borrowing with color coding, making complex concepts visually understandable.
+
+We've also introduced a 'Detailed Analysis' feature, which dynamically displays further insights into the highlighted code sections, enriching the user's learning experience. This is made possible through JavaScript, which orchestrates all user interactions, from parsing code to revealing detailed analyses upon hover, ensuring a seamless and informative experience. Our approach not only makes Rust's intricate syntax more approachable but also fosters a deeper understanding of its unique features."
+
+---
