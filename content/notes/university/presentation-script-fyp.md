@@ -324,6 +324,16 @@ Thank you for listening, do you have any questions?
 **Slide 12: Highlighting Logic**
 "How do we discern what to highlight? By analysing reference expressions to detect borrowing. Absence of a mutable specifier denotes an immutable borrow, a method effective in most scenarios, as illustrated here."
 
+How does it know what to highlight?
+
+For an immutable borrow for example, we check if the node we are looking at is a reference_expression. This is a technical way of saying its looking to see if the code is borrowing something.
+
+If the node is a reference_expression, the function then checks all the children nodes to see if any part is a mutable_specifier, meaning the borrow is mutable.
+
+If no nodes have a mutable specifier, then we are correct to assume it is an immutable borrow.
+
+The logic is not perfect, however it is sufficient to correctly identify immutable borrows in most cases.
+
 ---
 
 **Slide 13: AI Approach for Code Analysis**
