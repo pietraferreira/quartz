@@ -133,3 +133,38 @@ As the project moves forward, first, the AI integration needs to be completed. N
 
 **Slide 16: Thank You**
 "Thank you for your attention. I welcome any questions or insights you might have about this project."
+
+# Technologies
+---
+### 1. **Tree-Sitter**
+- **Purpose**: To parse and analyze Rust code snippets efficiently. Tree-Sitter is used for its robust parsing capabilities, enabling syntax highlighting, real-time error detection, and more intricate analysis like ownership and borrowing in Rust code. It supports incremental parsing, making it fast and suitable for interactive applications.
+
+### 2. **WebAssembly (WASM)**
+- **Purpose**: To run the RustFYP parser (a custom Tree-Sitter grammar for Rust focusing on ownership and borrowing) at near-native speed in the web browser. This enhances the performance of parsing operations directly in the client's browser without server-side processing.
+
+### 3. **Bootstrap**
+- **Purpose**: For quickly designing and customizing the project's front-end. Bootstrap provides a responsive grid system, pre-designed components, and JavaScript plugins, making it easier to develop a polished web interface without spending too much time on CSS and layout issues.
+
+### 4. **JavaScript (JS)**
+- **Purpose**: As the scripting language for the project, JavaScript is used to handle the web application's logic, including initiating the Tree-Sitter parsing, manipulating DOM elements based on parsing results, and handling user interactions like code submission and display of parsing results.
+
+### 5. **HTML/CSS**
+- **Purpose**: To structure and style the web interface of your project. HTML provides the framework for your content, while CSS is used to style and layout your web page, ensuring that the syntax highlighting and analysis results are clearly and attractively presented.
+
+### 6. **Node.js**
+- **Purpose**: To create a scalable server-side application for your code analysis service. Node.js allows you to use JavaScript on the server, enabling you to build fast, scalable network applications that can handle many connections simultaneously, essential for an API service.
+
+### 7. **Express.js**
+- **Purpose**: To simplify the setup and management of your server for the API service. Express.js provides a robust set of features for web and mobile applications, including simplified routing, middleware support, and request handling, making it easier to develop and maintain your API.
+
+### 8. **dotenv**
+- **Purpose**: To manage environment variables securely. Using `dotenv`, you can store sensitive information like the OpenAI API key outside of your codebase, making your application more secure and flexible across different environments.
+
+### 9. **Body-parser**
+- **Purpose**: To parse incoming request bodies in your Express application, allowing you to access `req.body` containing parsed data as JavaScript objects. This is crucial for handling JSON data sent by clients for code analysis.
+
+### 10. **CORS (Cross-Origin Resource Sharing)**
+- **Purpose**: To enable or restrict resources on your web server based on where the HTTP request originated from. Implementing CORS is essential for security and to control access to your API from client-side applications hosted on different domains.
+
+### 11. **OpenAI SDK for Node.js**
+- **Purpose**: To integrate OpenAI's powerful AI models into your application, enabling it to send Rust code snippets to OpenAI's API for advanced analysis, such as identifying instances of mutable and immutable borrows and ownership transfers. This allows leveraging cutting-edge AI for code analysis and insights, enhancing the value of your tool.
