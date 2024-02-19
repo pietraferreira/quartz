@@ -15,7 +15,9 @@ type: script
 ---
 
 **Slide 2: Why Rust?**
-Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model and zero-cost abstractions allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. However, this complexity introduces a significant learning curve, with developers often citing ownership among Rust's most challenging aspects. 
+Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model and zero-cost abstractions allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. 
+
+However, this complexity introduces a significant learning curve, with developers often citing ownership among Rust's most challenging aspects. 
 
 ---
 
