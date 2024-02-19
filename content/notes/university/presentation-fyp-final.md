@@ -15,9 +15,16 @@ type: script
 ---
 
 **Slide 2: Why Rust?**
-Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model and zero-cost abstractions allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. 
+Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. 
 
 However, this complexity introduces a significant learning curve, with developers often citing ownership among Rust's most challenging aspects. 
+
+**Slide 3: The Problem?**
+So as I explained, the complexity of Rust's ownership and borrowing concepts introduces a significant learning curve, making it hard for developers to fully leverage its potential.
+
+I aim to tackle this challenge by simplifying these critical but complex concepts. The goal is to make Rust more accessible and approachable.
+
+The way I aim to achieve this is through the development of a visualisation tool. The tool is designed to elucidate Rust's memory safety mechanisms, such as ownership and borrowing, in an intuitive and interactive manner. So basically to transform abstract concepts into tangible visuals.
 
 ---
 
@@ -117,7 +124,9 @@ The logic is not perfect, however it is sufficient to correctly identify immutab
 ---
 
 **Slide 13: AI Approach for Code Analysis**
-"Integrating AI, I aim to juxtapose ChatGPT's analysis with my parser for a better understanding of Rust code, exploring AI's potential to grasp complex programming concepts beyond traditional syntax analysis."
+Integrating AI, I aim to juxtapose ChatGPT's analysis with my parser for a better understanding of Rust code, exploring AI's potential to grasp complex programming concepts beyond traditional syntax analysis.
+
+I will be using **gpt-3.5-turbo** as it seems to be the state-of-art when it comes to efficient and speed as well as cost efficiency. It is also able to understand and generate human-like text. So for example, when I ask it to identify and describe instances of mutable and immutable borrows and ownership transfers in Rust code, it can apply its trained knowledge of programming concepts to analyse the code snippet accurately.
 
 ---
 
