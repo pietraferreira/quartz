@@ -15,7 +15,7 @@ type: script
 ---
 
 **Slide 2: Why Rust?**
-"Rust stands out for its performance and memory safety, attributed to its innovative ownership model. This complexity, however, poses a significant learning curve, as highlighted by developers who rank ownership among Rust's most challenging topics."
+Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model and zero-cost abstractions allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. However, this complexity introduces a significant learning curve, with developers often citing ownership among Rust's most challenging aspects. 
 
 ---
 
@@ -52,7 +52,9 @@ The background research was anchored in the RustViz project and Rust's official 
 ---
 
 **Slide 7: Developing a Parser with Tree-sitter**
-"Opting for Tree-sitter for its efficiency in parsing, I tailored a custom parser attuned to Rust's borrowing and ownership, transforming Rust code into comprehensible syntax trees, as shown here."
+A parser translates code into a format that's easier for computers to understand, and Tree-sitter is an efficient parser generator designed for modern programming needs. It is really good at constructing syntax trees from code, enabling detailed analysis and manipulation of the source code. 
+
+Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's complex borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as shown here, facilitating deeper insights into code structure and behaviour, and leveraging Tree-sitter's high performance and error recovery capabilities for enhanced code analysis.
 
 ---
 
