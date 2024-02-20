@@ -17,15 +17,15 @@ type: script
 **Slide 2: Why Rust?**
 Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety without having a garbage collector. Its unique ownership model allows developers to write high-level, efficient code, managing memory at compile time.
 
-However, this complexity introduces a significant learning curve, with developers often **ranking** ownership among Rust's most challenging aspects. 
+However, this complexity introduces a significant learning curve, with developers often **ranking** ownership among Rust's most challenging features. 
 
 ---
 **Slide 3: The Problem?**
-So as I explained, the complexity of Rust's ownership and borrowing concepts introduces a significant learning curve, making it hard for developers to fully leverage its potential.
+So as I explained, the complexity of ownership and borrowing in Rust introduces a significant learning curve, making it hard for developers to fully leverage its potential.
 
-I aim to tackle this challenge by simplifying these critical but complex concepts. The goal is to make Rust more accessible and approachable.
+I aim to tackle this challenge by simplifying these critical but complex concepts. The goal is to make the language more accessible and approachable.
 
-The way I aim to achieve this is through the development of a visualisation tool. The tool is designed to elucidate Rust's memory safety mechanisms, such as ownership and borrowing, in an intuitive and interactive manner. So basically to transform abstract concepts into tangible visuals.
+The way I aim to achieve this is through the development of a visualisation tool. The tool is designed to elucidate Rust's memory safety mechanisms, such as ownership and borrowing, but in an intuitive and interactive manner. So basically to transform abstract concepts into tangible visuals.
 
 ---
 **Slide 4: Demo**
@@ -48,7 +48,7 @@ All without a **garbage collector**: automatic memory management, it attempts to
 ---
 
 **Slide 4: Borrowing Concept**
-But what about when you need to use a value without taking ownership? Thats where borrowing comes into play, allowing both mutable and immutable references to a value without taking over its ownership. This provides flexibility while maintaining safety. You can see an example of a mutable and immutable borrow here.
+But what about when you need to use a value without taking ownership? When you simply need to reference a value? Thats where borrowing comes into play, allowing both mutable and immutable references to a value without taking over its ownership. This provides flexibility while maintaining safety. You can see an example of a mutable and immutable borrow here.
 
 **Data race**: when two or more threads in a parallel application access the same memory location concurrently.
 
@@ -57,7 +57,7 @@ But what about when you need to use a value without taking ownership? Thats wher
 ---
 
 **Slide 5: Research Foundation**
-The background research was anchored in the RustViz project and Rust's official documentation, setting a solid foundation for understanding Rust's advanced memory management features. However, unlike RustViz, I am aiming for dynamic analysis and not static. Here you can see what RustViz looks like.
+The background research was anchored in the RustViz project and Rust's official documentation, giving myself a solid foundation for understanding Rust's advanced memory management features. However, unlike RustViz, I am aiming for dynamic analysis and not static. Here you can see what RustViz looks like.
 
 ---
 
@@ -67,19 +67,19 @@ The background research was anchored in the RustViz project and Rust's official 
 ---
 
 **Slide 7: Developing a Parser with Tree-sitter**
-A parser translates code into a format that's easier for computers to understand, and Tree-sitter is an efficient parser generator designed for modern programming needs. It is really good at constructing syntax trees from code, enabling detailed analysis and manipulation of the source code. 
+Ok so what is a parser? A parser translates code into a format that's easier for computers to understand, and Tree-sitter is an efficient parser generator designed for modern programming needs. It is really good at constructing syntax trees from code, allowing detailed analysis and manipulation of the source code. 
 
-Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as you can see here, facilitating deeper insights into code structure and behaviour. 
+Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically focused on Rust's borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as you can see here, facilitating deeper insights into code structure and behaviour. 
 
 ---
 **Slide 10: Diagrams 1**
-I'll briefly walk you through the process of setting up TreeSitter for code analysis. First, we initiate TreeSitter, then we load a specific programming language into it, in our case the custom one, RustFYP and finally, once it is set, we return a parser equipped to analyse the code.
+I'll briefly walk you through the process of setting up TreeSitter for code analysis. First, we initiate TreeSitter, then we load a specific programming language into it, in our case the custom one RustFYP, and finally once it is set, we return a parser equipped to analyse the code.
 
 ---
 **Slide 11: Diagrams 2**
-"Let's dive into a key aspect of our project, the logic that powers highlighting, aside from the parser itself.
+"Let's dive into a key aspect of our project, the logic that powers highlighting
 
-During code analysis, our first step is to check for ownership transfer. If it's absent, we look into child nodes for any signs of ownership transfer, returning true when we find it.
+During code analysis, our first step is to check for ownership transfer. If it's absent, we look into child nodes for any signs of it, returning true when we find it.
 
 Similarly, we spot mutable and immutable borrows by looking for reference expressions and mutable specifiers, again checking child nodes as needed.
 
@@ -100,13 +100,15 @@ I will be using **gpt-3.5-turbo** as it seems to be the state-of-art when it com
 
 ---
 **Slide 14: Diagrams AI**
-In my system, the interaction starts when the Client sends a POST/analyse-code request to the Express server. The server then forwards this request to the OpenAI API to request a code analysis. Once the OpenAI API processes this request, it sends the analysis result back to the Express server. The server, running on port 3000, then sends a response with this analysis back to the Client, completing the interaction cycle.
+In my system, the interaction starts when the Client sends a POST request to the Express server. The server then forwards this request to the OpenAI API to request a code analysis. Once the OpenAI API processes this request, it sends the analysis result back to the Express server. The server then sends a response with this analysis back to the Client, completing the interaction cycle.
 
 
 **Why use Express?**
 - Integrates seamlessly with external APIs, like the OpenAI one.
 - Simplicity in setting up web servers and APIs.
 - Routing capabilities, making it straightforward to define routes for different API points.
+**POST:**
+- POST request method requests that a web server accept the data enclosed in the body of the request message, most likely for storing it. It is often used when uploading a file or when submitting a completed web form
 
 ---
 **Slide 14: Challenges**
