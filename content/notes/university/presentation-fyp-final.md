@@ -19,6 +19,7 @@ Rust is a modern programming language known for its performance, reliability, an
 
 However, this complexity introduces a significant learning curve, with developers often **ranking** ownership among Rust's most challenging aspects. 
 
+---
 **Slide 3: The Problem?**
 So as I explained, the complexity of Rust's ownership and borrowing concepts introduces a significant learning curve, making it hard for developers to fully leverage its potential.
 
@@ -71,15 +72,11 @@ A parser translates code into a format that's easier for computers to understand
 Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as you can see here, facilitating deeper insights into code structure and behaviour. 
 
 ---
-
----
-
----
-**Slide 10: Diagrams**
+**Slide 10: Diagrams 1**
 I'll briefly walk you through the process of setting up TreeSitter for code analysis. First, we initiate TreeSitter, then we load a specific programming language into it, in our case the custom one, RustFYP and finally, once it is set, we return a parser equipped to analyse the code.
 
 ---
-**Slide 11: Diagrams**
+**Slide 11: Diagrams 2**
 "Let's dive into a key aspect of our project, the logic that powers highlighting, aside from the parser itself.
 
 During code analysis, our first step is to check for ownership transfer. If it's absent, we look into child nodes for any signs of ownership transfer, returning true when we find it.
@@ -92,8 +89,6 @@ Finally, we craft highlighted HTML from this analysis, applying targeted styles 
 
 **Slide 10: Testing**
 "Developing a custom test suite with Tree-sitter allowed detailed grammar evaluation You can see the suite's execution here, where tests confirm the parser's accuracy with Rust code examples. You can also see an example of a test below it.
-
----
 
 ---
 
@@ -129,7 +124,7 @@ As the project moves forward, first, the AI integration needs to be completed so
 **Slide 16: Thank You**
 "Thank you for your attention. I welcome any questions or insights you might have about this project."
 
-
+# Done
 
 ---
 **Slide 12: Highlighting Logic**
