@@ -34,7 +34,7 @@ The way I aim to achieve this is through the development of a visualisation tool
 **Slide 3: Ownership in Rust**
 Now to give you a bit more context on Rust and what I am actually talking about:
 
-"Rust enforces three cardinal rules for ownership: each value is owned by a single entity, ownership ends with scope, and ownership can shift via transfers, exemplified here with 's' transferring to 'b', ensuring memory safety."
+"Rust enforces three cardinal rules for ownership: each value is owned by a single entity, ownership ends with scope, and ownership can shift via transfers, exemplified here with 's' transferring to 'b', ."
 
 **Why is it memory safe**?
 - Eliminates **dangling pointers**: pointer still points to a memory location that has been freed/deallocated.
@@ -72,34 +72,7 @@ Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser sp
 
 ---
 
-**Slide 8: Approach to Developing the Parser**
-"My strategy with Tree-sitter involved defining Rust's syntax through choices and patterns, distinguishing between variable functions, operations, and method calls for a granular parsing approach."
-
-Choices and patterns are specific constructs used in grammar definitions. 
-
-- **Choice**: allows the parser to recognise different possible structures or tokens in the input text at a particular points. For example, when parsing an expression, the parser might need to choose between interpreting it as a variable access, a function call, or an operator expression.
-- **Pattern**: used to describe the specific structure or sequence of tokens that make up a syntactical element of the language. For example, the specific arrangements of tokens that form a function declaration, a method call, or a control flow statement.
-
-**Token**: unit of syntax, a string of characters that a collective meaning as a single element.
-
 ---
-
-**Slide 9: Parsing Function Declarations**
-"I'll walk you through parsing a function declaration, starting with 'fn' to pinpoint declarations, using identifiers for names, parameters for inputs, optional types for returns, and finally culminating in the function's logic block."
-
-Here's an example of how I parse a function declaration. This is the grammar I had to come up with to handle it.
-
-The way it works is:
-
-I start with fn, finding the beginning of a function declaration.
-
-Use identifier to capture any valid Rust function name.
-
-Then parameter to define the function's inputs.
-
-Then we have our optional return type, paired with type_expression to specify the return type.
-
-And we conclude with the function's body, within a block, encapsulating all the logic.
 
 ---
 **Slide 10: Diagrams**
@@ -115,8 +88,6 @@ Similarly, we spot mutable and immutable borrows by looking for reference expres
 
 Finally, we craft highlighted HTML from this analysis, applying targeted styles and delivering the highlighted code."
 
-This revision maintains the original length while aiming for smoother pronunciation and flow.
-
 ---
 
 **Slide 10: Testing**
@@ -124,14 +95,10 @@ This revision maintains the original length while aiming for smoother pronunciat
 
 ---
 
-**Slide 11: User Interface**
-"The interface is designed for intuitiveness, featuring a code input area and parse button for immediate feedback. My Tree-sitter parser, now WebAssembly, enables real-time code analysis, enriched with colour-coded visual cues and interactive elements."
-
 ---
 
 **Slide 13: AI Approach for Code Analysis**
-Integrating AI, I aim to juxtapose ChatGPT's analysis with my parser for a better understanding of Rust code, exploring AI's potential to grasp complex programming concepts beyond traditional syntax analysis.
-
+Integrating AI, I aim to juxtapose ChatGPT's analysis with my parser for a better understanding of Rust code, exploring AI's potential to grasp complex programming concepts beyond traditional syntax analysis. So basically get the API to try and identify ownership and borrowing within Rust code, and compare its performance to my hand-crafted parser and highlighting system.
 
 **More info**
 I will be using **gpt-3.5-turbo** as it seems to be the state-of-art when it comes to efficient and speed as well as cost efficiency. It is also able to understand and generate human-like text. So for example, when I ask it to identify and describe instances of mutable and immutable borrows and ownership transfers in Rust code, it can apply its trained knowledge of programming concepts to analyse the code snippet accurately.
@@ -155,7 +122,7 @@ The complexity of ownership and borrowing posed a significant challenge. The sim
 ---
 
 **Slide 15: Next Steps**
-As the project moves forward, first, the AI integration needs to be completed. Next, the test suite needs to be expanded, focusing on the accuracy of the highlighting mechanism. Gathering user feedback will be essential to fine-tune usability and effectiveness. And finally develop more documentation and tutorials for the users.
+As the project moves forward, first, the AI integration needs to be completed so I can start having comparative data. Next, the test suite needs to be expanded, focusing on the accuracy of the highlighting mechanism. Gathering user feedback will be essential to fine-tune usability and effectiveness. And finally develop more documentation and tutorials for the users.
 
 ---
 
