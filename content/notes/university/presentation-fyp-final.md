@@ -103,19 +103,19 @@ And we conclude with the function's body, within a block, encapsulating all the 
 
 ---
 **Slide 10: Diagrams**
-
 I'll briefly walk you through the process of setting up TreeSitter for code analysis. First, we initiate TreeSitter, then we load a specific programming language into it, in our case the custom one, RustFYP and finally, once it is set, we return a parser equipped to analyse the code.
 
 ---
 **Slide 11: Diagrams**
+"Let's dive into a key aspect of our project, the logic that powers highlighting, aside from the parser itself.
 
-Now for the meat of the project, besides the parser itself: the logic behind highlighting. 
+During code analysis, our first step is to check for ownership transfer. If it's absent, we look into child nodes for any signs of ownership transfer, returning true when we find it.
 
-So during code analysis, we first determine if there's an ownership transfer. If not, we recursively examine child nodes for ownership transfer, return true if found.
+Similarly, we spot mutable and immutable borrows by looking for reference expressions and mutable specifiers, again checking child nodes as needed.
 
-In a very similar way, we identify mutable and immutable borrows by checking for reference expressions and mutable specifiers, recursively examining children nodes as needed.
+Finally, we craft highlighted HTML from this analysis, applying targeted styles and delivering the highlighted code."
 
-Then we generate the highlighted HTML based on these analysis, applying specific styles and returning the compiled highlighted code.
+This revision maintains the original length while aiming for smoother pronunciation and flow.
 
 ---
 
