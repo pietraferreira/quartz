@@ -17,7 +17,7 @@ type: script
 **Slide 2: Why Rust?**
 Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. 
 
-However, this complexity introduces a significant learning curve, with developers often citing ownership among Rust's most challenging aspects. 
+However, this complexity introduces a significant learning curve, with developers often **citing** ownership among Rust's most challenging aspects. 
 
 **Slide 3: The Problem?**
 So as I explained, the complexity of Rust's ownership and borrowing concepts introduces a significant learning curve, making it hard for developers to fully leverage its potential.
@@ -25,6 +25,9 @@ So as I explained, the complexity of Rust's ownership and borrowing concepts int
 I aim to tackle this challenge by simplifying these critical but complex concepts. The goal is to make Rust more accessible and approachable.
 
 The way I aim to achieve this is through the development of a visualisation tool. The tool is designed to elucidate Rust's memory safety mechanisms, such as ownership and borrowing, in an intuitive and interactive manner. So basically to transform abstract concepts into tangible visuals.
+
+---
+**Slide 4: Demo**
 
 ---
 
@@ -63,7 +66,7 @@ The background research was anchored in the RustViz project and Rust's official 
 **Slide 7: Developing a Parser with Tree-sitter**
 A parser translates code into a format that's easier for computers to understand, and Tree-sitter is an efficient parser generator designed for modern programming needs. It is really good at constructing syntax trees from code, enabling detailed analysis and manipulation of the source code. 
 
-Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's complex borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as shown here, facilitating deeper insights into code structure and behaviour, and leveraging Tree-sitter's high performance and error recovery capabilities for enhanced code analysis.
+Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's complex borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as shown here, facilitating deeper insights into code structure and behaviour, 
 
 ---
 
@@ -95,6 +98,24 @@ Then parameter to define the function's inputs.
 Then we have our optional return type, paired with type_expression to specify the return type.
 
 And we conclude with the function's body, within a block, encapsulating all the logic.
+
+---
+**Slide 10: Diagrams**
+
+I'll briefly walk you through the process of setting up TreeSitter for code analysis. First, we initiate TreeSitter, then we load a specific programming language into it, in our case the custom one, RustFYP and finally, once it is set, we return a parser equipped to analyse the code.
+
+Now for the event setup, so basically the behaviour within the website: we have our DOMContentLoaded event, starting our workflow by initialising TreeSitter. Next, we attach an event listener to a parseButton. When the button is clicked, the system parses the code input and generates highlighted HTML. Finally, we attach hover event listeners for further analysis.
+
+---
+**Slide 11: Diagrams**
+
+Now for the meat of the project, besides the parser itself: the logic behind highlighting. 
+
+So during code analysis, we first determine if there's an ownership transfer by checking the let declarations and direct assignments. If not directly assigned, we recursively exame child nodes for ownership transfer, return true if found.
+
+In a very similar way, we identify mutable and immutable borrows by checking for reference expressions and mutable specifiers, recursively examining children nodes as needed.
+
+Then we generate the highlighted HTML based on these analysis, applying specific styles for ownership transfer, mutable and immutable borrows, and return the compiled highlighted code.
 
 ---
 
