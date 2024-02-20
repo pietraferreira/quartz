@@ -32,6 +32,8 @@ The way I aim to achieve this is through the development of a visualisation tool
 ---
 
 **Slide 3: Ownership in Rust**
+Now to give you a bit more context on Rust and what I am actually talking about:
+
 "Rust enforces three cardinal rules for ownership: each value is owned by a single entity, ownership ends with scope, and ownership can shift via transfers, exemplified here with 's' transferring to 'b', ensuring memory safety."
 
 **Why is it memory safe**?
@@ -66,7 +68,7 @@ The background research was anchored in the RustViz project and Rust's official 
 **Slide 7: Developing a Parser with Tree-sitter**
 A parser translates code into a format that's easier for computers to understand, and Tree-sitter is an efficient parser generator designed for modern programming needs. It is really good at constructing syntax trees from code, enabling detailed analysis and manipulation of the source code. 
 
-Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's complex borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as shown here, facilitating deeper insights into code structure and behaviour, 
+Opting for Tree-sitter for its parsing efficiency, I tailored a custom parser specifically attuned to Rust's borrowing and ownership concepts. This approach transforms Rust code into comprehensible textual syntax trees, as you can see here, facilitating deeper insights into code structure and behaviour. 
 
 ---
 
@@ -104,18 +106,16 @@ And we conclude with the function's body, within a block, encapsulating all the 
 
 I'll briefly walk you through the process of setting up TreeSitter for code analysis. First, we initiate TreeSitter, then we load a specific programming language into it, in our case the custom one, RustFYP and finally, once it is set, we return a parser equipped to analyse the code.
 
-Now for the event setup, so basically the behaviour within the website: we have our DOMContentLoaded event, starting our workflow by initialising TreeSitter. Next, we attach an event listener to a parseButton. When the button is clicked, the system parses the code input and generates highlighted HTML. Finally, we attach hover event listeners for further analysis.
-
 ---
 **Slide 11: Diagrams**
 
 Now for the meat of the project, besides the parser itself: the logic behind highlighting. 
 
-So during code analysis, we first determine if there's an ownership transfer by checking the let declarations and direct assignments. If not directly assigned, we recursively exame child nodes for ownership transfer, return true if found.
+So during code analysis, we first determine if there's an ownership transfer. If not, we recursively examine child nodes for ownership transfer, return true if found.
 
 In a very similar way, we identify mutable and immutable borrows by checking for reference expressions and mutable specifiers, recursively examining children nodes as needed.
 
-Then we generate the highlighted HTML based on these analysis, applying specific styles for ownership transfer, mutable and immutable borrows, and return the compiled highlighted code.
+Then we generate the highlighted HTML based on these analysis, applying specific styles and returning the compiled highlighted code.
 
 ---
 
@@ -129,28 +129,24 @@ Then we generate the highlighted HTML based on these analysis, applying specific
 
 ---
 
-**Slide 12: Highlighting Logic**
-"How do we discern what to highlight? By analysing reference expressions to detect borrowing. Absence of a mutable specifier denotes an immutable borrow, a method effective in most scenarios, as illustrated here."
-
-How does it know what to highlight?
-
-For an immutable borrow for example, we check if the node we are looking at is a reference_expression. This is a technical way of saying its looking to see if the code is borrowing something.
-
-If the node is a reference_expression, the function then checks all the children nodes to see if any part is a mutable_specifier, meaning the borrow is mutable.
-
-If no nodes have a mutable specifier, then we are correct to assume it is an immutable borrow.
-
-The logic is not perfect, however it is sufficient to correctly identify immutable borrows in most cases.
-
----
-
 **Slide 13: AI Approach for Code Analysis**
 Integrating AI, I aim to juxtapose ChatGPT's analysis with my parser for a better understanding of Rust code, exploring AI's potential to grasp complex programming concepts beyond traditional syntax analysis.
 
+
+**More info**
 I will be using **gpt-3.5-turbo** as it seems to be the state-of-art when it comes to efficient and speed as well as cost efficiency. It is also able to understand and generate human-like text. So for example, when I ask it to identify and describe instances of mutable and immutable borrows and ownership transfers in Rust code, it can apply its trained knowledge of programming concepts to analyse the code snippet accurately.
 
 ---
+**Slide 14: Diagrams AI**
+In my system, the interaction starts when the Client sends a POST/analyse-code request to the Express server. The server then forwards this request to the OpenAI API to request a code analysis. Once the OpenAI API processes this request, it sends the analysis result back to the Express server. The server, running on port 3000, then sends a response with this analysis back to the Client, completing the interaction cycle.
 
+
+**Why use Express?**
+- Integrates seamlessly with external APIs, like the OpenAI one.
+- Simplicity in setting up web servers and APIs.
+- Routing capabilities, making it straightforward to define routes for different API points.
+
+---
 **Slide 14: Challenges**
 Now the challenges.
 
@@ -165,6 +161,24 @@ As the project moves forward, first, the AI integration needs to be completed. N
 
 **Slide 16: Thank You**
 "Thank you for your attention. I welcome any questions or insights you might have about this project."
+
+
+
+---
+**Slide 12: Highlighting Logic**
+"How do we discern what to highlight? By analysing reference expressions to detect borrowing. Absence of a mutable specifier denotes an immutable borrow, a method effective in most scenarios, as illustrated here."
+
+How does it know what to highlight?
+
+For an immutable borrow for example, we check if the node we are looking at is a reference_expression. This is a technical way of saying its looking to see if the code is borrowing something.
+
+If the node is a reference_expression, the function then checks all the children nodes to see if any part is a mutable_specifier, meaning the borrow is mutable.
+
+If no nodes have a mutable specifier, then we are correct to assume it is an immutable borrow.
+
+The logic is not perfect, however it is sufficient to correctly identify immutable borrows in most cases.
+
+---
 
 # Technologies
 ---
