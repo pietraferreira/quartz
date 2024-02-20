@@ -15,9 +15,9 @@ type: script
 ---
 
 **Slide 2: Why Rust?**
-Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety and efficient concurrency without a garbage collector. Its unique ownership model allow developers to write high-level, efficient code, effectively managing memory at compile time to prevent common parallel programming issues. 
+Rust is a modern programming language known for its performance, reliability, and productivity, with a strong emphasis on memory safety without having a garbage collector. Its unique ownership model allows developers to write high-level, efficient code, managing memory at compile time.
 
-However, this complexity introduces a significant learning curve, with developers often **citing** ownership among Rust's most challenging aspects. 
+However, this complexity introduces a significant learning curve, with developers often **ranking** ownership among Rust's most challenging aspects. 
 
 **Slide 3: The Problem?**
 So as I explained, the complexity of Rust's ownership and borrowing concepts introduces a significant learning curve, making it hard for developers to fully leverage its potential.
