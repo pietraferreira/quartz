@@ -1,18 +1,8 @@
-# Dissertation
-Something
+# Abstract
+This project introduces a novel web application designed to address the learning challenges associated with Rust’s ownership and borrowing system, a cornerstone of the Rust programming language known for both its efficiency and complexity (Zhu et al., 2022). Rust, known for its emphasis on memory safety without a garbage collector, incorporates a unique system of resource management that often poses challenges in understanding and application. The core of this project is the development of a visualisation tool that elucidates the static events of ownership and borrowing in Rust code through dynamic, interactive visual representations.
 
-## Something
-hello
+The tool is designed to bridge the gap in Rust’s learning curve by providing a more intuitive understanding of its memory management mechanisms. Through comprehensive background research and analysis of existing educational resources and visualisation techniques, the project aims to deliver a user-friendly interface that simplifies the complexity of Rust’s ownership and borrowing rules. The visualisation tool is expected to enhance the learning experience by making abstract concepts more tangible, thereby accelerating the acquisition of proficiency in Rust programming. An integral component of this study involves contrasting the efficacy of the custom parser with that of an artificial intelligence model, aiming to assess their respective abilities in accurately interpreting and representing Rust code dynamics. The comparison will illuminate the strengths and limitations of AI-assisted code analysis in the context of programming education.
 
----
+Key objectives include conducting an in-depth study of Rust’s ownership and borrowing challenges, designing, and implementing a custom parser for Rust code, and developing a visual interface that clearly illustrate ownership and borrowing events.
 
-a citation here: (Almeida et al., 2022)
-
-bibli:
-
-Almeida, M. _et al._ (2022) ‘RustViz: Interactively Visualizing Ownership and Borrowing’, in _2022 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)_. _2022 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)_, Roma, Italy: IEEE, pp. 1–10. Available at: [https://doi.org/10.1109/VL/HCC53370.2022.9833121](https://doi.org/10.1109/VL/HCC53370.2022.9833121).
-
-# More??
----
-- list
-- two lists
+# Acknowledgements
