@@ -2,13 +2,13 @@
 ---
 Please confirm the following:
 
-|                                                                                                                                                                               | Yes | No  |
+|                                                                                                                                                                                  | Yes | No  |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
 | I have read the Participant Information Sheet included with this questionnaire                                                                                                   |     |     |
 | I am over the age of 18                                                                                                                                                          |     |     |
 | I understand that no personal identifying data is collected in this study, therefore I know that once I have submitted my answers I am unable to withdraw my data from the study |     |     |
 | I agree that my data can be anonymised, stored and used in future research in line with Brunel University’s data retention policies                                              |     |     |
-| I agree to take part in this study                                                                                                                                                                                 |     |     |
+| I agree to take part in this study                                                                                                                                               |     |     |
 
 1. **Demographic Information:**
     - What is your programming experience level? (Beginner, Intermediate, Advanced)

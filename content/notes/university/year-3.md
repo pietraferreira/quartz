@@ -71,6 +71,8 @@ Lecturer: Fang Wang
 - Notes
     - [[notes/university/year3/cs3072/cs3072-rust-borrowing-mechanism|Rust Borrowing Mechanism]]
     - [[notes/university/year3/cs3072/cs3072-design|Design Document]]
+    - [[notes/university/year3/cs3072/cs3072-fyp-sample-questions|Sample Questions]]
+        - [[notes/university/year3/cs3072/cs3072-pis|Participant Information Sheet]]
 
 # [CS3001](notes/university/year3/cs3001/cs3001.md) - Advanced Topics
 Lecturer:
