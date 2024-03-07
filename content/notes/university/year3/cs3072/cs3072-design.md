@@ -71,7 +71,6 @@ type: notes
    - **Challenge:** Rust's Result and Option types, which are commonly used for error handling, may be challenging for learners to integrate into their understanding of ownership and borrowing.
    - **Mitigation:** Provide practical examples of error handling using Result and Option. Demonstrate how these types interact with ownership and borrowing in various situations.
 
-[[notes/general/cs3072-fyp-sample-questions]]
 # Minimal Testcases
 ## Borrowing
 ---
