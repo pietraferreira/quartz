@@ -1,8 +1,11 @@
 ---
 title:  "Notes 0703"
-tags:
-
+tags: 
+- university
+module: cs3072
 created: 2024-03-07
+year: '3'
+type: notes
 ---
 # Notes 0703
 ---

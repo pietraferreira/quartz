@@ -11,10 +11,6 @@ type: lecture
 ---
 # Introduction to AI
 ---
-## Who am I?
----
-- Allan Tucker, head of IDA Group (which focuses on AI models that collaborate with experts and users, more [info](http://ida-research.net/).
-
 ## AI in Popular Culture
 ---
 - Early Computers & Turing (1940s) and the [British Bombe](https://en.wikipedia.org/wiki/Bombe) were significant milestones.
@@ -77,17 +73,7 @@ type: lecture
 - Accountability and the potential for misuse remain concerns.
 - AI is not about machines taking over the world but about addressing challenges related to groupthink, insularity, and arrogance in the AI community.
 
-## The Module
-- The lecture mentions topics covered in the AI course, including clustering, classification, neural networks, deep learning, expert systems, causal models, Bayesian networks, time series, sequence models, and AI's societal impact.
-
-### Labs & Assessment
-- Labs are part of the course, including hands-on exercises in R and Python.
-- Some labs are assessed through vivas conducted by GTA (Graduate Teaching Assistant).
-- Deadlines are specified for lab submissions and vivas.
-
-This lecture provides an overview of AI's historical development, challenges, and current state, along with insights into the course structure and assessment. It emphasises the potential and limitations of AI technologies, especially in natural language understanding and conversation.
-
 ## Glossary
 ---
-- [Automaton](notes/general/automaton.md).
+- [Automaton](notes/general/automaton.md)
 - [Perceptron](notes/general/perceptron.md)

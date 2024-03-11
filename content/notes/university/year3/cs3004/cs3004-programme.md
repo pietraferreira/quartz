@@ -32,17 +32,17 @@ type: programme
 ## Labs
 ---
 
-| Week | Labs                                                        | Description                    | Week Commencing |
-| ---- | ----------------------------------------------------------- | ------------------------------ | --------------- |
-| 1    | **No labs**                                                 |                                | 18/09           |
-| 2    | Getting Started with Client-Server ✅                       | Echo Client and Server         | 26/09           |
-| 3    | Client-Server Design ✅                                     | Knock, Knock Client and Server | 02/10           |
-| 4    | Multi-Client Server Design                                  | Design your own protocol       | 09/10           |
-| 5    | [[notes/university/year3/cs3004/cs3004-threads\|Threading]] |                                | 16/10           |
-| 6    | Assignment Support                                          |                                | 23/10           |
-| 7    | **ASK week**                                                |                                | **30/10**       |
-| 8    | Assignment Support                                          |                                | 06/11           |
-| 9    | Assignment Support                                          |                                | 13/11           |
-| 10   | Assignment Support                                          |                                | 20/11           |
-| 11   | Assignment Support                                          |                                | 27/11           |
-| 12   | **No lab**                                                  |                                | 04/12           |
+| Week | Labs                                                          | Description                    | Week Commencing |
+| ---- | ------------------------------------------------------------- | ------------------------------ | --------------- |
+| 1    | **No labs**                                                   |                                | 18/09           |
+| 2    | Getting Started with Client-Server ✅                          | Echo Client and Server         | 26/09           |
+| 3    | Client-Server Design ✅                                        | Knock, Knock Client and Server | 02/10           |
+| 4    | Multi-Client Server Design ✅                                  | Design your own protocol       | 09/10           |
+| 5    | [[notes/university/year3/cs3004/cs3004-threads\|Threading]] ✅ |                                | 16/10           |
+| 6    | Assignment Support                                            |                                | 23/10           |
+| 7    | **ASK week**                                                  |                                | **30/10**       |
+| 8    | Assignment Support                                            |                                | 06/11           |
+| 9    | Assignment Support                                            |                                | 13/11           |
+| 10   | Assignment Support                                            |                                | 20/11           |
+| 11   | Assignment Support                                            |                                | 27/11           |
+| 12   | **No lab**                                                    |                                | 04/12           |

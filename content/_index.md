@@ -11,23 +11,13 @@ Main hub for all the different note categories :)
 
 ## Productivity
 - [How far are we in the year?](notes/how-far-in-the-year-scrips.md)
-
-- [Habitica](https://habitica.com/)
-    - Extra data:
-        - Nice view of everything [here](https://ddycai.github.io/habitica-tracker/).
-        - Calendar [view](https://habitcalendar.netlify.app/).
-        - [Stats](https://tools.habitica.com/?uuid=7e4eeade-5799-4154-9c78-4d6967fddfc6).
-
-- [Focusverse.app](https://www.focusverse.app/)
+- [[notes/general/tasks/task-hub|Task Hub]]
 
 ## All of my knowledge 
 - [Hub](notes/general/knowledge-hub.md)
 
 ## University
 - [Hub](notes/university/university-hub.md)
-
-## Tasks
-- [Hub](notes/general/tasks/task-hub.md)
 
 ## Help
 - [Hub](notes/general/help.md) - very useful shortcuts for Vim, Obsidian (and plugins), tmux etc and general help.
