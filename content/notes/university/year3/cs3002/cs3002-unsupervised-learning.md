@@ -9,49 +9,36 @@ year: '3'
 type: lecture
 ---
 ---
+# Table of Contents
 
-
-1. Introduction to Unsupervised Learning
-2. Clustering: Definition
-3. Applications of Clustering
-    1. Social Networks.
-    2. Customer Segmentation.
-    3. Gene Network.
-4. Methodologies for Clustering.
-    1. How to do Clustering.
-    2. Pattern Similarity and Distance Metrics.
-        1. Euclidean.
-            1. Example.
-        2. Manhattan.
-    3. Embeddings.
-5. K-Means Clustering.
-    1. Overview.
-    2. Pros and Cons.
-    3. Determining the Number of Clusters.
-6. Hierarchical (Agglomerative) Clustering.
-    1. Overview.
-    2. Dendrogram Explanation.
-    3. Algorithm Overview.
-    4. Re-computing Distances.
-        1. Single.
-        2. Complete.
-        3. Average Linkage.
-    5. Pros and Cons.
-7. Limitations of K-Means and Hierarchical Clustering.
-    1. Challenges with Hard Assignment in Clustering.
-8. Other Clustering Methods.
-    1. Fuzzy Clustering.
-    2. DBSCAN.
-    3. Evaluating Cluster Quality.
-        1. Cohesion and Separation.
-        2. Supervised.
-            1. Comparing Clusters.
-        3. Weighted-Kappa.
-9. Association Rules.
-    1. Overview.
-    2. Support, Confident and Lift.
-10. Glossary.
-11. Reading.
+1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Introduction to Unsupervised Learning|Introduction]]
+2. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Clustering: Definition|Clustering: Definition]]
+3. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Applications of Clustering|Applications of Clustering]]
+    1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Social Networks|Social Networks]]
+    2. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Customer Segmentation|Customer Segmentation]]
+    3. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Gene Networks|Gene Networks]]
+4. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Methodologies for Clustering|Methodologies for Clustering]]
+    1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#How to do Clustering|How to do Clustering]]
+    2. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Pattern Similarity and Distance Metrics|Pattern Similarity and Distance Metrics]]
+        1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Euclidean|Euclidean]]
+            1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Example|Example]]
+        2. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Manhattan|Manhattan]]
+    3. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Embeddings|Embeddings]]
+5. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#K-Means Clustering|K-Means Clustering]]
+    1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Overview|Overview]]
+    2. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Pros and Cons|Pros and Cons]]
+    3. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Determining the Number of Clusters|Determining the Number of Clusters]]
+6. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Hierarchical (Agglomerative) Clustering|Hierarchical Clustering]]
+    1. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Overview|Overview]]
+    2. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Dendrogram Explanation|Dendrogram Explanation]]
+    3. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Algorithm Overview|Algorithm Overview]]
+    4. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Re-computing Distances|Re-computing Distances]]
+    5. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Pros and Cons|Pros and Cons]]
+7. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Limitations of K-Means and Hierarchical Clustering|Limitations]]
+8. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Other Clustering Methods|Other Methods]]
+9. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Association Rules|Association Rules]]
+10. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Glossary|Glossary]]
+11. [[notes/university/year3/cs3002/cs3002-unsupervised-learning#Reading|Reading]]
 
 ---
 # Introduction to Unsupervised Learning
