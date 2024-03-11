@@ -9,6 +9,41 @@ year: '3'
 type: lecture
 ---
 ---
+
+---
+1. Clustering
+    1. Uses of Clustering.
+        1. Social Networks.
+        2. Customer Segmentation.
+        3. Gene Network.
+    2. How to do Clustering.
+    3. Pattern Similarity and Distance Metrics.
+        1. Euclidean.
+        2. Manhattan.
+    4. Embeddings.
+    5. K-Means Clustering Algorithm.
+        1. Pros and Cons.
+        2. Variables.
+    6. Hierarchical Clustering (Agglomerative).
+        1. Re-computing Distances.
+        2. Pros and Cons.
+    7. Limitations of K-Means and Hierarchical.
+    8. Fuzzy Clustering.
+    9. DBSCAN.
+    10. Evaluating Cluster Quality.
+        1. Cohesion and Separation.
+        2. Supervised.
+            1. Comparing Clusters.
+        3. Weighted-Kappa.
+    11. Association Rules.
+        1. Support, Confidence and Lift.
+    12. Supervised Learning.
+    13. Glossary.
+
+[[notes/university/year3/cs3002/cs3002-unsupervised-learning#K-Means Clustering Algorithm|cs3002-unsupervised-learning-kmeans]]
+
+---
+# Introduction to Unsupervised Learning
 - **Unsupervised learning**: learning without the desired output ('teacher' signals).
 
 Some methods are:
@@ -16,10 +51,8 @@ Some methods are:
 - Association Rules/Recommender Systems.
 - **Clustering**: one of the widely-used unsupervised learning methods.
 
-[[notes/university/year3/cs3002/cs3002-unsupervised-learning#K-Means Clustering Algorithm|cs3002-unsupervised-learning-kmeans]]
-
 ---
-# Clustering
+# Clustering: Definition
 Partition dataset into subsets (clusters), so that the data in each subset shares some common trait, often similarity or proximity.
 
 Clusters are collections of similar objects without the need for 'teacher' signals.
@@ -28,19 +61,25 @@ A collection of objects which are "similar" between them and are "dissimilar" to
 
 ![[notes/images/img1.png|300]]  ![[notes/images/Screenshot 2023-10-03 at 12.24.33.png|400]]
 
-## Uses of Clustering
-### Social Networks
+---
+# Applications of Clustering
+## Social Networks
 For purposes like marketing, terror networks, resource allocation in companies/universities.
 
-### Customer Segmentation
+---
+## Customer Segmentation
 ![[notes/images/Screenshot 2023-10-03 at 12.25.55.png|500]]
 
-### Gene Networks
+---
+## Gene Networks
 Helps understand gene interactions and identify genes linked to diseases.
 
+---
+# Methodologies for Clustering
 ## How to do Clustering?
 ![[notes/images/Screenshot 2023-10-03 at 12.27.12.png|400]]
 
+---
 ## Pattern Similarity and Distance Metrics
 - Clusters are formed by similar patterns.
 - Commonly adopted similarity metric is **distance**.
@@ -53,16 +92,18 @@ More distance metrics:
 
 They are often application dependant. The important things are the **shape**, **distance** and **scale**.
 
+---
 ### Euclidean
 The square root of the sum of the squared differences between coordinates.
 
 - Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
 
 ---
+#### Example
 
-| x   | 5.5 | 2.9 | 4.8 | 6.7 | 0.6 |
-| --- | --- | --- | --- | --- | --- |
-| y   | 0.2 | 1.0 | 4.8 | 3.8 | 9.2 | 
+| x   | 5.5 | 2.9 | 4.8 | 6.7 | 0.6 |     |
+| --- | --- | --- | --- | --- | --- | --- |
+| y   | 0.2 | 1.0 | 4.8 | 3.8 | 9.2 |     |
 
 Therefore, $d(x,y)$:
 
@@ -73,7 +114,7 @@ $= \sqrt{((5.3)^2 + (1.9)^2 + (0.0)^2 + (2.9)^2 + (-8.6)^2)}$
 $= \sqrt{(28.09 + 3.61 + 0.0 + 8.41 + 73.96)}$
 
 $= \sqrt(114.07) = 10.68$
-
+---
 ### Manhattan
 The sum of the absolute differences between the coordinates of two points.
 
@@ -86,7 +127,7 @@ $(|5.5 - 0.2| + |2.9 - 1.0| + |4.8 - 4.8| + |6.7 - 3.8| + |0.6 - 9.2|)$
 $= 5.3 + 1.9 + 0.0 + 2.9 + 8.6$
 
 $= 18.7$
-
+---
 ## Embeddings
 It means to map data onto a new space to capture different characteristics.
 
