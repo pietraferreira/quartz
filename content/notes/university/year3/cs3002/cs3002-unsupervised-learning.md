@@ -15,6 +15,9 @@ Some methods are:
 - Dimensionality reduction (e.g. PCA).
 - Association Rules/Recommender Systems.
 - **Clustering**: one of the widely-used unsupervised learning methods.
+
+[[notes/university/year3/cs3002/cs3002-unsupervised-learning#K-Means Clustering Algorithm|cs3002-unsupervised-learning-kmeans]]
+
 ---
 # Clustering
 Partition dataset into subsets (clusters), so that the data in each subset shares some common trait, often similarity or proximity.
