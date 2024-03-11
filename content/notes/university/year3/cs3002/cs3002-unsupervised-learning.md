@@ -157,8 +157,9 @@ Cons:
 - Does not work well with non-globular clusters.
 
 ---
-## Determining the Number of Clusters
+## Determining the Number of Clusters (not mandatory)
 
+---
 1. How to determine k, the number of clusters?
 
 We can use the **elbow method**, **silhouette analysis**, or **domain knowledge** to determine the optimal number of clusters.
@@ -322,6 +323,7 @@ Given a large amount of basket data, generate rules.
 
 ---
 # Reading
+- 
 - Chapter 9, Section 9.3: David Hand “Principles of Data Mining”, MIT Press
 - Pang-Ning Tan “Introduction to Data Mining” (Chapter 8): http://www-users.cs.umn.edu/~kumar/dmbook/index.php
 - Anil Jain: “Data Clustering: 50 Years Beyond K-Means”, Pattern Recognition Letters
