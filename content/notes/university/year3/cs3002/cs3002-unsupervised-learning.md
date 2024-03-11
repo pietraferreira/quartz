@@ -9,6 +9,8 @@ year: '3'
 type: lecture
 ---
 ---
+
+
 1. Introduction to Unsupervised Learning
 2. Clustering: Definition
 3. Applications of Clustering
@@ -156,6 +158,7 @@ Interactive [demo](https://user.ceng.metu.edu.tr/~akifakkus/courses/ceng574/k-me
 
 ---
 ## Pros and Cons
+
 Pros:
 - May be computationally faster than hierarchical clustering, if K is small.
 - May produce tighter clusters than hierarchical clustering, specially if the clusters are globular.
@@ -168,6 +171,7 @@ Cons:
 
 ---
 ## Determining the Number of Clusters
+
 1. How to determine k, the number of clusters?
 
 We can use the **elbow method**, **silhouette analysis**, or **domain knowledge** to determine the optimal number of clusters.
@@ -224,6 +228,7 @@ The resultant tree is called a **dendrogram**:
 
 ---
 ## Re-computing Distances (Single, Complete, Average Linkage)
+
 ![[notes/images/Screenshot 2023-10-03 at 13.04.18.png|400]]
 
 | Link     | Description                                                                                            |
@@ -281,28 +286,41 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 ![[notes/images/Screenshot 2023-10-03 at 14.09.24.png|300]] ![[notes/images/Screenshot 2023-10-03 at 14.09.38.png|300]] ![[notes/images/Screenshot 2023-10-03 at 14.09.49.png|300]]
 
 ---
-## Evaluating Cluster Quality
+# Evaluating Cluster Quality
 How do we know if the discovered clusters are any good?
 
 The choice of metric is vital.
 
-### Cohesion and Separation
+## Cohesion and Separation
+-  Reduce separation and increase cohesion.
+
 ![[notes/images/Screenshot 2023-10-03 at 14.11.13.png|300]]
 
-### Supervised
+
+---
+## Supervised
 We can use the "true clusters" to test the effectiveness of different clustering algorithms.
 
-#### Comparing Clusters
+### Comparing Clusters
 We can use metrics to measure how similar two arrangements are.
 
-### Weighted-Kappa
+---
+## Weighted-Kappa
+- 0 is random.
+- -1 something weird is going on.
+- Between 0.8 and 1 is good.
+
+
 ![[notes/images/Screenshot 2023-10-03 at 14.13.16.png|400]]
 
+---
 # Association Rules
+- Works with **sets** of things.
+- Learn structure, find different rules to know what group go well together.
 ## Overview
-Another form of unsupervised learning.
-
-Works with "**basket data**".
+- Another form of unsupervised learning.
+- Works with "**basket data**".
+- Recommender System.
 
 ![[notes/images/Screenshot 2023-10-03 at 14.14.30.png|450]]
 
@@ -310,16 +328,12 @@ Works with "**basket data**".
 ![[notes/images/Screenshot 2023-10-03 at 14.14.52.png|400]]
 
 Given a large amount of basket data, generate rules.
-# Supervised Learning
-Learning with the desired output.
 
-Some methods are:
-- Classification.
-- Regression.
-
+---
 # Glossary
 - **Cluster centroid**: central point within clusters, the average position of all data points assigned to a particular cluster. The heart or core of each cluster.
 
+---
 # Reading
 - Chapter 9, Section 9.3: David Hand “Principles of Data Mining”, MIT Press
 - Pang-Ning Tan “Introduction to Data Mining” (Chapter 8): http://www-users.cs.umn.edu/~kumar/dmbook/index.php
