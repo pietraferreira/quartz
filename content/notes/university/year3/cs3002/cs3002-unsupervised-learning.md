@@ -42,6 +42,7 @@ type: lecture
 
 ---
 # Introduction to Unsupervised Learning
+
 - **Unsupervised learning**: learning without the desired output ('teacher' signals).
 
 Some methods are:
@@ -51,6 +52,7 @@ Some methods are:
 
 ---
 # Clustering: Definition
+
 Partition dataset into subsets (clusters), so that the data in each subset shares some common trait, often similarity or proximity.
 
 Clusters are collections of similar objects without the need for 'teacher' signals.
@@ -62,23 +64,28 @@ A collection of objects which are "similar" between them and are "dissimilar" to
 ---
 # Applications of Clustering
 ## Social Networks
+
 For purposes like marketing, terror networks, resource allocation in companies/universities.
 
 ---
 ## Customer Segmentation
+
 ![[notes/images/Screenshot 2023-10-03 at 12.25.55.png|500]]
 
 ---
 ## Gene Networks
+
 Helps understand gene interactions and identify genes linked to diseases.
 
 ---
 # Methodologies for Clustering
 ## How to do Clustering?
+
 ![[notes/images/Screenshot 2023-10-03 at 12.27.12.png|400]]
 
 ---
 ## Pattern Similarity and Distance Metrics
+
 - Clusters are formed by similar patterns.
 - Commonly adopted similarity metric is **distance**.
 - **Euclidean** and **Manhattan** distances are commonly used metrics.
@@ -92,6 +99,7 @@ They are often application dependant. The important things are the **shape**, **
 
 ---
 ### Euclidean
+
 The square root of the sum of the squared differences between coordinates.
 
 - Formula: $(d(x,y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + \ldots + (x_N - y_N)^2})$
@@ -115,6 +123,7 @@ $= \sqrt(114.07) = 10.68$
 
 ---
 ### Manhattan
+
 The sum of the absolute differences between the coordinates of two points.
 
 - Formula: $(d(x,y) = |x_1 - y_1| + |x_2 - y_2| + \ldots + |x_N - y_N|)$
@@ -129,6 +138,7 @@ $= 18.7$
 
 ---
 ## Embeddings
+
 It means to map data onto a new space to capture different characteristics.
 
 ![[notes/images/Screenshot 2023-10-03 at 12.44.01.png|300]] ![[notes/images/Screenshot 2023-10-03 at 12.44.21.png|300]]
@@ -136,6 +146,7 @@ It means to map data onto a new space to capture different characteristics.
 ---
 # K-Means Clustering 
 ## Overview
+
 1. Place K points into the feature space. These points represent initial cluster centroids.
 2. Assign each pattern to the closest cluster centroid.
 3. When all objects have been assigned, recalculate the positions of the K centroids.
@@ -196,18 +207,21 @@ No, it can converge to different results with different initial centroids. To ad
 ---
 # Hierarchical (Agglomerative) Clustering
 ## Overview
+
 It results in a series of clustering results.
 
 Starts with each object in its cluster and it ends with all objects in the same cluster, with the intermediate clusters being created by a series of merges.
 
 ---
 ## Dendrogram Explanation
+
 The resultant tree is called a **dendrogram**:
 
 ![[notes/images/Screenshot 2023-10-03 at 13.03.03.png|300]]
 
 ---
 ## Algorithm Overview
+
 1. Each item is assigned to its own cluster (n clusters of size one).
 2. Let the distances between the clusters equal the distances between the objects they contain.
 3. Find the closest pair of clusters and merge them into a single cluster (one less cluster).
@@ -216,6 +230,7 @@ The resultant tree is called a **dendrogram**:
 
 ---
 ## Re-computing Distances (Single, Complete, Average Linkage)
+
 
 ![[notes/images/Screenshot 2023-10-03 at 13.04.18.png|400]]
 
@@ -235,6 +250,7 @@ Can find a demo [here](https://macdobry.shinyapps.io/free-clust/).
 
 ---
 ## Pros and Cons
+
 Pros:
 - Can produce an ordering of the objects, might be informative for data display.
 - Smaller clusters are generated, might be helpful for discovery.
@@ -246,6 +262,7 @@ Cons:
 ---
 # Limitations of K-Means and Hierarchical Clustering
 ## Challenges with Hard Assignment in Clustering
+
 At each iteration, a pattern can be assigned to one cluster only (the assignment is **hard**).
 
 For example, **x** here in the middle of the two cluster centroids will either:
@@ -257,6 +274,7 @@ For example, **x** here in the middle of the two cluster centroids will either:
 ---
 # Other Clustering Methods
 ## Fuzzy Clustering
+
 For example: Fuzzy c-Means.
 
 - No sharp boundary.
@@ -267,6 +285,7 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 
 ---
 ## DBSCAN
+
 - Density based clustering algorithm, density being the number of points within a specified radius (Eps).
 - A point is a core point if it has more than a specified number of points (MinPts) within Eps.
 - Core point is in the interior of a cluster.
@@ -275,11 +294,13 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 
 ---
 # Evaluating Cluster Quality
+
 How do we know if the discovered clusters are any good?
 
 The choice of metric is vital.
 
 ## Cohesion and Separation
+
 -  Reduce separation and increase cohesion.
 
 ![[notes/images/Screenshot 2023-10-03 at 14.11.13.png|300]]
@@ -287,13 +308,16 @@ The choice of metric is vital.
 
 ---
 ## Supervised
+
 We can use the "true clusters" to test the effectiveness of different clustering algorithms.
 
 ### Comparing Clusters
+
 We can use metrics to measure how similar two arrangements are.
 
 ---
 ## Weighted-Kappa
+
 - 0 is random.
 - -1 something weird is going on.
 - Between 0.8 and 1 is good.
@@ -303,9 +327,11 @@ We can use metrics to measure how similar two arrangements are.
 
 ---
 # Association Rules
+
 - Works with **sets** of things.
 - Learn structure, find different rules to know what group go well together.
 ## Overview
+
 - Another form of unsupervised learning.
 - Works with "**basket data**".
 - Recommender System.
@@ -313,16 +339,19 @@ We can use metrics to measure how similar two arrangements are.
 ![[notes/images/Screenshot 2023-10-03 at 14.14.30.png|450]]
 
 ## Support, Confidence and Lift
+
 ![[notes/images/Screenshot 2023-10-03 at 14.14.52.png|400]]
 
 Given a large amount of basket data, generate rules.
 
 ---
 # Glossary
+
 - **Cluster centroid**: central point within clusters, the average position of all data points assigned to a particular cluster. The heart or core of each cluster.
 
 ---
 # Reading
+
 - [[notes/university/year3/cs3002/cs3002-principles-of-data-mining-chap9-sec93|Principles of Data Mining Chap 9 Section 9.3]]
 - Pang-Ning Tan “Introduction to Data Mining” (Chapter 8): http://www-users.cs.umn.edu/~kumar/dmbook/index.php
 - Anil Jain: “Data Clustering: 50 Years Beyond K-Means”, Pattern Recognition Letters
