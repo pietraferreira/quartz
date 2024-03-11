@@ -323,8 +323,7 @@ Given a large amount of basket data, generate rules.
 
 ---
 # Reading
-- 
-- Chapter 9, Section 9.3: David Hand “Principles of Data Mining”, MIT Press
+- [[notes/university/year3/cs3002/cs3002-principles-of-data-mining-chap9-sec93|Principles of Data Mining Chap 9 Section 9.3]]
 - Pang-Ning Tan “Introduction to Data Mining” (Chapter 8): http://www-users.cs.umn.edu/~kumar/dmbook/index.php
 - Anil Jain: “Data Clustering: 50 Years Beyond K-Means”, Pattern Recognition Letters
 - Tang et al., Kumar, Introduction to Data Mining (Chapter 6): https://www-users.cs.umn.edu/~kumar001/dmbook/index.php
