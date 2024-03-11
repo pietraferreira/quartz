@@ -9,38 +9,47 @@ year: '3'
 type: lecture
 ---
 ---
-
----
-1. Clustering
-    1. Uses of Clustering.
-        1. Social Networks.
-        2. Customer Segmentation.
-        3. Gene Network.
-    2. How to do Clustering.
-    3. Pattern Similarity and Distance Metrics.
+1. Introduction to Unsupervised Learning
+2. Clustering: Definition
+3. Applications of Clustering
+    1. Social Networks.
+    2. Customer Segmentation.
+    3. Gene Network.
+4. Methodologies for Clustering.
+    1. How to do Clustering.
+    2. Pattern Similarity and Distance Metrics.
         1. Euclidean.
+            1. Example.
         2. Manhattan.
-    4. Embeddings.
-    5. K-Means Clustering Algorithm.
-        1. Pros and Cons.
-        2. Variables.
-    6. Hierarchical Clustering (Agglomerative).
-        1. Re-computing Distances.
-        2. Pros and Cons.
-    7. Limitations of K-Means and Hierarchical.
-    8. Fuzzy Clustering.
-    9. DBSCAN.
-    10. Evaluating Cluster Quality.
+    3. Embeddings.
+5. K-Means Clustering.
+    1. Overview.
+    2. Pros and Cons.
+    3. Determining the Number of Clusters.
+6. Hierarchical (Agglomerative) Clustering.
+    1. Overview.
+    2. Dendrogram Explanation.
+    3. Algorithm Overview.
+    4. Re-computing Distances.
+        1. Single.
+        2. Complete.
+        3. Average Linkage.
+    5. Pros and Cons.
+7. Limitations of K-Means and Hierarchical Clustering.
+    1. Challenges with Hard Assignment in Clustering.
+8. Other Clustering Methods.
+    1. Fuzzy Clustering.
+    2. DBSCAN.
+    3. Evaluating Cluster Quality.
         1. Cohesion and Separation.
         2. Supervised.
             1. Comparing Clusters.
         3. Weighted-Kappa.
-    11. Association Rules.
-        1. Support, Confidence and Lift.
-    12. Supervised Learning.
-    13. Glossary.
-
-[[notes/university/year3/cs3002/cs3002-unsupervised-learning#K-Means Clustering Algorithm|cs3002-unsupervised-learning-kmeans]]
+9. Association Rules.
+    1. Overview.
+    2. Support, Confident and Lift.
+10. Glossary.
+11. Reading.
 
 ---
 # Introduction to Unsupervised Learning
@@ -114,6 +123,7 @@ $= \sqrt{((5.3)^2 + (1.9)^2 + (0.0)^2 + (2.9)^2 + (-8.6)^2)}$
 $= \sqrt{(28.09 + 3.61 + 0.0 + 8.41 + 73.96)}$
 
 $= \sqrt(114.07) = 10.68$
+
 ---
 ### Manhattan
 The sum of the absolute differences between the coordinates of two points.
@@ -127,13 +137,16 @@ $(|5.5 - 0.2| + |2.9 - 1.0| + |4.8 - 4.8| + |6.7 - 3.8| + |0.6 - 9.2|)$
 $= 5.3 + 1.9 + 0.0 + 2.9 + 8.6$
 
 $= 18.7$
+
 ---
 ## Embeddings
 It means to map data onto a new space to capture different characteristics.
 
 ![[notes/images/Screenshot 2023-10-03 at 12.44.01.png|300]] ![[notes/images/Screenshot 2023-10-03 at 12.44.21.png|300]]
 
-## K-Means Clustering Algorithm
+---
+# K-Means Clustering 
+## Overview
 1. Place K points into the feature space. These points represent initial cluster centroids.
 2. Assign each pattern to the closest cluster centroid.
 3. When all objects have been assigned, recalculate the positions of the K centroids.
@@ -141,7 +154,8 @@ It means to map data onto a new space to capture different characteristics.
 
 Interactive [demo](https://user.ceng.metu.edu.tr/~akifakkus/courses/ceng574/k-means/).
 
-### Pros and Cons
+---
+## Pros and Cons
 Pros:
 - May be computationally faster than hierarchical clustering, if K is small.
 - May produce tighter clusters than hierarchical clustering, specially if the clusters are globular.
@@ -151,7 +165,9 @@ Cons:
 - Different initial partitions can result in different final clusters.
 - Potentially empty clusters (not always bad).
 - Does not work well with non-globular clusters.
-### Variables
+
+---
+## Determining the Number of Clusters
 1. How to determine k, the number of clusters?
 
 We can use the **elbow method**, **silhouette analysis**, or **domain knowledge** to determine the optimal number of clusters.
@@ -173,32 +189,41 @@ We can use the **elbow method**, **silhouette analysis**, or **domain knowledge*
    - Domain experts or prior research can offer valuable insights into the appropriate clustering structure.
    - While the elbow method and silhouette analysis are data-driven approaches, domain knowledge relies on human expertise and context.
 
+---
 2. Any alternative ways of choosing the initial cluster centroids?
 
 Alternative methods include: random initialisation, K-Means++ and custom initialisation based on domain knowledge.
 
 K-Means++ is an improved initialisation technique for K-Means, starting with better cluster centroids.
 
+---
 3. Does the algorithm converge to the same results with different selections of initial cluster centroids? If not, what should we do in practice?
 
 No, it can converge to different results with different initial centroids. To address this, it's normal to run the algorithm multiple times with different initialisations and choose the best result based on a suitable criterion, for example minimising the sum of squared distance within clusters.
 
-## Hierarchical (agglomerative) Clustering
+---
+# Hierarchical (Agglomerative) Clustering
+## Overview
 It results in a series of clustering results.
 
 Starts with each object in its cluster and it ends with all objects in the same cluster, with the intermediate clusters being created by a series of merges.
 
+---
+## Dendrogram Explanation
 The resultant tree is called a **dendrogram**:
 
 ![[notes/images/Screenshot 2023-10-03 at 13.03.03.png|300]]
 
+---
+## Algorithm Overview
 1. Each item is assigned to its own cluster (n clusters of size one).
 2. Let the distances between the clusters equal the distances between the objects they contain.
 3. Find the closest pair of clusters and merge them into a single cluster (one less cluster).
 4. Re-compute the distances between the new cluster and each of the old clusters.
 5. Repeat steps 3 and 4 until there is only one cluster left.
 
-### Re-computing Distances
+---
+## Re-computing Distances (Single, Complete, Average Linkage)
 ![[notes/images/Screenshot 2023-10-03 at 13.04.18.png|400]]
 
 | Link     | Description                                                                                            |
@@ -215,7 +240,8 @@ Other methods:
 
 Can find a demo [here](https://macdobry.shinyapps.io/free-clust/).
 
-### Pros and Cons
+---
+## Pros and Cons
 Pros:
 - Can produce an ordering of the objects, might be informative for data display.
 - Smaller clusters are generated, might be helpful for discovery.
@@ -224,8 +250,9 @@ Cons:
 - No provision for a relocation of objects that may have been 'incorrectly' grouped at an early stage.
 - Different distance metrics for measuring distances between clusters may generate different results.
 
-
-## Limitations of K-Means (and Hierarchical)
+---
+# Limitations of K-Means and Hierarchical Clustering
+## Challenges with Hard Assignment in Clustering
 At each iteration, a pattern can be assigned to one cluster only (the assignment is **hard**).
 
 For example, **x** here in the middle of the two cluster centroids will either:
@@ -234,6 +261,8 @@ For example, **x** here in the middle of the two cluster centroids will either:
 
 ![[notes/images/Screenshot 2023-10-03 at 14.05.37.png|300]]
 
+---
+# Other Clustering Methods
 ## Fuzzy Clustering
 For example: Fuzzy c-Means.
 
@@ -243,6 +272,7 @@ For example: Fuzzy c-Means.
 
 The cluster membership is now a weight **between 0 or 1** and the distance to a centroid is multiplied by the membership weight.
 
+---
 ## DBSCAN
 - Density based clustering algorithm, density being the number of points within a specified radius (Eps).
 - A point is a core point if it has more than a specified number of points (MinPts) within Eps.
@@ -250,6 +280,7 @@ The cluster membership is now a weight **between 0 or 1** and the distance to a 
 
 ![[notes/images/Screenshot 2023-10-03 at 14.09.24.png|300]] ![[notes/images/Screenshot 2023-10-03 at 14.09.38.png|300]] ![[notes/images/Screenshot 2023-10-03 at 14.09.49.png|300]]
 
+---
 ## Evaluating Cluster Quality
 How do we know if the discovered clusters are any good?
 
@@ -267,14 +298,15 @@ We can use metrics to measure how similar two arrangements are.
 ### Weighted-Kappa
 ![[notes/images/Screenshot 2023-10-03 at 14.13.16.png|400]]
 
-## Association Rules
+# Association Rules
+## Overview
 Another form of unsupervised learning.
 
 Works with "**basket data**".
 
 ![[notes/images/Screenshot 2023-10-03 at 14.14.30.png|450]]
 
-### Support, Confidence and Lift
+## Support, Confidence and Lift
 ![[notes/images/Screenshot 2023-10-03 at 14.14.52.png|400]]
 
 Given a large amount of basket data, generate rules.
