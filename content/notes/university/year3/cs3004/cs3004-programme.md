@@ -14,20 +14,20 @@ type: programme
 ## Lectures
 ---
 
-| Week | Lecture Topic                                          | Lecturer | Week Commencing |
-| ---- | ------------------------------------------------------ | -------- | --------------- |
-| 1    | Course Introduction                                    | ST       | 18/09           |
-| 2    | Networks Computing Challenges I                        | ST       | 26/09           |
-| 3    | Networks Computing Challenges II                       | ST       | 02/10           |
-| 4    | Networks Computing Design and Implementation Issues I  | ST       | 09/10           |
-| 5    | Networks Computing Design and Implementation Issues II | ST       | 16/10           |
-| 6    | Web Services and Service Oriented Architecture         | ST       | 23/10           |
-| 7    | **ASK week**                                           | N/A      | **30/10**       |
-| 8    | Grid Computing                                         | ST       | 13/11           |
-| 9    | Cloud Computing                                        | ST       | 20/11           |
-| 10   | Internet of Things                                     | ST       | 20/11           |
-| 11   | Evil Network Computing                                 | ST       | 27/11           |
-| 12   | Network Computing: The Future!                         | ST       | 04/12           | 
+| Week | Lecture Topic                                          | Lecturer | Week Commencing |     |
+| ---- | ------------------------------------------------------ | -------- | --------------- | --- |
+| 1    | Course Introduction                                    | ST       | 18/09           |     |
+| 2    | Networks Computing Challenges I                        | ST       | 26/09           |     |
+| 3    | Networks Computing Challenges II                       | ST       | 02/10           |     |
+| 4    | Networks Computing Design and Implementation Issues I  | ST       | 09/10           |     |
+| 5    | Networks Computing Design and Implementation Issues II | ST       | 16/10           |     |
+| 6    | Web Services and Service Oriented Architecture         | ST       | 23/10           |     |
+| 7    | **ASK week**                                           | N/A      | **30/10**       |     |
+| 8    | Grid Computing                                         | ST       | 13/11           |     |
+| 9    | Cloud Computing                                        | ST       | 20/11           |     |
+| 10   | Internet of Things                                     | ST       | 20/11           |     |
+| 11   | Evil Network Computing                                 | ST       | 27/11           |     |
+| 12   | Network Computing: The Future!                         | ST       | 04/12           |     |
 
 ## Labs
 ---
