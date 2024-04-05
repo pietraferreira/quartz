@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"51fdf939733c2c6e","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"Head-Mounted Device (HMD)"},
+		{"id":"8d2a5da83945ced8","x":160,"y":-120,"width":250,"height":60,"type":"text","text":"head tracking"},
+		{"id":"22a647683601b3c7","x":360,"y":-260,"width":250,"height":50,"type":"text","text":"multi-axis accelerometer"}
+	],
+	"edges":[
+		{"id":"29c37f4ee5cc2f42","fromNode":"51fdf939733c2c6e","fromSide":"right","toNode":"8d2a5da83945ced8","toSide":"bottom"}
+	]
+}
