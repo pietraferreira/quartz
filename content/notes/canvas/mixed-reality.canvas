@@ -1,10 +1,33 @@
 {
 	"nodes":[
-		{"id":"51fdf939733c2c6e","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"Head-Mounted Device (HMD)"},
-		{"id":"8d2a5da83945ced8","x":160,"y":-120,"width":250,"height":60,"type":"text","text":"head tracking"},
-		{"id":"22a647683601b3c7","x":360,"y":-260,"width":250,"height":50,"type":"text","text":"multi-axis accelerometer"}
+		{"id":"51fdf939733c2c6e","type":"text","text":"Head-Mounted Device (HMD)","x":-125,"y":-30,"width":250,"height":60},
+		{"id":"8d2a5da83945ced8","type":"text","text":"head tracking","x":160,"y":-120,"width":200,"height":60},
+		{"id":"10e4a381dea62a35","type":"text","text":"could have multiple sensors (Hololens)","x":720,"y":-420,"width":250,"height":60},
+		{"id":"ef8cd78de0d6409b","type":"text","text":"multi-axis accelerometer","x":470,"y":-260,"width":250,"height":60},
+		{"id":"4fdeff47ddd8682c","type":"text","text":"Field of View (FOV)","x":520,"y":-150,"width":250,"height":60},
+		{"id":"a795ebd31889f980","type":"text","text":"eye tracking","x":520,"y":-30,"width":250,"height":60},
+		{"id":"59e861ff4debbc7e","type":"text","text":"LCD/OLED","x":-220,"y":-320,"width":250,"height":60},
+		{"id":"0edd94dab329f2bb","type":"text","text":"screen","x":-250,"y":-180,"width":250,"height":60},
+		{"id":"a9c128e4ce77a139","type":"text","text":"optics","x":-580,"y":-60,"width":250,"height":60},
+		{"id":"9f9b6de20f60cc1f","type":"text","text":"Marker-less Augmented Reality","x":-470,"y":140,"width":250,"height":60,"color":"5"},
+		{"id":"5f9e1b6c2f5343ee","type":"text","text":"marker tracking (e.g. ARToolKit square markers or known features in an image)","x":-470,"y":320,"width":338,"height":74},
+		{"id":"a81aa599bff0ac06","type":"text","text":"SLAM (Simultaneous\nLocalization and Mapping)","x":-800,"y":240,"width":250,"height":60},
+		{"id":"7a966eda7e871f4d","type":"text","text":"available for more than 10 years","x":-180,"y":460,"width":250,"height":60},
+		{"id":"ffce447e879812e8","x":-874,"y":368,"width":250,"height":60,"type":"text","text":"unprepared tracking: tracking in unknown environment "}
 	],
 	"edges":[
-		{"id":"29c37f4ee5cc2f42","fromNode":"51fdf939733c2c6e","fromSide":"right","toNode":"8d2a5da83945ced8","toSide":"bottom"}
+		{"id":"29c37f4ee5cc2f42","fromNode":"51fdf939733c2c6e","fromSide":"right","toNode":"8d2a5da83945ced8","toSide":"bottom"},
+		{"id":"054dda04a314dd5b","fromNode":"8d2a5da83945ced8","fromSide":"right","toNode":"ef8cd78de0d6409b","toSide":"left"},
+		{"id":"c6c4fa105080521c","fromNode":"ef8cd78de0d6409b","fromSide":"top","toNode":"10e4a381dea62a35","toSide":"left"},
+		{"id":"89d08ebdf9f2ac64","fromNode":"8d2a5da83945ced8","fromSide":"right","toNode":"a795ebd31889f980","toSide":"left"},
+		{"id":"a3672cc08058129e","fromNode":"8d2a5da83945ced8","fromSide":"right","toNode":"4fdeff47ddd8682c","toSide":"left"},
+		{"id":"62c3d2deff1c4c91","fromNode":"51fdf939733c2c6e","fromSide":"top","toNode":"0edd94dab329f2bb","toSide":"bottom"},
+		{"id":"d305bc9ffd6ecf3b","fromNode":"0edd94dab329f2bb","fromSide":"top","toNode":"59e861ff4debbc7e","toSide":"bottom"},
+		{"id":"dbfcf1fb4c923d02","fromNode":"0edd94dab329f2bb","fromSide":"left","toNode":"a9c128e4ce77a139","toSide":"top"},
+		{"id":"f00640d0e35f31af","fromNode":"a9c128e4ce77a139","fromSide":"bottom","toNode":"9f9b6de20f60cc1f","toSide":"top"},
+		{"id":"f0898fe7ef432add","fromNode":"9f9b6de20f60cc1f","fromSide":"bottom","toNode":"5f9e1b6c2f5343ee","toSide":"top"},
+		{"id":"55ad9d02a19eb033","fromNode":"9f9b6de20f60cc1f","fromSide":"bottom","toNode":"a81aa599bff0ac06","toSide":"right"},
+		{"id":"7b673f04725afe56","fromNode":"5f9e1b6c2f5343ee","fromSide":"bottom","toNode":"7a966eda7e871f4d","toSide":"left"},
+		{"id":"d476b9616a277cbb","fromNode":"a81aa599bff0ac06","fromSide":"bottom","toNode":"ffce447e879812e8","toSide":"top"}
 	]
 }
