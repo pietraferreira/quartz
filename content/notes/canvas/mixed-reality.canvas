@@ -26,7 +26,6 @@
 		{"id":"7a966eda7e871f4d","type":"text","text":"available for more than 10 years","x":-675,"y":440,"width":250,"height":60},
 		{"id":"149d5ba46472b686","type":"text","text":"## Marker-based Augmented Reality","x":475,"y":297,"width":250,"height":118},
 		{"id":"7355d6dbda535ced","type":"text","text":"**visualisation and navigation**","x":-342,"y":4396,"width":250,"height":60},
-		{"id":"4f3e3dbb4fec14b1","type":"text","text":"physics simulation, for example being able to bounce","x":-26,"y":4487,"width":250,"height":70},
 		{"id":"108ed46ae9aee126","type":"text","text":"grant the visual object the ability to navigate around","x":-12,"y":4737,"width":250,"height":60},
 		{"id":"61ab4aa2d8d5cf47","type":"text","text":"### 2. Spatial Mapping","x":-189,"y":4000,"width":250,"height":60,"color":"6"},
 		{"id":"c6a6a53f6585d1f9","type":"text","text":"mapping the real space, for the device to create an understanding of it.","x":-640,"y":4216,"width":288,"height":102},
@@ -102,7 +101,8 @@
 		{"id":"98ed6c122f51cf7a","x":3840,"y":813,"width":250,"height":60,"type":"text","text":"more accurate spatial mapping techniques"},
 		{"id":"5fad53b347d8afb7","x":2535,"y":-221,"width":250,"height":60,"type":"text","text":"3x3 matrix"},
 		{"id":"1093682dbedb39eb","x":2870,"y":-221,"width":250,"height":123,"type":"text","text":"- translation: movement in space\n- rotation: orientation change"},
-		{"id":"b2933e9860ae2840","x":2603,"y":157,"width":250,"height":60,"type":"text","text":"**non-linear** (because of rotation sine and cosine)"}
+		{"id":"b2933e9860ae2840","x":2603,"y":157,"width":250,"height":60,"type":"text","text":"**non-linear** (because of rotation sine and cosine)"},
+		{"id":"4f3e3dbb4fec14b1","type":"text","text":"physics simulation, for example being able to bounce","x":61,"y":4487,"width":250,"height":70}
 	],
 	"edges":[
 		{"id":"29c37f4ee5cc2f42","fromNode":"51fdf939733c2c6e","fromSide":"top","toNode":"8d2a5da83945ced8","toSide":"bottom"},
