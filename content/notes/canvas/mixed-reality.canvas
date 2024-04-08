@@ -102,7 +102,9 @@
 		{"id":"5fad53b347d8afb7","x":2535,"y":-221,"width":250,"height":60,"type":"text","text":"3x3 matrix"},
 		{"id":"1093682dbedb39eb","x":2870,"y":-221,"width":250,"height":123,"type":"text","text":"- translation: movement in space\n- rotation: orientation change"},
 		{"id":"b2933e9860ae2840","x":2603,"y":157,"width":250,"height":60,"type":"text","text":"**non-linear** (because of rotation sine and cosine)"},
-		{"id":"4f3e3dbb4fec14b1","type":"text","text":"physics simulation, for example being able to bounce","x":61,"y":4487,"width":250,"height":70}
+		{"id":"4f3e3dbb4fec14b1","type":"text","text":"physics simulation, for example being able to bounce","x":61,"y":4487,"width":250,"height":70},
+		{"id":"eba5c27c3430f010","x":1894,"y":450,"width":250,"height":90,"type":"text","text":"significant change in the **optical sensor's** pose between frames"},
+		{"id":"c2eeb1f72322cb20","x":2133,"y":284,"width":250,"height":60,"type":"text","text":"can lead to cybersickness and discomfort"}
 	],
 	"edges":[
 		{"id":"29c37f4ee5cc2f42","fromNode":"51fdf939733c2c6e","fromSide":"top","toNode":"8d2a5da83945ced8","toSide":"bottom"},
@@ -209,6 +211,8 @@
 		{"id":"b07d3c28606d59d3","fromNode":"1a71f52c5d762232","fromSide":"right","toNode":"98ed6c122f51cf7a","toSide":"left"},
 		{"id":"56bcb9da6d79c3e6","fromNode":"603572fb59fbb8a5","fromSide":"right","toNode":"5fad53b347d8afb7","toSide":"bottom"},
 		{"id":"476bbff194598f05","fromNode":"603572fb59fbb8a5","fromSide":"right","toNode":"1093682dbedb39eb","toSide":"left"},
-		{"id":"002cb7e698617950","fromNode":"e395d5bd0fef441d","fromSide":"right","toNode":"b2933e9860ae2840","toSide":"left"}
+		{"id":"002cb7e698617950","fromNode":"e395d5bd0fef441d","fromSide":"right","toNode":"b2933e9860ae2840","toSide":"left"},
+		{"id":"fc1abd4a98240e4f","fromNode":"cb04fe45e9299eb1","fromSide":"right","toNode":"eba5c27c3430f010","toSide":"left"},
+		{"id":"8fde026ac36db625","fromNode":"cb04fe45e9299eb1","fromSide":"right","toNode":"c2eeb1f72322cb20","toSide":"left"}
 	]
 }

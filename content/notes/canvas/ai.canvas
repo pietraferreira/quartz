@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"10884a905fb581cb","type":"text","text":"### euclidean distance\n\n$d(x, y) = \\sqrt{(x_1-y_1)^2 + (x_2-y_2)^2 + ... + (x_n-y_n)^2}$\n\nwhere x is one row, and y the other!","x":-220,"y":-200,"width":400,"height":140},
+		{"id":"7fcd261e349a67d4","type":"text","text":"square root of the sum of the squared differences","x":280,"y":-170,"width":250,"height":60},
+		{"id":"7782ed3d4010c241","type":"text","text":"### manhattan distance\n\n$d(x,y) = |x_1-y_1| + |x_2-y_2| + ... + |x_n-y_n|$","x":-264,"y":4,"width":344,"height":116},
+		{"id":"a35a35874ea36daa","type":"text","text":"sum of absolute differences between the coordinates of two points","x":193,"y":22,"width":250,"height":78},
+		{"id":"88632bfed85e619e","type":"text","text":"### single linkage","x":250,"y":1129,"width":250,"height":60},
+		{"id":"2994eb905bcc3266","type":"text","text":"### average linkage","x":250,"y":1344,"width":250,"height":60},
+		{"id":"f9b2aa4a8b5b4577","type":"text","text":"### complete linkage","x":280,"y":1232,"width":276,"height":60},
+		{"id":"cf978e2a914e3054","type":"text","text":"in each iterations, looks for the two clusters with the **smallest minimum** pairwise distance between elements, merges these next","x":620,"y":960,"width":250,"height":137},
+		{"id":"cd0972a0a06b3a50","type":"text","text":"in each iteration, looks for the two clusters with the **smallest maximum** pairwise distance within elements, and merges these next","x":700,"y":1189,"width":250,"height":131},
+		{"id":"76c3a89ae05fe481","type":"text","text":"merge clusters that have the **smallest average** distance between all elements in one cluster and another","x":620,"y":1429,"width":250,"height":106},
+		{"id":"f5753c84f85ece4f","type":"text","text":"## methods","x":-286,"y":1215,"width":426,"height":94},
+		{"id":"59aa3a48f2d03002","x":-820,"y":1165,"width":400,"height":194,"type":"file","file":"notes/images/Pasted image 20240408130758.png"},
+		{"id":"875b039fe7cde699","x":-383,"y":800,"width":327,"height":83,"type":"text","text":"# hierarchical clustering"},
+		{"id":"822eaf89e425da3e","x":80,"y":640,"width":250,"height":60,"type":"text","text":"## pros"},
+		{"id":"833f43133e0c40b6","type":"text","text":"## cons","x":155,"y":812,"width":250,"height":60},
+		{"id":"80a2dccede9dd085","x":500,"y":580,"width":250,"height":60,"type":"text","text":"graphical tree output, which is simple and fast"},
+		{"id":"622f5d9344b98bc5","x":575,"y":740,"width":250,"height":60,"type":"text","text":"greedy search means no undoing of merges early on"}
+	],
+	"edges":[
+		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"right","toNode":"7fcd261e349a67d4","toSide":"left"},
+		{"id":"bc8eae2f5f91392e","fromNode":"7782ed3d4010c241","fromSide":"right","toNode":"a35a35874ea36daa","toSide":"left"},
+		{"id":"52c08dd5198a9fe8","fromNode":"f5753c84f85ece4f","fromSide":"right","toNode":"88632bfed85e619e","toSide":"left"},
+		{"id":"e6b7abc364309516","fromNode":"f5753c84f85ece4f","fromSide":"right","toNode":"f9b2aa4a8b5b4577","toSide":"left"},
+		{"id":"f2d5aa8cc718b72b","fromNode":"f5753c84f85ece4f","fromSide":"right","toNode":"2994eb905bcc3266","toSide":"left"},
+		{"id":"6381fcb89a1b96b7","fromNode":"88632bfed85e619e","fromSide":"right","toNode":"cf978e2a914e3054","toSide":"left"},
+		{"id":"7121e7a45aa01b97","fromNode":"f9b2aa4a8b5b4577","fromSide":"right","toNode":"cd0972a0a06b3a50","toSide":"left"},
+		{"id":"f4e9f087cd388f57","fromNode":"2994eb905bcc3266","fromSide":"right","toNode":"76c3a89ae05fe481","toSide":"left"},
+		{"id":"14b48bea4d292feb","fromNode":"f5753c84f85ece4f","fromSide":"left","toNode":"59aa3a48f2d03002","toSide":"right","toEnd":"none"},
+		{"id":"05d298a725e38a54","fromNode":"875b039fe7cde699","fromSide":"bottom","toNode":"f5753c84f85ece4f","toSide":"top"},
+		{"id":"a372a4b7c9f88dc8","fromNode":"875b039fe7cde699","fromSide":"right","toNode":"822eaf89e425da3e","toSide":"left"},
+		{"id":"8ebb2d0cf4d6adcc","fromNode":"875b039fe7cde699","fromSide":"right","toNode":"833f43133e0c40b6","toSide":"left"},
+		{"id":"dc53fa86c8ddbd82","fromNode":"822eaf89e425da3e","fromSide":"right","toNode":"80a2dccede9dd085","toSide":"left"},
+		{"id":"58e5e3bbffa2bf27","fromNode":"833f43133e0c40b6","fromSide":"right","toNode":"622f5d9344b98bc5","toSide":"left"}
+	]
+}
