@@ -124,7 +124,12 @@
 		{"id":"db5a42a253606e96","x":-3670,"y":-720,"width":250,"height":87,"type":"text","text":"directed acyclic graph with local conditional dependencies"},
 		{"id":"e4a04866198bf9b1","x":-3308,"y":-424,"width":250,"height":68,"color":"3","type":"text","text":"### dynamic bayesian networks"},
 		{"id":"695d0c9c125d0ca4","x":-2851,"y":180,"width":250,"height":60,"type":"text","text":"probalistic graphical model for time series"},
-		{"id":"712e6f5149e5bdac","x":-2592,"y":120,"width":250,"height":60,"type":"text","text":"able to compare sequences"}
+		{"id":"712e6f5149e5bdac","x":-2592,"y":120,"width":250,"height":60,"type":"text","text":"able to compare sequences"},
+		{"id":"21d5b17f446cbc49","x":-3296,"y":-85,"width":250,"height":60,"type":"text","text":"emission probabilities"},
+		{"id":"f4bb38b5ee4ce38d","x":-3795,"y":-260,"width":250,"height":60,"type":"text","text":"algorithms"},
+		{"id":"d5ba2afdbbb7f265","x":-4000,"y":-25,"width":94,"height":60,"type":"text","text":"viterbi"},
+		{"id":"edfde902b7054c86","x":-3815,"y":80,"width":104,"height":60,"type":"text","text":"forward"},
+		{"id":"792a20348b20d646","x":-3625,"y":-25,"width":225,"height":60,"type":"text","text":"expectation maximisation"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
@@ -243,6 +248,11 @@
 		{"id":"7979f7b7b583b0ef","fromNode":"4f5c3a76f30dc5fc","fromSide":"left","toNode":"1e12ef7d9a96f5ce","toSide":"bottom"},
 		{"id":"e36625b6b75e9372","fromNode":"07911bb50ac91f43","fromSide":"bottom","toNode":"695d0c9c125d0ca4","toSide":"top"},
 		{"id":"065815b227b853fd","fromNode":"07911bb50ac91f43","fromSide":"bottom","toNode":"712e6f5149e5bdac","toSide":"top"},
-		{"id":"18a9d8df395f4fa9","fromNode":"7dffd89bf38e396c","fromSide":"bottom","toNode":"07911bb50ac91f43","toSide":"left"}
+		{"id":"18a9d8df395f4fa9","fromNode":"7dffd89bf38e396c","fromSide":"bottom","toNode":"07911bb50ac91f43","toSide":"left"},
+		{"id":"e62af5568a514f4f","fromNode":"7dffd89bf38e396c","fromSide":"left","toNode":"21d5b17f446cbc49","toSide":"right"},
+		{"id":"842682b0941e03e8","fromNode":"7dffd89bf38e396c","fromSide":"left","toNode":"f4bb38b5ee4ce38d","toSide":"right"},
+		{"id":"1c2500114374c217","fromNode":"f4bb38b5ee4ce38d","fromSide":"bottom","toNode":"d5ba2afdbbb7f265","toSide":"top"},
+		{"id":"d336801c57db345c","fromNode":"f4bb38b5ee4ce38d","fromSide":"bottom","toNode":"edfde902b7054c86","toSide":"top"},
+		{"id":"e4deda160bec9d6a","fromNode":"f4bb38b5ee4ce38d","fromSide":"bottom","toNode":"792a20348b20d646","toSide":"top"}
 	]
 }
