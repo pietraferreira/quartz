@@ -114,13 +114,17 @@
 		{"id":"fc154c471a380667","x":-3292,"y":-1982,"width":250,"height":60,"type":"text","text":"intercausal"},
 		{"id":"d437f700cbfef187","x":-2920,"y":-2102,"width":250,"height":60,"type":"text","text":"diagnostic"},
 		{"id":"91d813e0e4b504df","x":-2560,"y":-1977,"width":250,"height":60,"type":"text","text":"causal"},
-		{"id":"e4a04866198bf9b1","x":-3292,"y":-508,"width":250,"height":60,"type":"text","text":"### dynamic bayesian networks"},
-		{"id":"07911bb50ac91f43","x":-2737,"y":-14,"width":250,"height":60,"type":"text","text":"### markov chain"},
-		{"id":"7dffd89bf38e396c","x":-2976,"y":-165,"width":250,"height":50,"type":"text","text":"hidden markov models"},
+		{"id":"07911bb50ac91f43","x":-2737,"y":-14,"width":250,"height":54,"type":"text","text":"### markov chain"},
+		{"id":"7dffd89bf38e396c","x":-2976,"y":-165,"width":273,"height":50,"type":"text","text":"### hidden markov models"},
 		{"id":"169218fc2d8e9568","x":-2900,"y":-386,"width":250,"height":60,"type":"text","text":"russell and norvig chapter 15 section 1"},
 		{"id":"619c57a75e0fad40","x":-3183,"y":-835,"width":283,"height":60,"type":"text","text":"method to store joint distribution"},
-		{"id":"db5a42a253606e96","x":-3500,"y":-707,"width":250,"height":87,"type":"text","text":"directed acyclic graph with local conditional dependencies"},
-		{"id":"24233f3de6738c53","x":-3710,"y":-830,"width":290,"height":50,"type":"text","text":"how to retrieve joint distribution"}
+		{"id":"24233f3de6738c53","x":-3710,"y":-830,"width":290,"height":50,"type":"text","text":"how to retrieve joint distribution"},
+		{"id":"806da3421f7c6b14","x":-2612,"y":-865,"width":250,"height":60,"type":"text","text":"\"inverts conditional probability\""},
+		{"id":"1e12ef7d9a96f5ce","x":-3750,"y":-538,"width":250,"height":60,"type":"text","text":"good for when **missing data**"},
+		{"id":"db5a42a253606e96","x":-3670,"y":-720,"width":250,"height":87,"type":"text","text":"directed acyclic graph with local conditional dependencies"},
+		{"id":"e4a04866198bf9b1","x":-3308,"y":-424,"width":250,"height":68,"color":"3","type":"text","text":"### dynamic bayesian networks"},
+		{"id":"695d0c9c125d0ca4","x":-2851,"y":180,"width":250,"height":60,"type":"text","text":"probalistic graphical model for time series"},
+		{"id":"712e6f5149e5bdac","x":-2592,"y":120,"width":250,"height":60,"type":"text","text":"able to compare sequences"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
@@ -231,10 +235,14 @@
 		{"id":"19a240d6e372c480","fromNode":"4f5c3a76f30dc5fc","fromSide":"top","toNode":"3a4ca01c5f9946fd","toSide":"right"},
 		{"id":"e765630a8dc0371c","fromNode":"4f5c3a76f30dc5fc","fromSide":"left","toNode":"e4a04866198bf9b1","toSide":"right"},
 		{"id":"3367060dfc60dca9","fromNode":"98744a2c50d1ddeb","fromSide":"bottom","toNode":"07911bb50ac91f43","toSide":"right"},
-		{"id":"c2658409b4e9842c","fromNode":"07911bb50ac91f43","fromSide":"left","toNode":"7dffd89bf38e396c","toSide":"bottom"},
 		{"id":"142695b6f37bed3b","fromNode":"4f5c3a76f30dc5fc","fromSide":"bottom","toNode":"169218fc2d8e9568","toSide":"top"},
 		{"id":"1339ff563a9a4cce","fromNode":"4f5c3a76f30dc5fc","fromSide":"left","toNode":"619c57a75e0fad40","toSide":"right"},
 		{"id":"ef91e2a2aa9655b5","fromNode":"4f5c3a76f30dc5fc","fromSide":"left","toNode":"db5a42a253606e96","toSide":"right","label":"defined as"},
-		{"id":"9b2823292e54e405","fromNode":"619c57a75e0fad40","fromSide":"left","toNode":"24233f3de6738c53","toSide":"right","toEnd":"none"}
+		{"id":"9b2823292e54e405","fromNode":"619c57a75e0fad40","fromSide":"left","toNode":"24233f3de6738c53","toSide":"right","toEnd":"none"},
+		{"id":"eb5050d0d7766bf6","fromNode":"45e03236239d2f1f","fromSide":"right","toNode":"806da3421f7c6b14","toSide":"bottom"},
+		{"id":"7979f7b7b583b0ef","fromNode":"4f5c3a76f30dc5fc","fromSide":"left","toNode":"1e12ef7d9a96f5ce","toSide":"bottom"},
+		{"id":"e36625b6b75e9372","fromNode":"07911bb50ac91f43","fromSide":"bottom","toNode":"695d0c9c125d0ca4","toSide":"top"},
+		{"id":"065815b227b853fd","fromNode":"07911bb50ac91f43","fromSide":"bottom","toNode":"712e6f5149e5bdac","toSide":"top"},
+		{"id":"18a9d8df395f4fa9","fromNode":"7dffd89bf38e396c","fromSide":"bottom","toNode":"07911bb50ac91f43","toSide":"left"}
 	]
 }
