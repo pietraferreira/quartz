@@ -172,7 +172,10 @@
 		{"id":"697c9a847fdcf31f","x":-2380,"y":-925,"width":250,"height":60,"color":"6","type":"text","text":"## RNN"},
 		{"id":"008f83659dec5c6c","type":"text","text":"## black box","x":-1880,"y":-985,"width":250,"height":60},
 		{"id":"2fdd56965174ba2f","x":-2690,"y":-1110,"width":250,"height":60,"type":"text","text":"can't run in parallel as nodes depend on all previous ones"},
-		{"id":"288de4be1b6f7f67","x":-2330,"y":-1480,"width":400,"height":227,"type":"file","file":"notes/images/Screenshot 2024-04-20 at 16.45.40.png"}
+		{"id":"288de4be1b6f7f67","x":-2330,"y":-1480,"width":400,"height":227,"type":"file","file":"notes/images/Screenshot 2024-04-20 at 16.45.40.png"},
+		{"id":"926ac3dd9de8ec0e","x":-2039,"y":-1906,"width":400,"height":129,"type":"file","file":"notes/images/Screenshot 2024-04-20 at 16.59.57.png"},
+		{"id":"7d23870c18a030ef","x":-2636,"y":-1291,"width":250,"height":76,"type":"text","text":"they kinda struggle with long-term dependencies/infromation"},
+		{"id":"b0d24c317a1fcc99","x":-2545,"y":-1687,"width":250,"height":60,"type":"text","text":"#### [LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
@@ -340,6 +343,9 @@
 		{"id":"96ae772cd0c01b30","fromNode":"7eb5f39c40386599","fromSide":"left","toNode":"697c9a847fdcf31f","toSide":"bottom"},
 		{"id":"9906d5af3e4c782b","fromNode":"697c9a847fdcf31f","fromSide":"top","toNode":"2fdd56965174ba2f","toSide":"bottom"},
 		{"id":"b14c702121ccc358","fromNode":"697c9a847fdcf31f","fromSide":"top","toNode":"288de4be1b6f7f67","toSide":"bottom"},
-		{"id":"004f16ac19bf9130","fromNode":"288de4be1b6f7f67","fromSide":"top","toNode":"e468bca3648f4ede","toSide":"bottom"}
+		{"id":"004f16ac19bf9130","fromNode":"288de4be1b6f7f67","fromSide":"top","toNode":"e468bca3648f4ede","toSide":"bottom"},
+		{"id":"632a544ac4c866fb","fromNode":"e468bca3648f4ede","fromSide":"top","toNode":"926ac3dd9de8ec0e","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"66ddf4280b11655e","fromNode":"697c9a847fdcf31f","fromSide":"top","toNode":"7d23870c18a030ef","toSide":"bottom"},
+		{"id":"648a7c4df2646144","fromNode":"7d23870c18a030ef","fromSide":"top","toNode":"b0d24c317a1fcc99","toSide":"bottom","label":"solves this"}
 	]
 }
