@@ -181,7 +181,10 @@
 		{"id":"73d4b580cdb4656e","x":-2057,"y":-2560,"width":263,"height":83,"type":"text","text":"converts highest values to close to 1 and lowest (negative) values to close to 0"},
 		{"id":"255e9c5bc1be2628","x":-1794,"y":-2780,"width":310,"height":60,"type":"text","text":"we get a **probability distribution**"},
 		{"id":"c718417b20dbef04","x":-2157,"y":-2173,"width":250,"height":60,"type":"text","text":"more uniform weights"},
-		{"id":"137073655e09de0d","x":-2307,"y":-2300,"width":250,"height":60,"type":"text","text":"large **temperature**"}
+		{"id":"137073655e09de0d","x":-2307,"y":-2300,"width":250,"height":60,"type":"text","text":"large **temperature**"},
+		{"id":"5b7cdbc5b6c2226b","x":-2382,"y":-3043,"width":400,"height":293,"type":"file","file":"notes/images/Screenshot 2024-04-21 at 21.10.48.png"},
+		{"id":"efcdd782b286040f","x":-2435,"y":-3183,"width":128,"height":50,"type":"text","text":"## RAG"},
+		{"id":"26e3e061555a254f","x":-2643,"y":-3341,"width":250,"height":60,"type":"text","text":"# LLM"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
@@ -357,6 +360,8 @@
 		{"id":"35e0f6ee9ebfa213","fromNode":"162375dca2652320","fromSide":"right","toNode":"73d4b580cdb4656e","toSide":"bottom"},
 		{"id":"9192ae82d8e948f5","fromNode":"73d4b580cdb4656e","fromSide":"top","toNode":"255e9c5bc1be2628","toSide":"left"},
 		{"id":"9b115a6d1dc44971","fromNode":"162375dca2652320","fromSide":"bottom","toNode":"137073655e09de0d","toSide":"top"},
-		{"id":"32317b57d6149335","fromNode":"137073655e09de0d","fromSide":"bottom","toNode":"c718417b20dbef04","toSide":"top"}
+		{"id":"32317b57d6149335","fromNode":"137073655e09de0d","fromSide":"bottom","toNode":"c718417b20dbef04","toSide":"top"},
+		{"id":"b907d0fe03cd548b","fromNode":"efcdd782b286040f","fromSide":"bottom","toNode":"5b7cdbc5b6c2226b","toSide":"top"},
+		{"id":"0ac51bd7b50c6f70","fromNode":"26e3e061555a254f","fromSide":"bottom","toNode":"efcdd782b286040f","toSide":"top"}
 	]
 }
