@@ -179,7 +179,9 @@
 		{"id":"162375dca2652320","x":-2380,"y":-2413,"width":250,"height":60,"type":"text","text":"## softmax"},
 		{"id":"a1a2681774c483c6","x":-2738,"y":-2663,"width":303,"height":60,"type":"text","text":"# activation functions"},
 		{"id":"73d4b580cdb4656e","x":-2057,"y":-2560,"width":263,"height":83,"type":"text","text":"converts highest values to close to 1 and lowest (negative) values to close to 0"},
-		{"id":"255e9c5bc1be2628","x":-1794,"y":-2780,"width":310,"height":60,"type":"text","text":"we get a **probability distribution**"}
+		{"id":"255e9c5bc1be2628","x":-1794,"y":-2780,"width":310,"height":60,"type":"text","text":"we get a **probability distribution**"},
+		{"id":"c718417b20dbef04","x":-2157,"y":-2173,"width":250,"height":60,"type":"text","text":"more uniform weights"},
+		{"id":"137073655e09de0d","x":-2307,"y":-2300,"width":250,"height":60,"type":"text","text":"large **temperature**"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
@@ -353,6 +355,8 @@
 		{"id":"648a7c4df2646144","fromNode":"7d23870c18a030ef","fromSide":"top","toNode":"b0d24c317a1fcc99","toSide":"bottom","label":"solves this"},
 		{"id":"ced2ec985329b9c3","fromNode":"a1a2681774c483c6","fromSide":"bottom","toNode":"162375dca2652320","toSide":"top"},
 		{"id":"35e0f6ee9ebfa213","fromNode":"162375dca2652320","fromSide":"right","toNode":"73d4b580cdb4656e","toSide":"bottom"},
-		{"id":"9192ae82d8e948f5","fromNode":"73d4b580cdb4656e","fromSide":"top","toNode":"255e9c5bc1be2628","toSide":"left"}
+		{"id":"9192ae82d8e948f5","fromNode":"73d4b580cdb4656e","fromSide":"top","toNode":"255e9c5bc1be2628","toSide":"left"},
+		{"id":"9b115a6d1dc44971","fromNode":"162375dca2652320","fromSide":"bottom","toNode":"137073655e09de0d","toSide":"top"},
+		{"id":"32317b57d6149335","fromNode":"137073655e09de0d","fromSide":"bottom","toNode":"c718417b20dbef04","toSide":"top"}
 	]
 }
