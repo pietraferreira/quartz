@@ -175,7 +175,11 @@
 		{"id":"288de4be1b6f7f67","x":-2330,"y":-1480,"width":400,"height":227,"type":"file","file":"notes/images/Screenshot 2024-04-20 at 16.45.40.png"},
 		{"id":"926ac3dd9de8ec0e","x":-2039,"y":-1906,"width":400,"height":129,"type":"file","file":"notes/images/Screenshot 2024-04-20 at 16.59.57.png"},
 		{"id":"7d23870c18a030ef","x":-2636,"y":-1291,"width":250,"height":76,"type":"text","text":"they kinda struggle with long-term dependencies/infromation"},
-		{"id":"b0d24c317a1fcc99","x":-2545,"y":-1687,"width":250,"height":60,"type":"text","text":"#### [LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)"}
+		{"id":"b0d24c317a1fcc99","x":-2545,"y":-1687,"width":250,"height":60,"type":"text","text":"#### [LSTM](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)"},
+		{"id":"162375dca2652320","x":-2380,"y":-2413,"width":250,"height":60,"type":"text","text":"## softmax"},
+		{"id":"a1a2681774c483c6","x":-2738,"y":-2663,"width":303,"height":60,"type":"text","text":"# activation functions"},
+		{"id":"73d4b580cdb4656e","x":-2057,"y":-2560,"width":263,"height":83,"type":"text","text":"converts highest values to close to 1 and lowest (negative) values to close to 0"},
+		{"id":"255e9c5bc1be2628","x":-1794,"y":-2780,"width":310,"height":60,"type":"text","text":"we get a **probability distribution**"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
@@ -346,6 +350,9 @@
 		{"id":"004f16ac19bf9130","fromNode":"288de4be1b6f7f67","fromSide":"top","toNode":"e468bca3648f4ede","toSide":"bottom"},
 		{"id":"632a544ac4c866fb","fromNode":"e468bca3648f4ede","fromSide":"top","toNode":"926ac3dd9de8ec0e","toSide":"bottom","fromEnd":"arrow"},
 		{"id":"66ddf4280b11655e","fromNode":"697c9a847fdcf31f","fromSide":"top","toNode":"7d23870c18a030ef","toSide":"bottom"},
-		{"id":"648a7c4df2646144","fromNode":"7d23870c18a030ef","fromSide":"top","toNode":"b0d24c317a1fcc99","toSide":"bottom","label":"solves this"}
+		{"id":"648a7c4df2646144","fromNode":"7d23870c18a030ef","fromSide":"top","toNode":"b0d24c317a1fcc99","toSide":"bottom","label":"solves this"},
+		{"id":"ced2ec985329b9c3","fromNode":"a1a2681774c483c6","fromSide":"bottom","toNode":"162375dca2652320","toSide":"top"},
+		{"id":"35e0f6ee9ebfa213","fromNode":"162375dca2652320","fromSide":"right","toNode":"73d4b580cdb4656e","toSide":"bottom"},
+		{"id":"9192ae82d8e948f5","fromNode":"73d4b580cdb4656e","fromSide":"top","toNode":"255e9c5bc1be2628","toSide":"left"}
 	]
 }
