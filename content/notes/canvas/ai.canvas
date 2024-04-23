@@ -10,7 +10,7 @@
 		{"id":"df88c1465c3bf0d1","type":"text","text":"diagnosing diseases","x":-2626,"y":2886,"width":250,"height":60},
 		{"id":"0e4368a7ffd23326","type":"text","text":"total positives","x":-3032,"y":3082,"width":250,"height":60},
 		{"id":"f315b860cea1f5ce","type":"text","text":"## sensitivity","x":-3031,"y":2739,"width":250,"height":60},
-		{"id":"ea9cd5aa4066605b","type":"text","text":"$(TP + FN)$","x":-2975,"y":2916,"width":134,"height":60},
+		{"id":"ea9cd5aa4066605b","type":"text","text":"$(TP)\\over{TP+FN}$","x":-2975,"y":2916,"width":134,"height":60},
 		{"id":"b916eebbcd0d9e3c","type":"text","text":"# CONFUSION MATRIX","x":-3217,"y":2377,"width":311,"height":60,"color":"5"},
 		{"id":"0085d34a9a69ece0","type":"text","text":"can be calculated using the conditional probability","x":-4159,"y":1821,"width":250,"height":76},
 		{"id":"ba7dc007e2ca2a25","type":"text","text":"## CONDITIONAL","x":-3748,"y":1398,"width":250,"height":60},
@@ -52,7 +52,7 @@
 		{"id":"9f5be4d498695d61","type":"text","text":"3. update weights and bias","x":-1110,"y":-321,"width":250,"height":60},
 		{"id":"e7c905af89617042","type":"text","text":"$w_i(p+1) = w_i(p) + \\Delta{w_i}$\n$\\theta(p+1) = \\theta(p) + \\Delta{\\theta}$","x":-760,"y":-329,"width":250,"height":60,"color":"4"},
 		{"id":"7934d3ac95b3451d","type":"text","text":"## specificity","x":-2172,"y":2229,"width":250,"height":60},
-		{"id":"342334587f848a01","type":"text","text":"$TN + FP$","x":-2177,"y":2448,"width":250,"height":60},
+		{"id":"342334587f848a01","type":"text","text":"$(TN)\\over{TN+FP}$","x":-2177,"y":2448,"width":250,"height":60},
 		{"id":"66eada002cfde546","type":"text","text":"total negatives","x":-2177,"y":2638,"width":250,"height":50},
 		{"id":"9f66908456d31cdb","type":"text","text":"Of all the actual negatives, how many did we correctly identify as negative?","x":-1737,"y":2113,"width":250,"height":83},
 		{"id":"891bcd6f9cbb001f","type":"text","text":"indicating a disease when there is none","x":-1692,"y":2406,"width":250,"height":60},
@@ -187,7 +187,8 @@
 		{"id":"26e3e061555a254f","type":"text","text":"# LLM","x":-2643,"y":-3341,"width":250,"height":60},
 		{"id":"ee7fd04666d8e566","type":"file","file":"notes/images/Screenshot 2024-04-23 at 15.17.01.png","x":-3585,"y":-3076,"width":569,"height":296},
 		{"id":"1a1e253f2a3e1d57","type":"text","text":"# association rules","x":-3515,"y":-3275,"width":299,"height":50},
-		{"id":"582861c12d5165cb","type":"text","text":"## market basket analysis","x":-4120,"y":-2896,"width":345,"height":50}
+		{"id":"582861c12d5165cb","type":"text","text":"## market basket analysis","x":-4120,"y":-2896,"width":345,"height":50},
+		{"id":"060c49d9a94ff95d","x":-1912,"y":2946,"width":400,"height":400,"type":"file","file":"notes/university/statquest-notes-ai.md"}
 	],
 	"edges":[
 		{"id":"9ac3ca9154cae903","fromNode":"10884a905fb581cb","fromSide":"bottom","toNode":"7fcd261e349a67d4","toSide":"top"},
