@@ -49,6 +49,12 @@
       "commit": "ec4c81c91da13a6f6c2cbe1656daf5c14575dab3",
       "installedAt": "2026-07-13T15:40:30.925Z"
     },
+    "colorscheme-picker": {
+      "source": "./quartz-plugins/colorscheme-picker",
+      "resolved": "/home/pietra/Documents/personal/quartz/quartz-plugins/colorscheme-picker",
+      "commit": "local",
+      "installedAt": "2026-07-13T16:04:27.115Z"
+    },
     "comments": {
       "source": "github:quartz-community/comments",
       "resolved": "https://github.com/quartz-community/comments.git",
@@ -156,6 +162,12 @@
       "resolved": "https://github.com/quartz-community/hard-line-breaks.git",
       "commit": "0d448f38a24c568c5539ff2cd57d813293430ccd",
       "installedAt": "2026-07-13T15:40:30.931Z"
+    },
+    "komorebi": {
+      "source": "./quartz-plugins/komorebi",
+      "resolved": "/home/pietra/Documents/personal/quartz/quartz-plugins/komorebi",
+      "commit": "local",
+      "installedAt": "2026-07-13T16:04:27.115Z"
     },
     "latex": {
       "source": "github:quartz-community/latex",

@@ -17,6 +17,9 @@ Guides, how-tos and cheatsheets so you can learn along with me :)
 - [LLVM](notes/general/llvm.md)
 - [Compiler Flags](notes/general/compiler-flags.md)
 
+## Site & Meta
+- [Adding Music & Audio](notes/general/adding-music.md)
+
 ## Linux & Tooling
 - [Linux Fundamentals](notes/general/linux-fundamentals.md)
 - [Dotfiles Management](notes/general/dotfile-management.md)

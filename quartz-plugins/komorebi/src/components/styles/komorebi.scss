@@ -1,0 +1,37 @@
+.komorebi {
+  box-sizing: border-box;
+  width: 100%;
+  height: 180px;
+  margin: 0 0 1.5rem;
+  border: 2px solid var(--lightgray);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--lightgray);
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    // render the low-res buffer as chunky pixels
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    // gentle fade-in on first paint
+    animation: komorebi-fade 0.8s ease forwards;
+  }
+}
+
+@keyframes komorebi-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .komorebi {
+    height: 120px;
+  }
+}

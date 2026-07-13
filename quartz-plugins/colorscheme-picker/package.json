@@ -1,0 +1,62 @@
+{
+  "name": "@pietra/colorscheme-picker",
+  "version": "1.0.0",
+  "description": "A toolbar dropdown to switch between color palette presets at runtime",
+  "type": "module",
+  "license": "MIT",
+  "files": ["dist", "README.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "dependencies": {
+    "@quartz-community/types": "github:quartz-community/types",
+    "@quartz-community/utils": "github:quartz-community/utils"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "preact": "^10.28.2",
+    "sass": "^1.97.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  },
+  "quartz": {
+    "name": "colorscheme-picker",
+    "displayName": "Color Scheme Picker",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 28,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "ColorSchemePicker": {
+        "displayName": "Color Scheme Picker",
+        "defaultPosition": "left",
+        "defaultPriority": 28
+      }
+    }
+  }
+}
