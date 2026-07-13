@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Classes, Types and Objects"
 tags:
   - university/cs2004

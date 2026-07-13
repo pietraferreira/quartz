@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "CS2003 - Exam Revision"
 tags:
   - university/cs2003

@@ -1,4 +1,5 @@
 ---
+draft: true
 annotation-target: os.pdf
 tags:
   - university/cs2005

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "2022-05-03 - Relocation Prototype Meeting"
 tags: 
   - work/relocation-prototype/meeting

@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Code Generation"
 tags:
   - work/engineer-training

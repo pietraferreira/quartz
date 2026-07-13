@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Specifying User Requirements"
 tags:
   - university/cs2003

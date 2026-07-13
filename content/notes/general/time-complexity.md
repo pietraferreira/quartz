@@ -1,7 +1,7 @@
 ---
 title: "Time Complexity"
 tags:
-  - university/cs2004
+  - cs/algorithms
 last-edited:
 created: 2022-12-16
 ---
@@ -15,7 +15,7 @@ Examples:
 
 **Selection sort** repeatedly finds the smallest element in the unsorted tail region of a list and moves it to the front.
 
-More info [here](notes/university/year2/cs2004/selection-sort.md) (Selection Sort).
+More info [here](notes/general/selection-sort.md) (Selection Sort).
 
 # How Fast is an Algorithm?
 ---
@@ -46,7 +46,7 @@ Classed into two categories:
     - A divide and conquer algorithm.
     - The list **must** be sorted.
 
-More info [here](notes/university/year2/cs2004/graphs.md) (Graph Search).
+More info [here](notes/general/graphs.md) (Graph Search).
 
 # Binary Search vs Linear Search
 ---

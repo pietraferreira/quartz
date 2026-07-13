@@ -2,7 +2,7 @@
 title:  "Binary Trees"
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-05
 ---
@@ -83,3 +83,9 @@ All traversals can be right to left instead.
 - R->L postorder is the inverse of L->R preorder.
 
 ![binary-tree-expr](notes/images/binary-tree-expr.png)
+
+
+## Related
+- [Binary Heap](notes/general/binary-heap.md)
+- [Trees](notes/general/trees.md)
+- [2-3 Trees](notes/general/2-3-trees.md)

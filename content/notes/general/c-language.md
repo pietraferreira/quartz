@@ -98,3 +98,9 @@ fn_c                |00000009|   T  |              FUNC|00000055|     |.text
 - **t** or **T**: indicates where code is defined, indicating whether the function is local to this file (**t**) or not (**T**) (`.text`).
 - **d** or **D**: initialised global variable, **d** meaning local and **D** global (`.data`).
 - **b** is for static/local **uninitialised** global variables, and **B** and **C** if it is not static/local (`.bss`).
+
+
+## Related
+- [GCC](notes/general/gcc.md)
+- [LLVM](notes/general/llvm.md)
+- [Compiler Flags](notes/general/compiler-flags.md)

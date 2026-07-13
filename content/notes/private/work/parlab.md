@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Parallel Computing Laboratory"
 tags:
   - cs/riscv

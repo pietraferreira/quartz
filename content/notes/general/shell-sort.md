@@ -1,7 +1,7 @@
 ---
 title:  "Shell Sort"
 tags:
-  - work/engineer-training
+  - cs/algorithms
   - cs/sorting
 created: 2022-06-05
 ---

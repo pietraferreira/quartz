@@ -83,3 +83,8 @@ type: cheatsheet
 >   - new Promise
 >   
 >  
+
+
+## Related
+- [MSFConsole Cheatsheet](notes/hacking/htb-msfconsole-cheatsheet.md)
+- [TryHackMe - Metasploit](notes/hacking/thm-metasploit.md)

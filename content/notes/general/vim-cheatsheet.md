@@ -78,3 +78,9 @@ After you press `Esc`, the text will be inserted into all the lines you selected
 | `K`                                  | Hover message.             |
 | `g` + `r`                            | Goto references.           |
 | `:lua vim.lsp.buf.formatting_sync()` | Format code.               |
+
+
+## Related
+- [Tmux Cheatsheet](notes/general/tmux-cheatsheet.md)
+- [Dotfiles Management](notes/general/dotfile-management.md)
+- [Help](notes/general/help.md)

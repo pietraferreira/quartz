@@ -2,7 +2,7 @@
 title:  "Bubble Sort"
 tags:
   - cs/sorting
-  - work/engineer-training
+  - cs/algorithms
 created: 2022-06-05
 ---
 # Bubble Sort

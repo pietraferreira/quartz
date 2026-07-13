@@ -543,3 +543,9 @@ Mode              Size  Type  Last modified              Name
 
 ## Reference
 - IppSec - Driver ([Video](https://www.youtube.com/watch?v=N2ahkarb-zI&t=634s))
+
+
+## Related
+- [HTB - Pandora](notes/hacking/htb-pandora.md)
+- [HTB - Secret](notes/hacking/htb-secret.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

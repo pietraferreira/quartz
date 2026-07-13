@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Activity Diagram"
 tags:
   - cs/uml

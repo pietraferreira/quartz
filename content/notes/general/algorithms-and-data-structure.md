@@ -1,23 +1,23 @@
 ---
 title: "Algorithms and Data Structure" 
 tags:
-  - university/cs2004 
+  - cs/algorithms
 programming-languages:
 created: 2022-06-05
 ---
 ---
 ## Topics
-- [Sets and Maps](notes/university/year2/cs2004/sets-and-maps.md)
+- [Sets and Maps](notes/general/sets-and-maps.md)
 - [Vectors and Arrays](notes/general/vectors-arrays.md)
-- [Big O Notation](notes/university/year2/cs2004/big-o-notation.md)
+- [Big O Notation](notes/general/big-o-notation.md)
 - [Lists](notes/general/lists.md)
 - [Stacks and Queues](notes/general/stack.md)
 - [Hash Tables](notes/general/hash-tables.md)
-- [Trees](notes/university/year2/cs2004/trees.md)
-- [Sorting](notes/university/year2/cs2004/sorting.md)
-- [Graphs](notes/university/year2/cs2004/graphs.md)
-    - [Minimum Spanning Subtree](notes/university/year2/cs2004/minimum-spanning-tree.md)
-    - [Dijkstra](notes/university/year2/cs2004/dijkstra-algorithm.md)
+- [Trees](notes/general/trees.md)
+- [Sorting](notes/general/sorting.md)
+- [Graphs](notes/general/graphs.md)
+    - [Minimum Spanning Subtree](notes/general/minimum-spanning-tree.md)
+    - [Dijkstra](notes/general/dijkstra-algorithm.md)
     - [Floyd-Warshall](notes/general/floyd-warshall.md)
     - [Inkblot](notes/general/inkblot-algorithm.md)
 - [Garbage Collection](notes/general/garbage-collection.md)

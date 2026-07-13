@@ -721,3 +721,9 @@ Now attempting to backup PandoraFMS client
 ```
 
 And we are root!!
+
+
+## Related
+- [HTB - Driver](notes/hacking/htb-driver.md)
+- [HTB - Secret](notes/hacking/htb-secret.md)
+- [HTB - Catch Writeup](notes/hacking/htb-catch-writeup.md)

@@ -2,7 +2,7 @@
 title: "Lexical Analysis"
 tags:
   - cs
-  - work/engineer-training
+  - cs/toolchains
 programming-languages:
 created: 2022-06-27
 ---
@@ -39,7 +39,7 @@ Typical tokens:
 | VAR      | the letters V, A, R           | VAR               |
 
 ## Symbol Tables
-They are used throughout the [compiler](notes/private/work/compilers.md) to build information about symbols:
+They are used throughout the compiler to build information about symbols:
 
 ```c
 struct symbtab

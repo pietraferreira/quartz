@@ -317,3 +317,9 @@ To find stack size, for example the size after overwritting:
 ```bash
 (gdb) info proc all
 ```
+
+
+## Related
+- [Identify Return Address](notes/hacking/identify-return-address.md)
+- [Stack-based Buffer Overflows on Linux x86](notes/hacking/htb-stack-based-overflow-linux.md)
+- [Generate Shellcode](notes/hacking/generate-shellcode.md)

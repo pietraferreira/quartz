@@ -2,7 +2,7 @@
 title:  "Binary Heap"
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-06
 ---
@@ -29,3 +29,9 @@ Use an array with **N** elements.
 
 ## Reference
 - [Heapsort](notes/general/heapsort.md)
+
+
+## Related
+- [Heapsort](notes/general/heapsort.md)
+- [Binary Trees](notes/general/binary-trees.md)
+- [Trees](notes/general/trees.md)

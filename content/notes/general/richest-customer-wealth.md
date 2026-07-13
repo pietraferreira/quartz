@@ -4,22 +4,22 @@ tags:
   - leetcode
 created: 2023-05-24
 ---
-# Intuition
+## Intuition
 ---
 ![](notes/images/Screenshot%202023-05-24%20at%2012.36.11.png)
 
 I'd sum each row, find the one with the highest value and then return that value.
 
-# Approach
+## Approach
 ---
 
-# Complexity
+## Complexity
 ---
 - Time complexity: $O(m * n)$
 
 - Space complexity: $O(1)$
 
-# Code
+## Code
 ---
 ```java
 class Solution {
@@ -75,3 +75,9 @@ public:
     }
 };
 ```
+
+
+## Related
+- [Valid Anagram](notes/general/valid-anagram.md)
+- [Running Sum of 1D Array](notes/general/running-sum-of-1d-array.md)
+- [CS Problems](notes/general/cs-problems.md)

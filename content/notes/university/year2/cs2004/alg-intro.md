@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Introduction to Algorithms"
 tags:
   - university/cs2004
@@ -51,7 +52,7 @@ Briefly, the halting problem means: can we find a program that can predict wheth
 
 **[Alan Turing](notes/university/year2/cs2004/alan-turing.md)** proved that is is **impossible** to solve the halting problem - which was used to show that the **decision** problem was impossible to solve.
 
-In 1936 Turing created two concepts: **[turing machine](notes/university/year2/cs2004/turing-machines.md)** and **universal turing machine**.
+In 1936 Turing created two concepts: **[turing machine](notes/general/turing-machines.md)** and **universal turing machine**.
 
 In 1939 Turing created a machine called "The Bombe" which helped crack the German enigma code. 
 

@@ -1,5 +1,5 @@
 ---
-title: "2022-06-27"
+title: "Benefits of VMs & Misc Notes"
 tags:
   - cs/hacking
   - cs/hacking/htb
@@ -109,3 +109,8 @@ exit
 >   - new Promise
 >   
 >  
+
+
+## Related
+- [Pentesting Notes & Commands](notes/hacking/pentesting-notes-commands.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

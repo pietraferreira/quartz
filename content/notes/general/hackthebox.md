@@ -1,5 +1,6 @@
 ---
 title: "HackTheBox"
+hidden: true
 tags:
   - hub
 programming-languages:
@@ -22,11 +23,5 @@ Everything related to HackTheBox.
 - [Driver](notes/hacking/htb-driver.md)
 - [Pandora](notes/hacking/htb-pandora.md)
 - [Secret](notes/hacking/htb-secret.md)
-
-### All
-```dataview
-table without ID
-title as "Title", file.ctime as "Created Time", file.link as "Link"
-from #hacking/htb 
-sort file.ctime desc
-```
+- [Catch](notes/hacking/htb-catch-writeup.md)
+- [Files Transfer](notes/hacking/files-transfer-htb-writeup.md)

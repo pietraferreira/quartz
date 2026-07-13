@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "2022-06-17 - Jeremy Relocation Notes"
 tags:
   - work/corev

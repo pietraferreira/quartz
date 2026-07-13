@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "UE Methods and Techniques - Prototyping, Mockups and Wireframes"
 tags:
   - university/cs2003

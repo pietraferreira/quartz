@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "GCC Guide by Maxim"
 tags:
   - work/engineer-training 

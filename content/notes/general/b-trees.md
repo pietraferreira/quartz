@@ -2,7 +2,7 @@
 title:  "B-Trees"
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-05
 ---
@@ -24,3 +24,9 @@ If the data elements of a node are $a_1$, $a_2$, ..., $a_n$, then:
 **2-3 trees are B-trees of order 3**.
 
 B-trees are useful where data is in large blocks, hence databases and filesystems.
+
+
+## Related
+- [2-3 Trees](notes/general/2-3-trees.md)
+- [Binary Trees](notes/general/binary-trees.md)
+- [Trees](notes/general/trees.md)

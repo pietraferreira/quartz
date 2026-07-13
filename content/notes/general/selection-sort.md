@@ -1,7 +1,7 @@
 ---
 title:  "Selection Sort"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 created: 2022-10-24
 ---

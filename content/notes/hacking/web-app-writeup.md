@@ -1,5 +1,5 @@
 ---
-title:  2022-06-29
+title: "Web Apps and Local File Inclusion (LFI)"
 tags:
   - cs/hacking
 created: 2022-06-29
@@ -29,3 +29,9 @@ We can easily determine if this is the case by attempting to load a file that we
 This is successful and a list of users is returned. It is worth noting that inputting /etc/passwd might not always work if the inclusion already specifies a working directory. For instance, consider the following code:
 
 `curl 'http://{target_IP}/?file=/etc/passwd'`
+
+
+## Related
+- [THM - Daily Bugle Writeup](notes/hacking/daily-bugle-writeup.md)
+- [Nginx](notes/hacking/nginx.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

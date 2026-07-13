@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Introduction to Genetic Algorithms"
 tags:
   - university/cs2004

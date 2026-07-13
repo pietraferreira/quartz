@@ -62,3 +62,9 @@ We can check if the first bytes of our shellcode matches the bytes after the NOP
 <SNIP>
 ```
 
+
+
+## Related
+- [Take Control of EIP](notes/hacking/take-control-eip.md)
+- [Binary Exploitation](notes/hacking/binary-exploitation.md)
+- [Stack-overflow Prevention Techniques](notes/hacking/so-prevention-techniques.md)

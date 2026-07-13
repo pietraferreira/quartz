@@ -22,3 +22,8 @@ Mainframe processors use the **big-endian** format, some RISC architectures, min
 | --- | --- | --- | --- | --- |
 | Big-Endian | AA | BB | CC | DD |
 | Little-Endian | DD | CC | BB | AA |
+
+
+## Related
+- [CPU Architecture](notes/hacking/cpu-architecture.md)
+- [Binary Exploitation](notes/hacking/binary-exploitation.md)

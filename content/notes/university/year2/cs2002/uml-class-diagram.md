@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "UML - Class Diagram"
 tags:
   - cs/uml

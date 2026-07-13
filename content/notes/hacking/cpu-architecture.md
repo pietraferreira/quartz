@@ -127,4 +127,9 @@ It performs two operations:
 - [Stack Overflow Guide - HTB](notes/hacking/htb-stack-based-overflow-linux.md)
 - [Stacks and Queues](notes/general/stack.md)
 - [Endianness](notes/hacking/endianness.md)
-- [GDB](notes/private/work/gdb.md)
+
+
+## Related
+- [Endianness](notes/hacking/endianness.md)
+- [Binary Exploitation](notes/hacking/binary-exploitation.md)
+- [Take Control of EIP](notes/hacking/take-control-eip.md)

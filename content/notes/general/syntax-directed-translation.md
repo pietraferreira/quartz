@@ -1,7 +1,7 @@
 ---
 title: "Syntax Directed Translation"
 tags:
-  - work/engineer-training
+  - cs/toolchains
 programming-languages:
 created: 2022-06-16
 ---

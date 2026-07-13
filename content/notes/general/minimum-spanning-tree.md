@@ -1,14 +1,14 @@
 ---
 title: "Minimum Spanning Tree"
 tags:
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-06
 last-edited: 2022-11-07
 ---
 It is a subtree with the minimum possible edge weight that connects all nodes together.
 
-There must exist **no cycles** in the tree, meaning it is usually a **complete** [graph](notes/university/year2/cs2004/graphs.md).
+There must exist **no cycles** in the tree, meaning it is usually a **complete** [graph](notes/general/graphs.md).
 
 The **cost** of a spanning tree is the sum of all the edge weights and a minimum spanning tree (MST) is the spanning tree with the minimum cost.
 
@@ -39,5 +39,5 @@ Cancer imaging:
 Prim's Algorithm for working out the Minimum Spanning Trees: [https://www.cs.usfca.edu/~galles/visualization/Prim.html](https://www.cs.usfca.edu/~galles/visualization/Prim.html)
 
 ## See also
-- [Trees](notes/university/year2/cs2004/trees.md)
-- [Graphs](notes/university/year2/cs2004/graphs.md)
+- [Trees](notes/general/trees.md)
+- [Graphs](notes/general/graphs.md)

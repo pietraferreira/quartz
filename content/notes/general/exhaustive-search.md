@@ -1,14 +1,14 @@
 ---
 title: "Exhaustive Search"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 module:
   - cs2004
 last-edited:
 created: 2022-11-07
 ---
-It systematically evaluates every possible path in a [graph](notes/university/year2/cs2004/graphs.md). It is guaranteed to find what we are looking for, however it is **unsuitable** for most real world problems.
+It systematically evaluates every possible path in a [graph](notes/general/graphs.md). It is guaranteed to find what we are looking for, however it is **unsuitable** for most real world problems.
 
 ## Pseudo-Code
 ```

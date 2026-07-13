@@ -48,3 +48,9 @@ type: cheatsheet
 >   - new Promise
 >   
 >  
+
+
+## Related
+- [Netcat](notes/hacking/netcat.md)
+- [Introduction to Networking](notes/hacking/htb-intro-networking.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

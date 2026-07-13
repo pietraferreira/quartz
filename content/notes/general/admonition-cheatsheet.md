@@ -60,3 +60,8 @@ The following admonition types are currently supported:
 
 ---
 More info [here](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) and [here is the repo](https://github.com/valentine195/obsidian-admonition).
+
+
+## Related
+- [Help](notes/general/help.md)
+- [Tutorials Hub](notes/general/tutorial-hub.md)

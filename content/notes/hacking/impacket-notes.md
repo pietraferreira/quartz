@@ -51,3 +51,8 @@ List strings in the file:
 ```bash
 strings -n 10 <filename>
 ```
+
+
+## Related
+- [MSFConsole Cheatsheet](notes/hacking/htb-msfconsole-cheatsheet.md)
+- [Pentesting Notes & Commands](notes/hacking/pentesting-notes-commands.md)

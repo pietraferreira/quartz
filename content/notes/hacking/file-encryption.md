@@ -24,3 +24,8 @@ openssl enc -aes256 -iter 100000 -pbkdf2 -in /etc/passwd -out passwd.enc
 ```bash
 openssl enc -d -aes256 -iter 100000 -pbkdf2 -in passwd.enc -out passwd
 ```
+
+
+## Related
+- [THM - Encryption 101](notes/hacking/thm-encryption101.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Forum DevLog"
 tags:
   - university/cs2001

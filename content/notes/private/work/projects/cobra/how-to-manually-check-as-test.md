@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "How to Manually Check a Test"
 tags:
   - work/cobra

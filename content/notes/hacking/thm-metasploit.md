@@ -591,3 +591,9 @@ Others Commands (these will be listed under different menu categories in the hel
     hashdump: Dumps the contents of the SAM database
 
 Although all these commands may seem available under the help menu, they may not all work. For example, the target system might not have a webcam, or it can be running on a virtual machine without a proper desktop environment. 
+
+
+## Related
+- [MSFConsole Cheatsheet](notes/hacking/htb-msfconsole-cheatsheet.md)
+- [Meterpreter](notes/hacking/htb-meterpreter-cheatsheet.md)
+- [TryHackMe - Metasploit](notes/hacking/thm-metasploit.md)

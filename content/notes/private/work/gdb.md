@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "GDB"
 tags:
   - work/engineer-training 

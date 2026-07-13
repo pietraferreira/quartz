@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Debugging Techniques"
 tags:
   - work/engineer-training 

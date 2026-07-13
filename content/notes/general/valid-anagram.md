@@ -4,11 +4,11 @@ tags:
   - leetcode
 created: 2023-05-25
 ---
-# Intuition
+## Intuition
 ---
 Get the frequencies from each String, then compare them and if 0 then it is an anagram.
 
-# Approach
+## Approach
 ---
 We keep track of the frequency of each letter in the two Strings. We check if the length is the same, if not then we return false as anagrams need to be the same length. We loop through each character in both Strings and increment the frequency of the corresponding letter. We do:
 
@@ -18,13 +18,13 @@ x.chatAt(i) - 'a'
 
 We subtract 'a', the Unicode/ASCII character with code 97. Therefore, when 'a' is subtracted by itself, the result is 0, meaning the index of **a** in the alphabet. With b for example, 'a' - 'b' is 1, indicating the index of 1. The range is 0 to 25, that's why the storing int array is of size 26.
 
-# Complexity
+## Complexity
 ---
 - Time complexity: $O(n)$
 
 - Space complexity: $O(1)$
 
-# Code
+## Code
 ---
 ```java
 class Solution {
@@ -49,3 +49,9 @@ class Solution {
     }
 }
 ```
+
+
+## Related
+- [Running Sum of 1D Array](notes/general/running-sum-of-1d-array.md)
+- [Richest Customer Wealth](notes/general/richest-customer-wealth.md)
+- [CS Problems](notes/general/cs-problems.md)

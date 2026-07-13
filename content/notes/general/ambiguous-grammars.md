@@ -2,13 +2,13 @@
 title:  "Ambiguous Grammars"
 tags:
   - cs
-  - work/engineer-training
+  - cs/toolchains
 programming-languages:
 created: 2022-06-16
 ---
 # Ambiguous Grammars
 ---
-- An ambiguous grammar permits more than one parse [tree](notes/university/year2/cs2004/trees.md) for some sentences. For example, parsing **xxx** with the following grammar:
+- An ambiguous grammar permits more than one parse [tree](notes/general/trees.md) for some sentences. For example, parsing **xxx** with the following grammar:
 
 S $\rightarrow$ AA
 

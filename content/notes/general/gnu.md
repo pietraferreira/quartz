@@ -1,7 +1,7 @@
 ---
 title: "GNU"
 tags:
-  - work/engineer-training
+  - cs/toolchains
   - cs/compilers
 programming-languages:
 created: 2022-07-11
@@ -88,8 +88,6 @@ Anything that cannot be resolved in the first pass. It is either resolved at the
 ## Resources
 - Binutils Porting Guide ([here](https://www.sourceware.org/binutils/binutils-porting-guide.txt))
 - [Linker Relaxation](notes/general/linker-relaxation.md)
-- [Relocations](notes/private/work/relocations.md)
 - [RISCV Toolchain](notes/general/riscv-toolchain.md)
-- [Compiler Toolchains](notes/private/work/compiler-toolchains.md)
 - [GCC](notes/general/gcc.md)
 - [Fix-ups](notes/general/fixups.md)

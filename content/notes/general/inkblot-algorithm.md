@@ -2,7 +2,7 @@
 title: "Inkblot Algorithm"
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
   - c
 created: 2022-06-06

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Hardware Loops - COREV"
 tags:
   - work/corev

@@ -1,7 +1,7 @@
 ---
 title:  "Sorting"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 last-edited: 2022-10-24
 created: 2022-06-05
@@ -18,11 +18,11 @@ It is the problem or reordering items of an array in a certain order.
 ## Sorting methods
 - [Bubble Sort](notes/general/bubble-sort.md)
 - [Quicksort](notes/general/quicksort.md)
-- [Radix Sort](notes/university/year2/cs2004/radix-sort.md)
+- [Radix Sort](notes/general/radix-sort.md)
 - [Shell Sort](notes/general/shell-sort.md)
 - [Heapsort](notes/general/heapsort.md)
 - [Bucket Sort](notes/general/bucket-sort.md)
-- [Selection Sort](notes/university/year2/cs2004/selection-sort.md)
+- [Selection Sort](notes/general/selection-sort.md)
 
 ## Stability
 A **stable** sort guarantee to preserve the ordering from a first sort, where the second sort finds the records to be equal.

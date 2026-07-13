@@ -392,3 +392,8 @@ ftp> USER anonymous
 ftp> PUT c:\windows\system32\drivers\etc\hosts
 ftp> bye
 ```
+
+
+## Related
+- [File Transfers](notes/hacking/htb-file-transfers.md)
+- [File Transfer Cheatsheet](notes/hacking/htb-file-transfer-cheatsheet.md)

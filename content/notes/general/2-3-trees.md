@@ -2,7 +2,7 @@
 title: "2-3 Trees" 
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-05
 ---
@@ -17,3 +17,9 @@ Leaf nodes have no children and one or two data elements.
 **2-3 trees are required to be balanced**.
 
 ![2-3-tree](notes/images/2-3-tree.png)
+
+
+## Related
+- [B-Trees](notes/general/b-trees.md)
+- [Binary Trees](notes/general/binary-trees.md)
+- [Trees](notes/general/trees.md)

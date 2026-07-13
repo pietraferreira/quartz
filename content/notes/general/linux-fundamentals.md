@@ -136,3 +136,9 @@ beginning of the line
 `[CTRL] + Y` -> pastes erased word
 
 `[CTRL] + L` -> clear terminal
+
+
+## Related
+- [Dotfiles Management](notes/general/dotfile-management.md)
+- [Tutorials Hub](notes/general/tutorial-hub.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

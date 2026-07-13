@@ -111,3 +111,9 @@ Find Cursor | `⌘` + `/`  _or use a theme or cursor shape that is easy to see_
 
 ---
 Source: [GitHub - squarism](https://gist.github.com/squarism/ae3613daf5c01a98ba3a)
+
+
+## Related
+- [Tmux Cheatsheet](notes/general/tmux-cheatsheet.md)
+- [Vim Cheatsheet](notes/general/vim-cheatsheet.md)
+- [Help](notes/general/help.md)

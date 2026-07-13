@@ -43,3 +43,8 @@ file bow32 | tr "," "\n"
 It is a feature in Windows XP and later in Service Pack 2 (SP2). It monitors programs during execution to ensure that they access memory areas cleanly.
 
 It terminates the program if a program attempts to call or access the program code in an unauthorised manner.
+
+
+## Related
+- [Stack-based Buffer Overflows on Linux x86](notes/hacking/htb-stack-based-overflow-linux.md)
+- [Binary Exploitation](notes/hacking/binary-exploitation.md)

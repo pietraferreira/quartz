@@ -1,7 +1,7 @@
 ---
 title: "Graphs"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 created: 2022-06-06
 last-edited: 2022-11-07
@@ -37,19 +37,19 @@ For example:
 - Two nodes connected by an edge are **adjacent**.
 - A **weighted graph** has values attached to edges.
 - A path from a node back to itself is a **cycle**.
-- An **undirected** graph with **no cycles** is a [tree](notes/university/year2/cs2004/trees.md).
+- An **undirected** graph with **no cycles** is a [tree](notes/general/trees.md).
 - A **directed** graph with **no cycles** is a **directed acyclic graph** or DAG.
-- A **DAG** where no node is pointed to by more than one node is a **directed** [tree](notes/university/year2/cs2004/trees.md).
+- A **DAG** where no node is pointed to by more than one node is a **directed** [tree](notes/general/trees.md).
 - A **complete** graph is normally an undirected graph with an edge between **each** pair of vertices.
 
 ## Graph Search
 We start at the source node and search until we find the target node. We normally want to visit each node **once and only once**.
 
-- [Depth-First Search](notes/university/year2/cs2004/depth-first-search.md)
-- [Exhaustive Search](notes/university/year2/cs2004/exhaustive-search.md)
-- [Breath-First Search](notes/university/year2/cs2004/breadth-first-search.md)
-- [Best-First Search - A* Search](notes/university/year2/cs2004/best-first-search.md)
-- [Minimum Spanning Tree (MST) - Prim's](notes/university/year2/cs2004/minimum-spanning-tree.md)
+- [Depth-First Search](notes/general/depth-first-search.md)
+- [Exhaustive Search](notes/general/exhaustive-search.md)
+- [Breath-First Search](notes/general/breadth-first-search.md)
+- [Best-First Search - A* Search](notes/general/best-first-search.md)
+- [Minimum Spanning Tree (MST) - Prim's](notes/general/minimum-spanning-tree.md)
 
 ## Paths
 A sequence of `k` vertices, `[v1, v2, ..., vk]`, such that any pair of consecutive vertices, `vi, vi+1` are adjacent (connected by an edge) is called a **path**.
@@ -77,8 +77,7 @@ If we have $N$ nodes to represent:
 - For an $N$ by $N$ matrix $G$ a non-zero value of $g_0$ ($i$th row $j$)
 
 ## See also
-- [Trees](notes/university/year2/cs2004/trees.md)
-- [Dijkstra](notes/university/year2/cs2004/dijkstra-algorithm.md)
+- [Trees](notes/general/trees.md)
+- [Dijkstra](notes/general/dijkstra-algorithm.md)
 - [Floyd-Warshall](notes/general/floyd-warshall.md)
 - [Inkblot](notes/general/inkblot-algorithm.md)
-- [Graphviz](notes/private/work/graphviz.md)

@@ -60,3 +60,9 @@ In **tmux**, a session is displayed on screen by a client and all sessions are m
 | Shortcut         | Function          |
 | ---------------- | ----------------- |
 | `<leader>` + `?` | List key bindings |
+
+
+## Related
+- [iTerm2 Cheatsheet](notes/general/iterm2-cheatsheet.md)
+- [Vim Cheatsheet](notes/general/vim-cheatsheet.md)
+- [Help](notes/general/help.md)

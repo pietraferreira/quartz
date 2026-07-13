@@ -15,7 +15,6 @@ A buffer overflow can overwrite the specific program's **return address** with a
 - [CPU Architecture](notes/hacking/cpu-architecture.md)
     - [Stacks and Queues](notes/general/stack.md)
     - [Endianness](notes/hacking/endianness.md)
-- [GDB](notes/private/work/gdb.md)
 - [Take Control of EIP](notes/hacking/take-control-eip.md)
 - [Generate Shellcode](notes/hacking/generate-shellcode.md)
 - [Identification of the Return Address](notes/hacking/identify-return-address.md)
@@ -83,3 +82,9 @@ There are four different types of ISA:
 | Execute                    | The instruction is executed. It could be operations in the ALU for example, or the control of peripheral devices.                              |
 | Update Instruction Pointer | If no jump has been executed, the **IAR** is now increased by the length of the instruction so that it points to the next machine instruction. |
 >>>>>>> e671289f5537f91a2b4e49523f95459c6288c3fc
+
+
+## Related
+- [Take Control of EIP](notes/hacking/take-control-eip.md)
+- [Binary Exploitation](notes/hacking/binary-exploitation.md)
+- [Generate Shellcode](notes/hacking/generate-shellcode.md)

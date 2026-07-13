@@ -2,7 +2,7 @@
 title: "Parse Trees"
 tags:
   - cs
-  - work/engineer-training
+  - cs/toolchains
 created: 2022-06-16
 ---
 ![parse-tree-example](notes/images/parse-tree-example.png)
@@ -89,4 +89,4 @@ However, they are hard to construct and syntactic identify does not mean semanti
 
 ## See Also
 - [Formal Languages](notes/general/formal-languages.md)
-- [Trees](notes/university/year2/cs2004/trees.md)
+- [Trees](notes/general/trees.md)

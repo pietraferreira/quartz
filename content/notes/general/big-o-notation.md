@@ -1,7 +1,7 @@
 ---
 title:  "Big O Notation"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 last-edited: 2022-10-24
 created: 2022-06-05
@@ -10,7 +10,7 @@ created: 2022-06-05
 ---
 It describes how the performance of an algorithm scales with the size of the problem.
 
-[](notes/private/work/compiler-optimisation.md#Performance|Performance) may be **time to execute** or **amount of memory**.
+Performance may be **time to execute** or **amount of memory**.
 
 Size must be a quantitative measure of the scale of the problem. For example:
 - Number of items to sort.

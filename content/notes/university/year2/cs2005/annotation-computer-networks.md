@@ -1,4 +1,5 @@
 ---
+draft: true
 annotation-target: computer-networks.pdf
 tags:
   - university/cs2005

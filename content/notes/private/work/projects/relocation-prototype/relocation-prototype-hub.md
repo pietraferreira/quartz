@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Relocation Prototype Reports"
 tags:
   - work/relocation-prototype

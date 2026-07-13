@@ -95,3 +95,9 @@ reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
 **Note:** Simon Tatham is the creator of PuTTY (and his name is part of the path), not the username for which we are retrieving the password. The stored proxy username should also be visible after running the command above.
 
 Just as putty stores credentials, any software that stores passwords, including browsers, email clients, FTP clients, SSH clients, VNC software and others, will have methods to recover any passwords the user has saved.
+
+
+## Related
+- [LOLBins](notes/hacking/lolbins.md)
+- [Pentesting Notes & Commands](notes/hacking/pentesting-notes-commands.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

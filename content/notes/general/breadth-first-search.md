@@ -1,12 +1,12 @@
 ---
 title: "Breadth-First Search"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 last-edited:
 created: 2022-11-07
 ---
-It explores the graph differently from [depth-first search](notes/university/year2/cs2004/depth-first-search.md).
+It explores the graph differently from [depth-first search](notes/general/depth-first-search.md).
 
 It considers the **neighbouring** nodes first:
 - All the neighbours at the start node are expanded first.
@@ -17,7 +17,7 @@ It is a very expensive search since all the partial paths being considered must 
 
 It will eventually find a path to the goal but it may not be the best path.
 
-It is similar to the [exhaustive search](notes/university/year2/cs2004/exhaustive-search.md) but it stops when the goal node is reached.
+It is similar to the [exhaustive search](notes/general/exhaustive-search.md) but it stops when the goal node is reached.
 
 ![400](notes/images/Screenshot%202022-11-07%20at%2011.32.54.png)
 

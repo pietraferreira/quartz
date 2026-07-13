@@ -4,6 +4,7 @@
 
 <body>
 {{partial "search.html" .}}
+{{partial "sidebar.html" .}}
 <div class="singlePage">
     <!-- Begin actual content -->
     {{partial "header.html" .}}
@@ -12,7 +13,8 @@
         {{with .Params.description}}
             <p>{{.}}</p>
         {{end}}
-        {{partial "page-list.html" .Paginator.Pages.ByLastmod.Reverse }}
+        {{ $paginator := .Paginate .RegularPagesRecursive.ByDate.Reverse }}
+        {{partial "page-list.html" $paginator.Pages }}
         {{ template "_internal/pagination.html" .}}
     </article>
     {{partial "contact.html" .}}

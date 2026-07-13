@@ -2,7 +2,7 @@
 title: "Vectors and Arrays"
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 ---
 # Vectors and Arrays
 ---
@@ -37,7 +37,7 @@ We can also use **alloca** (allocated on the stack).
 ```
 
 ## Associative arrays
-- Also known as **addressable arrays** or [maps](notes/university/year2/cs2004/sets-and-maps.md).
+- Also known as **addressable arrays** or [maps](notes/general/sets-and-maps.md).
 
 Ordinary arrays/vectors when given an index into the array output a value whereas **associative arrays** when given a value outputs an index.
 

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "DejaGNU Notes"
 tags:
   - work

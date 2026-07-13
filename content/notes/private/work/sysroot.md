@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Sysroot"
 tags:
   - work/engineer-training

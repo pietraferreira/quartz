@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Heuristic Seach, Hill Climbing and Simulated Annealing"
 tags:
   - university/cs2004
@@ -24,7 +25,7 @@ We try to find a solution that minimises and maximises the fitness, depending on
 The computational complexity of Heuristic search methods is often very difficult to define.
 
 We therefore often rate their performance in terms of **the number of fitness function calls**.
-- We compute the [Big O](notes/university/year2/cs2004/big-o-notation.md) of this function.
+- We compute the [Big O](notes/general/big-o-notation.md) of this function.
 
 We aim to choose the method that finds us the global optimum in the smallest number of fitness function evaluations.
 

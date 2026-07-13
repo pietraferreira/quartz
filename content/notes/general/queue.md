@@ -2,7 +2,7 @@
 title:  "Queue"
 tags:
   - cs/lists
-  - university/cs2004 
+  - cs/algorithms
 created: 2022-10-24
 ---
 # Queue

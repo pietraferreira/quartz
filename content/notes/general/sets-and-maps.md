@@ -1,7 +1,7 @@
 ---
 title: Sets and Maps
 tags:
-  - work/engineer-training
+  - cs/algorithms
 ---
 **Sets** are a collection of objects:
   - They might be ordered or unordered.
@@ -91,3 +91,9 @@ C++ has great built-in support for these, C does not.
 >   - new Promise
 >   
 >  
+
+
+## Related
+- [Hash Tables](notes/general/hash-tables.md)
+- [Data Structures](notes/general/data-structures.md)
+- [Lists](notes/general/lists.md)

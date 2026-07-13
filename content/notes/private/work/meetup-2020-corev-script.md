@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Meet-up 2020 CORE-V - Script" 
 tags:
   - work/corev

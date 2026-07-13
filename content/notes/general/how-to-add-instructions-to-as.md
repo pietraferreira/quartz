@@ -1,7 +1,7 @@
 ---
 title:  "How to add an instruction to the GNU assembler"
 tags:
-  - work/engineer-training
+  - cs/toolchains
   - help
 programming-languages:
 created: 2022-07-20

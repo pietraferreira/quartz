@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Three Address Code"
 tags:
   - work/engineer-training 

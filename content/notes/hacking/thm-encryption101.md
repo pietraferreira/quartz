@@ -117,3 +117,8 @@ AES, sometimes called Rijndael after its creators, stands for Advanced Encryptio
 AES and DES both operate on blocks of data (a block is a fixed size series of bits).
 
 AES is complicated to explain, and doesn’t seem to come up as often. If you’d like to learn how it works, here’s an excellent video from Computerphile [https://www.youtube.com/watch?v=O4xNJsjtN6E](https://www.youtube.com/watch?v=O4xNJsjtN6E)
+
+
+## Related
+- [File Encryption](notes/hacking/file-encryption.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

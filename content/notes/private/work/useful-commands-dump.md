@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Useful Commands Dump"
 tags:
   - work/engineer-training 

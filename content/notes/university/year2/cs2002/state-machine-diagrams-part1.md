@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "State Machine Diagrams - Part 1"
 tags:
   - cs/uml

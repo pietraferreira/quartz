@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "ISA (Instruction Set Architecture)"
 tags:
   - work/engineer-training 

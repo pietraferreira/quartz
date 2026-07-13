@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Foundation of Algorithm Analysis" 
 tags:
   - university/cs2004
@@ -45,7 +46,7 @@ We use it to measure the running time/computation of an algorithm.
 
 Where **n** is the size of the input, if there is more than one input we might have T(n,m) where **n** and **m** are the sizes of the inputs.
 
-We can use T(n) to calculate the **[Big O](notes/university/year2/cs2004/big-o-notation.md)**.
+We can use T(n) to calculate the **[Big O](notes/general/big-o-notation.md)**.
 
 # Pseudo-Code
 ---

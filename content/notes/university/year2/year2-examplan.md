@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Exam Revision Plan
 tags:
   - university/exam2023

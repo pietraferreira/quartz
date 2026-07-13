@@ -76,3 +76,9 @@ type: cheatsheet
 >   - new Promise
 >   
 >  
+
+
+## Related
+- [Meterpreter](notes/hacking/htb-meterpreter-cheatsheet.md)
+- [TryHackMe - Metasploit](notes/hacking/thm-metasploit.md)
+- [Impacket and Random Stuff](notes/hacking/impacket-notes.md)

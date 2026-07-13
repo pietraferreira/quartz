@@ -4,7 +4,7 @@ tags:
   - leetcode
 created: 2023-05-24
 ---
-# Intuition
+## Intuition
 ---
 First I thought about just summing index 1, not 0, with the previous element (e.g.: i - 1). However, the output needs to be an integer array. This is my initial non-working code:
 
@@ -22,17 +22,17 @@ class Solution {
 }
 ```
 
-# Approach
+## Approach
 ---
 Not much to say, pretty simple.
 
-# Complexity
+## Complexity
 ---
 - Time complexity: $O(n)$
 
 - Space complexity: $O(1)$ (constant)
 
-# Code
+## Code
 ---
 ```java
 class Solution {
@@ -60,3 +60,9 @@ class Solution {
     }
 }
 ```
+
+
+## Related
+- [Valid Anagram](notes/general/valid-anagram.md)
+- [Richest Customer Wealth](notes/general/richest-customer-wealth.md)
+- [Vectors and Arrays](notes/general/vectors-arrays.md)

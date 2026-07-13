@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "PLT and GOT"
 tags:
   - cs/relocations

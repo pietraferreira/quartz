@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "CORE-V"
 tags:
   - work/corev

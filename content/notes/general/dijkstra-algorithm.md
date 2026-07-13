@@ -1,7 +1,7 @@
 ---
 title: "Dijkstra Algorithm"
 tags:
-  - university/cs2004 
+  - cs/algorithms
 programming-languages:
 created: 2022-06-06
 ---
@@ -60,7 +60,7 @@ We then iterate until we visit all the nodes. The completed table for that graph
 
 ## See also
 ---
-- [Graphs](notes/university/year2/cs2004/graphs.md)
+- [Graphs](notes/general/graphs.md)
 - [Floyd-Warshall](notes/general/floyd-warshall.md)
 
 > [!failure]- Failure 

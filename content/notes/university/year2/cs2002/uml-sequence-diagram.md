@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "UML - Sequence Diagram"
 tags:
   - cs/uml

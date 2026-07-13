@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "ZFinx Notes"
 tags:
   - work/corev

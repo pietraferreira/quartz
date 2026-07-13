@@ -71,3 +71,9 @@ tail -1 /var/www/upload/SecretUploadDirectory/users.txt
 ```
 
 Then we can navigate to `http://localhost/SecretUploadDirectory`.
+
+
+## Related
+- [Introduction to Networking](notes/hacking/htb-intro-networking.md)
+- [RDP](notes/hacking/rdp.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

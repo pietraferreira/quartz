@@ -101,3 +101,9 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ1OGEyMjM4OWQ5YjA0NjIyMGEyYzM
 We can decode it:
 
 ![Screenshot from 2022-07-18 17-31-38](notes/images/Screenshot%20from%202022-07-18%2017-31-38.png)
+
+
+## Related
+- [HTB - Driver](notes/hacking/htb-driver.md)
+- [HTB - Pandora](notes/hacking/htb-pandora.md)
+- [HTB - Catch Writeup](notes/hacking/htb-catch-writeup.md)

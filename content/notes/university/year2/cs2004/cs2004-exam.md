@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "CS2004 - Exam"
 tags:
   - university/exam2023 

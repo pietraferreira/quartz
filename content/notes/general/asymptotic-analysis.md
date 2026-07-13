@@ -1,22 +1,22 @@
 ---
 title: "Asymptotic Analysis"
 tags:
-  - university/cs2004
+  - cs/algorithms
 last-edited:
 created: 2022-12-16
 ---
 ---
-The asymptotic analysis of an algorithm determines the running time in [Big O](notes/university/year2/cs2004/big-o-notation.md) notation.
+The asymptotic analysis of an algorithm determines the running time in [Big O](notes/general/big-o-notation.md) notation.
 
 To perform the asymptotic analysis:
 - We find the worst-case number of primitive operations executed as a function of the input size, $T(n)$.
-- We express this function with [Big O](notes/university/year2/cs2004/big-o-notation.md) notation.
+- We express this function with [Big O](notes/general/big-o-notation.md) notation.
 
-[Big O](notes/university/year2/cs2004/big-o-notation.md) notation defines an upper bound of an algorithm (worst-case).
+[Big O](notes/general/big-o-notation.md) notation defines an upper bound of an algorithm (worst-case).
 
 The runtime in terms of how quickly it grows is relative to the input, as the input gets larger.
 
-More info [here](notes/university/year2/cs2004/time-complexity.md) (Time Complexity).
+More info [here](notes/general/time-complexity.md) (Time Complexity).
 
 ## Big-O Runtime Analysis
 ---

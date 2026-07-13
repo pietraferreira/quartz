@@ -233,3 +233,9 @@ By remembering the powers of two up to eight, it can become an instant calculati
 
 The tricky part of this is getting the actual IP Address range because 0 is a number and not null in networking. So in our `/25` with 128 IP Addresses, the first range is `192.168.1.0-127`. The first address is the network, and the last is the broadcast address, which means the usable IP Space would become `192.168.1.1-126`. If our IP Address fell above 128, then the `usable ip space` would be 192.168.129-254 (128IPs the network and 255 is the broadcast).
 
+
+
+## Related
+- [Nmap Cheatsheet](notes/hacking/nmap-cheatsheet.md)
+- [Nginx](notes/hacking/nginx.md)
+- [Hacking Hub](notes/hacking/hacking-hub.md)

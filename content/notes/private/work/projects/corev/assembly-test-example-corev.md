@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Assembly Test Example - CORE-V"
 tags:
   - work/corev

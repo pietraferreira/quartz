@@ -36,7 +36,7 @@ There are also situations where a system can have [big+little configuration](htt
 Some processors can have advanced [dynamic voltage and frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) capabilities. So, whenever there is no work to do, processors go into low-power idle mode. As a result, it makes sense to run applications as fast as possible and defer the responsibility of power management to the processor. To run the application as fast as possible, we can use higher optimisation levels like `-O3`, `-Ofast`; we can combine that with link time optimisations and profile guided optimisation to achieve even better performance.
 
 ## Optimising for Binary Size
-Check out [](notes/private/work/compiler-optimisation.md#Optimising%20Programs%20for%20Code%20Size|Optimising%20for%20Code%20Size).
+Check out Optimising for Code Size.
 
 ## References
 - [RISC-V Toolchain and Compiler Optimization Techniques](https://learning.edx.org/course/course-v1:LinuxFoundationX+LFD113x+3T2021/home)
@@ -48,3 +48,9 @@ Check out [](notes/private/work/compiler-optimisation.md#Optimising%20Programs%2
 - [Nitin Kumar - Profile-guided optimization (PGO) using GCC on IBM AIX](PGO)%20using%20GCC%20on%20IBM%20AIX)
 - [Aditya Kumar - Performance analysis and optimization](https://developercommunity.visualstudio.com/t/192628900-pragma-optimize-off-is-not-working-as-ex/1091452)
 - [Vinodha Ramasamy, Paul Yuan, Dehao Chen, Robert Hundt - Feedback-Directed Optimizations in GCC with Estimated Edge Profiles from Hardware Event Sampling](https://research.google/pubs/pub36576/)
+
+
+## Related
+- [Coursera - Intro to Embedded Systems](notes/general/coursera-intro-to-embedded-systems-week1.md)
+- [Cross Compilation](notes/general/cross-compilation.md)
+- [Compiler Flags](notes/general/compiler-flags.md)

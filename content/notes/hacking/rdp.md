@@ -18,3 +18,9 @@ xfreerdp /v:10.10.10.132 /d:HTB /u:administrator /p:'Password' /drive:linux,home
 ```
 
 We can then go to `\\tsclient\` directory to transfer files to and from the RDP session.
+
+
+## Related
+- [Nginx](notes/hacking/nginx.md)
+- [Introduction to Networking](notes/hacking/htb-intro-networking.md)
+- [Pentesting Notes & Commands](notes/hacking/pentesting-notes-commands.md)

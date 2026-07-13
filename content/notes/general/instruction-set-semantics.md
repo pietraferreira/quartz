@@ -2,7 +2,7 @@
 title: "Instruction Set Semantics"
 tags:
   - cs
-  - work/engineer-training
+  - cs/toolchains
 programming-languages:
 created: 2022-06-12
 ---
@@ -21,4 +21,9 @@ Most general is the **three address instruction set**:
 Modern RISC designs are **three address instruction sets**. One address instruction sets are found in DSPs (Digital Signal Processors).
 
 ## See Also
-- [Compilers](notes/private/work/compilers.md)
+
+
+## Related
+- [Intermediate Representations](notes/general/intermediate-representations.md)
+- [LLVM](notes/general/llvm.md)
+- [Formal Languages](notes/general/formal-languages.md)

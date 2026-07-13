@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  "Linker"
 tags:
   - cs/linker 

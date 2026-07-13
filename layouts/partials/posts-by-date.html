@@ -1,0 +1,6 @@
+<div class="content-list">
+  <h2>Latest posts</h2>
+  {{$notes := where .Site.RegularPages "Params.hidden" "!=" true}}
+  {{partial "page-list.html" (first 15 $notes.ByDate.Reverse)}}
+  <p><a href="{{ "notes/" | relURL }}">See all posts →</a></p>
+</div>

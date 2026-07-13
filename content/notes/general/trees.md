@@ -1,7 +1,7 @@
 ---
 title: "Trees"
 tags:
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-06
 ---
@@ -25,5 +25,5 @@ Source: [Wikipedia](%3Chttps://en.wikipedia.org/wiki/Tree_(data_structure)>)
 - [Parse Trees](notes/general/parse-trees.md)
 
 ## See also
-- [Graphs](notes/university/year2/cs2004/graphs.md)
-- [Minimum Spanning Subtree](notes/university/year2/cs2004/minimum-spanning-tree.md)
+- [Graphs](notes/general/graphs.md)
+- [Minimum Spanning Subtree](notes/general/minimum-spanning-tree.md)

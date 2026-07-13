@@ -1,7 +1,7 @@
 ---
 title:  "Depth-First Search"
 tags:
-  - university/cs2004
+  - cs/algorithms
 programming-languages:
 module:
   - cs2004
@@ -9,14 +9,14 @@ last-edited:
 created: 2022-11-07
 ---
 # Depth-First Search
-It allows us to explore nodes and edges of a [graph](notes/university/year2/cs2004/graphs.md).
+It allows us to explore nodes and edges of a [graph](notes/general/graphs.md).
 
 The traversal will go as far as possible down a path until a **dead end** is reached.
 
-In an [undirected](notes/university/year2/cs2004/graphs.md#Undirected|undirected) graph:
+In an [undirected](notes/general/graphs.md#Undirected|undirected) graph:
 - A node is a dead end if all of the nodes adjacent to it have already been visited.
 
-In an [directed](notes/university/year2/cs2004/graphs.md#Directed|directed) graph:
+In an [directed](notes/general/graphs.md#Directed|directed) graph:
 - A node is a dead end if it has no outgoing edges and we visited everything else.
 
 ### Undirected Graph

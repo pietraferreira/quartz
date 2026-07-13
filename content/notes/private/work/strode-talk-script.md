@@ -1,4 +1,5 @@
 ---
+draft: true
 title:  Strode College Talk - Script
 tags:
   - script

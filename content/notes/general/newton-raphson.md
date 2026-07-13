@@ -2,7 +2,7 @@
 title: "Newton-Raphson Iteration"
 tags:
   - cs
-  - work/engineer-training
+  - cs/algorithms
 programming-languages:
 created: 2022-06-12
 ---
@@ -36,4 +36,4 @@ Second order convergent, so $O(log\ r)$.
 
 ---
 ## See Also
-- [](notes/university/year2/cs2004/algorithms-and-data-structure.md#Mathematical%20Algorithms|Mathematical%20Algorithms)
+- [Mathematical Algorithms](notes/general/algorithms-and-data-structure.md#Mathematical%20Algorithms)

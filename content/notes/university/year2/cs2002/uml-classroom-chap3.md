@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "UML @ Classroom - Chapter 3 (Use Case Diagram)" 
 tags:
   - cs/uml

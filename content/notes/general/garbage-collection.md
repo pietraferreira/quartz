@@ -2,7 +2,7 @@
 title: "Garbage Collection"
 tags:
   - cs
-  - work/engineer-training
+  - cs/toolchains
 created: 2022-06-06
 ---
 # Garbage Collection

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "UML - All-Together"
 tags:
   - cs/uml
