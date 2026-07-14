@@ -1,0 +1,33 @@
+.recent-notes {
+  & > h3 {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    // a chevron that rotates when collapsed
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid currentColor;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      transform: rotate(90deg);
+      transition: transform 0.15s ease;
+      opacity: 0.7;
+    }
+  }
+
+  // collapsed state: hide the list, point the chevron sideways
+  &.is-collapsed > h3::before {
+    transform: rotate(0deg);
+  }
+
+  &.is-collapsed > .recent-ul,
+  &.is-collapsed > .see-more {
+    display: none;
+  }
+}

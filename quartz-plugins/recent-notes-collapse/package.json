@@ -1,0 +1,62 @@
+{
+  "name": "@pietra/recent-notes-collapse",
+  "version": "1.0.0",
+  "description": "Makes the Recent Notes sidebar section collapsible (click the heading to fold)",
+  "type": "module",
+  "license": "MIT",
+  "files": ["dist", "README.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "dependencies": {
+    "@quartz-community/types": "github:quartz-community/types",
+    "@quartz-community/utils": "github:quartz-community/utils"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "preact": "^10.28.2",
+    "sass": "^1.97.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  },
+  "quartz": {
+    "name": "recent-notes-collapse",
+    "displayName": "Recent Notes Collapse",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 99,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "RecentNotesCollapse": {
+        "displayName": "Recent Notes Collapse",
+        "defaultPosition": "afterBody",
+        "defaultPriority": 99
+      }
+    }
+  }
+}

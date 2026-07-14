@@ -217,6 +217,12 @@
       "commit": "3c3d104335e2fc5ff62371ead157667adb79b046",
       "installedAt": "2026-07-13T15:40:31.597Z"
     },
+    "recent-notes-collapse": {
+      "source": "./quartz-plugins/recent-notes-collapse",
+      "resolved": "/home/pietra/Documents/personal/quartz/quartz-plugins/recent-notes-collapse",
+      "commit": "local",
+      "installedAt": "2026-07-13T17:19:48.546Z"
+    },
     "remove-draft": {
       "source": "github:quartz-community/remove-draft",
       "resolved": "https://github.com/quartz-community/remove-draft.git",

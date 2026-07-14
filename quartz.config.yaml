@@ -208,6 +208,8 @@ plugins:
   - source: github:quartz-community/recent-notes
     enabled: true
     order: 26
+    options:
+      limit: 6
     layout:
       position: left
       priority: 50
@@ -222,6 +224,11 @@ plugins:
     layout:
       position: beforeBody
       priority: 1
+  - source: ./quartz-plugins/recent-notes-collapse
+    enabled: true
+    layout:
+      position: afterBody
+      priority: 99
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
