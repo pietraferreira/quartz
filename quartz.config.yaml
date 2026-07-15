@@ -210,9 +210,15 @@ plugins:
     order: 26
     options:
       limit: 6
+      showTags: false
     layout:
       position: left
       priority: 50
+  - source: ./quartz-plugins/all-tags
+    enabled: true
+    layout:
+      position: left
+      priority: 51
   - source: ./quartz-plugins/colorscheme-picker
     enabled: true
     layout:

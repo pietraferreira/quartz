@@ -7,6 +7,12 @@
       "commit": "73a98dda7e4f55239310833299d91daf8611349f",
       "installedAt": "2026-07-13T15:40:30.777Z"
     },
+    "all-tags": {
+      "source": "./quartz-plugins/all-tags",
+      "resolved": "/home/pietra/Documents/personal/quartz/quartz-plugins/all-tags",
+      "commit": "local",
+      "installedAt": "2026-07-15T10:57:19.011Z"
+    },
     "article-title": {
       "source": "github:quartz-community/article-title",
       "resolved": "https://github.com/quartz-community/article-title.git",

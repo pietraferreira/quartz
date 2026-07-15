@@ -1,0 +1,61 @@
+{
+  "name": "@pietra/all-tags",
+  "version": "1.0.0",
+  "description": "A sidebar list of every tag used across the site, each linking to its tag page",
+  "type": "module",
+  "license": "MIT",
+  "files": ["dist", "README.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "dependencies": {
+    "@quartz-community/types": "github:quartz-community/types",
+    "@quartz-community/utils": "github:quartz-community/utils"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "preact": "^10.28.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  },
+  "quartz": {
+    "name": "all-tags",
+    "displayName": "All Tags",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 27,
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "AllTags": {
+        "displayName": "All Tags",
+        "defaultPosition": "left",
+        "defaultPriority": 51
+      }
+    }
+  }
+}

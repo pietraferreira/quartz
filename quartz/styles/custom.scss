@@ -8,3 +8,10 @@
 html {
   font-size: 13px;
 }
+
+// Recent Notes: individual note titles are unstyled `h3`s (inheriting the base
+// 1.12rem), which makes them bigger than the "Recent Notes" heading itself
+// (explicitly set to 1rem by the plugin). Size them down below that.
+.recent-notes .recent-li .section > .desc > h3 {
+  font-size: 0.85rem;
+}
