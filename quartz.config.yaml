@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "🪅 Morioh"
+  pageTitle: "morioh"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: en-GB
   baseUrl: pietraferreira.github.io
   ignorePatterns:
     - "**/private/**"
